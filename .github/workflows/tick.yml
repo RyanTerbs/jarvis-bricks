@@ -1,0 +1,41 @@
+# Jarvis's heartbeat: every 15 minutes GitHub runs one tick, then saves what changed.
+# No ANTHROPIC_API_KEY secret = the free brain ($0). Add the secret and his real brain takes over.
+name: tick
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min (UTC). GitHub can run these a few minutes late.
+  workflow_dispatch:          # "Run workflow" button to tick him by hand
+
+permissions:
+  contents: write             # lets the job commit his new state back to the repo
+
+concurrency:
+  group: tick                 # never run two ticks at once
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Tick
+        run: python tick.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # empty until you add it = free brain
+
+      - name: Save his state
+        run: |
+          git config user.name "jarvis-bot"
+          git config user.email "jarvis-bot@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet && exit 0
+          git commit -m "tick"
+          git pull --rebase --quiet
+          git push

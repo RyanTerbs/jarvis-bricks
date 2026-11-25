@@ -1,0 +1,209 @@
+{
+  "_note": "The WORLD's rules. Code (not the AI) uses this to update needs, check moves and apply results. Try changing numbers and see what happens.",
+
+  "needs": {
+    "_note": "How much each need grows (+) or shrinks (-) per 15-minute tick. 0 = fine, 1 = urgent.",
+    "rest":      { "awake": 0.020, "asleep": -0.080 },
+    "hunger":    { "awake": 0.035, "asleep":  0.010 },
+    "social":    { "awake": 0.025, "asleep":  0.005 },
+    "tinker":    { "awake": 0.035, "asleep":  0.005 },
+    "curiosity": { "awake": 0.025, "asleep":  0.005 }
+  },
+
+  "mood": {
+    "_note": "Mood drifts toward 'base', pulled down by any need above 'pressing_from'. Each decoration he builds (trees, lamps...) lifts 'base' a little, up to decor_bonus_max.",
+    "base": 0.35,
+    "pressing_from": 0.6,
+    "pressing_pull": 0.9,
+    "drift": 0.25,
+    "decor_bonus": 0.01,
+    "decor_bonus_max": 0.10,
+    "build_done_bonus": 0.20
+  },
+
+  "bedtime": { "_note": "Local time (Florida). Between these hours autopilot sends him home to sleep, no AI calls. He writes his diary when he goes to bed.", "sleep_from_hour": 23, "wake_from_hour": 6, "wake_latest_hour": 9 },
+
+  "town": {
+    "_note": "How the town STARTS (24 lots since 2026-11-25; older towns get topped up). Lots are spots along the street (0 = far left). Everything else he builds himself.",
+    "start_lots": 24,
+    "start": [
+      { "lot": 0, "id": "brick_pit", "name": "Brick pit", "place": "brick_pit", "desc": "a pile of loose bricks at the edge of town, with a lucky ! block floating above it", "look": { "kind": "pit" } },
+      { "lot": 1, "id": "home",      "name": "Home",      "place": "home",      "desc": "his little brick house with a savings jar on the shelf", "look": { "kind": "house", "color": "#c8382e", "roof": "#7a2018", "emoji": "🏠", "floors": 1 } },
+      { "lot": 2, "id": "garage",    "name": "Garage",    "place": "garage",    "desc": "the town garage, smells of oil, always a job waiting", "look": { "kind": "garage", "color": "#7d8590", "emoji": "🔧" } },
+      { "lot": 3, "id": "cafe",      "name": "Cafe",      "place": "cafe",      "desc": "the corner cafe, good coffee and gossip", "look": { "kind": "shop", "color": "#2f8f5b", "emoji": "☕", "floors": 1 } }
+    ]
+  },
+
+  "moves": {
+    "_note": "Each move: where it can happen, what it does to needs, mood, coins and bricks. 'any' = everywhere. A move only shows up once its place exists in the town.",
+    "rest":             { "label": "having a rest",                 "at": ["any"],     "needs": { "rest": -0.10 },                                       "mood": 0.02 },
+    "wait":             { "label": "hanging about",                 "at": ["any"],     "needs": {},                                                      "mood": 0.0 },
+    "go_to_sleep":      { "label": "going to sleep",                "at": ["home"],    "needs": {},                                                      "mood": 0.0, "sleep": true },
+    "cook_dinner":      { "label": "cooking a proper meal",         "at": ["home"],    "needs": { "hunger": -0.70, "tinker": -0.05 },                    "mood": 0.06, "coins": -2 },
+    "make_toast":       { "label": "making toast",                  "at": ["home"],    "needs": { "hunger": -0.35 },                                     "mood": 0.01 },
+    "count_savings":    { "label": "counting the savings jar",      "at": ["home"],    "needs": { "curiosity": -0.05 },                                  "mood": 0.05 },
+    "plan_the_town":    { "label": "sketching ideas for the town",  "at": ["home"],    "needs": { "curiosity": -0.25 },                                  "mood": 0.04 },
+    "design_a_building":{ "label": "designing a brand-new building","at": ["home"],    "needs": { "curiosity": -0.35, "tinker": -0.05 },                 "mood": 0.08, "design": true },
+    "fix_a_car":        { "label": "fixing a car",                  "at": ["garage"],  "needs": { "tinker": -0.35, "rest": 0.04, "hunger": 0.02 },       "mood": 0.05, "coins": 4 },
+    "tinker_with_bike": { "label": "tinkering with his motorbike",  "at": ["garage"],  "needs": { "tinker": -0.40, "curiosity": -0.10 },                 "mood": 0.08 },
+    "go_for_a_ride":    { "label": "out for a ride",                "at": ["garage"],  "needs": { "curiosity": -0.15, "rest": 0.03, "social": -0.05 },   "mood": 0.15 },
+    "grab_a_snack":     { "label": "grabbing a snack",              "at": ["cafe"],    "needs": { "hunger": -0.55 },                                     "mood": 0.05, "coins": -1 },
+    "chat_with_locals": { "label": "chatting with the locals",      "at": ["cafe"],    "needs": { "social": -0.40 },                                     "mood": 0.05 },
+    "collect_bricks":   { "label": "collecting bricks",             "at": ["brick_pit"], "needs": { "curiosity": -0.10, "tinker": -0.05, "rest": 0.03 }, "mood": 0.02, "bricks_rand": [2, 5] },
+    "hit_the_lucky_block": { "label": "jumping up to hit the ! block", "at": ["brick_pit"], "needs": { "curiosity": -0.10 },                            "mood": 0.03, "luck": true },
+    "work_on_site":     { "label": "building",                      "at": ["building_site"], "needs": { "tinker": -0.20, "rest": 0.05, "hunger": 0.03 }, "mood": 0.05, "work": true },
+    "run_the_stall":    { "label": "running his market stall",     "at": ["market_stall"], "needs": { "social": -0.25, "rest": 0.02 },            "mood": 0.04, "sell": true },
+    "make_coffee":      { "label": "making a proper coffee",        "at": ["home"],    "needs": { "rest": -0.08, "curiosity": -0.05 },                   "mood": 0.06, "requires": "coffee_machine" },
+    "lie_in_the_hammock": { "label": "lying in the hammock",        "at": ["home"],    "needs": { "rest": -0.20 },                                       "mood": 0.06, "requires": "hammock" },
+    "feed_the_puppy":   { "label": "feeding the puppy",             "at": ["home"],    "needs": {},                                                      "mood": 0.03, "pup": { "hunger": -0.70 }, "bond": 0.02, "food": -1 },
+    "buy_dog_food":     { "label": "ordering a bag of dog food",    "at": ["home"],    "needs": {},                                                      "mood": 0.01, "coins": -3, "food": 6 },
+    "play_with_the_puppy": { "label": "playing with the puppy",     "at": ["any"],     "needs": { "social": -0.15 },                                     "mood": 0.06, "pup": { "bored": -0.50, "tired": 0.10 }, "bond": 0.03, "pup_awake": true },
+    "walk_the_puppy":   { "label": "taking the puppy for a walk",   "at": ["any"],     "needs": { "curiosity": -0.10, "rest": 0.02 },                    "mood": 0.04, "pup": { "bored": -0.30, "tired": 0.15 }, "bond": 0.02, "pup_awake": true },
+    "cuddle_the_puppy": { "label": "cuddling the puppy",            "at": ["any"],     "needs": { "social": -0.10, "rest": -0.03 },                      "mood": 0.05, "pup": { "bored": -0.15 }, "bond": 0.02 },
+    "train_the_puppy":  { "label": "training the puppy",            "at": ["any"],     "needs": { "curiosity": -0.10, "tinker": -0.05 },                 "mood": 0.03, "pup": { "tired": 0.10, "bored": 0.05 }, "pup_awake": true, "train": true },
+    "read_a_book":      { "label": "reading a book",                "at": ["home", "library"], "needs": { "curiosity": -0.30, "rest": -0.02 },     "mood": 0.04, "read": true },
+    "use_the_computer": { "label": "looking something up on his old laptop", "at": ["home"], "needs": { "curiosity": -0.25 },                  "mood": 0.03, "lookup": true },
+    "sunbathe":         { "label": "working on his tan",            "at": ["beach"],   "needs": { "rest": -0.12 },                                       "mood": 0.06, "tan": true, "hours": [8, 18] },
+    "go_surfing":       { "label": "surfing",                       "at": ["beach"],   "needs": { "curiosity": -0.15, "tinker": -0.10, "rest": 0.08, "hunger": 0.05 }, "mood": 0.10, "surf": true, "requires": "surfboard", "hours": [6, 19] },
+    "go_for_a_swim":    { "label": "going for a swim",              "at": ["beach"],   "needs": { "rest": 0.04, "hunger": 0.04, "curiosity": -0.05 },    "mood": 0.08, "hours": [6, 20] },
+    "build_a_sand_castle": { "label": "building a sand castle",     "at": ["beach"],   "needs": { "tinker": -0.30, "curiosity": -0.10 },                 "mood": 0.07, "castle": true, "hours": [6, 20] },
+    "collect_shells":   { "label": "collecting shells",             "at": ["beach"],   "needs": { "curiosity": -0.15 },                                  "mood": 0.04, "shells": true },
+    "play_fetch_on_the_beach": { "label": "playing fetch with the puppy on the beach", "at": ["beach"], "needs": { "social": -0.10 },               "mood": 0.08, "pup": { "bored": -0.60, "tired": 0.15 }, "bond": 0.03, "pup_awake": true },
+    "watch_the_sunset": { "label": "watching the sunset",           "at": ["beach"],   "needs": { "rest": -0.05, "social": -0.05 },                      "mood": 0.10, "hours": [17, 20] },
+    "read_a_manual":    { "label": "reading a workshop manual",     "at": ["library"], "needs": { "curiosity": -0.35, "tinker": -0.05 },                 "mood": 0.03 },
+    "read_about_thailand": { "label": "reading about Thailand",     "at": ["library"], "needs": { "curiosity": -0.30 },                                  "mood": 0.06 },
+    "lift_weights":     { "label": "lifting brick dumbbells",       "at": ["gym"],     "needs": { "rest": 0.06, "hunger": 0.05, "tinker": -0.05 },       "mood": 0.10 },
+    "sit_on_the_bench": { "label": "sitting on the park bench",     "at": ["park"],    "needs": { "rest": -0.05, "social": -0.10 },                      "mood": 0.03 },
+    "people_watch":     { "label": "people-watching in the park",   "at": ["park"],    "needs": { "curiosity": -0.15, "social": -0.15 },                 "mood": 0.03 },
+    "slurp_noodles":    { "label": "slurping noodles",              "at": ["noodle_stall"], "needs": { "hunger": -0.60, "social": -0.10 },               "mood": 0.08, "coins": -1 },
+    "ride_the_track":   { "label": "ripping laps on the bike track","at": ["bike_track"], "needs": { "tinker": -0.15, "curiosity": -0.10, "rest": 0.05 }, "mood": 0.18 },
+    "look_out_over_town": { "label": "looking out over the town",   "at": ["lookout_tower"], "needs": { "curiosity": -0.30, "rest": -0.03 },             "mood": 0.06 }
+  },
+
+  "blueprints": {
+    "_note": "Things he can build. bricks/coins = cost (paid when he starts), work = how many work_on_site ticks. 'place' = it becomes somewhere he can go. 'repeat' = he can build more than one. 'decor' = decoration (lifts his mood a bit). 'expand' = adds lots to the street.",
+    "library":       { "name": "Library",       "bricks": 40, "coins": 0,  "work": 6, "place": "library",       "desc": "the town library, mostly manuals and travel books",          "look": { "kind": "house", "color": "#8a5a2b", "roof": "#4e3015", "emoji": "📚", "floors": 2 } },
+    "gym":           { "name": "Gym",           "bricks": 35, "coins": 0,  "work": 5, "place": "gym",           "desc": "a tiny gym with brick dumbbells",                              "look": { "kind": "shop", "color": "#c0392b", "emoji": "🏋️", "floors": 1 } },
+    "park":          { "name": "Park",          "bricks": 20, "coins": 0,  "work": 3, "place": "park",          "desc": "the park, a bench under a plastic tree",                       "look": { "kind": "park" } },
+    "noodle_stall":  { "name": "Noodle stall",  "bricks": 25, "coins": 8,  "work": 4, "place": "noodle_stall",  "desc": "a Thai noodle stall with a tiny wok and plastic chairs",      "look": { "kind": "shop", "color": "#e67e22", "emoji": "🍜", "floors": 1 } },
+    "bike_track":    { "name": "Bike track",    "bricks": 50, "coins": 10, "work": 7, "place": "bike_track",    "desc": "a dirt bike track with brick jumps",                           "look": { "kind": "track" } },
+    "lookout_tower": { "name": "Lookout tower", "bricks": 45, "coins": 0,  "work": 6, "place": "lookout_tower", "desc": "a tall brick tower, you can see the whole shelf from the top", "look": { "kind": "tower", "color": "#5d6d7e", "emoji": "🔭", "floors": 4 } },
+    "market_stall":  { "name": "Market stall",  "bricks": 20, "coins": 0,  "work": 3, "place": "market_stall",  "desc": "a little market stall with a striped canopy where he sells what he makes", "look": { "kind": "stall", "color": "#2f6fb3" } },
+    "tree":          { "name": "Tree",          "bricks": 6,  "coins": 0,  "work": 1, "repeat": true, "decor": true, "look": { "kind": "tree" } },
+    "lamp_post":     { "name": "Lamp post",     "bricks": 5,  "coins": 0,  "work": 1, "repeat": true, "decor": true, "look": { "kind": "lamp" } },
+    "flower_bed":    { "name": "Flower bed",    "bricks": 4,  "coins": 0,  "work": 1, "repeat": true, "decor": true, "look": { "kind": "flowers" } },
+    "fountain":      { "name": "Fountain",      "bricks": 15, "coins": 0,  "work": 2, "decor": true, "look": { "kind": "fountain" } },
+    "baseplate":     { "name": "New baseplate", "bricks": 20, "coins": 5,  "work": 3, "repeat": true, "expand": 16, "look": { "kind": "baseplate" } }
+  },
+
+  "products": {
+    "_note": "Things he can MAKE (move make_<id>, at the listed place) and SELL at his market stall. value = a fair price in coins.",
+    "model_bike":   { "name": "brick model bike",     "at": ["garage"],       "bricks": 6, "coins": 0, "value": 5, "needs": { "tinker": -0.25 },                     "mood": 0.05 },
+    "rebuilt_carb": { "name": "rebuilt carburettor",  "at": ["garage"],       "bricks": 0, "coins": 2, "value": 9, "needs": { "tinker": -0.35, "curiosity": -0.05 }, "mood": 0.05 },
+    "postcard":     { "name": "postcard of the town", "at": ["home"],         "bricks": 0, "coins": 0, "value": 2, "needs": { "curiosity": -0.15 },                  "mood": 0.03 },
+    "brick_lamp":   { "name": "little brick lamp",    "at": ["home"],         "bricks": 4, "coins": 0, "value": 4, "needs": { "tinker": -0.20 },                     "mood": 0.04 },
+    "noodle_kit":   { "name": "Thai noodle kit",      "at": ["noodle_stall"], "bricks": 0, "coins": 1, "value": 4, "needs": { "hunger": -0.10, "social": -0.05 },     "mood": 0.03 }
+  },
+
+  "selling": {
+    "_note": "run_the_stall sells from his stock. He picks the pricing: cheap sells fast, pricey earns more per item but sells slowly.",
+    "max_stock": 12,
+    "max_sales_per_tick": 2,
+    "pricing": {
+      "cheap":  { "price": 0.8, "chance": 0.60 },
+      "fair":   { "price": 1.0, "chance": 0.40 },
+      "pricey": { "price": 1.4, "chance": 0.18 }
+    }
+  },
+
+  "catalogue": {
+    "_note": "Things he can BUY with coins (move order_<id>, at home). One of each. 'bonus' = extra coins/bricks on a move, 'sell_chance' = sells more at the stall, 'unlocks' = a new move.",
+    "wheelbarrow":    { "name": "Wheelbarrow",    "coins": 25, "what": "+2 bricks every time he collects", "bonus": { "collect_bricks": { "bricks": 2 } } },
+    "impact_wrench":  { "name": "Impact wrench",  "coins": 30, "what": "+2 coins for every car he fixes",  "bonus": { "fix_a_car": { "coins": 2 } } },
+    "shop_sign":      { "name": "Neon shop sign", "coins": 20, "what": "more people stop at his stall",    "sell_chance": 0.10 },
+    "coffee_machine": { "name": "Coffee machine", "coins": 15, "what": "proper coffee at home",            "unlocks": "make_coffee" },
+    "surfboard":      { "name": "Surfboard",      "coins": 30, "what": "lets him go surfing",              "unlocks": "go_surfing" },
+    "beach_kit":      { "name": "Beach kit",      "coins": 8,  "what": "sunscreen + umbrella: no more sunburn" },
+    "hammock":        { "name": "Hammock",        "coins": 12, "what": "a hammock at home",                "unlocks": "lie_in_the_hammock" }
+  },
+
+  "puppy": {
+    "_note": "His puppy. Jarvis names him himself (the AI adds puppy_name). Needs are 0 (fine) .. 1 (urgent), like Jarvis's. Code moves them every tick; Jarvis has to look after him. Bond 0..1 grows with care, drops with neglect.",
+    "needs": {
+      "hunger": { "awake": 0.030, "asleep": 0.004 },
+      "tired":  { "awake": 0.020, "asleep": -0.080 },
+      "bored":  { "awake": 0.030, "asleep": 0.000 }
+    },
+    "start": { "hunger": 0.3, "tired": 0.2, "bored": 0.3, "bond": 0.10, "food": 4 },
+    "company": 0.4,
+    "neglect_from": 0.85,
+    "grown_up_days": 30,
+    "tricks": {
+      "sit":       { "name": "sit",                  "sessions": 3 },
+      "paw":       { "name": "give paw",             "sessions": 4 },
+      "stay":      { "name": "stay",                 "sessions": 6 },
+      "fetch":     { "name": "fetch",                "sessions": 8,  "perk": "fetches 1-2 extra bricks when Jarvis collects" },
+      "roll_over": { "name": "roll over",            "sessions": 8 },
+      "ride":      { "name": "ride in the tank bag", "sessions": 10, "perk": "comes along on rides (more fun for both)" }
+    },
+    "events": [
+      "{pup} chews a stray brick and looks very pleased with himself.",
+      "{pup} barks at the ! block. The ! block does not bark back.",
+      "{pup} steals a sock and runs off down the street.",
+      "{pup} falls asleep in the toolbox for a second.",
+      "{pup} chases a plastic butterfly and misses.",
+      "A kid stops to pat {pup}."
+    ]
+  },
+
+  "fixed_places": {
+    "_note": "Places that are always there (not lots). The beach rings the whole island.",
+    "beach": "the beach on the edge of the island: warm sand, palm trees, waves rolling in"
+  },
+
+  "beach": {
+    "_note": "Waves are rolled once a day. Sunbathing more than 'sunburn_after' times a day without a beach kit burns him (rest + mood hit, no sun for 'sunburn_ticks'). The tide takes sand castles overnight.",
+    "waves": { "flat": 0.2, "small": 0.45, "good": 0.35 },
+    "castle_max": 6,
+    "sunburn_after": 3,
+    "sunburn_ticks": 24,
+    "tan_fade": 0.0005
+  },
+
+  "design_rules": {
+    "_note": "His OWN designs (design_a_building at home, max once a day). Every design costs the same; 'effect' = how much the building's activity fixes the need he picked.",
+    "bricks": 30,
+    "work": 5,
+    "effect": 0.35,
+    "mood": 0.06,
+    "max_unbuilt": 3
+  },
+
+  "lucky_block": {
+    "_note": "The floating ! block at the brick pit. A few hits a day, random prize.",
+    "per_day": 3,
+    "prizes": [
+      { "weight": 5, "bricks": 6,  "text": "6 bricks pop out!" },
+      { "weight": 3, "coins": 2,   "text": "a coin spins out... 2 coins!" },
+      { "weight": 1, "bricks": 15, "text": "JACKPOT: 15 bricks!" },
+      { "weight": 3, "mood": -0.03, "text": "bonk. Nothing. Just a sore head." }
+    ]
+  },
+
+  "events": {
+    "_note": "Random things that happen. 'chance' per awake tick. An event cancels his queued plan so the AI can react. Plain text, or an object that also changes bricks/coins.",
+    "chance": 0.06,
+    "list": [
+      "A customer rolls a scooter into the garage with a dodgy carb.",
+      "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+      "It starts raining plastic raindrops.",
+      "A loud exhaust echoes down the street.",
+      "The cafe has a new coffee on the board.",
+      "A kid drops a bolt and asks Jarvis what it's for.",
+      "A bike roars past heading out of town.",
+      { "text": "Someone left a box of spare bricks at the pit. +8 bricks.", "bricks": 8 },
+      { "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.", "bricks": -3 },
+      { "text": "A neighbour pays him back for a favour. +3 coins.", "coins": 3 }
+    ]
+  }
+}

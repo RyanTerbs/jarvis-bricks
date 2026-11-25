@@ -1,0 +1,1490 @@
+#!/usr/bin/env python3
+"""
+Jarvis: a tiny autonomous brick man who builds his own little town.
+
+ONE run of this file = ONE "tick" = 15 minutes of Jarvis's life.
+GitHub Actions runs it every 15 minutes, then saves the files it wrote.
+
+The big idea (same as Pino):
+  1. CODE updates his needs and mood. No AI, just maths.
+  2. If he has a plan queued, he does the next step. No AI.
+  3. Otherwise the AI picks 1-3 moves and says why, in his voice.
+  4. CODE checks each move is allowed, applies it, and logs it.
+  If the AI fails or isn't set up, "autopilot" picks a sensible move by rules.
+
+New in v2:
+  - His own little brick TOWN. He collects bricks at the brick pit, picks what to build,
+    works on the building site until it's done, and can design his own buildings.
+  - A DIARY he writes every night at bedtime. His "tomorrow" line is read back to him next day.
+
+Only Python's standard library is used: nothing to install.
+
+Run it yourself (free, no API key needed):
+  python tick.py --watch          watch him live in your browser (fake AI, 1 tick every 2 s)
+  python tick.py --simulate 168   fake a whole week in seconds, writes to sim_data/
+  python tick.py --mock           one tick with a fake AI (writes the LIVE data in docs/data)
+  python tick.py                  one tick: real AI if ANTHROPIC_API_KEY is set, else the free brain
+"""
+import argparse
+import functools
+import http.server
+import json
+import os
+import random
+import re
+import sys
+import threading
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import webbrowser
+from collections import Counter
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+ROOT = Path(__file__).resolve().parent
+CONFIG = ROOT / "jarvis"            # who he is + world rules (you edit these)
+DATA = ROOT / "docs" / "data"       # live data (the code writes these; the web page reads them)
+SIM = ROOT / "sim_data"             # fake runs (--simulate / --watch) go here, never committed
+try:
+    TZ = ZoneInfo("America/New_York")   # his town runs on Florida time
+except Exception:                       # Windows without the 'tzdata' package: plain UTC-5
+    TZ = timezone(timedelta(hours=-5), "ET")
+
+MODEL = "claude-haiku-5-5"          # small, cheap, fast
+PRICE_IN = 0.10 / 1_000_000         # $ per input token (Haiku 5.5, prompts under 100k tokens)
+PRICE_OUT = 0.50 / 1_000_000        # $ per output token (thinking tokens count as output)
+TICK_MINUTES = 15
+FEED_KEEP = 150                     # feed entries to keep
+DAY_LOG_KEEP = 120                  # today's log lines kept for the diary
+DIARY_KEEP = 400                    # diary entries to keep (over a year)
+NEEDS = ["rest", "hunger", "social", "tinker", "curiosity"]
+SOURCES = ["model", "queue", "autopilot", "sleeping"]
+DATA_FILES = ("state.json", "feed.json", "town.json", "diary.json")
+NOTEBOOK_KEEP = 60                  # notebook notes kept
+_LIB = {}
+
+
+def library():
+    """His OFFLINE books + encyclopedia (built once by tools/build_library.py). No live internet."""
+    if not _LIB:
+        lib = CONFIG / "library"
+        _LIB["books"] = {k: v for k, v in (load(lib / "books.json", {}) or {}).items() if not k.startswith("_")}
+        _LIB["encyclopedia"] = {k: v for k, v in (load(lib / "encyclopedia.json", {}) or {}).items() if not k.startswith("_")}
+    return _LIB
+
+
+def perk_sum(state, kind, move=None, product=None):
+    """Add up what finished books taught him (e.g. faster site work, better prices)."""
+    total = 0.0
+    for bid in state.get("finished", []):
+        perk = (library()["books"].get(bid) or {}).get("perk") or {}
+        if perk.get("type") == kind and perk.get("move") in (None, move) and perk.get("product") in (None, product):
+            total += perk.get("value", 0)
+    return total
+
+
+# ---------------------------------------------------------------- small helpers
+
+def load(path, default=None):
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default
+
+
+def save(path, data):
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    Path(path).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def clock(dt):
+    """8:15 PM style time for humans."""
+    return dt.astimezone(TZ).strftime("%I:%M %p").lstrip("0")
+
+
+def nice(place):
+    return place.replace("_", " ")
+
+
+def clean_text(s, n):
+    """Tidy text the AI made up: one line, no control characters, no em dashes, max n chars."""
+    s = re.sub(r"[\x00-\x1f\x7f]", " ", str(s or ""))
+    s = re.sub(r"\s+", " ", s).replace("—", ",").strip()
+    return s[:n].strip()
+
+
+def slugify(name):
+    return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")[:20] or "building"
+
+
+def clean_emoji(e):
+    s = str(e or "").strip()
+    if not s or s[0].isascii():
+        return "🏠"
+    return s[:2].rstrip("‍")
+
+
+def fresh_state(now):
+    """Jarvis on his very first tick."""
+    today = now.astimezone(TZ).date().isoformat()
+    return {
+        "name": "Jarvis",
+        "place": "home",
+        "asleep": False,
+        "doing": "waking up for the first time",
+        "thought": "Right. Where's my toolbox?",
+        "feeling": "curious",
+        "needs": {"rest": 0.2, "hunger": 0.4, "social": 0.3, "tinker": 0.5, "curiosity": 0.5},
+        "mood": 0.3,
+        "energy": 0.8,
+        "coins": 20,
+        "coins_goal": 500,
+        "bricks": 10,
+        "stock": {},                    # things he made, waiting to be sold
+        "owned": [],                    # things he bought from the catalogue
+        "sales": {"items": 0, "coins": 0},
+        "books": {},                    # chapters read per book
+        "finished": [],                 # books finished (they teach him perks)
+        "notebook": [],                 # what he learned, in his own words
+        "looked_up": [],                # encyclopedia topics he has looked up
+        "hour": 12,                     # local hour of this tick (for time-of-day moves)
+        "beach": {"tan": 0.0, "surf_skill": 0.0, "surf_sessions": 0, "castles": [], "best_castle": 0, "shells": 0,
+                  "sun_today": 0, "burnt_until": 0, "waves": "small", "waves_date": None},
+        "queue": [],
+        "lucky": {"date": today, "used": 0, "max": 3},
+        "designed_on": None,
+        "plan_today": None,             # the "tomorrow" line from last night's diary
+        "today_log": [],                # what happened today, for tonight's diary
+        "day_start": {"coins": 20, "bricks": 10, "got": 0, "used": 0},
+        "tick": 0,
+        "born": now.isoformat(),
+        "updated": now.isoformat(),
+        "stats": {
+            "all": {s: 0 for s in SOURCES} | {"tokens_in": 0, "tokens_out": 0, "cost_usd": 0.0},
+            "today": {"date": today} | {s: 0 for s in SOURCES} | {"tokens_in": 0, "tokens_out": 0, "cost_usd": 0.0},
+        },
+    }
+
+
+def fresh_town(world, now):
+    """The town on day one: a brick pit, his house, the garage and the cafe."""
+    today = now.astimezone(TZ).date().isoformat()
+    lots = [dict(l, bp=l["id"], decor=False, built=today) for l in world["town"]["start"]]
+    return {
+        "max_lots": world["town"]["start_lots"],
+        "lots": lots,
+        "site": None,
+        "custom_blueprints": {},
+        "custom_moves": {},
+        "history": [{"date": today, "text": "Jarvis moved into a tiny town: a house, a garage, a cafe and a pile of bricks."}],
+    }
+
+
+# ---------------------------------------------------------------- his puppy (no AI)
+
+def pup_name(state):
+    pup = state.get("pup") or {}
+    return pup.get("name") or "the puppy"
+
+
+def new_pup(world, now, tick_no):
+    st = world["puppy"]["start"]
+    return {"name": None, "born": now.isoformat(), "arrived_tick": tick_no, "napping": False,
+            "needs": {"hunger": st["hunger"], "tired": st["tired"], "bored": st["bored"]},
+            "bond": st["bond"], "food": st["food"], "tricks": {}, "learned": [], "doing": "sniffing around"}
+
+
+def update_pup(state, world, now, log):
+    """The puppy's needs move by themselves (pure maths). Neglect costs bond; care builds it."""
+    pup, P = state["pup"], world["puppy"]
+    tired = pup["needs"]["tired"]
+    pup["napping"] = state["asleep"] or tired >= 0.9 or (pup["napping"] and tired > 0.3)
+    mode = "asleep" if pup["napping"] else "awake"
+    for n, rate in P["needs"].items():
+        pup["needs"][n] = round(clamp(pup["needs"][n] + rate[mode], 0, 1), 3)
+    neglected = max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= P["neglect_from"]
+    if neglected and not pup["napping"]:         # only counts while he's awake
+        pup["bond"] = round(max(0.0, pup["bond"] - 0.01), 3)
+    name = pup_name(state)
+    if pup["napping"]:
+        pup["doing"] = "asleep at the foot of the bed" if state["asleep"] else "napping"
+    elif pup["needs"]["hunger"] >= 0.7:
+        pup["doing"] = "hungry, staring at Jarvis"
+    elif pup["needs"]["bored"] >= 0.7:
+        pup["doing"] = "bored, chewing whatever he can find"
+    else:
+        pup["doing"] = random.choice(["digging a hole in the sand", "splashing in the shallows", "chasing a crab",
+                                      "barking at the waves", "rolling in the sand"] if state["place"] == "beach" else
+                                     ["trotting along behind Jarvis", "sniffing everything", "wagging his tail",
+                                      "rolling in the grass", "watching Jarvis work"])
+    if not pup["napping"] and not state["asleep"]:
+        if pup["needs"]["hunger"] >= P["neglect_from"] and random.random() < 0.25:
+            log("noticed", f"{name[:1].upper() + name[1:]} is whining at his empty food bowl.")
+        elif random.random() < 0.04:
+            log("noticed", random.choice(P["events"]).replace("{pup}", name[:1].upper() + name[1:]))
+
+
+def train_pup(state, world, trick, log):
+    """One training session. Works best when he's fed, rested and bonded. Returns (note, mood_bonus)."""
+    pup, T = state["pup"], world["puppy"]["tricks"]
+    todo = [t for t in T if not t.startswith("_") and t not in pup["learned"]]
+    if not todo:
+        return "he knows every trick already", 0.0
+    trick = trick if trick in todo else todo[0]
+    n, name = pup["needs"], pup_name(state)
+    chance = 0.45 + perk_sum(state, "train_chance") + 0.35 * pup["bond"] - 0.5 * max(0, n["hunger"] - 0.6) - 0.5 * max(0, n["tired"] - 0.6)
+    if random.random() >= chance:
+        return f"{T[trick]['name']}: {name} wasn't having it", -0.01
+    pup["tricks"][trick] = pup["tricks"].get(trick, 0) + 1
+    pup["bond"] = round(min(1.0, pup["bond"] + 0.02), 3)
+    done, need = pup["tricks"][trick], T[trick]["sessions"]
+    if done >= need:
+        pup["learned"].append(trick)
+        log("learned", f"{name[:1].upper() + name[1:]} learned to {T[trick]['name']}!")
+        return f"{T[trick]['name']}: learned it!", 0.15
+    return f"{T[trick]['name']}: {done}/{need}", 0.02
+
+
+# ---------------------------------------------------------------- the town (no AI)
+
+def blueprints(world, town):
+    """Everything he could build: the ones in world.json plus the ones he designed himself."""
+    base = {k: v for k, v in world["blueprints"].items() if not k.startswith("_")}
+    return base | town["custom_blueprints"]
+
+
+def built_count(town, bp_id):
+    return sum(1 for lot in town["lots"] if lot.get("bp") == bp_id)
+
+
+def unbuilt_designs(town):
+    return sum(1 for k in town["custom_blueprints"] if not built_count(town, k))
+
+
+def free_lot(town):
+    used = {lot["lot"] for lot in town["lots"]}
+    if town["site"]:
+        used.add(town["site"]["lot"])
+    return next((i for i in range(town["max_lots"]) if i not in used), None)
+
+
+def can_start(bp_id, bp, state, town):
+    """Can he start this build right now? Returns (ok, reason_if_not)."""
+    if town["site"]:
+        return False, f"already building the {town['site']['name']}"
+    if not bp.get("repeat") and built_count(town, bp_id):
+        return False, f"the {bp['name']} is already built"
+    if not bp.get("expand") and free_lot(town) is None:
+        return False, "no free lots left (build a new baseplate)"
+    if state["bricks"] < bp["bricks"]:
+        return False, f"needs {bp['bricks']} bricks, has {state['bricks']}"
+    if state["coins"] < bp.get("coins", 0):
+        return False, f"needs {bp['coins']} coins, has {state['coins']}"
+    return True, None
+
+
+def nearest_place(town, lot):
+    spots = [l for l in town["lots"] if l.get("place")]
+    return min(spots, key=lambda l: abs(l["lot"] - lot))["place"] if spots else "home"
+
+
+def decor_bonus(world, town):
+    m = world["mood"]
+    n = sum(1 for l in town["lots"] if l.get("decor"))
+    return min(m.get("decor_bonus_max", 0.0), m.get("decor_bonus", 0.0) * n)
+
+
+def merged_world(world, town, state, today):
+    """The world as it is RIGHT NOW: the rules + whatever he has built + the builds he can afford."""
+    W = dict(world)
+    W["places"] = {l["place"]: l["desc"] for l in sorted(town["lots"], key=lambda l: l["lot"]) if l.get("place")}
+    W["places"] |= {k: v for k, v in world.get("fixed_places", {}).items() if not k.startswith("_")}
+    site = town["site"]
+    if site:
+        W["places"]["building_site"] = (f"the building site, where the {site['name']} is going up "
+                                        f"({site['done']}/{site['work']} done)")
+    moves = {m: d for m, d in world["moves"].items()
+             if not m.startswith("_") and d.get("requires", "") in ("", *state["owned"])} | town["custom_moves"]
+    hr = state.get("hour", 12)
+    moves = {m: d for m, d in moves.items() if "hours" not in d or d["hours"][0] <= hr < d["hours"][1]}
+    if not sum(state["stock"].values()):
+        moves.pop("run_the_stall", None)          # nothing to sell
+    pup = state.get("pup")
+    if pup:
+        if pup["napping"]:
+            moves = {m: d for m, d in moves.items() if not d.get("pup_awake")}
+        if pup["food"] <= 0:
+            moves.pop("feed_the_puppy", None)
+        if len(pup["learned"]) >= len([t for t in world["puppy"]["tricks"] if not t.startswith("_")]):
+            moves.pop("train_the_puppy", None)
+    else:
+        moves = {m: d for m, d in moves.items() if not (d.get("pup") or d.get("food") or d.get("train"))}
+    if sum(state["stock"].values()) < world["selling"]["max_stock"]:
+        for pid, pr in world["products"].items():
+            if not pid.startswith("_") and state["bricks"] >= pr["bricks"] and state["coins"] >= pr["coins"]:
+                moves[f"make_{pid}"] = {"label": f"making a {pr['name']}", "at": pr["at"], "needs": pr.get("needs", {}),
+                                        "mood": pr.get("mood", 0.0), "bricks": -pr["bricks"], "coins": -pr["coins"], "make": pid}
+    for cid, c in world["catalogue"].items():
+        if not cid.startswith("_") and cid not in state["owned"] and state["coins"] >= c["coins"]:
+            moves[f"order_{cid}"] = {"label": f"ordering a {c['name'].lower()} from the catalogue", "at": ["home"],
+                                     "needs": {"curiosity": -0.05}, "mood": 0.10, "coins": -c["coins"], "buy": cid}
+    luck = state["lucky"]
+    if luck["date"] == today and luck["used"] >= world["lucky_block"]["per_day"]:
+        moves.pop("hit_the_lucky_block", None)
+    if state.get("designed_on") == today or unbuilt_designs(town) >= world["design_rules"]["max_unbuilt"]:
+        moves.pop("design_a_building", None)
+    for bp_id, bp in blueprints(world, town).items():
+        if can_start(bp_id, bp, state, town)[0]:
+            moves[f"start_build_{bp_id}"] = {"label": f"starting a new build: {bp['name']}", "at": ["any"],
+                                             "needs": {"curiosity": -0.10}, "mood": 0.05, "build": bp_id}
+    W["moves"] = moves
+    return W
+
+
+def start_site(state, world, town, bp_id, today):
+    """Pay for a build and put up the building site."""
+    bp = blueprints(world, town)[bp_id]
+    state["bricks"] -= bp["bricks"]
+    state["coins"] -= bp.get("coins", 0)
+    lot = town["max_lots"] if bp.get("expand") else free_lot(town)
+    town["site"] = {"bp": bp_id, "name": bp["name"], "lot": lot, "work": bp["work"], "done": 0,
+                    "started": today, "look": bp.get("look", {})}
+    return f"paid {bp['bricks']} bricks" + (f" + {bp['coins']} coins" if bp.get("coins") else "")
+
+
+def work_site(state, world, town, today, log):
+    """One tick of work on the site. Returns (note, mood_bonus). Finishes the build when it's done."""
+    site = town["site"]
+    site["done"] += 1
+    if random.random() < perk_sum(state, "site_speed"):        # the bricklaying book pays off
+        site["done"] = min(site["work"], site["done"] + 1)
+    if site["done"] < site["work"]:
+        return f"{site['name']} {site['done']}/{site['work']}", 0.0
+    bp = blueprints(world, town)[site["bp"]]
+    if bp.get("expand"):
+        town["max_lots"] += bp["expand"]
+        text = f"laid a new baseplate: the street is {town['max_lots']} lots long now"
+    else:
+        n = built_count(town, site["bp"])
+        town["lots"].append({
+            "lot": site["lot"], "id": site["bp"] if n == 0 else f"{site['bp']}_{n + 1}", "bp": site["bp"],
+            "name": bp["name"], "place": bp.get("place"), "desc": bp.get("desc") or bp["name"],
+            "look": bp.get("look", {}), "decor": bool(bp.get("decor")), "built": today})
+        text = f"finished building the {bp['name']}"
+    town["history"].append({"date": today, "text": text[0].upper() + text[1:] + "."})
+    town["site"] = None
+    state["place"] = bp.get("place") or nearest_place(town, site["lot"])  # he's standing by it now
+    log("built", text + "!")
+    return "finished!", world["mood"].get("build_done_bonus", 0.2)
+
+
+def design_building(state, world, town, design, today, log):
+    """His own idea becomes a blueprint (and a new move once it's built). Returns an error or None."""
+    if not isinstance(design, dict):
+        return 'no design given (add a "design" to the move)'
+    name = clean_text(design.get("name"), 24)
+    activity = clean_text(design.get("activity"), 40)
+    if not name or not activity:
+        return "the design needs a name and an activity"
+    what = clean_text(design.get("what"), 80) or name
+    helps = design.get("helps") if design.get("helps") in NEEDS else "curiosity"
+    taken = set(blueprints(world, town)) | {l["place"] for l in town["lots"] if l.get("place")} | {"building_site", "any"}
+    base = slugify(name)
+    slug, i = base, 2
+    while slug in taken:
+        slug, i = f"{base}_{i}", i + 1
+    rules = world["design_rules"]
+    emoji = clean_emoji(design.get("emoji"))
+    color = str(design.get("color", ""))
+    color = color if re.fullmatch(r"#[0-9a-fA-F]{6}", color) else "#8e44ad"
+    effect = rules["effect"] / 2 if helps == "rest" else rules["effect"]
+    town["custom_blueprints"][slug] = {
+        "name": name, "bricks": rules["bricks"], "coins": 0, "work": rules["work"], "place": slug, "desc": what,
+        "look": {"kind": "shop", "color": color, "emoji": emoji, "floors": 1 + len(name) % 2},
+        "custom": True, "designed": today, "helps": helps, "activity": activity}
+    town["custom_moves"][f"use_{slug}"] = {"label": activity[0].lower() + activity[1:], "at": [slug],
+                                           "needs": {helps: -effect}, "mood": rules["mood"]}
+    town["history"].append({"date": today, "text": f"Designed his own building: {emoji} {name} ({what})."})
+    state["designed_on"] = today
+    log("designed", f"designed a new building: {emoji} {name}, {what}")
+    return None
+
+
+def read_book(state, want, log):
+    """Next chapter of a book. Home shelf = home books; the library has them all. Returns (ok, note)."""
+    B, place = library()["books"], state["place"]
+    here = [b for b, v in B.items() if (place == "library" or v["where"] == "home") and b not in state["finished"]]
+    if not here:
+        return False, "nothing left to read here" + (" (the library has more)" if place == "home" else "")
+    bid = want if want in here else here[0]
+    book, done = B[bid], state["books"].get(bid, 0)
+    ch = book["chapters"][done]
+    state["books"][bid] = done + 1
+    state["pending_read"] = {"source": book["title"], "part": ch["title"], "text": ch["text"]}
+    if done + 1 >= len(book["chapters"]):
+        state["finished"].append(bid)
+        perk = book.get("perk")
+        log("learned", f"finished reading '{book['title']}'" + (f": {perk['text']}" if perk else ""))
+        return True, f"{book['title']}, last chapter"
+    return True, f"{book['title']}, chapter {done + 1}/{len(book['chapters'])}"
+
+
+def look_up(state, topic):
+    """His old laptop: an OFFLINE encyclopedia (a saved copy of some Wikipedia pages). No internet."""
+    E = library()["encyclopedia"]
+    t = str(topic or "").strip().lower()
+    hit = next((k for k in E if k.lower() == t), None) or next((k for k in E if t and t in k.lower()), None)
+    note = ""
+    if not hit:
+        fresh = [k for k in E if k not in state["looked_up"]] or list(E)
+        hit = random.choice(fresh)
+        note = f"no page on '{clean_text(topic, 30)}', read about {hit} instead" if t else ""
+    state["looked_up"] = (state["looked_up"] + [hit])[-40:]
+    state["pending_read"] = {"source": f"his laptop: {hit}", "part": "", "text": E[hit]["text"]}
+    return note or hit
+
+
+def write_note(state, sheet, use_mock, log, now):
+    """After reading, one line for his notebook in his own words (AI), or the first sentence (no AI)."""
+    r = state.pop("pending_read", None)
+    if not r:
+        return
+    note = None
+    if not use_mock:
+        try:
+            system = (f"You are {sheet['name']}. {sheet['what']} Voice: {sheet['voice']}\n"
+                      "You just read the text below. Write ONE note for your notebook: what you learned or found interesting, "
+                      'first person, in your voice, max 25 words, no em dashes. Reply with ONLY: {"note":"..."}')
+            user = f"SOURCE: {r['source']}" + (f" ({r['part']})" if r["part"] else "") + f"\n\n{r['text']}"
+            text, usage = call_model(system, user, max_tokens=800)
+            add_usage(state, usage)
+            start, end = text.index("{"), text.rindex("}") + 1
+            note = clean_text(json.loads(text[start:end]).get("note"), 200)
+        except Exception as e:
+            print(f"[notes] {e}")
+    if not note:
+        note = clean_text(re.split(r"(?<=[.!?])\s", r["text"].strip(), maxsplit=1)[0], 160)
+    src = r["source"] + (f" ({r['part']})" if r["part"] else "")
+    state["notebook"].append({"date": now.astimezone(TZ).date().isoformat(), "source": src, "note": note})
+    del state["notebook"][:-NOTEBOOK_KEEP]
+    log("note", f"noted ({src}): {note}")
+
+
+def beach_move(state, world, d, today, log):
+    """Beach specials. Returns (ok, note, mood_bonus)."""
+    b, rules = state["beach"], world["beach"]
+    if d.get("tan"):
+        if state["tick"] < b["burnt_until"]:
+            return False, "still sunburnt, staying in the shade", 0.0
+        b["sun_today"] += 1
+        b["tan"] = round(min(1.0, b["tan"] + 0.08 * (1 - b["tan"])), 3)
+        if b["sun_today"] > rules["sunburn_after"] and "beach_kit" not in state["owned"]:
+            b["burnt_until"] = state["tick"] + rules["sunburn_ticks"]
+            state["needs"]["rest"] = round(clamp(state["needs"]["rest"] + 0.10, 0, 1), 3)
+            log("noticed", "Ouch. Jarvis stayed in the sun too long and got sunburnt.")
+            return True, "ouch, sunburnt! (should've had sunscreen)", -0.15
+        return True, f"tan {b['tan']:.0%}", 0.0
+    if d.get("surf"):
+        if b["waves"] == "flat":
+            return False, "it's flat today, no waves", 0.0
+        b["surf_sessions"] += 1
+        b["surf_skill"] = round(min(1.0, b["surf_skill"] + 0.06 * (1 - b["surf_skill"])), 3)
+        if random.random() < 0.6 - 0.5 * b["surf_skill"]:
+            return True, f"wiped out! (skill {b['surf_skill']:.0%})", -0.02
+        return True, f"caught a {'cracking' if b['waves'] == 'good' else 'little'} wave (skill {b['surf_skill']:.0%})", 0.06 if b["waves"] == "good" else 0.02
+    if d.get("castle"):
+        c = next((c for c in b["castles"] if c["date"] == today and c["size"] < rules["castle_max"]), None)
+        if not c:
+            c = {"date": today, "size": 0}
+            b["castles"].append(c)
+        c["size"] += 1
+        b["best_castle"] = max(b["best_castle"], c["size"])
+        if c["size"] == rules["castle_max"]:
+            log("built", "finished a proper sand castle, towers, moat and a flag!")
+            return True, "castle finished!", 0.10
+        return True, f"sand castle size {c['size']}/{rules['castle_max']}", 0.0
+    if d.get("shells"):
+        n = random.randint(1, 3)
+        b["shells"] += n
+        return True, f"+{n} shells ({b['shells']} in the jar)", 0.0
+    return True, "", 0.0
+
+
+def hit_lucky(state, world):
+    lb = world["lucky_block"]
+    state["lucky"]["used"] += 1
+    prize = random.choices(lb["prizes"], weights=[p["weight"] for p in lb["prizes"]])[0]
+    state["bricks"] += prize.get("bricks", 0)
+    state["coins"] += prize.get("coins", 0)
+    return prize["text"], prize.get("mood", 0.0)
+
+
+def sell_stock(state, world, pricing):
+    """A shift at the market stall. Each item has a chance to sell; his pricing sets price vs speed."""
+    S, P, cat = world["selling"], world["products"], world["catalogue"]
+    pricing = pricing if pricing in S["pricing"] else "fair"
+    rule = S["pricing"][pricing]
+    chance = rule["chance"] + sum(cat[i].get("sell_chance", 0) for i in state["owned"] if i in cat) + perk_sum(state, "sell_chance")
+    units = [pid for pid, n in state["stock"].items() for _ in range(n)]
+    random.shuffle(units)
+    sold, coins = Counter(), 0
+    for pid in units:
+        if sum(sold.values()) >= S["max_sales_per_tick"]:
+            break
+        if random.random() < chance:
+            sold[pid] += 1
+            coins += max(1, round((P[pid]["value"] + perk_sum(state, "product_value", product=pid)) * rule["price"]))
+            state["stock"][pid] -= 1
+    state["stock"] = {k: v for k, v in state["stock"].items() if v > 0}
+    state["coins"] += coins
+    state["sales"]["items"] += sum(sold.values())
+    state["sales"]["coins"] += coins
+    if not sold:
+        return f"{pricing} prices, no buyers this time", -0.02
+    what = ", ".join(f"{n} {P[pid]['name']}" + ("s" if n > 1 else "") for pid, n in sold.items())
+    return f"{pricing} prices, sold {what} for {coins} coins", 0.05
+
+
+# ---------------------------------------------------------------- the world's rules (no AI)
+
+def moves_here(W, place):
+    """Move ids Jarvis can do right where he is, plus walking somewhere else."""
+    here = [m for m, d in W["moves"].items() if "any" in d["at"] or place in d["at"]]
+    walks = [f"walk_to_{p}" for p in W["places"] if p != place]
+    return here, walks
+
+
+def move_label(W, move):
+    if move.startswith("walk_to_"):
+        return "walking home" if move == "walk_to_home" else f"walking to the {nice(move[8:])}"
+    return W["moves"].get(move, {}).get("label", nice(move))
+
+
+def update_needs(state, world):
+    """Needs creep up (or rest drops while asleep). Pure maths."""
+    mode = "asleep" if state["asleep"] else "awake"
+    for n in NEEDS:
+        state["needs"][n] = round(clamp(state["needs"][n] + world["needs"][n][mode], 0, 1), 3)
+    pup = state.get("pup")
+    if pup and not state["asleep"] and not pup["napping"]:      # a puppy is good company
+        cut = world["needs"]["social"]["awake"] * world["puppy"]["company"] * pup["bond"]
+        state["needs"]["social"] = round(clamp(state["needs"]["social"] - cut, 0, 1), 3)
+    state["energy"] = round(1 - state["needs"]["rest"], 2)
+
+
+def update_mood(state, world, bonus=0.0, base_bonus=0.0):
+    """Mood drifts toward a target that drops when needs get pressing (and rises a bit with a pretty town)."""
+    m = world["mood"]
+    pressing = sum(max(0, state["needs"][n] - m["pressing_from"]) for n in NEEDS)
+    target = m["base"] + base_bonus + perk_sum(state, "mood_base") - m["pressing_pull"] * pressing
+    pup = state.get("pup")
+    if pup and max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= world["puppy"]["neglect_from"]:
+        target -= 0.10                                     # he worries about the pup
+    state["mood"] = round(clamp(state["mood"] + (target - state["mood"]) * m["drift"] + bonus, -1, 1), 2)
+    state["energy"] = round(1 - state["needs"]["rest"], 2)  # energy is just "how rested"
+
+
+def apply_move(state, world, town, step, today, log):
+    """Try to do one move. Returns (ok, reason_if_refused, mood_bonus, note). The WORLD can say no."""
+    W = merged_world(world, town, state, today)
+    move = str(step.get("move", ""))
+    here, walks = moves_here(W, state["place"])
+    if move in walks:
+        state["place"] = move[8:]
+        state["needs"]["rest"] = round(clamp(state["needs"]["rest"] + 0.01, 0, 1), 3)
+        return True, None, 0.0, ""
+    if move.startswith("walk_to_"):
+        return False, "already there" if move[8:] == state["place"] else "no such place", 0.0, ""
+    if move not in here:
+        if move.startswith("start_build_"):
+            bp = blueprints(world, town).get(move[12:])
+            reason = can_start(move[12:], bp, state, town)[1] if bp else "no such blueprint"
+            return False, reason or "can't start that", 0.0, ""
+        if move == "hit_the_lucky_block" and state["place"] == "brick_pit":
+            return False, "the ! block is empty till tomorrow", 0.0, ""
+        wd = world["moves"].get(move, {})
+        if state["place"] in wd.get("at", []) and "hours" in wd and not wd["hours"][0] <= state.get("hour", 12) < wd["hours"][1]:
+            return False, f"not now (only {wd['hours'][0]}:00 to {wd['hours'][1]}:00)", 0.0, ""
+        if wd.get("requires") and wd["requires"] not in state["owned"] and state["place"] in wd.get("at", []):
+            return False, f"needs a {wd['requires'].replace('_', ' ')} first (order one at home)", 0.0, ""
+        if wd.get("pup_awake") and state.get("pup") and state["pup"]["napping"]:
+            return False, f"{pup_name(state)} is napping", 0.0, ""
+        if move == "feed_the_puppy" and state.get("pup") and state["pup"]["food"] <= 0:
+            return False, "no dog food left (buy_dog_food at home)", 0.0, ""
+        if move == "run_the_stall" and state["place"] == "market_stall":
+            return False, "nothing left to sell (make something first)", 0.0, ""
+        if move == "design_a_building" and state["place"] == "home":
+            return False, "already designed something today (or too many unbuilt designs)", 0.0, ""
+        where = "at home" if state["place"] == "home" else f"at the {nice(state['place'])}"
+        return False, f"can't do that {where}", 0.0, ""
+
+    d = W["moves"][move]
+    coins, bricks = d.get("coins", 0), d.get("bricks", 0)
+    if state["coins"] + coins < 0:
+        return False, "can't afford it", 0.0, ""
+    if state["bricks"] + bricks < 0:
+        return False, "not enough bricks", 0.0, ""
+    bonus, notes = d.get("mood", 0.0), []
+    if d.get("read"):
+        ok, note = read_book(state, step.get("book"), log)
+        if not ok:
+            return False, note, 0.0, ""
+        notes.append(note)
+    if d.get("lookup"):
+        notes.append(look_up(state, step.get("topic")))
+    if d.get("tan") or d.get("surf") or d.get("castle") or d.get("shells"):
+        ok, note, extra = beach_move(state, world, d, today, log)
+        if not ok:
+            return False, note, 0.0, ""
+        notes.append(note)
+        bonus += extra
+    if d.get("design"):
+        err = design_building(state, world, town, step.get("design"), today, log)
+        if err:
+            return False, err, 0.0, ""
+    if d.get("build"):
+        notes.append(start_site(state, world, town, d["build"], today))
+    if d.get("work"):
+        note, extra = work_site(state, world, town, today, log)
+        notes.append(note)
+        bonus += extra
+    if d.get("luck"):
+        note, extra = hit_lucky(state, world)
+        notes.append(note)
+        bonus += extra
+    if d.get("make"):
+        state["stock"][d["make"]] = state["stock"].get(d["make"], 0) + 1
+        notes.append(f"{sum(state['stock'].values())} in stock")
+    if d.get("buy"):
+        item = world["catalogue"][d["buy"]]
+        state["owned"].append(d["buy"])
+        an = "an" if item["name"][:1].lower() in "aeiou" else "a"
+        town["history"].append({"date": today, "text": f"Bought {an} {item['name'].lower()} ({item['what']})."})
+        log("bought", f"bought {an} {item['name'].lower()}: {item['what']}")
+    if d.get("sell"):
+        note, extra = sell_stock(state, world, step.get("pricing"))
+        notes.append(note)
+        bonus += extra
+    pup = state.get("pup")
+    if pup and (d.get("pup") or d.get("bond") or d.get("food") or d.get("train")):
+        if d.get("train"):
+            note, extra = train_pup(state, world, step.get("trick"), log)
+            notes.append(note)
+            bonus += extra
+        for n, delta in d.get("pup", {}).items():
+            pup["needs"][n] = round(clamp(pup["needs"][n] + delta, 0, 1), 3)
+        pup["bond"] = round(clamp(pup["bond"] + d.get("bond", 0) * (1 + perk_sum(state, "bond_gain")), 0, 1), 3)
+        if move == "feed_the_puppy":
+            pup["last_fed_tick"] = state["tick"]
+        if d.get("pup_awake"):
+            pup["last_played_tick"] = state["tick"]
+        pup["food"] = max(0, pup["food"] + d.get("food", 0))
+        if d.get("food", 0) > 0:
+            notes.append(f"{pup['food']} meals in the cupboard")
+    if pup and not pup["napping"] and "fetch" in pup["learned"] and move == "collect_bricks":
+        bricks += random.randint(1, 2)                 # trick perk: he fetches bricks
+    if pup and not pup["napping"] and "ride" in pup["learned"] and move == "go_for_a_ride":
+        pup["needs"]["bored"] = round(clamp(pup["needs"]["bored"] - 0.3, 0, 1), 3)
+        bonus += 0.05
+        notes.append(f"{pup_name(state)} rode along in the tank bag")
+    coins += int(perk_sum(state, "move_coins", move=move))   # perks from books he finished
+    bonus += perk_sum(state, "move_mood", move=move)
+    for item in state["owned"]:                    # perks from things he bought
+        perk = world["catalogue"].get(item, {}).get("bonus", {}).get(move, {})
+        coins += perk.get("coins", 0)
+        bricks += perk.get("bricks", 0)
+    if d.get("bricks_rand"):
+        n = random.randint(*d["bricks_rand"]) + max(0, bricks)
+        bricks = min(0, bricks)
+        state["bricks"] += n
+        notes.append(f"+{n} bricks")
+    state["coins"] += coins
+    state["bricks"] += bricks
+    if coins > 0:
+        notes.append(f"+{coins} coins")
+    for n, delta in d.get("needs", {}).items():
+        state["needs"][n] = round(clamp(state["needs"][n] + delta, 0, 1), 3)
+    if d.get("sleep"):
+        state["asleep"] = True
+    return True, None, bonus, ", ".join(notes)
+
+
+def autopilot(state, W):
+    """No AI: fix the most pressing need with a simple lookup. Returns a list of moves."""
+    P = W["places"]
+    fixes = {  # need -> (place, move)
+        "rest": (state["place"], "rest"),
+        "hunger": ("home", "cook_dinner") if state["coins"] >= 2 else ("home", "make_toast"),
+        "social": ("cafe", "chat_with_locals"),
+        "tinker": ("building_site", "work_on_site") if "building_site" in P else ("garage", "fix_a_car"),
+        "curiosity": ("library", "read_a_book") if "library" in P else ("home", "read_a_book"
+                      if any(v["where"] == "home" and b not in state.get("finished", []) for b, v in library()["books"].items())
+                      else "use_the_computer"),
+    }
+    need = max(NEEDS, key=lambda n: state["needs"][n])
+    pup = state.get("pup")
+    if pup and pup["needs"]["hunger"] >= 0.75 and state["needs"][need] < 0.8:
+        todo = ["feed_the_puppy"] if pup["food"] > 0 else ["buy_dog_food", "feed_the_puppy"] if state["coins"] >= 3 else []
+        if todo:
+            return (["walk_to_home"] if state["place"] != "home" else []) + todo
+    if pup and not pup["napping"] and pup["needs"]["bored"] >= 0.75 and state["needs"][need] < 0.8:
+        return [random.choice(["play_with_the_puppy", "walk_the_puppy"])]     # he's in Jarvis's care
+    if state["needs"][need] < 0.4:
+        if pup and not pup["napping"] and pup["needs"]["bored"] >= 0.5:
+            return ["play_with_the_puppy"]
+        return ["wait"]
+    place, move = fixes[need]
+    if place != state["place"]:
+        return [f"walk_to_{place}", move]
+    return [move]
+
+
+# ---------------------------------------------------------------- the AI part
+
+def sheet_text(sheet):
+    return "\n".join([
+        f"Name: {sheet['name']}. {sheet['what']}",
+        f"Core: {sheet['core']}",
+        "Traits: " + "; ".join(sheet["traits"]),
+        "Likes: " + ", ".join(sheet["likes"]) + ". Dislikes: " + ", ".join(sheet["dislikes"]) + ".",
+        "Quirks: " + "; ".join(sheet["quirks"]),
+        f"Goal: {sheet['goal']}",
+        f"Voice: {sheet['voice']}",
+    ])
+
+
+def build_prompt(state, W, world, town, sheet, feed, now):
+    """Everything the AI needs to decide, as plain text. This IS his 'mind assembling context'."""
+    system = f"""You are the mind of a character in a tiny simulated brick town. Each turn you decide what he does next.
+
+WHO HE IS
+{sheet_text(sheet)}
+
+HIS TOWN
+- He started with almost nothing and builds the town up himself, one build at a time.
+- What to build, when, and whether it's worth the coins is entirely his call. Coins are also his Thailand fund.
+- Bricks come from the brick pit (collect_bricks, plus a lucky ! block a few times a day).
+- start_build_X pays for a build and puts up a building site. Then walk_to_building_site and work_on_site until it's done.
+- design_a_building (at home, max once a day) invents a brand-new building of his own. Add a "design" to that move:
+  "design":{{"name":"max 3 words","what":"max 12 words","activity":"what he does there, max 6 words","helps":"rest|hunger|social|tinker|curiosity","emoji":"one emoji","color":"#rrggbb"}}
+
+HIS PUPPY
+- The puppy is IN HIS CARE. He depends on Jarvis completely: food, walks, play, training and company. Code tracks his needs; looking after him is Jarvis's job.
+- A good owner checks on him every few hours, feeds him before bed, and never lets him go hungry or bored for long.
+- feed_the_puppy (at home, uses dog food; buy_dog_food at home = 3 coins for 6 meals), play_with_the_puppy, walk_the_puppy, cuddle_the_puppy.
+- train_the_puppy: add "trick":"<trick id>" to that move. Works best when the puppy is fed, rested and bonded. Some tricks help (fetch brings bricks).
+- If the puppy has no name yet, add "puppy_name":"..." to your reply (his choice, short).
+
+LEARNING (no internet: his books and laptop are offline copies)
+- read_a_book (at home: his own shelf; at the library: every book) reads the next chapter. Add "book":"<book id>" to pick one. Finished books teach him something useful.
+- use_the_computer (at home) looks a topic up in his offline encyclopedia. Add "topic":"<topic>".
+- After reading he writes a note in his notebook. His notebook is his memory of what he learned.
+
+THE BEACH (always open, right round the island; the puppy comes too)
+- sunbathe (he really tans; more than 3 times a day without a beach kit = sunburn), go_for_a_swim, build_a_sand_castle (the tide takes it overnight),
+  collect_shells, play_fetch_on_the_beach, watch_the_sunset (evenings). go_surfing needs a surfboard (catalogue); he gets better with practice; flat days = no surf.
+
+MONEY
+- make_X makes something to sell (costs a few bricks or coins). Once he has built a market stall he can sell his stock there:
+  run_the_stall, and add "pricing":"cheap|fair|pricey" to that move (cheap sells fast, pricey earns more but sells slowly).
+- order_X (at home) buys something from the catalogue. Some tools pay for themselves; every coin spent is a coin less for Thailand.
+
+RULES
+- Pick 1 to 3 moves, in order, ONLY from the move ids you are given.
+- A walk_to_X move takes him to X, so moves after it can be ones listed for X.
+- For each move give "why": his reason, first person, in his voice, max 15 words.
+- Also give "thought" (what's on his mind, max 20 words) and "feeling" (1-3 words).
+- Stay in character. Don't over-explain. No em dashes.
+- Reply with ONLY this JSON and nothing else:
+{{"moves":[{{"move":"<id>","why":"..."}}],"thought":"...","feeling":"..."}}"""
+
+    here, walks = moves_here(W, state["place"])
+    local = now.astimezone(TZ)
+    today = local.date().isoformat()
+    part = "morning" if local.hour < 12 else "afternoon" if local.hour < 17 else "evening" if local.hour < 22 else "late night"
+    needs = ", ".join(f"{n} {state['needs'][n]:.2f}" for n in NEEDS)
+    elsewhere = []
+    for p in W["places"]:
+        if p == state["place"]:
+            continue
+        ms = [m for m, d in W["moves"].items() if p in d["at"]]
+        elsewhere.append(f"  {p}: " + ", ".join(ms))
+    costs = ", ".join(f"{m} {d['coins']:+d}" for m, d in W["moves"].items() if d.get("coins"))
+    recent = [f"- {e['time']} {e['kind']}: {e['text']}" + (f" (why: {e['why']})" if e.get("why") else "")
+              for e in reversed(feed[:8])]
+
+    lots = sorted(town["lots"], key=lambda l: l["lot"])
+    site = town["site"]
+    bps = []
+    for bp_id, bp in blueprints(world, town).items():
+        if not bp.get("repeat") and built_count(town, bp_id):
+            continue
+        cost = f"{bp['bricks']} bricks" + (f" + {bp['coins']} coins" if bp.get("coins") else "") + f", {bp['work']} work"
+        tag = " [can start now]" if can_start(bp_id, bp, state, town)[0] else ""
+        mine = " (his own design)" if bp.get("custom") else ""
+        what = f": {bp['desc']}" if bp.get("place") else ""
+        bps.append(f"  {bp_id} = {bp['name']}{mine} ({cost}){tag}{what}")
+    B, E = library()["books"], library()["encyclopedia"]
+    shelf = lambda where: "; ".join(f"{b} \"{v['title']}\" {state['books'].get(b, 0)}/{len(v['chapters'])}" +
+                                    (f" (teaches: {v['perk']['text']})" if v.get("perk") else "")
+                                    for b, v in B.items() if v["where"] == where and b not in state["finished"])
+    done_books = ", ".join(f"{B[b]['title']}" + (f" ({B[b]['perk']['text']})" if B[b].get("perk") else "") for b in state["finished"] if b in B)
+    notes = "\n".join(f"- [{n['source']}] {n['note']}" for n in state["notebook"][-8:])
+    learn_lines = (f"BOOKS ON HIS SHELF AT HOME: {shelf('home') or 'all read'}\n"
+                   f"BOOKS AT THE LIBRARY{'' if 'library' in W['places'] else ' (not built yet)'}: {shelf('library') or 'all read'}\n"
+                   f"FINISHED BOOKS: {done_books or 'none yet'}\n"
+                   f"HIS LAPTOP (offline encyclopedia, no internet), topics: {', '.join(E)}\n"
+                   f"HIS NOTEBOOK (newest last):\n{notes or '- empty so far'}")
+    bb = state["beach"]
+    today_castle = next((c["size"] for c in bb["castles"] if c["date"] == today), 0)
+    beach_line = (f"BEACH: waves today {bb['waves']}; tan {bb['tan']:.0%}; surf skill {bb['surf_skill']:.0%} ({bb['surf_sessions']} sessions"
+                  f"{', has a board' if 'surfboard' in state['owned'] else ', no board yet'}); sunbathed {bb['sun_today']}x today"
+                  f"{' (SUNBURNT, stay out of the sun)' if state['tick'] < bb['burnt_until'] else ''}; sand castle today size {today_castle} "
+                  f"(best {bb['best_castle']}); shells {bb['shells']}")
+    pup_lines = "PUPPY: none"
+    if state.get("pup"):
+        pp, T = state["pup"], world["puppy"]["tricks"]
+        age = (now - datetime.fromisoformat(pp["born"])).days
+        pn = ", ".join(f"{k} {v:.2f}" for k, v in pp["needs"].items())
+        tricks = ", ".join(f"{t} {pp['tricks'].get(t, 0)}/{d['sessions']}" + (f" ({d['perk']})" if d.get("perk") else "")
+                           for t, d in T.items() if not t.startswith("_") and t not in pp["learned"])
+        hrs = lambda k: f"{(state['tick'] - pp[k]) * TICK_MINUTES / 60:.0f}h ago" if pp.get(k) is not None else "not yet today"
+        flags = [w for w, v in (("HUNGRY", pp["needs"]["hunger"] >= 0.6), ("BORED", pp["needs"]["bored"] >= 0.6), ("worn out", pp["needs"]["tired"] >= 0.8)) if v]
+        pup_lines = (f"IN HIS CARE: {'NEEDS HIM NOW: ' + ', '.join(flags) + '. ' if flags else ''}Last fed {hrs('last_fed_tick')}, last played/walked {hrs('last_played_tick')}.\n"
+                     f"PUPPY: {pp['name'] or 'NO NAME YET'}, {age} days old, {'napping' if pp['napping'] else 'awake'}, {pp['doing']}. "
+                     f"Needs (0 fine .. 1 urgent): {pn}. Bond {pp['bond']:.2f}. Dog food left: {pp['food']} meals.\n"
+                     f"TRICKS TO TRAIN: {tricks or 'none left'}. LEARNED: {', '.join(pp['learned']) or 'nothing yet'}")
+    P, cat = world["products"], world["catalogue"]
+    stock = ", ".join(f"{n} {P[pid]['name']}" for pid, n in state["stock"].items())
+    owned = ", ".join(f"{cat[i]['name']} ({cat[i]['what']})" for i in state["owned"] if i in cat)
+    makeable = "; ".join(f"make_{pid} at {'/'.join(p['at'])} ({p['bricks']} bricks, {p['coins']} coins) ~{p['value']} coins"
+                         for pid, p in P.items() if not pid.startswith("_"))
+    catalogue = "; ".join(f"{cid} {c['coins']} coins: {c['what']}" for cid, c in cat.items()
+                          if not cid.startswith("_") and cid not in state["owned"])
+    lucky_left = world["lucky_block"]["per_day"] - (state["lucky"]["used"] if state["lucky"]["date"] == today else 0)
+
+    user = f"""TIME: {local.strftime('%a %d %b')}, {clock(now)} ({part})
+PLACE: {state['place']} ({W['places'].get(state['place'], '')})
+COINS: {state['coins']} (goal {state['coins_goal']}). Coin changes: {costs}
+BRICKS: {state['bricks']}. Lucky block hits left today: {max(0, lucky_left)}
+MOOD: {state['mood']:+.2f} (-1 awful .. 1 great). ENERGY: {state['energy']:.2f}
+NEEDS (0 fine .. 1 urgent): {needs}
+LAST THOUGHT: {state['thought']}
+TODAY'S PLAN (from last night's diary): {state.get('plan_today') or 'none yet'}
+
+{pup_lines}
+{learn_lines}
+{beach_line}
+STOCK TO SELL: {stock or 'nothing'} (max {world['selling']['max_stock']}). SOLD SO FAR: {state['sales']['items']} items for {state['sales']['coins']} coins
+OWNS: {owned or 'nothing yet'}
+CAN MAKE (where, cost, fair price): {makeable}
+CATALOGUE (order_X at home): {catalogue}
+
+TOWN ({len(lots)}/{town['max_lots']} lots used): {', '.join(l['name'] for l in lots)}
+BUILDING NOW: {f"{site['name']}, {site['done']}/{site['work']} work done" if site else 'nothing'}
+BLUEPRINTS:
+{chr(10).join(bps) if bps else '  none'}
+
+RECENT (oldest first):
+{chr(10).join(recent) if recent else '- nothing yet'}
+
+MOVES HERE: {', '.join(here)}
+WALK: {', '.join(walks)}
+MOVES ELSEWHERE (walk there first):
+{chr(10).join(elsewhere)}
+
+What does he do next?"""
+    return system, user
+
+
+def call_model(system, user, max_tokens=1500):
+    """One request to the Claude API. Plain HTTP, no SDK, so you can see exactly what's sent."""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        raise RuntimeError("no ANTHROPIC_API_KEY set")
+    body = json.dumps({
+        "model": MODEL,
+        "max_tokens": max_tokens,                 # room for Haiku's (hidden) thinking + the JSON reply
+        "output_config": {"effort": "low"},       # Haiku 5.5 thinks by default; low = quick and cheap
+        "system": system,
+        "messages": [{"role": "user", "content": user}],
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages", data=body, method="POST",
+        headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"API error {e.code}: {e.read()[:300]!r}") from None
+    if data.get("stop_reason") not in ("end_turn", None):
+        print(f"[mind] stop_reason: {data.get('stop_reason')}")
+    text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    return text, data.get("usage", {})
+
+
+MOCK_PUP_NAMES = ["Bolt", "Sprocket", "Diesel", "Piston", "Biscuit"]   # fake AI only: the real AI picks his own name
+MOCK_WHYS = ["Needs doing.", "Feels right.", "Why not, hey.", "Lekker, let's go.", "Been on my mind.",
+             "Town won't build itself.", "Bricks don't grow on trees. Yet."]
+MOCK_DESIGNS = [
+    {"name": "Sunset Pier", "what": "a little wooden pier over a blue plastic pond", "activity": "Watching the sunset",
+     "helps": "rest", "emoji": "🌅", "color": "#3a7bd5"},
+    {"name": "Chopper Shop", "what": "a tiny custom bike shop with chrome everywhere", "activity": "Polishing chrome",
+     "helps": "tinker", "emoji": "🏍️", "color": "#34495e"},
+    {"name": "Braai Spot", "what": "a brick braai with two camping chairs", "activity": "Having a braai",
+     "helps": "social", "emoji": "🔥", "color": "#a04000"},
+    {"name": "Little Temple", "what": "a small golden temple, a taste of Thailand", "activity": "Sitting quietly",
+     "helps": "curiosity", "emoji": "🛕", "color": "#d4ac0d"},
+]
+
+
+def mock_plan(state, W, world, town):
+    """What the fake AI wants to do: needs first, then building, bricks and the odd bit of work."""
+    worst = max(NEEDS, key=lambda n: state["needs"][n])
+    if state["needs"][worst] >= 0.65:
+        return autopilot(state, W), None
+
+    def go(place, moves):
+        return ([] if state["place"] == place else [f"walk_to_{place}"]) + moves
+
+    roll = random.random()
+    pup = state.get("pup")
+    if pup and pup["needs"]["hunger"] >= 0.6:
+        if pup["food"] > 0:
+            return go("home", ["feed_the_puppy"]), None
+        if state["coins"] >= 3:
+            return go("home", ["buy_dog_food", "feed_the_puppy"]), None
+    if pup and not pup["napping"]:
+        if pup["needs"]["bored"] >= 0.6 and roll < 0.7:
+            return [random.choice(["play_with_the_puppy", "walk_the_puppy", "cuddle_the_puppy"])], None
+        if "train_the_puppy" in W["moves"] and roll < 0.12:
+            return ["train_the_puppy", "train_the_puppy"], None
+    beachy = [m for m in ("build_a_sand_castle", "sunbathe", "go_for_a_swim", "collect_shells", "play_fetch_on_the_beach",
+                          "go_surfing", "watch_the_sunset") if m in W["moves"]]
+    if beachy and random.random() < 0.10:
+        return go("beach", random.sample(beachy, min(2, len(beachy)))), None
+    if state["needs"]["curiosity"] >= 0.5 and roll < 0.45:
+        if "library" in W["places"] and roll < 0.2:
+            return go("library", ["read_a_book"]), None
+        return go("home", [random.choice(["read_a_book", "use_the_computer"])]), None
+    bp = blueprints(world, town)
+    starts = [m for m in W["moves"] if m.startswith("start_build_")]
+    big = [m for m in starts if not bp[m[12:]].get("decor") and not bp[m[12:]].get("expand")]
+    small = [m for m in starts if bp[m[12:]].get("decor")]
+    grow = [m for m in starts if bp[m[12:]].get("expand") and free_lot(town) is None]
+    builds = big or (small if random.random() < 0.2 else []) or grow   # saves up for real buildings
+    names = {b["name"] for b in town["custom_blueprints"].values()}
+    designs = [d for d in MOCK_DESIGNS if d["name"] not in names]
+    makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]]
+    orders = [m for m in W["moves"] if m.startswith("order_")]
+    if "run_the_stall" in W["moves"] and "market_stall" in W["places"] and roll < 0.25:
+        return go("market_stall", ["run_the_stall", "run_the_stall"]), None
+    if orders and state["coins"] > 70 and roll < 0.30:
+        return go("home", [random.choice(orders)]), None
+    if makes and "market_stall" in W["places"] and roll < 0.40:
+        m = random.choice(makes)
+        return go(W["moves"][m]["at"][0], [m, m]), None
+    if roll < 0.15:
+        return go("garage", ["fix_a_car", "fix_a_car"]), None
+    if "building_site" in W["places"] and roll < 0.60:
+        return go("building_site", ["work_on_site", "work_on_site"]), None
+    if builds and roll < 0.50:
+        return [random.choice(builds)], None
+    if "design_a_building" in W["moves"] and state["place"] == "home" and designs and roll < 0.60:
+        return ["design_a_building"], random.choice(designs)
+    if roll < 0.75:
+        extra = "hit_the_lucky_block" if "hit_the_lucky_block" in W["moves"] else "collect_bricks"
+        return go("brick_pit", ["collect_bricks", extra]), None
+    return autopilot(state, W), None
+
+
+def mock_model(state, W, world, town, system, user):
+    """A FAKE AI for free testing. Mostly sensible, sometimes deliberately wrong, to test the safety nets."""
+    roll = random.random()
+    if roll < 0.04:
+        return "Eish, lost my train of thought", {"input_tokens": len(system + user) // 4, "output_tokens": 8}
+    plan, design = mock_plan(state, W, world, town)
+    if roll < 0.10:
+        plan = plan + ["fix_a_car"]  # often not allowed where he'll be: tests the world saying no
+    moves = [{"move": m, "why": random.choice(MOCK_WHYS)} for m in plan[:3]]
+    for m in moves:
+        if m["move"] == "design_a_building" and design:
+            m["design"] = design
+        if m["move"] == "run_the_stall":
+            m["pricing"] = random.choice(["cheap", "fair", "fair", "pricey"])
+        if m["move"] == "use_the_computer":
+            m["topic"] = random.choice(list(library()["encyclopedia"]) or ["Thailand"])
+        if m["move"] == "train_the_puppy" and state.get("pup"):
+            todo = [t for t in world["puppy"]["tricks"] if not t.startswith("_") and t not in state["pup"]["learned"]]
+            m["trick"] = todo[0] if todo else "sit"
+    reply = {
+        "moves": moves,
+        "thought": random.choice(["That carb won't fix itself.", "Thailand jar's looking better.",
+                                  "Could murder a coffee.", "Who names a bolt? Me.",
+                                  "This street needs a few more trees.", "One brick at a time, hey."]),
+        "feeling": random.choice(["content", "a bit restless", "chuffed", "tired but fine"]),
+    }
+    if state.get("pup") and not state["pup"]["name"]:
+        reply["puppy_name"] = random.choice(MOCK_PUP_NAMES)
+    text = json.dumps(reply, ensure_ascii=False)
+    return text, {"input_tokens": len(system + user) // 4, "output_tokens": len(text) // 4}
+
+
+def parse_decision(text):
+    """Pull the JSON out of the AI's reply. Returns None if it's unusable."""
+    try:
+        start, end = text.index("{"), text.rindex("}") + 1
+        d = json.loads(text[start:end])
+    except (ValueError, json.JSONDecodeError):
+        return None
+    if not isinstance(d, dict):
+        return None
+    moves = []
+    for m in d.get("moves", []) if isinstance(d.get("moves"), list) else []:
+        if isinstance(m, dict) and isinstance(m.get("move"), str):
+            step = {"move": m["move"], "why": clean_text(m.get("why"), 120) or None}
+            if isinstance(m.get("design"), dict):
+                step["design"] = m["design"]
+            if m.get("pricing") in ("cheap", "fair", "pricey"):
+                step["pricing"] = m["pricing"]
+            if isinstance(m.get("trick"), str):
+                step["trick"] = m["trick"][:20]
+            for k in ("book", "topic"):
+                if isinstance(m.get(k), str):
+                    step[k] = m[k][:60]
+            moves.append(step)
+    if not moves:
+        return None
+    return {"moves": moves[:3], "thought": clean_text(d.get("thought"), 200), "feeling": clean_text(d.get("feeling"), 40),
+            "puppy_name": clean_text(d.get("puppy_name"), 16)}
+
+
+def count_bricks(state, delta):
+    """Today's brick tally for the diary: collected vs used."""
+    ds = state["day_start"]
+    ds["got"] = ds.get("got", 0) + max(0, delta)
+    ds["used"] = ds.get("used", 0) + max(0, -delta)
+
+
+def add_usage(state, usage):
+    for k_api, k_us, price in (("input_tokens", "tokens_in", PRICE_IN), ("output_tokens", "tokens_out", PRICE_OUT)):
+        n = usage.get(k_api, 0) or 0
+        for bucket in ("all", "today"):
+            state["stats"][bucket][k_us] += n
+            state["stats"][bucket]["cost_usd"] = round(state["stats"][bucket]["cost_usd"] + n * price, 6)
+
+
+# ---------------------------------------------------------------- the diary
+
+def day_facts(state, town, day):
+    log = state["today_log"]
+    skip = ("hanging about", "having a rest", "going to sleep", "waking up")
+    acts = Counter(re.sub(r" \(.*\)$", "", e["x"]) for e in log if e["k"] == "did")
+    acts = Counter({a: n for a, n in acts.items() if not a.startswith("walking") and a not in skip})
+    return {
+        "day": day.strftime("%A %d %B"),
+        "coins_start": state["day_start"]["coins"], "coins_end": state["coins"],
+        "bricks_start": state["day_start"]["bricks"], "bricks_end": state["bricks"],
+        "bricks_got": state["day_start"].get("got", 0), "bricks_used": state["day_start"].get("used", 0),
+        "built": [e["x"] for e in log if e["k"] == "built"],
+        "designed": [e["x"] for e in log if e["k"] == "designed"],
+        "noticed": [e["x"] for e in log if e["k"] == "noticed"],
+        "bought": [e["x"] for e in log if e["k"] == "bought"],
+        "pup_learned": [e["x"] for e in log if e["k"] == "learned" and "reading" not in e["x"] and "named" not in e["x"]],
+        "read_notes": [e["x"] for e in log if e["k"] == "note"],
+        "beach": [e["x"] for e in log if e["k"] == "did" and any(w in e["x"] for w in ("surf", "tan", "sand castle", "swim", "shells", "sunset", "on the beach"))],
+        "books_done": [e["x"] for e in log if e["k"] == "learned" and e["x"].startswith("finished reading")],
+        "pup_fed": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("feeding")),
+        "pup_trained": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("training")),
+        "pup_name": pup_name(state), "pup_bond": (state.get("pup") or {}).get("bond", 0),
+        "sold_coins": sum(int(n) for e in log if e["k"] == "did" for n in re.findall(r"for (\d+) coins", e["x"])),
+        "top": [a for a, _ in acts.most_common(3)],
+        "site": town["site"],
+        "town": [l["name"] for l in sorted(town["lots"], key=lambda l: l["lot"])],
+        "log": log,
+    }
+
+
+def diary_prompt(sheet, f):
+    system = f"""You are {sheet['name']}, writing in your diary at bedtime.
+
+WHO YOU ARE
+{sheet_text(sheet)}
+
+RULES
+- Write tonight's entry about today: first person, in your voice, 60 to 120 words.
+- Use real things from today's log: what you fixed, built, saw, thought. Pick what mattered; don't list everything.
+- "title": max 6 words. "tomorrow": what you want to do tomorrow, max 15 words.
+- No em dashes.
+- Reply with ONLY this JSON and nothing else:
+{{"title":"...","entry":"...","tomorrow":"..."}}"""
+    lines = [f"- {e['t']} {e['k']}: {e['x']}" + (f" (why: {e['why']})" if e.get("why") else "") for e in f["log"]]
+    if len(lines) > 80:
+        lines = lines[:20] + ["- ..."] + lines[-59:]
+    site = f["site"]
+    user = f"""TODAY: {f['day']}
+COINS: {f['coins_start']} -> {f['coins_end']} (Thailand goal 500)
+BRICKS: {f['bricks_start']} -> {f['bricks_end']} (collected {f['bricks_got']}, used {f['bricks_used']})
+TOWN NOW: {', '.join(f['town'])}
+BUILDING: {f"{site['name']}, {site['done']}/{site['work']} done" if site else 'nothing right now'}
+PUPPY (in his care): {f['pup_name']}, bond {f['pup_bond']:.2f}, fed {f['pup_fed']} times today. Learned today: {', '.join(f['pup_learned']) or 'nothing new'}
+
+TODAY'S LOG (oldest first):
+{chr(10).join(lines) if lines else '- a quiet day'}
+
+Write tonight's diary entry."""
+    return system, user
+
+
+def parse_diary(text):
+    try:
+        start, end = text.index("{"), text.rindex("}") + 1
+        d = json.loads(text[start:end])
+    except (ValueError, json.JSONDecodeError):
+        return None
+    if not isinstance(d, dict):
+        return None
+    entry = clean_text(d.get("entry"), 1200)
+    if not entry:
+        return None
+    return {"title": clean_text(d.get("title"), 60) or "Today", "entry": entry,
+            "tomorrow": clean_text(d.get("tomorrow"), 160)}
+
+
+def template_diary(f):
+    """The no-AI diary: built from today's numbers, so a day is never missed."""
+    cap = lambda s: s[:1].upper() + s[1:]
+    bits = []
+    if f["top"]:
+        tops = f["top"]
+        bits.append("Spent most of today " + (", ".join(tops[:-1]) + " and " + tops[-1] if len(tops) > 1 else tops[0]) + ".")
+    if f["built"]:
+        bits.append(cap(f["built"][-1]) + " Stood back and had a proper look at it. Lekker.")
+    elif f["site"]:
+        bits.append(f"The {f['site']['name']} is {f['site']['done']}/{f['site']['work']} done. Getting there.")
+    if f["designed"]:
+        bits.append("Drew up plans for something new: " + f["designed"][-1].split(": ", 1)[-1] + ".")
+    if f["pup_learned"]:
+        bits.append(f["pup_learned"][-1] + " Proud of the little guy.")
+    elif f["pup_trained"]:
+        bits.append(f"Worked on tricks with {f['pup_name']} a few times.")
+    if f["books_done"]:
+        bits.append(cap(f["books_done"][-1]) + ". Lekker.")
+    elif f["read_notes"]:
+        bits.append("Read a bit. " + f["read_notes"][-1].split("): ", 1)[-1])
+    if f["beach"]:
+        bits.append("Beach time: " + f["beach"][-1] + ".")
+    if f["pup_fed"] == 0:
+        bits.append(f"Eish, didn't feed {f['pup_name']} properly today. Must do better.")
+    if f["sold_coins"]:
+        bits.append(f"Stall made {f['sold_coins']} coins today.")
+    if f["bought"]:
+        bits.append(cap(f["bought"][-1]) + ".")
+    c = f["coins_end"] - f["coins_start"]
+    bits.append(f"Made {c} coins." if c > 0 else f"Spent {-c} coins. Eish." if c < 0 else "Coins didn't move.")
+    got, used = f["bricks_got"], f["bricks_used"]
+    if got or used:
+        bits.append((f"Collected {got} brick{'s' * (got != 1)}" if got else "No new bricks")
+                    + (f", used {used} on building." if used else "."))
+    if f["noticed"]:
+        bits.append("Also: " + f["noticed"][0][:1].lower() + f["noticed"][0][1:])
+    bits.append(f"Jar's at {f['coins_end']} of 500. " + random.choice(["Bed.", "Not bad, hey.", "Tomorrow again.", "Tired but fine."]))
+    title = cap(f["built"][-1].split(":")[0].rstrip("!")) if f["built"] else (cap(f["top"][0]) if f["top"] else "A quiet one")
+    tomorrow = f"Keep going on the {f['site']['name']}." if f["site"] else "Collect bricks and start something new."
+    return {"title": title[:60], "entry": " ".join(bits), "tomorrow": tomorrow}
+
+
+def write_diary(state, town, sheet, diary, local, use_mock):
+    """Tonight's diary entry. Real AI if it's set up, otherwise the template. Once per day."""
+    day = (local - timedelta(hours=6)).date()          # just after midnight still counts as "today"
+    if diary and diary[0]["date"] == day.isoformat():
+        return None
+    f = day_facts(state, town, day)
+    entry, by = None, "template"
+    if not use_mock:
+        try:
+            system, user = diary_prompt(sheet, f)
+            text, usage = call_model(system, user, max_tokens=2000)
+            add_usage(state, usage)
+            entry = parse_diary(text)
+            by = "model" if entry else "template"
+        except Exception as e:
+            print(f"[diary] {e}")
+    entry = entry or template_diary(f)
+    record = {"date": day.isoformat(), "day": day.strftime("%a %d %b"), "title": entry["title"], "text": entry["entry"],
+              "tomorrow": entry["tomorrow"], "by": by, "coins": state["coins"], "bricks": state["bricks"],
+              "coins_change": f["coins_end"] - f["coins_start"], "bricks_change": f["bricks_end"] - f["bricks_start"],
+              "built": f["built"]}
+    diary.insert(0, record)
+    del diary[DIARY_KEEP:]
+    state["plan_today"] = record["tomorrow"]
+    state["today_log"] = []
+    state["day_start"] = {"coins": state["coins"], "bricks": state["bricks"], "got": 0, "used": 0}
+    return record
+
+
+# ---------------------------------------------------------------- one tick
+
+def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
+    world, sheet = load(CONFIG / "world.json"), load(CONFIG / "sheet.json")
+    state = load(data_dir / "state.json") or fresh_state(now)
+    for k, v in fresh_state(now).items():   # older save files: add anything new
+        state.setdefault(k, v)
+    town = load(data_dir / "town.json") or fresh_town(world, now)
+    diary = load(data_dir / "diary.json", [])
+    feed = load(data_dir / "feed.json", [])
+    local = now.astimezone(TZ)
+    today = local.date().isoformat()
+    state["tick"] += 1
+    state["brain"] = "free" if use_mock else MODEL   # shown on his page
+
+    # new day? reset today's counters and the lucky block
+    if state["stats"]["today"]["date"] != today:
+        state["stats"]["today"] = {"date": today} | {s: 0 for s in SOURCES} | {"tokens_in": 0, "tokens_out": 0, "cost_usd": 0.0}
+    state["hour"] = local.hour
+    bb = state["beach"]
+    if bb["waves_date"] != today:                   # new day at the beach
+        w = world["beach"]["waves"]
+        bb.update(waves=random.choices(list(w), weights=list(w.values()))[0], waves_date=today, sun_today=0)
+    bb["tan"] = round(max(0.0, bb["tan"] - world["beach"]["tan_fade"]), 4)
+    if state["lucky"]["date"] != today:
+        state["lucky"] = {"date": today, "used": 0, "max": world["lucky_block"]["per_day"]}
+
+    def log(kind, text, why=None, by=None, ok=True):
+        feed.insert(0, {"at": now.isoformat(), "time": clock(now), "kind": kind, "text": text,
+                        "why": why, "by": by, "ok": ok})
+        if kind not in ("refused", "woke", "diary"):
+            state["today_log"].append({"t": clock(now), "k": kind, "x": text, "why": why})
+            del state["today_log"][:-DAY_LOG_KEEP]
+
+    def count(source):
+        state["stats"]["all"][source] += 1
+        state["stats"]["today"][source] += 1
+
+    if town["max_lots"] < world["town"]["start_lots"]:   # more land (towns started before the top-up)
+        town["max_lots"] = world["town"]["start_lots"]
+        town["history"].append({"date": today, "text": f"The town got more land: {town['max_lots']} lots to build on."})
+        log("noticed", f"Good news: the town got more land. {town['max_lots']} lots to build on now.")
+    if not state.get("pup"):                   # his puppy turns up
+        state["pup"] = new_pup(world, now, state["tick"])
+        log("noticed", "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.")
+    W = merged_world(world, town, state, today)
+    if state["place"] not in W["places"]:      # e.g. a site that just finished
+        state["place"] = "home"
+
+    # 1. CODE: needs creep up, mood follows
+    update_needs(state, world)
+    update_pup(state, world, now, log)
+    bt = world["bedtime"]
+    night = local.hour >= bt["sleep_from_hour"] or local.hour < bt["wake_from_hour"]
+
+    # 2. ASLEEP: wake when rested in the morning, otherwise keep sleeping (no AI = free)
+    if state["asleep"]:
+        rest = state["needs"]["rest"]
+        daytime = bt["wake_latest_hour"] <= local.hour < bt["sleep_from_hour"]
+        if (not night and rest <= 0.05) or (daytime and rest <= 0.4):  # morning, or end of a nap
+            state["asleep"] = False
+            state["doing"] = "waking up"
+            if state["beach"]["castles"]:
+                state["beach"]["castles"] = []
+                log("noticed", "Overnight the tide came in and washed his sand castle away.")
+            log("woke", "woke up", by="autopilot")
+            count("autopilot")
+        else:
+            state["doing"] = "asleep"
+            count("sleeping")
+        update_mood(state, world, base_bonus=decor_bonus(world, town))
+        return finish(state, feed, town, diary, data_dir, now, "sleeping" if state["asleep"] else "woke")
+
+    # 3. A random event can interrupt his plans
+    if rng_event() < world["events"]["chance"]:
+        event = random.choice(world["events"]["list"])
+        if isinstance(event, dict):
+            count_bricks(state, max(0, state["bricks"] + event.get("bricks", 0)) - state["bricks"])
+            state["bricks"] = max(0, state["bricks"] + event.get("bricks", 0))
+            state["coins"] = max(0, state["coins"] + event.get("coins", 0))
+            event = event["text"]
+        log("noticed", event)
+        state["queue"] = []
+        W = merged_world(world, town, state, today)
+
+    # 4. Decide: bedtime / queue / AI / autopilot
+    plan, source = None, None
+    if night or state["needs"]["rest"] >= 0.95:
+        plan = [{"move": "go_to_sleep", "why": "Bedtime."}] if state["place"] == "home" else \
+               [{"move": "walk_to_home", "why": "Time to head home."}, {"move": "go_to_sleep", "why": "Bedtime."}]
+        source = "autopilot"
+    elif state["queue"]:
+        plan, source = state["queue"], "queue"
+    else:
+        system, user = build_prompt(state, W, world, town, sheet, feed, now)
+        try:
+            text, usage = mock_model(state, W, world, town, system, user) if use_mock else call_model(system, user)
+            if not use_mock:                       # the free brain costs nothing: don't count fake tokens
+                add_usage(state, usage)
+            decision = parse_decision(text)
+            if decision is None:
+                raise RuntimeError(f"unusable reply: {text[:120]!r}")
+            plan, source = decision["moves"], "model"
+            if decision["thought"] and decision["thought"] != state["thought"]:
+                state["thought"] = decision["thought"]
+                log("thought", decision["thought"], by="model")
+            if decision["feeling"]:
+                state["feeling"] = decision["feeling"]
+            if decision.get("puppy_name") and state["pup"] and not state["pup"]["name"]:
+                state["pup"]["name"] = decision["puppy_name"]
+                log("learned", f"named the puppy {decision['puppy_name']}", by="model")
+        except Exception as e:  # any AI problem -> carry on with autopilot
+            print(f"[mind] {e}")
+            plan, source = [{"move": m, "why": None} for m in autopilot(state, W)], "autopilot"
+
+    # 5. CODE: do the first move now, queue the rest. The world can refuse.
+    step, rest = plan[0], plan[1:]
+    bricks_before = state["bricks"]
+    label = move_label(W, step["move"]).replace("the puppy", pup_name(state))
+    ok, refused, bonus, note = apply_move(state, world, town, step, today, log)
+    count_bricks(state, state["bricks"] - bricks_before)
+    count(source)
+    W = merged_world(world, town, state, today)
+    if ok:
+        state["doing"] = label
+        log("did", state["doing"] + (f" ({note})" if note else ""), why=step.get("why"), by=source)
+        state["queue"] = [s for s in rest if town["site"] or s.get("move") != "work_on_site"]  # build done: stop
+        write_note(state, sheet, use_mock, log, now)
+        if step["move"] == "go_to_sleep" and (local.hour >= 20 or local.hour < bt["wake_from_hour"]):
+            entry = write_diary(state, town, sheet, diary, local, use_mock)
+            if entry:
+                log("diary", f"wrote in his diary: {entry['title']}")
+    else:
+        state.pop("pending_read", None)
+        log("refused", f"tried {label}: {refused}", by=source, ok=False)
+        state["queue"] = []
+    update_mood(state, world, bonus, decor_bonus(world, town))
+    return finish(state, feed, town, diary, data_dir, now, f"{source}: {step['move']}{'' if ok else ' (refused)'}")
+
+
+def finish(state, feed, town, diary, data_dir, now, summary):
+    state["updated"] = now.isoformat()
+    save(data_dir / "state.json", state)
+    save(data_dir / "feed.json", feed[:FEED_KEEP])
+    save(data_dir / "town.json", town)
+    save(data_dir / "diary.json", diary)
+    save(data_dir / "who.json", load(CONFIG / "sheet.json"))
+    save(data_dir / "library.json", {"books": {k: {"title": v["title"], "where": v["where"], "chapters": len(v["chapters"]),
+                                                   "perk": (v.get("perk") or {}).get("text"), "source": v.get("source")}
+                                               for k, v in library()["books"].items()},
+                                     "topics": len(library()["encyclopedia"]),
+                                     "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"})
+    print(f"[tick {state['tick']}] {clock(now):>8} {state['place'][:13]:<13} {summary[:44]:<44} "
+          f"mood {state['mood']:+.2f} coins {state['coins']:>3} bricks {state['bricks']:>3}")
+    return state
+
+
+# ---------------------------------------------------------------- run
+
+def sim_start(keep):
+    """Where a fake run starts: carry on from the last one (--keep) or a brand-new Jarvis right now."""
+    if keep:
+        s = load(SIM / "state.json")
+        if s:
+            return datetime.fromisoformat(s["updated"]) + timedelta(minutes=TICK_MINUTES)
+    for f in DATA_FILES:
+        (SIM / f).unlink(missing_ok=True)
+    return datetime.now(timezone.utc).replace(second=0, microsecond=0)
+
+
+def serve(port, data_dir):
+    """A tiny local web server: the page from docs/, the data from sim_data/."""
+    docs, data_dir = ROOT / "docs", data_dir.resolve()
+
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def translate_path(self, path):
+            p = urllib.parse.unquote(urllib.parse.urlsplit(path).path)
+            if p.startswith("/data/"):
+                f = (data_dir / p[6:]).resolve()
+                return str(f) if f.is_relative_to(data_dir) else str(data_dir / "_nope")
+            return super().translate_path(path)
+
+        def end_headers(self):
+            self.send_header("Cache-Control", "no-store")
+            super().end_headers()
+
+        def log_message(self, *args):
+            pass
+
+    import socket
+    with socket.socket() as probe:       # already running? (Windows would let a 2nd copy share the port)
+        probe.settimeout(0.5)
+        if probe.connect_ex(("127.0.0.1", port)) == 0:
+            return None
+
+    class Server(http.server.ThreadingHTTPServer):
+        allow_reuse_address = False
+
+    try:   # always the SAME address, so bookmarks keep working
+        httpd = Server(("127.0.0.1", port), functools.partial(Handler, directory=str(docs)))
+    except OSError:
+        return None                      # something else is using it
+    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    return port
+
+
+def main():
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # emoji-safe on Windows
+    except Exception:
+        pass
+    ap = argparse.ArgumentParser(description="Run Jarvis.")
+    ap.add_argument("--mock", action="store_true", help="one tick with a fake AI (free), into the LIVE data")
+    ap.add_argument("--simulate", type=float, metavar="HOURS", help="fake N hours of ticks into sim_data/ (free)")
+    ap.add_argument("--watch", action="store_true", help="watch him live at http://localhost:8000 (free)")
+    ap.add_argument("--speed", type=float, default=2.0, help="--watch: real seconds per 15-minute tick (default 2)")
+    ap.add_argument("--keep", action="store_true", help="--simulate/--watch: carry on from the last fake run")
+    ap.add_argument("--real", action="store_true", help="--simulate/--watch with the REAL AI (costs money)")
+    ap.add_argument("--port", type=int, default=8000)
+    ap.add_argument("--no-browser", action="store_true")
+    args = ap.parse_args()
+
+    if args.simulate or args.watch:
+        t = sim_start(args.keep)
+        if args.simulate:
+            for _ in range(int(args.simulate * 60 / TICK_MINUTES)):
+                tick(t, data_dir=SIM, use_mock=not args.real)
+                t += timedelta(minutes=TICK_MINUTES)
+            town, diary = load(SIM / "town.json"), load(SIM / "diary.json", [])
+            print(f"\nTown: {', '.join(l['name'] for l in sorted(town['lots'], key=lambda l: l['lot']))}")
+            print(f"Diary entries: {len(diary)}" + (f"  latest: {diary[0]['day']}: {diary[0]['title']}" if diary else ""))
+        if args.watch:
+            port = serve(args.port, SIM)
+            url = f"http://localhost:{args.port}/world.html"
+            if port is None:
+                print(f"Jarvis is already running. Opening {url}")
+                if not args.no_browser:
+                    webbrowser.open(url)
+                return
+            print(f"Jarvis is live:  {url}   (status page: http://localhost:{port}/)")
+            print(f"1 tick every {args.speed:g} s. Keep this window open; close it to stop him.")
+            if not args.no_browser:
+                webbrowser.open(url)
+            try:
+                while True:
+                    tick(t, data_dir=SIM, use_mock=not args.real)
+                    t += timedelta(minutes=TICK_MINUTES)
+                    time.sleep(args.speed)
+            except KeyboardInterrupt:
+                print("\nStopped. Run with --keep to carry on from here.")
+        return
+    # No API key = the FREE brain (the fake AI): he still lives, builds and writes, for $0.
+    # Add the ANTHROPIC_API_KEY secret later and his real brain takes over by itself.
+    tick(datetime.now(timezone.utc), use_mock=args.mock or not os.environ.get("ANTHROPIC_API_KEY"))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis</title>
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+<style>
+  :root {
+    --bg: #f4f1ea; --card: #ffffff; --ink: #1d1d1f; --muted: #6b6b70; --line: #e4e0d6;
+    --accent: #e8762b; --good: #3f9b5a; --mid: #d9a33a; --bad: #d0533f; --blue: #2f6fb3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141416; --card: #1e1e21; --ink: #f2f2f2; --muted: #9a9aa0; --line: #2d2d31; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px 14px 40px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; margin-bottom: 12px; }
+  .hero { display: flex; gap: 14px; align-items: center; }
+  .hero svg { width: 72px; flex: none; }
+  h1 { font-size: 22px; margin: 0; }
+  .doing { font-size: 17px; font-weight: 600; margin: 2px 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .chip { display: inline-block; background: var(--bg); border: 1px solid var(--line); border-radius: 99px;
+          padding: 1px 9px; font-size: 12px; margin: 0 4px 4px 0; }
+  .bubble { position: relative; background: var(--bg); border-radius: 12px; padding: 10px 12px; margin-top: 12px; font-style: italic; }
+  .bubble:before { content: ""; position: absolute; top: -7px; left: 28px; border: 7px solid transparent;
+                   border-top: 0; border-bottom-color: var(--bg); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px;
+       display: flex; justify-content: space-between; align-items: baseline; }
+  h2 span { text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .bar { display: grid; grid-template-columns: 82px 1fr 44px; gap: 8px; align-items: center; margin: 6px 0; font-size: 14px; }
+  .track { height: 10px; background: var(--bg); border-radius: 99px; overflow: hidden; border: 1px solid var(--line); }
+  .fill { height: 100%; border-radius: 99px; transition: width .6s; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+  .feed { list-style: none; margin: 0; padding: 0; }
+  .feed li { display: grid; grid-template-columns: 58px 1fr; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .feed li:first-child { border-top: 0; }
+  .feed .t { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .feed .why { color: var(--muted); font-size: 13px; font-style: italic; }
+  .feed .by { font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; margin-left: 4px; }
+  .k-refused .txt { color: var(--bad); }
+  .k-thought .txt { font-style: italic; }
+  .k-noticed .txt { color: var(--blue); }
+  .k-built .txt { color: var(--good); font-weight: 600; }
+  .k-designed .txt, .k-diary .txt { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; text-align: center; }
+  .grid b { display: block; font-size: 20px; }
+  .grid span { font-size: 12px; color: var(--muted); }
+  .town-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+  .town-wrap svg { display: block; }
+  .town-info { margin-top: 10px; }
+  .hist { list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; }
+  .hist li { padding: 2px 0; color: var(--muted); }
+  .hist b { color: var(--ink); font-weight: 600; margin-right: 4px; }
+  .entry h3 { margin: 0; font-size: 17px; }
+  .entry p { margin: 8px 0; line-height: 1.55; }
+  .entry .tmr { font-size: 14px; }
+  details.old { border-top: 1px solid var(--line); padding: 8px 0; }
+  details.old summary { cursor: pointer; font-size: 14px; }
+  .views { display: inline-flex; border: 1px solid var(--line); border-radius: 99px; overflow: hidden; }
+  .views button { border: 0; background: transparent; color: var(--muted); font: 600 12px system-ui, sans-serif; padding: 3px 12px; cursor: pointer; }
+  .views button.on { background: var(--accent); color: #fff; }
+  .town3d { height: 360px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #8fd3ff; touch-action: none; }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .worldlink { display: block; text-align: center; font-weight: 700; padding: 8px; margin-bottom: 8px; border-radius: 10px;
+               background: var(--accent); color: #fff; text-decoration: none; }
+  #books .bar { grid-template-columns: 150px 1fr 44px; }
+  .pupgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 18px; }
+  #err { display: none; color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="hero">
+      <svg id="avatar" viewBox="0 0 60 92" aria-label="Jarvis">
+        <!-- an original little brick-built mechanic -->
+        <rect x="15" y="5" width="30" height="9" rx="3" fill="#e8762b"/>
+        <rect x="38" y="11" width="13" height="3.5" rx="1.75" fill="#c95f1c"/>
+        <rect x="17" y="12" width="26" height="22" rx="4" fill="#e9c39b"/>
+        <g id="eyes-open"><circle cx="25" cy="22" r="1.9" fill="#222"/><circle cx="35" cy="22" r="1.9" fill="#222"/></g>
+        <g id="eyes-shut" style="display:none"><path d="M22.5 22.5h5M32.5 22.5h5" stroke="#222" stroke-width="1.6" stroke-linecap="round"/></g>
+        <path id="mouth" d="M25 28 Q30 31.5 35 28" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <rect x="26" y="34" width="8" height="3" fill="#d8b08a"/>
+        <rect x="6" y="38" width="8" height="20" rx="3" fill="#2f6fb3"/>
+        <rect x="46" y="38" width="8" height="20" rx="3" fill="#2f6fb3"/>
+        <circle cx="10" cy="61" r="4" fill="#e9c39b"/><circle cx="50" cy="61" r="4" fill="#e9c39b"/>
+        <rect x="52" y="54" width="3" height="14" rx="1.5" fill="#8a8f98" transform="rotate(20 53 61)"/>
+        <rect x="14" y="36" width="32" height="27" rx="3" fill="#2f6fb3"/>
+        <rect x="23" y="42" width="14" height="9" rx="1.5" fill="#24598f"/>
+        <rect x="16" y="63" width="13" height="21" rx="2" fill="#3b3f46"/>
+        <rect x="31" y="63" width="13" height="21" rx="2" fill="#3b3f46"/>
+        <rect x="14" y="83" width="16" height="6" rx="2" fill="#5a3b22"/>
+        <rect x="30" y="83" width="16" height="6" rx="2" fill="#5a3b22"/>
+        <text id="zzz" x="44" y="10" font-size="9" font-weight="700" fill="#6b6b70" style="display:none">Zzz</text>
+      </svg>
+      <div>
+        <h1>Jarvis</h1>
+        <div class="doing" id="doing">…</div>
+        <div><span class="chip" id="place">…</span><span class="chip" id="feeling">…</span></div>
+        <div class="muted" id="updated"></div>
+      </div>
+    </div>
+    <div class="bubble" id="thought">…</div>
+    <div id="err"></div>
+  </div>
+
+  <div class="card">
+    <h2>His town <span><span id="towntime"></span> &nbsp;<span class="views"><button id="b3d">3D</button><button id="b2d">2D</button></span></span></h2>
+    <a href="world.html" class="worldlink">🌍 Open his world (full screen, roam around) →</a>
+    <div class="town3d" id="town3d" style="display:none"></div>
+    <div class="hint" id="hint3d" style="display:none">Drag to spin · pinch or scroll to zoom · the camera follows Jarvis</div>
+    <div class="town-wrap" id="townwrap"><svg id="town" height="214" width="600"></svg></div>
+    <div class="town-info" id="towninfo"></div>
+    <ul class="hist" id="history"></ul>
+  </div>
+
+  <div class="card">
+    <h2>His diary</h2>
+    <div id="diary"></div>
+  </div>
+
+  <div class="card">
+    <h2>His puppy <span id="pupage"></span></h2>
+    <div id="pup"></div>
+  </div>
+
+  <div class="card">
+    <h2>His books &amp; notebook <span id="libinfo"></span></h2>
+    <div id="books"></div>
+  </div>
+
+  <div class="card">
+    <h2>How he's doing</h2>
+    <div id="bars"></div>
+  </div>
+
+  <div class="card">
+    <h2>Thailand fund</h2>
+    <div id="coins"></div>
+  </div>
+
+  <div class="card">
+    <h2>His stall &amp; stuff</h2>
+    <div id="stuff"></div>
+  </div>
+
+  <div class="card">
+    <h2>What he's been up to</h2>
+    <ul class="feed" id="feed"></ul>
+  </div>
+
+  <div class="card">
+    <h2>Who decided today</h2>
+    <div class="grid" id="sources"></div>
+    <div class="muted" id="cost" style="margin-top:10px"></div>
+  </div>
+
+  <footer id="foot">Jarvis ticks every 15 minutes. This page refreshes every minute.</footer>
+</main>
+
+<script>
+// Where the data lives. On GitHub Pages we read the raw files straight from the repo so they're always fresh.
+const host = location.hostname;
+const LOCAL = host === "localhost" || host === "127.0.0.1";   // python tick.py --watch
+let BASE = "data/";
+if (host.endsWith(".github.io")) {
+  const owner = host.split(".")[0];
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if (repo) BASE = `https://raw.githubusercontent.com/${owner}/${repo}/main/docs/data/`;
+}
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓" };
+
+async function get(name) {
+  for (const base of [BASE, "data/"]) {
+    try {
+      const r = await fetch(base + name + "?t=" + Date.now());
+      if (r.ok) return await r.json();
+    } catch (e) { /* try the next place */ }
+  }
+  throw new Error("couldn't load " + name);
+}
+const getOpt = (name) => get(name).catch(() => null);
+
+function bar(label, value, min, max, color) {
+  const pct = Math.round(((value - min) / (max - min)) * 100);
+  return `<div class="bar"><span>${label}</span><div class="track"><div class="fill" style="width:${pct}%;background:${color}"></div></div><span class="num">${value.toFixed(2)}</span></div>`;
+}
+const needColor = (v) => (v < 0.4 ? "var(--good)" : v < 0.7 ? "var(--mid)" : "var(--bad)");
+const ago = (iso) => {
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  return m < 1 ? "just now" : m < 60 ? `${m} min ago` : `${Math.round(m / 60)} h ago`;
+};
+const townClock = (iso) => new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" });
+const townHour = (iso) => Number(new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", hour: "numeric", hour12: false })) % 24;
+
+// ------------------------------------------------------------------ the town picture (side view, brick style)
+const LOT = 72, G = 158, H = 214, PAD = 10;
+const hash = (s) => { let h = 7; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
+function shade(hex, f) {             // f > 0 lighter, f < 0 darker
+  const n = parseInt(String(hex).slice(1), 16) || 0x8e44ad;
+  const t = f < 0 ? 0 : 255, p = Math.abs(f);
+  const mix = (c) => Math.round((t - c) * p + c);
+  return `rgb(${mix(n >> 16)},${mix((n >> 8) & 255)},${mix(n & 255)})`;
+}
+function studs(x, y, w, fill) {
+  let s = "";
+  for (let i = x + 4; i + 6 <= x + w - 2; i += 10) s += `<rect x="${i}" y="${y - 3}" width="6" height="3" rx="1" fill="${fill}"/>`;
+  return s;
+}
+const label = (x, y, t, size = 10) =>
+  `<text x="${x}" y="${y}" font-size="${size}" font-weight="700" text-anchor="middle" fill="#fff" stroke="#3a1a08" stroke-width="2.5" paint-order="stroke">${esc(t)}</text>`;
+const emoji = (x, y, e, size = 13) => e ? `<text x="${x}" y="${y}" font-size="${size}" text-anchor="middle">${esc(e)}</text>` : "";
+
+function drawTree(cx, seed) {
+  const s = 0.8 + (seed % 5) / 10;
+  return `<rect x="${cx - 3}" y="${G - 18 * s}" width="6" height="${18 * s}" fill="#7a4a22"/>` +
+    `<circle cx="${cx}" cy="${G - 28 * s}" r="${12 * s}" fill="#2e8b3d"/>` +
+    `<circle cx="${cx - 8 * s}" cy="${G - 20 * s}" r="${8 * s}" fill="#3fae4f"/>` +
+    `<circle cx="${cx + 8 * s}" cy="${G - 21 * s}" r="${8 * s}" fill="#36a046"/>`;
+}
+
+function drawBuilding(l, x, ctx) {
+  const look = l.look || {}, kind = look.kind || "shop", c = look.color || "#8e44ad";
+  const f = Math.max(1, Math.min(4, look.floors || 1));
+  const win = ctx.night ? "#ffd86b" : "#bfe3ff", cx = x + LOT / 2;
+  switch (kind) {
+    case "house": {
+      const w = 54, h = 28 + 22 * (f - 1), L = cx - w / 2, top = G - h;
+      let s = `<rect x="${L}" y="${top}" width="${w}" height="${h}" fill="${c}" stroke="${shade(c, -0.35)}"/>` +
+        `<polygon points="${L - 5},${top} ${cx},${top - 22} ${L + w + 5},${top}" fill="${look.roof || shade(c, -0.4)}"/>` +
+        `<rect x="${cx - 6}" y="${G - 17}" width="12" height="17" fill="#5a3b22"/>`;
+      for (let i = 0; i < f; i++) {
+        const wy = G - 21 - 22 * i;
+        s += `<rect x="${L + 6}" y="${wy}" width="10" height="9" fill="${win}"/><rect x="${L + w - 16}" y="${wy}" width="10" height="9" fill="${win}"/>`;
+      }
+      return s + emoji(cx, top - 4, look.emoji, 12);
+    }
+    case "garage": {
+      const w = 60, h = 40, L = cx - w / 2, top = G - h;
+      let s = `<rect x="${L}" y="${top}" width="${w}" height="${h}" fill="${c}" stroke="${shade(c, -0.35)}"/>` + studs(L, top, w, shade(c, 0.2)) +
+        `<rect x="${L + 6}" y="${G - 27}" width="32" height="27" fill="#b9bec6" stroke="#6b7078"/>`;
+      for (let y = G - 22; y < G; y += 5) s += `<line x1="${L + 6}" x2="${L + 38}" y1="${y}" y2="${y}" stroke="#8a9099"/>`;
+      return s + `<rect x="${L + 43}" y="${G - 17}" width="11" height="17" fill="#3b3f46"/>` +
+        `<rect x="${L + 41}" y="${top + 4}" width="15" height="14" rx="3" fill="#fff" opacity=".9"/>` + emoji(L + 48.5, top + 15, look.emoji, 11);
+    }
+    case "tower": {
+      const w = 30, h = 30 + 22 * f, L = cx - w / 2, top = G - h;
+      let s = `<rect x="${L}" y="${top}" width="${w}" height="${h}" fill="${c}" stroke="${shade(c, -0.35)}"/>` + studs(L, top, w, shade(c, 0.2)) +
+        `<line x1="${cx}" x2="${cx}" y1="${top - 3}" y2="${top - 18}" stroke="#333"/><polygon points="${cx},${top - 18} ${cx + 11},${top - 14} ${cx},${top - 10}" fill="#e8762b"/>` +
+        `<rect x="${cx - 5}" y="${G - 14}" width="10" height="14" fill="#5a3b22"/>`;
+      for (let y = top + 24; y < G - 20; y += 20) s += `<rect x="${cx - 4}" y="${y}" width="8" height="9" fill="${win}"/>`;
+      return s + `<circle cx="${cx}" cy="${top + 11}" r="8" fill="#fff" opacity=".9"/>` + emoji(cx, top + 15, look.emoji, 10);
+    }
+    case "pit": {
+      const cols = ["#d0453a", "#f2c230", "#2f6fb3", "#3f9b5a"];
+      let s = "";
+      [5, 4, 3, 2, 1].forEach((n, row) => {
+        for (let i = 0; i < n; i++) {
+          const bx = cx - (n * 10) / 2 + i * 10, by = G - 6 - row * 6;
+          s += `<rect x="${bx}" y="${by}" width="9" height="6" rx="1" fill="${cols[(i + row) % 4]}" stroke="rgba(0,0,0,.25)"/>`;
+        }
+      });
+      const live = ctx.luckyLeft > 0;
+      return s + `<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="1.6s" repeatCount="indefinite"/>` +
+        `<rect x="${cx - 10}" y="${G - 78}" width="20" height="20" rx="2" fill="${live ? "#f5b81b" : "#a08f6a"}" stroke="#7a4f00" stroke-width="1.5"/>` +
+        `<text x="${cx}" y="${G - 62}" font-size="15" font-weight="900" text-anchor="middle" fill="#fff" stroke="#7a4f00" stroke-width="1" paint-order="stroke">${live ? "!" : "·"}</text></g>`;
+    }
+    case "park":
+      return `<ellipse cx="${cx}" cy="${G}" rx="32" ry="6" fill="#3fae4f"/>` + drawTree(cx + 12, hash(l.id)) +
+        `<rect x="${cx - 26}" y="${G - 12}" width="24" height="4" fill="#8b5a2b"/><rect x="${cx - 26}" y="${G - 19}" width="24" height="3" fill="#8b5a2b"/>` +
+        `<rect x="${cx - 24}" y="${G - 8}" width="3" height="8" fill="#5a3b22"/><rect x="${cx - 7}" y="${G - 8}" width="3" height="8" fill="#5a3b22"/>`;
+    case "track": {
+      const L = cx - 32;
+      return `<path d="M${L} ${G} Q${L + 10} ${G - 16} ${L + 20} ${G} Q${L + 32} ${G - 12} ${L + 44} ${G} Q${L + 54} ${G - 18} ${L + 64} ${G} Z" fill="#8d6e63"/>` +
+        `<line x1="${L + 62}" x2="${L + 62}" y1="${G}" y2="${G - 34}" stroke="#333" stroke-width="1.5"/>` +
+        `<rect x="${L + 62}" y="${G - 34}" width="12" height="8" fill="#fff"/><rect x="${L + 62}" y="${G - 34}" width="4" height="4" fill="#111"/>` +
+        `<rect x="${L + 70}" y="${G - 34}" width="4" height="4" fill="#111"/><rect x="${L + 66}" y="${G - 30}" width="4" height="4" fill="#111"/>` +
+        emoji(cx, G - 24, "🏍️", 14);
+    }
+    case "stall": {
+      let s = `<rect x="${cx - 24}" y="${G - 16}" width="48" height="16" fill="#a0522d"/>` +
+        `<rect x="${cx - 25}" y="${G - 44}" width="2.5" height="28" fill="#ddd"/><rect x="${cx + 22.5}" y="${G - 44}" width="2.5" height="28" fill="#ddd"/>`;
+      for (let i = 0; i < 7; i++) s += `<rect x="${cx - 28 + i * 8}" y="${G - 50}" width="8" height="8" fill="${i % 2 ? "#fff" : c}"/>`;
+      ["#f2c230", "#d0453a", "#3f9b5a", "#e8762b"].forEach((k, i) => s += `<rect x="${cx - 20 + i * 11}" y="${G - 22}" width="8" height="6" fill="${k}"/>`);
+      return s;
+    }
+    case "tree": return drawTree(cx, hash(l.id));
+    case "lamp":
+      return (ctx.night ? `<circle cx="${cx}" cy="${G - 47}" r="13" fill="#ffe38a" opacity=".35"/>` : "") +
+        `<rect x="${cx - 1.5}" y="${G - 46}" width="3" height="46" fill="#3b3f46"/><rect x="${cx - 6}" y="${G - 51}" width="12" height="5" rx="1" fill="#3b3f46"/>` +
+        `<circle cx="${cx}" cy="${G - 44}" r="3" fill="${ctx.night ? "#ffd86b" : "#ddd"}"/>`;
+    case "flowers": {
+      let s = `<rect x="${cx - 20}" y="${G - 7}" width="40" height="7" rx="1" fill="#6b4423"/>`;
+      const fc = ["#e74c3c", "#f1c40f", "#9b59b6", "#ffffff", "#e67e22"];
+      for (let i = 0; i < 6; i++) s += `<line x1="${cx - 16 + i * 6.5}" x2="${cx - 16 + i * 6.5}" y1="${G - 7}" y2="${G - 15}" stroke="#2e8b3d" stroke-width="1.5"/>` +
+        `<circle cx="${cx - 16 + i * 6.5}" cy="${G - 16}" r="3" fill="${fc[(i + hash(l.id)) % 5]}"/>`;
+      return s;
+    }
+    case "fountain":
+      return `<rect x="${cx - 22}" y="${G - 10}" width="44" height="10" rx="2" fill="#9aa5b1"/><rect x="${cx - 18}" y="${G - 10}" width="36" height="3" fill="#5dade2"/>` +
+        `<rect x="${cx - 2}" y="${G - 30}" width="4" height="20" fill="#9aa5b1"/><ellipse cx="${cx}" cy="${G - 30}" rx="9" ry="3" fill="#9aa5b1"/>` +
+        `<path d="M${cx} ${G - 33} Q${cx - 12} ${G - 46} ${cx - 16} ${G - 12} M${cx} ${G - 33} Q${cx + 12} ${G - 46} ${cx + 16} ${G - 12}" stroke="#5dade2" stroke-width="2" fill="none"/>`;
+    default: {  // "shop" and his own designs: flat roof with studs, awning, sign
+      const w = 56, h = 42 + 20 * (f - 1), L = cx - w / 2, top = G - h;
+      let s = `<rect x="${L}" y="${top}" width="${w}" height="${h}" fill="${c}" stroke="${shade(c, -0.35)}"/>` + studs(L, top, w, shade(c, 0.2));
+      for (let i = 1; i < f; i++) {
+        const wy = G - 40 - 20 * (i - 1);
+        s += `<rect x="${L + 7}" y="${wy}" width="10" height="9" fill="${win}"/><rect x="${L + w - 17}" y="${wy}" width="10" height="9" fill="${win}"/>`;
+      }
+      for (let i = 0; i < 7; i++) s += `<rect x="${L + i * 8}" y="${G - 24}" width="8" height="6" fill="${i % 2 ? "#fff" : shade(c, -0.25)}"/>`;
+      return s + `<rect x="${L + 6}" y="${G - 16}" width="20" height="12" fill="${win}"/><rect x="${L + w - 18}" y="${G - 17}" width="11" height="17" fill="#5a3b22"/>` +
+        `<rect x="${cx - 10}" y="${top + 3}" width="20" height="16" rx="3" fill="#fff" opacity=".92"/>` + emoji(cx, top + 15, look.emoji, 12);
+    }
+  }
+}
+
+function drawSite(s, x) {
+  const cx = x + LOT / 2, w = 56, L = cx - w / 2, c = (s.look && s.look.color) || "#9aa5b1";
+  const h = Math.max(4, Math.round(48 * s.done / s.work));
+  let out = `<rect x="${L + 3}" y="${G - h}" width="${w - 6}" height="${h}" fill="${c}" opacity=".8"/>` +
+    `<rect x="${L}" y="${G - 60}" width="2.5" height="60" fill="#c98a2b"/><rect x="${L + w - 2.5}" y="${G - 60}" width="2.5" height="60" fill="#c98a2b"/>`;
+  for (let y = G - 14; y >= G - 58; y -= 14) out += `<rect x="${L}" y="${y}" width="${w}" height="2" fill="#c98a2b"/>`;
+  out += `<line x1="${L}" y1="${G - 58}" x2="${L + w}" y2="${G - 2}" stroke="#c98a2b" stroke-width="1.5"/>`;
+  return out + label(cx, G - 66, `🚧 ${s.name} ${s.done}/${s.work}`, 9);
+}
+
+const SPRITE = `<rect x="15" y="5" width="30" height="9" rx="3" fill="#e8762b"/><rect x="38" y="11" width="13" height="3.5" rx="1.75" fill="#c95f1c"/>
+<rect x="17" y="12" width="26" height="22" rx="4" fill="#e9c39b"/><circle cx="25" cy="22" r="2.3" fill="#222"/><circle cx="35" cy="22" r="2.3" fill="#222"/>
+<path d="M25 28 Q30 31.5 35 28" stroke="#222" stroke-width="1.8" fill="none"/><rect x="6" y="38" width="8" height="20" rx="3" fill="#2f6fb3"/>
+<rect x="46" y="38" width="8" height="20" rx="3" fill="#2f6fb3"/><circle cx="10" cy="61" r="4" fill="#e9c39b"/><circle cx="50" cy="61" r="4" fill="#e9c39b"/>
+<rect x="14" y="36" width="32" height="27" rx="3" fill="#2f6fb3"/><rect x="16" y="63" width="13" height="21" rx="2" fill="#3b3f46"/>
+<rect x="31" y="63" width="13" height="21" rx="2" fill="#3b3f46"/><rect x="14" y="83" width="16" height="6" rx="2" fill="#5a3b22"/><rect x="30" y="83" width="16" height="6" rx="2" fill="#5a3b22"/>`;
+
+let lastPlace = null;
+function renderTown(s, town) {
+  const site = town.site;
+  const nLots = Math.max(town.max_lots, site ? site.lot + 1 : 0);
+  const BEACH = 140, W = PAD * 2 + nLots * LOT + BEACH;
+  const hr = townHour(s.updated);
+  const night = hr < 6 || hr >= 20, dusk = hr >= 18 && hr < 20, dawn = hr >= 6 && hr < 8;
+  const sky = night ? ["#0b1433", "#2a3a6e"] : dusk ? ["#5b4b9a", "#ffad7a"] : dawn ? ["#ffb38a", "#ffe7c2"] : ["#6ec6ff", "#d8f1ff"];
+  const lotX = (n) => PAD + n * LOT;
+  const ctx = { night, luckyLeft: (s.lucky && s.lucky.date === (s.stats.today || {}).date) ? s.lucky.max - s.lucky.used : 3 };
+
+  let g = `<defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${sky[0]}"/><stop offset="1" stop-color="${sky[1]}"/></linearGradient>
+    <pattern id="bricks" width="28" height="14" patternUnits="userSpaceOnUse"><rect width="28" height="14" fill="#c4622d"/>
+      <path d="M0 0.5H28M0 7.5H28M0.5 0V7M14.5 7V14" stroke="#7d3514" stroke-width="1" fill="none"/></pattern>
+    <pattern id="studrow" width="10" height="4" patternUnits="userSpaceOnUse"><rect x="2" y="0" width="6" height="3" rx="1" fill="#4cc25a"/></pattern>
+  </defs><rect width="${W}" height="${G}" fill="url(#sky)"/>`;
+  if (night) {
+    for (let i = 0; i < W / 18; i++) g += `<circle cx="${(hash("s" + i) % W)}" cy="${8 + (hash("y" + i) % 90)}" r="${i % 3 ? 0.8 : 1.3}" fill="#fff" opacity=".8"/>`;
+    g += `<circle cx="${W - 50}" cy="34" r="13" fill="#f4f1d0"/><circle cx="${W - 44}" cy="30" r="11" fill="${sky[0]}"/>`;
+  } else {
+    g += `<circle cx="${W - 50}" cy="36" r="15" fill="${dusk || dawn ? "#ffcf6b" : "#ffe14d"}"/>`;
+  }
+  for (let i = 0, x = 60; x < W; i++, x += 220) {   // clouds
+    const y = 26 + (i % 3) * 14, o = night ? 0.18 : 0.9;
+    g += `<g opacity="${o}" fill="#fff"><rect x="${x}" y="${y}" width="46" height="12" rx="6"/><rect x="${x + 10}" y="${y - 7}" width="24" height="12" rx="6"/></g>`;
+  }
+  for (let x = 40; x < W + 90; x += 170) g += `<ellipse cx="${x}" cy="${G}" rx="95" ry="${34 + (x % 3) * 8}" fill="${night ? "#22402f" : "#8fd18a"}"/>`;
+  g += `<rect x="0" y="${G - 3}" width="${W}" height="3" fill="url(#studrow)"/>`;
+
+  const lots = [...town.lots].sort((a, b) => a.lot - b.lot);
+  for (const l of lots) g += drawBuilding(l, lotX(l.lot), ctx);
+  if (site) g += drawSite(site, lotX(site.lot));
+
+  // the beach at the end of the street
+  const bx = W - BEACH;
+  g += `<path d="M${bx} ${G} Q${bx + 40} ${G - 4} ${bx + 80} ${G + 4} L${W} ${G + 4} L${W} ${H} L${bx} ${H} Z" fill="#f2d28b"/>` +
+    `<rect x="${bx + 85}" y="${G + 8}" width="${BEACH - 85}" height="${H - G}" fill="#3c9ad6"/>` +
+    `<path d="M${bx + 85} ${G + 10} q6 -4 12 0 t12 0 t12 0 t12 0 t12 0" stroke="#fff" stroke-width="2" fill="none"/>` +
+    `<rect x="${bx + 12}" y="${G - 46}" width="4" height="46" fill="#8b6a3e" transform="rotate(6 ${bx + 14} ${G})"/>` +
+    `<path d="M${bx + 18} ${G - 46} q-14 -2 -22 8 M${bx + 18} ${G - 46} q14 -4 22 6 M${bx + 18} ${G - 46} q-4 -12 -14 -14 M${bx + 18} ${G - 46} q6 -12 16 -12" stroke="#2e9b4f" stroke-width="5" fill="none" stroke-linecap="round"/>` +
+    `<rect x="${bx + 52}" y="${G - 34}" width="2" height="34" fill="#ddd"/><path d="M${bx + 37} ${G - 32} Q${bx + 53} ${G - 46} ${bx + 69} ${G - 32} Z" fill="#d0453a"/>` +
+    `<rect x="${bx + 40}" y="${G - 2}" width="26" height="3" fill="#e8762b"/>`;
+  // the ground: green baseplate strip + brick blocks
+  g += `<rect x="0" y="${G}" width="${W - BEACH}" height="10" fill="#36a344"/><rect x="0" y="${G + 10}" width="${W - BEACH}" height="${H - G - 10}" fill="url(#bricks)"/>`;
+  g += label(bx + 45, G + 30, "Beach", 9.5);
+  for (const l of lots) if (!(l.look || {}).kind?.match(/^(tree|lamp|flowers)$/)) g += label(lotX(l.lot) + LOT / 2, G + 30, l.name, 9.5);
+  for (let n = 0; n < town.max_lots; n++) if (!lots.some((l) => l.lot === n) && !(site && site.lot === n))
+    g += `<text x="${lotX(n) + LOT / 2}" y="${G + 30}" font-size="9" text-anchor="middle" fill="#f3c9a8" opacity=".7">empty</text>`;
+
+  // where's Jarvis?
+  const spot = s.place === "building_site" && site ? site.lot : (lots.find((l) => l.place === s.place) || lots.find((l) => l.place === "home") || { lot: 1 }).lot;
+  const jx = s.place === "beach" ? W - BEACH + 70 : lotX(spot) + LOT / 2 + 12;
+  if (s.asleep) g += label(jx - 6, G - 64, "Zzz", 12);
+  else g += `<g transform="translate(${jx},${G - 30}) scale(0.34)"><animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;0 -6;0 0" dur="0.9s" repeatCount="indefinite"/>${SPRITE}</g>`;
+
+  if (!s.asleep && s.pup) g += `<g transform="translate(${jx - 16},${G - 11})"><rect x="0" y="3" width="12" height="6" rx="2" fill="#c58b52"/>` +
+    `<rect x="9" y="0" width="7" height="6" rx="1.5" fill="#c58b52"/><rect x="14" y="2.5" width="3" height="2.5" fill="#7a4e2a"/>` +
+    `<rect x="9.5" y="-1" width="2.5" height="3.5" fill="#7a4e2a"/><circle cx="13" cy="2" r=".8" fill="#111"/>` +
+    `<rect x="1" y="9" width="2" height="2" fill="#c58b52"/><rect x="8" y="9" width="2" height="2" fill="#c58b52"/>` +
+    `<rect x="-3" y="2" width="4" height="1.5" fill="#7a4e2a" transform="rotate(-30 0 3)"/></g>`;
+  const svg = $("town");
+  svg.setAttribute("width", W); svg.setAttribute("height", H); svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.innerHTML = g;
+  if (s.place !== lastPlace) {   // keep him in view, without fighting your own scrolling
+    const wrap = $("townwrap");
+    wrap.scrollLeft = Math.max(0, jx - wrap.clientWidth / 2);
+    lastPlace = s.place;
+  }
+
+  $("towntime").textContent = "🕐 " + townClock(s.updated);
+  const used = town.lots.length;
+  $("towninfo").innerHTML =
+    `<span class="chip">🧱 ${s.bricks} bricks</span>` +
+    `<span class="chip">${site ? `🏗️ Building: ${esc(site.name)} ${site.done}/${site.work}` : "🏗️ Nothing on the go"}</span>` +
+    `<span class="chip">📐 ${used}/${town.max_lots} lots</span>` +
+    `<span class="chip">❗ block: ${Math.max(0, ctx.luckyLeft)} hits left today</span>`;
+  $("history").innerHTML = town.history.slice(-6).reverse()
+    .map((h) => `<li><b>${esc(h.date.slice(5))}</b>${esc(h.text)}</li>`).join("");
+}
+
+// ------------------------------------------------------------------ the diary
+function entryBody(e) {
+  const sign = (n) => (n > 0 ? "+" : "") + n;
+  return `<p>${esc(e.text)}</p>
+    <div class="tmr"><b>Tomorrow:</b> ${esc(e.tomorrow)}</div>
+    <div class="muted">${sign(e.coins_change)} coins · ${sign(e.bricks_change)} bricks · jar ${e.coins}/500${e.by === "template" ? " · written by autopilot" : ""}</div>`;
+}
+function renderDiary(d) {
+  if (!d || !d.length) { $("diary").innerHTML = `<div class="muted">No entries yet. He writes one every night when he goes to bed.</div>`; return; }
+  const [first, ...rest] = d;
+  $("diary").innerHTML = `<div class="entry"><div class="muted">${esc(first.day)}</div><h3>${esc(first.title)}</h3>${entryBody(first)}</div>` +
+    rest.slice(0, 30).map((e) => `<details class="old"><summary><b>${esc(e.day)}</b> · ${esc(e.title)}</summary><div class="entry">${entryBody(e)}</div></details>`).join("");
+}
+
+// ------------------------------------------------------------------ stall & stuff
+const PRODUCT_NAMES = { model_bike: "brick model bike", rebuilt_carb: "rebuilt carburettor", postcard: "postcard", brick_lamp: "brick lamp", noodle_kit: "noodle kit" };
+const ITEM_NAMES = { surfboard: "🏄 Surfboard", beach_kit: "⛱️ Beach kit", wheelbarrow: "🛒 Wheelbarrow", impact_wrench: "🔧 Impact wrench", shop_sign: "💡 Neon shop sign", coffee_machine: "☕ Coffee machine", hammock: "🏝️ Hammock" };
+function renderStuff(s) {
+  const stock = Object.entries(s.stock || {}).map(([k, n]) => `<span class="chip">📦 ${n}× ${esc(PRODUCT_NAMES[k] || k.replace(/_/g, " "))}</span>`).join("");
+  const owned = (s.owned || []).map((k) => `<span class="chip">${esc(ITEM_NAMES[k] || k.replace(/_/g, " "))}</span>`).join("");
+  const sales = s.sales || { items: 0, coins: 0 };
+  $("stuff").innerHTML =
+    `<div class="muted">For sale</div><div>${stock || '<span class="muted">nothing in stock</span>'}</div>` +
+    `<div class="muted" style="margin-top:8px">Owns</div><div>${owned || '<span class="muted">nothing bought yet</span>'}</div>` +
+    (s.beach ? `<div class="muted" style="margin-top:8px">Beach</div><div><span class="chip">🌊 waves today: ${esc(s.beach.waves)}</span><span class="chip">☀️ tan ${Math.round(s.beach.tan * 100)}%</span>` +
+      `<span class="chip">🏄 surf skill ${Math.round(s.beach.surf_skill * 100)}% (${s.beach.surf_sessions} goes)</span><span class="chip">🏰 best castle ${s.beach.best_castle}/6</span><span class="chip">🐚 ${s.beach.shells} shells</span></div>` : "") +
+    `<div class="muted" style="margin-top:8px">Sold so far: <b style="color:var(--ink)">${sales.items}</b> things for <b style="color:var(--ink)">${sales.coins}</b> coins</div>`;
+}
+
+// ------------------------------------------------------------------ the puppy
+const TRICKS = { sit: ["sit", 3], paw: ["give paw", 4], stay: ["stay", 6], fetch: ["fetch", 8], roll_over: ["roll over", 8], ride: ["ride in the tank bag", 10] };
+function renderPup(s) {
+  const p = s.pup;
+  if (!p) { $("pup").innerHTML = '<div class="muted">No puppy yet.</div>'; return; }
+  const days = Math.floor((new Date(s.updated) - new Date(p.born)) / 86400000);
+  $("pupage").textContent = `${days} day${days === 1 ? "" : "s"} old`;
+  const good = (v) => (v > 0.6 ? "var(--good)" : v > 0.3 ? "var(--mid)" : "var(--bad)");
+  let h = `<div class="doing" style="font-size:16px">🐶 ${esc(p.name || "No name yet (Jarvis will pick one)")}</div>
+    <div class="muted" style="margin-bottom:6px">${esc(p.napping ? "napping" : p.doing)} · ${p.food} meal${p.food === 1 ? "" : "s"} of dog food left</div>`;
+  h += bar("Fullness", 1 - p.needs.hunger, 0, 1, good(1 - p.needs.hunger)) + bar("Energy", 1 - p.needs.tired, 0, 1, good(1 - p.needs.tired)) +
+       bar("Fun", 1 - p.needs.bored, 0, 1, good(1 - p.needs.bored)) + bar("Bond", p.bond, 0, 1, "#e05a8a");
+  h += `<div class="muted" style="margin:10px 0 2px">Tricks</div><div class="pupgrid">` + Object.entries(TRICKS).map(([k, [name, need]]) => {
+    const done = p.learned.includes(k), n = done ? need : (p.tricks[k] || 0);
+    return bar((done ? "✅ " : "") + name, n, 0, need, done ? "var(--good)" : "var(--blue)").replace(/>\d+\.\d+</, `>${n}/${need}<`);
+  }).join("") + `</div>`;
+  $("pup").innerHTML = h;
+}
+
+// ------------------------------------------------------------------ books + notebook
+function renderBooks(s, lib) {
+  if (!lib) { $("books").innerHTML = '<div class="muted">No library yet.</div>'; return; }
+  $("libinfo").textContent = `${(s.looked_up || []).length} laptop look-ups`;
+  const row = ([id, b]) => {
+    const n = (s.finished || []).includes(id) ? b.chapters : ((s.books || {})[id] || 0);
+    return bar(((s.finished || []).includes(id) ? "✅ " : "") + b.title, n, 0, b.chapters, n >= b.chapters ? "var(--good)" : "var(--blue)")
+      .replace(/>\d+\.\d+</, `>${n}/${b.chapters}<`).replace('grid-template-columns: 82px', 'grid-template-columns: 82px');
+  };
+  const books = Object.entries(lib.books);
+  const learned = (s.finished || []).map((id) => lib.books[id]).filter((b) => b && b.perk).map((b) => `<span class="chip">📘 ${esc(b.perk)}</span>`).join("");
+  const notes = (s.notebook || []).slice(-6).reverse().map((n) => `<li><span class="t">${esc(n.date.slice(5))}</span><div><span class="txt">📓 ${esc(n.note)}</span><div class="why">${esc(n.source)}</div></div></li>`).join("");
+  $("books").innerHTML =
+    `<div class="muted">On his shelf at home</div>` + books.filter(([, b]) => b.where === "home").map(row).join("") +
+    `<div class="muted" style="margin-top:8px">At the library</div>` + books.filter(([, b]) => b.where === "library").map(row).join("") +
+    (learned ? `<div class="muted" style="margin-top:8px">What his books taught him</div><div>${learned}</div>` : "") +
+    `<div class="muted" style="margin-top:8px">His notebook (newest first)</div><ul class="feed">${notes || '<li><span></span><span class="muted">empty so far</span></li>'}</ul>` +
+    `<div class="muted" style="margin-top:6px;font-size:11px">${esc(lib.credit)}. Offline copy: no live internet.</div>`;
+}
+
+// ------------------------------------------------------------------ 2D / 3D switch
+let view = localStorage.getItem("jarvis-view") || "3d";
+function setView(v) {
+  if (v === "3d" && !window.Town3D) v = window.__3dFailed ? "2d" : v;
+  view = v; localStorage.setItem("jarvis-view", v);
+  const is3d = v === "3d";
+  $("town3d").style.display = is3d ? "" : "none";
+  $("hint3d").style.display = is3d ? "" : "none";
+  $("townwrap").style.display = is3d ? "none" : "";
+  $("b3d").classList.toggle("on", is3d); $("b2d").classList.toggle("on", !is3d);
+  if (is3d && window.Town3D && window.__last) window.Town3D.update(...window.__last);
+}
+$("b3d").onclick = () => setView("3d");
+$("b2d").onclick = () => setView("2d");
+window.addEventListener("town3d-ready", () => setView(view));
+window.addEventListener("town3d-failed", () => { window.__3dFailed = true; $("b3d").disabled = true; $("b3d").title = "3D didn't load on this device"; setView("2d"); });
+setView(view);
+
+// ------------------------------------------------------------------ everything
+async function render() {
+  try {
+    const [s, feed, town, diary, lib] = await Promise.all([get("state.json"), get("feed.json"), getOpt("town.json"), getOpt("diary.json"), getOpt("library.json")]);
+    $("err").style.display = "none";
+    $("doing").textContent = s.asleep ? "asleep" : s.doing;
+    $("place").textContent = "📍 " + String(s.place).replace(/_/g, " ");
+    $("feeling").textContent = s.feeling;
+    $("updated").textContent = LOCAL ? "town time " + townClock(s.updated) : "updated " + ago(s.updated);
+    $("thought").textContent = s.asleep ? "Zzz…" : `“${s.thought}”`;
+    $("eyes-open").style.display = s.asleep ? "none" : "";
+    $("eyes-shut").style.display = s.asleep ? "" : "none";
+    $("zzz").style.display = s.asleep ? "" : "none";
+    $("mouth").setAttribute("d", s.mood >= 0 ? "M25 28 Q30 31.5 35 28" : "M25 30 Q30 27 35 30");
+
+    if (town) renderTown(s, town);
+    window.__last = [s, town];
+    if (town && view === "3d" && window.Town3D) window.Town3D.update(s, town);
+    renderStuff(s);
+    renderPup(s);
+    renderBooks(s, lib);
+    renderDiary(diary);
+
+    let h = bar("Mood", s.mood, -1, 1, s.mood >= 0 ? "var(--good)" : "var(--bad)");
+    h += bar("Energy", s.energy, 0, 1, "var(--blue)");
+    h += `<div class="muted" style="margin:10px 0 2px">Needs (0 fine, 1 urgent)</div>`;
+    for (const [n, v] of Object.entries(s.needs)) h += bar(n, v, 0, 1, needColor(v));
+    $("bars").innerHTML = h;
+
+    const pct = Math.min(100, Math.round((s.coins / s.coins_goal) * 100));
+    $("coins").innerHTML = `<div class="bar" style="grid-template-columns:1fr 90px"><div class="track"><div class="fill" style="width:${pct}%;background:var(--accent)"></div></div><span class="num">${s.coins} / ${s.coins_goal}</span></div>`;
+
+    $("feed").innerHTML = feed.slice(0, 25).map((e) => `
+      <li class="k-${esc(e.kind)}">
+        <span class="t">${esc(e.time)}</span>
+        <div><span class="txt">${ICON[e.kind] || "•"} ${esc(e.text)}</span>${e.by ? `<span class="by">${esc(e.by)}</span>` : ""}
+        ${e.why ? `<div class="why">${esc(e.why)}</div>` : ""}</div>
+      </li>`).join("");
+
+    const t = s.stats.today, a = s.stats.all;
+    $("sources").innerHTML = [["model", "AI"], ["queue", "queue"], ["autopilot", "autopilot"], ["sleeping", "asleep"]]
+      .map(([k, l]) => `<div><b>${t[k]}</b><span>${l}</span></div>`).join("");
+    $("cost").textContent = `AI cost today $${t.cost_usd.toFixed(4)} (${(t.tokens_in + t.tokens_out).toLocaleString()} tokens) · all time $${a.cost_usd.toFixed(3)}` +
+      (s.brain === "free" ? " · free brain (fake AI, costs $0)" : "");
+  } catch (e) {
+    $("err").style.display = "block";
+    $("err").textContent = "Can't reach Jarvis right now: " + e.message;
+  }
+}
+if (new URLSearchParams(location.search).has("wide")) document.querySelector("main").style.maxWidth = "none";  // ?wide = whole street
+if (LOCAL) $("foot").textContent = "Local test run (python tick.py --watch): 1 tick every few seconds, fake AI, costs nothing.";
+render();
+setInterval(render, LOCAL ? 2000 : 60000);
+</script>
+<script type="module">
+  // the 3D town (three.js). If it can't load (old phone, no WebGL, offline), the 2D picture stays.
+  try {
+    const { mount, update } = await import("./town3d.js");
+    mount(document.getElementById("town3d"));
+    window.Town3D = { update };
+    window.dispatchEvent(new Event("town3d-ready"));
+  } catch (e) {
+    console.warn("3D town unavailable:", e);
+    window.dispatchEvent(new Event("town3d-failed"));
+  }
+</script>
+</body>
+</html>
