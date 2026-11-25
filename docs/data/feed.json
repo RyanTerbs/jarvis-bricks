@@ -1,5 +1,14 @@
 [
   {
+    "at": "2026-11-25T23:58:18.975312+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "training Diesel (sit: 1/3)",
+    "why": "Feels right.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-25T23:48:46.858911+00:00",
     "time": "6:48 PM",
     "kind": "did",

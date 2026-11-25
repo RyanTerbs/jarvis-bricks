@@ -6,14 +6,14 @@
   "thought": "Could murder a coffee.",
   "feeling": "a bit restless",
   "needs": {
-    "rest": 0.22,
-    "hunger": 0.435,
-    "social": 0.324,
-    "tinker": 0.485,
-    "curiosity": 0.425
+    "rest": 0.24,
+    "hunger": 0.47,
+    "social": 0.348,
+    "tinker": 0.47,
+    "curiosity": 0.35
   },
-  "mood": 0.33,
-  "energy": 0.78,
+  "mood": 0.39,
+  "energy": 0.76,
   "coins": 20,
   "coins_goal": 500,
   "bricks": 10,
@@ -40,13 +40,7 @@
     "waves": "small",
     "waves_date": "2026-11-25"
   },
-  "queue": [
-    {
-      "move": "train_the_puppy",
-      "why": "Feels right.",
-      "trick": "sit"
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-25",
     "used": 0,
@@ -78,6 +72,12 @@
       "k": "did",
       "x": "training Diesel (sit: Diesel wasn't having it)",
       "why": "Bricks don't grow on trees. Yet."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "training Diesel (sit: 1/3)",
+      "why": "Feels right."
     }
   ],
   "day_start": {
@@ -86,13 +86,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1,
+  "tick": 2,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-25T23:48:46.858911+00:00",
+  "updated": "2026-11-25T23:58:18.975312+00:00",
   "stats": {
     "all": {
       "model": 1,
-      "queue": 0,
+      "queue": 1,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -102,7 +102,7 @@
     "today": {
       "date": "2026-11-25",
       "model": 1,
-      "queue": 0,
+      "queue": 1,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -117,15 +117,17 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.33,
-      "tired": 0.32,
-      "bored": 0.38
+      "hunger": 0.36,
+      "tired": 0.44,
+      "bored": 0.46
     },
-    "bond": 0.1,
+    "bond": 0.12,
     "food": 4,
-    "tricks": {},
+    "tricks": {
+      "sit": 1
+    },
     "learned": [],
-    "doing": "trotting along behind Jarvis",
-    "last_played_tick": 1
+    "doing": "watching Jarvis work",
+    "last_played_tick": 2
   }
 }
