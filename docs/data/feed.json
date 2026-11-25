@@ -1,0 +1,38 @@
+[
+  {
+    "at": "2026-11-25T23:48:46.858911+00:00",
+    "time": "6:48 PM",
+    "kind": "did",
+    "text": "training Diesel (sit: Diesel wasn't having it)",
+    "why": "Bricks don't grow on trees. Yet.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-25T23:48:46.858911+00:00",
+    "time": "6:48 PM",
+    "kind": "learned",
+    "text": "named the puppy Diesel",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-25T23:48:46.858911+00:00",
+    "time": "6:48 PM",
+    "kind": "thought",
+    "text": "Could murder a coffee.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-25T23:48:46.858911+00:00",
+    "time": "6:48 PM",
+    "kind": "noticed",
+    "text": "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.",
+    "why": null,
+    "by": null,
+    "ok": true
+  }
+]

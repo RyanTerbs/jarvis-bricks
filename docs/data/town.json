@@ -1,0 +1,75 @@
+{
+  "max_lots": 24,
+  "lots": [
+    {
+      "lot": 0,
+      "id": "brick_pit",
+      "name": "Brick pit",
+      "place": "brick_pit",
+      "desc": "a pile of loose bricks at the edge of town, with a lucky ! block floating above it",
+      "look": {
+        "kind": "pit"
+      },
+      "bp": "brick_pit",
+      "decor": false,
+      "built": "2026-11-25"
+    },
+    {
+      "lot": 1,
+      "id": "home",
+      "name": "Home",
+      "place": "home",
+      "desc": "his little brick house with a savings jar on the shelf",
+      "look": {
+        "kind": "house",
+        "color": "#c8382e",
+        "roof": "#7a2018",
+        "emoji": "🏠",
+        "floors": 1
+      },
+      "bp": "home",
+      "decor": false,
+      "built": "2026-11-25"
+    },
+    {
+      "lot": 2,
+      "id": "garage",
+      "name": "Garage",
+      "place": "garage",
+      "desc": "the town garage, smells of oil, always a job waiting",
+      "look": {
+        "kind": "garage",
+        "color": "#7d8590",
+        "emoji": "🔧"
+      },
+      "bp": "garage",
+      "decor": false,
+      "built": "2026-11-25"
+    },
+    {
+      "lot": 3,
+      "id": "cafe",
+      "name": "Cafe",
+      "place": "cafe",
+      "desc": "the corner cafe, good coffee and gossip",
+      "look": {
+        "kind": "shop",
+        "color": "#2f8f5b",
+        "emoji": "☕",
+        "floors": 1
+      },
+      "bp": "cafe",
+      "decor": false,
+      "built": "2026-11-25"
+    }
+  ],
+  "site": null,
+  "custom_blueprints": {},
+  "custom_moves": {},
+  "history": [
+    {
+      "date": "2026-11-25",
+      "text": "Jarvis moved into a tiny town: a house, a garage, a cafe and a pile of bricks."
+    }
+  ]
+}

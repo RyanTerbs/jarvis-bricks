@@ -1,0 +1,131 @@
+{
+  "name": "Jarvis",
+  "place": "home",
+  "asleep": false,
+  "doing": "training Diesel",
+  "thought": "Could murder a coffee.",
+  "feeling": "a bit restless",
+  "needs": {
+    "rest": 0.22,
+    "hunger": 0.435,
+    "social": 0.324,
+    "tinker": 0.485,
+    "curiosity": 0.425
+  },
+  "mood": 0.33,
+  "energy": 0.78,
+  "coins": 20,
+  "coins_goal": 500,
+  "bricks": 10,
+  "stock": {},
+  "owned": [],
+  "sales": {
+    "items": 0,
+    "coins": 0
+  },
+  "books": {},
+  "finished": [],
+  "notebook": [],
+  "looked_up": [],
+  "hour": 18,
+  "beach": {
+    "tan": 0.0,
+    "surf_skill": 0.0,
+    "surf_sessions": 0,
+    "castles": [],
+    "best_castle": 0,
+    "shells": 0,
+    "sun_today": 0,
+    "burnt_until": 0,
+    "waves": "small",
+    "waves_date": "2026-11-25"
+  },
+  "queue": [
+    {
+      "move": "train_the_puppy",
+      "why": "Feels right.",
+      "trick": "sit"
+    }
+  ],
+  "lucky": {
+    "date": "2026-11-25",
+    "used": 0,
+    "max": 3
+  },
+  "designed_on": null,
+  "plan_today": null,
+  "today_log": [
+    {
+      "t": "6:48 PM",
+      "k": "noticed",
+      "x": "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.",
+      "why": null
+    },
+    {
+      "t": "6:48 PM",
+      "k": "thought",
+      "x": "Could murder a coffee.",
+      "why": null
+    },
+    {
+      "t": "6:48 PM",
+      "k": "learned",
+      "x": "named the puppy Diesel",
+      "why": null
+    },
+    {
+      "t": "6:48 PM",
+      "k": "did",
+      "x": "training Diesel (sit: Diesel wasn't having it)",
+      "why": "Bricks don't grow on trees. Yet."
+    }
+  ],
+  "day_start": {
+    "coins": 20,
+    "bricks": 10,
+    "got": 0,
+    "used": 0
+  },
+  "tick": 1,
+  "born": "2026-11-25T23:48:46.858911+00:00",
+  "updated": "2026-11-25T23:48:46.858911+00:00",
+  "stats": {
+    "all": {
+      "model": 1,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0
+    },
+    "today": {
+      "date": "2026-11-25",
+      "model": 1,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0
+    }
+  },
+  "brain": "free",
+  "pup": {
+    "name": "Diesel",
+    "born": "2026-11-25T23:48:46.858911+00:00",
+    "arrived_tick": 1,
+    "napping": false,
+    "needs": {
+      "hunger": 0.33,
+      "tired": 0.32,
+      "bored": 0.38
+    },
+    "bond": 0.1,
+    "food": 4,
+    "tricks": {},
+    "learned": [],
+    "doing": "trotting along behind Jarvis",
+    "last_played_tick": 1
+  }
+}

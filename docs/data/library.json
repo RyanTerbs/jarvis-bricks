@@ -1,0 +1,90 @@
+{
+  "books": {
+    "dog_training": {
+      "title": "Dog training",
+      "where": "home",
+      "chapters": 8,
+      "perk": "puppy training works more often",
+      "source": "https://en.wikipedia.org/wiki/Dog_training"
+    },
+    "carburetor": {
+      "title": "Carburetor",
+      "where": "home",
+      "chapters": 9,
+      "perk": "his rebuilt carbs sell for 2 coins more",
+      "source": "https://en.wikipedia.org/wiki/Carburetor"
+    },
+    "thailand": {
+      "title": "Thailand",
+      "where": "home",
+      "chapters": 9,
+      "perk": "knowing where he's going keeps him cheerful",
+      "source": "https://en.wikipedia.org/wiki/Thailand"
+    },
+    "puppy": {
+      "title": "Puppy",
+      "where": "library",
+      "chapters": 5,
+      "perk": "looking after his pup builds the bond 50% faster",
+      "source": "https://en.wikipedia.org/wiki/Puppy"
+    },
+    "motorcycle": {
+      "title": "Motorcycle",
+      "where": "library",
+      "chapters": 10,
+      "perk": "rides make him happier",
+      "source": "https://en.wikipedia.org/wiki/Motorcycle"
+    },
+    "two_stroke": {
+      "title": "Two-stroke engine",
+      "where": "library",
+      "chapters": 8,
+      "perk": "+1 coin for every car he fixes",
+      "source": "https://en.wikipedia.org/wiki/Two-stroke_engine"
+    },
+    "bricklayer": {
+      "title": "Bricklayer",
+      "where": "library",
+      "chapters": 3,
+      "perk": "1 in 4 building shifts count double",
+      "source": "https://en.wikipedia.org/wiki/Bricklayer"
+    },
+    "haggling": {
+      "title": "Bargaining",
+      "where": "library",
+      "chapters": 4,
+      "perk": "sells a bit more at his stall",
+      "source": "https://en.wikipedia.org/wiki/Bargaining"
+    },
+    "thai_cuisine": {
+      "title": "Thai cuisine",
+      "where": "library",
+      "chapters": 10,
+      "perk": "his noodle kits sell for 1 coin more",
+      "source": "https://en.wikipedia.org/wiki/Thai_cuisine"
+    },
+    "chiang_mai": {
+      "title": "Chiang Mai",
+      "where": "library",
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Chiang_Mai"
+    },
+    "thai_language": {
+      "title": "Thai language",
+      "where": "library",
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Thai_language"
+    },
+    "lego": {
+      "title": "Lego",
+      "where": "library",
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Lego"
+    }
+  },
+  "topics": 56,
+  "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"
+}
