@@ -930,19 +930,91 @@ def call_model(system, user, max_tokens=1500):
     return text, data.get("usage", {})
 
 
-MOCK_PUP_NAMES = ["Bolt", "Sprocket", "Diesel", "Piston", "Biscuit"]   # fake AI only: the real AI picks his own name
-MOCK_WHYS = ["Needs doing.", "Feels right.", "Why not, hey.", "Lekker, let's go.", "Been on my mind.",
-             "Town won't build itself.", "Bricks don't grow on trees. Yet."]
-MOCK_DESIGNS = [
-    {"name": "Sunset Pier", "what": "a little wooden pier over a blue plastic pond", "activity": "Watching the sunset",
-     "helps": "rest", "emoji": "🌅", "color": "#3a7bd5"},
-    {"name": "Chopper Shop", "what": "a tiny custom bike shop with chrome everywhere", "activity": "Polishing chrome",
-     "helps": "tinker", "emoji": "🏍️", "color": "#34495e"},
-    {"name": "Braai Spot", "what": "a brick braai with two camping chairs", "activity": "Having a braai",
-     "helps": "social", "emoji": "🔥", "color": "#a04000"},
-    {"name": "Little Temple", "what": "a small golden temple, a taste of Thailand", "activity": "Sitting quietly",
-     "helps": "curiosity", "emoji": "🛕", "color": "#d4ac0d"},
-]
+_FB = {}
+
+
+def free_brain():
+    """The free brain's phrase book (jarvis/free_brain.json): his lines until the real AI is switched on."""
+    if not _FB:
+        _FB.update(load(CONFIG / "free_brain.json", {}) or {})
+    return _FB
+
+
+def fb_pick(pool, recent=()):
+    fresh = [x for x in pool if x not in recent] or list(pool)
+    return random.choice(fresh) if fresh else ""
+
+
+def mock_feeling(state):
+    F, n, m = free_brain().get("feelings", {}), state["needs"], state["mood"]
+    key = ("hungry" if n["hunger"] >= 0.75 else "tired" if n["rest"] >= 0.75 else
+           "great" if m >= 0.5 else "good" if m >= 0.25 else "ok" if m >= 0 else "low")
+    return fb_pick(F.get(key) or ["fine"])
+
+
+def fb_fill(text, state, town, place=None):
+    """Fill the {placeholders} in a phrase-book line from what's really going on."""
+    pup = state.get("pup") or {}
+    note = ""
+    if state.get("notebook"):
+        words = state["notebook"][-1]["note"].split()
+        note = " ".join(words[:10]) + ("..." if len(words) > 10 else "")
+    reading = [b for b in state.get("books", {}) if b not in state.get("finished", [])]
+    vals = {"pup": pup.get("name") or "the pup", "coins": state["coins"], "left": max(0, state["coins_goal"] - state["coins"]),
+            "site": town["site"]["name"] if town.get("site") else "next build",
+            "book": (library()["books"].get(reading[-1]) or {}).get("title", "this") if reading else "this",
+            "engine": random.choice(free_brain().get("engine_names") or ["Betsy"]), "place": nice(place or "town"),
+            "note": note or "not much yet",
+            "topic": re.sub(r" \(.*\)$", "", state["notebook"][-1]["source"]).replace("his laptop: ", "") if state.get("notebook") else "engines",
+            "waves": state.get("beach", {}).get("waves", "small"),
+            "bricks": state["bricks"], "mood": mock_feeling(state)}
+    for k, v in vals.items():
+        text = text.replace("{" + k + "}", str(v))
+    return text
+
+
+def mock_thought(state, town):
+    """A thought that fits the moment: time of day, his needs, the pup, his build, the beach..."""
+    T, n, hr, pup = free_brain().get("thoughts", {}), state["needs"], state.get("hour", 12), state.get("pup") or {}
+    w = {("morning" if 6 <= hr < 12 else "afternoon" if hr < 17 else "evening" if hr < 22 else "night"): 1.5,
+         "random": 1.5, "saving": 0.8, "thailand": 1.0}
+    for need, cat, wt in (("hunger", "hungry", 3), ("rest", "tired", 3), ("social", "lonely", 2), ("tinker", "restless", 2), ("curiosity", "curious", 2)):
+        if n[need] >= 0.6:
+            w[cat] = wt
+    if pup and max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= 0.6:
+        w["pup_needs"] = 3
+    elif pup and pup.get("bond", 0) >= 0.5:
+        w["pup_happy"] = 1.5
+    if town.get("site"):
+        w["building"] = 1.5
+    if state.get("notebook"):
+        w["reading"] = 1.2
+    if state["place"] == "beach":
+        w["beach"] = 3
+        if state["beach"]["waves"] == "good":
+            w["beach_good_waves"] = 2
+    if state["coins"] < 6:
+        w["money_low"] = 2
+    if sum(state.get("stock", {}).values()):
+        w["stall"] = 0.8
+    cats = [c for c in w if T.get(c)]
+    if not cats:
+        return "One brick at a time, hey."
+    cat = random.choices(cats, weights=[w[c] for c in cats])[0]
+    recent = state.get("recent_thoughts", [])
+    raw = fb_pick(T[cat], recent)
+    state["recent_thoughts"] = (recent + [raw])[-25:]          # don't repeat himself
+    return fb_fill(raw, state, town)
+
+
+def mock_why(move, state, town):
+    Wy = free_brain().get("whys", {})
+    key = (move if move in Wy else "_walk_home" if move == "walk_to_home" and "_walk_home" in Wy else "_walk" if move.startswith("walk_to_") else "_build" if move.startswith("start_build_")
+           else "_make" if move.startswith("make_") else "_order" if move.startswith("order_")
+           else "_custom" if move.startswith("use_") else "_any")
+    pool = Wy.get(key) or Wy.get("_any") or ["Needs doing."]
+    line = fb_fill(random.choice(pool), state, town, place=move[8:] if move.startswith("walk_to_") else None)
+    return line[:1].upper() + line[1:]
 
 
 def mock_plan(state, W, world, town):
@@ -981,7 +1053,7 @@ def mock_plan(state, W, world, town):
     grow = [m for m in starts if bp[m[12:]].get("expand") and free_lot(town) is None]
     builds = big or (small if random.random() < 0.2 else []) or grow   # saves up for real buildings
     names = {b["name"] for b in town["custom_blueprints"].values()}
-    designs = [d for d in MOCK_DESIGNS if d["name"] not in names]
+    designs = [d for d in free_brain().get("designs", []) if d["name"] not in names]
     makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]]
     orders = [m for m in W["moves"] if m.startswith("order_")]
     if "run_the_stall" in W["moves"] and "market_stall" in W["places"] and roll < 0.25:
@@ -1008,12 +1080,12 @@ def mock_plan(state, W, world, town):
 def mock_model(state, W, world, town, system, user):
     """A FAKE AI for free testing. Mostly sensible, sometimes deliberately wrong, to test the safety nets."""
     roll = random.random()
-    if roll < 0.04:
+    if roll < 0.01:
         return "Eish, lost my train of thought", {"input_tokens": len(system + user) // 4, "output_tokens": 8}
     plan, design = mock_plan(state, W, world, town)
-    if roll < 0.10:
+    if roll < 0.03:
         plan = plan + ["fix_a_car"]  # often not allowed where he'll be: tests the world saying no
-    moves = [{"move": m, "why": random.choice(MOCK_WHYS)} for m in plan[:3]]
+    moves = [{"move": m, "why": mock_why(m, state, town)} for m in plan[:3]]
     for m in moves:
         if m["move"] == "design_a_building" and design:
             m["design"] = design
@@ -1026,13 +1098,11 @@ def mock_model(state, W, world, town, system, user):
             m["trick"] = todo[0] if todo else "sit"
     reply = {
         "moves": moves,
-        "thought": random.choice(["That carb won't fix itself.", "Thailand jar's looking better.",
-                                  "Could murder a coffee.", "Who names a bolt? Me.",
-                                  "This street needs a few more trees.", "One brick at a time, hey."]),
-        "feeling": random.choice(["content", "a bit restless", "chuffed", "tired but fine"]),
+        "thought": mock_thought(state, town),
+        "feeling": mock_feeling(state),
     }
     if state.get("pup") and not state["pup"]["name"]:
-        reply["puppy_name"] = random.choice(MOCK_PUP_NAMES)
+        reply["puppy_name"] = random.choice(free_brain().get("puppy_names") or ["Bolt"])
     text = json.dumps(reply, ensure_ascii=False)
     return text, {"input_tokens": len(system + user) // 4, "output_tokens": len(text) // 4}
 
@@ -1109,6 +1179,7 @@ def day_facts(state, town, day):
         "site": town["site"],
         "town": [l["name"] for l in sorted(town["lots"], key=lambda l: l["lot"])],
         "log": log,
+        "_state": state, "_town": town,
     }
 
 
@@ -1161,10 +1232,12 @@ def parse_diary(text):
 def template_diary(f):
     """The no-AI diary: built from today's numbers, so a day is never missed."""
     cap = lambda s: s[:1].upper() + s[1:]
-    bits = []
+    D = free_brain().get("diary", {})
+    pick = lambda k, d: fb_fill(random.choice(D.get(k) or [d]), f["_state"], f["_town"])
+    bits = [pick("openers", "Right, diary.")]
     if f["top"]:
         tops = f["top"]
-        bits.append("Spent most of today " + (", ".join(tops[:-1]) + " and " + tops[-1] if len(tops) > 1 else tops[0]) + ".")
+        bits.append(("Spent most of today " + (", ".join(tops[:-1]) + " and " + tops[-1] if len(tops) > 1 else tops[0]) + ".").replace(" his ", " my "))
     if f["built"]:
         bits.append(cap(f["built"][-1]) + " Stood back and had a proper look at it. Lekker.")
     elif f["site"]:
@@ -1178,15 +1251,20 @@ def template_diary(f):
     if f["books_done"]:
         bits.append(cap(f["books_done"][-1]) + ". Lekker.")
     elif f["read_notes"]:
-        bits.append("Read a bit. " + f["read_notes"][-1].split("): ", 1)[-1])
+        src = re.sub(r"^noted \((his laptop: )?", "", f["read_notes"][-1].split("): ", 1)[0])
+        src = re.sub(r" \(.*$", "", src)
+        bits.append(random.choice(["Read up on {s}.", "Got stuck into {s} for a bit.", "Learned a bit about {s}.",
+                                   "Did some reading on {s}. Interesting stuff."]).replace("{s}", src))
     if f["beach"]:
-        bits.append("Beach time: " + f["beach"][-1] + ".")
+        bits.append("Beach time: " + f["beach"][-1].replace(" his ", " my ") + ".")
     if f["pup_fed"] == 0:
         bits.append(f"Eish, didn't feed {f['pup_name']} properly today. Must do better.")
+    else:
+        bits.append(pick("pup_good", "{pup} was a legend today.") if f["pup_bond"] >= 0.5 else pick("pup_meh", "Must give {pup} more time."))
     if f["sold_coins"]:
         bits.append(f"Stall made {f['sold_coins']} coins today.")
     if f["bought"]:
-        bits.append(cap(f["bought"][-1]) + ".")
+        bits.append(cap(f["bought"][-1]).replace(" his ", " my ").replace(" him ", " me ") + ".")
     c = f["coins_end"] - f["coins_start"]
     bits.append(f"Made {c} coins." if c > 0 else f"Spent {-c} coins. Eish." if c < 0 else "Coins didn't move.")
     got, used = f["bricks_got"], f["bricks_used"]
@@ -1194,10 +1272,12 @@ def template_diary(f):
         bits.append((f"Collected {got} brick{'s' * (got != 1)}" if got else "No new bricks")
                     + (f", used {used} on building." if used else "."))
     if f["noticed"]:
-        bits.append("Also: " + f["noticed"][0][:1].lower() + f["noticed"][0][1:])
-    bits.append(f"Jar's at {f['coins_end']} of 500. " + random.choice(["Bed.", "Not bad, hey.", "Tomorrow again.", "Tired but fine."]))
+        bits.append("Also: " + f["noticed"][0].replace(" his ", " my ").replace("Jarvis ", "I "))
+    bits.append(pick("thailand", "Jar's at {coins}."))
+    bits.append(pick("closers", "Bed."))
     title = cap(f["built"][-1].split(":")[0].rstrip("!")) if f["built"] else (cap(f["top"][0]) if f["top"] else "A quiet one")
-    tomorrow = f"Keep going on the {f['site']['name']}." if f["site"] else "Collect bricks and start something new."
+    plans = [t for t in (D.get("tomorrow") or ["Collect bricks and start something new."]) if f["site"] or "{site}" not in t]
+    tomorrow = fb_fill(random.choice(plans), f["_state"], f["_town"])
     return {"title": title[:60], "entry": " ".join(bits), "tomorrow": tomorrow}
 
 
@@ -1318,8 +1398,9 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     # 4. Decide: bedtime / queue / AI / autopilot
     plan, source = None, None
     if night or state["needs"]["rest"] >= 0.95:
-        plan = [{"move": "go_to_sleep", "why": "Bedtime."}] if state["place"] == "home" else \
-               [{"move": "walk_to_home", "why": "Time to head home."}, {"move": "go_to_sleep", "why": "Bedtime."}]
+        bed = fb_fill(random.choice(free_brain().get("whys", {}).get("go_to_sleep") or ["Bedtime."]), state, town)
+        plan = [{"move": "go_to_sleep", "why": bed}] if state["place"] == "home" else \
+               [{"move": "walk_to_home", "why": "Time to head home."}, {"move": "go_to_sleep", "why": bed}]
         source = "autopilot"
     elif state["queue"]:
         plan, source = state["queue"], "queue"

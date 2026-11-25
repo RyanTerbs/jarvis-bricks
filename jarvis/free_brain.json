@@ -1,0 +1,652 @@
+{
+  "_note": "The FREE brain's phrase book: used for his thoughts, reasons, feelings and diary until the real AI is switched on. Add your own lines! Placeholders: {pup} puppy's name, {coins} coins in the jar, {left} coins still needed, {site} what he's building, {book} book he's reading, {engine} a name for an engine, {place} where he's going, {note} something from his notebook, {topic} what he last read about, {waves} today's waves, {bricks} bricks he has, {mood} a feeling word. No em dashes.",
+  "thoughts": {
+    "morning": [
+      "Coffee first. Then the world.",
+      "Morning, town. Let's see what breaks today.",
+      "Sun's up, {pup}'s up, so I'm up.",
+      "New day, same jar. {left} coins to go.",
+      "Smells like oil and toast. Perfect morning.",
+      "Ja, today feels like a building day.",
+      "First job: find my 10mm socket. Again.",
+      "Early bird gets the bricks.",
+      "Quiet out. Just me, {pup} and the seagulls.",
+      "Plan for today: work hard, eat well, don't lose the 10mm.",
+      "Morning light makes even the brick pit look pretty.",
+      "Slept like a log. Ready to graft.",
+      "Howzit, world. What's on the menu?"
+    ],
+    "afternoon": [
+      "Halfway through the day and nothing's on fire. Lekker.",
+      "Afternoon slump. Could do with a coffee.",
+      "Hot one today. The beach is calling.",
+      "Town's buzzing this arvo.",
+      "Bit of graft now, bit of rest later.",
+      "If I finish this, I'm getting a snack. Deal.",
+      "{pup} keeps looking at me like it's walk time.",
+      "Sun's in the perfect spot for a nap. Not happening though.",
+      "Afternoons are for getting things done. In theory.",
+      "Second wind. Let's go."
+    ],
+    "evening": [
+      "Long day. Good day though.",
+      "Evenings are for slowing down. Mostly.",
+      "Sky's going orange. Thailand sunsets must be something else.",
+      "One more job, then feet up.",
+      "Lamps are coming on. Town looks proper tonight.",
+      "Nice when the street goes quiet.",
+      "{pup} is yawning, so I'm yawning.",
+      "Did more today than I thought I would.",
+      "Evening breeze off the sea. Lekker."
+    ],
+    "night": [
+      "Should be asleep. Brain's still in the garage.",
+      "Stars are out. Tiny town, big sky.",
+      "Tap the jar twice. Then bed.",
+      "Night shift is for owls, not mechanics."
+    ],
+    "hungry": [
+      "Stomach's making engine noises.",
+      "Could eat a whole braai by myself right now.",
+      "Running on fumes. Need food.",
+      "Hangry mechanic is a dangerous mechanic.",
+      "Toast. Noodles. Anything.",
+      "Eish, forgot to eat again.",
+      "If I don't eat soon I'm eating a brick.",
+      "Food first. Then I'm useful again.",
+      "Thinking about noodles. Again.",
+      "Could go a proper pie right now.",
+      "Lunch. Now. Please.",
+      "Smell of the cafe is killing me.",
+      "Running on coffee and hope."
+    ],
+    "tired": [
+      "Knackered. Eyes keep closing on their own.",
+      "Need a lie down before I drop a spanner on my foot.",
+      "Body says rest. Stubborn brain says one more job.",
+      "Running on half a battery.",
+      "Yoh, I'm tired.",
+      "Could sleep standing up like a horse.",
+      "Eyelids weigh a ton.",
+      "One more yawn and I'm out.",
+      "Need a nap. A proper one.",
+      "Even my spanner looks tired.",
+      "Batteries low. Need a recharge.",
+      "Brain's in first gear today."
+    ],
+    "lonely": [
+      "Quiet day. Could do with a chat at the cafe.",
+      "Been talking to bolts all day. Time for real people.",
+      "Miss the cafe gossip.",
+      "{pup} is good company but he doesn't laugh at my jokes.",
+      "Need a proper chat with someone who talks back.",
+      "Wonder what the cafe crowd is up to.",
+      "Could do with a laugh with someone."
+    ],
+    "restless": [
+      "Hands are itching. Need something to fix.",
+      "Haven't had grease on my hands in hours. Feels wrong.",
+      "If I don't fix something soon I'll start taking the fridge apart.",
+      "Need a proper job. Something with bolts.",
+      "Too much sitting. Where's my toolbox?"
+    ],
+    "curious": [
+      "Wonder how they build the roads up in the Thai mountains.",
+      "Bet there's a book about that.",
+      "Want to learn something new today.",
+      "Brain's hungry too. Need a good read.",
+      "Who invented the carburettor anyway? Must look that up.",
+      "So much I don't know. Love that, actually."
+    ],
+    "pup_needs": [
+      "{pup}'s giving me the hungry eyes. On it, boet.",
+      "Can't let {pup} go hungry. He's my responsibility.",
+      "{pup} is bored stiff. Time for a walk.",
+      "Little guy depends on me. Feed him first, then the rest.",
+      "{pup} keeps nudging his bowl. Message received.",
+      "That dog needs a run. So do I, honestly.",
+      "{pup} first. Always {pup} first.",
+      "{pup} is sulking. Fair enough, my fault.",
+      "Little guy needs his dad. Coming, boet.",
+      "{pup} brought me his lead. Subtle."
+    ],
+    "pup_happy": [
+      "{pup}'s tail hasn't stopped since breakfast. Lekker.",
+      "Best decision I ever made, keeping {pup}.",
+      "{pup} follows me everywhere. Proper little shadow.",
+      "Never had a mate this loyal.",
+      "Proud of {pup}. Little guy's growing up.",
+      "Me and {pup} against the world.",
+      "{pup} fell asleep on my boots again. Can't move. Won't move."
+    ],
+    "building": [
+      "The {site} is coming along. Brick by brick.",
+      "Can't wait to see the {site} finished.",
+      "Every brick in the {site} is one I collected myself. Feels good.",
+      "The {site} won't build itself. Back to it.",
+      "Measure twice, lay bricks once.",
+      "When the {site} is done, I'm celebrating with noodles."
+    ],
+    "saving": [
+      "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+      "Every coin counts. Every single one.",
+      "The jar's getting heavier. Love that sound.",
+      "Don't spend it. Don't spend it. Don't spend it.",
+      "Slow and steady fills the jar.",
+      "{left} coins to go. That's just a lot of carbs."
+    ],
+    "thailand": [
+      "One day: me, a bike, and a mountain road outside Chiang Mai.",
+      "Thailand. Noodles, mountains, warm sea. Soon.",
+      "Practising my Thai: sawadee khrap. Nailed it. Probably.",
+      "Somewhere there's a beach in Krabi with my name on it.",
+      "Picture it: a winding road, a good engine, no rush.",
+      "Thai street food. That's the dream right there.",
+      "Wonder if the bikes in Thailand need fixing. Bet they do."
+    ],
+    "reading": [
+      "Still thinking about that bit on {topic}.",
+      "Funny what you learn. {topic}, who knew.",
+      "That {topic} chapter got me thinking.",
+      "Didn't know half this stuff about {topic}.",
+      "Looked up {topic} on the old laptop. Lekker.",
+      "Reading about {topic} makes me want to try it."
+    ],
+    "beach": [
+      "Sand between the toes. Lekker.",
+      "Nothing like the sea to clear the head.",
+      "{pup} is losing his mind over a crab.",
+      "Should bring a book to the beach next time.",
+      "Salt air, warm sand, no bolts. Perfect.",
+      "This is what Thailand will feel like. Every day.",
+      "Waves are {waves} today."
+    ],
+    "beach_good_waves": [
+      "Waves are pumping today!",
+      "Look at those sets rolling in. Lekker.",
+      "Good waves. Must not get too cocky."
+    ],
+    "money_low": [
+      "Jar's looking thin. Need to fix a few cars.",
+      "Broke again. Garage it is.",
+      "Can't afford much right now. Time to graft."
+    ],
+    "stall": [
+      "Got stock to sell. Stall's calling.",
+      "Wonder if I'm pricing my stuff right.",
+      "Someone out there needs a brick model bike. I can feel it."
+    ],
+    "random": [
+      "Who names a bolt? Me. This one's Gerald.",
+      "Why is it always the 10mm that goes missing?",
+      "Note to self: buy more duct tape.",
+      "Life's simple. Fix things, save coins, look after the dog.",
+      "Some days you're the spanner, some days you're the bolt.",
+      "If it's got moving parts, I can fix it. Mostly.",
+      "Had a dream about a gearbox. Normal, right?",
+      "Plastic rain, plastic trees, real problems.",
+      "Ja, no, definitely, maybe.",
+      "Every town needs a guy who fixes stuff. That's me.",
+      "Should I name the street? Jarvis Street. Ja, why not.",
+      "Sometimes I just stand here and listen to the town.",
+      "{bricks} bricks in the pile. Could build something lekker with that.",
+      "A clean toolbox is a happy toolbox.",
+      "Shame, the cafe guy looked tired today."
+    ]
+  },
+  "whys": {
+    "fix_a_car": [
+      "This one's called {engine}. She'll purr by lunch.",
+      "Customer's waiting. Can't leave them stuck.",
+      "Coins for the jar.",
+      "Hands need grease. Simple.",
+      "Meet {engine}. Bit of a sad case. I'll sort her out.",
+      "Nothing beats an engine firing first try.",
+      "{engine} is making a funny noise. My kind of problem."
+    ],
+    "tinker_with_bike": [
+      "My bike, my baby.",
+      "Thailand bike needs to be perfect.",
+      "Tuning her up for the big trip.",
+      "Something rattles. Must find it."
+    ],
+    "go_for_a_ride": [
+      "Wind in the face. Best therapy.",
+      "Need to clear my head.",
+      "Testing my last fix on the road.",
+      "Just me and the road."
+    ],
+    "cook_dinner": [
+      "Proper food, proper fuel.",
+      "Can't run on toast forever.",
+      "Cooking something lekker tonight."
+    ],
+    "make_toast": [
+      "Toast. Quick and honest.",
+      "Coins are tight. Toast it is.",
+      "Fastest meal in the world."
+    ],
+    "grab_a_snack": [
+      "Need fuel, quick.",
+      "Cafe's got the good pies.",
+      "Stomach's rattling."
+    ],
+    "chat_with_locals": [
+      "Need some gossip.",
+      "Haven't spoken to a human all day.",
+      "Miss the banter.",
+      "Bet someone's got a story."
+    ],
+    "collect_bricks": [
+      "Town needs bricks. I need bricks.",
+      "Brick by brick, hey.",
+      "Got plans. Need materials.",
+      "Can't build on dreams alone."
+    ],
+    "hit_the_lucky_block": [
+      "Feeling lucky.",
+      "One bonk for luck.",
+      "Maybe a jackpot today.",
+      "Jump, hit, hope."
+    ],
+    "work_on_site": [
+      "Let's get this {site} up.",
+      "Back to the {site}. Nearly there.",
+      "Building is just fixing, but bigger.",
+      "One more course of bricks."
+    ],
+    "design_a_building": [
+      "Had an idea in the shower.",
+      "Town needs something new. Something mine.",
+      "Sketching a dream."
+    ],
+    "plan_the_town": [
+      "Need a plan before I build.",
+      "Where should the next thing go?"
+    ],
+    "count_savings": [
+      "Just checking. Again.",
+      "Love the sound of the jar.",
+      "Counting is free."
+    ],
+    "rest": [
+      "Five minutes. Just five.",
+      "Even engines need to cool down.",
+      "Taking a breather."
+    ],
+    "wait": [
+      "Just taking it in.",
+      "No rush.",
+      "Thinking."
+    ],
+    "go_to_sleep": [
+      "Tapped the jar twice. Night.",
+      "Long day. Bed.",
+      "Lights out, {pup}.",
+      "Tomorrow's another day.",
+      "Two taps on the jar for luck. Sleep."
+    ],
+    "read_a_book": [
+      "One more chapter.",
+      "Learning something today.",
+      "Books are a cheap mechanics' school.",
+      "Where was I? Ah, ja."
+    ],
+    "use_the_computer": [
+      "Quick look-up.",
+      "Old laptop still works. Mostly.",
+      "Wonder what it says about this."
+    ],
+    "feed_the_puppy": [
+      "{pup} first, always.",
+      "Little guy's hungry.",
+      "Food for my boy.",
+      "He depends on me."
+    ],
+    "buy_dog_food": [
+      "Can't run out of food for {pup}.",
+      "Stocking up for the little guy."
+    ],
+    "play_with_the_puppy": [
+      "{pup} needs to burn some energy.",
+      "Play time!",
+      "Look at that tail go."
+    ],
+    "walk_the_puppy": [
+      "Walkies, {pup}.",
+      "Fresh air for both of us.",
+      "Dog's gotta walk."
+    ],
+    "cuddle_the_puppy": [
+      "Cuddle break.",
+      "Best part of the day.",
+      "{pup} deserves it."
+    ],
+    "train_the_puppy": [
+      "Teaching {pup} new tricks.",
+      "Practice makes perfect.",
+      "Treat in the pocket, let's go."
+    ],
+    "run_the_stall": [
+      "Got stock, need buyers.",
+      "Market day.",
+      "Let's see what sells."
+    ],
+    "sunbathe": [
+      "Working on the tan for Thailand.",
+      "Sun's out.",
+      "Ten minutes in the sun."
+    ],
+    "go_surfing": [
+      "Waves are calling.",
+      "Let's catch one.",
+      "Practice, practice."
+    ],
+    "go_for_a_swim": [
+      "Quick dip to cool off.",
+      "Sea's warm today.",
+      "Swim time."
+    ],
+    "build_a_sand_castle": [
+      "Building things is what I do. Even with sand.",
+      "This one's getting a moat.",
+      "Kid at heart."
+    ],
+    "collect_shells": [
+      "Shells for the jar on the shelf.",
+      "Pretty ones today."
+    ],
+    "play_fetch_on_the_beach": [
+      "{pup} loves the beach.",
+      "Fetch on the sand!",
+      "Let him run."
+    ],
+    "watch_the_sunset": [
+      "Sunset. Free and perfect.",
+      "Every day should end like this.",
+      "Practising for Thailand sunsets."
+    ],
+    "lift_weights": [
+      "Gotta stay strong for the bike.",
+      "Few reps, then back to work."
+    ],
+    "read_a_manual": [
+      "Even I check the manual. Sometimes.",
+      "Torque specs don't remember themselves."
+    ],
+    "read_about_thailand": [
+      "Planning the route. Again.",
+      "Thailand homework."
+    ],
+    "sit_on_the_bench": [
+      "Just sitting. Allowed, hey.",
+      "Watching the world go by."
+    ],
+    "people_watch": [
+      "Town's full of characters.",
+      "Best free show in town."
+    ],
+    "slurp_noodles": [
+      "Noodles fix everything.",
+      "Practice for Thailand."
+    ],
+    "ride_the_track": [
+      "Send it!",
+      "Let's see how high."
+    ],
+    "look_out_over_town": [
+      "Look what I built.",
+      "Best view on the shelf."
+    ],
+    "_walk": [
+      "Off to the {place}.",
+      "Heading to the {place}.",
+      "{place} next.",
+      "Quick trip to the {place}."
+    ],
+    "_build": [
+      "Time to build something new.",
+      "Got the bricks, let's go.",
+      "Town's getting bigger."
+    ],
+    "_make": [
+      "Making stock for the stall.",
+      "Handmade, proper quality.",
+      "Got an order in my head."
+    ],
+    "_order": [
+      "Worth the coins. I think.",
+      "A tool that pays for itself.",
+      "Treat myself, just this once."
+    ],
+    "_custom": [
+      "My own place. Love it.",
+      "Built this myself."
+    ],
+    "_any": [
+      "Needs doing.",
+      "Feels right.",
+      "Why not, hey.",
+      "Lekker, let's go.",
+      "Been on my mind."
+    ],
+    "_walk_home": [
+      "Heading home.",
+      "Home time.",
+      "Back home quick.",
+      "Home for a bit."
+    ]
+  },
+  "feelings": {
+    "great": [
+      "chuffed",
+      "stoked",
+      "lekker",
+      "on top of the world",
+      "buzzing"
+    ],
+    "good": [
+      "content",
+      "happy enough",
+      "sharp-sharp",
+      "chilled",
+      "good, ja"
+    ],
+    "ok": [
+      "fine",
+      "okay-ish",
+      "steady",
+      "meh, fine"
+    ],
+    "low": [
+      "a bit flat",
+      "gatvol",
+      "grumpy",
+      "fed up"
+    ],
+    "tired": [
+      "knackered",
+      "tired but fine",
+      "running on fumes"
+    ],
+    "hungry": [
+      "hangry",
+      "starving"
+    ]
+  },
+  "engine_names": [
+    "Betsy",
+    "Old Rusty",
+    "Doris",
+    "Big Ron",
+    "Lightning",
+    "Bessie",
+    "The Beast",
+    "Gogo",
+    "Tannie Marie",
+    "Sputnik",
+    "Trusty",
+    "Mr Wobbles",
+    "Rattletrap",
+    "Little Thunder",
+    "Gerald",
+    "Smokey Joe"
+  ],
+  "puppy_names": [
+    "Bolt",
+    "Sprocket",
+    "Diesel",
+    "Piston",
+    "Biscuit"
+  ],
+  "designs": [
+    {
+      "name": "Sunset Pier",
+      "what": "a little wooden pier over a blue plastic pond",
+      "activity": "Watching the sunset",
+      "helps": "rest",
+      "emoji": "🌅",
+      "color": "#3a7bd5"
+    },
+    {
+      "name": "Chopper Shop",
+      "what": "a tiny custom bike shop with chrome everywhere",
+      "activity": "Polishing chrome",
+      "helps": "tinker",
+      "emoji": "🏍️",
+      "color": "#34495e"
+    },
+    {
+      "name": "Braai Spot",
+      "what": "a brick braai with two camping chairs",
+      "activity": "Having a braai",
+      "helps": "social",
+      "emoji": "🔥",
+      "color": "#a04000"
+    },
+    {
+      "name": "Little Temple",
+      "what": "a small golden temple, a taste of Thailand",
+      "activity": "Sitting quietly",
+      "helps": "curiosity",
+      "emoji": "🛕",
+      "color": "#d4ac0d"
+    },
+    {
+      "name": "Biltong Shack",
+      "what": "a tiny shack drying the best biltong on the shelf",
+      "activity": "Snacking on biltong",
+      "helps": "hunger",
+      "emoji": "🥩",
+      "color": "#7b3f1d"
+    },
+    {
+      "name": "Book Nook",
+      "what": "a cosy reading corner with a big armchair",
+      "activity": "Reading in the armchair",
+      "helps": "curiosity",
+      "emoji": "📖",
+      "color": "#6c4f9c"
+    },
+    {
+      "name": "Rooftop Garden",
+      "what": "a garden on a roof full of sunflowers",
+      "activity": "Watering the sunflowers",
+      "helps": "rest",
+      "emoji": "🌻",
+      "color": "#4e9a3a"
+    },
+    {
+      "name": "Coffee Cart",
+      "what": "a little cart making strong coffee",
+      "activity": "Chatting over coffee",
+      "helps": "social",
+      "emoji": "☕",
+      "color": "#6f4e37"
+    },
+    {
+      "name": "Junkyard",
+      "what": "a yard full of old parts waiting for a second life",
+      "activity": "Digging for parts",
+      "helps": "tinker",
+      "emoji": "⚙️",
+      "color": "#5d6d7e"
+    },
+    {
+      "name": "Tuk-tuk Garage",
+      "what": "a garage just for fixing tuk-tuks",
+      "activity": "Fixing a tuk-tuk",
+      "helps": "tinker",
+      "emoji": "🛺",
+      "color": "#e67e22"
+    },
+    {
+      "name": "Stargazer Hill",
+      "what": "a little hill with a telescope on top",
+      "activity": "Looking at the stars",
+      "helps": "curiosity",
+      "emoji": "🔭",
+      "color": "#2c3e50"
+    },
+    {
+      "name": "Karaoke Bar",
+      "what": "a tiny bar with a big speaker and a sticky mic",
+      "activity": "Singing badly",
+      "helps": "social",
+      "emoji": "🎤",
+      "color": "#c0392b"
+    }
+  ],
+  "diary": {
+    "openers": [
+      "What a day.",
+      "Right, diary.",
+      "Eish, where do I start.",
+      "Quick one tonight.",
+      "Ja, so today.",
+      "Not a bad day, all things considered.",
+      "Today was a {mood} kind of day.",
+      "Dear diary, as they say.",
+      "Long one today.",
+      "Short and sweet tonight."
+    ],
+    "pup_good": [
+      "{pup} was a legend today.",
+      "{pup} slept on my boots again. Can't complain.",
+      "Proud of {pup}. Little guy's growing up.",
+      "{pup} and me, best team in town.",
+      "{pup} made me laugh about ten times today."
+    ],
+    "pup_meh": [
+      "{pup} was a bit restless. Must give him more time tomorrow.",
+      "Didn't play with {pup} enough today. Noted."
+    ],
+    "thailand": [
+      "Jar's at {coins}. {left} to go. One day, Chiang Mai.",
+      "Still dreaming of Thailand. {left} coins between me and that road.",
+      "{coins} coins saved. Every one of them is a kilometre of Thai road.",
+      "Thailand feels closer today. {left} to go."
+    ],
+    "closers": [
+      "Bed.",
+      "Not bad, hey.",
+      "Tomorrow again.",
+      "Tired but fine.",
+      "Tapped the jar twice. Night.",
+      "Lekker. Night.",
+      "Sharp, diary.",
+      "Right. Sleep.",
+      "Night, {pup}."
+    ],
+    "tomorrow": [
+      "Keep going on the {site}.",
+      "Collect bricks and start something new.",
+      "More time with {pup}. Maybe the beach.",
+      "Read another chapter.",
+      "Fix a few cars, fill the jar.",
+      "Sell some stock at the stall.",
+      "Teach {pup} a new trick.",
+      "Beach in the morning, graft in the afternoon."
+    ]
+  }
+}
