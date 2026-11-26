@@ -1,5 +1,149 @@
 [
   {
+    "at": "2026-11-26T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "Little guy depends on me. Feed him first, then the rest.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: be the greeter at the market stall. Customers love me.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Doris is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Haven't had grease on my hands in hours. Feels wrong.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Cafe next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "thought",
+    "text": "Ja, no, definitely, maybe.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Walkies, Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "Diesel keeps nudging his bowl. Message received.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "collecting bricks (+5 bricks)",
+    "why": "Town needs bricks. I need bricks.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Brick pit next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "28 in the jar. 472 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-26T12:28:21.098366+00:00",
     "time": "7:28 AM",
     "kind": "did",
