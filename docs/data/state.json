@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "training Diesel",
-  "thought": "Lightning over the sea. Beautiful and terrifying.",
-  "feeling": "sharp-sharp",
+  "doing": "jumping up to hit the ! block",
+  "thought": "Don't spend it. Don't spend it. Don't spend it.",
+  "feeling": "buzzing",
   "needs": {
-    "rest": 0.41,
-    "hunger": 0.195,
-    "social": 0.295,
-    "tinker": 0.24,
-    "curiosity": 0.22
+    "rest": 0.57,
+    "hunger": 0.44,
+    "social": 0.208,
+    "tinker": 0.435,
+    "curiosity": 0.045
   },
-  "mood": 0.61,
-  "energy": 0.59,
+  "mood": 0.45,
+  "energy": 0.43,
   "coins": 50,
   "coins_goal": 500,
-  "bricks": 11,
+  "bricks": 21,
   "stock": {
     "postcard": 2
   },
@@ -62,14 +62,14 @@
     }
   ],
   "looked_up": [],
-  "hour": 10,
+  "hour": 12,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 3,
+    "shells": 4,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
@@ -78,7 +78,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-11-28",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -311,21 +311,81 @@
       "k": "did",
       "x": "training Diesel (sit: learned it!)",
       "why": "Treat in the pocket, let's go."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "Power's flickering. Good thing I've got candles somewhere.",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "cuddling Diesel (Diesel's tail goes mad)",
+      "why": "Best part of the day."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "thought",
+      "x": "Funny what you learn. Tourism in Thailand, who knew.",
+      "why": null
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "collecting shells (+1 shells (4 in the jar))",
+      "why": "Pretty ones today."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach",
+      "why": "Let him run."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Heading to the brick pit."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "collecting bricks (+4 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "One bonk for luck."
     }
   ],
   "day_start": {
     "coins": 42,
     "bricks": 11,
-    "got": 0,
+    "got": 10,
     "used": 0
   },
-  "tick": 257,
+  "tick": 264,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T15:28:21.098366+00:00",
+  "updated": "2026-11-28T17:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 106,
-      "queue": 63,
+      "model": 109,
+      "queue": 67,
       "autopilot": 10,
       "sleeping": 78,
       "tokens_in": 0,
@@ -334,8 +394,8 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 11,
-      "queue": 6,
+      "model": 14,
+      "queue": 10,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -350,11 +410,11 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.24,
-      "tired": 0.54,
-      "bored": 0.55
+      "hunger": 0.45,
+      "tired": 0.83,
+      "bored": 0.09
     },
-    "bond": 0.84,
+    "bond": 0.9,
     "food": 3,
     "tricks": {
       "sit": 3
@@ -362,17 +422,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 257,
-    "wants": "cuddle",
+    "doing": "wagging his tail",
+    "last_played_tick": 261,
+    "wants": "nap",
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "The sky is barking at me. I don't like it.",
-      "BOOM. Nope. Under the bed.",
-      "Stay close, {owner}. Closer.",
-      "BOOM. Nope. Under the bed.",
       "Who left this brick here? I'll carry it somewhere else.",
       "Good boy? Me? Yes. Me.",
       "Stay close, {owner}. Closer.",
@@ -385,9 +438,16 @@
       "Stay close, {owner}. Closer.",
       "BOOM. Nope. Under the bed.",
       "BOOM. Nope. Under the bed.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Stay close, {owner}. Closer.",
+      "Stay close, {owner}. Closer.",
+      "The waves are chasing me. I'm chasing the waves. Who's winning?",
+      "{owner} is the best human in the whole town.",
+      "Following {owner}. Best job in the world.",
+      "BOOM. Nope. Under the bed.",
+      "Yawn. Big yawn. Biggest yawn."
     ],
-    "thought": "Everything smells amazing today.",
+    "thought": "Yawn. Big yawn. Biggest yawn.",
     "want_ticks": 0,
     "last_fed_tick": 249,
     "recent_ideas": [
@@ -400,9 +460,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Funny what you learn. {topic}, who knew.",
-    "Food first. Then I'm useful again.",
-    "Looked up {topic} on the old laptop. Lekker.",
     "Who names a bolt? Me. This one's Gerald.",
     "If I don't fix something soon I'll start taking the fridge apart.",
     "Sky's going orange. Thailand sunsets must be something else.",
@@ -424,9 +481,12 @@
     "Practising my Thai: sawadee khrap. Nailed it. Probably.",
     "Reading about {topic} makes me want to try it.",
     "Autumn. Days getting shorter.",
-    "Lightning over the sea. Beautiful and terrifying."
+    "Lightning over the sea. Beautiful and terrifying.",
+    "Power's flickering. Good thing I've got candles somewhere.",
+    "Funny what you learn. {topic}, who knew.",
+    "Don't spend it. Don't spend it. Don't spend it."
   ],
-  "real_updated": "2026-11-26T20:30:11.159833+00:00",
+  "real_updated": "2026-11-26T20:45:10.987753+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@6",
@@ -439,7 +499,7 @@
     "seen": [
       "storm"
     ],
-    "temp": 16,
+    "temp": 17,
     "snow": 0,
     "wet": 1
   }

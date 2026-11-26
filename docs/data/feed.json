@@ -1,5 +1,95 @@
 [
   {
+    "at": "2026-11-28T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (6 bricks pop out!)",
+    "why": "One bonk for luck.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "collecting bricks (+4 bricks)",
+    "why": "Got plans. Need materials.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Heading to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "Don't spend it. Don't spend it. Don't spend it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "collecting shells (+1 shells (4 in the jar))",
+    "why": "Pretty ones today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Funny what you learn. Tourism in Thailand, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "cuddling Diesel (Diesel's tail goes mad)",
+    "why": "Best part of the day.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Power's flickering. Good thing I've got candles somewhere.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T15:28:21.098366+00:00",
     "time": "10:28 AM",
     "kind": "did",
@@ -1256,96 +1346,6 @@
     "kind": "thought",
     "text": "Salt air, warm sand, no bolts. Perfect.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
-    "why": "Let him run.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Heading to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "thought",
-    "text": "Should I name the street? Derek Street. Ja, why not.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "noticed",
-    "text": "Diesel falls asleep in the toolbox for a second.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Bit of a meh sky today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
-    "why": "Diesel loves the beach.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "building a sand castle (sand castle size 1/6)",
-    "why": "Building things is what I do. Even with sand.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Off to the beach.",
     "by": "model",
     "ok": true
   }
