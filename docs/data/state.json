@@ -6,14 +6,14 @@
   "thought": "Could sleep standing up like a horse.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.3,
-    "hunger": 0.71,
-    "social": 0.534,
-    "tinker": 0.59,
-    "curiosity": 0.58
+    "rest": 0,
+    "hunger": 0.79,
+    "social": 0.574,
+    "tinker": 0.63,
+    "curiosity": 0.62
   },
-  "mood": 0.24,
-  "energy": 0.7,
+  "mood": 0.15,
+  "energy": 1,
   "coins": 30,
   "coins_goal": 500,
   "bricks": 6,
@@ -35,7 +35,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 0,
+  "hour": 2,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -63,15 +63,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 123,
+  "tick": 131,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T05:58:21.098366+00:00",
+  "updated": "2026-11-27T07:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 52,
       "queue": 33,
       "autopilot": 6,
-      "sleeping": 32,
+      "sleeping": 40,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -81,7 +81,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 4,
+      "sleeping": 12,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -94,7 +94,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.554,
+      "hunger": 0.586,
       "tired": 0,
       "bored": 0.48
     },
@@ -108,14 +108,6 @@
     "last_played_tick": 110,
     "wants": null,
     "recent_thoughts": [
-      "The cafe smells like pies. Noted.",
-      "I could chew a boot. Just a little bit.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Tail check: still there. Good.",
-      "It's dark. I will guard the house. From the sofa.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Yawn. Big yawn. Biggest yawn.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: {owner} throws the ball forever.",
@@ -126,6 +118,14 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz."
     ],
@@ -167,7 +167,7 @@
     "Night shift is for owls, not mechanics.",
     "Could sleep standing up like a horse."
   ],
-  "real_updated": "2026-11-26T16:00:11.814914+00:00",
+  "real_updated": "2026-11-26T16:15:12.737582+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
@@ -181,7 +181,7 @@
       "sunny",
       "rain"
     ],
-    "temp": 11,
+    "temp": 10,
     "snow": 0,
     "wet": 1
   }
