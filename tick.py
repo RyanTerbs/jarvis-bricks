@@ -493,7 +493,8 @@ def read_book(state, want, log):
     here = [b for b, v in B.items() if (place == "library" or v["where"] == "home") and b not in state["finished"]]
     if not here:
         return False, "nothing left to read here" + (" (the library has more)" if place == "home" else "")
-    bid = want if want in here else here[0]
+    started = [b for b in here if state["books"].get(b)]
+    bid = want if want in here else (started[0] if started else random.choice(here))
     book, done = B[bid], state["books"].get(bid, 0)
     ch = book["chapters"][done]
     state["books"][bid] = done + 1
@@ -909,15 +910,19 @@ RULES
         what = f": {bp['desc']}" if bp.get("place") else ""
         bps.append(f"  {bp_id} = {bp['name']}{mine} ({cost}){tag}{what}")
     B, E = library()["books"], library()["encyclopedia"]
-    shelf = lambda where: "; ".join(f"{b} \"{v['title']}\" {state['books'].get(b, 0)}/{len(v['chapters'])}" +
-                                    (f" (teaches: {v['perk']['text']})" if v.get("perk") else "")
-                                    for b, v in B.items() if v["where"] == where and b not in state["finished"])
+    def shelf(where, n=8):
+        left = [b for b, v in B.items() if v["where"] == where and b not in state["finished"]]
+        left.sort(key=lambda b: -state["books"].get(b, 0))          # books he's reading first
+        out = "; ".join(f"{b} \"{B[b]['title']}\" {state['books'].get(b, 0)}/{len(B[b]['chapters'])}" +
+                        (f" (teaches: {B[b]['perk']['text']})" if B[b].get("perk") else "") for b in left[:n])
+        return out + (f"; +{len(left) - n} more on the shelf" if len(left) > n else "")
     done_books = ", ".join(f"{B[b]['title']}" + (f" ({B[b]['perk']['text']})" if B[b].get("perk") else "") for b in state["finished"] if b in B)
     notes = "\n".join(f"- [{n['source']}] {n['note']}" for n in state["notebook"][-8:])
     learn_lines = (f"BOOKS ON HIS SHELF AT HOME: {shelf('home') or 'all read'}\n"
                    f"BOOKS AT THE LIBRARY{'' if 'library' in W['places'] else ' (not built yet)'}: {shelf('library') or 'all read'}\n"
                    f"FINISHED BOOKS: {done_books or 'none yet'}\n"
-                   f"HIS LAPTOP (offline encyclopedia, no internet), topics: {', '.join(E)}\n"
+                   f"HIS LAPTOP (offline encyclopedia, no internet), {len(E)} topics, e.g.: "
+                   f"{', '.join(random.sample([k for k in E if k not in state['looked_up']] or list(E), min(20, len(E))))}\n"
                    f"HIS NOTEBOOK (newest last):\n{notes or '- empty so far'}")
     bb = state["beach"]
     today_castle = next((c["size"] for c in bb["castles"] if c["date"] == today), 0)

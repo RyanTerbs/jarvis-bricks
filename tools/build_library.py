@@ -23,17 +23,53 @@ UA = "JarvisBricks/1.0 (personal learning project; builds a small offline copy o
 
 # id, Wikipedia title, where it's shelved, what finishing it teaches him (perk)
 BOOKS = [
+    # ---- his own shelf at home: the dream first
     ("dog_training", "Dog training", "home", {"type": "train_chance", "value": 0.10, "text": "puppy training works more often"}),
     ("carburetor", "Carburetor", "home", {"type": "product_value", "product": "rebuilt_carb", "value": 2, "text": "his rebuilt carbs sell for 2 coins more"}),
     ("thailand", "Thailand", "home", {"type": "mood_base", "value": 0.03, "text": "knowing where he's going keeps him cheerful"}),
-    ("puppy", "Puppy", "library", {"type": "bond_gain", "value": 0.5, "text": "looking after his pup builds the bond 50% faster"}),
-    ("motorcycle", "Motorcycle", "library", {"type": "move_mood", "move": "go_for_a_ride", "value": 0.05, "text": "rides make him happier"}),
-    ("two_stroke", "Two-stroke engine", "library", {"type": "move_coins", "move": "fix_a_car", "value": 1, "text": "+1 coin for every car he fixes"}),
-    ("bricklayer", "Bricklayer", "library", {"type": "site_speed", "value": 0.25, "text": "1 in 4 building shifts count double"}),
-    ("haggling", "Haggling", "library", {"type": "sell_chance", "value": 0.05, "text": "sells a bit more at his stall"}),
-    ("thai_cuisine", "Thai cuisine", "library", {"type": "product_value", "product": "noodle_kit", "value": 1, "text": "his noodle kits sell for 1 coin more"}),
+    ("tourism_thailand", "Tourism in Thailand", "home", None),
+    ("bangkok", "Bangkok", "home", None),
+    ("moto_touring", "Motorcycle touring", "home", {"type": "move_mood", "move": "go_for_a_ride", "value": 0.05, "text": "rides make him even happier"}),
+    # ---- the library: Thailand + travel
     ("chiang_mai", "Chiang Mai", "library", None),
+    ("phuket", "Phuket province", "library", None),
+    ("krabi", "Krabi province", "library", None),
+    ("thai_buddhism", "Buddhism in Thailand", "library", {"type": "mood_base", "value": 0.02, "text": "a calmer head"}),
+    ("songkran", "Songkran", "library", None),
+    ("thai_cuisine", "Thai cuisine", "library", {"type": "product_value", "product": "noodle_kit", "value": 1, "text": "his noodle kits sell for 1 coin more"}),
     ("thai_language", "Thai language", "library", None),
+    ("muay_thai", "Muay Thai", "library", {"type": "move_mood", "move": "lift_weights", "value": 0.05, "text": "workouts feel better"}),
+    ("surfing", "Surfing", "library", {"type": "move_mood", "move": "go_surfing", "value": 0.05, "text": "surf sessions make him happier"}),
+    ("backpacking", "Backpacking (travel)", "library", None),
+    ("travel", "Travel", "library", None),
+    ("fire", "FIRE movement", "library", {"type": "move_mood", "move": "count_savings", "value": 0.05, "text": "counting the jar feels even better"}),
+    # ---- the library: the work he knows
+    ("construction_mgmt", "Construction management", "library", {"type": "site_speed", "value": 0.15, "text": "builds go faster"}),
+    ("project_mgmt", "Project management", "library", {"type": "site_speed", "value": 0.10, "text": "builds go a bit faster"}),
+    ("bricklayer", "Bricklayer", "library", {"type": "site_speed", "value": 0.25, "text": "1 in 4 building shifts count double"}),
+    ("log_house", "Log house", "library", None),
+    ("quality_control", "Quality control", "library", {"type": "product_value", "product": "model_bike", "value": 1, "text": "his model bikes sell for 1 coin more"}),
+    ("event_mgmt", "Event management", "library", {"type": "sell_chance", "value": 0.05, "text": "draws more people to his stall"}),
+    ("cost_estimate", "Cost estimate", "library", None),
+    ("haggling", "Haggling", "library", {"type": "sell_chance", "value": 0.05, "text": "sells a bit more at his stall"}),
+    ("pest_control", "Pest control", "library", None),
+    ("auto_repair", "Automobile repair shop", "library", {"type": "move_coins", "move": "fix_a_car", "value": 1, "text": "+1 coin for every car he fixes"}),
+    ("two_stroke", "Two-stroke engine", "library", {"type": "move_coins", "move": "fix_a_car", "value": 1, "text": "+1 coin for every car he fixes"}),
+    ("motorcycle", "Motorcycle", "library", {"type": "move_mood", "move": "go_for_a_ride", "value": 0.05, "text": "rides make him happier"}),
+    ("ktm", "KTM", "library", {"type": "move_mood", "move": "tinker_with_bike", "value": 0.05, "text": "tinkering with his bike feels even better"}),
+    ("maserati", "Maserati", "library", None),
+    # ---- the library: places + life
+    ("south_africa", "South Africa", "library", None),
+    ("rwanda", "Rwanda", "library", None),
+    ("saudi_arabia", "Saudi Arabia", "library", None),
+    ("riyadh", "Riyadh", "library", None),
+    ("netherlands", "Netherlands", "library", None),
+    ("florida", "Florida", "library", None),
+    ("fitness", "Physical fitness", "library", {"type": "move_mood", "move": "lift_weights", "value": 0.05, "text": "workouts feel better"}),
+    ("healthy_diet", "Healthy diet", "library", {"type": "move_mood", "move": "cook_dinner", "value": 0.05, "text": "a proper meal lifts him more"}),
+    ("index_fund", "Index fund", "library", {"type": "move_mood", "move": "count_savings", "value": 0.05, "text": "counting the jar feels even better"}),
+    ("gold_investment", "Gold as an investment", "library", None),
+    ("puppy", "Puppy", "library", {"type": "bond_gain", "value": 0.5, "text": "looking after his pup builds the bond 50% faster"}),
     ("lego", "Lego", "library", None),
 ]
 TOPICS = [
@@ -42,6 +78,10 @@ TOPICS = [
     "Motorcycle helmet", "Torque wrench", "Mechanic", "Brick", "Mortar (masonry)", "Coffee", "Espresso", "Dog", "Saving",
     "Compound interest", "Piggy bank", "Bicycle", "Lighthouse", "Ocean", "Sunset", "Moon", "Rain", "Island", "Arecaceae",
     "Marketplace", "Library", "Diary", "South Africa", "Braai", "Port Alfred", "Muay Thai", "Elephant", "Monsoon",
+    "Chiang Rai", "Pai, Thailand", "Ko Samui", "Ko Lanta", "Ko Pha-ngan", "Hua Hin", "Pattaya", "Ayutthaya (city)",
+    "Sukhothai (city)", "Doi Inthanon", "Floating market", "Night market", "Thai boxing", "Tuk-tuk", "Mekong",
+    "Andaman Sea", "Gulf of Thailand", "Kigali", "Amsterdam", "Rotterdam", "Fort Lauderdale", "Cape Town", "Johannesburg",
+    "Biltong", "Rugby union", "Procore", "Bluebeam", "Building information modeling", "Gantt chart", "Critical path method",
 ]
 SKIP = {"see also", "references", "external links", "further reading", "notes", "bibliography", "sources",
         "citations", "gallery", "footnotes", "explanatory notes", "works cited", "notes and references"}
@@ -103,6 +143,9 @@ def main():
     books, encyclopedia = {}, {}
     for bid, title, where, perk in BOOKS:
         name, url, text = fetch(title)
+        if not text.strip():
+            print(f"skip  {title} (no Wikipedia page)")
+            continue
         intro, sections = split(text)
         chapters = [{"title": "Introduction", "text": trim(intro, 2500)}] + \
                    [{"title": n, "text": trim(b, 2500)} for n, b in sections[:9]]

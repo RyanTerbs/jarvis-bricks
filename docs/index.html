@@ -487,9 +487,16 @@ function renderBooks(s, lib) {
   const books = Object.entries(lib.books);
   const learned = (s.finished || []).map((id) => lib.books[id]).filter((b) => b && b.perk).map((b) => `<span class="chip">📘 ${esc(b.perk)}</span>`).join("");
   const notes = (s.notebook || []).slice(-6).reverse().map((n) => `<li><span class="t">${esc(n.date.slice(5))}</span><div><span class="txt">📓 ${esc(n.note)}</span><div class="why">${esc(n.source)}</div></div></li>`).join("");
+  const done = (id) => (s.finished || []).includes(id), started = (id) => ((s.books || {})[id] || 0) > 0;
+  const shelfHtml = (where, label) => {
+    const all = books.filter(([, b]) => b.where === where), active = all.filter(([id]) => done(id) || started(id));
+    const unread = all.filter(([id]) => !done(id) && !started(id));
+    return `<div class="muted" style="margin-top:8px">${label} · ${all.filter(([id]) => done(id)).length}/${all.length} read</div>` +
+      (active.map(row).join("") || '<div class="muted">nothing started yet</div>') +
+      (unread.length ? `<details class="old"><summary>${unread.length} not started yet</summary><div class="muted">${unread.map(([, b]) => esc(b.title)).join(" · ")}</div></details>` : "");
+  };
   $("books").innerHTML =
-    `<div class="muted">On his shelf at home</div>` + books.filter(([, b]) => b.where === "home").map(row).join("") +
-    `<div class="muted" style="margin-top:8px">At the library</div>` + books.filter(([, b]) => b.where === "library").map(row).join("") +
+    shelfHtml("home", "On his shelf at home") + shelfHtml("library", "At the library (once he builds it)") +
     (learned ? `<div class="muted" style="margin-top:8px">What his books taught him</div><div>${learned}</div>` : "") +
     `<div class="muted" style="margin-top:8px">His notebook (newest first)</div><ul class="feed">${notes || '<li><span></span><span class="muted">empty so far</span></li>'}</ul>` +
     `<div class="muted" style="margin-top:6px;font-size:11px">${esc(lib.credit)}. Offline copy: no live internet.</div>`;
