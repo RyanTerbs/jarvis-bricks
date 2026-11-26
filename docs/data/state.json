@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "park",
   "asleep": false,
-  "doing": "building",
-  "thought": "Bit of graft now, bit of rest later.",
-  "feeling": "sharp-sharp",
+  "doing": "having a rest",
+  "thought": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+  "feeling": "tired but fine",
   "needs": {
-    "rest": 0.63,
-    "hunger": 0.375,
-    "social": 0.52,
-    "tinker": 0.46,
-    "curiosity": 0.15
+    "rest": 0.71,
+    "hunger": 0.715,
+    "social": 0.594,
+    "tinker": 0.34,
+    "curiosity": 0.3
   },
-  "mood": 0.37,
-  "energy": 0.37,
+  "mood": 0.48,
+  "energy": 0.29,
   "coins": 48,
   "coins_goal": 500,
   "bricks": 9,
@@ -62,7 +62,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -527,6 +527,96 @@
       "k": "did",
       "x": "building (Park 1/3)",
       "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Little guy needs his dad. Coming, boet.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Halfway through the day and nothing's on fire. Lekker.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Need a proper job. Something with bolts.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Diesel is going for that puddle whether I like it or not."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "thought",
+      "x": "Too much sitting. Where's my toolbox?",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Building site next."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "building (Park 2/3)",
+      "why": "Back to the Park. Nearly there."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "built",
+      "x": "finished building the Park!",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "Back to the Park. Nearly there."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "thought",
+      "x": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -535,13 +625,13 @@
     "got": 18,
     "used": 20
   },
-  "tick": 279,
+  "tick": 287,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T20:58:21.098366+00:00",
+  "updated": "2026-11-28T22:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 118,
-      "queue": 72,
+      "model": 123,
+      "queue": 75,
       "autopilot": 11,
       "sleeping": 78,
       "tokens_in": 0,
@@ -550,8 +640,8 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 23,
-      "queue": 15,
+      "model": 28,
+      "queue": 18,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -566,12 +656,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.692,
-      "tired": 0.33,
-      "bored": 0.3
+      "hunger": 0.232,
+      "tired": 0.59,
+      "bored": 0.12
     },
-    "bond": 0.9,
-    "food": 3,
+    "bond": 0.96,
+    "food": 2,
     "tricks": {
       "sit": 3
     },
@@ -579,17 +669,9 @@
       "sit"
     ],
     "doing": "watching Derek work",
-    "last_played_tick": 261,
-    "wants": "food",
+    "last_played_tick": 283,
+    "wants": "cuddle",
     "recent_thoughts": [
-      "The waves are chasing me. I'm chasing the waves. Who's winning?",
-      "{owner} is the best human in the whole town.",
-      "Following {owner}. Best job in the world.",
-      "BOOM. Nope. Under the bed.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Must... stay... awake... for treats.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "The ! block knows something. I will watch it.",
       "{owner} says a word, I do a thing, treat appears. Magic.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -601,11 +683,19 @@
       "Zzz. Squirrel. Zzz.",
       "My bowl is empty. This is an emergency.",
       "{owner} smells like toast. Share?",
-      "Good boy? Me? Yes. Me."
+      "Good boy? Me? Yes. Me.",
+      "Helping. I am helping. By sitting here.",
+      "Life is good. Life is SO good.",
+      "I know tricks now. I am a very clever boy.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Wet dog smell is the best smell.",
+      "Tail check: still there. Good.",
+      "PUDDLE. Must jump in puddle.",
+      "My tail won't stop. I'm not stopping it."
     ],
-    "thought": "Good boy? Me? Yes. Me.",
-    "want_ticks": 0,
-    "last_fed_tick": 249,
+    "thought": "My tail won't stop. I'm not stopping it.",
+    "want_ticks": 3,
+    "last_fed_tick": 282,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -617,11 +707,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "A clean toolbox is a happy toolbox.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Me and {pup} against the world.",
-    "Someone out there needs a brick model bike. I can feel it.",
-    "Storm's here. Everyone indoors, {pup} under the bed.",
     "Thunder like a V-twin with no silencer.",
     "Sun's up, {pup}'s up, so I'm up.",
     "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
@@ -641,9 +726,14 @@
     "Rain on the roof. Lekker sound, rubbish for building.",
     "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
     "Wet again. The site turns to mud in this.",
-    "Bit of graft now, bit of rest later."
+    "Bit of graft now, bit of rest later.",
+    "Little guy needs his dad. Coming, boet.",
+    "Halfway through the day and nothing's on fire. Lekker.",
+    "Need a proper job. Something with bolts.",
+    "Too much sitting. Where's my toolbox?",
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me."
   ],
-  "real_updated": "2026-11-26T21:15:11.083382+00:00",
+  "real_updated": "2026-11-26T21:30:14.774163+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",
@@ -657,7 +747,7 @@
       "storm",
       "rain"
     ],
-    "temp": 22,
+    "temp": 21,
     "snow": 0,
     "wet": 1
   }

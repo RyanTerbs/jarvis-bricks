@@ -75,19 +75,22 @@
       },
       "decor": false,
       "built": "2026-11-26"
+    },
+    {
+      "lot": 5,
+      "id": "park",
+      "bp": "park",
+      "name": "Park",
+      "place": "park",
+      "desc": "the park, a bench under a plastic tree",
+      "look": {
+        "kind": "park"
+      },
+      "decor": false,
+      "built": "2026-11-28"
     }
   ],
-  "site": {
-    "bp": "park",
-    "name": "Park",
-    "lot": 5,
-    "work": 3,
-    "done": 1,
-    "started": "2026-11-28",
-    "look": {
-      "kind": "park"
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -200,6 +203,10 @@
     {
       "date": "2026-11-27",
       "text": "Designed his own building: 🛺 Tuk-tuk Garage (a garage just for fixing tuk-tuks)."
+    },
+    {
+      "date": "2026-11-28",
+      "text": "Finished building the Park."
     }
   ]
 }
