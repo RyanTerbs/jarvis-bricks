@@ -1,5 +1,77 @@
 [
   {
+    "at": "2026-11-28T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "thought",
+    "text": "Someone out there needs a brick model bike. I can feel it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: learn the next trick and get ALL the treats.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Me and Diesel against the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "Overnight the tide came in and washed his sand castle away.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "⛈️ A thunderstorm rolls in off the sea. Lightning over the water.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-28T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1275,78 +1347,6 @@
     "text": "building (Market stall 2/3)",
     "why": "One more course of bricks.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Body says rest. Stubborn brain says one more job.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "taking Diesel for a walk",
-    "why": "Walkies, Diesel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Yoh, I'm tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Off to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Introduction)): Tourism is an economic contributor to Thailand.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

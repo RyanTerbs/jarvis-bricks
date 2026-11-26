@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "42 in the jar. 458 more and I'm on that bike in Thailand.",
-  "feeling": "good, ja",
+  "place": "garage",
+  "asleep": false,
+  "doing": "walking to the garage",
+  "thought": "Someone out there needs a brick model bike. I can feel it.",
+  "feeling": "fed up",
   "needs": {
-    "rest": 0,
-    "hunger": 0.85,
-    "social": 0.159,
-    "tinker": 0.865,
-    "curiosity": 0.565
+    "rest": 0.05,
+    "hunger": 0.28,
+    "social": 0.232,
+    "tinker": 0.915,
+    "curiosity": 0.645
   },
-  "mood": -0.1,
-  "energy": 1,
-  "coins": 42,
+  "mood": -0.07,
+  "energy": 0.95,
+  "coins": 40,
   "coins_goal": 500,
   "bricks": 11,
   "stock": {
@@ -52,25 +52,25 @@
     }
   ],
   "looked_up": [],
-  "hour": 4,
+  "hour": 6,
   "beach": {
-    "tan": 0.0045,
+    "tan": 0.0005,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [
-      {
-        "date": "2026-11-27",
-        "size": 1
-      }
-    ],
+    "castles": [],
     "best_castle": 1,
     "shells": 3,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "flat",
+    "waves": "good",
     "waves_date": "2026-11-28"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "fix_a_car",
+      "why": "This one's called Sputnik. She'll purr by lunch."
+    }
+  ],
   "lucky": {
     "date": "2026-11-28",
     "used": 0,
@@ -78,32 +78,75 @@
   },
   "designed_on": "2026-11-27",
   "plan_today": "Read another chapter.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "⛈️ A thunderstorm rolls in off the sea. Lightning over the water.",
+      "why": null
+    },
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "Overnight the tide came in and washed his sand castle away.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Me and Diesel against the world.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: learn the next trick and get ALL the treats.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Someone out there needs a brick model bike. I can feel it.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    }
+  ],
   "day_start": {
     "coins": 42,
     "bricks": 11,
     "got": 0,
     "used": 0
   },
-  "tick": 234,
+  "tick": 242,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T09:43:21.098366+00:00",
+  "updated": "2026-11-28T11:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 95,
+      "model": 97,
       "queue": 57,
-      "autopilot": 9,
-      "sleeping": 73,
+      "autopilot": 10,
+      "sleeping": 78,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-11-28",
-      "model": 0,
+      "model": 2,
       "queue": 0,
-      "autopilot": 0,
-      "sleeping": 19,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -114,11 +157,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.354,
-      "tired": 0,
-      "bored": 0.24
+      "hunger": 0.438,
+      "tired": 0.04,
+      "bored": 0.3
     },
     "bond": 0.71,
     "food": 4,
@@ -126,18 +169,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "asleep at the foot of the bed",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 205,
-    "wants": null,
+    "wants": "cuddle",
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
@@ -149,22 +184,29 @@
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "The sky is barking at me. I don't like it.",
+      "BOOM. Nope. Under the bed."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "BOOM. Nope. Under the bed.",
     "want_ticks": 0,
     "last_fed_tick": 204,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
       "nap on the warm brick pile.",
-      "teach the seagulls some manners."
+      "teach the seagulls some manners.",
+      "learn the next trick and get ALL the treats."
     ],
-    "idea": "teach the seagulls some manners."
+    "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Even my spanner looks tired.",
-    "Need a proper job. Something with bolts.",
     "Plastic rain, plastic trees, real problems.",
     "Knackered. Eyes keep closing on their own.",
     "Rain on the roof. Lekker sound, rubbish for building.",
@@ -187,23 +229,24 @@
     "{pup} is yawning, so I'm yawning.",
     "{pup} thinks every puddle is a personal invitation.",
     "A clean toolbox is a happy toolbox.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand."
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Me and {pup} against the world.",
+    "Someone out there needs a brick model bike. I can feel it."
   ],
-  "real_updated": "2026-11-26T19:45:12.060313+00:00",
+  "real_updated": "2026-11-26T20:00:14.532196+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-27@13",
-    "kind": "rain",
+    "key": "2026-11-28@6",
+    "kind": "storm",
     "season": "autumn",
-    "base": 11.0,
-    "emoji": "🌧️",
-    "name": "rainy",
+    "base": 14.3,
+    "emoji": "⛈️",
+    "name": "stormy",
     "season_emoji": "🍂",
     "seen": [
-      "cloudy",
-      "rain"
+      "storm"
     ],
-    "temp": 8,
+    "temp": 12,
     "snow": 0,
     "wet": 1
   }
