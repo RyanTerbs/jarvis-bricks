@@ -528,7 +528,9 @@ async function render() {
     $("doing").textContent = s.asleep ? "asleep" : s.doing;
     $("place").textContent = "📍 " + String(s.place).replace(/_/g, " ");
     $("feeling").textContent = s.feeling;
-    $("updated").textContent = "town time " + townClock(s.updated) + (LOCAL ? "" : " · updated " + ago(s.real_updated || s.updated));
+    const w = s.weather || {};
+    $("updated").textContent = (w.kind ? `${w.emoji} ${w.name} · ${w.temp}°C · ${w.season_emoji} ${w.season}${(w.snow || 0) >= 0.15 ? " · snow on the ground" : ""}${w.snowman >= 3 ? " · ⛄" : ""} · ` : "") +
+      "town time " + townClock(s.updated) + (LOCAL ? "" : " · updated " + ago(s.real_updated || s.updated));
     $("thought").textContent = s.asleep ? "Zzz…" : `“${s.thought}”`;
     $("eyes-open").style.display = s.asleep ? "none" : "";
     $("eyes-shut").style.display = s.asleep ? "" : "none";

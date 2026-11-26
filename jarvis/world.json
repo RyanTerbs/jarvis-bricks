@@ -83,7 +83,13 @@
     "people_watch":     { "label": "people-watching in the park",   "at": ["park"],    "needs": { "curiosity": -0.15, "social": -0.15 },                 "mood": 0.03 },
     "slurp_noodles":    { "label": "slurping noodles",              "at": ["noodle_stall"], "needs": { "hunger": -0.60, "social": -0.10 },               "mood": 0.08, "coins": -1 },
     "ride_the_track":   { "label": "ripping laps on the bike track","at": ["bike_track"], "needs": { "tinker": -0.15, "curiosity": -0.10, "rest": 0.05 }, "mood": 0.18 },
-    "look_out_over_town": { "label": "looking out over the town",   "at": ["lookout_tower"], "needs": { "curiosity": -0.30, "rest": -0.03 },             "mood": 0.06 }
+    "look_out_over_town": { "label": "looking out over the town",   "at": ["lookout_tower"], "needs": { "curiosity": -0.30, "rest": -0.03 },             "mood": 0.06 },
+    "_weather_moves": "Only when the weather allows: 'snow_cover' = needs snow on the ground, 'weather' = only in those kinds, 'max_temp' = only when it's that cold or colder.",
+    "build_a_snowman":  { "label": "building a snowman",            "at": ["home", "park", "beach"], "needs": { "tinker": -0.25, "curiosity": -0.10 },   "mood": 0.10, "snow_cover": true, "snowman": true },
+    "play_in_the_snow": { "label": "playing in the snow with the puppy", "at": ["any"], "needs": { "social": -0.10, "rest": 0.03 },                      "mood": 0.10, "pup": { "bored": -0.60, "tired": 0.15 }, "bond": 0.03, "pup_awake": true, "snow_cover": true },
+    "splash_in_puddles": { "label": "splashing in puddles with the puppy", "at": ["any"], "needs": { "social": -0.05, "curiosity": -0.05 },             "mood": 0.07, "pup": { "bored": -0.50, "tired": 0.10 }, "bond": 0.03, "pup_awake": true, "weather": ["rain"] },
+    "watch_the_storm":  { "label": "watching the storm from the window", "at": ["home"], "needs": { "rest": -0.05, "curiosity": -0.15 },                  "mood": 0.06, "weather": ["storm"] },
+    "make_hot_chocolate": { "label": "making a hot chocolate",      "at": ["home"],    "needs": { "hunger": -0.20, "rest": -0.03 },                      "mood": 0.07, "coins": -1, "max_temp": 8 }
   },
 
   "blueprints": {
@@ -174,6 +180,42 @@
     "sunburn_after": 3,
     "sunburn_ticks": 24,
     "tan_fade": 0.0005
+  },
+
+  "weather": {
+    "_note": "Seasons follow his TOWN calendar (at 8x speed a season lasts about 11 real days). The weather is rolled at each of 'change_hours'; 'stay' = chance it keeps the weather it had (spells of rain, sunny weeks). Each kind can close moves, slow the building site, change stall sales, tanning, needs and his mood. Snow settles on the ground while it snows and melts above 2 C.",
+    "seasons": { "winter": [12, 1, 2], "spring": [3, 4, 5], "summer": [6, 7, 8], "autumn": [9, 10, 11] },
+    "season_emoji": { "winter": "❄️", "spring": "🌸", "summer": "🌞", "autumn": "🍂" },
+    "temp": { "winter": [-2, 9], "spring": [14, 24], "summer": [27, 34], "autumn": [11, 21] },
+    "odds": {
+      "winter": { "sunny": 0.25, "cloudy": 0.25, "rain": 0.10, "snow": 0.25, "fog": 0.10, "storm": 0.05 },
+      "spring": { "sunny": 0.35, "cloudy": 0.20, "rain": 0.25, "windy": 0.10, "fog": 0.05, "storm": 0.05 },
+      "summer": { "sunny": 0.40, "heatwave": 0.20, "cloudy": 0.10, "rain": 0.10, "storm": 0.15, "windy": 0.05 },
+      "autumn": { "sunny": 0.25, "cloudy": 0.25, "rain": 0.20, "windy": 0.15, "fog": 0.10, "storm": 0.05 }
+    },
+    "change_hours": [6, 13],
+    "stay": 0.35,
+    "snow_per_tick": 0.08,
+    "melt_per_tick": 0.02,
+    "kinds": {
+      "sunny":    { "emoji": "☀️",  "name": "sunny",     "temp": 1,  "mood": 0.03 },
+      "cloudy":   { "emoji": "☁️",  "name": "cloudy",    "temp": -1, "mood": 0.0,  "tan": 0.5 },
+      "windy":    { "emoji": "💨", "name": "windy",     "temp": -2, "mood": 0.0,  "waves": "good", "closes": { "look_out_over_town": "too windy up the tower" } },
+      "fog":      { "emoji": "🌫️", "name": "foggy",     "temp": -1, "mood": -0.01, "waves": "flat", "closes": { "sunbathe": "no sun in this fog", "watch_the_sunset": "can't see the sunset in this fog", "look_out_over_town": "can't see a thing in this fog" } },
+      "rain":     { "emoji": "🌧️", "name": "rainy",     "temp": -2, "mood": -0.03, "sell": 0.6, "site_slow": 0.4,
+                    "closes": { "sunbathe": "it's raining, no sun to tan in", "watch_the_sunset": "the sunset's hiding behind the rain", "build_a_sand_castle": "the sand's turned to soup" } },
+      "storm":    { "emoji": "⛈️", "name": "stormy",    "temp": -3, "mood": -0.05, "sell": 0.0, "site_slow": 1.0, "waves": "good", "pup_want": "cuddle",
+                    "closes": { "sunbathe": "lightning about, not lying on the beach", "go_for_a_swim": "not swimming in a thunderstorm", "go_surfing": "not surfing in lightning, he's not mad",
+                                "build_a_sand_castle": "storm's flattening everything", "watch_the_sunset": "no sunset in this storm", "go_for_a_ride": "not riding in a thunderstorm",
+                                "ride_the_track": "the track's a mud bath in this storm", "run_the_stall": "the stall's shut, nobody's out in this storm",
+                                "work_on_site": "too dangerous on the scaffolding in a storm", "look_out_over_town": "not climbing a tower in lightning" } },
+      "snow":     { "emoji": "🌨️", "name": "snowing",   "temp": 0,  "mood": 0.02, "sell": 0.7, "site_slow": 0.5, "hunger": 0.01, "pup_want": "play", "snows": true,
+                    "closes": { "sunbathe": "it's snowing, not tanning weather", "go_for_a_swim": "the sea's freezing", "go_surfing": "too cold to surf",
+                                "build_a_sand_castle": "the sand's frozen solid", "ride_the_track": "the track's under snow" } },
+      "heatwave": { "emoji": "🥵", "name": "a heatwave", "temp": 5, "mood": -0.01, "sell": 0.8, "tan": 1.6, "sunburn_after": 2, "rest": 0.01, "waves": "flat" }
+    },
+    "cold_from": 8,
+    "cold_closes": { "sunbathe": "too cold to sunbathe", "go_for_a_swim": "the sea's freezing" }
   },
 
   "design_rules": {

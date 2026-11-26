@@ -29,6 +29,7 @@ import argparse
 import functools
 import http.server
 import json
+import math
 import os
 import random
 import re
@@ -261,13 +262,13 @@ def train_pup(state, world, trick, log):
 
 
 PUP_WANT_MOVES = {
-    "food": {"feed_the_puppy"}, "play": {"play_with_the_puppy", "play_fetch_on_the_beach"}, "walk": {"walk_the_puppy"},
+    "food": {"feed_the_puppy"}, "play": {"play_with_the_puppy", "play_fetch_on_the_beach", "play_in_the_snow", "splash_in_puddles"}, "walk": {"walk_the_puppy"},
     "cuddle": {"cuddle_the_puppy"}, "explore": {"walk_the_puppy"},
     "beach": {"play_fetch_on_the_beach", "go_for_a_swim", "build_a_sand_castle", "collect_shells", "sunbathe", "watch_the_sunset"},
 }
 
 
-def pup_mind(state, log):
+def pup_mind(state, log, world=None):
     """The puppy's own little mind: a thought, what he wants, now and then an idea. Phrase book only, so it's free
     with either brain (dogs think simple thoughts)."""
     pup = state.get("pup")
@@ -283,6 +284,8 @@ def pup_mind(state, log):
         pup["wants"] = None
     elif need_want:
         pup["wants"], pup["want_ticks"] = need_want, 0
+    elif world and wkind(state, world).get("pup_want") and random.random() < 0.5:   # storm = cuddles, snow = play
+        pup["wants"], pup["want_ticks"] = wkind(state, world)["pup_want"], 0
     elif pup.get("wants") and pup.get("want_ticks", 0) < 8:
         pup["want_ticks"] = pup.get("want_ticks", 0) + 1
     elif random.random() < 0.2:
@@ -307,6 +310,11 @@ def pup_mind(state, log):
             w["learning"] = 0.6
         if hr >= 21 or hr < 6:
             w["night"] = 1
+        wx = state.get("weather") or {}
+        if wx.get("kind"):
+            w["weather_" + wx["kind"]] = 2.5
+        if wx.get("snow", 0) >= 0.3:
+            w["weather_snow"] = 3
         cats = [c for c in w if T.get(c)]
         cat = random.choices(cats, weights=[w[c] for c in cats])[0] if cats else None
     if cat and T.get(cat):
@@ -384,6 +392,8 @@ def merged_world(world, town, state, today):
              if not m.startswith("_") and d.get("requires", "") in ("", *state["owned"])} | town["custom_moves"]
     hr = state.get("hour", 12)
     moves = {m: d for m, d in moves.items() if "hours" not in d or d["hours"][0] <= hr < d["hours"][1]}
+    closed = weather_closed(state, world)                 # the weather shuts some things, opens others
+    moves = {m: d for m, d in moves.items() if m not in closed and not weather_says_no(d, state)}
     if not sum(state["stock"].values()):
         moves.pop("run_the_stall", None)          # nothing to sell
     pup = state.get("pup")
@@ -432,6 +442,9 @@ def start_site(state, world, town, bp_id, today):
 def work_site(state, world, town, today, log):
     """One tick of work on the site. Returns (note, mood_bonus). Finishes the build when it's done."""
     site = town["site"]
+    k = wkind(state, world)
+    if random.random() < k.get("site_slow", 0):           # rain or snow: the shift got washed out
+        return f"the {state['weather']['kind']} slowed the work, {site['name']} still {site['done']}/{site['work']}", -0.02
     site["done"] += 1
     if random.random() < perk_sum(state, "site_speed"):        # the bricklaying book pays off
         site["done"] = min(site["work"], site["done"] + 1)
@@ -555,8 +568,9 @@ def beach_move(state, world, d, today, log):
         if state["tick"] < b["burnt_until"]:
             return False, "still sunburnt, staying in the shade", 0.0
         b["sun_today"] += 1
-        b["tan"] = round(min(1.0, b["tan"] + 0.08 * (1 - b["tan"])), 3)
-        if b["sun_today"] > rules["sunburn_after"] and "beach_kit" not in state["owned"]:
+        k = wkind(state, world)
+        b["tan"] = round(min(1.0, b["tan"] + 0.08 * k.get("tan", 1.0) * (1 - b["tan"])), 3)
+        if b["sun_today"] > k.get("sunburn_after", rules["sunburn_after"]) and "beach_kit" not in state["owned"]:
             b["burnt_until"] = state["tick"] + rules["sunburn_ticks"]
             state["needs"]["rest"] = round(clamp(state["needs"]["rest"] + 0.10, 0, 1), 3)
             log("noticed", f"Ouch. {me()} stayed in the sun too long and got sunburnt.")
@@ -588,6 +602,97 @@ def beach_move(state, world, d, today, log):
     return True, "", 0.0
 
 
+# ---------------------------------------------------------------- weather + seasons (no AI)
+
+WEATHER_MOVES = ("build_a_snowman", "play_in_the_snow", "splash_in_puddles", "watch_the_storm", "make_hot_chocolate")
+WEATHER_RANK = ["snow", "storm", "heatwave", "rain", "fog", "windy", "sunny", "cloudy"]   # most diary-worthy first
+
+
+def season_of(world, d):
+    for s, months in world["weather"]["seasons"].items():
+        if d.month in months:
+            return s
+    return "summer"
+
+
+def wkind(state, world):
+    """The rules for the weather right now (empty dict if none yet)."""
+    return world["weather"]["kinds"].get((state.get("weather") or {}).get("kind"), {})
+
+
+def weather_closed(state, world):
+    """Moves the weather shuts right now: {move: reason}."""
+    W, wx = world["weather"], state.get("weather") or {}
+    out = dict(wkind(state, world).get("closes", {}))
+    if wx.get("temp", 20) <= W["cold_from"]:
+        out = {**W["cold_closes"], **out}
+    return out
+
+
+def weather_says_no(d, state):
+    """Weather-only moves (snowman, puddles...): a reason if the weather doesn't allow it now, else None."""
+    wx = state.get("weather") or {}
+    if d.get("snow_cover") and wx.get("snow", 0) < 0.15:
+        return "there's no snow on the ground"
+    if d.get("weather") and wx.get("kind") not in d["weather"]:
+        return "only when it's " + " or ".join({"storm": "stormy", "rain": "raining", "snow": "snowing"}.get(k, k) for k in d["weather"])
+    if "max_temp" in d and wx.get("temp", 20) > d["max_temp"]:
+        return "too warm for that"
+    return None
+
+
+def update_weather(state, world, local, log):
+    """Seasons, a weather roll at each change hour, temperature through the day, snow on the ground, puddles."""
+    W, FB = world["weather"], free_brain().get("weather", {})
+    wx = state.setdefault("weather", {})
+    season = season_of(world, local.date())
+    hours = W["change_hours"]
+    slot = max([h for h in hours if h <= local.hour], default=None)
+    key = f"{local.date().isoformat()}@{slot}" if slot is not None else f"{(local.date() - timedelta(days=1)).isoformat()}@{hours[-1]}"
+    if wx.get("key") != key:
+        old_kind, old_season = wx.get("kind"), wx.get("season")
+        odds = W["odds"][season]
+        kind = old_kind if old_kind in odds and random.random() < W["stay"] else random.choices(list(odds), weights=list(odds.values()))[0]
+        lo, hi = W["temp"][season]
+        base = random.uniform(lo, hi) + W["kinds"][kind].get("temp", 0)
+        if kind == "rain" and base <= 0:
+            kind = "snow"
+        if W["kinds"][kind].get("snows"):
+            base = min(base, random.uniform(-4, 0))
+        k = W["kinds"][kind]
+        wx.update(key=key, kind=kind, season=season, base=round(base, 1), emoji=k["emoji"], name=k["name"],
+                  season_emoji=W["season_emoji"].get(season, ""))
+        if slot == hours[0] or not wx.get("seen"):
+            wx["seen"] = []                                 # a new day of weather (for tonight's diary)
+        if kind not in wx["seen"]:
+            wx["seen"].append(kind)
+        if k.get("waves"):
+            state["beach"]["waves"] = k["waves"]
+        if old_season and old_season != season:
+            line = fb_pick(FB.get("season", {}).get(season) or [f"{season.capitalize()} is here."])
+            log("noticed", f"{W['season_emoji'].get(season, '')} {line.replace('{me}', me())}".strip())
+        if kind != old_kind:
+            line = fb_pick(FB.get("news", {}).get(kind) or [f"The weather's turned {k['name']}."])
+            log("noticed", f"{k['emoji']} {line.replace('{me}', me())}")
+    hour = local.hour + local.minute / 60
+    temp = wx["base"] + 3.5 * math.cos(2 * math.pi * (hour - 15) / 24)     # warmest at 3 PM, coldest at 3 AM
+    k = wkind(state, world)
+    if k.get("snows"):
+        temp = min(temp, 1)
+    wx["temp"] = round(temp)
+    snow = wx.get("snow", 0.0)
+    if k.get("snows"):
+        snow += W["snow_per_tick"]
+    elif temp > 2:
+        snow -= W["melt_per_tick"] * (2 if wx["kind"] in ("sunny", "rain", "heatwave") else 1)
+    wx["snow"] = round(clamp(snow, 0, 1), 3)
+    if wx.get("snowman") and wx["snow"] <= 0:
+        wx["snowman"] = 0
+        log("noticed", "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.")
+    wet = 1.0 if wx["kind"] in ("rain", "storm") else wx.get("wet", 0.0) - (0.10 if wx["kind"] in ("sunny", "heatwave", "windy") else 0.05)
+    wx["wet"] = round(clamp(wet, 0, 1), 2)
+
+
 def hit_lucky(state, world):
     lb = world["lucky_block"]
     state["lucky"]["used"] += 1
@@ -603,6 +708,7 @@ def sell_stock(state, world, pricing):
     pricing = pricing if pricing in S["pricing"] else "fair"
     rule = S["pricing"][pricing]
     chance = rule["chance"] + sum(cat[i].get("sell_chance", 0) for i in state["owned"] if i in cat) + perk_sum(state, "sell_chance")
+    chance *= wkind(state, world).get("sell", 1.0)          # fewer people out in the rain or snow
     units = [pid for pid, n in state["stock"].items() for _ in range(n)]
     random.shuffle(units)
     sold, coins = Counter(), 0
@@ -618,7 +724,8 @@ def sell_stock(state, world, pricing):
     state["sales"]["items"] += sum(sold.values())
     state["sales"]["coins"] += coins
     if not sold:
-        return f"{pricing} prices, no buyers this time", -0.02
+        quiet = wkind(state, world).get("sell", 1.0) < 1
+        return f"{pricing} prices, no buyers this time" + (f" (quiet in this {state['weather']['kind']})" if quiet else ""), -0.02
     what = ", ".join(f"{n} {P[pid]['name']}" + ("s" if n > 1 else "") for pid, n in sold.items())
     return f"{pricing} prices, sold {what} for {coins} coins", 0.05
 
@@ -647,6 +754,11 @@ def update_needs(state, world):
     if pup and not state["asleep"] and not pup["napping"]:      # a puppy is good company
         cut = world["needs"]["social"]["awake"] * world["puppy"]["company"] * pup["bond"]
         state["needs"]["social"] = round(clamp(state["needs"]["social"] - cut, 0, 1), 3)
+    if not state["asleep"]:                                 # heat tires him, cold makes him hungry
+        k = wkind(state, world)
+        for n in ("rest", "hunger"):
+            if k.get(n):
+                state["needs"][n] = round(clamp(state["needs"][n] + k[n], 0, 1), 3)
     state["energy"] = round(1 - state["needs"]["rest"], 2)
 
 
@@ -655,6 +767,7 @@ def update_mood(state, world, bonus=0.0, base_bonus=0.0):
     m = world["mood"]
     pressing = sum(max(0, state["needs"][n] - m["pressing_from"]) for n in NEEDS)
     target = m["base"] + base_bonus + perk_sum(state, "mood_base") - m["pressing_pull"] * pressing
+    target += wkind(state, world).get("mood", 0.0)        # sunshine lifts him, a storm drags him down
     pup = state.get("pup")
     if pup and max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= world["puppy"]["neglect_from"]:
         target -= 0.10                                     # he worries about the pup
@@ -681,6 +794,12 @@ def apply_move(state, world, town, step, today, log):
         if move == "hit_the_lucky_block" and state["place"] == "brick_pit":
             return False, "the ! block is empty till tomorrow", 0.0, ""
         wd = world["moves"].get(move, {})
+        if isinstance(wd, dict) and (state["place"] in wd.get("at", []) or "any" in wd.get("at", [])):
+            closed = weather_closed(state, world)
+            if move in closed:
+                return False, closed[move], 0.0, ""
+            if weather_says_no(wd, state):
+                return False, weather_says_no(wd, state), 0.0, ""
         if state["place"] in wd.get("at", []) and "hours" in wd and not wd["hours"][0] <= state.get("hour", 12) < wd["hours"][1]:
             return False, f"not now (only {wd['hours'][0]}:00 to {wd['hours'][1]}:00)", 0.0, ""
         if wd.get("requires") and wd["requires"] not in state["owned"] and state["place"] in wd.get("at", []):
@@ -716,6 +835,15 @@ def apply_move(state, world, town, step, today, log):
             return False, note, 0.0, ""
         notes.append(note)
         bonus += extra
+    if d.get("snowman"):
+        wx = state["weather"]
+        wx["snowman"] = min(3, wx.get("snowman", 0) + 1)
+        if wx["snowman"] == 3:
+            log("built", "built a proper snowman: carrot nose, stone eyes and his old orange cap!")
+            notes.append("snowman finished!")
+            bonus += 0.05
+        else:
+            notes.append(f"snowman {wx['snowman']}/3")
     if d.get("design"):
         err = design_building(state, world, town, step.get("design"), today, log)
         if err:
@@ -800,7 +928,7 @@ def autopilot(state, W):
         "rest": (state["place"], "rest"),
         "hunger": ("home", "cook_dinner") if state["coins"] >= 2 else ("home", "make_toast"),
         "social": ("cafe", "chat_with_locals"),
-        "tinker": ("building_site", "work_on_site") if "building_site" in P else ("garage", "fix_a_car"),
+        "tinker": ("building_site", "work_on_site") if "building_site" in P and "work_on_site" in W["moves"] else ("garage", "fix_a_car"),
         "curiosity": ("library", "read_a_book") if "library" in P else ("home", "read_a_book"
                       if any(v["where"] == "home" and b not in state.get("finished", []) for b, v in library()["books"].items())
                       else "use_the_computer"),
@@ -869,6 +997,12 @@ THE BEACH (always open, right round the island; the puppy comes too)
 - sunbathe (he really tans; more than 3 times a day without a beach kit = sunburn), go_for_a_swim, build_a_sand_castle (the tide takes it overnight),
   collect_shells, play_fetch_on_the_beach, watch_the_sunset (evenings). go_surfing needs a surfboard (catalogue); he gets better with practice; flat days = no surf.
 
+WEATHER AND SEASONS
+- His town has seasons and real weather: rain, storms, fog, wind, heatwaves, and snow in winter. It changes a couple of times a day and often comes in spells.
+- Weather closes some things (no sunbathing in the rain, no scaffolding or stall in a storm, no swimming when it's cold) and opens others
+  (build_a_snowman and play_in_the_snow when there's snow on the ground, splash_in_puddles in the rain, watch_the_storm, make_hot_chocolate when it's cold).
+- Rain and snow slow the building site and keep stall customers away. Sun lifts his mood. Plan around it like a real person would.
+
 MONEY
 - make_X makes something to sell (costs a few bricks or coins). Once he has built a market stall he can sell his stock there:
   run_the_stall, and add "pricing":"cheap|fair|pricey" to that move (cheap sells fast, pricey earns more but sells slowly).
@@ -930,6 +1064,12 @@ RULES
                   f"{', has a board' if 'surfboard' in state['owned'] else ', no board yet'}); sunbathed {bb['sun_today']}x today"
                   f"{' (SUNBURNT, stay out of the sun)' if state['tick'] < bb['burnt_until'] else ''}; sand castle today size {today_castle} "
                   f"(best {bb['best_castle']}); shells {bb['shells']}")
+    wx = state.get("weather") or {}
+    closed = weather_closed(state, world)
+    weather_line = (f"WEATHER: {wx.get('season', '?')} {wx.get('season_emoji', '')}, {wx.get('name', '?')} {wx.get('emoji', '')}, {wx.get('temp', '?')} C"
+                    f"{', snow on the ground' if wx.get('snow', 0) >= 0.15 else ''}{', snowman built' if wx.get('snowman') else ''}"
+                    f"{', puddles everywhere' if wx.get('wet', 0) >= 0.5 and wx.get('kind') not in ('rain', 'storm') else ''}. "
+                    f"Closed by the weather: {', '.join(closed) or 'nothing'}")
     pup_lines = "PUPPY: none"
     if state.get("pup"):
         pp, T = state["pup"], world["puppy"]["tricks"]
@@ -963,6 +1103,7 @@ NEEDS (0 fine .. 1 urgent): {needs}
 LAST THOUGHT: {state['thought']}
 TODAY'S PLAN (from last night's diary): {state.get('plan_today') or 'none yet'}
 
+{weather_line}
 {pup_lines}
 {learn_lines}
 {beach_line}
@@ -1051,7 +1192,9 @@ def fb_fill(text, state, town, place=None):
             "note": note or "not much yet",
             "topic": re.sub(r" \(.*\)$", "", state["notebook"][-1]["source"]).replace("his laptop: ", "") if state.get("notebook") else "engines",
             "waves": state.get("beach", {}).get("waves", "small"),
-            "bricks": state["bricks"], "mood": mock_feeling(state), "me": me()}
+            "bricks": state["bricks"], "mood": mock_feeling(state), "me": me(),
+            "weather": (state.get("weather") or {}).get("name", "fine"), "temp": (state.get("weather") or {}).get("temp", 25),
+            "season": (state.get("weather") or {}).get("season", "summer")}
     for k, v in vals.items():
         text = text.replace("{" + k + "}", str(v))
     return text
@@ -1077,6 +1220,12 @@ def mock_thought(state, town):
         w["beach"] = 3
         if state["beach"]["waves"] == "good":
             w["beach_good_waves"] = 2
+    wx = state.get("weather") or {}
+    if wx.get("kind"):
+        w["weather_" + wx["kind"]] = 2
+        w["season_" + wx.get("season", "")] = 0.6
+    if wx.get("snow", 0) >= 0.3:
+        w["weather_snow"] = 2.5
     if state["coins"] < 6:
         w["money_low"] = 2
     if sum(state.get("stock", {}).values()):
@@ -1127,6 +1276,11 @@ def mock_plan(state, W, world, town):
             return [random.choice(["play_with_the_puppy", "walk_the_puppy", "cuddle_the_puppy"])], None
         if "train_the_puppy" in W["moves"] and roll < 0.12:
             return ["train_the_puppy", "train_the_puppy"], None
+    wmoves = [m for m in WEATHER_MOVES if m in W["moves"]]
+    if wmoves and random.random() < 0.25:                  # make the most of the weather
+        m = random.choice(wmoves)
+        at = W["moves"][m]["at"]
+        return go(state["place"] if "any" in at or state["place"] in at else at[0], [m]), None
     beachy = [m for m in ("build_a_sand_castle", "sunbathe", "go_for_a_swim", "collect_shells", "play_fetch_on_the_beach",
                           "go_surfing", "watch_the_sunset") if m in W["moves"]]
     if beachy and random.random() < 0.10:
@@ -1154,7 +1308,7 @@ def mock_plan(state, W, world, town):
         return go(W["moves"][m]["at"][0], [m, m]), None
     if roll < 0.15:
         return go("garage", ["fix_a_car", "fix_a_car"]), None
-    if "building_site" in W["places"] and roll < 0.60:
+    if "building_site" in W["places"] and "work_on_site" in W["moves"] and roll < 0.60:
         return go("building_site", ["work_on_site", "work_on_site"]), None
     if builds and roll < 0.50:
         return [random.choice(builds)], None
@@ -1265,6 +1419,8 @@ def day_facts(state, town, day):
         "pup_ideas": [e["x"].split("has an idea: ", 1)[-1] for e in log if e["k"] == "pupidea"],
         "pup_trained": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("training")),
         "pup_name": pup_name(state), "pup_bond": (state.get("pup") or {}).get("bond", 0),
+        "weather": list((state.get("weather") or {}).get("seen", [])), "temp": (state.get("weather") or {}).get("temp"),
+        "season": (state.get("weather") or {}).get("season"), "snowman": (state.get("weather") or {}).get("snowman", 0),
         "sold_coins": sum(int(n) for e in log if e["k"] == "did" for n in re.findall(r"for (\d+) coins", e["x"])),
         "top": [a for a, _ in acts.most_common(3)],
         "site": town["site"],
@@ -1292,6 +1448,7 @@ RULES
         lines = lines[:20] + ["- ..."] + lines[-59:]
     site = f["site"]
     user = f"""TODAY: {f['day']}
+WEATHER TODAY: {', '.join(f['weather']) or 'fine'} ({f['season'] or 'summer'}){', built a snowman' if f['snowman'] >= 3 else ''}
 COINS: {f['coins_start']} -> {f['coins_end']} (Thailand goal 500)
 BRICKS: {f['bricks_start']} -> {f['bricks_end']} (collected {f['bricks_got']}, used {f['bricks_used']})
 TOWN NOW: {', '.join(f['town'])}
@@ -1346,6 +1503,9 @@ def template_diary(f):
         src = re.sub(r" \(.*$", "", src)
         bits.append(random.choice(["Read up on {s}.", "Got stuck into {s} for a bit.", "Learned a bit about {s}.",
                                    "Did some reading on {s}. Interesting stuff."]).replace("{s}", src))
+    worst = next((k for k in WEATHER_RANK if k in f["weather"]), None)
+    if worst and D.get("weather", {}).get(worst):
+        bits.append(fb_fill(random.choice(D["weather"][worst]), f["_state"], f["_town"]))
     if f["beach"]:
         bits.append("Beach time: " + f["beach"][-1].replace(" his ", " my ") + ".")
     if f["pup_fed"] == 0:
@@ -1442,6 +1602,7 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
         state["stats"]["all"][source] += 1
         state["stats"]["today"][source] += 1
 
+    update_weather(state, world, local, log)              # seasons + weather, every step (even while he sleeps)
     if town["max_lots"] < world["town"]["start_lots"]:   # more land (towns started before the top-up)
         town["max_lots"] = world["town"]["start_lots"]
         town["history"].append({"date": today, "text": f"The town got more land: {town['max_lots']} lots to build on."})
@@ -1463,7 +1624,7 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     # 1. CODE: needs creep up, mood follows
     update_needs(state, world)
     update_pup(state, world, now, log)
-    pup_mind(state, log)
+    pup_mind(state, log, world)
     bt = world["bedtime"]
     night = local.hour >= bt["sleep_from_hour"] or local.hour < bt["wake_from_hour"]
 

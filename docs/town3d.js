@@ -28,6 +28,25 @@ function bubbleMat(e) {   // kept for the whole visit (not cleared on rebuild)
 let R, scene, cam, controls, root, studMesh, jar, pup, pupZ, zzz, bang, sun, hemi, clock, opts;
 let lastKey = "", ready = false, night = false, places = {}, homeDoor = new THREE.Vector3(), homeTop = { cx: 0, cz: 0 }, bounds = null;
 let mode = "follow", lastState = null, mini = null, miniT = 0, clouds = [];
+// weather + seasons (from state.weather): sky, rain/snow, lightning, season colours, snow on the ground
+let wx = {}, snowy = false, palette = null, rain = null, flakes = null, flashT = 0, nextFlash = 4, sky = { bg: new THREE.Color("#8fd3ff"), hemi: 1 };
+const SNOWC = "#f4f7fb";
+const SEASON = {
+  spring: { grass: "#5cc45a", leaf: ["#3fae4f", "#7bd389"], blossom: "#f4a6c8", sea: "#2f8fd0" },
+  summer: { grass: "#47b350", leaf: ["#2e8b3d", "#3fae4f"], sea: "#2f8fd0" },
+  autumn: { grass: "#8fae4a", leaf: ["#c9581f", "#e3a02b"], sea: "#2d84bf" },
+  winter: { grass: "#7f9a6a", leaf: ["#2f6b45", "#3d7d55"], sea: "#3a7fb0" },
+};
+const SKY = {   // day sky colour, fog near/far, sun + sky light, sun colour, clouds [count, colour], stars at night
+  sunny:    { bg: "#8fd3ff", fog: [70, 260], sun: 2.2, hemi: 1.0,  sunC: "#fff4e0", clouds: [8, "#ffffff"], stars: true },
+  cloudy:   { bg: "#b4c3cf", fog: [55, 220], sun: 1.0, hemi: 0.95, sunC: "#eef2f6", clouds: [20, "#e4e8ec"] },
+  windy:    { bg: "#9fcdea", fog: [60, 240], sun: 1.8, hemi: 1.0,  sunC: "#fff4e0", clouds: [12, "#f2f4f6"], stars: true },
+  fog:      { bg: "#cdd5db", fog: [6, 48],   sun: 0.7, hemi: 1.0,  sunC: "#e8edf2", clouds: [4, "#e4e8ec"] },
+  rain:     { bg: "#8a97a4", fog: [30, 140], sun: 0.6, hemi: 0.8,  sunC: "#dde4ea", clouds: [24, "#9aa3ad"] },
+  storm:    { bg: "#4b5562", fog: [25, 120], sun: 0.35, hemi: 0.6, sunC: "#c8d0da", clouds: [28, "#5d6670"] },
+  snow:     { bg: "#d0d8e0", fog: [25, 130], sun: 0.9, hemi: 1.05, sunC: "#e8f0ff", clouds: [22, "#e8ecf0"] },
+  heatwave: { bg: "#ffdcaa", fog: [45, 190], sun: 2.6, hemi: 1.05, sunC: "#ffd9a0", clouds: [2, "#ffffff"], stars: true },
+};
 const keys = new Set(), push = new THREE.Vector2();
 const mats = new Map(), geos = new Map();
 let disposables = [], studs = [], blocks = [];
@@ -65,7 +84,8 @@ function studsOn(parent, x0, z0, w, d, y, color, step = 0.5) {
 }
 function brick(parent, w, h, d, color, x, y, z, withStuds = true) {
   const o = add(parent, box(w, h, d), mat(color), x, y + h / 2, z);
-  if (withStuds) studsOn(parent, x, z, w, d, y + h, color);
+  if (withStuds && snowy) add(parent, box(w + 0.02, 0.06, d + 0.02), mat(SNOWC), x, y + h + 0.03, z, 0, 0, 0, false);
+  if (withStuds) studsOn(parent, x, z, w, d, y + h, snowy ? SNOWC : color);
   return o;
 }
 function canvasTex(w, h, draw) {
@@ -125,8 +145,10 @@ function pathTo(from, to) {
 function tree(g, x, z, seed, s = 1) {
   s *= 0.85 + (seed % 5) / 12;
   add(g, cyl(0.14, 0.18, 0.9 * s), mat("#7a4a22"), x, 0.45 * s, z);
-  add(g, cone(0.85 * s, 1.2 * s), mat("#2e8b3d"), x, 1.35 * s, z);
-  add(g, cone(0.6 * s, 0.9 * s), mat("#3fae4f"), x, 1.95 * s, z);
+  const L = (palette || SEASON.summer).leaf;
+  const top = snowy ? SNOWC : palette && palette.blossom && seed % 3 === 0 ? palette.blossom : L[(seed + 1) % 2];
+  add(g, cone(0.85 * s, 1.2 * s), mat(L[seed % 2]), x, 1.35 * s, z);
+  add(g, cone(0.6 * s, 0.9 * s), mat(top), x, 1.95 * s, z);
 }
 function palm(g, x, z, seed) {
   const lean = (rnd(seed + "l") - 0.5) * 0.5;
@@ -153,6 +175,7 @@ function building(l) {
       const h = 1.25 * f + 0.35;
       brick(g, 3, h, 2.6, c, 0, 0, 0, false);
       add(g, cone(2.2, 1.3, 4), mat(look.roof || shade(c, -0.4)), 0, h + 0.65, 0, 0, Math.PI / 4);
+      if (snowy) add(g, cone(1.5, 0.88, 4), mat(SNOWC), 0, h + 0.87, 0, 0, Math.PI / 4);
       add(g, box(0.7, 1.0, 0.1), mat("#5a3b22"), 0, 0.5, 1.31);
       for (let i = 0; i < f; i++) for (const x of [-0.95, 0.95]) add(g, box(0.6, 0.55, 0.08), winMat(), x, 0.8 + 1.25 * i, 1.31);
       sign(h + 1.9); break;
@@ -273,6 +296,20 @@ function castle(g, x, z, n) {
   if (n >= 6) { add(g, cyl(0.02, 0.02, 0.7, 6), mat("#333"), x, SAND_Y + 1.2, z); add(g, box(0.3, 0.18, 0.02), mat("#d0453a"), x + 0.15, SAND_Y + 1.45, z); }
 }
 
+function snowman(g, x, z, size) {
+  const sn = mat("#fbfdff"), coal = mat("#222"), y0 = Y_ROAD;
+  add(g, sph(0.55, 16), sn, x, y0 + 0.5, z);
+  if (size >= 2) add(g, sph(0.4, 16), sn, x, y0 + 1.25, z);
+  if (size >= 3) {
+    add(g, sph(0.3, 16), sn, x, y0 + 1.8, z);
+    for (const dx of [-0.1, 0.1]) add(g, sph(0.04, 8), coal, x + dx, y0 + 1.86, z + 0.27);
+    add(g, cone(0.05, 0.35, 8), mat("#ff8c1a"), x, y0 + 1.8, z + 0.42, Math.PI / 2);
+    add(g, cyl(0.27, 0.27, 0.12, 18), mat("#e8762b"), x, y0 + 2.08, z);        // Derek's old orange cap
+    add(g, box(0.3, 0.04, 0.22), mat("#e8762b"), x, y0 + 2.04, z + 0.28);
+    for (const s of [-1, 1]) add(g, cyl(0.025, 0.025, 0.7, 6), mat("#6b4423"), x + s * 0.55, y0 + 1.35, z, 0, 0, s * 1.0);
+  }
+}
+
 // ------------------------------------------------------------------ Derek + his puppy
 function makeDerek() {
   const g = new THREE.Group();
@@ -290,7 +327,10 @@ function makeDerek() {
   add(g, cyl(0.26, 0.26, 0.15, 22), cap, 0, 1.99, 0);
   add(g, box(0.32, 0.04, 0.24), cap, 0, 1.94, 0.3);
   const board = add(g, box(0.6, 0.1, 2.2), mat("#f6b24a"), 0, -0.04, 0.1); board.visible = false;
-  g.userData.skin = skin; g.userData.board = board;
+  const umb = new THREE.Group(); umb.position.set(0.47, 0.95, 0.05); umb.visible = false; g.add(umb);   // rain or snow
+  add(umb, cyl(0.03, 0.03, 1.3, 6), mat("#3b3f46"), 0, 0.65, 0);
+  add(umb, cone(0.8, 0.35, 10), mat("#2f6fb3"), 0, 1.35, 0);
+  g.userData.skin = skin; g.userData.board = board; g.userData.umbrella = umb;
   g.scale.setScalar(0.62);
   return g;
 }
@@ -317,6 +357,10 @@ function rebuild(town, luckyLive) {
   if (root) { scene.remove(root); for (const d of disposables) d.dispose(); }
   disposables = []; studs = []; clouds = []; bang = null;
   root = new THREE.Group(); scene.add(root);
+  palette = SEASON[wx.season] || SEASON.summer;
+  snowy = (wx.snow || 0) >= 0.15;
+  const grass = snowy ? "#" + new THREE.Color(palette.grass).lerp(new THREE.Color(SNOWC), Math.min(1, wx.snow * 1.6)).getHexString() : palette.grass;
+  const SK = SKY[wx.kind] || SKY.sunny;
   const site0 = town.site;
   const nLots = Math.max(town.max_lots, site0 ? site0.lot + 1 : 0, ...town.lots.map((l) => l.lot + 1));
   blocks = spiral(Math.ceil(nLots / 4) + 1);
@@ -329,7 +373,7 @@ function rebuild(town, luckyLive) {
 
   // sea, beach, island (grass top + Mario brick sides)
   const seaGeo = new THREE.PlaneGeometry(900, 900); disposables.push(seaGeo);
-  add(root, seaGeo, mat("#2f8fd0", { roughness: 0.2, metalness: 0.1 }), cx, -0.55, cz, -Math.PI / 2, 0, 0, false);
+  add(root, seaGeo, mat(wx.kind === "storm" ? "#24597f" : palette.sea, { roughness: 0.2, metalness: 0.1 }), cx, -0.55, cz, -Math.PI / 2, 0, 0, false);
   add(root, box(isle.w + 10, 0.6, isle.d + 10), mat("#f2d28b", { roughness: 0.9 }), cx, -0.45, cz, 0, 0, 0, false);
   // the beach (south shore): towel + umbrella, his board, today's sand castle, waves
   const bzz = cz + isle.d / 2 + 2.6, V = (x, y, z) => new THREE.Vector3(x, y, z);
@@ -356,9 +400,9 @@ function rebuild(town, luckyLive) {
   brickTex.wrapS = brickTex.wrapT = THREE.RepeatWrapping; brickTex.repeat.set(isle.w / 2, 0.4);
   const side = new THREE.MeshStandardMaterial({ map: brickTex, roughness: 0.8 }); disposables.push(side);
   const groundGeo = new THREE.BoxGeometry(isle.w, 0.5, isle.d); disposables.push(groundGeo);
-  const ground = new THREE.Mesh(groundGeo, [side, side, mat("#47b350"), side, side, side]);
+  const ground = new THREE.Mesh(groundGeo, [side, side, mat(grass), side, side, side]);
   ground.position.set(cx, -0.25, cz); ground.receiveShadow = true; root.add(ground);
-  studsOn(root, cx, cz, isle.w, isle.d, 0, "#47b350", 1.0);
+  studsOn(root, cx, cz, isle.w, isle.d, 0, grass, 1.0);
 
   // roads (dashed centre lines line up with the block grid) + blocks
   const rw = bounds.x1 - bounds.x0 + ROAD, rd = bounds.z1 - bounds.z0 + ROAD;
@@ -371,8 +415,9 @@ function rebuild(town, luckyLive) {
   const roadMat = new THREE.MeshStandardMaterial({ map: roadTex, roughness: 0.9 }); disposables.push(roadMat);
   add(root, box(rw, 0.08, rd), roadMat, cx, 0, cz, 0, 0, 0, false);
   for (const [bx, bz] of used) {
-    add(root, box(BLOCK, Y_BLOCK, BLOCK), mat("#c9c4b8"), bx * P, Y_BLOCK / 2, bz * P, 0, 0, 0, false);
-    studsOn(root, bx * P, bz * P, BLOCK, BLOCK, Y_BLOCK, "#c9c4b8");
+    const plate = snowy ? "#e8ecf0" : "#c9c4b8";
+    add(root, box(BLOCK, Y_BLOCK, BLOCK), mat(plate), bx * P, Y_BLOCK / 2, bz * P, 0, 0, 0, false);
+    studsOn(root, bx * P, bz * P, BLOCK, BLOCK, Y_BLOCK, plate);
   }
   // street lamps at the crossings
   const crossings = new Set();
@@ -390,6 +435,16 @@ function rebuild(town, luckyLive) {
     add(g, box(0.7, 0.4, 0.05), mat("#ffffff"), 0, 0.9, 1.0);
   }
   homeDoor.copy(places.home || new THREE.Vector3());
+  if (snowy && wx.snowman) snowman(root, homeDoor.x + 1.6, homeDoor.z, wx.snowman);
+  if (!snowy && (wx.wet || 0) >= 0.35) {                 // puddles on the roads after rain
+    const pm = mat("#9cc3e6", { roughness: 0.05, metalness: 0.1, emissive: "#1d3a52", transparent: true, opacity: 0.85 });
+    for (let i = 0; i < 26; i++) {
+      const r = 0.4 + rnd("pr" + i) * 0.6, along = (a, b) => a + rnd("pa" + i) * (b - a), jig = (rnd("po" + i) - 0.5) * 1.6;
+      const [x, z] = i % 2 ? [along(bounds.x0, bounds.x1), roadLine(along(bounds.z0, bounds.z1)) + jig]
+                           : [roadLine(along(bounds.x0, bounds.x1)) + jig, along(bounds.z0, bounds.z1)];
+      add(root, cyl(r, r, 0.02, 18), pm, x, 0.06, z, 0, 0, 0, false);
+    }
+  }
   places.beach = beach.spot;
   const hl = town.lots.find((l) => l.place === "home"); if (hl) homeTop = lotSpot(hl.lot);
 
@@ -402,7 +457,7 @@ function rebuild(town, luckyLive) {
     if (inTown(x, z)) continue;
     const t = rnd("t" + i);
     if (t < 0.45) tree(nat, x, z, hash("s" + i), 1.1);
-    else if (t < 0.65) add(nat, sph(0.5 + rnd("r" + i) * 0.4, 10), mat("#2f9a45"), x, 0.25, z);
+    else if (t < 0.65) add(nat, sph(0.5 + rnd("r" + i) * 0.4, 10), mat(snowy ? "#e6ecf1" : palette.leaf[i % 2]), x, 0.25, z);
     else if (t < 0.8) add(nat, box(0.9, 0.6, 0.7), mat("#9aa0a6"), x, 0.3, z, 0, rnd("a" + i) * 3);
     else for (let k = 0; k < 3; k++) add(nat, sph(0.12, 8), mat(["#e74c3c", "#f1c40f", "#ffffff"][k]), x + k * 0.3, 0.15, z + (k % 2) * 0.3, 0, 0, 0, false);
   }
@@ -419,13 +474,14 @@ function rebuild(town, luckyLive) {
     add(root, sph(r * 0.6, 10), mat("#4f7d4a", { roughness: 1 }), kx, h - 1, kz, 0, 0, 0, false);
   }
   // clouds
-  for (let i = 0; i < 10; i++) {
-    const cl = new THREE.Group(); cl.position.set(cx + (rnd("cx" + i) - 0.5) * 160, 16 + rnd("cy" + i) * 8, cz + (rnd("cz" + i) - 0.5) * 160);
-    const cm = mat("#ffffff", { transparent: true, opacity: night ? 0.15 : 0.92 });
+  const heavy = ["rain", "storm", "snow"].includes(wx.kind);
+  for (let i = 0; i < SK.clouds[0]; i++) {
+    const cl = new THREE.Group(); cl.position.set(cx + (rnd("cx" + i) - 0.5) * 160, (heavy ? 13 : 16) + rnd("cy" + i) * 8, cz + (rnd("cz" + i) - 0.5) * 160);
+    const cm = mat(SK.clouds[1], { transparent: true, opacity: night ? (heavy ? 0.5 : 0.15) : 0.92 });
     for (const [dx, dy, r] of [[0, 0, 2.2], [2.2, 0.3, 1.8], [-2.2, 0.2, 1.6], [0.8, 1.3, 1.6]]) add(cl, sph(r, 12), cm, dx, dy, 0, 0, 0, 0, false);
     root.add(cl); clouds.push(cl);
   }
-  if (night) {
+  if (night && SK.stars) {
     const pts = []; for (let i = 0; i < 700; i++) { const a = rnd("sa" + i) * Math.PI * 2, e = 0.15 + rnd("se" + i) * 1.3, d = 300;
       pts.push(cx + Math.cos(a) * Math.cos(e) * d, Math.sin(e) * d, cz + Math.sin(a) * Math.cos(e) * d); }
     const sg = new THREE.BufferGeometry(); sg.setAttribute("position", new THREE.Float32BufferAttribute(pts, 3));
@@ -442,10 +498,13 @@ function rebuild(town, luckyLive) {
   studMesh.receiveShadow = true;
   scene.add(studMesh);
 
-  scene.background = new THREE.Color(night ? "#0b1433" : "#8fd3ff");
-  scene.fog = new THREE.Fog(scene.background, opts.full ? 70 : 45, opts.full ? 260 : 140);
-  hemi.intensity = night ? 0.35 : 1.0; hemi.color.set(night ? "#7080c0" : "#ffffff");
-  sun.intensity = night ? 0.25 : 2.2; sun.color.set(night ? "#9fb4ff" : "#fff4e0");
+  sky.bg = new THREE.Color(SK.bg); if (night) sky.bg.lerp(new THREE.Color("#0b1433"), 0.85);
+  scene.background = sky.bg.clone();
+  const fk = opts.full ? 1 : 0.6;
+  scene.fog = new THREE.Fog(scene.background, SK.fog[0] * fk, SK.fog[1] * fk);
+  sky.hemi = night ? 0.35 : SK.hemi;
+  hemi.intensity = sky.hemi; hemi.color.set(night ? "#7080c0" : "#ffffff");
+  sun.intensity = night ? 0.25 : SK.sun; sun.color.set(night ? "#9fb4ff" : SK.sunC);
 }
 
 // ------------------------------------------------------------------ minimap (top-down, north up)
@@ -456,7 +515,7 @@ function drawMini() {
   const X = (x) => W / 2 + (x - bounds.cx) * s, Z = (z) => H / 2 + (z - bounds.cz) * s;
   g.fillStyle = night ? "#123a5a" : "#3c9ad6"; g.fillRect(0, 0, W, H);
   g.fillStyle = "#f2d28b"; g.fillRect(X(bounds.cx - isle.w / 2 - 5), Z(bounds.cz - isle.d / 2 - 5), (isle.w + 10) * s, (isle.d + 10) * s);
-  g.fillStyle = night ? "#2f6b3a" : "#55b85e"; g.fillRect(X(bounds.cx - isle.w / 2), Z(bounds.cz - isle.d / 2), isle.w * s, isle.d * s);
+  g.fillStyle = snowy ? (night ? "#7d8796" : "#eef2f6") : night ? "#2f6b3a" : "#55b85e"; g.fillRect(X(bounds.cx - isle.w / 2), Z(bounds.cz - isle.d / 2), isle.w * s, isle.d * s);
   g.fillStyle = "#666b73"; g.fillRect(X(bounds.x0 - ROAD / 2), Z(bounds.z0 - ROAD / 2), (bounds.x1 - bounds.x0 + ROAD) * s, (bounds.z1 - bounds.z0 + ROAD) * s);
   const town = lastState ? lastState.town : { lots: [] };
   for (const l of town.lots) {
@@ -500,6 +559,7 @@ export function mount(el, options = {}) {
   zzz = label("Zzz", 0.9); zzz.visible = false; scene.add(zzz);
   pupZ = label("z", 0.5); pupZ.visible = false; scene.add(pupZ);
   bubble = new THREE.Sprite(bubbleMat("🎾")); bubble.scale.set(0.7, 0.7, 1); bubble.visible = false; scene.add(bubble);
+  makePrecip();
   clock = new THREE.Clock();
   const fit = () => { const w = el.clientWidth || 600, h = el.clientHeight || 340; R.setSize(w, h, false);
     R.domElement.style.width = "100%"; R.domElement.style.height = "100%"; cam.aspect = w / h; cam.updateProjectionMatrix(); };
@@ -523,6 +583,51 @@ export function mount(el, options = {}) {
   R.setAnimationLoop(loop);
   ready = true;
 }
+function makePrecip() {
+  const N = 3000, seeds = () => Float32Array.from({ length: N * 3 }, (_, i) => (i % 3 === 1 ? Math.random() * 30 : Math.random() * 60 - 30));
+  const rg = new THREE.BufferGeometry(); rg.setAttribute("position", new THREE.BufferAttribute(new Float32Array(N * 6), 3));
+  rain = new THREE.LineSegments(rg, new THREE.LineBasicMaterial({ color: "#d5dee8", transparent: true, opacity: 0.55, depthWrite: false }));
+  rain.frustumCulled = false; rain.visible = false; rain.userData = { p: seeds(), n: N }; scene.add(rain);
+  const sg = new THREE.BufferGeometry(); sg.setAttribute("position", new THREE.BufferAttribute(new Float32Array(N * 3), 3));
+  flakes = new THREE.Points(sg, new THREE.PointsMaterial({ color: "#ffffff", size: 0.17, transparent: true, opacity: 0.95, depthWrite: false }));
+  flakes.frustumCulled = false; flakes.visible = false; flakes.userData = { p: seeds(), n: N }; scene.add(flakes);
+}
+const wrap = (v, c) => (v - c > 30 ? v - 60 : v - c < -30 ? v + 60 : v);
+function stepPrecip(dt, t) {
+  const c = controls.target, kind = wx.kind;
+  rain.visible = kind === "rain" || kind === "storm";
+  flakes.visible = kind === "snow";
+  if (rain.visible) {
+    const u = rain.userData, n = kind === "storm" ? u.n : (u.n * 0.55) | 0, pos = rain.geometry.attributes.position.array, slant = kind === "storm" ? 0.35 : 0.12;
+    for (let i = 0; i < n; i++) {
+      const j = i * 3; u.p[j + 1] -= dt * 26; if (u.p[j + 1] < 0) u.p[j + 1] += 30;
+      u.p[j] = wrap(u.p[j], c.x); u.p[j + 2] = wrap(u.p[j + 2], c.z);
+      const k = i * 6;
+      pos[k] = u.p[j]; pos[k + 1] = u.p[j + 1]; pos[k + 2] = u.p[j + 2];
+      pos[k + 3] = u.p[j] + slant; pos[k + 4] = u.p[j + 1] - 0.55; pos[k + 5] = u.p[j + 2];
+    }
+    rain.geometry.setDrawRange(0, n * 2); rain.geometry.attributes.position.needsUpdate = true;
+  }
+  if (flakes.visible) {
+    const u = flakes.userData, pos = flakes.geometry.attributes.position.array;
+    for (let i = 0; i < u.n; i++) {
+      const j = i * 3; u.p[j + 1] -= dt * 1.6; if (u.p[j + 1] < 0) u.p[j + 1] += 30;
+      u.p[j] = wrap(u.p[j] + Math.sin(t * 0.8 + i) * dt * 0.4, c.x); u.p[j + 2] = wrap(u.p[j + 2] + Math.cos(t * 0.6 + i) * dt * 0.3, c.z);
+      pos[j] = u.p[j]; pos[j + 1] = u.p[j + 1]; pos[j + 2] = u.p[j + 2];
+    }
+    flakes.geometry.attributes.position.needsUpdate = true;
+  }
+  // lightning: a white flash every few seconds in a storm
+  if (kind === "storm") {
+    if ((nextFlash -= dt) <= 0) { flashT = 0.22; nextFlash = 3 + Math.random() * 9; }
+    if (flashT > 0) {
+      flashT -= dt;
+      const on = Math.random() > 0.35 ? 1 : 0.3;
+      hemi.intensity = sky.hemi + 2.4 * on; scene.background.copy(sky.bg).lerp(new THREE.Color("#e8eeff"), 0.6 * on);
+    } else { hemi.intensity = sky.hemi; scene.background.copy(sky.bg); }
+  }
+}
+
 export function follow() { mode = "follow"; }
 export function explore(x, z) { push.set(x, z); if (x || z) mode = "explore"; }
 export const getMode = () => mode;
@@ -554,12 +659,14 @@ function loop() {
   jar.rotation.z = pose === "surf" ? Math.sin(t * 1.7) * 0.12 : 0;
   if (pose === "lie") jar.rotation.y = 0;
   if (jar.userData.board) jar.userData.board.visible = pose === "surf";
+  if (jar.userData.umbrella) jar.userData.umbrella.visible = ["rain", "storm", "snow"].includes(wx.kind) && (pose === "walk" || pose === "stand");
   if (pose === "walk") jar.position.y = gy + Math.abs(Math.sin(t * 14)) * 0.08;
   else if (pose === "lie") jar.position.y = SAND_Y + 0.14;
   else if (pose === "swim") jar.position.y = WATER_Y - 0.75 + Math.sin(t * 2) * 0.05;
   else if (pose === "surf") jar.position.y = WATER_Y + 0.12 + Math.sin(t * 2.2) * 0.14;
   else jar.position.y = gy + Math.abs(Math.sin(t * 3)) * 0.03;
-  for (const w of waves) w.position.z = w.userData.z0 + Math.sin(t * 0.8 + w.userData.z0) * 0.6;
+  const rough = wx.kind === "storm" ? 1.4 : wx.kind === "windy" ? 1.0 : 0.6;
+  for (const w of waves) w.position.z = w.userData.z0 + Math.sin(t * (0.8 + rough * 0.3) + w.userData.z0) * rough;
   // the puppy trots after him (or naps)
   if (pup.visible) {
     const u = pup.userData;
@@ -586,7 +693,7 @@ function loop() {
     if (e) { if (bubble.material !== bubbleMat(e)) bubble.material = bubbleMat(e); bubble.position.set(pup.position.x, pup.position.y + 1.05 + Math.sin(t * 3) * 0.05, pup.position.z); }
   }
   if (bang) { bang.position.y = 2.9 + Math.sin(t * 2.5) * 0.15; bang.rotation.y += dt * 0.8; }
-  for (const c of clouds) { c.position.x += dt * 0.6; if (bounds && c.position.x > bounds.cx + 90) c.position.x -= 180; }
+  for (const c of clouds) { c.position.x += dt * (wx.kind === "storm" || wx.kind === "windy" ? 2.5 : 0.6); if (bounds && c.position.x > bounds.cx + 90) c.position.x -= 180; }
   // camera: follow Derek, or explore with WASD / arrows / the on-screen pad
   if (mode === "follow") {
     const goal = jar.visible ? jar.position : homeDoor;
@@ -606,6 +713,7 @@ function loop() {
       controls.target.add(mv); cam.position.add(mv);
     }
   }
+  stepPrecip(dt, t);
   sun.position.set(controls.target.x + 12, 22, controls.target.z + 10); sun.target.position.set(controls.target.x, 0, controls.target.z);
   controls.update();
   R.render(scene, cam);
@@ -617,11 +725,13 @@ const etHour = (iso) => Number(new Date(iso).toLocaleString("en-US", { timeZone:
 export function update(state, town) {
   if (!ready || !town) return;
   lastState = { state, town };
+  wx = state.weather || {};
   const hr = etHour(state.updated);
   night = hr < 6 || hr >= 20;
   const lucky = state.lucky || {}, luckyLive = !(lucky.date === (state.stats.today || {}).date && lucky.used >= lucky.max);
   const key = JSON.stringify([town.lots.map((l) => [l.lot, l.id]), town.site && [town.site.lot, town.site.done], town.max_lots, night, luckyLive,
-                             ((state.beach && state.beach.castles) || []).map((c) => c.size), (state.owned || []).includes("surfboard")]);
+                             ((state.beach && state.beach.castles) || []).map((c) => c.size), (state.owned || []).includes("surfboard"),
+                             wx.kind, wx.season, Math.round((wx.snow || 0) * 4), (wx.wet || 0) >= 0.35, wx.snowman || 0]);
   const first = !lastKey;
   if (key !== lastKey) { rebuild(town, luckyLive); lastKey = key; }
   const doing = String(state.doing || "").toLowerCase();

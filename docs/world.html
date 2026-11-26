@@ -26,6 +26,8 @@
   #top-right { position: fixed; top: 10px; right: 10px; display: flex; gap: 8px; align-items: center; }
   .pill { padding: 5px 12px; border-radius: 99px; font-weight: 700; font-size: 13px; white-space: nowrap; }
   #clock { background: #4aa3df; color: #fff; border-color: #1f5f8b; }
+  #wx { background: #fbf3e4; }
+  @media (max-width: 760px) { #wx { font-size: 12px; padding: 4px 9px; } }
   a.pill { color: #3a2a1a; text-decoration: none; background: #f6b24a; }
   #now { position: fixed; top: 116px; left: 10px; width: 290px; max-height: calc(100vh - 300px); overflow: auto; padding: 10px 12px; font-size: 13px; }
   #now h3 { margin: 0 0 2px; font-size: 14px; }
@@ -62,6 +64,7 @@
 
 <div id="needs" class="panel"></div>
 <div id="top-right">
+  <span id="wx" class="panel pill" style="display:none"></span>
   <span id="clock" class="panel pill">🕐 …</span>
   <a class="panel pill" href="./">📔 Diary &amp; stats</a>
 </div>
@@ -113,6 +116,8 @@ function render(s, feed, diary, town) {
       bar("Bond", p.bond, "#e05a8a") + bar(`Tricks ${p.learned.length}/6`, p.learned.length / 6, "#2f6fb3");
   }
   $("needs").innerHTML = h;
+  const w = s.weather || {};
+  if (w.kind) { $("wx").style.display = ""; $("wx").textContent = `${w.emoji} ${w.temp}°C · ${w.season_emoji} ${cap(w.season)}`; $("wx").title = `${cap(w.name)}, ${w.temp}°C, ${w.season}`; }
   $("clock").textContent = "🕐 " + new Date(s.updated).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" });
   const pupName = p ? (p.name || "the puppy") : "";
   $("status").textContent = s.asleep ? `Derek is asleep${p ? ` · ${cap(pupName)} is curled up at the foot of the bed` : ""}`
@@ -121,7 +126,7 @@ function render(s, feed, diary, town) {
     `<li>${ICON[e.kind] || "•"} ${esc(e.text)}${e.why ? ` <i style="color:#8a7458">“${esc(e.why)}”</i>` : ""}</li>`).join("");
   const d = (diary || [])[0];
   $("now").innerHTML = `<span class="x" onclick="document.getElementById('now').classList.remove('open')">×</span>
-    <div class="small">right now · ${esc(String(s.place).replace(/_/g, " "))}</div>
+    <div class="small">right now · ${esc(String(s.place).replace(/_/g, " "))}${w.kind ? ` · ${esc(w.emoji)} ${esc(w.name)}, ${esc(w.temp)}°C` : ""}</div>
     <h3>${esc(cap(s.asleep ? "asleep" : s.doing))}</h3>
     <div class="th">“${esc(s.asleep ? "Zzz…" : s.thought)}”</div>
     <div class="small">coins ${s.coins}/${s.coins_goal} · bricks ${s.bricks}${town && town.site ? ` · building ${esc(town.site.name)} ${town.site.done}/${town.site.work}` : ""}</div>

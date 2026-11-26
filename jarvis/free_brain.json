@@ -1,5 +1,5 @@
 {
-  "_note": "The FREE brain's phrase book: used for his thoughts, reasons, feelings and diary until the real AI is switched on. Add your own lines! Placeholders: {pup} puppy's name, {coins} coins in the jar, {left} coins still needed, {site} what he's building, {book} book he's reading, {engine} a name for an engine, {place} where he's going, {note} something from his notebook, {topic} what he last read about, {waves} today's waves, {bricks} bricks he has, {mood} a feeling word. No em dashes.",
+  "_note": "The FREE brain's phrase book: used for his thoughts, reasons, feelings and diary until the real AI is switched on. Add your own lines! Placeholders: {pup} puppy's name, {coins} coins in the jar, {left} coins still needed, {site} what he's building, {book} book he's reading, {engine} a name for an engine, {place} where he's going, {note} something from his notebook, {topic} what he last read about, {waves} today's waves, {bricks} bricks he has, {mood} a feeling word, {weather} the weather, {temp} degrees C, {season} the season. No em dashes.",
   "thoughts": {
     "morning": [
       "Coffee first. Then the world.",
@@ -192,6 +192,77 @@
       "{bricks} bricks in the pile. Could build something lekker with that.",
       "A clean toolbox is a happy toolbox.",
       "Shame, the cafe guy looked tired today."
+    ],
+    "weather_sunny": [
+      "Blue sky, no excuses.",
+      "Sun's out. Even the bricks look happy.",
+      "Proper shorts weather.",
+      "Weather like this, Thailand feels close.",
+      "Not a cloud. {pup} is going to want the beach."
+    ],
+    "weather_cloudy": [
+      "Grey old day. Good for graft, bad for a tan.",
+      "Clouds sitting on the town like a lid.",
+      "Cloudy. Fine. Engines don't care.",
+      "Bit of a meh sky today."
+    ],
+    "weather_windy": [
+      "Wind's howling. Somewhere out there the surf is pumping.",
+      "Hold onto your cap, hey.",
+      "This wind will have the waves going lekker.",
+      "Brick dust everywhere in this wind."
+    ],
+    "weather_fog": [
+      "Can't see the end of the street. Spooky.",
+      "Fog's so thick you could cut it with a spanner.",
+      "Even the lamp posts look lost in this fog.",
+      "Foggy. Feels like a Port Alfred winter morning."
+    ],
+    "weather_rain": [
+      "Rain on the roof. Lekker sound, rubbish for building.",
+      "Wet again. The site turns to mud in this.",
+      "Proper rain. Good day for the garage.",
+      "{pup} thinks every puddle is a personal invitation.",
+      "Rain, rain. At least it fills the tanks.",
+      "Thailand rains like this in the wet season. Practice."
+    ],
+    "weather_storm": [
+      "Thunder like a V-twin with no silencer.",
+      "Storm's here. Everyone indoors, {pup} under the bed.",
+      "Lightning over the sea. Beautiful and terrifying.",
+      "Not climbing anything metal today, thanks.",
+      "Power's flickering. Good thing I've got candles somewhere."
+    ],
+    "weather_snow": [
+      "SNOW. On a tropical island. Who ordered this?",
+      "Brick town under snow looks like a Christmas card.",
+      "{temp} degrees. My fingers have stopped working.",
+      "{pup} has never seen snow. He's losing his mind.",
+      "Snowman time. Non-negotiable.",
+      "Cold enough to freeze the carb on a scooter."
+    ],
+    "weather_heatwave": [
+      "{temp} degrees. The bricks are too hot to touch.",
+      "Heatwave. Even the shade is sweating.",
+      "This is Bangkok-in-April hot. Good training.",
+      "Drinking water like a radiator with a leak.",
+      "Too hot to think. Sea, now."
+    ],
+    "season_spring": [
+      "Spring. Everything's waking up, including me.",
+      "Blossoms on the trees. Town looks pretty."
+    ],
+    "season_summer": [
+      "Summer. Long days, beach evenings.",
+      "Summer means the sea's warm. Lekker."
+    ],
+    "season_autumn": [
+      "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+      "Autumn. Days getting shorter."
+    ],
+    "season_winter": [
+      "Winter. Cold mornings, slow engines.",
+      "Winter on the island. Who knew?"
     ]
   },
   "whys": {
@@ -435,6 +506,31 @@
       "Home time.",
       "Back home quick.",
       "Home for a bit."
+    ],
+    "build_a_snowman": [
+      "Snow on the ground? A man has to build a snowman.",
+      "Every town needs a snowman. Rules.",
+      "Giving my old cap to a good cause."
+    ],
+    "play_in_the_snow": [
+      "{pup} wants to eat all the snow. Let's go.",
+      "Snowball fight. {pup} versus me.",
+      "Can't waste good snow."
+    ],
+    "splash_in_puddles": [
+      "Already wet, might as well splash.",
+      "{pup} is going for that puddle whether I like it or not.",
+      "Puddles are free fun."
+    ],
+    "watch_the_storm": [
+      "Best show in town, from behind glass.",
+      "Kettle on, watch the lightning.",
+      "Nothing to do but watch it roll in."
+    ],
+    "make_hot_chocolate": [
+      "Cold hands need a hot mug.",
+      "Hot chocolate. Doctor's orders.",
+      "Freezing. Mug time."
     ]
   },
   "feelings": {
@@ -647,7 +743,42 @@
       "Sell some stock at the stall.",
       "Teach {pup} a new trick.",
       "Beach in the morning, graft in the afternoon."
-    ]
+    ],
+    "weather": {
+      "snow": [
+        "It SNOWED. On my island. Still can't believe it.",
+        "Snow everywhere today. {pup} went completely mad in it.",
+        "Proper winter day, snow on every roof."
+      ],
+      "storm": [
+        "Massive storm today. Thunder rattled the windows.",
+        "Stormy day. Kept {pup} close, he hates the thunder."
+      ],
+      "heatwave": [
+        "Scorching day. {temp} degrees, felt like Bangkok.",
+        "Heatwave. Spent half the day looking for shade."
+      ],
+      "rain": [
+        "Rained a lot. The site turned to mud.",
+        "Wet day. Good for the garage, bad for everything else."
+      ],
+      "fog": [
+        "Foggy day, couldn't see the end of the street.",
+        "Sea fog hung around most of the day."
+      ],
+      "windy": [
+        "Windy day, the palms were bending.",
+        "Wind blew all day. Brick dust in my eyes."
+      ],
+      "sunny": [
+        "Beautiful sunny day.",
+        "Sun out all day. Lekker."
+      ],
+      "cloudy": [
+        "Grey sky most of the day.",
+        "Cloudy day, nothing special up top."
+      ]
+    }
   },
   "pup": {
     "_note": "The puppy's own mind (dogs think simple thoughts): used with BOTH brains. {name} = his name, {owner} = his human.",
@@ -722,6 +853,40 @@
         "The cafe smells like pies. Noted.",
         "Tail check: still there. Good.",
         "Sniffed a lamp post. Interesting news."
+      ],
+      "weather_sunny": [
+        "Sun on my belly. Perfect.",
+        "Warm spot on the floor. Mine now."
+      ],
+      "weather_cloudy": [
+        "Sky went grey. Still a good day. Every day is a good day."
+      ],
+      "weather_windy": [
+        "The wind is trying to steal my ears!",
+        "Smells! The wind brings ALL the smells!"
+      ],
+      "weather_fog": [
+        "Where did the world go?",
+        "Fog. Can't see. Can smell. Sniffing harder."
+      ],
+      "weather_rain": [
+        "Water falling from the sky. Again. Suspicious.",
+        "PUDDLE. Must jump in puddle.",
+        "Wet dog smell is the best smell."
+      ],
+      "weather_storm": [
+        "BOOM. Nope. Under the bed.",
+        "The sky is barking at me. I don't like it.",
+        "Stay close, {owner}. Closer."
+      ],
+      "weather_snow": [
+        "Cold white stuff! I must eat all of it.",
+        "The ground is a giant ice cream!",
+        "Why are my paws cold? Doesn't matter. SNOW!"
+      ],
+      "weather_heatwave": [
+        "Too hot. Lying flat like a pancake.",
+        "Need shade. Need water. Need the sea."
       ]
     },
     "ideas": [
@@ -748,6 +913,61 @@
       "cuddle": "❤️ a cuddle",
       "nap": "💤 a nap",
       "explore": "👃 to sniff around"
+    }
+  },
+  "weather": {
+    "_note": "Lines for when the weather changes ('news') and when a new season starts. {me} = his name.",
+    "news": {
+      "sunny": [
+        "The clouds clear off. Sunshine over the town.",
+        "Sun's out over the island."
+      ],
+      "cloudy": [
+        "The sky clouds over.",
+        "A grey lid of cloud rolls in."
+      ],
+      "windy": [
+        "The wind picks up. Palm trees bending.",
+        "A strong wind blows in off the sea."
+      ],
+      "fog": [
+        "A thick sea fog rolls in over the town.",
+        "Fog. You can barely see the next lamp post."
+      ],
+      "rain": [
+        "It starts raining. Proper drops this time.",
+        "Rain sets in over the island."
+      ],
+      "storm": [
+        "A thunderstorm rolls in off the sea. Lightning over the water.",
+        "Thunder! A big storm breaks over the town."
+      ],
+      "snow": [
+        "It's snowing! Big flakes falling on the brick town.",
+        "Snow starts falling over the island."
+      ],
+      "heatwave": [
+        "A heatwave settles over the island. Scorching.",
+        "It's a heatwave. The road shimmers."
+      ]
+    },
+    "season": {
+      "spring": [
+        "Spring has arrived on the island. Blossom on the trees.",
+        "Spring is here. Everything's turning green again."
+      ],
+      "summer": [
+        "Summer's here. Long hot days on the island.",
+        "Summer has arrived. Beach season."
+      ],
+      "autumn": [
+        "Autumn's here. The trees are turning orange.",
+        "Autumn has arrived. Leaves on the road."
+      ],
+      "winter": [
+        "Winter's here. Cold nights on the island.",
+        "Winter has arrived. Time to find the jersey."
+      ]
     }
   }
 }
