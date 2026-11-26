@@ -7,12 +7,12 @@
   "feeling": "good, ja",
   "needs": {
     "rest": 0,
-    "hunger": 0.195,
-    "social": 0.424,
-    "tinker": 0.67,
-    "curiosity": 0.42
+    "hunger": 0.275,
+    "social": 0.464,
+    "tinker": 0.71,
+    "curiosity": 0.46
   },
-  "mood": 0.27,
+  "mood": 0.24,
   "energy": 1,
   "coins": 48,
   "coins_goal": 500,
@@ -67,7 +67,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 1,
+  "hour": 3,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -95,15 +95,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 317,
+  "tick": 325,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T06:28:21.098366+00:00",
+  "updated": "2026-11-29T08:28:21.098366+00:00",
   "stats": {
     "all": {
       "model": 139,
       "queue": 79,
       "autopilot": 12,
-      "sleeping": 87,
+      "sleeping": 95,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -113,7 +113,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 6,
+      "sleeping": 14,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -126,7 +126,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.052,
+      "hunger": 0.084,
       "tired": 0,
       "bored": 0
     },
@@ -142,28 +142,28 @@
     "last_played_tick": 300,
     "wants": null,
     "recent_thoughts": [
-      "Water falling from the sky. Again. Suspicious.",
-      "The ! block knows something. I will watch it.",
-      "My bowl is empty. This is an emergency.",
+      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 304,
     "recent_ideas": [
@@ -203,7 +203,7 @@
     "Still thinking about that bit on {topic}.",
     "{pup} fell asleep on my boots again. Can't move. Won't move."
   ],
-  "real_updated": "2026-11-26T22:30:10.573098+00:00",
+  "real_updated": "2026-11-26T22:45:11.205704+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",
