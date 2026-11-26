@@ -68,7 +68,7 @@
     "name": "Market stall",
     "lot": 4,
     "work": 3,
-    "done": 0,
+    "done": 1,
     "started": "2026-11-26",
     "look": {
       "kind": "stall",

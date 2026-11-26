@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-11-27T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Off to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Batteries low. Need a recharge.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Introduction)): Tourism is an economic contributor to Thailand.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 1/9)",
+    "why": "One more chapter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "thought",
+    "text": "Autumn. Days getting shorter.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Wet again. The site turns to mud in this.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "building (Market stall 1/3)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Building site next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "thought",
+    "text": "Haven't had grease on my hands in hours. Feels wrong.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: teach the seagulls some manners.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-27T00:13:21.098366+00:00",
     "time": "7:13 PM",
     "kind": "did",

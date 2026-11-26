@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "cafe",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Brain's in first gear today.",
-  "feeling": "chilled",
+  "doing": "walking to the cafe",
+  "thought": "Batteries low. Need a recharge.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.65,
-    "social": 0.527,
-    "tinker": 0.615,
-    "curiosity": 0.525
+    "rest": 0.66,
+    "hunger": 0.275,
+    "social": 0.695,
+    "tinker": 0.645,
+    "curiosity": 0.425
   },
-  "mood": 0.3,
-  "energy": 0.36,
-  "coins": 32,
+  "mood": 0.27,
+  "energy": 0.34,
+  "coins": 30,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {},
@@ -23,11 +23,19 @@
     "items": 0,
     "coins": 0
   },
-  "books": {},
+  "books": {
+    "tourism_thailand": 1
+  },
   "finished": [],
-  "notebook": [],
+  "notebook": [
+    {
+      "date": "2026-11-26",
+      "source": "Tourism in Thailand (Introduction)",
+      "note": "Tourism is an economic contributor to Thailand."
+    }
+  ],
   "looked_up": [],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -42,8 +50,8 @@
   },
   "queue": [
     {
-      "move": "cook_dinner",
-      "why": "Can't run on toast forever."
+      "move": "chat_with_locals",
+      "why": "Need some gossip."
     }
   ],
   "lucky": {
@@ -617,6 +625,90 @@
       "k": "did",
       "x": "walking home",
       "why": "Home time."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: teach the seagulls some manners.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Haven't had grease on my hands in hours. Feels wrong.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Building site next."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "building (Market stall 1/3)",
+      "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Wet again. The site turns to mud in this.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Autumn. Days getting shorter.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 1/9)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Introduction)): Tourism is an economic contributor to Thailand.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
     }
   ],
   "day_start": {
@@ -625,14 +717,14 @@
     "got": 8,
     "used": 20
   },
-  "tick": 100,
+  "tick": 108,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T00:13:21.098366+00:00",
+  "updated": "2026-11-27T02:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 43,
-      "queue": 28,
-      "autopilot": 3,
+      "model": 47,
+      "queue": 31,
+      "autopilot": 4,
       "sleeping": 26,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -640,9 +732,9 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 32,
-      "queue": 20,
-      "autopilot": 1,
+      "model": 36,
+      "queue": 23,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -656,9 +748,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.176,
-      "tired": 0.54,
-      "bored": 0.45
+      "hunger": 0.416,
+      "tired": 0.7,
+      "bored": 0.69
     },
     "bond": 0.36,
     "food": 1,
@@ -666,18 +758,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "sniffing everything",
+    "doing": "watching Derek work",
     "last_played_tick": 76,
-    "wants": "explore",
+    "wants": "play",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "PUDDLE. Must jump in puddle.",
-      "Wet dog smell is the best smell.",
-      "Water falling from the sky. Again. Suspicious.",
       "PUDDLE. Must jump in puddle.",
       "PUDDLE. Must jump in puddle.",
       "Who left this brick here? I'll carry it somewhere else.",
@@ -689,23 +773,28 @@
       "Wet dog smell is the best smell.",
       "That engine is loud. I will bark at it. Later.",
       "Wet dog smell is the best smell.",
-      "Wet dog smell is the best smell."
+      "Wet dog smell is the best smell.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Sniffed a lamp post. Interesting news.",
+      "Water falling from the sky. Again. Suspicious.",
+      "The cafe smells like pies. Noted.",
+      "I could chew a boot. Just a little bit.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Tail check: still there. Good.",
+      "It's dark. I will guard the house. From the sofa."
     ],
-    "thought": "Wet dog smell is the best smell.",
-    "want_ticks": 3,
+    "thought": "It's dark. I will guard the house. From the sofa.",
+    "want_ticks": 0,
     "last_fed_tick": 95,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
-      "nap on the warm brick pile."
+      "nap on the warm brick pile.",
+      "teach the seagulls some manners."
     ],
-    "idea": "nap on the warm brick pile."
+    "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Little guy depends on me. Feed him first, then the rest.",
-    "If I don't eat soon I'm eating a brick.",
-    "Should bring a book to the beach next time.",
-    "One day: me, a bike, and a mountain road outside Chiang Mai.",
     "If it's got moving parts, I can fix it. Mostly.",
     "If I finish this, I'm getting a snack. Deal.",
     "Weather like this, Thailand feels close.",
@@ -726,9 +815,13 @@
     "If I don't fix something soon I'll start taking the fridge apart.",
     "Some days you're the spanner, some days you're the bolt.",
     "Need a nap. A proper one.",
-    "Brain's in first gear today."
+    "Brain's in first gear today.",
+    "Haven't had grease on my hands in hours. Feels wrong.",
+    "Wet again. The site turns to mud in this.",
+    "Autumn. Days getting shorter.",
+    "Batteries low. Need a recharge."
   ],
-  "real_updated": "2026-11-26T15:15:12.088757+00:00",
+  "real_updated": "2026-11-26T15:30:12.431645+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
@@ -742,7 +835,7 @@
       "sunny",
       "rain"
     ],
-    "temp": 15,
+    "temp": 14,
     "snow": 0,
     "wet": 1
   }
