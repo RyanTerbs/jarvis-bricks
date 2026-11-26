@@ -1,5 +1,68 @@
 [
   {
+    "at": "2026-11-29T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Autumn. Days getting shorter.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Every town needs a guy who fixes stuff. That's me.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-11-29T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "diary",
@@ -1283,69 +1346,6 @@
     "kind": "did",
     "text": "reading a book (Tourism in Thailand, chapter 4/9)",
     "why": "Learning something today.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Diesel thinks every puddle is a personal invitation.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Diesel is yawning, so I'm yawning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "splashing in puddles with Diesel",
-    "why": "Diesel is going for that puddle whether I like it or not.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Lamps are coming on. Town looks proper tonight.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
     "by": "model",
     "ok": true
   }
