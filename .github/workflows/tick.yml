@@ -1,10 +1,10 @@
-# Jarvis's heartbeat: every 15 minutes GitHub runs one tick, then saves what changed.
+# Derek's heartbeat: every 15 minutes GitHub runs one tick, then saves what changed.
 # No ANTHROPIC_API_KEY secret = the free brain ($0). Add the secret and his real brain takes over.
 name: tick
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 min (UTC). GitHub can run these a few minutes late.
+    - cron: "*/15 * * * *"   # backup only: GitHub runs these hours late. The on-time wake-up = Cloudflare worker timer-worker/ (derek-timer).
   workflow_dispatch:          # "Run workflow" button to tick him by hand
 
 permissions:

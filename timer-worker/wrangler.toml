@@ -1,0 +1,9 @@
+# Derek's on-time alarm clock. Deploy from this folder with:
+#   C:\dev\trend-bot\worker\node_modules\.bin\wrangler deploy
+name = "derek-timer"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[triggers]
+crons = ["*/15 * * * *"]
