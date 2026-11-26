@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-11-28",
+    "day": "Sat 28 Nov",
+    "title": "Finished building the Park",
+    "text": "Dear diary, as they say. Spent most of today cuddling Diesel, cooking a proper meal and building. Finished building the Park! Stood back and had a proper look at it. Lekker. Diesel learned to sit! Proud of the little guy. Learned a bit about Tourism in Thailand. Stormy day. Kept Diesel close, he hates the thunder. Beach time: collecting shells (+2 shells (6 in the jar)). Diesel was a legend today. Pretty sure Diesel was planning to follow me to Thailand. Obviously. Cheeky. Made 6 coins. Collected 18 bricks, used 23 on building. Also: The cafe has a new coffee on the board. Jar's at 48. 452 to go. One day, Chiang Mai. Lekker. Night.",
+    "tomorrow": "Teach Diesel a new trick.",
+    "by": "template",
+    "coins": 48,
+    "bricks": 6,
+    "coins_change": 6,
+    "bricks_change": -5,
+    "built": [
+      "finished building the Park!"
+    ]
+  },
+  {
     "date": "2026-11-27",
     "day": "Fri 27 Nov",
     "title": "Playing fetch with Diesel on the beach",
