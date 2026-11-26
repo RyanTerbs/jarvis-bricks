@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Looked up Tourism in Thailand on the old laptop. Lekker.",
+  "doing": "feeding Diesel",
+  "thought": "Need a lie down before I drop a spanner on my foot.",
   "feeling": "content",
   "needs": {
-    "rest": 0.71,
-    "hunger": 0.06,
-    "social": 0.272,
-    "tinker": 0.55,
-    "curiosity": 0.41
+    "rest": 0.61,
+    "hunger": 0.325,
+    "social": 0.42,
+    "tinker": 0.445,
+    "curiosity": 0.585
   },
-  "mood": 0.33,
-  "energy": 0.29,
-  "coins": 38,
+  "mood": 0.4,
+  "energy": 0.39,
+  "coins": 42,
   "coins_goal": 500,
   "bricks": 11,
   "stock": {
@@ -47,9 +47,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 19,
+  "hour": 21,
   "beach": {
-    "tan": 0.023,
+    "tan": 0.0195,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -661,6 +661,96 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Who names a bolt? Me. This one's Gerald.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "If I don't fix something soon I'll start taking the fridge apart.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Sky's going orange. Thailand sunsets must be something else.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Evening breeze off the sea. Lekker.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Diesel keeps nudging his bowl. Message received.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Need a lie down before I drop a spanner on my foot.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
     }
   ],
   "day_start": {
@@ -669,13 +759,13 @@
     "got": 5,
     "used": 0
   },
-  "tick": 197,
+  "tick": 204,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T00:28:21.098366+00:00",
+  "updated": "2026-11-28T02:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 84,
-      "queue": 54,
+      "model": 90,
+      "queue": 55,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -684,8 +774,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 32,
-      "queue": 21,
+      "model": 38,
+      "queue": 22,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -698,29 +788,22 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.528,
-      "tired": 0.46,
-      "bored": 0
+      "hunger": 0,
+      "tired": 0.4,
+      "bored": 0.15
     },
-    "bond": 0.65,
-    "food": 5,
+    "bond": 0.68,
+    "food": 4,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "napping",
+    "doing": "rolling in the grass",
     "last_played_tick": 191,
     "wants": null,
     "recent_thoughts": [
-      "Following {owner}. Best job in the world.",
-      "Wet dog smell is the best smell.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Wet dog smell is the best smell.",
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "{owner} is the best human in the whole town.",
-      "Good boy? Me? Yes. Me.",
       "Water falling from the sky. Again. Suspicious.",
       "PUDDLE. Must jump in puddle.",
       "Sniffed a lamp post. Interesting news.",
@@ -733,11 +816,18 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "The cafe smells like pies. Noted.",
+      "Wet dog smell is the best smell.",
+      "Everything smells amazing today.",
+      "PUDDLE. Must jump in puddle.",
+      "My bowl is empty. This is an emergency."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
-    "want_ticks": 4,
-    "last_fed_tick": 169,
+    "thought": "YES! That's what I wanted!",
+    "want_ticks": 0,
+    "last_fed_tick": 204,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -747,12 +837,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Bit of a meh sky today.",
-    "Should I name the street? {me} Street. Ja, why not.",
-    "Salt air, warm sand, no bolts. Perfect.",
-    "Grey old day. Good for graft, bad for a tan.",
-    "Too much sitting. Where's my toolbox?",
-    "Reading about {topic} makes me want to try it.",
     "Cloudy. Fine. Engines don't care.",
     "{bricks} bricks in the pile. Could build something lekker with that.",
     "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
@@ -771,9 +855,15 @@
     "Need a nap. A proper one.",
     "Funny what you learn. {topic}, who knew.",
     "Food first. Then I'm useful again.",
-    "Looked up {topic} on the old laptop. Lekker."
+    "Looked up {topic} on the old laptop. Lekker.",
+    "Who names a bolt? Me. This one's Gerald.",
+    "If I don't fix something soon I'll start taking the fridge apart.",
+    "Sky's going orange. Thailand sunsets must be something else.",
+    "Evening breeze off the sea. Lekker.",
+    "{pup} keeps nudging his bowl. Message received.",
+    "Need a lie down before I drop a spanner on my foot."
   ],
-  "real_updated": "2026-11-26T18:30:13.218309+00:00",
+  "real_updated": "2026-11-26T18:45:10.104675+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",
@@ -787,7 +877,7 @@
       "cloudy",
       "rain"
     ],
-    "temp": 12,
+    "temp": 11,
     "snow": 0,
     "wet": 1
   }

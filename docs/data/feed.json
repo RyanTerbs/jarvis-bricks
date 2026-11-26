@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-11-28T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Need a lie down before I drop a spanner on my foot.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Diesel keeps nudging his bowl. Message received.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "thought",
+    "text": "Evening breeze off the sea. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Customer's waiting. Can't leave them stuck.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "Sky's going orange. Thailand sunsets must be something else.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "thought",
+    "text": "If I don't fix something soon I'll start taking the fridge apart.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "thought",
+    "text": "Who names a bolt? Me. This one's Gerald.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T00:28:21.098366+00:00",
     "time": "7:28 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "did",
     "text": "walking to the building site",
     "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "thought",
-    "text": "Some days you're the spanner, some days you're the bolt.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "If I don't fix something soon I'll start taking the fridge apart.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Food for my boy.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "thought",
-    "text": "468 coins to go. That's just a lot of carbs.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "thought",
-    "text": "Diesel first. Always Diesel first.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "building (the rain slowed the work, Market stall still 0/3)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "thought",
-    "text": "Eyelids weigh a ton.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "thought",
-    "text": "Need a proper job. Something with bolts.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Haven't spoken to a human all day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Cafe next.",
     "by": "model",
     "ok": true
   }
