@@ -252,6 +252,68 @@ def train_pup(state, world, trick, log):
     return f"{T[trick]['name']}: {done}/{need}", 0.02
 
 
+PUP_WANT_MOVES = {
+    "food": {"feed_the_puppy"}, "play": {"play_with_the_puppy", "play_fetch_on_the_beach"}, "walk": {"walk_the_puppy"},
+    "cuddle": {"cuddle_the_puppy"}, "explore": {"walk_the_puppy"},
+    "beach": {"play_fetch_on_the_beach", "go_for_a_swim", "build_a_sand_castle", "collect_shells", "sunbathe", "watch_the_sunset"},
+}
+
+
+def pup_mind(state, log):
+    """The puppy's own little mind: a thought, what he wants, now and then an idea. Phrase book only, so it's free
+    with either brain (dogs think simple thoughts)."""
+    pup = state.get("pup")
+    if not pup:
+        return
+    P = free_brain().get("pup", {})
+    T, n, hr = P.get("thoughts", {}), pup["needs"], state.get("hour", 12)
+    name = pup.get("name") or "the puppy"
+    fill = lambda t: t.replace("{name}", name).replace("{jarvis}", "Jarvis")
+    # what he wants: his needs first, otherwise a whim that sticks around for a couple of hours
+    need_want = "food" if n["hunger"] >= 0.6 else "nap" if n["tired"] >= 0.8 else "play" if n["bored"] >= 0.6 else None
+    if pup["napping"]:
+        pup["wants"] = None
+    elif need_want:
+        pup["wants"], pup["want_ticks"] = need_want, 0
+    elif pup.get("wants") and pup.get("want_ticks", 0) < 8:
+        pup["want_ticks"] = pup.get("want_ticks", 0) + 1
+    elif random.random() < 0.2:
+        pup["wants"], pup["want_ticks"] = random.choice(["walk", "cuddle", "explore", "play"] + (["beach"] if 7 <= hr < 19 else [])), 0
+    else:
+        pup["wants"] = None
+    # what's on his mind
+    if pup["napping"]:
+        cat = "dream"
+    else:
+        w = {"random": 1.0}
+        for need, c, wt in (("hunger", "hungry", 3), ("bored", "bored", 3), ("tired", "tired", 2)):
+            if n[need] >= (0.7 if need == "tired" else 0.6):
+                w[c] = wt
+        if pup.get("bond", 0) >= 0.5:
+            w["happy"] = 1.5
+        if state["place"] == "beach":
+            w["beach"] = 3
+        if any(k in str(state.get("doing", "")) for k in ("fixing", "building", "tinkering")):
+            w["working"] = 2
+        if pup.get("learned"):
+            w["learning"] = 0.6
+        if hr >= 21 or hr < 6:
+            w["night"] = 1
+        cats = [c for c in w if T.get(c)]
+        cat = random.choices(cats, weights=[w[c] for c in cats])[0] if cats else None
+    if cat and T.get(cat):
+        recent = pup.get("recent_thoughts", [])
+        raw = fb_pick(T[cat], recent)
+        pup["recent_thoughts"] = (recent + [raw])[-20:]
+        pup["thought"] = fill(raw)
+    # a bright idea, now and then
+    if not pup["napping"] and not state["asleep"] and P.get("ideas") and random.random() < 0.03:
+        raw = fb_pick(P["ideas"], pup.get("recent_ideas", []))
+        pup["recent_ideas"] = (pup.get("recent_ideas", []) + [raw])[-8:]
+        pup["idea"] = fill(raw)
+        log("pupidea", f"{name[:1].upper() + name[1:]} has an idea: {pup['idea']}")
+
+
 # ---------------------------------------------------------------- the town (no AI)
 
 def blueprints(world, town):
@@ -688,6 +750,12 @@ def apply_move(state, world, town, step, today, log):
         pup["food"] = max(0, pup["food"] + d.get("food", 0))
         if d.get("food", 0) > 0:
             notes.append(f"{pup['food']} meals in the cupboard")
+    if pup and pup.get("wants") and move in PUP_WANT_MOVES.get(pup["wants"], ()):
+        pup["wants"] = None                         # exactly what he wanted
+        pup["bond"] = round(min(1.0, pup["bond"] + 0.01), 3)
+        pup["thought"] = random.choice(["YES! That's what I wanted!", "Best. Human. Ever.", "Tail going at full speed!"])
+        notes.append(f"{pup_name(state)}'s tail goes mad")
+        bonus += 0.02
     if pup and not pup["napping"] and "fetch" in pup["learned"] and move == "collect_bricks":
         bricks += random.randint(1, 2)                 # trick perk: he fetches bricks
     if pup and not pup["napping"] and "ride" in pup["learned"] and move == "go_for_a_ride":
@@ -781,6 +849,7 @@ HIS PUPPY
 - feed_the_puppy (at home, uses dog food; buy_dog_food at home = 3 coins for 6 meals), play_with_the_puppy, walk_the_puppy, cuddle_the_puppy.
 - train_the_puppy: add "trick":"<trick id>" to that move. Works best when the puppy is fed, rested and bonded. Some tricks help (fetch brings bricks).
 - If the puppy has no name yet, add "puppy_name":"..." to your reply (his choice, short).
+- The puppy has his own little mind: you can see what he's thinking and what he wants. Giving him what he wants makes his day.
 
 LEARNING (no internet: his books and laptop are offline copies)
 - read_a_book (at home: his own shelf; at the library: every book) reads the next chapter. Add "book":"<book id>" to pick one. Finished books teach him something useful.
@@ -860,7 +929,9 @@ RULES
         pup_lines = (f"IN HIS CARE: {'NEEDS HIM NOW: ' + ', '.join(flags) + '. ' if flags else ''}Last fed {hrs('last_fed_tick')}, last played/walked {hrs('last_played_tick')}.\n"
                      f"PUPPY: {pp['name'] or 'NO NAME YET'}, {age} days old, {'napping' if pp['napping'] else 'awake'}, {pp['doing']}. "
                      f"Needs (0 fine .. 1 urgent): {pn}. Bond {pp['bond']:.2f}. Dog food left: {pp['food']} meals.\n"
-                     f"TRICKS TO TRAIN: {tricks or 'none left'}. LEARNED: {', '.join(pp['learned']) or 'nothing yet'}")
+                     f"TRICKS TO TRAIN: {tricks or 'none left'}. LEARNED: {', '.join(pp['learned']) or 'nothing yet'}\n"
+                     f"{pp['name'] or 'THE PUPPY'} IS THINKING: \"{pp.get('thought', '')}\". WANTS: "
+                     f"{free_brain().get('pup', {}).get('wants', {}).get(pp.get('wants'), 'nothing right now') if pp.get('wants') else 'nothing right now'}")
     P, cat = world["products"], world["catalogue"]
     stock = ", ".join(f"{n} {P[pid]['name']}" for pid, n in state["stock"].items())
     owned = ", ".join(f"{cat[i]['name']} ({cat[i]['what']})" for i in state["owned"] if i in cat)
@@ -1033,6 +1104,11 @@ def mock_plan(state, W, world, town):
             return go("home", ["feed_the_puppy"]), None
         if state["coins"] >= 3:
             return go("home", ["buy_dog_food", "feed_the_puppy"]), None
+    if pup and not pup["napping"] and pup.get("wants") and roll < 0.4:
+        plan = {"play": ["play_with_the_puppy"], "walk": ["walk_the_puppy"], "cuddle": ["cuddle_the_puppy"],
+                "explore": ["walk_the_puppy"], "beach": go("beach", ["play_fetch_on_the_beach"])}.get(pup["wants"])
+        if plan and all(m.startswith("walk_to_") or m in W["moves"] for m in plan):
+            return plan, None
     if pup and not pup["napping"]:
         if pup["needs"]["bored"] >= 0.6 and roll < 0.7:
             return [random.choice(["play_with_the_puppy", "walk_the_puppy", "cuddle_the_puppy"])], None
@@ -1169,9 +1245,11 @@ def day_facts(state, town, day):
         "bought": [e["x"] for e in log if e["k"] == "bought"],
         "pup_learned": [e["x"] for e in log if e["k"] == "learned" and "reading" not in e["x"] and "named" not in e["x"]],
         "read_notes": [e["x"] for e in log if e["k"] == "note"],
-        "beach": [e["x"] for e in log if e["k"] == "did" and any(w in e["x"] for w in ("surf", "tan", "sand castle", "swim", "shells", "sunset", "on the beach"))],
+        "beach": [e["x"] for e in log if e["k"] == "did" and not e["x"].startswith("ordering")
+                  and any(w in e["x"] for w in ("surfing", "his tan", "sand castle", "swim", "shells", "sunset", "on the beach"))],
         "books_done": [e["x"] for e in log if e["k"] == "learned" and e["x"].startswith("finished reading")],
         "pup_fed": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("feeding")),
+        "pup_ideas": [e["x"].split("has an idea: ", 1)[-1] for e in log if e["k"] == "pupidea"],
         "pup_trained": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("training")),
         "pup_name": pup_name(state), "pup_bond": (state.get("pup") or {}).get("bond", 0),
         "sold_coins": sum(int(n) for e in log if e["k"] == "did" for n in re.findall(r"for (\d+) coins", e["x"])),
@@ -1249,7 +1327,7 @@ def template_diary(f):
     elif f["pup_trained"]:
         bits.append(f"Worked on tricks with {f['pup_name']} a few times.")
     if f["books_done"]:
-        bits.append(cap(f["books_done"][-1]) + ". Lekker.")
+        bits.append(cap(f["books_done"][-1]).replace(" his ", " my ") + ". Lekker.")
     elif f["read_notes"]:
         src = re.sub(r"^noted \((his laptop: )?", "", f["read_notes"][-1].split("): ", 1)[0])
         src = re.sub(r" \(.*$", "", src)
@@ -1261,6 +1339,9 @@ def template_diary(f):
         bits.append(f"Eish, didn't feed {f['pup_name']} properly today. Must do better.")
     else:
         bits.append(pick("pup_good", "{pup} was a legend today.") if f["pup_bond"] >= 0.5 else pick("pup_meh", "Must give {pup} more time."))
+    if f["pup_ideas"]:
+        idea = f["pup_ideas"][-1].replace("Jarvis's", "my").replace("Jarvis", "me")
+        bits.append(f"Pretty sure {f['pup_name']} was planning to {idea[:1].lower() + idea[1:]} Cheeky.")
     if f["sold_coins"]:
         bits.append(f"Stall made {f['sold_coins']} coins today.")
     if f["bought"]:
@@ -1362,6 +1443,7 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     # 1. CODE: needs creep up, mood follows
     update_needs(state, world)
     update_pup(state, world, now, log)
+    pup_mind(state, log)
     bt = world["bedtime"]
     night = local.hour >= bt["sleep_from_hour"] or local.hour < bt["wake_from_hour"]
 

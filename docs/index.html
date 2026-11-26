@@ -180,7 +180,8 @@ if (host.endsWith(".github.io")) {
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓" };
+const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡" };
+const PUP_WANTS = { food: "🦴 food", play: "🎾 to play", walk: "🐾 a walk", beach: "🏖️ the beach", cuddle: "❤️ a cuddle", nap: "💤 a nap", explore: "👃 to sniff around" };
 
 async function get(name) {
   for (const base of [BASE, "data/"]) {
@@ -462,7 +463,9 @@ function renderPup(s) {
   $("pupage").textContent = `${days} day${days === 1 ? "" : "s"} old`;
   const good = (v) => (v > 0.6 ? "var(--good)" : v > 0.3 ? "var(--mid)" : "var(--bad)");
   let h = `<div class="doing" style="font-size:16px">🐶 ${esc(p.name || "No name yet (Jarvis will pick one)")}</div>
-    <div class="muted" style="margin-bottom:6px">${esc(p.napping ? "napping" : p.doing)} · ${p.food} meal${p.food === 1 ? "" : "s"} of dog food left</div>`;
+    <div class="muted" style="margin-bottom:6px">${esc(p.napping ? "napping" : p.doing)} · ${p.food} meal${p.food === 1 ? "" : "s"} of dog food left</div>
+    ${p.thought ? `<div class="bubble" style="margin:4px 0 8px">“${esc(p.thought)}”</div>` : ""}
+    <div>${p.wants ? `<span class="chip">wants ${esc(PUP_WANTS[p.wants] || p.wants)}</span>` : ""}${p.idea ? `<span class="chip">💡 idea: ${esc(p.idea)}</span>` : ""}</div>`;
   h += bar("Fullness", 1 - p.needs.hunger, 0, 1, good(1 - p.needs.hunger)) + bar("Energy", 1 - p.needs.tired, 0, 1, good(1 - p.needs.tired)) +
        bar("Fun", 1 - p.needs.bored, 0, 1, good(1 - p.needs.bored)) + bar("Bond", p.bond, 0, 1, "#e05a8a");
   h += `<div class="muted" style="margin:10px 0 2px">Tricks</div><div class="pupgrid">` + Object.entries(TRICKS).map(([k, [name, need]]) => {

@@ -95,7 +95,8 @@ async function get(name) {
   }
   return null;
 }
-const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓" };
+const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡" };
+const PUP_WANTS = { food: "🦴 food", play: "🎾 to play", walk: "🐾 a walk", beach: "🏖️ the beach", cuddle: "❤️ a cuddle", nap: "💤 a nap", explore: "👃 to sniff around" };
 const bar = (label, value, color) => `<div class="need"><div class="t"><i class="dot" style="background:${color}"></i><span>${label}</span></div>
   <div class="track"><div class="fill" style="width:${Math.round(Math.max(0, Math.min(1, value)) * 100)}%;background:${color}"></div></div></div>`;
 const mood = (m) => (m > 0.4 ? "😄" : m > 0.1 ? "🙂" : m > -0.2 ? "😐" : "😟");
@@ -124,6 +125,8 @@ function render(s, feed, diary, town) {
     <h3>${esc(cap(s.asleep ? "asleep" : s.doing))}</h3>
     <div class="th">“${esc(s.asleep ? "Zzz…" : s.thought)}”</div>
     <div class="small">coins ${s.coins}/${s.coins_goal} · bricks ${s.bricks}${town && town.site ? ` · building ${esc(town.site.name)} ${town.site.done}/${town.site.work}` : ""}</div>
+    ${p ? `<div class="small" style="margin-top:6px">🐶 ${esc(cap(pupName))}${p.wants ? " wants " + esc(PUP_WANTS[p.wants] || p.wants) : ""}</div>
+      <div class="th">“${esc(p.thought || "…")}”</div>` : ""}
     <ul>${items}</ul>
     ${d ? `<div class="small" style="margin-top:8px">last diary · ${esc(d.day)}</div><div><b>${esc(d.title)}</b></div>` : ""}`;
 }

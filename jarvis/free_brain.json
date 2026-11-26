@@ -648,5 +648,106 @@
       "Teach {pup} a new trick.",
       "Beach in the morning, graft in the afternoon."
     ]
+  },
+  "pup": {
+    "_note": "The puppy's own mind (dogs think simple thoughts): used with BOTH brains. {name} = his name, {jarvis} = Jarvis.",
+    "thoughts": {
+      "hungry": [
+        "Food? Food. FOOD.",
+        "My bowl is empty. This is an emergency.",
+        "{jarvis} smells like toast. Share?",
+        "If I stare at the bowl hard enough, food appears. Science.",
+        "Tummy rumble. Big one.",
+        "Is it dinner? It feels like dinner."
+      ],
+      "bored": [
+        "Ball. Ball. Ball. Ball?",
+        "Nobody is throwing anything. Rude.",
+        "I could chew a boot. Just a little bit.",
+        "So bored I'm counting my own paws. Four. Still four.",
+        "Walk? Walk? WALK?",
+        "{jarvis} is busy again. Sigh. Big sigh."
+      ],
+      "tired": [
+        "Eyes heavy. Paws heavy. Everything heavy.",
+        "Must... stay... awake... for treats.",
+        "Nap spot: located. Engaging.",
+        "Yawn. Big yawn. Biggest yawn."
+      ],
+      "dream": [
+        "Dreaming: a sausage as big as the garage.",
+        "Dreaming: chasing the ! block. It's slow in dreams.",
+        "Dreaming: {jarvis} throws the ball forever.",
+        "Dreaming: the whole beach is made of treats.",
+        "Dreaming: running, running, running. Legs twitching.",
+        "Zzz. Squirrel. Zzz."
+      ],
+      "happy": [
+        "{jarvis} is the best human in the whole town.",
+        "My tail won't stop. I'm not stopping it.",
+        "Good boy? Me? Yes. Me.",
+        "Following {jarvis}. Best job in the world.",
+        "Everything smells amazing today.",
+        "Life is good. Life is SO good."
+      ],
+      "working": [
+        "{jarvis} is making clanky noises. I will supervise.",
+        "That engine is loud. I will bark at it. Later.",
+        "Helping. I am helping. By sitting here.",
+        "Grease smell. Best smell after sausages."
+      ],
+      "beach": [
+        "SAND! Wet sand! Best day ever!",
+        "Crab. Must investigate.",
+        "Why does the sea keep coming back? Suspicious.",
+        "Dig. Dig. Dig. Something is down here.",
+        "The waves are chasing me. I'm chasing the waves. Who's winning?",
+        "Salty water. Do not drink. Drank it anyway."
+      ],
+      "learning": [
+        "Sit means treat. I have cracked the code.",
+        "{jarvis} says a word, I do a thing, treat appears. Magic.",
+        "Learning is hard. Treats make it easier.",
+        "I know tricks now. I am a very clever boy."
+      ],
+      "night": [
+        "It's dark. I will guard the house. From the sofa.",
+        "Night noises. Probably nothing. Probably."
+      ],
+      "random": [
+        "Is that a squirrel? It's a bolt. Still exciting.",
+        "The ! block knows something. I will watch it.",
+        "I am a very good boy. Probably.",
+        "Who left this brick here? I'll carry it somewhere else.",
+        "The cafe smells like pies. Noted.",
+        "Tail check: still there. Good.",
+        "Sniffed a lamp post. Interesting news."
+      ]
+    },
+    "ideas": [
+      "bury {jarvis}'s 10mm socket. He loves looking for it.",
+      "sit by the cafe door looking sad. Free pie.",
+      "dig all the way to the other side of the island.",
+      "sleep IN the toolbox. Cosy.",
+      "learn the next trick and get ALL the treats.",
+      "chase the waves until they're scared of me.",
+      "guard the savings jar. Nobody touches the jar.",
+      "bring {jarvis} a stick. Then a bigger stick.",
+      "be the greeter at the market stall. Customers love me.",
+      "nap on the warm brick pile.",
+      "teach the seagulls some manners.",
+      "find out what's inside the ! block.",
+      "follow {jarvis} to Thailand. Obviously.",
+      "make friends with the crab. Or eat it. Undecided."
+    ],
+    "wants": {
+      "food": "🦴 food",
+      "play": "🎾 to play",
+      "walk": "🐾 a walk",
+      "beach": "🏖️ the beach",
+      "cuddle": "❤️ a cuddle",
+      "nap": "💤 a nap",
+      "explore": "👃 to sniff around"
+    }
   }
 }

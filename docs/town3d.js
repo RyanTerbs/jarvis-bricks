@@ -11,7 +11,19 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 const BLOCK = 8.6, ROAD = 3.0, P = BLOCK + ROAD;     // block plate, road width, block pitch
 const SLOT = 2.15;                                    // lot centre offset inside a block
 const Y_ROAD = 0.04, Y_BLOCK = 0.2, SAND_Y = -0.15, WATER_Y = -0.55;
-let beach = null, waves = [];
+let beach = null, waves = [], bubble = null;
+const WANT_EMOJI = { food: "🦴", play: "🎾", walk: "🐾", beach: "🏖️", cuddle: "❤️", nap: "💤", explore: "👃" }, bubbleMats = new Map();
+function bubbleMat(e) {   // kept for the whole visit (not cleared on rebuild)
+  if (!bubbleMats.has(e)) {
+    const c = document.createElement("canvas"); c.width = c.height = 96; const g = c.getContext("2d");
+    g.fillStyle = "rgba(255,255,255,.95)"; g.beginPath(); g.arc(48, 44, 38, 0, 7); g.fill();
+    g.beginPath(); g.moveTo(36, 76); g.lineTo(44, 94); g.lineTo(54, 78); g.fill();
+    g.font = "44px 'Segoe UI Emoji','Apple Color Emoji',sans-serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(e, 48, 46);
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+    bubbleMats.set(e, new THREE.SpriteMaterial({ map: t, transparent: true, depthWrite: false }));
+  }
+  return bubbleMats.get(e);
+}
 
 let R, scene, cam, controls, root, studMesh, jar, pup, pupZ, zzz, bang, sun, hemi, clock, opts;
 let lastKey = "", ready = false, night = false, places = {}, homeDoor = new THREE.Vector3(), homeTop = { cx: 0, cz: 0 }, bounds = null;
@@ -487,6 +499,7 @@ export function mount(el, options = {}) {
   pup = makePup(); pup.visible = false; scene.add(pup);
   zzz = label("Zzz", 0.9); zzz.visible = false; scene.add(zzz);
   pupZ = label("z", 0.5); pupZ.visible = false; scene.add(pupZ);
+  bubble = new THREE.Sprite(bubbleMat("🎾")); bubble.scale.set(0.7, 0.7, 1); bubble.visible = false; scene.add(bubble);
   clock = new THREE.Clock();
   const fit = () => { const w = el.clientWidth || 600, h = el.clientHeight || 340; R.setSize(w, h, false);
     R.domElement.style.width = "100%"; R.domElement.style.height = "100%"; cam.aspect = w / h; cam.updateProjectionMatrix(); };
@@ -568,6 +581,9 @@ function loop() {
       u.tail.rotation.y = Math.sin(t * (8 + 10 * (u.bond || 0))) * 0.7;
     }
     pupZ.visible = !!u.napping;
+    const e = !u.napping && WANT_EMOJI[u.want];
+    bubble.visible = !!e;
+    if (e) { if (bubble.material !== bubbleMat(e)) bubble.material = bubbleMat(e); bubble.position.set(pup.position.x, pup.position.y + 1.05 + Math.sin(t * 3) * 0.05, pup.position.z); }
   }
   if (bang) { bang.position.y = 2.9 + Math.sin(t * 2.5) * 0.15; bang.rotation.y += dt * 0.8; }
   for (const c of clouds) { c.position.x += dt * 0.6; if (bounds && c.position.x > bounds.cx + 90) c.position.x -= 180; }
@@ -638,6 +654,7 @@ export function update(state, town) {
   if (p) {
     pup.userData.napping = p.napping || state.asleep;
     pup.userData.bond = p.bond;
+    pup.userData.want = p.wants;
     if (state.asleep && first) pup.position.copy(homeDoor).add(new THREE.Vector3(-0.6, 0, 0));
   }
 }
