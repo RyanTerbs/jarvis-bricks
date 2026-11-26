@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "beach",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Evenings are for slowing down. Mostly.",
+  "thought": "Rain, rain. At least it fills the tanks.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.26,
-    "social": 0.299,
-    "tinker": 0.535,
-    "curiosity": 0.475
+    "rest": 0.56,
+    "hunger": 0.56,
+    "social": 0.229,
+    "tinker": 0.465,
+    "curiosity": 0.525
   },
-  "mood": 0.38,
-  "energy": 0.43,
-  "coins": 46,
+  "mood": 0.43,
+  "energy": 0.44,
+  "coins": 50,
   "coins_goal": 500,
   "bricks": 9,
   "stock": {
@@ -62,14 +62,14 @@
     }
   ],
   "looked_up": [],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 4,
+    "shells": 6,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
@@ -701,6 +701,84 @@
       "k": "did",
       "x": "having a rest",
       "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Shame, the cafe guy looked tired today.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "cuddling Diesel (Diesel's tail goes mad)",
+      "why": "Cuddle break."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Did more today than I thought I would.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Old Rusty. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Diesel thinks every puddle is a personal invitation.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Thailand rains like this in the wet season. Practice.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach",
+      "why": "Let him run."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "collecting shells (+2 shells (6 in the jar))",
+      "why": "Shells for the jar on the shelf."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Rain, rain. At least it fills the tanks.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -709,13 +787,13 @@
     "got": 18,
     "used": 20
   },
-  "tick": 294,
+  "tick": 302,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T00:43:21.098366+00:00",
+  "updated": "2026-11-29T02:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 129,
-      "queue": 76,
+      "model": 134,
+      "queue": 79,
       "autopilot": 11,
       "sleeping": 78,
       "tokens_in": 0,
@@ -724,8 +802,8 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 34,
-      "queue": 19,
+      "model": 39,
+      "queue": 22,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -738,13 +816,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.442,
-      "tired": 0.73,
-      "bored": 0.33
+      "hunger": 0.63,
+      "tired": 0.84,
+      "bored": 0
     },
-    "bond": 0.96,
+    "bond": 1,
     "food": 2,
     "tricks": {
       "sit": 3
@@ -752,18 +830,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
-    "last_played_tick": 283,
-    "wants": "cuddle",
+    "doing": "napping",
+    "last_played_tick": 300,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "My bowl is empty. This is an emergency.",
-      "{owner} smells like toast. Share?",
-      "Good boy? Me? Yes. Me.",
-      "Helping. I am helping. By sitting here.",
-      "Life is good. Life is SO good.",
-      "I know tricks now. I am a very clever boy.",
       "Water falling from the sky. Again. Suspicious.",
       "Wet dog smell is the best smell.",
       "Tail check: still there. Good.",
@@ -775,9 +845,17 @@
       "Everything smells amazing today.",
       "PUDDLE. Must jump in puddle.",
       "Yawn. Big yawn. Biggest yawn.",
-      "PUDDLE. Must jump in puddle."
+      "PUDDLE. Must jump in puddle.",
+      "Must... stay... awake... for treats.",
+      "Sit means treat. I have cracked the code.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Water falling from the sky. Again. Suspicious.",
+      "The ! block knows something. I will watch it.",
+      "My bowl is empty. This is an emergency.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "PUDDLE. Must jump in puddle.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 282,
     "recent_ideas": [
@@ -791,11 +869,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Autumn. Days getting shorter.",
-    "Lightning over the sea. Beautiful and terrifying.",
-    "Power's flickering. Good thing I've got candles somewhere.",
-    "Funny what you learn. {topic}, who knew.",
-    "Don't spend it. Don't spend it. Don't spend it.",
     "Still thinking about that bit on {topic}.",
     "Thai street food. That's the dream right there.",
     "Proud of {pup}. Little guy's growing up.",
@@ -815,9 +888,14 @@
     "Proper rain. Good day for the garage.",
     "Brain's in first gear today.",
     "If it's got moving parts, I can fix it. Mostly.",
-    "Evenings are for slowing down. Mostly."
+    "Evenings are for slowing down. Mostly.",
+    "Shame, the cafe guy looked tired today.",
+    "Did more today than I thought I would.",
+    "{pup} thinks every puddle is a personal invitation.",
+    "Thailand rains like this in the wet season. Practice.",
+    "Rain, rain. At least it fills the tanks."
   ],
-  "real_updated": "2026-11-26T21:45:11.113795+00:00",
+  "real_updated": "2026-11-26T22:00:11.380061+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",
@@ -831,7 +909,7 @@
       "storm",
       "rain"
     ],
-    "temp": 20,
+    "temp": 18,
     "snow": 0,
     "wet": 1
   }
