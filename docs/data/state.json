@@ -6,15 +6,15 @@
   "thought": "The jar's getting heavier. Love that sound.",
   "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.33,
-    "hunger": 0.56,
-    "social": 0.396,
-    "tinker": 0.19,
-    "curiosity": 0.4
+    "rest": 0.39,
+    "hunger": 0.615,
+    "social": 0.42,
+    "tinker": 0,
+    "curiosity": 0.425
   },
-  "mood": 0.42,
-  "energy": 0.67,
-  "coins": 24,
+  "mood": 0.45,
+  "energy": 0.61,
+  "coins": 28,
   "coins_goal": 500,
   "bricks": 10,
   "stock": {},
@@ -40,12 +40,7 @@
     "waves": "small",
     "waves_date": "2026-11-25"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "Meet Sputnik. Bit of a sad case. I'll sort her out."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-25",
     "used": 0,
@@ -107,6 +102,12 @@
       "k": "did",
       "x": "fixing a car (+4 coins)",
       "why": "Big Ron is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Sputnik. Bit of a sad case. I'll sort her out."
     }
   ],
   "day_start": {
@@ -115,13 +116,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 4,
+  "tick": 5,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T00:13:21.098366+00:00",
+  "updated": "2026-11-26T00:28:21.098366+00:00",
   "stats": {
     "all": {
       "model": 2,
-      "queue": 2,
+      "queue": 3,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -131,7 +132,7 @@
     "today": {
       "date": "2026-11-25",
       "model": 2,
-      "queue": 2,
+      "queue": 3,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -146,9 +147,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.42,
-      "tired": 0.48,
-      "bored": 0.52
+      "hunger": 0.45,
+      "tired": 0.5,
+      "bored": 0.55
     },
     "bond": 0.12,
     "food": 4,
@@ -156,16 +157,19 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "watching Derek work",
+    "doing": "sniffing everything",
     "last_played_tick": 2,
     "wants": null,
     "recent_thoughts": [
       "Tail check: still there. Good.",
-      "The ! block knows something. I will watch it."
+      "The ! block knows something. I will watch it.",
+      "Helping. I am helping. By sitting here."
     ],
-    "thought": "The ! block knows something. I will watch it."
+    "thought": "Helping. I am helping. By sitting here."
   },
   "recent_thoughts": [
     "The jar's getting heavier. Love that sound."
-  ]
+  ],
+  "real_updated": "2026-11-26T00:16:21.288247+00:00",
+  "speed": 8
 }
