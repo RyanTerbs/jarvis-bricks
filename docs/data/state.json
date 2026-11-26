@@ -6,14 +6,14 @@
   "thought": "Diesel fell asleep on my boots again. Can't move. Won't move.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.41,
-    "hunger": 0.125,
-    "social": 0.389,
-    "tinker": 0.635,
-    "curiosity": 0.385
+    "rest": 0,
+    "hunger": 0.195,
+    "social": 0.424,
+    "tinker": 0.67,
+    "curiosity": 0.42
   },
-  "mood": 0.35,
-  "energy": 0.59,
+  "mood": 0.27,
+  "energy": 1,
   "coins": 48,
   "coins_goal": 500,
   "bricks": 6,
@@ -67,7 +67,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 23,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -78,12 +78,12 @@
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
-    "waves_date": "2026-11-28"
+    "waves_date": "2026-11-29"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-11-28",
-    "used": 2,
+    "date": "2026-11-29",
+    "used": 0,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -95,25 +95,25 @@
     "got": 0,
     "used": 0
   },
-  "tick": 310,
+  "tick": 317,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T04:43:21.098366+00:00",
+  "updated": "2026-11-29T06:28:21.098366+00:00",
   "stats": {
     "all": {
       "model": 139,
       "queue": 79,
       "autopilot": 12,
-      "sleeping": 80,
+      "sleeping": 87,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-11-28",
-      "model": 44,
-      "queue": 22,
-      "autopilot": 3,
-      "sleeping": 26,
+      "date": "2026-11-29",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 6,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -126,8 +126,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.024,
-      "tired": 0.2,
+      "hunger": 0.052,
+      "tired": 0,
       "bored": 0
     },
     "bond": 1,
@@ -142,13 +142,6 @@
     "last_played_tick": 300,
     "wants": null,
     "recent_thoughts": [
-      "Everything smells amazing today.",
-      "PUDDLE. Must jump in puddle.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "PUDDLE. Must jump in puddle.",
-      "Must... stay... awake... for treats.",
-      "Sit means treat. I have cracked the code.",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
       "Water falling from the sky. Again. Suspicious.",
       "The ! block knows something. I will watch it.",
       "My bowl is empty. This is an emergency.",
@@ -161,9 +154,16 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 304,
     "recent_ideas": [
@@ -203,7 +203,7 @@
     "Still thinking about that bit on {topic}.",
     "{pup} fell asleep on my boots again. Can't move. Won't move."
   ],
-  "real_updated": "2026-11-26T22:15:11.915068+00:00",
+  "real_updated": "2026-11-26T22:30:10.573098+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",
@@ -217,7 +217,7 @@
       "storm",
       "rain"
     ],
-    "temp": 17,
+    "temp": 16,
     "snow": 0,
     "wet": 1
   }
