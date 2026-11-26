@@ -7,12 +7,12 @@
   "feeling": "good, ja",
   "needs": {
     "rest": 0,
-    "hunger": 0.77,
-    "social": 0.119,
-    "tinker": 0.825,
-    "curiosity": 0.525
+    "hunger": 0.85,
+    "social": 0.159,
+    "tinker": 0.865,
+    "curiosity": 0.565
   },
-  "mood": 0.01,
+  "mood": -0.1,
   "energy": 1,
   "coins": 42,
   "coins_goal": 500,
@@ -52,9 +52,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 2,
+  "hour": 4,
   "beach": {
-    "tan": 0.0085,
+    "tan": 0.0045,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -85,15 +85,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 226,
+  "tick": 234,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T07:43:21.098366+00:00",
+  "updated": "2026-11-28T09:43:21.098366+00:00",
   "stats": {
     "all": {
       "model": 95,
       "queue": 57,
       "autopilot": 9,
-      "sleeping": 65,
+      "sleeping": 73,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -103,7 +103,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 11,
+      "sleeping": 19,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -116,7 +116,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.322,
+      "hunger": 0.354,
       "tired": 0,
       "bored": 0.24
     },
@@ -130,14 +130,6 @@
     "last_played_tick": 205,
     "wants": null,
     "recent_thoughts": [
-      "Water falling from the sky. Again. Suspicious.",
-      "It's dark. I will guard the house. From the sofa.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "I am a very good boy. Probably.",
-      "Tail check: still there. Good.",
-      "Life is good. Life is SO good.",
-      "Sniffed a lamp post. Interesting news.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
@@ -149,9 +141,17 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 204,
     "recent_ideas": [
@@ -189,7 +189,7 @@
     "A clean toolbox is a happy toolbox.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand."
   ],
-  "real_updated": "2026-11-26T19:30:10.976198+00:00",
+  "real_updated": "2026-11-26T19:45:12.060313+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",
