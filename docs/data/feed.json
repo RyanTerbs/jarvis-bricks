@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-11-26T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Diesel first. Always Diesel first.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "building (the rain slowed the work, Market stall still 0/3)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Eyelids weigh a ton.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Need a proper job. Something with bolts.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Haven't spoken to a human all day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Cafe next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Need a proper chat with someone who talks back.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "thought",
+    "text": "Every coin counts. Every single one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-26T20:28:21.098366+00:00",
     "time": "3:28 PM",
     "kind": "did",

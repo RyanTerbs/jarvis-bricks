@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "building_site",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-  "feeling": "hangry",
+  "doing": "having a rest",
+  "thought": "Diesel first. Always Diesel first.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0.765,
-    "social": 0.599,
-    "tinker": 0.54,
-    "curiosity": 0.15
+    "rest": 0.62,
+    "hunger": 0.375,
+    "social": 0.378,
+    "tinker": 0.57,
+    "curiosity": 0.35
   },
-  "mood": 0.29,
-  "energy": 0.31,
-  "coins": 34,
+  "mood": 0.33,
+  "energy": 0.38,
+  "coins": 32,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {},
@@ -27,7 +27,7 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -40,12 +40,7 @@
     "waves": "flat",
     "waves_date": "2026-11-26"
   },
-  "queue": [
-    {
-      "move": "cook_dinner",
-      "why": "Can't run on toast forever."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-26",
     "used": 2,
@@ -467,6 +462,84 @@
       "k": "did",
       "x": "walking home",
       "why": "Home for a bit."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Every coin counts. Every single one.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Need a proper chat with someone who talks back.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Cafe next."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "Need a proper job. Something with bolts.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Eyelids weigh a ton.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Heading to the building site."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "building (the rain slowed the work, Market stall still 0/3)",
+      "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Diesel first. Always Diesel first.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
     }
   ],
   "day_start": {
@@ -475,13 +548,13 @@
     "got": 8,
     "used": 20
   },
-  "tick": 85,
+  "tick": 93,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T20:28:21.098366+00:00",
+  "updated": "2026-11-26T22:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 33,
-      "queue": 23,
+      "model": 38,
+      "queue": 26,
       "autopilot": 3,
       "sleeping": 26,
       "tokens_in": 0,
@@ -490,8 +563,8 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 22,
-      "queue": 15,
+      "model": 27,
+      "queue": 18,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -504,11 +577,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.426,
-      "tired": 0.24,
-      "bored": 0
+      "hunger": 0.666,
+      "tired": 0.4,
+      "bored": 0.24
     },
     "bond": 0.33,
     "food": 2,
@@ -516,18 +589,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "napping",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 76,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "The waves are chasing me. I'm chasing the waves. Who's winning?",
-      "Warm spot on the floor. Mine now.",
-      "Warm spot on the floor. Mine now.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Sun on my belly. Perfect.",
-      "Must... stay... awake... for treats.",
-      "Sun on my belly. Perfect.",
-      "Warm spot on the floor. Mine now.",
       "Nap spot: located. Engaging.",
       "{owner} is making clanky noises. I will supervise.",
       "Eyes heavy. Paws heavy. Everything heavy.",
@@ -539,9 +604,17 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "PUDDLE. Must jump in puddle.",
+      "Wet dog smell is the best smell.",
+      "Water falling from the sky. Again. Suspicious.",
+      "PUDDLE. Must jump in puddle.",
+      "PUDDLE. Must jump in puddle.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "{owner} smells like toast. Share?",
+      "PUDDLE. Must jump in puddle."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "PUDDLE. Must jump in puddle.",
     "want_ticks": 0,
     "last_fed_tick": 63,
     "recent_ideas": [
@@ -552,11 +625,6 @@
     "idea": "nap on the warm brick pile."
   },
   "recent_thoughts": [
-    "Stars are out. Tiny town, big sky.",
-    "Slow and steady fills the jar.",
-    "Sometimes I just stand here and listen to the town.",
-    "Miss the cafe gossip.",
-    "Somewhere there's a beach in Krabi with my name on it.",
     "Early bird gets the bricks.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "{pup} keeps nudging his bowl. Message received.",
@@ -576,9 +644,14 @@
     "Can't wait to see the {site} finished.",
     "Could eat a whole braai by myself right now.",
     "Afternoon slump. Could do with a coffee.",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me."
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+    "Every coin counts. Every single one.",
+    "Need a proper chat with someone who talks back.",
+    "Need a proper job. Something with bolts.",
+    "Eyelids weigh a ton.",
+    "{pup} first. Always {pup} first."
   ],
-  "real_updated": "2026-11-26T14:45:11.662156+00:00",
+  "real_updated": "2026-11-26T15:00:13.679632+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
@@ -592,7 +665,7 @@
       "sunny",
       "rain"
     ],
-    "temp": 17,
+    "temp": 16,
     "snow": 0,
     "wet": 1
   }
