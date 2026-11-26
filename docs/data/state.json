@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "park",
+  "place": "cafe",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-  "feeling": "tired but fine",
+  "thought": "Evenings are for slowing down. Mostly.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.71,
-    "hunger": 0.715,
-    "social": 0.594,
-    "tinker": 0.34,
-    "curiosity": 0.3
+    "rest": 0.57,
+    "hunger": 0.26,
+    "social": 0.299,
+    "tinker": 0.535,
+    "curiosity": 0.475
   },
-  "mood": 0.48,
-  "energy": 0.29,
-  "coins": 48,
+  "mood": 0.38,
+  "energy": 0.43,
+  "coins": 46,
   "coins_goal": 500,
   "bricks": 9,
   "stock": {
@@ -62,7 +62,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 17,
+  "hour": 19,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -617,6 +617,90 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Me and Diesel against the world.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "thought",
+      "x": "Diesel follows me everywhere. Proper little shadow.",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Proper rain. Good day for the garage.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Brain's in first gear today.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "If it's got moving parts, I can fix it. Mostly.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Evenings are for slowing down. Mostly.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
     }
   ],
   "day_start": {
@@ -625,13 +709,13 @@
     "got": 18,
     "used": 20
   },
-  "tick": 287,
+  "tick": 294,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T22:58:21.098366+00:00",
+  "updated": "2026-11-29T00:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 123,
-      "queue": 75,
+      "model": 129,
+      "queue": 76,
       "autopilot": 11,
       "sleeping": 78,
       "tokens_in": 0,
@@ -640,8 +724,8 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 28,
-      "queue": 18,
+      "model": 34,
+      "queue": 19,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -656,9 +740,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.232,
-      "tired": 0.59,
-      "bored": 0.12
+      "hunger": 0.442,
+      "tired": 0.73,
+      "bored": 0.33
     },
     "bond": 0.96,
     "food": 2,
@@ -672,13 +756,6 @@
     "last_played_tick": 283,
     "wants": "cuddle",
     "recent_thoughts": [
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
       "My bowl is empty. This is an emergency.",
@@ -691,10 +768,17 @@
       "Wet dog smell is the best smell.",
       "Tail check: still there. Good.",
       "PUDDLE. Must jump in puddle.",
-      "My tail won't stop. I'm not stopping it."
+      "My tail won't stop. I'm not stopping it.",
+      "{owner} is the best human in the whole town.",
+      "Following {owner}. Best job in the world.",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Everything smells amazing today.",
+      "PUDDLE. Must jump in puddle.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "PUDDLE. Must jump in puddle."
     ],
-    "thought": "My tail won't stop. I'm not stopping it.",
-    "want_ticks": 3,
+    "thought": "PUDDLE. Must jump in puddle.",
+    "want_ticks": 0,
     "last_fed_tick": 282,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -707,12 +791,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Thunder like a V-twin with no silencer.",
-    "Sun's up, {pup}'s up, so I'm up.",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "Thinking about noodles. Again.",
-    "Practising my Thai: sawadee khrap. Nailed it. Probably.",
-    "Reading about {topic} makes me want to try it.",
     "Autumn. Days getting shorter.",
     "Lightning over the sea. Beautiful and terrifying.",
     "Power's flickering. Good thing I've got candles somewhere.",
@@ -731,9 +809,15 @@
     "Halfway through the day and nothing's on fire. Lekker.",
     "Need a proper job. Something with bolts.",
     "Too much sitting. Where's my toolbox?",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me."
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+    "Me and {pup} against the world.",
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Proper rain. Good day for the garage.",
+    "Brain's in first gear today.",
+    "If it's got moving parts, I can fix it. Mostly.",
+    "Evenings are for slowing down. Mostly."
   ],
-  "real_updated": "2026-11-26T21:30:14.774163+00:00",
+  "real_updated": "2026-11-26T21:45:11.113795+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",
@@ -747,7 +831,7 @@
       "storm",
       "rain"
     ],
-    "temp": 21,
+    "temp": 20,
     "snow": 0,
     "wet": 1
   }
