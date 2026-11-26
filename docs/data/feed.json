@@ -1,5 +1,23 @@
 [
   {
+    "at": "2026-11-28T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Playing fetch with Diesel on the beach",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Long day. Bed.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "did",
@@ -1329,24 +1347,6 @@
     "text": "noted (Tourism in Thailand (Introduction)): Tourism is an economic contributor to Thailand.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 1/9)",
-    "why": "One more chapter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
     "ok": true
   }
 ]
