@@ -1,5 +1,68 @@
 [
   {
+    "at": "2026-11-27T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Overview)): Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 2/9)",
+    "why": "Learning something today.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "thought",
+    "text": "Diesel brought me his lead. Subtle.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Been talking to bolts all day. Time for real people.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "☁️ A grey lid of cloud rolls in.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-27T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1282,69 +1345,6 @@
     "time": "9:13 PM",
     "kind": "thought",
     "text": "Shame, the cafe guy looked tired today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "feeding Diesel",
-    "why": "Food for my boy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Practising my Thai: sawadee khrap. Nailed it. Probably.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "training Diesel (sit: Diesel wasn't having it)",
-    "why": "Treat in the pocket, let's go.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "training Diesel (sit: Diesel wasn't having it)",
-    "why": "Teaching Diesel new tricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Should I name the street? Derek Street. Ja, why not.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "thought",
-    "text": "Why is it always the 10mm that goes missing?",
     "why": null,
     "by": "model",
     "ok": true

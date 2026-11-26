@@ -1,20 +1,20 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Could sleep standing up like a horse.",
-  "feeling": "good, ja",
+  "asleep": false,
+  "doing": "reading a book",
+  "thought": "Diesel brought me his lead. Subtle.",
+  "feeling": "meh, fine",
   "needs": {
-    "rest": 0,
-    "hunger": 0.86,
-    "social": 0.609,
-    "tinker": 0.665,
-    "curiosity": 0.655
+    "rest": 0.02,
+    "hunger": 0.29,
+    "social": 0.685,
+    "tinker": 0.715,
+    "curiosity": 0.435
   },
-  "mood": 0.02,
-  "energy": 1,
-  "coins": 30,
+  "mood": 0.1,
+  "energy": 0.98,
+  "coins": 28,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {},
@@ -24,7 +24,7 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 1
+    "tourism_thailand": 2
   },
   "finished": [],
   "notebook": [
@@ -32,10 +32,15 @@
       "date": "2026-11-26",
       "source": "Tourism in Thailand (Introduction)",
       "note": "Tourism is an economic contributor to Thailand."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "Tourism in Thailand (Overview)",
+      "note": "Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international"
     }
   ],
   "looked_up": [],
-  "hour": 4,
+  "hour": 6,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -56,32 +61,69 @@
   },
   "designed_on": "2026-11-26",
   "plan_today": "Collect bricks and start something new.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "☁️ A grey lid of cloud rolls in.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Been talking to bolts all day. Time for real people.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Diesel brought me his lead. Subtle.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 2/9)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Overview)): Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international",
+      "why": null
+    }
+  ],
   "day_start": {
     "coins": 30,
     "bricks": 6,
     "got": 0,
     "used": 0
   },
-  "tick": 138,
+  "tick": 146,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T09:43:21.098366+00:00",
+  "updated": "2026-11-27T11:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 52,
+      "model": 54,
       "queue": 33,
-      "autopilot": 6,
-      "sleeping": 47,
+      "autopilot": 7,
+      "sleeping": 52,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-11-27",
-      "model": 0,
+      "model": 2,
       "queue": 0,
-      "autopilot": 0,
-      "sleeping": 19,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -92,11 +134,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.614,
-      "tired": 0,
-      "bored": 0.48
+      "hunger": 0.698,
+      "tired": 0.04,
+      "bored": 0.54
     },
     "bond": 0.38,
     "food": 1,
@@ -104,18 +146,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "asleep at the foot of the bed",
+    "doing": "rolling in the grass",
     "last_played_tick": 110,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
@@ -127,9 +161,17 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "My bowl is empty. This is an emergency.",
+      "Sky went grey. Still a good day. Every day is a good day."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Sky went grey. Still a good day. Every day is a good day.",
     "want_ticks": 0,
     "last_fed_tick": 95,
     "recent_ideas": [
@@ -141,8 +183,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Even my spanner looks tired.",
-    "One more yawn and I'm out.",
     "Can't wait to see the {site} finished.",
     "Could eat a whole braai by myself right now.",
     "Afternoon slump. Could do with a coffee.",
@@ -165,24 +205,25 @@
     "Body says rest. Stubborn brain says one more job.",
     "When the {site} is done, I'm celebrating with noodles.",
     "Night shift is for owls, not mechanics.",
-    "Could sleep standing up like a horse."
+    "Could sleep standing up like a horse.",
+    "Been talking to bolts all day. Time for real people.",
+    "{pup} brought me his lead. Subtle."
   ],
-  "real_updated": "2026-11-26T16:30:12.576747+00:00",
+  "real_updated": "2026-11-26T16:45:18.048841+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-26@13",
-    "kind": "rain",
+    "key": "2026-11-27@6",
+    "kind": "cloudy",
     "season": "autumn",
-    "base": 13.7,
-    "emoji": "🌧️",
-    "name": "rainy",
+    "base": 11.1,
+    "emoji": "☁️",
+    "name": "cloudy",
     "season_emoji": "🍂",
     "seen": [
-      "sunny",
-      "rain"
+      "cloudy"
     ],
-    "temp": 11,
+    "temp": 9,
     "snow": 0,
-    "wet": 1
+    "wet": 0.85
   }
 }
