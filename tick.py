@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Jarvis: a tiny autonomous brick man who builds his own little town.
+Derek (repo: jarvis-bricks): a tiny autonomous brick man who builds his own little town.
 
-ONE run of this file = ONE "tick" = 15 minutes of Jarvis's life.
+ONE run of this file = ONE "tick" = 15 minutes of his life.
 GitHub Actions runs it every 15 minutes, then saves the files it wrote.
 
 The big idea (same as Pino):
@@ -65,6 +65,14 @@ SOURCES = ["model", "queue", "autopilot", "sleeping"]
 DATA_FILES = ("state.json", "feed.json", "town.json", "diary.json")
 NOTEBOOK_KEEP = 60                  # notebook notes kept
 _LIB = {}
+_ME = {}
+
+
+def me():
+    """His name, from his character sheet (jarvis/sheet.json). Rename him there."""
+    if not _ME:
+        _ME["name"] = (load(CONFIG / "sheet.json", {}) or {}).get("name", "Derek")
+    return _ME["name"]
 
 
 def library():
@@ -132,10 +140,10 @@ def clean_emoji(e):
 
 
 def fresh_state(now):
-    """Jarvis on his very first tick."""
+    """Him on his very first tick."""
     today = now.astimezone(TZ).date().isoformat()
     return {
-        "name": "Jarvis",
+        "name": me(),
         "place": "home",
         "asleep": False,
         "doing": "waking up for the first time",
@@ -183,7 +191,7 @@ def fresh_town(world, now):
         "site": None,
         "custom_blueprints": {},
         "custom_moves": {},
-        "history": [{"date": today, "text": "Jarvis moved into a tiny town: a house, a garage, a cafe and a pile of bricks."}],
+        "history": [{"date": today, "text": f"{me()} moved into a tiny town: a house, a garage, a cafe and a pile of bricks."}],
     }
 
 
@@ -216,14 +224,14 @@ def update_pup(state, world, now, log):
     if pup["napping"]:
         pup["doing"] = "asleep at the foot of the bed" if state["asleep"] else "napping"
     elif pup["needs"]["hunger"] >= 0.7:
-        pup["doing"] = "hungry, staring at Jarvis"
+        pup["doing"] = f"hungry, staring at {me()}"
     elif pup["needs"]["bored"] >= 0.7:
         pup["doing"] = "bored, chewing whatever he can find"
     else:
         pup["doing"] = random.choice(["digging a hole in the sand", "splashing in the shallows", "chasing a crab",
                                       "barking at the waves", "rolling in the sand"] if state["place"] == "beach" else
-                                     ["trotting along behind Jarvis", "sniffing everything", "wagging his tail",
-                                      "rolling in the grass", "watching Jarvis work"])
+                                     [f"trotting along behind {me()}", "sniffing everything", "wagging his tail",
+                                      "rolling in the grass", f"watching {me()} work"])
     if not pup["napping"] and not state["asleep"]:
         if pup["needs"]["hunger"] >= P["neglect_from"] and random.random() < 0.25:
             log("noticed", f"{name[:1].upper() + name[1:]} is whining at his empty food bowl.")
@@ -268,7 +276,7 @@ def pup_mind(state, log):
     P = free_brain().get("pup", {})
     T, n, hr = P.get("thoughts", {}), pup["needs"], state.get("hour", 12)
     name = pup.get("name") or "the puppy"
-    fill = lambda t: t.replace("{name}", name).replace("{jarvis}", "Jarvis")
+    fill = lambda t: t.replace("{name}", name).replace("{owner}", me())
     # what he wants: his needs first, otherwise a whim that sticks around for a couple of hours
     need_want = "food" if n["hunger"] >= 0.6 else "nap" if n["tired"] >= 0.8 else "play" if n["bored"] >= 0.6 else None
     if pup["napping"]:
@@ -550,7 +558,7 @@ def beach_move(state, world, d, today, log):
         if b["sun_today"] > rules["sunburn_after"] and "beach_kit" not in state["owned"]:
             b["burnt_until"] = state["tick"] + rules["sunburn_ticks"]
             state["needs"]["rest"] = round(clamp(state["needs"]["rest"] + 0.10, 0, 1), 3)
-            log("noticed", "Ouch. Jarvis stayed in the sun too long and got sunburnt.")
+            log("noticed", f"Ouch. {me()} stayed in the sun too long and got sunburnt.")
             return True, "ouch, sunburnt! (should've had sunscreen)", -0.15
         return True, f"tan {b['tan']:.0%}", 0.0
     if d.get("surf"):
@@ -617,7 +625,7 @@ def sell_stock(state, world, pricing):
 # ---------------------------------------------------------------- the world's rules (no AI)
 
 def moves_here(W, place):
-    """Move ids Jarvis can do right where he is, plus walking somewhere else."""
+    """Move ids he can do right where he is, plus walking somewhere else."""
     here = [m for m, d in W["moves"].items() if "any" in d["at"] or place in d["at"]]
     walks = [f"walk_to_{p}" for p in W["places"] if p != place]
     return here, walks
@@ -844,7 +852,7 @@ HIS TOWN
   "design":{{"name":"max 3 words","what":"max 12 words","activity":"what he does there, max 6 words","helps":"rest|hunger|social|tinker|curiosity","emoji":"one emoji","color":"#rrggbb"}}
 
 HIS PUPPY
-- The puppy is IN HIS CARE. He depends on Jarvis completely: food, walks, play, training and company. Code tracks his needs; looking after him is Jarvis's job.
+- The puppy is IN HIS CARE. He depends on {sheet['name']} completely: food, walks, play, training and company. Code tracks his needs; looking after him is {sheet['name']}'s job.
 - A good owner checks on him every few hours, feeds him before bed, and never lets him go hungry or bored for long.
 - feed_the_puppy (at home, uses dog food; buy_dog_food at home = 3 coins for 6 meals), play_with_the_puppy, walk_the_puppy, cuddle_the_puppy.
 - train_the_puppy: add "trick":"<trick id>" to that move. Works best when the puppy is fed, rested and bonded. Some tricks help (fetch brings bricks).
@@ -1038,7 +1046,7 @@ def fb_fill(text, state, town, place=None):
             "note": note or "not much yet",
             "topic": re.sub(r" \(.*\)$", "", state["notebook"][-1]["source"]).replace("his laptop: ", "") if state.get("notebook") else "engines",
             "waves": state.get("beach", {}).get("waves", "small"),
-            "bricks": state["bricks"], "mood": mock_feeling(state)}
+            "bricks": state["bricks"], "mood": mock_feeling(state), "me": me()}
     for k, v in vals.items():
         text = text.replace("{" + k + "}", str(v))
     return text
@@ -1340,7 +1348,7 @@ def template_diary(f):
     else:
         bits.append(pick("pup_good", "{pup} was a legend today.") if f["pup_bond"] >= 0.5 else pick("pup_meh", "Must give {pup} more time."))
     if f["pup_ideas"]:
-        idea = f["pup_ideas"][-1].replace("Jarvis's", "my").replace("Jarvis", "me")
+        idea = f["pup_ideas"][-1].replace(me() + "'s", "my").replace(me(), "me")
         bits.append(f"Pretty sure {f['pup_name']} was planning to {idea[:1].lower() + idea[1:]} Cheeky.")
     if f["sold_coins"]:
         bits.append(f"Stall made {f['sold_coins']} coins today.")
@@ -1353,7 +1361,7 @@ def template_diary(f):
         bits.append((f"Collected {got} brick{'s' * (got != 1)}" if got else "No new bricks")
                     + (f", used {used} on building." if used else "."))
     if f["noticed"]:
-        bits.append("Also: " + f["noticed"][0].replace(" his ", " my ").replace("Jarvis ", "I "))
+        bits.append("Also: " + f["noticed"][0].replace(" his ", " my ").replace(me() + " ", "I "))
     bits.append(pick("thailand", "Jar's at {coins}."))
     bits.append(pick("closers", "Bed."))
     title = cap(f["built"][-1].split(":")[0].rstrip("!")) if f["built"] else (cap(f["top"][0]) if f["top"] else "A quiet one")
@@ -1433,9 +1441,16 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
         town["max_lots"] = world["town"]["start_lots"]
         town["history"].append({"date": today, "text": f"The town got more land: {town['max_lots']} lots to build on."})
         log("noticed", f"Good news: the town got more land. {town['max_lots']} lots to build on now.")
+    if state.get("name") != sheet["name"]:      # he got a new name (sheet.json)
+        old, state["name"] = state.get("name"), sheet["name"]
+        if old:
+            for h in town["history"]:
+                h["text"] = h["text"].replace(old, sheet["name"])
+            town["history"].append({"date": today, "text": f"{old} became {sheet['name']}. New name, same mechanic."})
+            log("noticed", f"From today he goes by {sheet['name']}. New name, same mechanic.")
     if not state.get("pup"):                   # his puppy turns up
         state["pup"] = new_pup(world, now, state["tick"])
-        log("noticed", "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.")
+        log("noticed", f"A scruffy little brick puppy followed {me()} home and won't leave. He needs a name.")
     W = merged_world(world, town, state, today)
     if state["place"] not in W["places"]:      # e.g. a site that just finished
         state["place"] = "home"
@@ -1553,7 +1568,7 @@ def finish(state, feed, town, diary, data_dir, now, summary):
 # ---------------------------------------------------------------- run
 
 def sim_start(keep):
-    """Where a fake run starts: carry on from the last one (--keep) or a brand-new Jarvis right now."""
+    """Where a fake run starts: carry on from the last one (--keep) or a brand-new him right now."""
     if keep:
         s = load(SIM / "state.json")
         if s:
@@ -1604,7 +1619,7 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # emoji-safe on Windows
     except Exception:
         pass
-    ap = argparse.ArgumentParser(description="Run Jarvis.")
+    ap = argparse.ArgumentParser(description=f"Run {me()}.")
     ap.add_argument("--mock", action="store_true", help="one tick with a fake AI (free), into the LIVE data")
     ap.add_argument("--simulate", type=float, metavar="HOURS", help="fake N hours of ticks into sim_data/ (free)")
     ap.add_argument("--watch", action="store_true", help="watch him live at http://localhost:8000 (free)")
@@ -1628,11 +1643,11 @@ def main():
             port = serve(args.port, SIM)
             url = f"http://localhost:{args.port}/world.html"
             if port is None:
-                print(f"Jarvis is already running. Opening {url}")
+                print(f"{me()} is already running. Opening {url}")
                 if not args.no_browser:
                     webbrowser.open(url)
                 return
-            print(f"Jarvis is live:  {url}   (status page: http://localhost:{port}/)")
+            print(f"{me()} is live:  {url}   (status page: http://localhost:{port}/)")
             print(f"1 tick every {args.speed:g} s. Keep this window open; close it to stop him.")
             if not args.no_browser:
                 webbrowser.open(url)

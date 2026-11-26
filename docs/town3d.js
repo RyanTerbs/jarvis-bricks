@@ -1,10 +1,10 @@
-// town3d.js: Jarvis's open 3D brick world (three.js from a free CDN, nothing to install).
+// town3d.js: Derek's open 3D brick world (three.js from a free CDN, nothing to install).
 // The town grows outward in blocks of 4 lots, with roads between them, on an island with a beach,
-// the sea, and Thai limestone islands on the horizon. Jarvis walks the roads; his puppy follows him.
+// the sea, and Thai limestone islands on the horizon. Derek walks the roads; his puppy follows him.
 //
 //   mount(el, {full, minimap})   start it in an element (full = big world page with explore controls)
 //   update(state, town)          feed it the latest data (call every refresh)
-//   follow()                     camera back on Jarvis        explore(dx, dz) nudge the explore camera
+//   follow()                     camera back on Derek        explore(dx, dz) nudge the explore camera
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
@@ -273,8 +273,8 @@ function castle(g, x, z, n) {
   if (n >= 6) { add(g, cyl(0.02, 0.02, 0.7, 6), mat("#333"), x, SAND_Y + 1.2, z); add(g, box(0.3, 0.18, 0.02), mat("#d0453a"), x + 0.15, SAND_Y + 1.45, z); }
 }
 
-// ------------------------------------------------------------------ Jarvis + his puppy
-function makeJarvis() {
+// ------------------------------------------------------------------ Derek + his puppy
+function makeDerek() {
   const g = new THREE.Group();
   const skin = new THREE.MeshStandardMaterial({ color: "#e9c39b", roughness: 0.42 });   // his own: it tans
   const blue = mat("#2f6fb3"), dark = mat("#3b3f46"), boot = mat("#5a3b22"), cap = mat("#e8762b"), ink = mat("#222");
@@ -495,7 +495,7 @@ export function mount(el, options = {}) {
   Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: opts.full ? 2.5 : 5, maxDistance: opts.full ? 90 : 50,
                             maxPolarAngle: opts.full ? 1.53 : 1.42 });
   cam.position.set(7, 8, 14); controls.target.set(0, 1, 0);
-  jar = makeJarvis(); scene.add(jar);
+  jar = makeDerek(); scene.add(jar);
   pup = makePup(); pup.visible = false; scene.add(pup);
   zzz = label("Zzz", 0.9); zzz.visible = false; scene.add(zzz);
   pupZ = label("z", 0.5); pupZ.visible = false; scene.add(pupZ);
@@ -547,7 +547,7 @@ function walk(obj, dt, speedMin) {
 function loop() {
   const dt = Math.min(clock.getDelta(), 0.1), t = clock.elapsedTime;
   if (document.hidden || !R.domElement.offsetParent) return;
-  // Jarvis walks the roads
+  // Derek walks the roads
   const moving = walk(jar, dt, 4.5);
   const pose = moving ? "walk" : (jar.userData.pose || "stand"), gy = groundY(jar.position.x, jar.position.z);
   jar.rotation.x = pose === "lie" ? -Math.PI / 2 : 0;
@@ -587,7 +587,7 @@ function loop() {
   }
   if (bang) { bang.position.y = 2.9 + Math.sin(t * 2.5) * 0.15; bang.rotation.y += dt * 0.8; }
   for (const c of clouds) { c.position.x += dt * 0.6; if (bounds && c.position.x > bounds.cx + 90) c.position.x -= 180; }
-  // camera: follow Jarvis, or explore with WASD / arrows / the on-screen pad
+  // camera: follow Derek, or explore with WASD / arrows / the on-screen pad
   if (mode === "follow") {
     const goal = jar.visible ? jar.position : homeDoor;
     const f = Math.min(1, dt * 2.5), dx = (goal.x - controls.target.x) * f, dz = (goal.z - controls.target.z) * f;

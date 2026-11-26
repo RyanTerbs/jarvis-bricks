@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jarvis</title>
+<title>Derek</title>
 <script type="importmap">
 { "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
@@ -81,7 +81,7 @@
 <main>
   <div class="card">
     <div class="hero">
-      <svg id="avatar" viewBox="0 0 60 92" aria-label="Jarvis">
+      <svg id="avatar" viewBox="0 0 60 92" aria-label="Derek">
         <!-- an original little brick-built mechanic -->
         <rect x="15" y="5" width="30" height="9" rx="3" fill="#e8762b"/>
         <rect x="38" y="11" width="13" height="3.5" rx="1.75" fill="#c95f1c"/>
@@ -103,7 +103,7 @@
         <text id="zzz" x="44" y="10" font-size="9" font-weight="700" fill="#6b6b70" style="display:none">Zzz</text>
       </svg>
       <div>
-        <h1>Jarvis</h1>
+        <h1>Derek</h1>
         <div class="doing" id="doing">…</div>
         <div><span class="chip" id="place">…</span><span class="chip" id="feeling">…</span></div>
         <div class="muted" id="updated"></div>
@@ -117,7 +117,7 @@
     <h2>His town <span><span id="towntime"></span> &nbsp;<span class="views"><button id="b3d">3D</button><button id="b2d">2D</button></span></span></h2>
     <a href="world.html" class="worldlink">🌍 Open his world (full screen, roam around) →</a>
     <div class="town3d" id="town3d" style="display:none"></div>
-    <div class="hint" id="hint3d" style="display:none">Drag to spin · pinch or scroll to zoom · the camera follows Jarvis</div>
+    <div class="hint" id="hint3d" style="display:none">Drag to spin · pinch or scroll to zoom · the camera follows Derek</div>
     <div class="town-wrap" id="townwrap"><svg id="town" height="214" width="600"></svg></div>
     <div class="town-info" id="towninfo"></div>
     <ul class="hist" id="history"></ul>
@@ -164,7 +164,7 @@
     <div class="muted" id="cost" style="margin-top:10px"></div>
   </div>
 
-  <footer id="foot">Jarvis ticks every 15 minutes. This page refreshes every minute.</footer>
+  <footer id="foot">Derek ticks every 15 minutes. This page refreshes every minute.</footer>
 </main>
 
 <script>
@@ -394,7 +394,7 @@ function renderTown(s, town) {
   for (let n = 0; n < town.max_lots; n++) if (!lots.some((l) => l.lot === n) && !(site && site.lot === n))
     g += `<text x="${lotX(n) + LOT / 2}" y="${G + 30}" font-size="9" text-anchor="middle" fill="#f3c9a8" opacity=".7">empty</text>`;
 
-  // where's Jarvis?
+  // where's Derek?
   const spot = s.place === "building_site" && site ? site.lot : (lots.find((l) => l.place === s.place) || lots.find((l) => l.place === "home") || { lot: 1 }).lot;
   const jx = s.place === "beach" ? W - BEACH + 70 : lotX(spot) + LOT / 2 + 12;
   if (s.asleep) g += label(jx - 6, G - 64, "Zzz", 12);
@@ -462,7 +462,7 @@ function renderPup(s) {
   const days = Math.floor((new Date(s.updated) - new Date(p.born)) / 86400000);
   $("pupage").textContent = `${days} day${days === 1 ? "" : "s"} old`;
   const good = (v) => (v > 0.6 ? "var(--good)" : v > 0.3 ? "var(--mid)" : "var(--bad)");
-  let h = `<div class="doing" style="font-size:16px">🐶 ${esc(p.name || "No name yet (Jarvis will pick one)")}</div>
+  let h = `<div class="doing" style="font-size:16px">🐶 ${esc(p.name || "No name yet (Derek will pick one)")}</div>
     <div class="muted" style="margin-bottom:6px">${esc(p.napping ? "napping" : p.doing)} · ${p.food} meal${p.food === 1 ? "" : "s"} of dog food left</div>
     ${p.thought ? `<div class="bubble" style="margin:4px 0 8px">“${esc(p.thought)}”</div>` : ""}
     <div>${p.wants ? `<span class="chip">wants ${esc(PUP_WANTS[p.wants] || p.wants)}</span>` : ""}${p.idea ? `<span class="chip">💡 idea: ${esc(p.idea)}</span>` : ""}</div>`;
@@ -559,7 +559,7 @@ async function render() {
       (s.brain === "free" ? " · free brain (fake AI, costs $0)" : "");
   } catch (e) {
     $("err").style.display = "block";
-    $("err").textContent = "Can't reach Jarvis right now: " + e.message;
+    $("err").textContent = "Can't reach Derek right now: " + e.message;
   }
 }
 if (new URLSearchParams(location.search).has("wide")) document.querySelector("main").style.maxWidth = "none";  // ?wide = whole street

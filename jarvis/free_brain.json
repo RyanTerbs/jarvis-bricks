@@ -187,7 +187,7 @@
       "Plastic rain, plastic trees, real problems.",
       "Ja, no, definitely, maybe.",
       "Every town needs a guy who fixes stuff. That's me.",
-      "Should I name the street? Jarvis Street. Ja, why not.",
+      "Should I name the street? {me} Street. Ja, why not.",
       "Sometimes I just stand here and listen to the town.",
       "{bricks} bricks in the pile. Could build something lekker with that.",
       "A clean toolbox is a happy toolbox.",
@@ -650,12 +650,12 @@
     ]
   },
   "pup": {
-    "_note": "The puppy's own mind (dogs think simple thoughts): used with BOTH brains. {name} = his name, {jarvis} = Jarvis.",
+    "_note": "The puppy's own mind (dogs think simple thoughts): used with BOTH brains. {name} = his name, {owner} = his human.",
     "thoughts": {
       "hungry": [
         "Food? Food. FOOD.",
         "My bowl is empty. This is an emergency.",
-        "{jarvis} smells like toast. Share?",
+        "{owner} smells like toast. Share?",
         "If I stare at the bowl hard enough, food appears. Science.",
         "Tummy rumble. Big one.",
         "Is it dinner? It feels like dinner."
@@ -666,7 +666,7 @@
         "I could chew a boot. Just a little bit.",
         "So bored I'm counting my own paws. Four. Still four.",
         "Walk? Walk? WALK?",
-        "{jarvis} is busy again. Sigh. Big sigh."
+        "{owner} is busy again. Sigh. Big sigh."
       ],
       "tired": [
         "Eyes heavy. Paws heavy. Everything heavy.",
@@ -677,21 +677,21 @@
       "dream": [
         "Dreaming: a sausage as big as the garage.",
         "Dreaming: chasing the ! block. It's slow in dreams.",
-        "Dreaming: {jarvis} throws the ball forever.",
+        "Dreaming: {owner} throws the ball forever.",
         "Dreaming: the whole beach is made of treats.",
         "Dreaming: running, running, running. Legs twitching.",
         "Zzz. Squirrel. Zzz."
       ],
       "happy": [
-        "{jarvis} is the best human in the whole town.",
+        "{owner} is the best human in the whole town.",
         "My tail won't stop. I'm not stopping it.",
         "Good boy? Me? Yes. Me.",
-        "Following {jarvis}. Best job in the world.",
+        "Following {owner}. Best job in the world.",
         "Everything smells amazing today.",
         "Life is good. Life is SO good."
       ],
       "working": [
-        "{jarvis} is making clanky noises. I will supervise.",
+        "{owner} is making clanky noises. I will supervise.",
         "That engine is loud. I will bark at it. Later.",
         "Helping. I am helping. By sitting here.",
         "Grease smell. Best smell after sausages."
@@ -706,7 +706,7 @@
       ],
       "learning": [
         "Sit means treat. I have cracked the code.",
-        "{jarvis} says a word, I do a thing, treat appears. Magic.",
+        "{owner} says a word, I do a thing, treat appears. Magic.",
         "Learning is hard. Treats make it easier.",
         "I know tricks now. I am a very clever boy."
       ],
@@ -725,19 +725,19 @@
       ]
     },
     "ideas": [
-      "bury {jarvis}'s 10mm socket. He loves looking for it.",
+      "bury {owner}'s 10mm socket. He loves looking for it.",
       "sit by the cafe door looking sad. Free pie.",
       "dig all the way to the other side of the island.",
       "sleep IN the toolbox. Cosy.",
       "learn the next trick and get ALL the treats.",
       "chase the waves until they're scared of me.",
       "guard the savings jar. Nobody touches the jar.",
-      "bring {jarvis} a stick. Then a bigger stick.",
+      "bring {owner} a stick. Then a bigger stick.",
       "be the greeter at the market stall. Customers love me.",
       "nap on the warm brick pile.",
       "teach the seagulls some manners.",
       "find out what's inside the ! block.",
-      "follow {jarvis} to Thailand. Obviously.",
+      "follow {owner} to Thailand. Obviously.",
       "make friends with the crab. Or eat it. Undecided."
     ],
     "wants": {

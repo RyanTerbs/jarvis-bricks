@@ -128,7 +128,7 @@
   },
 
   "puppy": {
-    "_note": "His puppy. Jarvis names him himself (the AI adds puppy_name). Needs are 0 (fine) .. 1 (urgent), like Jarvis's. Code moves them every tick; Jarvis has to look after him. Bond 0..1 grows with care, drops with neglect.",
+    "_note": "His puppy. Derek names him himself (the AI adds puppy_name). Needs are 0 (fine) .. 1 (urgent), like Derek's. Code moves them every tick; Derek has to look after him. Bond 0..1 grows with care, drops with neglect.",
     "needs": {
       "hunger": { "awake": 0.030, "asleep": 0.004 },
       "tired":  { "awake": 0.020, "asleep": -0.080 },
@@ -142,7 +142,7 @@
       "sit":       { "name": "sit",                  "sessions": 3 },
       "paw":       { "name": "give paw",             "sessions": 4 },
       "stay":      { "name": "stay",                 "sessions": 6 },
-      "fetch":     { "name": "fetch",                "sessions": 8,  "perk": "fetches 1-2 extra bricks when Jarvis collects" },
+      "fetch":     { "name": "fetch",                "sessions": 8,  "perk": "fetches 1-2 extra bricks when Derek collects" },
       "roll_over": { "name": "roll over",            "sessions": 8 },
       "ride":      { "name": "ride in the tank bag", "sessions": 10, "perk": "comes along on rides (more fun for both)" }
     },
@@ -199,7 +199,7 @@
       "It starts raining plastic raindrops.",
       "A loud exhaust echoes down the street.",
       "The cafe has a new coffee on the board.",
-      "A kid drops a bolt and asks Jarvis what it's for.",
+      "A kid drops a bolt and asks Derek what it's for.",
       "A bike roars past heading out of town.",
       { "text": "Someone left a box of spare bricks at the pit. +8 bricks.", "bricks": 8 },
       { "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.", "bricks": -3 },

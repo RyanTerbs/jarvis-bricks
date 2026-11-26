@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Jarvis's world</title>
+<title>Derek's world</title>
 <script type="importmap">
 { "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
@@ -71,7 +71,7 @@
 <div id="hint">Drag to look · scroll / pinch to zoom · WASD or arrows to roam · tap the map to jump</div>
 <div id="controls">
   <button id="nowbtn">📋 Right now</button>
-  <button id="follow" class="on">🎯 Follow Jarvis</button>
+  <button id="follow" class="on">🎯 Follow Derek</button>
   <div id="pad">
     <span></span><button data-d="0,-1">▲</button><span></span>
     <button data-d="-1,0">◀</button><button data-d="0,1">▼</button><button data-d="1,0">▶</button>
@@ -103,7 +103,7 @@ const mood = (m) => (m > 0.4 ? "😄" : m > 0.1 ? "🙂" : m > -0.2 ? "😐" : "
 
 function render(s, feed, diary, town) {
   const n = s.needs, p = s.pup;
-  let h = `<div class="who">Jarvis ${mood(s.mood)}</div>` +
+  let h = `<div class="who">Derek ${mood(s.mood)}</div>` +
     bar("Fullness", 1 - n.hunger, "#e8762b") + bar("Energy", 1 - n.rest, "#f2c230") + bar("Company", 1 - n.social, "#e05a8a") +
     bar("Busy hands", 1 - n.tinker, "#2f6fb3") + bar("Wonder", 1 - n.curiosity, "#8e5ad6");
   if (p) {
@@ -115,8 +115,8 @@ function render(s, feed, diary, town) {
   $("needs").innerHTML = h;
   $("clock").textContent = "🕐 " + new Date(s.updated).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" });
   const pupName = p ? (p.name || "the puppy") : "";
-  $("status").textContent = s.asleep ? `Jarvis is asleep${p ? ` · ${cap(pupName)} is curled up at the foot of the bed` : ""}`
-    : `Jarvis is ${s.doing}${p ? ` · ${cap(pupName)} is ${p.doing}` : ""}`;
+  $("status").textContent = s.asleep ? `Derek is asleep${p ? ` · ${cap(pupName)} is curled up at the foot of the bed` : ""}`
+    : `Derek is ${s.doing}${p ? ` · ${cap(pupName)} is ${p.doing}` : ""}`;
   const items = (feed || []).filter((e) => e.kind !== "thought").slice(0, 7).map((e) =>
     `<li>${ICON[e.kind] || "•"} ${esc(e.text)}${e.why ? ` <i style="color:#8a7458">“${esc(e.why)}”</i>` : ""}</li>`).join("");
   const d = (diary || [])[0];
@@ -133,7 +133,7 @@ function render(s, feed, diary, town) {
 
 async function refresh() {
   const [s, feed, town, diary] = await Promise.all([get("state.json"), get("feed.json"), get("town.json"), get("diary.json")]);
-  if (!s) { $("status").textContent = "Can't reach Jarvis right now"; return; }
+  if (!s) { $("status").textContent = "Can't reach Derek right now"; return; }
   render(s, feed, diary, town);
   window.__last = [s, town];
   if (window.World && town) window.World.update(s, town);

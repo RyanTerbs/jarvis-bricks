@@ -1,4 +1,4 @@
-# Jarvis
+# Derek
 
 A tiny autonomous brick-built man who lives in a little brick town he builds himself, decides what to do with an AI, writes a diary every night, and saves up for a motorbike trip across Thailand. Inspired by Pino (pinos.world).
 
@@ -28,14 +28,14 @@ If the AI fails or isn't set up, **autopilot** fixes his most pressing need. At 
 
 ## His puppy
 
-- A scruffy brick puppy follows him home on day one. **Jarvis names him himself** (the AI adds a name the first time it thinks).
-- The puppy has his own needs (hunger, tired, bored) and a bond with Jarvis. Code moves them; looking after him is Jarvis's job: feed (dog food from home, 3 coins for 6 meals), play, walk, cuddle.
+- A scruffy brick puppy follows him home on day one. **Derek names him himself** (the AI adds a name the first time it thinks).
+- The puppy has his own needs (hunger, tired, bored) and a bond with Derek. Code moves them; looking after him is Derek's job: feed (dog food from home, 3 coins for 6 meals), play, walk, cuddle.
 - **Training:** sit, give paw, stay, fetch, roll over, ride in the tank bag. Works best when he's fed, rested and bonded. Fetch brings extra bricks; ride means he comes along on bike rides.
-- Neglect costs bond (and Jarvis worries). Company: a bonded puppy makes Jarvis less lonely.
+- Neglect costs bond (and Derek worries). Company: a bonded puppy makes Derek less lonely.
 
 ## Books, laptop + notebook (offline, no internet)
 
-- `jarvis/library/` holds a fixed offline copy of some Wikipedia articles (CC BY-SA 4.0, source link kept on each), built once by `python tools/build_library.py`. **Jarvis never touches the live internet.**
+- `jarvis/library/` holds a fixed offline copy of some Wikipedia articles (CC BY-SA 4.0, source link kept on each), built once by `python tools/build_library.py`. **Derek never touches the live internet.**
 - **Books:** 3 on his shelf at home (Dog training, Carburetor, Thailand), 9 more at the library once he builds it. `read_a_book` reads the next chapter; finishing a book teaches him a perk (better puppy training, carbs sell for more, faster bricklaying, better haggling...).
 - **His old laptop** (at home): `use_the_computer` looks a topic up in the offline encyclopedia (56 entries: Thailand, engines, dogs, money, the sea...).
 - **Notebook:** after reading he writes one note in his own words (one small AI call). The last 8 notes go into his prompt, so what he learns sticks.
@@ -50,7 +50,7 @@ The town starts with 24 lots (6 blocks) and a new baseplate adds 16 more. Older 
 
 ## Open world (world.html)
 
-Full-screen 3D like Pino's town: an island that grows in blocks of 4 lots with roads between, beach, palms, the sea and Thai limestone islands on the horizon. Jarvis walks the roads, the puppy trots behind. Needs bars for both at the top, a "right now" panel, a tap-to-jump minimap, WASD / arrows / on-screen pad to roam, and a Follow button.
+Full-screen 3D like Pino's town: an island that grows in blocks of 4 lots with roads between, beach, palms, the sea and Thai limestone islands on the horizon. Derek walks the roads, the puppy trots behind. Needs bars for both at the top, a "right now" panel, a tap-to-jump minimap, WASD / arrows / on-screen pad to roam, and a Follow button.
 
 ## 3D
 
