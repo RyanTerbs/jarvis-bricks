@@ -21,6 +21,12 @@
     "build_done_bonus": 0.20
   },
 
+  "clock": {
+    "_note": "How fast his town runs online. speed 8 = 1 of his days in about 3 real hours (like Pino). Each GitHub run lives whatever is due since the last run, at most max_ticks_per_run (so a long GitHub delay can't make him live a whole day in one go). speed 1 = real time. With the paid AI brain, cost goes up with speed.",
+    "speed": 8,
+    "max_ticks_per_run": 24
+  },
+
   "bedtime": { "_note": "Local time (Florida). Between these hours autopilot sends him home to sleep, no AI calls. He writes his diary when he goes to bed.", "sleep_from_hour": 23, "wake_from_hour": 6, "wake_latest_hour": 9 },
 
   "town": {

@@ -164,7 +164,7 @@
     <div class="muted" id="cost" style="margin-top:10px"></div>
   </div>
 
-  <footer id="foot">Derek ticks every 15 minutes. This page refreshes every minute.</footer>
+  <footer id="foot">His town runs about 8x real time (one of his days ≈ 3 real hours, like Pino's). GitHub wakes him every 15 minutes; this page refreshes every minute.</footer>
 </main>
 
 <script>
@@ -521,7 +521,7 @@ async function render() {
     $("doing").textContent = s.asleep ? "asleep" : s.doing;
     $("place").textContent = "📍 " + String(s.place).replace(/_/g, " ");
     $("feeling").textContent = s.feeling;
-    $("updated").textContent = LOCAL ? "town time " + townClock(s.updated) : "updated " + ago(s.updated);
+    $("updated").textContent = "town time " + townClock(s.updated) + (LOCAL ? "" : " · updated " + ago(s.real_updated || s.updated));
     $("thought").textContent = s.asleep ? "Zzz…" : `“${s.thought}”`;
     $("eyes-open").style.display = s.asleep ? "none" : "";
     $("eyes-shut").style.display = s.asleep ? "" : "none";

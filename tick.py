@@ -1661,7 +1661,31 @@ def main():
         return
     # No API key = the FREE brain (the fake AI): he still lives, builds and writes, for $0.
     # Add the ANTHROPIC_API_KEY secret later and his real brain takes over by itself.
-    tick(datetime.now(timezone.utc), use_mock=args.mock or not os.environ.get("ANTHROPIC_API_KEY"))
+    run_due(DATA, datetime.now(timezone.utc), use_mock=args.mock or not os.environ.get("ANTHROPIC_API_KEY"))
+
+
+def run_due(data_dir, real_now, use_mock):
+    """One GitHub run: live every 15-minute step that's due since the last run, at the town's speed.
+    His clock ('updated') is his own TOWN time; 'real_updated' is the real time of the last run."""
+    clock = (load(CONFIG / "world.json") or {}).get("clock", {})
+    speed, cap = clock.get("speed", 1), clock.get("max_ticks_per_run", 24)
+    state = load(data_dir / "state.json")
+    if not state:                                   # his very first tick: his clock starts now
+        tick(real_now, data_dir=data_dir, use_mock=use_mock)
+        steps = 1
+    else:
+        last_real = datetime.fromisoformat(state.get("real_updated") or state["updated"])
+        due = int((real_now - last_real).total_seconds() / 60 * speed / TICK_MINUTES)
+        steps = max(1, min(due, cap))
+        t = datetime.fromisoformat(state["updated"])
+        for _ in range(steps):
+            t += timedelta(minutes=TICK_MINUTES)
+            tick(t, data_dir=data_dir, use_mock=use_mock)
+    state = load(data_dir / "state.json")
+    state["real_updated"] = real_now.isoformat()
+    state["speed"] = speed
+    save(data_dir / "state.json", state)
+    print(f"[run] lived {steps} step(s) = {steps * TICK_MINUTES} min of his life (speed x{speed})")
 
 
 if __name__ == "__main__":
