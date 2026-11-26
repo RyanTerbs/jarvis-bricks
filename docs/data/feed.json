@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-11-26T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "building (the rain slowed the work, Market stall still 0/3)",
+    "why": "One more course of bricks.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Quick trip to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "thought",
+    "text": "Afternoon slump. Could do with a coffee.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "Could eat a whole braai by myself right now.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "collecting shells (+3 shells (3 in the jar))",
+    "why": "Pretty ones today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "going for a swim",
+    "why": "Quick dip to cool off.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Can't wait to see the Market stall finished.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-26T18:43:21.098366+00:00",
     "time": "1:43 PM",
     "kind": "did",

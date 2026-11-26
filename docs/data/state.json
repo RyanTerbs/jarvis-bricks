@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "One more yawn and I'm out.",
-  "feeling": "on top of the world",
+  "doing": "walking home",
+  "thought": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+  "feeling": "hangry",
   "needs": {
-    "rest": 0.53,
-    "hunger": 0.45,
-    "social": 0.424,
-    "tinker": 0.495,
-    "curiosity": 0.175
+    "rest": 0.69,
+    "hunger": 0.765,
+    "social": 0.599,
+    "tinker": 0.54,
+    "curiosity": 0.15
   },
-  "mood": 0.47,
-  "energy": 0.47,
+  "mood": 0.29,
+  "energy": 0.31,
   "coins": 34,
   "coins_goal": 500,
   "bricks": 6,
@@ -27,20 +27,25 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 0,
-    "shells": 0,
+    "shells": 3,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "flat",
     "waves_date": "2026-11-26"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "cook_dinner",
+      "why": "Can't run on toast forever."
+    }
+  ],
   "lucky": {
     "date": "2026-11-26",
     "used": 2,
@@ -396,6 +401,72 @@
       "k": "did",
       "x": "having a rest",
       "why": "Even engines need to cool down."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Can't wait to see the Market stall finished.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Off to the beach."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "going for a swim",
+      "why": "Quick dip to cool off."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "collecting shells (+3 shells (3 in the jar))",
+      "why": "Pretty ones today."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Could eat a whole braai by myself right now.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Afternoon slump. Could do with a coffee.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Quick trip to the building site."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "building (the rain slowed the work, Market stall still 0/3)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
     }
   ],
   "day_start": {
@@ -404,13 +475,13 @@
     "got": 8,
     "used": 20
   },
-  "tick": 78,
+  "tick": 85,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T18:43:21.098366+00:00",
+  "updated": "2026-11-26T20:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 29,
-      "queue": 20,
+      "model": 33,
+      "queue": 23,
       "autopilot": 3,
       "sleeping": 26,
       "tokens_in": 0,
@@ -419,8 +490,8 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 18,
-      "queue": 12,
+      "model": 22,
+      "queue": 15,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -435,8 +506,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.398,
-      "tired": 0.8,
+      "hunger": 0.426,
+      "tired": 0.24,
       "bored": 0
     },
     "bond": 0.33,
@@ -449,13 +520,6 @@
     "last_played_tick": 76,
     "wants": null,
     "recent_thoughts": [
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "The ! block knows something. I will watch it.",
-      "Tail check: still there. Good.",
-      "{owner} smells like toast. Share?",
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "Sun on my belly. Perfect.",
-      "Walk? Walk? WALK?",
       "The waves are chasing me. I'm chasing the waves. Who's winning?",
       "Warm spot on the floor. Mine now.",
       "Warm spot on the floor. Mine now.",
@@ -468,9 +532,16 @@
       "{owner} is making clanky noises. I will supervise.",
       "Eyes heavy. Paws heavy. Everything heavy.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 63,
     "recent_ideas": [
@@ -481,10 +552,6 @@
     "idea": "nap on the warm brick pile."
   },
   "recent_thoughts": [
-    "Should I name the street? {me} Street. Ja, why not.",
-    "Practising my Thai: sawadee khrap. Nailed it. Probably.",
-    "Shame, the cafe guy looked tired today.",
-    "Picture it: a winding road, a good engine, no rush.",
     "Stars are out. Tiny town, big sky.",
     "Slow and steady fills the jar.",
     "Sometimes I just stand here and listen to the town.",
@@ -505,9 +572,13 @@
     "Blue sky, no excuses.",
     "{pup} keeps looking at me like it's walk time.",
     "Even my spanner looks tired.",
-    "One more yawn and I'm out."
+    "One more yawn and I'm out.",
+    "Can't wait to see the {site} finished.",
+    "Could eat a whole braai by myself right now.",
+    "Afternoon slump. Could do with a coffee.",
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me."
   ],
-  "real_updated": "2026-11-26T14:30:11.876896+00:00",
+  "real_updated": "2026-11-26T14:45:11.662156+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
