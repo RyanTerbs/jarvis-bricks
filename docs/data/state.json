@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Diesel first. Always Diesel first.",
-  "feeling": "sharp-sharp",
+  "doing": "walking home",
+  "thought": "Brain's in first gear today.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.375,
-    "social": 0.378,
-    "tinker": 0.57,
-    "curiosity": 0.35
+    "rest": 0.64,
+    "hunger": 0.65,
+    "social": 0.527,
+    "tinker": 0.615,
+    "curiosity": 0.525
   },
-  "mood": 0.33,
-  "energy": 0.38,
+  "mood": 0.3,
+  "energy": 0.36,
   "coins": 32,
   "coins_goal": 500,
   "bricks": 6,
@@ -27,7 +27,7 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 17,
+  "hour": 19,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -40,7 +40,12 @@
     "waves": "flat",
     "waves_date": "2026-11-26"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "cook_dinner",
+      "why": "Can't run on toast forever."
+    }
+  ],
   "lucky": {
     "date": "2026-11-26",
     "used": 2,
@@ -540,6 +545,78 @@
       "k": "did",
       "x": "having a rest",
       "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "468 coins to go. That's just a lot of carbs.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "If I don't fix something soon I'll start taking the fridge apart.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Some days you're the spanner, some days you're the bolt.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Building site next."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "building (the rain slowed the work, Market stall still 0/3)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Need a nap. A proper one.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Brain's in first gear today.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
     }
   ],
   "day_start": {
@@ -548,13 +625,13 @@
     "got": 8,
     "used": 20
   },
-  "tick": 93,
+  "tick": 100,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T22:28:21.098366+00:00",
+  "updated": "2026-11-27T00:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 38,
-      "queue": 26,
+      "model": 43,
+      "queue": 28,
       "autopilot": 3,
       "sleeping": 26,
       "tokens_in": 0,
@@ -563,8 +640,8 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 27,
-      "queue": 18,
+      "model": 32,
+      "queue": 20,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -579,27 +656,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.666,
-      "tired": 0.4,
-      "bored": 0.24
+      "hunger": 0.176,
+      "tired": 0.54,
+      "bored": 0.45
     },
-    "bond": 0.33,
-    "food": 2,
+    "bond": 0.36,
+    "food": 1,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "trotting along behind Derek",
+    "doing": "sniffing everything",
     "last_played_tick": 76,
-    "wants": "food",
+    "wants": "explore",
     "recent_thoughts": [
-      "Nap spot: located. Engaging.",
-      "{owner} is making clanky noises. I will supervise.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -612,11 +682,18 @@
       "PUDDLE. Must jump in puddle.",
       "Who left this brick here? I'll carry it somewhere else.",
       "{owner} smells like toast. Share?",
-      "PUDDLE. Must jump in puddle."
+      "PUDDLE. Must jump in puddle.",
+      "PUDDLE. Must jump in puddle.",
+      "If I stare at the bowl hard enough, food appears. Science.",
+      "Wet dog smell is the best smell.",
+      "Wet dog smell is the best smell.",
+      "That engine is loud. I will bark at it. Later.",
+      "Wet dog smell is the best smell.",
+      "Wet dog smell is the best smell."
     ],
-    "thought": "PUDDLE. Must jump in puddle.",
-    "want_ticks": 0,
-    "last_fed_tick": 63,
+    "thought": "Wet dog smell is the best smell.",
+    "want_ticks": 3,
+    "last_fed_tick": 95,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -625,11 +702,6 @@
     "idea": "nap on the warm brick pile."
   },
   "recent_thoughts": [
-    "Early bird gets the bricks.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "{pup} keeps nudging his bowl. Message received.",
-    "Ja, no, definitely, maybe.",
-    "Haven't had grease on my hands in hours. Feels wrong.",
     "Little guy depends on me. Feed him first, then the rest.",
     "If I don't eat soon I'm eating a brick.",
     "Should bring a book to the beach next time.",
@@ -649,9 +721,14 @@
     "Need a proper chat with someone who talks back.",
     "Need a proper job. Something with bolts.",
     "Eyelids weigh a ton.",
-    "{pup} first. Always {pup} first."
+    "{pup} first. Always {pup} first.",
+    "{left} coins to go. That's just a lot of carbs.",
+    "If I don't fix something soon I'll start taking the fridge apart.",
+    "Some days you're the spanner, some days you're the bolt.",
+    "Need a nap. A proper one.",
+    "Brain's in first gear today."
   ],
-  "real_updated": "2026-11-26T15:00:13.679632+00:00",
+  "real_updated": "2026-11-26T15:15:12.088757+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
@@ -665,7 +742,7 @@
       "sunny",
       "rain"
     ],
-    "temp": 16,
+    "temp": 15,
     "snow": 0,
     "wet": 1
   }
