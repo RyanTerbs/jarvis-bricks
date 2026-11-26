@@ -2,18 +2,18 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "feeding Diesel",
-  "thought": "Need a lie down before I drop a spanner on my foot.",
-  "feeling": "content",
+  "doing": "walking home",
+  "thought": "42 in the jar. 458 more and I'm on that bike in Thailand.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.61,
-    "hunger": 0.325,
-    "social": 0.42,
-    "tinker": 0.445,
-    "curiosity": 0.585
+    "rest": 0.72,
+    "hunger": 0.605,
+    "social": 0.036,
+    "tinker": 0.725,
+    "curiosity": 0.435
   },
-  "mood": 0.4,
-  "energy": 0.39,
+  "mood": 0.26,
+  "energy": 0.28,
   "coins": 42,
   "coins_goal": 500,
   "bricks": 11,
@@ -26,7 +26,7 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 3
+    "tourism_thailand": 4
   },
   "finished": [],
   "notebook": [
@@ -44,12 +44,17 @@
       "date": "2026-11-27",
       "source": "Tourism in Thailand (Statistics)",
       "note": "Foreign arrivals in Thailand: Past arrivals statistics: Reference: statistics for the period 1998–2016, 2017–2018."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "Tourism in Thailand (Sex tourism)",
+      "note": "Since the Vietnam War, Thailand has gained an international reputation among travellers from many countries as a sex tourism destination."
     }
   ],
   "looked_up": [],
-  "hour": 21,
+  "hour": 23,
   "beach": {
-    "tan": 0.0195,
+    "tan": 0.0155,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -65,7 +70,12 @@
     "waves": "small",
     "waves_date": "2026-11-27"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "go_to_sleep",
+      "why": "Lights out, Diesel."
+    }
+  ],
   "lucky": {
     "date": "2026-11-27",
     "used": 1,
@@ -74,54 +84,6 @@
   "designed_on": "2026-11-27",
   "plan_today": "Collect bricks and start something new.",
   "today_log": [
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "☁️ A grey lid of cloud rolls in.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Been talking to bolts all day. Time for real people.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "thought",
-      "x": "Diesel brought me his lead. Subtle.",
-      "why": null
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "reading a book (Tourism in Thailand, chapter 2/9)",
-      "why": "Learning something today."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "note",
-      "x": "noted (Tourism in Thailand (Overview)): Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
     {
       "t": "7:13 AM",
       "k": "did",
@@ -751,6 +713,96 @@
       "k": "did",
       "x": "feeding Diesel (Diesel's tail goes mad)",
       "why": "He depends on me."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Lamps are coming on. Town looks proper tonight.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Diesel is going for that puddle whether I like it or not."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Diesel is yawning, so I'm yawning.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Diesel thinks every puddle is a personal invitation.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 4/9)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Sex tourism)): Since the Vietnam War, Thailand has gained an international reputation among travellers from many countries as a sex tourism destination.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "thought",
+      "x": "A clean toolbox is a happy toolbox.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Quick trip to the market stall."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "running his market stall (fair prices, no buyers this time (quiet in this rain))",
+      "why": "Let's see what sells."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
+      "why": "Market day."
+    },
+    {
+      "t": "10:58 PM",
+      "k": "thought",
+      "x": "42 in the jar. 458 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "11:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Time to head home."
     }
   ],
   "day_start": {
@@ -759,14 +811,14 @@
     "got": 5,
     "used": 0
   },
-  "tick": 204,
+  "tick": 212,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T02:13:21.098366+00:00",
+  "updated": "2026-11-28T04:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 90,
-      "queue": 55,
-      "autopilot": 7,
+      "model": 95,
+      "queue": 57,
+      "autopilot": 8,
       "sleeping": 52,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -774,9 +826,9 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 38,
-      "queue": 22,
-      "autopilot": 1,
+      "model": 43,
+      "queue": 24,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -790,28 +842,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0,
-      "tired": 0.4,
-      "bored": 0.15
+      "hunger": 0.24,
+      "tired": 0.66,
+      "bored": 0.21
     },
-    "bond": 0.68,
+    "bond": 0.71,
     "food": 4,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "rolling in the grass",
-    "last_played_tick": 191,
+    "doing": "watching Derek work",
+    "last_played_tick": 205,
     "wants": null,
     "recent_thoughts": [
-      "Water falling from the sky. Again. Suspicious.",
-      "PUDDLE. Must jump in puddle.",
-      "Sniffed a lamp post. Interesting news.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Helping. I am helping. By sitting here.",
-      "Wet dog smell is the best smell.",
-      "PUDDLE. Must jump in puddle.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -823,9 +867,17 @@
       "Wet dog smell is the best smell.",
       "Everything smells amazing today.",
       "PUDDLE. Must jump in puddle.",
-      "My bowl is empty. This is an emergency."
+      "My bowl is empty. This is an emergency.",
+      "PUDDLE. Must jump in puddle.",
+      "The ! block knows something. I will watch it.",
+      "Water falling from the sky. Again. Suspicious.",
+      "It's dark. I will guard the house. From the sofa.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "I am a very good boy. Probably.",
+      "Tail check: still there. Good.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "YES! That's what I wanted!",
+    "thought": "Life is good. Life is SO good.",
     "want_ticks": 0,
     "last_fed_tick": 204,
     "recent_ideas": [
@@ -837,11 +889,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Cloudy. Fine. Engines don't care.",
-    "{bricks} bricks in the pile. Could build something lekker with that.",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "Shame, the cafe guy looked tired today.",
-    "Running on coffee and hope.",
     "Even my spanner looks tired.",
     "Need a proper job. Something with bolts.",
     "Plastic rain, plastic trees, real problems.",
@@ -861,9 +908,14 @@
     "Sky's going orange. Thailand sunsets must be something else.",
     "Evening breeze off the sea. Lekker.",
     "{pup} keeps nudging his bowl. Message received.",
-    "Need a lie down before I drop a spanner on my foot."
+    "Need a lie down before I drop a spanner on my foot.",
+    "Lamps are coming on. Town looks proper tonight.",
+    "{pup} is yawning, so I'm yawning.",
+    "{pup} thinks every puddle is a personal invitation.",
+    "A clean toolbox is a happy toolbox.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand."
   ],
-  "real_updated": "2026-11-26T18:45:10.104675+00:00",
+  "real_updated": "2026-11-26T19:00:13.353717+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",
@@ -877,7 +929,7 @@
       "cloudy",
       "rain"
     ],
-    "temp": 11,
+    "temp": 9,
     "snow": 0,
     "wet": 1
   }

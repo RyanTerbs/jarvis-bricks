@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-11-28T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "42 in the jar. 458 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
+    "why": "Market day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "running his market stall (fair prices, no buyers this time (quiet in this rain))",
+    "why": "Let's see what sells.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Quick trip to the market stall.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "thought",
+    "text": "A clean toolbox is a happy toolbox.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Sex tourism)): Since the Vietnam War, Thailand has gained an international reputation among travellers from many countries as a sex tourism destination.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 4/9)",
+    "why": "Learning something today.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Diesel thinks every puddle is a personal invitation.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Diesel is yawning, so I'm yawning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "splashing in puddles with Diesel",
+    "why": "Diesel is going for that puddle whether I like it or not.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "thought",
+    "text": "Lamps are coming on. Town looks proper tonight.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T02:13:21.098366+00:00",
     "time": "9:13 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "did",
     "text": "walking home",
     "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "Autumn. Days getting shorter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Wet again. The site turns to mud in this.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "building (Market stall 1/3)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "thought",
-    "text": "Haven't had grease on my hands in hours. Feels wrong.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: teach the seagulls some manners.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Brain's in first gear today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Need a nap. A proper one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "building (the rain slowed the work, Market stall still 0/3)",
-    "why": "One more course of bricks.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
     "by": "model",
     "ok": true
   }
