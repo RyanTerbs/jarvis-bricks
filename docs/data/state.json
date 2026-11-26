@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "beach",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the beach",
-  "thought": "Early bird gets the bricks.",
-  "feeling": "chilled",
+  "doing": "reading a book",
+  "thought": "Salt air, warm sand, no bolts. Perfect.",
+  "feeling": "buzzing",
   "needs": {
-    "rest": 0.24,
-    "hunger": 0.555,
-    "social": 0.432,
-    "tinker": 0.61,
-    "curiosity": 0.61
+    "rest": 0.41,
+    "hunger": 0.14,
+    "social": 0.396,
+    "tinker": 0.54,
+    "curiosity": 0.41
   },
-  "mood": 0.31,
-  "energy": 0.76,
-  "coins": 35,
+  "mood": 0.46,
+  "energy": 0.59,
+  "coins": 33,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {},
@@ -24,7 +24,7 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 2
+    "tourism_thailand": 3
   },
   "finished": [],
   "notebook": [
@@ -37,32 +37,33 @@
       "date": "2026-11-27",
       "source": "Tourism in Thailand (Overview)",
       "note": "Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international"
+    },
+    {
+      "date": "2026-11-27",
+      "source": "Tourism in Thailand (Statistics)",
+      "note": "Foreign arrivals in Thailand: Past arrivals statistics: Reference: statistics for the period 1998–2016, 2017–2018."
     }
   ],
   "looked_up": [],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [],
-    "best_castle": 0,
+    "castles": [
+      {
+        "date": "2026-11-27",
+        "size": 1
+      }
+    ],
+    "best_castle": 1,
     "shells": 3,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "small",
     "waves_date": "2026-11-27"
   },
-  "queue": [
-    {
-      "move": "build_a_sand_castle",
-      "why": "Building things is what I do. Even with sand."
-    },
-    {
-      "move": "play_fetch_on_the_beach",
-      "why": "Diesel loves the beach."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-27",
     "used": 0,
@@ -190,6 +191,84 @@
       "k": "did",
       "x": "walking to the beach",
       "why": "Off to the beach."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "building a sand castle (sand castle size 1/6)",
+      "why": "Building things is what I do. Even with sand."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Diesel loves the beach."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Bit of a meh sky today.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "noticed",
+      "x": "Diesel falls asleep in the toolbox for a second.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "Should I name the street? Derek Street. Ja, why not.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Let him run."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Salt air, warm sand, no bolts. Perfect.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 3/9)",
+      "why": "Books are a cheap mechanics' school."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Statistics)): Foreign arrivals in Thailand: Past arrivals statistics: Reference: statistics for the period 1998–2016, 2017–2018.",
+      "why": null
     }
   ],
   "day_start": {
@@ -198,13 +277,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 153,
+  "tick": 161,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T13:28:21.098366+00:00",
+  "updated": "2026-11-27T15:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 59,
-      "queue": 35,
+      "model": 62,
+      "queue": 40,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -213,8 +292,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 7,
-      "queue": 2,
+      "model": 10,
+      "queue": 7,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -229,28 +308,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.208,
-      "tired": 0.18,
-      "bored": 0.75
+      "hunger": 0.448,
+      "tired": 0.64,
+      "bored": 0.06
     },
-    "bond": 0.41,
+    "bond": 0.49,
     "food": 0,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "bored, chewing whatever he can find",
-    "last_played_tick": 110,
-    "wants": "play",
+    "doing": "rolling in the grass",
+    "last_played_tick": 159,
+    "wants": null,
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -262,10 +333,18 @@
       "Nobody is throwing anything. Rude.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "I could chew a boot. Just a little bit.",
-      "{owner} is busy again. Sigh. Big sigh."
+      "{owner} is busy again. Sigh. Big sigh.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "That engine is loud. I will bark at it. Later.",
+      "The waves are chasing me. I'm chasing the waves. Who's winning?",
+      "I am a very good boy. Probably.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "SAND! Wet sand! Best day ever!",
+      "Why does the sea keep coming back? Suspicious.",
+      "Sky went grey. Still a good day. Every day is a good day."
     ],
-    "thought": "Derek is busy again. Sigh. Big sigh.",
-    "want_ticks": 0,
+    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "want_ticks": 2,
     "last_fed_tick": 150,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -276,9 +355,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Need a proper chat with someone who talks back.",
-    "Need a proper job. Something with bolts.",
-    "Eyelids weigh a ton.",
     "{pup} first. Always {pup} first.",
     "{left} coins to go. That's just a lot of carbs.",
     "If I don't fix something soon I'll start taking the fridge apart.",
@@ -300,9 +376,12 @@
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Autumn. Days getting shorter.",
     "The jar's getting heavier. Love that sound.",
-    "Early bird gets the bricks."
+    "Early bird gets the bricks.",
+    "Bit of a meh sky today.",
+    "Should I name the street? {me} Street. Ja, why not.",
+    "Salt air, warm sand, no bolts. Perfect."
   ],
-  "real_updated": "2026-11-26T17:00:12.283205+00:00",
+  "real_updated": "2026-11-26T17:15:15.859369+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@6",
@@ -315,8 +394,8 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 11,
+    "temp": 12,
     "snow": 0,
-    "wet": 0.5
+    "wet": 0.1
   }
 }

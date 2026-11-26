@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-11-27T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Statistics)): Foreign arrivals in Thailand: Past arrivals statistics: Reference: statistics for the period 1998–2016, 2017–2018.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 3/9)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Salt air, warm sand, no bolts. Perfect.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "Should I name the street? Derek Street. Ja, why not.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "noticed",
+    "text": "Diesel falls asleep in the toolbox for a second.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Bit of a meh sky today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Diesel loves the beach.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "building a sand castle (sand castle size 1/6)",
+    "why": "Building things is what I do. Even with sand.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T13:28:21.098366+00:00",
     "time": "8:28 AM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "Early bird gets the bricks.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Somewhere there's a beach in Krabi with my name on it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "noticed",
-    "text": "A kid drops a bolt and asks Derek what it's for.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Miss the banter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Quick trip to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Miss the cafe gossip.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Training Diesel",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Long day. Bed.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "noticed",
-    "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]
