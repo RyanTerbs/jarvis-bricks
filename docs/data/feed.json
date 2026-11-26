@@ -1,5 +1,14 @@
 [
   {
+    "at": "2026-11-27T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T22:43:21.098366+00:00",
     "time": "5:43 PM",
     "kind": "did",
@@ -1337,15 +1346,6 @@
     "kind": "did",
     "text": "having a rest",
     "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "Could eat a whole braai by myself right now.",
-    "why": null,
     "by": "model",
     "ok": true
   }
