@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-11-27T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "thought",
+    "text": "Rain on the roof. Lekker sound, rubbish for building.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Knackered. Eyes keep closing on their own.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Plastic rain, plastic trees, real problems.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "thought",
+    "text": "Need a proper job. Something with bolts.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Even my spanner looks tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Running on coffee and hope.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T18:58:21.098366+00:00",
     "time": "1:58 PM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "walking to the garage",
     "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "thought",
-    "text": "Weather like this, Thailand feels close.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "thought",
-    "text": "If I finish this, I'm getting a snack. Deal.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-    "why": "Jump, hit, hope.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "collecting bricks (+3 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "If it's got moving parts, I can fix it. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "noticed",
-    "text": "Diesel falls asleep in the toolbox for a second.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Diesel deserves it.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "thought",
-    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: nap on the warm brick pile.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Should bring a book to the beach next time.",
-    "why": null,
     "by": "model",
     "ok": true
   }

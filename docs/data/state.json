@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "market_stall",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "running his market stall",
-  "thought": "Shame, the cafe guy looked tired today.",
-  "feeling": "content",
+  "doing": "walking to the brick pit",
+  "thought": "Rain on the roof. Lekker sound, rubbish for building.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0.65,
-    "social": 0.111,
-    "tinker": 0.63,
-    "curiosity": 0.11
+    "rest": 0.62,
+    "hunger": 0.25,
+    "social": 0.276,
+    "tinker": 0.51,
+    "curiosity": 0.31
   },
-  "mood": 0.38,
-  "energy": 0.31,
-  "coins": 34,
+  "mood": 0.32,
+  "energy": 0.38,
+  "coins": 36,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -47,9 +47,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 13,
+  "hour": 15,
   "beach": {
-    "tan": 0.034,
+    "tan": 0.03,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -65,7 +65,16 @@
     "waves": "small",
     "waves_date": "2026-11-27"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "collect_bricks",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "move": "hit_the_lucky_block",
+      "why": "Jump, hit, hope."
+    }
+  ],
   "lucky": {
     "date": "2026-11-27",
     "used": 0,
@@ -421,6 +430,90 @@
       "k": "did",
       "x": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
       "why": "Got stock, need buyers."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Running on coffee and hope.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Even my spanner looks tired.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Need a proper job. Something with bolts.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Plastic rain, plastic trees, real problems.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Knackered. Eyes keep closing on their own.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Rain on the roof. Lekker sound, rubbish for building.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
     }
   ],
   "day_start": {
@@ -429,13 +522,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 175,
+  "tick": 183,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T18:58:21.098366+00:00",
+  "updated": "2026-11-27T20:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 69,
-      "queue": 47,
+      "model": 75,
+      "queue": 49,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -444,8 +537,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 17,
-      "queue": 14,
+      "model": 23,
+      "queue": 16,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -458,11 +551,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.024,
-      "tired": 0.27,
-      "bored": 0.09
+      "hunger": 0.264,
+      "tired": 0.43,
+      "bored": 0.33
     },
     "bond": 0.54,
     "food": 5,
@@ -470,18 +563,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "napping",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 164,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "The waves are chasing me. I'm chasing the waves. Who's winning?",
-      "I am a very good boy. Probably.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "SAND! Wet sand! Best day ever!",
-      "Why does the sea keep coming back? Suspicious.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Crab. Must investigate.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Sky went grey. Still a good day. Every day is a good day.",
@@ -493,10 +578,18 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "PUDDLE. Must jump in puddle.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Following {owner}. Best job in the world.",
+      "Wet dog smell is the best smell.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Wet dog smell is the best smell.",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "{owner} is the best human in the whole town."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
-    "want_ticks": 0,
+    "thought": "Derek is the best human in the whole town.",
+    "want_ticks": 3,
     "last_fed_tick": 169,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -507,12 +600,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Wet again. The site turns to mud in this.",
-    "Autumn. Days getting shorter.",
-    "Batteries low. Need a recharge.",
-    "Yoh, I'm tired.",
-    "Body says rest. Stubborn brain says one more job.",
-    "When the {site} is done, I'm celebrating with noodles.",
     "Night shift is for owls, not mechanics.",
     "Could sleep standing up like a horse.",
     "Been talking to bolts all day. Time for real people.",
@@ -531,9 +618,15 @@
     "Cloudy. Fine. Engines don't care.",
     "{bricks} bricks in the pile. Could build something lekker with that.",
     "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "Shame, the cafe guy looked tired today."
+    "Shame, the cafe guy looked tired today.",
+    "Running on coffee and hope.",
+    "Even my spanner looks tired.",
+    "Need a proper job. Something with bolts.",
+    "Plastic rain, plastic trees, real problems.",
+    "Knackered. Eyes keep closing on their own.",
+    "Rain on the roof. Lekker sound, rubbish for building."
   ],
-  "real_updated": "2026-11-26T17:45:11.757055+00:00",
+  "real_updated": "2026-11-26T18:00:13.161549+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",
