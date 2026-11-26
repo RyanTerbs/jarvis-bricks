@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
-  "asleep": false,
-  "doing": "fixing a car",
-  "thought": "The jar's getting heavier. Love that sound.",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
+  "thought": "Sometimes I just stand here and listen to the town.",
   "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.39,
-    "hunger": 0.615,
-    "social": 0.42,
-    "tinker": 0,
-    "curiosity": 0.425
+    "rest": 0,
+    "hunger": 0.57,
+    "social": 0.697,
+    "tinker": 0.3,
+    "curiosity": 0.09
   },
-  "mood": 0.45,
-  "energy": 0.61,
-  "coins": 28,
+  "mood": 0.28,
+  "energy": 1,
+  "coins": 30,
   "coins_goal": 500,
-  "bricks": 10,
+  "bricks": 18,
   "stock": {},
   "owned": [],
   "sales": {
@@ -27,7 +27,7 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 19,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -37,104 +37,43 @@
     "shells": 0,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "small",
-    "waves_date": "2026-11-25"
+    "waves": "flat",
+    "waves_date": "2026-11-26"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "used": 0,
     "max": 3
   },
-  "designed_on": null,
-  "plan_today": null,
-  "today_log": [
-    {
-      "t": "6:48 PM",
-      "k": "noticed",
-      "x": "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.",
-      "why": null
-    },
-    {
-      "t": "6:48 PM",
-      "k": "thought",
-      "x": "Could murder a coffee.",
-      "why": null
-    },
-    {
-      "t": "6:48 PM",
-      "k": "learned",
-      "x": "named the puppy Diesel",
-      "why": null
-    },
-    {
-      "t": "6:48 PM",
-      "k": "did",
-      "x": "training Diesel (sit: Diesel wasn't having it)",
-      "why": "Bricks don't grow on trees. Yet."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "training Diesel (sit: 1/3)",
-      "why": "Feels right."
-    },
-    {
-      "t": "7:02 PM",
-      "k": "thought",
-      "x": "The jar's getting heavier. Love that sound.",
-      "why": null
-    },
-    {
-      "t": "7:02 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Quick trip to the garage."
-    },
-    {
-      "t": "7:13 PM",
-      "k": "noticed",
-      "x": "From today he goes by Derek. New name, same mechanic.",
-      "why": null
-    },
-    {
-      "t": "7:13 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Big Ron is making a funny noise. My kind of problem."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Meet Sputnik. Bit of a sad case. I'll sort her out."
-    }
-  ],
+  "designed_on": "2026-11-25",
+  "plan_today": "Fix a few cars, fill the jar.",
+  "today_log": [],
   "day_start": {
-    "coins": 20,
-    "bricks": 10,
+    "coins": 30,
+    "bricks": 18,
     "got": 0,
     "used": 0
   },
-  "tick": 5,
+  "tick": 29,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T00:28:21.098366+00:00",
+  "updated": "2026-11-26T06:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 2,
-      "queue": 3,
-      "autopilot": 0,
-      "sleeping": 0,
+      "model": 11,
+      "queue": 8,
+      "autopilot": 2,
+      "sleeping": 8,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-11-25",
-      "model": 2,
-      "queue": 3,
+      "date": "2026-11-26",
+      "model": 0,
+      "queue": 0,
       "autopilot": 0,
-      "sleeping": 0,
+      "sleeping": 6,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -145,31 +84,59 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.45,
-      "tired": 0.5,
-      "bored": 0.55
+      "hunger": 0.15,
+      "tired": 0,
+      "bored": 0.39
     },
-    "bond": 0.12,
-    "food": 4,
+    "bond": 0.18,
+    "food": 3,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "sniffing everything",
-    "last_played_tick": 2,
+    "doing": "asleep at the foot of the bed",
+    "last_played_tick": 10,
     "wants": null,
     "recent_thoughts": [
-      "Tail check: still there. Good.",
-      "The ! block knows something. I will watch it.",
-      "Helping. I am helping. By sitting here."
+      "My bowl is empty. This is an emergency.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "It's dark. I will guard the house. From the sofa.",
+      "The cafe smells like pies. Noted.",
+      "Night noises. Probably nothing. Probably.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching."
     ],
-    "thought": "Helping. I am helping. By sitting here."
+    "thought": "Dreaming: running, running, running. Legs twitching.",
+    "want_ticks": 0,
+    "last_fed_tick": 11
   },
   "recent_thoughts": [
-    "The jar's getting heavier. Love that sound."
+    "The jar's getting heavier. Love that sound.",
+    "Food first. Then I'm useful again.",
+    "Why is it always the 10mm that goes missing?",
+    "Should I name the street? {me} Street. Ja, why not.",
+    "Practising my Thai: sawadee khrap. Nailed it. Probably.",
+    "Shame, the cafe guy looked tired today.",
+    "Picture it: a winding road, a good engine, no rush.",
+    "Stars are out. Tiny town, big sky.",
+    "Slow and steady fills the jar.",
+    "Sometimes I just stand here and listen to the town."
   ],
-  "real_updated": "2026-11-26T00:16:21.288247+00:00",
+  "real_updated": "2026-11-26T07:53:11.806181+00:00",
   "speed": 8
 }

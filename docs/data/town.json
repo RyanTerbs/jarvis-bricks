@@ -64,8 +64,38 @@
     }
   ],
   "site": null,
-  "custom_blueprints": {},
-  "custom_moves": {},
+  "custom_blueprints": {
+    "sunset_pier": {
+      "name": "Sunset Pier",
+      "bricks": 30,
+      "coins": 0,
+      "work": 5,
+      "place": "sunset_pier",
+      "desc": "a little wooden pier over a blue plastic pond",
+      "look": {
+        "kind": "shop",
+        "color": "#3a7bd5",
+        "emoji": "🌅",
+        "floors": 2
+      },
+      "custom": true,
+      "designed": "2026-11-25",
+      "helps": "rest",
+      "activity": "Watching the sunset"
+    }
+  },
+  "custom_moves": {
+    "use_sunset_pier": {
+      "label": "watching the sunset",
+      "at": [
+        "sunset_pier"
+      ],
+      "needs": {
+        "rest": -0.175
+      },
+      "mood": 0.06
+    }
+  },
   "history": [
     {
       "date": "2026-11-25",
@@ -74,6 +104,10 @@
     {
       "date": "2026-11-25",
       "text": "Jarvis became Derek. New name, same mechanic."
+    },
+    {
+      "date": "2026-11-25",
+      "text": "Designed his own building: 🌅 Sunset Pier (a little wooden pier over a blue plastic pond)."
     }
   ]
 }

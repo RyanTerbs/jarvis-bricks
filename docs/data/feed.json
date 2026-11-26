@@ -1,5 +1,257 @@
 [
   {
+    "at": "2026-11-26T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Training Diesel",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Long day. Bed.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "noticed",
+    "text": "It starts raining plastic raindrops.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "collecting bricks (+3 bricks)",
+    "why": "Brick by brick, hey.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Sometimes I just stand here and listen to the town.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "thought",
+    "text": "Stars are out. Tiny town, big sky.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "collecting bricks (+5 bricks)",
+    "why": "Got plans. Need materials.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Quick trip to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "thought",
+    "text": "Picture it: a winding road, a good engine, no rush.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "designing a brand-new building",
+    "why": "Town needs something new. Something mine.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "designed",
+    "text": "designed a new building: 🌅 Sunset Pier, a little wooden pier over a blue plastic pond",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Shame, the cafe guy looked tired today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "feeding Diesel",
+    "why": "Food for my boy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Practising my Thai: sawadee khrap. Nailed it. Probably.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "training Diesel (sit: Diesel wasn't having it)",
+    "why": "Treat in the pocket, let's go.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "training Diesel (sit: Diesel wasn't having it)",
+    "why": "Teaching Diesel new tricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Should I name the street? Derek Street. Ja, why not.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "Why is it always the 10mm that goes missing?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "thought",
+    "text": "Food first. Then I'm useful again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-26T00:28:21.098366+00:00",
     "time": "7:28 PM",
     "kind": "did",

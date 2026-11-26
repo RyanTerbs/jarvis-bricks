@@ -21,47 +21,26 @@
       "perk": "knowing where he's going keeps him cheerful",
       "source": "https://en.wikipedia.org/wiki/Thailand"
     },
-    "puppy": {
-      "title": "Puppy",
-      "where": "library",
-      "chapters": 5,
-      "perk": "looking after his pup builds the bond 50% faster",
-      "source": "https://en.wikipedia.org/wiki/Puppy"
+    "tourism_thailand": {
+      "title": "Tourism in Thailand",
+      "where": "home",
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Tourism_in_Thailand"
     },
-    "motorcycle": {
-      "title": "Motorcycle",
-      "where": "library",
+    "bangkok": {
+      "title": "Bangkok",
+      "where": "home",
       "chapters": 10,
-      "perk": "rides make him happier",
-      "source": "https://en.wikipedia.org/wiki/Motorcycle"
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Bangkok"
     },
-    "two_stroke": {
-      "title": "Two-stroke engine",
-      "where": "library",
-      "chapters": 8,
-      "perk": "+1 coin for every car he fixes",
-      "source": "https://en.wikipedia.org/wiki/Two-stroke_engine"
-    },
-    "bricklayer": {
-      "title": "Bricklayer",
-      "where": "library",
-      "chapters": 3,
-      "perk": "1 in 4 building shifts count double",
-      "source": "https://en.wikipedia.org/wiki/Bricklayer"
-    },
-    "haggling": {
-      "title": "Bargaining",
-      "where": "library",
-      "chapters": 4,
-      "perk": "sells a bit more at his stall",
-      "source": "https://en.wikipedia.org/wiki/Bargaining"
-    },
-    "thai_cuisine": {
-      "title": "Thai cuisine",
-      "where": "library",
-      "chapters": 10,
-      "perk": "his noodle kits sell for 1 coin more",
-      "source": "https://en.wikipedia.org/wiki/Thai_cuisine"
+    "moto_touring": {
+      "title": "Motorcycle touring",
+      "where": "home",
+      "chapters": 2,
+      "perk": "rides make him even happier",
+      "source": "https://en.wikipedia.org/wiki/Motorcycle_touring"
     },
     "chiang_mai": {
       "title": "Chiang Mai",
@@ -70,12 +49,257 @@
       "perk": null,
       "source": "https://en.wikipedia.org/wiki/Chiang_Mai"
     },
+    "phuket": {
+      "title": "Phuket province",
+      "where": "library",
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Phuket_province"
+    },
+    "krabi": {
+      "title": "Krabi province",
+      "where": "library",
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Krabi_province"
+    },
+    "thai_buddhism": {
+      "title": "Buddhism in Thailand",
+      "where": "library",
+      "chapters": 10,
+      "perk": "a calmer head",
+      "source": "https://en.wikipedia.org/wiki/Buddhism_in_Thailand"
+    },
+    "songkran": {
+      "title": "Songkran (Thailand)",
+      "where": "library",
+      "chapters": 7,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Songkran_(Thailand)"
+    },
+    "thai_cuisine": {
+      "title": "Thai cuisine",
+      "where": "library",
+      "chapters": 10,
+      "perk": "his noodle kits sell for 1 coin more",
+      "source": "https://en.wikipedia.org/wiki/Thai_cuisine"
+    },
     "thai_language": {
       "title": "Thai language",
       "where": "library",
       "chapters": 9,
       "perk": null,
       "source": "https://en.wikipedia.org/wiki/Thai_language"
+    },
+    "muay_thai": {
+      "title": "Muay Thai",
+      "where": "library",
+      "chapters": 10,
+      "perk": "workouts feel better",
+      "source": "https://en.wikipedia.org/wiki/Muay_Thai"
+    },
+    "surfing": {
+      "title": "Surfing",
+      "where": "library",
+      "chapters": 10,
+      "perk": "surf sessions make him happier",
+      "source": "https://en.wikipedia.org/wiki/Surfing"
+    },
+    "backpacking": {
+      "title": "Backpacking (travel)",
+      "where": "library",
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Backpacking_(travel)"
+    },
+    "travel": {
+      "title": "Travel",
+      "where": "library",
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Travel"
+    },
+    "fire": {
+      "title": "FIRE movement",
+      "where": "library",
+      "chapters": 6,
+      "perk": "counting the jar feels even better",
+      "source": "https://en.wikipedia.org/wiki/FIRE_movement"
+    },
+    "construction_mgmt": {
+      "title": "Construction management",
+      "where": "library",
+      "chapters": 9,
+      "perk": "builds go faster",
+      "source": "https://en.wikipedia.org/wiki/Construction_management"
+    },
+    "project_mgmt": {
+      "title": "Project management",
+      "where": "library",
+      "chapters": 10,
+      "perk": "builds go a bit faster",
+      "source": "https://en.wikipedia.org/wiki/Project_management"
+    },
+    "bricklayer": {
+      "title": "Bricklayer",
+      "where": "library",
+      "chapters": 3,
+      "perk": "1 in 4 building shifts count double",
+      "source": "https://en.wikipedia.org/wiki/Bricklayer"
+    },
+    "log_house": {
+      "title": "Log house",
+      "where": "library",
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Log_house"
+    },
+    "quality_control": {
+      "title": "Quality control",
+      "where": "library",
+      "chapters": 3,
+      "perk": "his model bikes sell for 1 coin more",
+      "source": "https://en.wikipedia.org/wiki/Quality_control"
+    },
+    "event_mgmt": {
+      "title": "Event management",
+      "where": "library",
+      "chapters": 6,
+      "perk": "draws more people to his stall",
+      "source": "https://en.wikipedia.org/wiki/Event_management"
+    },
+    "cost_estimate": {
+      "title": "Cost estimate",
+      "where": "library",
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Cost_estimate"
+    },
+    "haggling": {
+      "title": "Bargaining",
+      "where": "library",
+      "chapters": 4,
+      "perk": "sells a bit more at his stall",
+      "source": "https://en.wikipedia.org/wiki/Bargaining"
+    },
+    "pest_control": {
+      "title": "Pest control",
+      "where": "library",
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Pest_control"
+    },
+    "auto_repair": {
+      "title": "Automobile repair shop",
+      "where": "library",
+      "chapters": 2,
+      "perk": "+1 coin for every car he fixes",
+      "source": "https://en.wikipedia.org/wiki/Automobile_repair_shop"
+    },
+    "two_stroke": {
+      "title": "Two-stroke engine",
+      "where": "library",
+      "chapters": 8,
+      "perk": "+1 coin for every car he fixes",
+      "source": "https://en.wikipedia.org/wiki/Two-stroke_engine"
+    },
+    "motorcycle": {
+      "title": "Motorcycle",
+      "where": "library",
+      "chapters": 10,
+      "perk": "rides make him happier",
+      "source": "https://en.wikipedia.org/wiki/Motorcycle"
+    },
+    "ktm": {
+      "title": "KTM",
+      "where": "library",
+      "chapters": 5,
+      "perk": "tinkering with his bike feels even better",
+      "source": "https://en.wikipedia.org/wiki/KTM"
+    },
+    "maserati": {
+      "title": "Maserati",
+      "where": "library",
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Maserati"
+    },
+    "south_africa": {
+      "title": "South Africa",
+      "where": "library",
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/South_Africa"
+    },
+    "rwanda": {
+      "title": "Rwanda",
+      "where": "library",
+      "chapters": 8,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Rwanda"
+    },
+    "saudi_arabia": {
+      "title": "Saudi Arabia",
+      "where": "library",
+      "chapters": 8,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Saudi_Arabia"
+    },
+    "riyadh": {
+      "title": "Riyadh",
+      "where": "library",
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Riyadh"
+    },
+    "netherlands": {
+      "title": "Netherlands",
+      "where": "library",
+      "chapters": 8,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Netherlands"
+    },
+    "florida": {
+      "title": "Florida",
+      "where": "library",
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Florida"
+    },
+    "fitness": {
+      "title": "Physical fitness",
+      "where": "library",
+      "chapters": 9,
+      "perk": "workouts feel better",
+      "source": "https://en.wikipedia.org/wiki/Physical_fitness"
+    },
+    "healthy_diet": {
+      "title": "Healthy diet",
+      "where": "library",
+      "chapters": 5,
+      "perk": "a proper meal lifts him more",
+      "source": "https://en.wikipedia.org/wiki/Healthy_diet"
+    },
+    "index_fund": {
+      "title": "Index fund",
+      "where": "library",
+      "chapters": 4,
+      "perk": "counting the jar feels even better",
+      "source": "https://en.wikipedia.org/wiki/Index_fund"
+    },
+    "gold_investment": {
+      "title": "Gold as an investment",
+      "where": "library",
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Gold_as_an_investment"
+    },
+    "puppy": {
+      "title": "Puppy",
+      "where": "library",
+      "chapters": 5,
+      "perk": "looking after his pup builds the bond 50% faster",
+      "source": "https://en.wikipedia.org/wiki/Puppy"
     },
     "lego": {
       "title": "Lego",
@@ -85,6 +309,6 @@
       "source": "https://en.wikipedia.org/wiki/Lego"
     }
   },
-  "topics": 56,
+  "topics": 110,
   "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"
 }
