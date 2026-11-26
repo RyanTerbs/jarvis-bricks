@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-11-27T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "building (finished!)",
+    "why": "One more course of bricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "built",
+    "text": "finished building the Market stall!",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "Could sleep standing up like a horse.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Night shift is for owls, not mechanics.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "When the Market stall is done, I'm celebrating with noodles.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "building (Market stall 2/3)",
+    "why": "One more course of bricks.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Body says rest. Stubborn brain says one more job.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Walkies, Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Yoh, I'm tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T02:13:21.098366+00:00",
     "time": "9:13 PM",
     "kind": "did",
@@ -1230,96 +1347,6 @@
     "text": "Food first. Then I'm useful again.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Sputnik. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Big Ron is making a funny noise. My kind of problem.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "noticed",
-    "text": "From today he goes by Derek. New name, same mechanic.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:02:48.998168+00:00",
-    "time": "7:02 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:02:48.998168+00:00",
-    "time": "7:02 PM",
-    "kind": "thought",
-    "text": "The jar's getting heavier. Love that sound.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-25T23:58:18.975312+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "training Diesel (sit: 1/3)",
-    "why": "Feels right.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-25T23:48:46.858911+00:00",
-    "time": "6:48 PM",
-    "kind": "did",
-    "text": "training Diesel (sit: Diesel wasn't having it)",
-    "why": "Bricks don't grow on trees. Yet.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-25T23:48:46.858911+00:00",
-    "time": "6:48 PM",
-    "kind": "learned",
-    "text": "named the puppy Diesel",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-25T23:48:46.858911+00:00",
-    "time": "6:48 PM",
-    "kind": "thought",
-    "text": "Could murder a coffee.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-25T23:48:46.858911+00:00",
-    "time": "6:48 PM",
-    "kind": "noticed",
-    "text": "A scruffy little brick puppy followed Jarvis home and won't leave. He needs a name.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

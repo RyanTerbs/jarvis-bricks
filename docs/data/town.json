@@ -61,20 +61,23 @@
       "bp": "cafe",
       "decor": false,
       "built": "2026-11-25"
+    },
+    {
+      "lot": 4,
+      "id": "market_stall",
+      "bp": "market_stall",
+      "name": "Market stall",
+      "place": "market_stall",
+      "desc": "a little market stall with a striped canopy where he sells what he makes",
+      "look": {
+        "kind": "stall",
+        "color": "#2f6fb3"
+      },
+      "decor": false,
+      "built": "2026-11-26"
     }
   ],
-  "site": {
-    "bp": "market_stall",
-    "name": "Market stall",
-    "lot": 4,
-    "work": 3,
-    "done": 1,
-    "started": "2026-11-26",
-    "look": {
-      "kind": "stall",
-      "color": "#2f6fb3"
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -151,6 +154,10 @@
     {
       "date": "2026-11-26",
       "text": "Designed his own building: 🌻 Rooftop Garden (a garden on a roof full of sunflowers)."
+    },
+    {
+      "date": "2026-11-26",
+      "text": "Finished building the Market stall."
     }
   ]
 }

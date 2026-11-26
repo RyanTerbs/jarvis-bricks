@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "walking to the cafe",
-  "thought": "Batteries low. Need a recharge.",
+  "doing": "building",
+  "thought": "Could sleep standing up like a horse.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.66,
-    "hunger": 0.275,
-    "social": 0.695,
-    "tinker": 0.645,
-    "curiosity": 0.425
+    "rest": 0.73,
+    "hunger": 0.58,
+    "social": 0.454,
+    "tinker": 0.49,
+    "curiosity": 0.5
   },
-  "mood": 0.27,
-  "energy": 0.34,
+  "mood": 0.5,
+  "energy": 0.27,
   "coins": 30,
   "coins_goal": 500,
   "bricks": 6,
@@ -35,7 +35,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 21,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -48,12 +48,7 @@
     "waves": "flat",
     "waves_date": "2026-11-26"
   },
-  "queue": [
-    {
-      "move": "chat_with_locals",
-      "why": "Need some gossip."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-26",
     "used": 2,
@@ -62,12 +57,6 @@
   "designed_on": "2026-11-26",
   "plan_today": "Fix a few cars, fill the jar.",
   "today_log": [
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Miss the cafe gossip.",
-      "why": null
-    },
     {
       "t": "6:28 AM",
       "k": "did",
@@ -709,6 +698,84 @@
       "k": "did",
       "x": "walking to the cafe",
       "why": "Off to the cafe."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Yoh, I'm tired.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk",
+      "why": "Walkies, Diesel."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Body says rest. Stubborn brain says one more job.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "building (Market stall 2/3)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "thought",
+      "x": "When the Market stall is done, I'm celebrating with noodles.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "thought",
+      "x": "Night shift is for owls, not mechanics.",
+      "why": null
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "10:58 PM",
+      "k": "thought",
+      "x": "Could sleep standing up like a horse.",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "built",
+      "x": "finished building the Market stall!",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "One more course of bricks."
     }
   ],
   "day_start": {
@@ -717,13 +784,13 @@
     "got": 8,
     "used": 20
   },
-  "tick": 108,
+  "tick": 115,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T02:13:21.098366+00:00",
+  "updated": "2026-11-27T03:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 47,
-      "queue": 31,
+      "model": 52,
+      "queue": 33,
       "autopilot": 4,
       "sleeping": 26,
       "tokens_in": 0,
@@ -732,8 +799,8 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 36,
-      "queue": 23,
+      "model": 41,
+      "queue": 25,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -746,29 +813,22 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.416,
-      "tired": 0.7,
-      "bored": 0.69
+      "hunger": 0.522,
+      "tired": 0.59,
+      "bored": 0.48
     },
-    "bond": 0.36,
+    "bond": 0.38,
     "food": 1,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "watching Derek work",
-    "last_played_tick": 76,
-    "wants": "play",
+    "doing": "napping",
+    "last_played_tick": 110,
+    "wants": null,
     "recent_thoughts": [
-      "PUDDLE. Must jump in puddle.",
-      "PUDDLE. Must jump in puddle.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "{owner} smells like toast. Share?",
-      "PUDDLE. Must jump in puddle.",
-      "PUDDLE. Must jump in puddle.",
-      "If I stare at the bowl hard enough, food appears. Science.",
       "Wet dog smell is the best smell.",
       "Wet dog smell is the best smell.",
       "That engine is loud. I will bark at it. Later.",
@@ -781,9 +841,16 @@
       "I could chew a boot. Just a little bit.",
       "Water falling from the sky. Again. Suspicious.",
       "Tail check: still there. Good.",
-      "It's dark. I will guard the house. From the sofa."
+      "It's dark. I will guard the house. From the sofa.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "It's dark. I will guard the house. From the sofa.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 95,
     "recent_ideas": [
@@ -795,11 +862,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "If it's got moving parts, I can fix it. Mostly.",
-    "If I finish this, I'm getting a snack. Deal.",
-    "Weather like this, Thailand feels close.",
-    "Blue sky, no excuses.",
-    "{pup} keeps looking at me like it's walk time.",
     "Even my spanner looks tired.",
     "One more yawn and I'm out.",
     "Can't wait to see the {site} finished.",
@@ -819,9 +881,14 @@
     "Haven't had grease on my hands in hours. Feels wrong.",
     "Wet again. The site turns to mud in this.",
     "Autumn. Days getting shorter.",
-    "Batteries low. Need a recharge."
+    "Batteries low. Need a recharge.",
+    "Yoh, I'm tired.",
+    "Body says rest. Stubborn brain says one more job.",
+    "When the {site} is done, I'm celebrating with noodles.",
+    "Night shift is for owls, not mechanics.",
+    "Could sleep standing up like a horse."
   ],
-  "real_updated": "2026-11-26T15:30:12.431645+00:00",
+  "real_updated": "2026-11-26T15:45:11.264739+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-26@13",
@@ -835,7 +902,7 @@
       "sunny",
       "rain"
     ],
-    "temp": 14,
+    "temp": 12,
     "snow": 0,
     "wet": 1
   }
