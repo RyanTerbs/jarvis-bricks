@@ -1,5 +1,23 @@
 [
   {
+    "at": "2026-11-26T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Big Ron is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "noticed",
+    "text": "From today he goes by Derek. New name, same mechanic.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-26T00:02:48.998168+00:00",
     "time": "7:02 PM",
     "kind": "did",

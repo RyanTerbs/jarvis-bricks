@@ -1,20 +1,20 @@
 {
-  "name": "Jarvis",
+  "name": "Derek",
   "place": "garage",
   "asleep": false,
-  "doing": "walking to the garage",
+  "doing": "fixing a car",
   "thought": "The jar's getting heavier. Love that sound.",
   "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.27,
-    "hunger": 0.505,
-    "social": 0.372,
-    "tinker": 0.505,
-    "curiosity": 0.375
+    "rest": 0.33,
+    "hunger": 0.56,
+    "social": 0.396,
+    "tinker": 0.19,
+    "curiosity": 0.4
   },
-  "mood": 0.38,
-  "energy": 0.73,
-  "coins": 20,
+  "mood": 0.42,
+  "energy": 0.67,
+  "coins": 24,
   "coins_goal": 500,
   "bricks": 10,
   "stock": {},
@@ -41,10 +41,6 @@
     "waves_date": "2026-11-25"
   },
   "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "Big Ron is making a funny noise. My kind of problem."
-    },
     {
       "move": "fix_a_car",
       "why": "Meet Sputnik. Bit of a sad case. I'll sort her out."
@@ -99,6 +95,18 @@
       "k": "did",
       "x": "walking to the garage",
       "why": "Quick trip to the garage."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "noticed",
+      "x": "From today he goes by Derek. New name, same mechanic.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Big Ron is making a funny noise. My kind of problem."
     }
   ],
   "day_start": {
@@ -107,13 +115,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 3,
+  "tick": 4,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T00:02:48.998168+00:00",
+  "updated": "2026-11-26T00:13:21.098366+00:00",
   "stats": {
     "all": {
       "model": 2,
-      "queue": 1,
+      "queue": 2,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -123,7 +131,7 @@
     "today": {
       "date": "2026-11-25",
       "model": 2,
-      "queue": 1,
+      "queue": 2,
       "autopilot": 0,
       "sleeping": 0,
       "tokens_in": 0,
@@ -138,9 +146,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.39,
-      "tired": 0.46,
-      "bored": 0.49
+      "hunger": 0.42,
+      "tired": 0.48,
+      "bored": 0.52
     },
     "bond": 0.12,
     "food": 4,
@@ -148,13 +156,14 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "trotting along behind Jarvis",
+    "doing": "watching Derek work",
     "last_played_tick": 2,
     "wants": null,
     "recent_thoughts": [
-      "Tail check: still there. Good."
+      "Tail check: still there. Good.",
+      "The ! block knows something. I will watch it."
     ],
-    "thought": "Tail check: still there. Good."
+    "thought": "The ! block knows something. I will watch it."
   },
   "recent_thoughts": [
     "The jar's getting heavier. Love that sound."
