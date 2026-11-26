@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "beach",
+  "place": "home",
   "asleep": false,
-  "doing": "playing fetch with Diesel on the beach",
-  "thought": "Need a nap. A proper one.",
-  "feeling": "chilled",
+  "doing": "cooking a proper meal",
+  "thought": "Looked up Tourism in Thailand on the old laptop. Lekker.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.55,
-    "social": 0.129,
-    "tinker": 0.44,
-    "curiosity": 0.46
+    "rest": 0.71,
+    "hunger": 0.06,
+    "social": 0.272,
+    "tinker": 0.55,
+    "curiosity": 0.41
   },
-  "mood": 0.46,
-  "energy": 0.36,
-  "coins": 40,
+  "mood": 0.33,
+  "energy": 0.29,
+  "coins": 38,
   "coins_goal": 500,
-  "bricks": 6,
+  "bricks": 11,
   "stock": {
     "postcard": 2
   },
@@ -47,9 +47,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 17,
+  "hour": 19,
   "beach": {
-    "tan": 0.026,
+    "tan": 0.023,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -68,7 +68,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-11-27",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -601,21 +601,81 @@
       "k": "did",
       "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
       "why": "Let him run."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Funny what you learn. Tourism in Thailand, who knew.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Food first. Then I'm useful again.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Brick pit next."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "collecting bricks (+5 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Looked up Tourism in Thailand on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
     }
   ],
   "day_start": {
     "coins": 30,
     "bricks": 6,
-    "got": 0,
+    "got": 5,
     "used": 0
   },
-  "tick": 191,
+  "tick": 197,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T22:58:21.098366+00:00",
+  "updated": "2026-11-28T00:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 81,
-      "queue": 51,
+      "model": 84,
+      "queue": 54,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -624,8 +684,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 29,
-      "queue": 18,
+      "model": 32,
+      "queue": 21,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -638,10 +698,10 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.504,
-      "tired": 0.94,
+      "hunger": 0.528,
+      "tired": 0.46,
       "bored": 0
     },
     "bond": 0.65,
@@ -650,16 +710,10 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "barking at the waves",
+    "doing": "napping",
     "last_played_tick": 191,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "PUDDLE. Must jump in puddle.",
-      "Who left this brick here? I'll carry it somewhere else.",
       "Following {owner}. Best job in the world.",
       "Wet dog smell is the best smell.",
       "Water falling from the sky. Again. Suspicious.",
@@ -673,9 +727,15 @@
       "Water falling from the sky. Again. Suspicious.",
       "Helping. I am helping. By sitting here.",
       "Wet dog smell is the best smell.",
-      "PUDDLE. Must jump in puddle."
+      "PUDDLE. Must jump in puddle.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "YES! That's what I wanted!",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 4,
     "last_fed_tick": 169,
     "recent_ideas": [
@@ -687,9 +747,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Autumn. Days getting shorter.",
-    "The jar's getting heavier. Love that sound.",
-    "Early bird gets the bricks.",
     "Bit of a meh sky today.",
     "Should I name the street? {me} Street. Ja, why not.",
     "Salt air, warm sand, no bolts. Perfect.",
@@ -711,9 +768,12 @@
     "Sometimes I just stand here and listen to the town.",
     "Had a dream about a gearbox. Normal, right?",
     "Slow and steady fills the jar.",
-    "Need a nap. A proper one."
+    "Need a nap. A proper one.",
+    "Funny what you learn. {topic}, who knew.",
+    "Food first. Then I'm useful again.",
+    "Looked up {topic} on the old laptop. Lekker."
   ],
-  "real_updated": "2026-11-26T18:18:47.473454+00:00",
+  "real_updated": "2026-11-26T18:30:13.218309+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",
@@ -727,7 +787,7 @@
       "cloudy",
       "rain"
     ],
-    "temp": 13,
+    "temp": 12,
     "snow": 0,
     "wet": 1
   }
