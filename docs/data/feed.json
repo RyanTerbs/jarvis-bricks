@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-11-28T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "collecting bricks (+2 bricks)",
+    "why": "Brick by brick, hey.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Every brick in the Park is one I collected myself. Feels good.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "When the Park is done, I'm celebrating with noodles.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "starting a new build: Park (paid 20 bricks)",
+    "why": "Got the bricks, let's go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "Proud of Diesel. Little guy's growing up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: follow Derek to Thailand. Obviously.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "noticed",
+    "text": "🌧️ Rain sets in over the island.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "making a postcard of the town (4 in stock)",
+    "why": "Making stock for the stall.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "making a postcard of the town (3 in stock)",
+    "why": "Got an order in my head.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "Still thinking about that bit on Tourism in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T17:13:21.098366+00:00",
     "time": "12:13 PM",
     "kind": "did",
@@ -1212,141 +1347,6 @@
     "text": "A kid drops a bolt and asks Derek what it's for.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "ordering a bag of dog food (6 meals in the cupboard)",
-    "why": "Can't run out of food for Diesel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "thought",
-    "text": "Reading about Tourism in Thailand makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "Too much sitting. Where's my toolbox?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach",
-    "why": "Let him run.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "working on his tan (tan 4%)",
-    "why": "Ten minutes in the sun.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Off to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Grey old day. Good for graft, bad for a tan.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Statistics)): Foreign arrivals in Thailand: Past arrivals statistics: Reference: statistics for the period 1998–2016, 2017–2018.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 3/9)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Salt air, warm sand, no bolts. Perfect.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
