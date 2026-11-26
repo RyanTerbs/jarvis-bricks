@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "beach",
   "asleep": false,
-  "doing": "walking to the brick pit",
-  "thought": "Rain on the roof. Lekker sound, rubbish for building.",
-  "feeling": "good, ja",
+  "doing": "walking to the beach",
+  "thought": "Need a nap. A proper one.",
+  "feeling": "chilled",
   "needs": {
     "rest": 0.62,
-    "hunger": 0.25,
-    "social": 0.276,
-    "tinker": 0.51,
-    "curiosity": 0.31
+    "hunger": 0.515,
+    "social": 0.21,
+    "tinker": 0.405,
+    "curiosity": 0.435
   },
-  "mood": 0.32,
+  "mood": 0.38,
   "energy": 0.38,
-  "coins": 36,
+  "coins": 40,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -47,9 +47,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 15,
+  "hour": 17,
   "beach": {
-    "tan": 0.03,
+    "tan": 0.0265,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -67,12 +67,8 @@
   },
   "queue": [
     {
-      "move": "collect_bricks",
-      "why": "Got plans. Need materials."
-    },
-    {
-      "move": "hit_the_lucky_block",
-      "why": "Jump, hit, hope."
+      "move": "play_fetch_on_the_beach",
+      "why": "Let him run."
     }
   ],
   "lucky": {
@@ -514,6 +510,96 @@
       "k": "did",
       "x": "walking to the brick pit",
       "why": "Off to the brick pit."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Tourism in Thailand.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Hot one today. The beach is calling.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "Sometimes I just stand here and listen to the town.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Puddles are free fun."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "noticed",
+      "x": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Had a dream about a gearbox. Normal, right?",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "This one's called Little Thunder. She'll purr by lunch."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Slow and steady fills the jar.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Need a nap. A proper one.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
     }
   ],
   "day_start": {
@@ -522,13 +608,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 183,
+  "tick": 190,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T20:58:21.098366+00:00",
+  "updated": "2026-11-27T22:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 75,
-      "queue": 49,
+      "model": 81,
+      "queue": 50,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -537,8 +623,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 23,
-      "queue": 16,
+      "model": 29,
+      "queue": 17,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -553,27 +639,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.264,
-      "tired": 0.43,
-      "bored": 0.33
+      "hunger": 0.474,
+      "tired": 0.77,
+      "bored": 0.12
     },
-    "bond": 0.54,
+    "bond": 0.61,
     "food": 5,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 164,
-    "wants": "play",
+    "doing": "wagging his tail",
+    "last_played_tick": 186,
+    "wants": "beach",
     "recent_thoughts": [
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Grease smell. Best smell after sausages.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
@@ -586,9 +665,16 @@
       "Water falling from the sky. Again. Suspicious.",
       "Wet dog smell is the best smell.",
       "Is that a squirrel? It's a bolt. Still exciting.",
-      "{owner} is the best human in the whole town."
+      "{owner} is the best human in the whole town.",
+      "Good boy? Me? Yes. Me.",
+      "Water falling from the sky. Again. Suspicious.",
+      "PUDDLE. Must jump in puddle.",
+      "Sniffed a lamp post. Interesting news.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Helping. I am helping. By sitting here.",
+      "Wet dog smell is the best smell."
     ],
-    "thought": "Derek is the best human in the whole town.",
+    "thought": "Wet dog smell is the best smell.",
     "want_ticks": 3,
     "last_fed_tick": 169,
     "recent_ideas": [
@@ -600,12 +686,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Night shift is for owls, not mechanics.",
-    "Could sleep standing up like a horse.",
-    "Been talking to bolts all day. Time for real people.",
-    "{pup} brought me his lead. Subtle.",
-    "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Autumn. Days getting shorter.",
     "The jar's getting heavier. Love that sound.",
     "Early bird gets the bricks.",
@@ -624,9 +704,15 @@
     "Need a proper job. Something with bolts.",
     "Plastic rain, plastic trees, real problems.",
     "Knackered. Eyes keep closing on their own.",
-    "Rain on the roof. Lekker sound, rubbish for building."
+    "Rain on the roof. Lekker sound, rubbish for building.",
+    "Still thinking about that bit on {topic}.",
+    "Hot one today. The beach is calling.",
+    "Sometimes I just stand here and listen to the town.",
+    "Had a dream about a gearbox. Normal, right?",
+    "Slow and steady fills the jar.",
+    "Need a nap. A proper one."
   ],
-  "real_updated": "2026-11-26T18:00:13.161549+00:00",
+  "real_updated": "2026-11-26T18:15:11.372490+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@13",

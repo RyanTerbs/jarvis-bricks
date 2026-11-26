@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-11-27T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Need a nap. A proper one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "This one's called Little Thunder. She'll purr by lunch.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Had a dream about a gearbox. Normal, right?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "noticed",
+    "text": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "splashing in puddles with Diesel",
+    "why": "Puddles are free fun.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Sometimes I just stand here and listen to the town.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Hot one today. The beach is calling.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Still thinking about that bit on Tourism in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-27T20:58:21.098366+00:00",
     "time": "3:58 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "thought",
     "text": "Could eat a whole braai by myself right now.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "collecting shells (+3 shells (3 in the jar))",
-    "why": "Pretty ones today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "going for a swim",
-    "why": "Quick dip to cool off.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Off to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Can't wait to see the Market stall finished.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "One more yawn and I'm out.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "starting a new build: Market stall (paid 20 bricks)",
-    "why": "Town's getting bigger.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Even my spanner looks tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "splashing in puddles with Diesel",
-    "why": "Puddles are free fun.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Diesel keeps looking at me like it's walk time.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "noticed",
-    "text": "🌧️ It starts raining. Proper drops this time.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Blue sky, no excuses.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Old Rusty. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
     "by": "model",
     "ok": true
   }
