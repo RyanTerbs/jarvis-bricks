@@ -1,5 +1,23 @@
 [
   {
+    "at": "2026-11-26T00:02:48.998168+00:00",
+    "time": "7:02 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T00:02:48.998168+00:00",
+    "time": "7:02 PM",
+    "kind": "thought",
+    "text": "The jar's getting heavier. Love that sound.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-25T23:58:18.975312+00:00",
     "time": "6:58 PM",
     "kind": "did",
