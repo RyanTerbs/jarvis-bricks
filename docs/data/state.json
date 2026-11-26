@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "beach",
   "asleep": false,
-  "doing": "reading a book",
-  "thought": "Diesel brought me his lead. Subtle.",
-  "feeling": "meh, fine",
+  "doing": "walking to the beach",
+  "thought": "Early bird gets the bricks.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.02,
-    "hunger": 0.29,
-    "social": 0.685,
-    "tinker": 0.715,
-    "curiosity": 0.435
+    "rest": 0.24,
+    "hunger": 0.555,
+    "social": 0.432,
+    "tinker": 0.61,
+    "curiosity": 0.61
   },
-  "mood": 0.1,
-  "energy": 0.98,
-  "coins": 28,
+  "mood": 0.31,
+  "energy": 0.76,
+  "coins": 35,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {},
@@ -40,7 +40,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 6,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -53,7 +53,16 @@
     "waves": "small",
     "waves_date": "2026-11-27"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "build_a_sand_castle",
+      "why": "Building things is what I do. Even with sand."
+    },
+    {
+      "move": "play_fetch_on_the_beach",
+      "why": "Diesel loves the beach."
+    }
+  ],
   "lucky": {
     "date": "2026-11-27",
     "used": 0,
@@ -97,6 +106,90 @@
       "k": "note",
       "x": "noted (Tourism in Thailand (Overview)): Among the reasons for the increase in tourism in the 1960s were the stable political atmosphere and the development of Bangkok as a crossroads of international",
       "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Gerald. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "32 in the jar. 468 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "noticed",
+      "x": "The cafe has a new coffee on the board.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Autumn. Days getting shorter.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "noticed",
+      "x": "A neighbour pays him back for a favour. +3 coins.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "The jar's getting heavier. Love that sound.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Miss the banter."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "Early bird gets the bricks.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Off to the beach."
     }
   ],
   "day_start": {
@@ -105,13 +198,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 146,
+  "tick": 153,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T11:43:21.098366+00:00",
+  "updated": "2026-11-27T13:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 54,
-      "queue": 33,
+      "model": 59,
+      "queue": 35,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -120,8 +213,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 2,
-      "queue": 0,
+      "model": 7,
+      "queue": 2,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -136,27 +229,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.698,
-      "tired": 0.04,
-      "bored": 0.54
+      "hunger": 0.208,
+      "tired": 0.18,
+      "bored": 0.75
     },
-    "bond": 0.38,
-    "food": 1,
+    "bond": 0.41,
+    "food": 0,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "rolling in the grass",
+    "doing": "bored, chewing whatever he can find",
     "last_played_tick": 110,
-    "wants": "food",
+    "wants": "play",
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -169,11 +255,18 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
       "My bowl is empty. This is an emergency.",
-      "Sky went grey. Still a good day. Every day is a good day."
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Is it dinner? It feels like dinner.",
+      "Walk? Walk? WALK?",
+      "{owner} smells like toast. Share?",
+      "Nobody is throwing anything. Rude.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "I could chew a boot. Just a little bit.",
+      "{owner} is busy again. Sigh. Big sigh."
     ],
-    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "thought": "Derek is busy again. Sigh. Big sigh.",
     "want_ticks": 0,
-    "last_fed_tick": 95,
+    "last_fed_tick": 150,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -183,11 +276,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Can't wait to see the {site} finished.",
-    "Could eat a whole braai by myself right now.",
-    "Afternoon slump. Could do with a coffee.",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "Every coin counts. Every single one.",
     "Need a proper chat with someone who talks back.",
     "Need a proper job. Something with bolts.",
     "Eyelids weigh a ton.",
@@ -207,9 +295,14 @@
     "Night shift is for owls, not mechanics.",
     "Could sleep standing up like a horse.",
     "Been talking to bolts all day. Time for real people.",
-    "{pup} brought me his lead. Subtle."
+    "{pup} brought me his lead. Subtle.",
+    "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Autumn. Days getting shorter.",
+    "The jar's getting heavier. Love that sound.",
+    "Early bird gets the bricks."
   ],
-  "real_updated": "2026-11-26T16:45:18.048841+00:00",
+  "real_updated": "2026-11-26T17:00:12.283205+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-27@6",
@@ -222,8 +315,8 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 9,
+    "temp": 11,
     "snow": 0,
-    "wet": 0.85
+    "wet": 0.5
   }
 }

@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-11-27T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "Early bird gets the bricks.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "The jar's getting heavier. Love that sound.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Quick trip to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "thought",
+    "text": "Autumn. Days getting shorter.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "noticed",
+    "text": "The cafe has a new coffee on the board.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "32 in the jar. 468 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Meet Gerald. Bit of a sad case. I'll sort her out.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T11:43:21.098366+00:00",
     "time": "6:43 AM",
     "kind": "note",
@@ -1221,132 +1347,6 @@
     "text": "It starts raining plastic raindrops.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "collecting bricks (+3 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Sometimes I just stand here and listen to the town.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "Slow and steady fills the jar.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "thought",
-    "text": "Stars are out. Tiny town, big sky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "collecting bricks (+5 bricks)",
-    "why": "Got plans. Need materials.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Quick trip to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "designing a brand-new building",
-    "why": "Town needs something new. Something mine.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "designed",
-    "text": "designed a new building: 🌅 Sunset Pier, a little wooden pier over a blue plastic pond",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Shame, the cafe guy looked tired today.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
