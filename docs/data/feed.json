@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-11-27T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "ordering a bag of dog food (6 meals in the cupboard)",
+    "why": "Can't run out of food for Diesel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Reading about Tourism in Thailand makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Nothing beats an engine firing first try.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Too much sitting. Where's my toolbox?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "working on his tan (tan 4%)",
+    "why": "Ten minutes in the sun.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Grey old day. Good for graft, bad for a tan.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T15:28:21.098366+00:00",
     "time": "10:28 AM",
     "kind": "note",
@@ -1248,105 +1347,6 @@
     "text": "chatting with the locals",
     "why": "Miss the banter.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Cafe next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "thought",
-    "text": "Ja, no, definitely, maybe.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "taking Diesel for a walk",
-    "why": "Walkies, Diesel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Diesel keeps nudging his bowl. Message received.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "collecting bricks (+5 bricks)",
-    "why": "Town needs bricks. I need bricks.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Brick pit next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "28 in the jar. 472 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "designing a brand-new building",
-    "why": "Sketching a dream.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "designed",
-    "text": "designed a new building: 🌻 Rooftop Garden, a garden on a roof full of sunflowers",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Early bird gets the bricks.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
