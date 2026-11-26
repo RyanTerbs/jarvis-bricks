@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "cafe",
   "asleep": false,
-  "doing": "making a hot chocolate",
-  "thought": "Autumn. Days getting shorter.",
+  "doing": "playing with Diesel",
+  "thought": "Ja, no, definitely, maybe.",
   "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.11,
-    "hunger": 0.345,
-    "social": 0.589,
-    "tinker": 0.555,
-    "curiosity": 0.615
+    "rest": 0.33,
+    "hunger": 0.645,
+    "social": 0.159,
+    "tinker": 0.485,
+    "curiosity": 0.515
   },
-  "mood": 0.36,
-  "energy": 0.89,
-  "coins": 51,
+  "mood": 0.43,
+  "energy": 0.67,
+  "coins": 55,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -26,7 +26,7 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 7
+    "tourism_thailand": 8
   },
   "finished": [],
   "notebook": [
@@ -64,10 +64,15 @@
       "date": "2026-11-28",
       "source": "Tourism in Thailand (Elephant tourism)",
       "note": "Elephant trekking has been an attraction for tourists in Thailand for decades."
+    },
+    {
+      "date": "2026-11-29",
+      "source": "Tourism in Thailand (Sport tourism)",
+      "note": "Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists."
     }
   ],
   "looked_up": [],
-  "hour": 7,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -124,6 +129,108 @@
       "k": "did",
       "x": "making a hot chocolate",
       "why": "Freezing. Mug time."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Who invented the carburettor anyway? Must look that up.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "noticed",
+      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Wet again. The site turns to mud in this.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 8/9)",
+      "why": "Books are a cheap mechanics' school."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Sport tourism)): Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Reading about Tourism in Thailand makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "55 in the jar. 445 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Cafe next."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "noticed",
+      "x": "Diesel steals a sock and runs off down the street.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Ja, no, definitely, maybe.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
     }
   ],
   "day_start": {
@@ -132,13 +239,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 340,
+  "tick": 348,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T12:13:21.098366+00:00",
+  "updated": "2026-11-29T14:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 141,
-      "queue": 81,
+      "model": 146,
+      "queue": 84,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -147,8 +254,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 2,
-      "queue": 2,
+      "model": 7,
+      "queue": 5,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -163,11 +270,11 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.248,
-      "tired": 0.08,
-      "bored": 0.12
+      "hunger": 0.488,
+      "tired": 0.34,
+      "bored": 0
     },
-    "bond": 1,
+    "bond": 1.0,
     "food": 1,
     "tricks": {
       "sit": 3
@@ -176,17 +283,9 @@
       "sit"
     ],
     "doing": "watching Derek work",
-    "last_played_tick": 300,
+    "last_played_tick": 348,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: {owner} throws the ball forever.",
@@ -198,10 +297,18 @@
       "PUDDLE. Must jump in puddle.",
       "Wet dog smell is the best smell.",
       "Life is good. Life is SO good.",
-      "{owner} is the best human in the whole town."
+      "{owner} is the best human in the whole town.",
+      "Sit means treat. I have cracked the code.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Good boy? Me? Yes. Me.",
+      "PUDDLE. Must jump in puddle.",
+      "Wet dog smell is the best smell.",
+      "My tail won't stop. I'm not stopping it.",
+      "Wet dog smell is the best smell.",
+      "Everything smells amazing today."
     ],
-    "thought": "Derek is the best human in the whole town.",
-    "want_ticks": 0,
+    "thought": "YES! That's what I wanted!",
+    "want_ticks": 5,
     "last_fed_tick": 304,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -214,11 +321,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Wet again. The site turns to mud in this.",
-    "Bit of graft now, bit of rest later.",
-    "Little guy needs his dad. Coming, boet.",
-    "Halfway through the day and nothing's on fire. Lekker.",
-    "Need a proper job. Something with bolts.",
     "Too much sitting. Where's my toolbox?",
     "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
     "Me and {pup} against the world.",
@@ -238,9 +340,14 @@
     "Still thinking about that bit on {topic}.",
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "Every town needs a guy who fixes stuff. That's me.",
-    "Autumn. Days getting shorter."
+    "Autumn. Days getting shorter.",
+    "Who invented the carburettor anyway? Must look that up.",
+    "Wet again. The site turns to mud in this.",
+    "Reading about {topic} makes me want to try it.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Ja, no, definitely, maybe."
   ],
-  "real_updated": "2026-11-26T23:15:11.173879+00:00",
+  "real_updated": "2026-11-26T23:30:12.750014+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@6",
@@ -253,7 +360,7 @@
     "seen": [
       "rain"
     ],
-    "temp": 8,
+    "temp": 10,
     "snow": 0,
     "wet": 1
   }

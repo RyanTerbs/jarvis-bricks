@@ -1,5 +1,158 @@
 [
   {
+    "at": "2026-11-29T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Ja, no, definitely, maybe.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Haven't spoken to a human all day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "noticed",
+    "text": "Diesel steals a sock and runs off down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Cafe next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "thought",
+    "text": "55 in the jar. 445 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Reading about Tourism in Thailand makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Sport tourism)): Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 8/9)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "Wet again. The site turns to mud in this.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "noticed",
+    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "Who invented the carburettor anyway? Must look that up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-29T12:13:21.098366+00:00",
     "time": "7:13 AM",
     "kind": "did",
@@ -1193,159 +1346,6 @@
     "kind": "thought",
     "text": "Someone out there needs a brick model bike. I can feel it.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: learn the next trick and get ALL the treats.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Me and Diesel against the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "Overnight the tide came in and washed his sand castle away.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "⛈️ A thunderstorm rolls in off the sea. Lightning over the water.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Playing fetch with Diesel on the beach",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Long day. Bed.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "thought",
-    "text": "42 in the jar. 458 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
-    "why": "Market day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "running his market stall (fair prices, no buyers this time (quiet in this rain))",
-    "why": "Let's see what sells.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Quick trip to the market stall.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "thought",
-    "text": "A clean toolbox is a happy toolbox.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Sex tourism)): Since the Vietnam War, Thailand has gained an international reputation among travellers from many countries as a sex tourism destination.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 4/9)",
-    "why": "Learning something today.",
     "by": "model",
     "ok": true
   }
