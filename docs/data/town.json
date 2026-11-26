@@ -114,6 +114,24 @@
       "designed": "2026-11-26",
       "helps": "rest",
       "activity": "Watering the sunflowers"
+    },
+    "tuk_tuk_garage": {
+      "name": "Tuk-tuk Garage",
+      "bricks": 30,
+      "coins": 0,
+      "work": 5,
+      "place": "tuk_tuk_garage",
+      "desc": "a garage just for fixing tuk-tuks",
+      "look": {
+        "kind": "shop",
+        "color": "#e67e22",
+        "emoji": "🛺",
+        "floors": 1
+      },
+      "custom": true,
+      "designed": "2026-11-27",
+      "helps": "tinker",
+      "activity": "Fixing a tuk-tuk"
     }
   },
   "custom_moves": {
@@ -134,6 +152,16 @@
       ],
       "needs": {
         "rest": -0.175
+      },
+      "mood": 0.06
+    },
+    "use_tuk_tuk_garage": {
+      "label": "fixing a tuk-tuk",
+      "at": [
+        "tuk_tuk_garage"
+      ],
+      "needs": {
+        "tinker": -0.35
       },
       "mood": 0.06
     }
@@ -158,6 +186,10 @@
     {
       "date": "2026-11-26",
       "text": "Finished building the Market stall."
+    },
+    {
+      "date": "2026-11-27",
+      "text": "Designed his own building: 🛺 Tuk-tuk Garage (a garage just for fixing tuk-tuks)."
     }
   ]
 }

@@ -1,23 +1,25 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "ordering a bag of dog food",
-  "thought": "Reading about Tourism in Thailand makes me want to try it.",
-  "feeling": "happy enough",
+  "doing": "running his market stall",
+  "thought": "Shame, the cafe guy looked tired today.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.5,
-    "hunger": 0.405,
-    "social": 0.436,
-    "tinker": 0.435,
-    "curiosity": 0.585
+    "rest": 0.69,
+    "hunger": 0.65,
+    "social": 0.111,
+    "tinker": 0.63,
+    "curiosity": 0.11
   },
-  "mood": 0.43,
-  "energy": 0.5,
+  "mood": 0.38,
+  "energy": 0.31,
   "coins": 34,
   "coins_goal": 500,
   "bricks": 6,
-  "stock": {},
+  "stock": {
+    "postcard": 2
+  },
   "owned": [],
   "sales": {
     "items": 0,
@@ -45,9 +47,9 @@
     }
   ],
   "looked_up": [],
-  "hour": 12,
+  "hour": 13,
   "beach": {
-    "tan": 0.0375,
+    "tan": 0.034,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [
@@ -63,18 +65,13 @@
     "waves": "small",
     "waves_date": "2026-11-27"
   },
-  "queue": [
-    {
-      "move": "feed_the_puppy",
-      "why": "He depends on me."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-27",
     "used": 0,
     "max": 3
   },
-  "designed_on": "2026-11-26",
+  "designed_on": "2026-11-27",
   "plan_today": "Collect bricks and start something new.",
   "today_log": [
     {
@@ -340,6 +337,90 @@
       "k": "did",
       "x": "ordering a bag of dog food (6 meals in the cupboard)",
       "why": "Can't run out of food for Diesel."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "Cloudy. Fine. Engines don't care.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "feeding Diesel",
+      "why": "He depends on me."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "6 bricks in the pile. Could build something lekker with that.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "designed",
+      "x": "designed a new building: 🛺 Tuk-tuk Garage, a garage just for fixing tuk-tuks",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "designing a brand-new building",
+      "why": "Sketching a dream."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "making a postcard of the town (1 in stock)",
+      "why": "Making stock for the stall."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "🌧️ Rain sets in over the island.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "making a postcard of the town (2 in stock)",
+      "why": "Handmade, proper quality."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Shame, the cafe guy looked tired today.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Market stall next."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "running his market stall (fair prices, no buyers this time (quiet in this rain))",
+      "why": "Got stock, need buyers."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
+      "why": "Got stock, need buyers."
     }
   ],
   "day_start": {
@@ -348,13 +429,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 168,
+  "tick": 175,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-27T17:13:21.098366+00:00",
+  "updated": "2026-11-27T18:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 65,
-      "queue": 44,
+      "model": 69,
+      "queue": 47,
       "autopilot": 7,
       "sleeping": 52,
       "tokens_in": 0,
@@ -363,8 +444,8 @@
     },
     "today": {
       "date": "2026-11-27",
-      "model": 13,
-      "queue": 11,
+      "model": 17,
+      "queue": 14,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -379,12 +460,12 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.632,
-      "tired": 0.83,
+      "hunger": 0.024,
+      "tired": 0.27,
       "bored": 0.09
     },
-    "bond": 0.52,
-    "food": 6,
+    "bond": 0.54,
+    "food": 5,
     "tricks": {
       "sit": 1
     },
@@ -393,13 +474,6 @@
     "last_played_tick": 164,
     "wants": null,
     "recent_thoughts": [
-      "{owner} smells like toast. Share?",
-      "Nobody is throwing anything. Rude.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "I could chew a boot. Just a little bit.",
-      "{owner} is busy again. Sigh. Big sigh.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "That engine is loud. I will bark at it. Later.",
       "The waves are chasing me. I'm chasing the waves. Who's winning?",
       "I am a very good boy. Probably.",
       "Sky went grey. Still a good day. Every day is a good day.",
@@ -412,11 +486,18 @@
       "Sky went grey. Still a good day. Every day is a good day.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Grease smell. Best smell after sausages.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
-    "last_fed_tick": 150,
+    "last_fed_tick": 169,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -426,10 +507,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Some days you're the spanner, some days you're the bolt.",
-    "Need a nap. A proper one.",
-    "Brain's in first gear today.",
-    "Haven't had grease on my hands in hours. Feels wrong.",
     "Wet again. The site turns to mud in this.",
     "Autumn. Days getting shorter.",
     "Batteries low. Need a recharge.",
@@ -450,23 +527,28 @@
     "Salt air, warm sand, no bolts. Perfect.",
     "Grey old day. Good for graft, bad for a tan.",
     "Too much sitting. Where's my toolbox?",
-    "Reading about {topic} makes me want to try it."
+    "Reading about {topic} makes me want to try it.",
+    "Cloudy. Fine. Engines don't care.",
+    "{bricks} bricks in the pile. Could build something lekker with that.",
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+    "Shame, the cafe guy looked tired today."
   ],
-  "real_updated": "2026-11-26T17:30:12.130703+00:00",
+  "real_updated": "2026-11-26T17:45:11.757055+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-27@6",
-    "kind": "cloudy",
+    "key": "2026-11-27@13",
+    "kind": "rain",
     "season": "autumn",
-    "base": 11.1,
-    "emoji": "☁️",
-    "name": "cloudy",
+    "base": 11.0,
+    "emoji": "🌧️",
+    "name": "rainy",
     "season_emoji": "🍂",
     "seen": [
-      "cloudy"
+      "cloudy",
+      "rain"
     ],
     "temp": 14,
     "snow": 0,
-    "wet": 0
+    "wet": 1
   }
 }
