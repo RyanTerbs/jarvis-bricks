@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-11-26T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "If it's got moving parts, I can fix it. Mostly.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "noticed",
+    "text": "Diesel falls asleep in the toolbox for a second.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "cuddling Diesel (Diesel's tail goes mad)",
+    "why": "Diesel deserves it.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: nap on the warm brick pile.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Should bring a book to the beach next time.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Diesel loves the beach.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Beach next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "If I don't eat soon I'm eating a brick.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: sleep IN the toolbox. Cosy.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "noticed",
+    "text": "☀️ The clouds clear off. Sunshine over the town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-26T14:58:21.098366+00:00",
     "time": "9:58 AM",
     "kind": "did",
