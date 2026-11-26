@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "building_site",
   "asleep": false,
-  "doing": "collecting bricks",
-  "thought": "Every brick in the Park is one I collected myself. Feels good.",
-  "feeling": "good, ja",
+  "doing": "building",
+  "thought": "Bit of graft now, bit of rest later.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.68,
-    "hunger": 0.07,
-    "social": 0.363,
-    "tinker": 0.615,
-    "curiosity": 0
+    "rest": 0.63,
+    "hunger": 0.375,
+    "social": 0.52,
+    "tinker": 0.46,
+    "curiosity": 0.15
   },
-  "mood": 0.38,
-  "energy": 0.32,
+  "mood": 0.37,
+  "energy": 0.37,
   "coins": 48,
   "coins_goal": 500,
-  "bricks": 3,
+  "bricks": 9,
   "stock": {
     "postcard": 4
   },
@@ -62,7 +62,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 14,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -75,15 +75,10 @@
     "waves": "good",
     "waves_date": "2026-11-28"
   },
-  "queue": [
-    {
-      "move": "hit_the_lucky_block",
-      "why": "Jump, hit, hope."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-28",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -466,22 +461,88 @@
       "k": "did",
       "x": "collecting bricks (+2 bricks)",
       "why": "Brick by brick, hey."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Rain on the roof. Lekker sound, rubbish for building.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "building (the rain slowed the work, Park still 0/3)",
+      "why": "Let's get this Park up."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Wet again. The site turns to mud in this.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Bit of graft now, bit of rest later.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "building (Park 1/3)",
+      "why": null
     }
   ],
   "day_start": {
     "coins": 42,
     "bricks": 11,
-    "got": 12,
+    "got": 18,
     "used": 20
   },
-  "tick": 272,
+  "tick": 279,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T19:13:21.098366+00:00",
+  "updated": "2026-11-28T20:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 114,
-      "queue": 70,
-      "autopilot": 10,
+      "model": 118,
+      "queue": 72,
+      "autopilot": 11,
       "sleeping": 78,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -489,9 +550,9 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 19,
-      "queue": 13,
-      "autopilot": 1,
+      "model": 23,
+      "queue": 15,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -503,11 +564,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.586,
-      "tired": 0.59,
-      "bored": 0.21
+      "hunger": 0.692,
+      "tired": 0.33,
+      "bored": 0.3
     },
     "bond": 0.9,
     "food": 3,
@@ -517,17 +578,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "watching Derek work",
     "last_played_tick": 261,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "The sky is barking at me. I don't like it.",
-      "Stay close, {owner}. Closer.",
-      "BOOM. Nope. Under the bed.",
-      "BOOM. Nope. Under the bed.",
-      "Everything smells amazing today.",
-      "Stay close, {owner}. Closer.",
-      "Stay close, {owner}. Closer.",
       "The waves are chasing me. I'm chasing the waves. Who's winning?",
       "{owner} is the best human in the whole town.",
       "Following {owner}. Best job in the world.",
@@ -540,9 +594,16 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "My bowl is empty. This is an emergency.",
+      "{owner} smells like toast. Share?",
+      "Good boy? Me? Yes. Me."
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
+    "thought": "Good boy? Me? Yes. Me.",
     "want_ticks": 0,
     "last_fed_tick": 249,
     "recent_ideas": [
@@ -556,10 +617,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Need a lie down before I drop a spanner on my foot.",
-    "Lamps are coming on. Town looks proper tonight.",
-    "{pup} is yawning, so I'm yawning.",
-    "{pup} thinks every puddle is a personal invitation.",
     "A clean toolbox is a happy toolbox.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Me and {pup} against the world.",
@@ -580,9 +637,13 @@
     "Thai street food. That's the dream right there.",
     "Proud of {pup}. Little guy's growing up.",
     "When the {site} is done, I'm celebrating with noodles.",
-    "Every brick in the {site} is one I collected myself. Feels good."
+    "Every brick in the {site} is one I collected myself. Feels good.",
+    "Rain on the roof. Lekker sound, rubbish for building.",
+    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
+    "Wet again. The site turns to mud in this.",
+    "Bit of graft now, bit of rest later."
   ],
-  "real_updated": "2026-11-26T21:00:21.341806+00:00",
+  "real_updated": "2026-11-26T21:15:11.083382+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@13",

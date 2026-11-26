@@ -82,7 +82,7 @@
     "name": "Park",
     "lot": 5,
     "work": 3,
-    "done": 0,
+    "done": 1,
     "started": "2026-11-28",
     "look": {
       "kind": "park"
