@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-11-26",
+    "day": "Thu 26 Nov",
+    "title": "Finished building the Market stall",
+    "text": "Quick one tonight. Spent most of today building, cooking a proper meal and chatting with the locals. Finished building the Market stall! Stood back and had a proper look at it. Lekker. Drew up plans for something new: 🌻 Rooftop Garden, a garden on a roof full of sunflowers. Did some reading on Tourism in Thailand. Interesting stuff. Wet day. Good for the garage, bad for everything else. Beach time: collecting shells (+3 shells (3 in the jar)). Diesel was a bit restless. Must give him more time tomorrow. Pretty sure Diesel was planning to teach the seagulls some manners. Cheeky. Coins didn't move. Collected 8 bricks, used 20 on building. Also: A kid drops a bolt and asks I what it's for. Thailand feels closer today. 470 to go. Tomorrow again.",
+    "tomorrow": "Collect bricks and start something new.",
+    "by": "template",
+    "coins": 30,
+    "bricks": 6,
+    "coins_change": 0,
+    "bricks_change": -12,
+    "built": [
+      "finished building the Market stall!"
+    ]
+  },
+  {
     "date": "2026-11-25",
     "day": "Wed 25 Nov",
     "title": "Training Diesel",

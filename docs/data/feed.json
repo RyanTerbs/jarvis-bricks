@@ -1,5 +1,32 @@
 [
   {
+    "at": "2026-11-27T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Finished building the Market stall",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Lights out, Diesel.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-27T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-11-27T03:58:21.098366+00:00",
     "time": "10:58 PM",
     "kind": "did",
@@ -1318,33 +1345,6 @@
     "time": "8:13 PM",
     "kind": "thought",
     "text": "Why is it always the 10mm that goes missing?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-26T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "thought",
-    "text": "Food first. Then I'm useful again.",
     "why": null,
     "by": "model",
     "ok": true
