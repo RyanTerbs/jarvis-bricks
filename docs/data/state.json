@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "garage",
   "asleep": false,
-  "doing": "walking to the brick pit",
-  "thought": "If it's got moving parts, I can fix it. Mostly.",
-  "feeling": "buzzing",
+  "doing": "having a rest",
+  "thought": "One more yawn and I'm out.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.115,
-    "social": 0.273,
-    "tinker": 0.58,
-    "curiosity": 0.3
+    "rest": 0.53,
+    "hunger": 0.45,
+    "social": 0.424,
+    "tinker": 0.495,
+    "curiosity": 0.175
   },
-  "mood": 0.48,
-  "energy": 0.43,
-  "coins": 30,
+  "mood": 0.47,
+  "energy": 0.47,
+  "coins": 34,
   "coins_goal": 500,
-  "bricks": 23,
+  "bricks": 6,
   "stock": {},
   "owned": [],
   "sales": {
@@ -27,7 +27,7 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -40,19 +40,10 @@
     "waves": "flat",
     "waves_date": "2026-11-26"
   },
-  "queue": [
-    {
-      "move": "collect_bricks",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "move": "hit_the_lucky_block",
-      "why": "Jump, hit, hope."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-26",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-11-26",
@@ -309,21 +300,117 @@
       "k": "did",
       "x": "walking to the brick pit",
       "why": "Off to the brick pit."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "collecting bricks (+3 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "thought",
+      "x": "If I finish this, I'm getting a snack. Deal.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "Weather like this, Thailand feels close.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Old Rusty. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Blue sky, no excuses.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "🌧️ It starts raining. Proper drops this time.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Diesel keeps looking at me like it's walk time.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Puddles are free fun."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Even my spanner looks tired.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "starting a new build: Market stall (paid 20 bricks)",
+      "why": "Town's getting bigger."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "One more yawn and I'm out.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
     }
   ],
   "day_start": {
     "coins": 30,
     "bricks": 18,
-    "got": 5,
-    "used": 0
+    "got": 8,
+    "used": 20
   },
-  "tick": 69,
+  "tick": 78,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T16:28:21.098366+00:00",
+  "updated": "2026-11-26T18:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 23,
-      "queue": 17,
+      "model": 29,
+      "queue": 20,
       "autopilot": 3,
       "sleeping": 26,
       "tokens_in": 0,
@@ -332,8 +419,8 @@
     },
     "today": {
       "date": "2026-11-26",
-      "model": 12,
-      "queue": 9,
+      "model": 18,
+      "queue": 12,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -346,31 +433,22 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.18,
-      "tired": 0.72,
-      "bored": 0.03
+      "hunger": 0.398,
+      "tired": 0.8,
+      "bored": 0
     },
-    "bond": 0.3,
+    "bond": 0.33,
     "food": 2,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "sniffing everything",
-    "last_played_tick": 65,
-    "wants": "cuddle",
+    "doing": "napping",
+    "last_played_tick": 76,
+    "wants": null,
     "recent_thoughts": [
-      "Sniffed a lamp post. Interesting news.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "The ! block knows something. I will watch it.",
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "{owner} is making clanky noises. I will supervise.",
-      "Nobody is throwing anything. Rude.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "Tail check: still there. Good.",
-      "I am a very good boy. Probably.",
       "Is that a squirrel? It's a bolt. Still exciting.",
       "The ! block knows something. I will watch it.",
       "Tail check: still there. Good.",
@@ -381,9 +459,18 @@
       "The waves are chasing me. I'm chasing the waves. Who's winning?",
       "Warm spot on the floor. Mine now.",
       "Warm spot on the floor. Mine now.",
-      "Yawn. Big yawn. Biggest yawn."
+      "Yawn. Big yawn. Biggest yawn.",
+      "Sun on my belly. Perfect.",
+      "Must... stay... awake... for treats.",
+      "Sun on my belly. Perfect.",
+      "Warm spot on the floor. Mine now.",
+      "Nap spot: located. Engaging.",
+      "{owner} is making clanky noises. I will supervise.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Yawn. Big yawn. Biggest yawn.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 63,
     "recent_ideas": [
@@ -394,9 +481,6 @@
     "idea": "nap on the warm brick pile."
   },
   "recent_thoughts": [
-    "The jar's getting heavier. Love that sound.",
-    "Food first. Then I'm useful again.",
-    "Why is it always the 10mm that goes missing?",
     "Should I name the street? {me} Street. Ja, why not.",
     "Practising my Thai: sawadee khrap. Nailed it. Probably.",
     "Shame, the cafe guy looked tired today.",
@@ -415,23 +499,30 @@
     "If I don't eat soon I'm eating a brick.",
     "Should bring a book to the beach next time.",
     "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "If it's got moving parts, I can fix it. Mostly."
+    "If it's got moving parts, I can fix it. Mostly.",
+    "If I finish this, I'm getting a snack. Deal.",
+    "Weather like this, Thailand feels close.",
+    "Blue sky, no excuses.",
+    "{pup} keeps looking at me like it's walk time.",
+    "Even my spanner looks tired.",
+    "One more yawn and I'm out."
   ],
-  "real_updated": "2026-11-26T14:11:50.477236+00:00",
+  "real_updated": "2026-11-26T14:30:11.876896+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-26@6",
-    "kind": "sunny",
+    "key": "2026-11-26@13",
+    "kind": "rain",
     "season": "autumn",
-    "base": 15.9,
-    "emoji": "☀️",
-    "name": "sunny",
+    "base": 13.7,
+    "emoji": "🌧️",
+    "name": "rainy",
     "season_emoji": "🍂",
     "seen": [
-      "sunny"
+      "sunny",
+      "rain"
     ],
-    "temp": 18,
+    "temp": 17,
     "snow": 0,
-    "wet": 0
+    "wet": 1
   }
 }

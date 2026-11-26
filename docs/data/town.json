@@ -63,7 +63,18 @@
       "built": "2026-11-25"
     }
   ],
-  "site": null,
+  "site": {
+    "bp": "market_stall",
+    "name": "Market stall",
+    "lot": 4,
+    "work": 3,
+    "done": 0,
+    "started": "2026-11-26",
+    "look": {
+      "kind": "stall",
+      "color": "#2f6fb3"
+    }
+  },
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
