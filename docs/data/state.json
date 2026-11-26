@@ -1,20 +1,20 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Sometimes I just stand here and listen to the town.",
-  "feeling": "sharp-sharp",
+  "asleep": false,
+  "doing": "designing a brand-new building",
+  "thought": "Early bird gets the bricks.",
+  "feeling": "okay-ish",
   "needs": {
-    "rest": 0,
-    "hunger": 0.57,
-    "social": 0.697,
-    "tinker": 0.3,
-    "curiosity": 0.09
+    "rest": 0.12,
+    "hunger": 0.235,
+    "social": 0.509,
+    "tinker": 0.47,
+    "curiosity": 0
   },
-  "mood": 0.28,
-  "energy": 1,
-  "coins": 30,
+  "mood": 0.35,
+  "energy": 0.88,
+  "coins": 28,
   "coins_goal": 500,
   "bricks": 18,
   "stock": {},
@@ -27,7 +27,7 @@
   "finished": [],
   "notebook": [],
   "looked_up": [],
-  "hour": 1,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -46,34 +46,101 @@
     "used": 0,
     "max": 3
   },
-  "designed_on": "2026-11-25",
+  "designed_on": "2026-11-26",
   "plan_today": "Fix a few cars, fill the jar.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Miss the cafe gossip.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Miss the banter."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "Somewhere there's a beach in Krabi with my name on it.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Early bird gets the bricks.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "designed",
+      "x": "designed a new building: 🌻 Rooftop Garden, a garden on a roof full of sunflowers",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "designing a brand-new building",
+      "why": "Sketching a dream."
+    }
+  ],
   "day_start": {
     "coins": 30,
     "bricks": 18,
     "got": 0,
     "used": 0
   },
-  "tick": 29,
+  "tick": 53,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-26T06:28:21.098366+00:00",
+  "updated": "2026-11-26T12:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 11,
-      "queue": 8,
-      "autopilot": 2,
-      "sleeping": 8,
+      "model": 14,
+      "queue": 10,
+      "autopilot": 3,
+      "sleeping": 26,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-11-26",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 6,
+      "model": 3,
+      "queue": 2,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -84,11 +151,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.15,
-      "tired": 0,
-      "bored": 0.39
+      "hunger": 0.376,
+      "tired": 0.1,
+      "bored": 0.54
     },
     "bond": 0.18,
     "food": 3,
@@ -96,32 +163,32 @@
       "sit": 1
     },
     "learned": [],
-    "doing": "asleep at the foot of the bed",
+    "doing": "sniffing everything",
     "last_played_tick": 10,
     "wants": null,
     "recent_thoughts": [
-      "My bowl is empty. This is an emergency.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Zzz. Squirrel. Zzz.",
-      "It's dark. I will guard the house. From the sofa.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
       "The cafe smells like pies. Noted.",
-      "Night noises. Probably nothing. Probably.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Sniffed a lamp post. Interesting news.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "The ! block knows something. I will watch it.",
+      "Is that a squirrel? It's a bolt. Still exciting."
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
+    "thought": "Is that a squirrel? It's a bolt. Still exciting.",
     "want_ticks": 0,
     "last_fed_tick": 11
   },
@@ -135,8 +202,11 @@
     "Picture it: a winding road, a good engine, no rush.",
     "Stars are out. Tiny town, big sky.",
     "Slow and steady fills the jar.",
-    "Sometimes I just stand here and listen to the town."
+    "Sometimes I just stand here and listen to the town.",
+    "Miss the cafe gossip.",
+    "Somewhere there's a beach in Krabi with my name on it.",
+    "Early bird gets the bricks."
   ],
-  "real_updated": "2026-11-26T07:53:11.806181+00:00",
+  "real_updated": "2026-11-26T13:40:30.192814+00:00",
   "speed": 8
 }

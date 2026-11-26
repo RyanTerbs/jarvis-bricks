@@ -82,6 +82,24 @@
       "designed": "2026-11-25",
       "helps": "rest",
       "activity": "Watching the sunset"
+    },
+    "rooftop_garden": {
+      "name": "Rooftop Garden",
+      "bricks": 30,
+      "coins": 0,
+      "work": 5,
+      "place": "rooftop_garden",
+      "desc": "a garden on a roof full of sunflowers",
+      "look": {
+        "kind": "shop",
+        "color": "#4e9a3a",
+        "emoji": "🌻",
+        "floors": 1
+      },
+      "custom": true,
+      "designed": "2026-11-26",
+      "helps": "rest",
+      "activity": "Watering the sunflowers"
     }
   },
   "custom_moves": {
@@ -89,6 +107,16 @@
       "label": "watching the sunset",
       "at": [
         "sunset_pier"
+      ],
+      "needs": {
+        "rest": -0.175
+      },
+      "mood": 0.06
+    },
+    "use_rooftop_garden": {
+      "label": "watering the sunflowers",
+      "at": [
+        "rooftop_garden"
       ],
       "needs": {
         "rest": -0.175
@@ -108,6 +136,10 @@
     {
       "date": "2026-11-25",
       "text": "Designed his own building: 🌅 Sunset Pier (a little wooden pier over a blue plastic pond)."
+    },
+    {
+      "date": "2026-11-26",
+      "text": "Designed his own building: 🌻 Rooftop Garden (a garden on a roof full of sunflowers)."
     }
   ]
 }

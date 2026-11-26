@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-11-26T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "designing a brand-new building",
+    "why": "Sketching a dream.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "designed",
+    "text": "designed a new building: 🌻 Rooftop Garden, a garden on a roof full of sunflowers",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "Early bird gets the bricks.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Somewhere there's a beach in Krabi with my name on it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "noticed",
+    "text": "A kid drops a bolt and asks Derek what it's for.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Quick trip to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Miss the cafe gossip.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-26T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-11-26T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
