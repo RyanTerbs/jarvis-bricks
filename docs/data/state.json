@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the garage",
-  "thought": "Someone out there needs a brick model bike. I can feel it.",
-  "feeling": "fed up",
+  "doing": "feeding Diesel",
+  "thought": "Sun's up, Diesel's up, so I'm up.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.05,
-    "hunger": 0.28,
-    "social": 0.232,
-    "tinker": 0.915,
-    "curiosity": 0.645
+    "rest": 0.28,
+    "hunger": 0.565,
+    "social": 0.358,
+    "tinker": 0.46,
+    "curiosity": 0.52
   },
-  "mood": -0.07,
-  "energy": 0.95,
-  "coins": 40,
+  "mood": 0.33,
+  "energy": 0.72,
+  "coins": 48,
   "coins_goal": 500,
   "bricks": 11,
   "stock": {
@@ -26,7 +26,7 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 4
+    "tourism_thailand": 5
   },
   "finished": [],
   "notebook": [
@@ -49,12 +49,17 @@
       "date": "2026-11-27",
       "source": "Tourism in Thailand (Sex tourism)",
       "note": "Since the Vietnam War, Thailand has gained an international reputation among travellers from many countries as a sex tourism destination."
+    },
+    {
+      "date": "2026-11-28",
+      "source": "Tourism in Thailand (Medical tourism)",
+      "note": "As of 2019, with 64 accredited hospitals, Thailand is currently among the top 10 medical tourism destinations in the world."
     }
   ],
   "looked_up": [],
-  "hour": 6,
+  "hour": 8,
   "beach": {
-    "tan": 0.0005,
+    "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
@@ -65,12 +70,7 @@
     "waves": "good",
     "waves_date": "2026-11-28"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "This one's called Sputnik. She'll purr by lunch."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-28",
     "used": 0,
@@ -120,6 +120,78 @@
       "k": "did",
       "x": "walking to the garage",
       "why": "Heading to the garage."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "This one's called Sputnik. She'll purr by lunch."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Storm's here. Everyone indoors, Diesel under the bed.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, chapter 5/9)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Medical tourism)): As of 2019, with 64 accredited hospitals, Thailand is currently among the top 10 medical tourism destinations in the world.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Thunder like a V-twin with no silencer.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet The Beast. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "noticed",
+      "x": "The cafe has a new coffee on the board.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Sun's up, Diesel's up, so I'm up.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
     }
   ],
   "day_start": {
@@ -128,13 +200,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 242,
+  "tick": 249,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-28T11:43:21.098366+00:00",
+  "updated": "2026-11-28T13:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 97,
-      "queue": 57,
+      "model": 100,
+      "queue": 61,
       "autopilot": 10,
       "sleeping": 78,
       "tokens_in": 0,
@@ -143,8 +215,8 @@
     },
     "today": {
       "date": "2026-11-28",
-      "model": 2,
-      "queue": 0,
+      "model": 5,
+      "queue": 4,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -159,27 +231,20 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.438,
-      "tired": 0.04,
-      "bored": 0.3
+      "hunger": 0,
+      "tired": 0.18,
+      "bored": 0.51
     },
-    "bond": 0.71,
-    "food": 4,
+    "bond": 0.74,
+    "food": 3,
     "tricks": {
       "sit": 1
     },
     "learned": [],
-    "doing": "trotting along behind Derek",
+    "doing": "rolling in the grass",
     "last_played_tick": 205,
-    "wants": "cuddle",
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
@@ -192,11 +257,18 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
       "The sky is barking at me. I don't like it.",
-      "BOOM. Nope. Under the bed."
+      "BOOM. Nope. Under the bed.",
+      "Stay close, {owner}. Closer.",
+      "BOOM. Nope. Under the bed.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Good boy? Me? Yes. Me.",
+      "Stay close, {owner}. Closer.",
+      "Food? Food. FOOD.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "BOOM. Nope. Under the bed.",
+    "thought": "Best. Human. Ever.",
     "want_ticks": 0,
-    "last_fed_tick": 204,
+    "last_fed_tick": 249,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -207,9 +279,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Plastic rain, plastic trees, real problems.",
-    "Knackered. Eyes keep closing on their own.",
-    "Rain on the roof. Lekker sound, rubbish for building.",
     "Still thinking about that bit on {topic}.",
     "Hot one today. The beach is calling.",
     "Sometimes I just stand here and listen to the town.",
@@ -231,9 +300,12 @@
     "A clean toolbox is a happy toolbox.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Me and {pup} against the world.",
-    "Someone out there needs a brick model bike. I can feel it."
+    "Someone out there needs a brick model bike. I can feel it.",
+    "Storm's here. Everyone indoors, {pup} under the bed.",
+    "Thunder like a V-twin with no silencer.",
+    "Sun's up, {pup}'s up, so I'm up."
   ],
-  "real_updated": "2026-11-26T20:00:14.532196+00:00",
+  "real_updated": "2026-11-26T20:15:10.925858+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-28@6",
@@ -246,7 +318,7 @@
     "seen": [
       "storm"
     ],
-    "temp": 12,
+    "temp": 14,
     "snow": 0,
     "wet": 1
   }

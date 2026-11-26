@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-11-28T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Diesel first, always.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Sun's up, Diesel's up, so I'm up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "noticed",
+    "text": "The cafe has a new coffee on the board.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Meet The Beast. Bit of a sad case. I'll sort her out.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "Thunder like a V-twin with no silencer.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Medical tourism)): As of 2019, with 64 accredited hospitals, Thailand is currently among the top 10 medical tourism destinations in the world.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, chapter 5/9)",
+    "why": "Where was I? Ah, ja.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "thought",
+    "text": "Storm's here. Everyone indoors, Diesel under the bed.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-28T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "This one's called Sputnik. She'll purr by lunch.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-28T11:43:21.098366+00:00",
     "time": "6:43 AM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "woke up",
     "why": null,
     "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "☁️ A grey lid of cloud rolls in.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Finished building the Market stall",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Lights out, Diesel.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "building (finished!)",
-    "why": "One more course of bricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "built",
-    "text": "finished building the Market stall!",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Night shift is for owls, not mechanics.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "When the Market stall is done, I'm celebrating with noodles.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-27T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "building (Market stall 2/3)",
-    "why": "One more course of bricks.",
-    "by": "queue",
     "ok": true
   }
 ]
