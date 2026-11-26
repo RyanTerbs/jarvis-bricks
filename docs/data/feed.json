@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-11-29T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Rain on the roof. Lekker sound, rubbish for building.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "collecting shells (+1 shells (7 in the jar))",
+    "why": "Shells for the jar on the shelf.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "thought",
+    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "Proud of Diesel. Little guy's growing up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "noticed",
+    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-29T14:13:21.098366+00:00",
     "time": "9:13 AM",
     "kind": "did",
@@ -1246,105 +1345,6 @@
     "time": "8:13 AM",
     "kind": "thought",
     "text": "Sun's up, Diesel's up, so I'm up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "noticed",
-    "text": "The cafe has a new coffee on the board.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet The Beast. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Thunder like a V-twin with no silencer.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Medical tourism)): As of 2019, with 64 accredited hospitals, Thailand is currently among the top 10 medical tourism destinations in the world.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 5/9)",
-    "why": "Where was I? Ah, ja.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Storm's here. Everyone indoors, Diesel under the bed.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "This one's called Sputnik. She'll purr by lunch.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "thought",
-    "text": "Someone out there needs a brick model bike. I can feel it.",
     "why": null,
     "by": "model",
     "ok": true

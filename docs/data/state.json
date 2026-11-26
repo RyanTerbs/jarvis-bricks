@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "home",
   "asleep": false,
-  "doing": "playing with Diesel",
-  "thought": "Ja, no, definitely, maybe.",
-  "feeling": "sharp-sharp",
+  "doing": "feeding Diesel",
+  "thought": "Rain on the roof. Lekker sound, rubbish for building.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.33,
-    "hunger": 0.645,
-    "social": 0.159,
-    "tinker": 0.485,
-    "curiosity": 0.515
+    "rest": 0.5,
+    "hunger": 0.19,
+    "social": 0.164,
+    "tinker": 0.68,
+    "curiosity": 0.54
   },
-  "mood": 0.43,
-  "energy": 0.67,
-  "coins": 55,
+  "mood": 0.42,
+  "energy": 0.5,
+  "coins": 53,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -72,14 +72,14 @@
     }
   ],
   "looked_up": [],
-  "hour": 9,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 6,
+    "shells": 7,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
@@ -231,6 +231,72 @@
       "k": "did",
       "x": "playing with Diesel (Diesel's tail goes mad)",
       "why": "Play time!"
+    },
+    {
+      "t": "9:28 AM",
+      "k": "noticed",
+      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Proud of Diesel. Little guy's growing up.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "thought",
+      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Off to the beach."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach",
+      "why": "Let him run."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "collecting shells (+1 shells (7 in the jar))",
+      "why": "Shells for the jar on the shelf."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "Rain on the roof. Lekker sound, rubbish for building.",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
     }
   ],
   "day_start": {
@@ -239,13 +305,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 348,
+  "tick": 355,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T14:13:21.098366+00:00",
+  "updated": "2026-11-29T15:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 146,
-      "queue": 84,
+      "model": 149,
+      "queue": 88,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -254,8 +320,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 7,
-      "queue": 5,
+      "model": 10,
+      "queue": 9,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -270,29 +336,22 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.488,
-      "tired": 0.34,
-      "bored": 0
+      "hunger": 0,
+      "tired": 0.63,
+      "bored": 0.09
     },
     "bond": 1.0,
-    "food": 1,
+    "food": 0,
     "tricks": {
       "sit": 3
     },
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
-    "last_played_tick": 348,
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 352,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "PUDDLE. Must jump in puddle.",
       "Wet dog smell is the best smell.",
@@ -305,11 +364,18 @@
       "Wet dog smell is the best smell.",
       "My tail won't stop. I'm not stopping it.",
       "Wet dog smell is the best smell.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Water falling from the sky. Again. Suspicious.",
+      "PUDDLE. Must jump in puddle.",
+      "I know tricks now. I am a very clever boy.",
+      "Food? Food. FOOD.",
+      "Is it dinner? It feels like dinner.",
+      "SAND! Wet sand! Best day ever!",
+      "{owner} says a word, I do a thing, treat appears. Magic."
     ],
-    "thought": "YES! That's what I wanted!",
-    "want_ticks": 5,
-    "last_fed_tick": 304,
+    "thought": "Best. Human. Ever.",
+    "want_ticks": 0,
+    "last_fed_tick": 355,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -321,9 +387,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Too much sitting. Where's my toolbox?",
-    "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "Me and {pup} against the world.",
     "{pup} follows me everywhere. Proper little shadow.",
     "Proper rain. Good day for the garage.",
     "Brain's in first gear today.",
@@ -345,9 +408,12 @@
     "Wet again. The site turns to mud in this.",
     "Reading about {topic} makes me want to try it.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Ja, no, definitely, maybe."
+    "Ja, no, definitely, maybe.",
+    "Proud of {pup}. Little guy's growing up.",
+    "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "Rain on the roof. Lekker sound, rubbish for building."
   ],
-  "real_updated": "2026-11-26T23:30:12.750014+00:00",
+  "real_updated": "2026-11-26T23:45:11.902432+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@6",
@@ -360,7 +426,7 @@
     "seen": [
       "rain"
     ],
-    "temp": 10,
+    "temp": 12,
     "snow": 0,
     "wet": 1
   }
