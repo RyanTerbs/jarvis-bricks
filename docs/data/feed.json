@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-05T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "building (Library 5/6)",
+    "why": "One more course of bricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "thought",
+    "text": "Reading about Bangkok makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "Wonder how they build the roads up in the Thai mountains.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "thought",
+    "text": "Weather like this, Thailand feels close.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "Picture it: a winding road, a good engine, no rush.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "noticed",
+    "text": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Diesel follows me everywhere. Proper little shadow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "building (Library 4/6)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T16:28:21.098366+00:00",
     "time": "11:28 AM",
     "kind": "did",
@@ -1221,132 +1347,6 @@
     "text": "Should I name the street? Derek Street. Ja, why not.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Little guy's hungry.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "ordering a bag of dog food (6 meals in the cupboard)",
-    "why": "Stocking up for the little guy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "thought",
-    "text": "Looked up Bangkok on the old laptop. Lekker.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Shame, the cafe guy looked tired today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "ordering a wheelbarrow from the catalogue",
-    "why": "Worth the coins. I think.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "bought",
-    "text": "bought a wheelbarrow: +2 bricks every time he collects",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "thought",
-    "text": "Toast. Noodles. Anything.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Miss the banter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Quick trip to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Every brick in the Rooftop Garden is one I collected myself. Feels good.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "restoring Little Thunder: strip + clean (strip + clean 2/6)",
-    "why": "Two hours on Little Thunder. Best part of the day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "restoring Little Thunder: strip + clean (strip + clean 1/6)",
-    "why": "Two hours on Little Thunder. Best part of the day.",
-    "by": "queue",
     "ok": true
   }
 ]

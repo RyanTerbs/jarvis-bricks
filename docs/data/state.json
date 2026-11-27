@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "building_site",
   "asleep": false,
-  "doing": "walking to the building site",
-  "thought": "Don't spend it. Don't spend it. Don't spend it.",
-  "feeling": "happy enough",
+  "doing": "building",
+  "thought": "Reading about Bangkok makes me want to try it.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.6,
-    "hunger": 0.665,
-    "social": 0.205,
-    "tinker": 0.7,
-    "curiosity": 0.51
+    "rest": 0.66,
+    "hunger": 0.27,
+    "social": 0.31,
+    "tinker": 0.495,
+    "curiosity": 0.685
   },
-  "mood": 0.39,
-  "energy": 0.4,
-  "coins": 18,
+  "mood": 0.38,
+  "energy": 0.34,
+  "coins": 16,
   "coins_goal": 500,
   "bricks": 48,
   "stock": {
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -166,12 +166,7 @@
     "waves": "good",
     "waves_date": "2026-12-05"
   },
-  "queue": [
-    {
-      "move": "work_on_site",
-      "why": "Building is just fixing, but bigger."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-05",
     "used": 1,
@@ -383,6 +378,90 @@
       "k": "did",
       "x": "walking to the building site",
       "why": "Heading to the building site."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "building (Library 4/6)",
+      "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Diesel follows me everywhere. Proper little shadow.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "noticed",
+      "x": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "Picture it: a winding road, a good engine, no rush.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "Weather like this, Thailand feels close.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Wonder how they build the roads up in the Thai mountains.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Reading about Bangkok makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "building (Library 5/6)",
+      "why": "One more course of bricks."
     }
   ],
   "day_start": {
@@ -391,13 +470,13 @@
     "got": 26,
     "used": 0
   },
-  "tick": 933,
+  "tick": 940,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T16:28:21.098366+00:00",
+  "updated": "2026-12-05T18:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 403,
-      "queue": 236,
+      "model": 408,
+      "queue": 238,
       "autopilot": 30,
       "sleeping": 264,
       "tokens_in": 0,
@@ -406,8 +485,8 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 11,
-      "queue": 9,
+      "model": 16,
+      "queue": 11,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -422,9 +501,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.52,
-      "tired": 0.67,
-      "bored": 0.09
+      "hunger": 0.73,
+      "tired": 0.81,
+      "bored": 0.3
     },
     "bond": 1.0,
     "food": 3,
@@ -435,17 +514,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
+    "doing": "hungry, staring at Derek",
     "last_played_tick": 930,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Sun on my belly. Perfect.",
-      "My bowl is empty. This is an emergency.",
-      "{owner} is making clanky noises. I will supervise.",
-      "{owner} is the best human in the whole town.",
-      "Everything smells amazing today.",
-      "Cold white stuff! I must eat all of it.",
-      "Life is good. Life is SO good.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Who left this brick here? I'll carry it somewhere else.",
       "Why are my paws cold? Doesn't matter. SNOW!",
@@ -458,10 +530,17 @@
       "Tail check: still there. Good.",
       "Sun on my belly. Perfect.",
       "Warm spot on the floor. Mine now.",
-      "I know tricks now. I am a very clever boy."
+      "I know tricks now. I am a very clever boy.",
+      "Warm spot on the floor. Mine now.",
+      "Sun on my belly. Perfect.",
+      "Following {owner}. Best job in the world.",
+      "Warm spot on the floor. Mine now.",
+      "Sit means treat. I have cracked the code.",
+      "Warm spot on the floor. Mine now.",
+      "Yawn. Big yawn. Biggest yawn."
     ],
-    "thought": "I know tricks now. I am a very clever boy.",
-    "want_ticks": 4,
+    "thought": "Yawn. Big yawn. Biggest yawn.",
+    "want_ticks": 0,
     "last_fed_tick": 919,
     "recent_ideas": [
       "make friends with the crab. Or eat it. Undecided.",
@@ -476,11 +555,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "Running on coffee and hope.",
-    "Cold enough to freeze the carb on a scooter.",
-    "Batteries low. Need a recharge.",
-    "Brick town under snow looks like a Christmas card.",
-    "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "The jar's getting heavier. Love that sound.",
     "One more job, then feet up.",
     "Still thinking about that bit on {topic}.",
@@ -500,25 +574,30 @@
     "Found a 1980s coin in {bike}'s toolbox. Lucky.",
     "First job: find my 10mm socket. Again.",
     "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "Don't spend it. Don't spend it. Don't spend it."
+    "Don't spend it. Don't spend it. Don't spend it.",
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Picture it: a winding road, a good engine, no rush.",
+    "Weather like this, Thailand feels close.",
+    "Wonder how they build the roads up in the Thai mountains.",
+    "Reading about {topic} makes me want to try it."
   ],
-  "real_updated": "2026-11-27T19:00:12.145616+00:00",
+  "real_updated": "2026-11-27T19:15:10.242979+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-05@6",
+    "key": "2026-12-05@13",
     "kind": "sunny",
     "season": "winter",
-    "base": 9.4,
+    "base": 7.3,
     "emoji": "☀️",
     "name": "sunny",
     "season_emoji": "❄️",
     "seen": [
       "sunny"
     ],
-    "temp": 12,
-    "snow": 0.12,
+    "temp": 10,
+    "snow": 0,
     "wet": 0,
-    "snowman": 3
+    "snowman": 0
   },
   "book_boxes": [
     1
