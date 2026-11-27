@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-11-30T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "Slept like a log. Ready to graft.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Heading to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "Funny what you learn. Dog training, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "thought",
+    "text": "Coffee first. Then the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Mr Wobbles is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "thought",
+    "text": "Ja, no, definitely, maybe.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "note",
+    "text": "noted (Dog training (Definition)): Dog training is the act of teaching a dog particular skills or behaviors.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "reading a book (Dog training, chapter 2/8)",
+    "why": "Where was I? Ah, ja.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "diary",
@@ -1219,132 +1345,6 @@
     "time": "10:13 PM",
     "kind": "thought",
     "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "noticed",
-    "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Good waves. Must not get too cocky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Rain, rain. At least it fills the tanks.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "collecting shells (+2 shells (6 in the jar))",
-    "why": "Shells for the jar on the shelf.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach",
-    "why": "Let him run.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Heading to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Thailand rains like this in the wet season. Practice.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "Diesel thinks every puddle is a personal invitation.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Old Rusty. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "thought",
-    "text": "Did more today than I thought I would.",
     "why": null,
     "by": "model",
     "ok": true

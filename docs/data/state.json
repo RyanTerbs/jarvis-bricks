@@ -1,20 +1,20 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Night shift is for owls, not mechanics.",
-  "feeling": "chilled",
+  "asleep": false,
+  "doing": "walking home",
+  "thought": "Slept like a log. Ready to graft.",
+  "feeling": "content",
   "needs": {
-    "rest": 0,
-    "hunger": 0.335,
-    "social": 0.205,
-    "tinker": 0.625,
-    "curiosity": 0.695
+    "rest": 0.17,
+    "hunger": 0.585,
+    "social": 0.165,
+    "tinker": 0.495,
+    "curiosity": 0.555
   },
-  "mood": 0.25,
-  "energy": 1,
-  "coins": 74,
+  "mood": 0.39,
+  "energy": 0.83,
+  "coins": 78,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -27,7 +27,7 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 1
+    "dog_training": 2
   },
   "finished": [
     "tourism_thailand"
@@ -87,12 +87,17 @@
       "date": "2026-11-29",
       "source": "his laptop: Krabi",
       "note": "Krabi (Thai: กระบี่, pronounced [krā.bìː]) is the capital of and main town in Krabi Province (thesaban mueang), on the west coast of southern Thailand, where th"
+    },
+    {
+      "date": "2026-11-30",
+      "source": "Dog training (Definition)",
+      "note": "Dog training is the act of teaching a dog particular skills or behaviors."
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -105,7 +110,12 @@
     "waves": "flat",
     "waves_date": "2026-11-30"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "feed_the_puppy",
+      "why": "Little guy's hungry."
+    }
+  ],
   "lucky": {
     "date": "2026-11-30",
     "used": 0,
@@ -113,32 +123,111 @@
   },
   "designed_on": "2026-11-27",
   "plan_today": "Teach Diesel a new trick.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Thai street food. That's the dream right there.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 2/8)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "6:28 AM",
+      "k": "note",
+      "x": "noted (Dog training (Definition)): Dog training is the act of teaching a dog particular skills or behaviors.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Ja, no, definitely, maybe.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Mr Wobbles is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Coffee first. Then the world.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Funny what you learn. Dog training, who knew.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Heading to the brick pit."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Slept like a log. Ready to graft.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    }
+  ],
   "day_start": {
     "coins": 74,
     "bricks": 6,
     "got": 0,
     "used": 0
   },
-  "tick": 430,
+  "tick": 438,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T10:43:21.098366+00:00",
+  "updated": "2026-11-30T12:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 179,
-      "queue": 106,
-      "autopilot": 14,
-      "sleeping": 131,
+      "model": 184,
+      "queue": 107,
+      "autopilot": 15,
+      "sleeping": 132,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-11-30",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 23,
+      "model": 5,
+      "queue": 1,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -149,13 +238,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.436,
-      "tired": 0,
-      "bored": 0.53
+      "hunger": 0.624,
+      "tired": 0.22,
+      "bored": 0.21
     },
-    "bond": 1,
+    "bond": 1.0,
     "food": 5,
     "tricks": {
       "sit": 3
@@ -163,18 +252,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
-    "last_played_tick": 396,
-    "wants": null,
+    "doing": "sniffing everything",
+    "last_played_tick": 436,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: {owner} throws the ball forever.",
@@ -186,9 +267,17 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Following {owner}. Best job in the world.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "So bored I'm counting my own paws. Four. Still four.",
+      "Where did the world go?",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "{owner} says a word, I do a thing, treat appears. Magic."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Derek says a word, I do a thing, treat appears. Magic.",
     "want_ticks": 0,
     "last_fed_tick": 386,
     "recent_ideas": [
@@ -202,11 +291,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Someone out there needs a brick model bike. I can feel it.",
-    "Sun's in the perfect spot for a nap. Not happening though.",
-    "Even the lamp posts look lost in this fog.",
-    "Thailand. Noodles, mountains, warm sea. Soon.",
-    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
     "Never had a mate this loyal.",
     "Can't see the end of the street. Spooky.",
     "Best decision I ever made, keeping {pup}.",
@@ -226,23 +310,27 @@
     "Foggy. Feels like a Port Alfred winter morning.",
     "{pup} is yawning, so I'm yawning.",
     "{pup} follows me everywhere. Proper little shadow.",
-    "Night shift is for owls, not mechanics."
+    "Night shift is for owls, not mechanics.",
+    "Thai street food. That's the dream right there.",
+    "Ja, no, definitely, maybe.",
+    "Coffee first. Then the world.",
+    "Funny what you learn. {topic}, who knew.",
+    "Slept like a log. Ready to graft."
   ],
-  "real_updated": "2026-11-27T02:15:10.012625+00:00",
+  "real_updated": "2026-11-27T02:30:12.910410+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-29@13",
+    "key": "2026-11-30@6",
     "kind": "fog",
     "season": "autumn",
-    "base": 16.9,
+    "base": 18.6,
     "emoji": "🌫️",
     "name": "foggy",
     "season_emoji": "🍂",
     "seen": [
-      "rain",
       "fog"
     ],
-    "temp": 14,
+    "temp": 17,
     "snow": 0,
     "wet": 0
   }
