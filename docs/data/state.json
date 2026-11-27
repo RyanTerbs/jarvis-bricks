@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Toast. Noodles. Anything.",
-  "feeling": "good, ja",
+  "doing": "having a rest",
+  "thought": "Hands are itching. Need something to fix.",
+  "feeling": "chuffed",
   "needs": {
-    "rest": 0.23,
-    "hunger": 0,
-    "social": 0.42,
-    "tinker": 0.53,
-    "curiosity": 0.415
+    "rest": 0.36,
+    "hunger": 0.335,
+    "social": 0.375,
+    "tinker": 0.375,
+    "curiosity": 0.39
   },
-  "mood": 0.52,
-  "energy": 0.77,
-  "coins": 36,
+  "mood": 0.48,
+  "energy": 0.64,
+  "coins": 40,
   "coins_goal": 500,
-  "bricks": 16,
+  "bricks": 20,
   "stock": {
     "rebuilt_carb": 4
   },
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -146,7 +146,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-03",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-12-02",
@@ -271,22 +271,94 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Can't run on toast forever."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Funny what you learn. Dog training, who knew.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Brick pit next."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: be the greeter at the market stall. Customers love me.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "collecting bricks (+4 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "One bonk for luck."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "thought",
+      "x": "That Dog training chapter got me thinking.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Hands are itching. Need something to fix.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Hands need grease. Simple."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": null
     }
   ],
   "day_start": {
     "coins": 39,
     "bricks": 16,
-    "got": 0,
+    "got": 4,
     "used": 0
   },
-  "tick": 731,
+  "tick": 738,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T13:58:21.098366+00:00",
+  "updated": "2026-12-03T15:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 310,
-      "queue": 187,
-      "autopilot": 23,
+      "model": 313,
+      "queue": 190,
+      "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -294,9 +366,9 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 6,
-      "queue": 5,
-      "autopilot": 1,
+      "model": 9,
+      "queue": 8,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -310,9 +382,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.03,
-      "tired": 0.47,
-      "bored": 0.12
+      "hunger": 0.24,
+      "tired": 0.71,
+      "bored": 0.09
     },
     "bond": 1.0,
     "food": 2,
@@ -323,17 +395,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 727,
-    "wants": null,
+    "doing": "watching Derek work",
+    "last_played_tick": 735,
+    "wants": "play",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Following {owner}. Best job in the world.",
@@ -346,27 +411,31 @@
       "Why are my paws cold? Doesn't matter. SNOW!",
       "The ground is a giant ice cream!",
       "Cold white stuff! I must eat all of it.",
+      "Cold white stuff! I must eat all of it.",
+      "My tail won't stop. I'm not stopping it.",
+      "The ! block knows something. I will watch it.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
       "Cold white stuff! I must eat all of it."
     ],
     "thought": "Cold white stuff! I must eat all of it.",
     "want_ticks": 0,
     "last_fed_tick": 730,
     "recent_ideas": [
-      "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
       "make friends with the crab. Or eat it. Undecided.",
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
       "find out what's inside the ! block.",
-      "dig all the way to the other side of the island."
+      "dig all the way to the other side of the island.",
+      "be the greeter at the market stall. Customers love me."
     ],
-    "idea": "dig all the way to the other side of the island."
+    "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Don't spend it. Don't spend it. Don't spend it.",
-    "Winter. Cold mornings, slow engines.",
     "Never had a mate this loyal.",
     "Batteries low. Need a recharge.",
     "Proud of {pup}. Little guy's growing up.",
@@ -388,9 +457,12 @@
     "Sun's up, {pup}'s up, so I'm up.",
     "Me and {pup} against the world.",
     "Salt air, warm sand, no bolts. Perfect.",
-    "Toast. Noodles. Anything."
+    "Toast. Noodles. Anything.",
+    "Funny what you learn. {topic}, who knew.",
+    "That {topic} chapter got me thinking.",
+    "Hands are itching. Need something to fix."
   ],
-  "real_updated": "2026-11-27T12:15:16.862839+00:00",
+  "real_updated": "2026-11-27T12:30:12.504974+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@6",
@@ -403,8 +475,8 @@
     "seen": [
       "snow"
     ],
-    "temp": -1,
-    "snow": 0.96,
+    "temp": 0,
+    "snow": 1,
     "wet": 0,
     "snowman": 0
   }

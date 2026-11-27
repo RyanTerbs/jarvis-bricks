@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-03T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Hands need grease. Simple.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Hands are itching. Need something to fix.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "thought",
+    "text": "That Dog training chapter got me thinking.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+    "why": "One bonk for luck.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "collecting bricks (+4 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: be the greeter at the market stall. Customers love me.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Brick pit next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Funny what you learn. Dog training, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-03T13:58:21.098366+00:00",
     "time": "8:58 AM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "feeding Diesel (Diesel's tail goes mad)",
     "why": "Little guy's hungry.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "ordering a bag of dog food (6 meals in the cupboard)",
-    "why": "Can't run out of food for Diesel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Little guy needs his dad. Coming, boet.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "Overnight the tide came in and washed his sand castle away.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "🌫️ A thick sea fog rolls in over the town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T06:28:21.098366+00:00",
-    "time": "1:28 AM",
-    "kind": "noticed",
-    "text": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Finished building the Noodle stall",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Two taps on the jar for luck. Sleep.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "noticed",
-    "text": "The cafe has a new coffee on the board.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "making a rebuilt carburettor (2 in stock)",
-    "why": "Got an order in my head.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "making a rebuilt carburettor (1 in stock)",
-    "why": "Making stock for the stall.",
-    "by": "model",
     "ok": true
   }
 ]
