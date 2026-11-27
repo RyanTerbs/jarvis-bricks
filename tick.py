@@ -190,6 +190,7 @@ def fresh_state(now):
         "beach": {"tan": 0.0, "surf_skill": 0.0, "surf_sessions": 0, "castles": [], "best_castle": 0, "shells": 0,
                   "sun_today": 0, "burnt_until": 0, "waves": "small", "waves_date": None},
         "book_boxes": [],               # book boxes delivered to his door so far
+        "truck_date": None,             # last morning the brick truck came
         "box_date": None,
         "project": None,                # the bike he's restoring in the garage (None = garage free)
         "bikes": [],                    # restored bikes he kept
@@ -1772,6 +1773,8 @@ def mock_plan(state, W, world, town):
         k = world["garage_projects"]["kinds"][state["bike_offer"]["kind"]]
         if state["coins"] >= k["buy"] + 40:                  # keeps something back for parts
             return go("garage", ["buy_a_project_bike"]), None
+    if "order_wheelbarrow" in gm and random.random() < 0.3:        # the tool that pays for itself, before any toys
+        return go("home", ["order_wheelbarrow"]), None
     # the library first: it holds most of his books, so he saves his bricks for it
     lib_first = "library" not in W["places"] and not (town.get("site") and town["site"]["bp"] == "library") \
         and "library" in blueprints(world, town)
@@ -1806,7 +1809,8 @@ def mock_plan(state, W, world, town):
     designs = [d for d in free_brain().get("designs", []) if d["name"] not in names]
     makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]
              and not (lib_first and W["moves"][m].get("bricks", 0) < 0)]
-    orders = [m for m in W["moves"] if m.startswith("order_")]
+    orders = [m for m in W["moves"] if m.startswith("order_") and m != "order_restoration_parts"
+              and ("wheelbarrow" in state["owned"] or m == "order_wheelbarrow")]
     if "run_the_stall" in W["moves"] and "market_stall" in W["places"] and roll < 0.25:
         return go("market_stall", ["run_the_stall", "run_the_stall"]), None
     if orders and state["coins"] > 70 and roll < 0.30:
@@ -2182,6 +2186,12 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     # 3. The world moves on: book boxes, the garage project (parts arriving, a bike turning up),
     #    and a random event can interrupt his plans
     check_books(state, world, town, today, log)
+    bt_ = world.get("brick_truck")
+    if bt_ and state.get("truck_date") != today and local.hour >= bt_["hour"]:   # free bricks every morning
+        state["truck_date"] = today
+        state["bricks"] += bt_["bricks"]
+        count_bricks(state, bt_["bricks"])
+        log("noticed", f"🚚 The brick truck dropped {bt_['bricks']} free bricks at the pit. {state['bricks']} in the pile now.")
     had = (state.get("project") or {}).get("kind"), (state.get("project") or {}).get("parts"), bool(state.get("bike_offer"))
     update_project(state, world, town, today, local.hour, log)
     if had != ((state.get("project") or {}).get("kind"), (state.get("project") or {}).get("parts"), bool(state.get("bike_offer"))):

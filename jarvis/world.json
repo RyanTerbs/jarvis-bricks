@@ -55,7 +55,7 @@
     "go_for_a_ride":    { "label": "out for a ride",                "at": ["garage"],  "needs": { "curiosity": -0.15, "rest": 0.03, "social": -0.05 },   "mood": 0.15 },
     "grab_a_snack":     { "label": "grabbing a snack",              "at": ["cafe"],    "needs": { "hunger": -0.55 },                                     "mood": 0.05, "coins": -1 },
     "chat_with_locals": { "label": "chatting with the locals",      "at": ["cafe"],    "needs": { "social": -0.40 },                                     "mood": 0.05 },
-    "collect_bricks":   { "label": "collecting bricks",             "at": ["brick_pit"], "needs": { "curiosity": -0.10, "tinker": -0.05, "rest": 0.03 }, "mood": 0.02, "bricks_rand": [2, 5] },
+    "collect_bricks":   { "label": "collecting bricks",             "at": ["brick_pit"], "needs": { "curiosity": -0.10, "tinker": -0.05, "rest": 0.03 }, "mood": 0.02, "bricks_rand": [4, 8] },
     "hit_the_lucky_block": { "label": "jumping up to hit the ! block", "at": ["brick_pit"], "needs": { "curiosity": -0.10 },                            "mood": 0.03, "luck": true },
     "work_on_site":     { "label": "building",                      "at": ["building_site"], "needs": { "tinker": -0.20, "rest": 0.05, "hunger": 0.03 }, "mood": 0.05, "work": true },
     "run_the_stall":    { "label": "running his market stall",     "at": ["market_stall"], "needs": { "social": -0.25, "rest": 0.02 },            "mood": 0.04, "sell": true },
@@ -272,13 +272,19 @@
     "max_unbuilt": 3
   },
 
+  "brick_truck": {
+    "_note": "Every morning (from 'hour', once he's up) a truck drops free bricks at the pit. Guaranteed, so his building never stalls on the dice (Ryan 2026-11-27: many more free bricks a day).",
+    "bricks": 20,
+    "hour": 7
+  },
+
   "lucky_block": {
     "_note": "The floating ! block at the brick pit. A few hits a day, random prize.",
     "per_day": 3,
     "prizes": [
-      { "weight": 5, "bricks": 6,  "text": "6 bricks pop out!" },
+      { "weight": 5, "bricks": 10, "text": "10 bricks pop out!" },
       { "weight": 3, "coins": 2,   "text": "a coin spins out... 2 coins!" },
-      { "weight": 1, "bricks": 15, "text": "JACKPOT: 15 bricks!" },
+      { "weight": 1, "bricks": 25, "text": "JACKPOT: 25 bricks!" },
       { "weight": 3, "mood": -0.03, "text": "bonk. Nothing. Just a sore head." }
     ]
   },
