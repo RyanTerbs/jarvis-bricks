@@ -106,7 +106,20 @@
       "built": "2026-12-01"
     }
   ],
-  "site": null,
+  "site": {
+    "bp": "tuk_tuk_garage",
+    "name": "Tuk-tuk Garage",
+    "lot": 7,
+    "work": 5,
+    "done": 0,
+    "started": "2026-12-02",
+    "look": {
+      "kind": "shop",
+      "color": "#e67e22",
+      "emoji": "🛺",
+      "floors": 1
+    }
+  },
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",

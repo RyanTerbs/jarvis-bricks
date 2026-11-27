@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-02T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at home",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-02T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Cold hands need a hot mug.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: find out what's inside the ! block.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "Ja, today feels like a building day.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "starting a new build: Tuk-tuk Garage (paid 30 bricks)",
+    "why": "Got the bricks, let's go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "Even the lamp posts look lost in this fog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Look at that tail go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "cuddling Diesel",
+    "why": "Best part of the day.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "thought",
+    "text": "Coffee first. Then the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (6 bricks pop out!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-02T13:28:21.098366+00:00",
     "time": "8:28 AM",
     "kind": "did",
@@ -1228,123 +1345,6 @@
     "time": "7:28 AM",
     "kind": "note",
     "text": "noted (Dog training (How dogs learn)): Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 4/8)",
-    "why": "One more chapter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Quiet day. Could do with a chat at the cafe.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "A kid drops a bolt and asks Derek what it's for.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "building (Noodle stall 3/4)",
-    "why": "Back to the Noodle stall. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Quick trip to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "thought",
-    "text": "Me and Diesel against the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Every brick in the Noodle stall is one I collected myself. Feels good.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "Overnight the tide came in and washed his sand castle away.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "🌨️ It's snowing! Big flakes falling on the brick town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "❄️ Winter has arrived. Time to find the jersey.",
     "why": null,
     "by": null,
     "ok": true

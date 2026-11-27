@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "home",
   "asleep": false,
-  "doing": "collecting bricks",
-  "thought": "Picture it: a winding road, a good engine, no rush.",
-  "feeling": "chilled",
+  "doing": "making a hot chocolate",
+  "thought": "Ja, today feels like a building day.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.22,
-    "hunger": 0.21,
-    "social": 0.36,
-    "tinker": 0.42,
-    "curiosity": 0.35
+    "rest": 0.31,
+    "hunger": 0.255,
+    "social": 0.215,
+    "tinker": 0.665,
+    "curiosity": 0.325
   },
-  "mood": 0.4,
-  "energy": 0.78,
-  "coins": 44,
+  "mood": 0.45,
+  "energy": 0.69,
+  "coins": 43,
   "coins_goal": 500,
-  "bricks": 24,
+  "bricks": 0,
   "stock": {
     "rebuilt_carb": 2
   },
@@ -124,7 +124,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -137,15 +137,10 @@
     "waves": "flat",
     "waves_date": "2026-12-02"
   },
-  "queue": [
-    {
-      "move": "hit_the_lucky_block",
-      "why": "Jump, hit, hope."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-02",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -258,21 +253,93 @@
       "k": "did",
       "x": "collecting bricks (+3 bricks)",
       "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "Coffee first. Then the world.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "cuddling Diesel",
+      "why": "Best part of the day."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Look at that tail go."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Even the lamp posts look lost in this fog.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "starting a new build: Tuk-tuk Garage (paid 30 bricks)",
+      "why": "Got the bricks, let's go."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "Ja, today feels like a building day.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: find out what's inside the ! block.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Cold hands need a hot mug."
     }
   ],
   "day_start": {
     "coins": 49,
     "bricks": 21,
-    "got": 3,
-    "used": 0
+    "got": 9,
+    "used": 30
   },
-  "tick": 633,
+  "tick": 640,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T13:28:21.098366+00:00",
+  "updated": "2026-12-02T15:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 268,
-      "queue": 160,
+      "model": 272,
+      "queue": 163,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -281,8 +348,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 5,
-      "queue": 4,
+      "model": 9,
+      "queue": 7,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -297,9 +364,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.21,
-      "tired": 0.18,
-      "bored": 0.55
+      "hunger": 0.42,
+      "tired": 0.42,
+      "bored": 0.12
     },
     "bond": 1.0,
     "food": 5,
@@ -310,17 +377,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 579,
-    "wants": "explore",
+    "doing": "rolling in the grass",
+    "last_played_tick": 636,
+    "wants": "walk",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
@@ -333,28 +393,31 @@
       "Where did the world go?",
       "{owner} is the best human in the whole town.",
       "Everything smells amazing today.",
-      "Good boy? Me? Yes. Me."
+      "Good boy? Me? Yes. Me.",
+      "Where did the world go?",
+      "The cafe smells like pies. Noted.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Learning is hard. Treats make it easier.",
+      "Life is good. Life is SO good.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder."
     ],
-    "thought": "Good boy? Me? Yes. Me.",
-    "want_ticks": 6,
+    "thought": "Fog. Can't see. Can smell. Sniffing harder.",
+    "want_ticks": 2,
     "last_fed_tick": 626,
     "recent_ideas": [
-      "nap on the warm brick pile.",
       "teach the seagulls some manners.",
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
       "make friends with the crab. Or eat it. Undecided.",
       "sit by the cafe door looking sad. Free pie.",
-      "bring {owner} a stick. Then a bigger stick."
+      "bring {owner} a stick. Then a bigger stick.",
+      "find out what's inside the ! block."
     ],
-    "idea": "bring Derek a stick. Then a bigger stick."
+    "idea": "find out what's inside the ! block."
   },
   "recent_thoughts": [
-    "Reading about {topic} makes me want to try it.",
-    "Thai street food. That's the dream right there.",
-    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
-    "{pup} keeps nudging his bowl. Message received.",
     "Cloudy. Fine. Engines don't care.",
     "Evening breeze off the sea. Lekker.",
     "Plastic rain, plastic trees, real problems.",
@@ -375,9 +438,13 @@
     "The jar's getting heavier. Love that sound.",
     "Miss the cafe gossip.",
     "Winter on the island. Who knew?",
-    "Picture it: a winding road, a good engine, no rush."
+    "Picture it: a winding road, a good engine, no rush.",
+    "Coffee first. Then the world.",
+    "Thailand. Noodles, mountains, warm sea. Soon.",
+    "Even the lamp posts look lost in this fog.",
+    "Ja, today feels like a building day."
   ],
-  "real_updated": "2026-11-27T09:00:15.053719+00:00",
+  "real_updated": "2026-11-27T09:15:11.039038+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@6",
@@ -390,7 +457,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 5,
+    "temp": 7,
     "snow": 0,
     "wet": 0,
     "snowman": 0
