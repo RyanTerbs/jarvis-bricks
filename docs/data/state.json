@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Winter on the island. Who knew?",
-  "feeling": "sharp-sharp",
+  "place": "garage",
+  "asleep": false,
+  "doing": "walking to the garage",
+  "thought": "Too much sitting. Where's my toolbox?",
+  "feeling": "meh, fine",
   "needs": {
-    "rest": 0,
-    "hunger": 0.705,
-    "social": 0.815,
-    "tinker": 0.61,
-    "curiosity": 0.64
+    "rest": 0.16,
+    "hunger": 0.26,
+    "social": 0.535,
+    "tinker": 0.81,
+    "curiosity": 0.52
   },
-  "mood": 0.1,
-  "energy": 1,
-  "coins": 26,
+  "mood": 0.19,
+  "energy": 0.84,
+  "coins": 24,
   "coins_goal": 500,
-  "bricks": 65,
+  "bricks": 85,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -32,7 +32,7 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 6
+    "bangkok": 7
   },
   "finished": [
     "tourism_thailand",
@@ -158,12 +158,17 @@
       "date": "2026-12-05",
       "source": "Bangkok (Demography)",
       "note": "The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu"
+    },
+    {
+      "date": "2026-12-06",
+      "source": "Bangkok (Economy)",
+      "note": "Bangkok is the economic centre of Thailand, and the heart of the country's investment and development."
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -176,7 +181,12 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "fix_a_car",
+      "why": "Nothing beats an engine firing first try."
+    }
+  ],
   "lucky": {
     "date": "2026-12-06",
     "used": 0,
@@ -184,21 +194,100 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "That Bangkok chapter got me thinking.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Heading to the cafe."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "Running on coffee and hope.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 85 in the pile now.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 7/10)",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "note",
+      "x": "noted (Bangkok (Economy)): Bangkok is the economic centre of Thailand, and the heart of the country's investment and development.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Too much sitting. Where's my toolbox?",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    }
+  ],
   "day_start": {
     "coins": 26,
     "bricks": 65,
-    "got": 0,
+    "got": 20,
     "used": 0
   },
-  "tick": 1007,
+  "tick": 1015,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T10:58:21.098366+00:00",
+  "updated": "2026-12-06T12:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 432,
-      "queue": 251,
-      "autopilot": 34,
+      "model": 435,
+      "queue": 254,
+      "autopilot": 36,
       "sleeping": 290,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -206,9 +295,9 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
+      "model": 3,
+      "queue": 3,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -220,11 +309,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.222,
-      "tired": 0,
-      "bored": 0.42
+      "hunger": 0.436,
+      "tired": 0.14,
+      "bored": 0.63
     },
     "bond": 1,
     "food": 1,
@@ -235,18 +324,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 972,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -258,9 +339,17 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Sun on my belly. Perfect.",
+      "Warm spot on the floor. Mine now.",
+      "Good boy? Me? Yes. Me.",
+      "My tail won't stop. I'm not stopping it.",
+      "Sun on my belly. Perfect.",
+      "I could chew a boot. Just a little bit.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
+    "thought": "Life is good. Life is SO good.",
     "want_ticks": 0,
     "last_fed_tick": 971,
     "recent_ideas": [
@@ -276,9 +365,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Reading about {topic} makes me want to try it.",
-    "If it's got moving parts, I can fix it. Mostly.",
-    "Sun's out. Even the bricks look happy.",
     "Looked up {topic} on the old laptop. Lekker.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "Best decision I ever made, keeping {pup}.",
@@ -300,22 +386,25 @@
     "Evening breeze off the sea. Lekker.",
     "Funny what you learn. {topic}, who knew.",
     "{pup} follows me everywhere. Proper little shadow.",
-    "Winter on the island. Who knew?"
+    "Winter on the island. Who knew?",
+    "That {topic} chapter got me thinking.",
+    "Running on coffee and hope.",
+    "Too much sitting. Where's my toolbox?"
   ],
-  "real_updated": "2026-11-27T21:30:10.994244+00:00",
+  "real_updated": "2026-11-27T21:45:14.892430+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-05@13",
+    "key": "2026-12-06@6",
     "kind": "sunny",
     "season": "winter",
-    "base": 7.3,
+    "base": -0.9,
     "emoji": "☀️",
     "name": "sunny",
     "season_emoji": "❄️",
     "seen": [
       "sunny"
     ],
-    "temp": 5,
+    "temp": -2,
     "snow": 0,
     "wet": 0,
     "snowman": 0
@@ -323,7 +412,7 @@
   "book_boxes": [
     1
   ],
-  "truck_date": "2026-12-05",
+  "truck_date": "2026-12-06",
   "box_date": null,
   "project": {
     "kind": "barn_find",

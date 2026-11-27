@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-06T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "thought",
+    "text": "Too much sitting. Where's my toolbox?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "note",
+    "text": "noted (Bangkok (Economy)): Bangkok is the economic centre of Thailand, and the heart of the country's investment and development.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 7/10)",
+    "why": null,
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "noticed",
+    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 85 in the pile now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Running on coffee and hope.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Heading to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "That Bangkok chapter got me thinking.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-12-06T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1221,132 +1347,6 @@
     "text": "walking home",
     "why": "Home for a bit.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Slow and steady fills the jar.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "refused",
-    "text": "tried fixing a car: can't do that at the brick pit",
-    "why": null,
-    "by": "queue",
-    "ok": false
-  },
-  {
-    "at": "2026-12-05T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Didn't know half this stuff about Bangkok.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "refused",
-    "text": "tried fixing a car: can't do that at the brick pit",
-    "why": null,
-    "by": "queue",
-    "ok": false
-  },
-  {
-    "at": "2026-12-05T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "starting a new build: Library (paid 40 bricks)",
-    "why": "Town's getting bigger.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Still thinking about that bit on Bangkok.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "thought",
-    "text": "One more job, then feet up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "noticed",
-    "text": "Diesel chases a plastic butterfly and misses.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (JACKPOT: 25 bricks!)",
-    "why": "Jump, hit, hope.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "collecting bricks (+9 bricks)",
-    "why": "Got plans. Need materials.",
-    "by": "queue",
     "ok": true
   }
 ]
