@@ -6,14 +6,14 @@
   "thought": "Foggy. Feels like a Port Alfred winter morning.",
   "feeling": "content",
   "needs": {
-    "rest": 0.08,
-    "hunger": 0.17,
-    "social": 0.795,
-    "tinker": 0.095,
-    "curiosity": 0.19
+    "rest": 0,
+    "hunger": 0.25,
+    "social": 0.835,
+    "tinker": 0.135,
+    "curiosity": 0.23
   },
-  "mood": 0.18,
-  "energy": 0.92,
+  "mood": 0.14,
+  "energy": 1,
   "coins": 39,
   "coins_goal": 500,
   "bricks": 16,
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 1,
+  "hour": 3,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -158,15 +158,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 700,
+  "tick": 708,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T06:13:21.098366+00:00",
+  "updated": "2026-12-03T08:13:21.098366+00:00",
   "stats": {
     "all": {
       "model": 304,
       "queue": 182,
       "autopilot": 22,
-      "sleeping": 192,
+      "sleeping": 200,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -176,7 +176,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 5,
+      "sleeping": 13,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -189,7 +189,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.266,
+      "hunger": 0.298,
       "tired": 0,
       "bored": 0.54
     },
@@ -206,14 +206,6 @@
     "last_played_tick": 666,
     "wants": null,
     "recent_thoughts": [
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "I am a very good boy. Probably.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
       "It's dark. I will guard the house. From the sofa.",
@@ -225,9 +217,17 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 680,
     "recent_ideas": [
@@ -269,7 +269,7 @@
     "Running on coffee and hope.",
     "Foggy. Feels like a Port Alfred winter morning."
   ],
-  "real_updated": "2026-11-27T11:15:11.316570+00:00",
+  "real_updated": "2026-11-27T11:30:12.641202+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
