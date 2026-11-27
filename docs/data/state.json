@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "market_stall",
-  "asleep": false,
-  "doing": "running his market stall",
-  "thought": "Diesel is yawning, so I'm yawning.",
-  "feeling": "good, ja",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
+  "thought": "Night shift is for owls, not mechanics.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.68,
-    "hunger": 0.67,
-    "social": 0,
-    "tinker": 0.44,
-    "curiosity": 0.49
+    "rest": 0.43,
+    "hunger": 0.115,
+    "social": 0.095,
+    "tinker": 0.515,
+    "curiosity": 0.585
   },
-  "mood": 0.36,
-  "energy": 0.32,
-  "coins": 76,
+  "mood": 0.33,
+  "energy": 0.57,
+  "coins": 74,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -92,7 +92,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 22,
+  "hour": 0,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -103,733 +103,42 @@
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "flat",
-    "waves_date": "2026-11-29"
+    "waves_date": "2026-11-30"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-11-29",
+    "date": "2026-11-30",
     "used": 0,
     "max": 3
   },
   "designed_on": "2026-11-27",
   "plan_today": "Teach Diesel a new trick.",
-  "today_log": [
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Every town needs a guy who fixes stuff. That's me.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Coins for the jar."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "Autumn. Days getting shorter.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "7:13 AM",
-      "k": "did",
-      "x": "making a hot chocolate",
-      "why": "Freezing. Mug time."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "thought",
-      "x": "Who invented the carburettor anyway? Must look that up.",
-      "why": null
-    },
-    {
-      "t": "7:28 AM",
-      "k": "did",
-      "x": "walking to the beach",
-      "why": "Heading to the beach."
-    },
-    {
-      "t": "7:43 AM",
-      "k": "noticed",
-      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
-      "why": null
-    },
-    {
-      "t": "7:43 AM",
-      "k": "thought",
-      "x": "Wet again. The site turns to mud in this.",
-      "why": null
-    },
-    {
-      "t": "7:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "did",
-      "x": "reading a book (Tourism in Thailand, chapter 8/9)",
-      "why": "Books are a cheap mechanics' school."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "note",
-      "x": "noted (Tourism in Thailand (Sport tourism)): Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists.",
-      "why": null
-    },
-    {
-      "t": "8:13 AM",
-      "k": "thought",
-      "x": "Reading about Tourism in Thailand makes me want to try it.",
-      "why": null
-    },
-    {
-      "t": "8:13 AM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Quick trip to the garage."
-    },
-    {
-      "t": "8:28 AM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Coins for the jar."
-    },
-    {
-      "t": "8:43 AM",
-      "k": "thought",
-      "x": "55 in the jar. 445 more and I'm on that bike in Thailand.",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Cafe next."
-    },
-    {
-      "t": "8:58 AM",
-      "k": "noticed",
-      "x": "Diesel steals a sock and runs off down the street.",
-      "why": null
-    },
-    {
-      "t": "8:58 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Haven't spoken to a human all day."
-    },
-    {
-      "t": "9:13 AM",
-      "k": "noticed",
-      "x": "A loud exhaust echoes down the street.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "thought",
-      "x": "Ja, no, definitely, maybe.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Play time!"
-    },
-    {
-      "t": "9:28 AM",
-      "k": "noticed",
-      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "thought",
-      "x": "Proud of Diesel. Little guy's growing up.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "9:43 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "9:58 AM",
-      "k": "thought",
-      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
-      "why": null
-    },
-    {
-      "t": "9:58 AM",
-      "k": "did",
-      "x": "walking to the beach",
-      "why": "Off to the beach."
-    },
-    {
-      "t": "10:13 AM",
-      "k": "did",
-      "x": "playing fetch with Diesel on the beach",
-      "why": "Let him run."
-    },
-    {
-      "t": "10:28 AM",
-      "k": "did",
-      "x": "collecting shells (+1 shells (7 in the jar))",
-      "why": "Shells for the jar on the shelf."
-    },
-    {
-      "t": "10:43 AM",
-      "k": "thought",
-      "x": "Rain on the roof. Lekker sound, rubbish for building.",
-      "why": null
-    },
-    {
-      "t": "10:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "10:58 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Food for my boy."
-    },
-    {
-      "t": "11:13 AM",
-      "k": "thought",
-      "x": "Ja, today feels like a building day.",
-      "why": null
-    },
-    {
-      "t": "11:13 AM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Heading to the garage."
-    },
-    {
-      "t": "11:28 AM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "This one's called Bessie. She'll purr by lunch."
-    },
-    {
-      "t": "11:43 AM",
-      "k": "thought",
-      "x": "Early bird gets the bricks.",
-      "why": null
-    },
-    {
-      "t": "11:43 AM",
-      "k": "did",
-      "x": "splashing in puddles with Diesel",
-      "why": "Already wet, might as well splash."
-    },
-    {
-      "t": "11:58 AM",
-      "k": "thought",
-      "x": "Had a dream about a gearbox. Normal, right?",
-      "why": null
-    },
-    {
-      "t": "11:58 AM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "12:13 PM",
-      "k": "thought",
-      "x": "Who names a bolt? Me. This one's Gerald.",
-      "why": null
-    },
-    {
-      "t": "12:13 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "learned",
-      "x": "finished reading 'Tourism in Thailand'",
-      "why": null
-    },
-    {
-      "t": "12:28 PM",
-      "k": "did",
-      "x": "reading a book (Tourism in Thailand, last chapter)",
-      "why": "Learning something today."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "note",
-      "x": "noted (Tourism in Thailand (Tourism Authority of Thailand)): The Tourism Authority of Thailand (TAT) has been actively leading the country's sustainable tourism efforts, focusing on innovation, sustainability, and digital",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "thought",
-      "x": "Afternoon slump. Could do with a coffee.",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "12:58 PM",
-      "k": "thought",
-      "x": "Someone out there needs a brick model bike. I can feel it.",
-      "why": null
-    },
-    {
-      "t": "12:58 PM",
-      "k": "did",
-      "x": "splashing in puddles with Diesel",
-      "why": "Already wet, might as well splash."
-    },
-    {
-      "t": "1:13 PM",
-      "k": "noticed",
-      "x": "🌫️ A thick sea fog rolls in over the town.",
-      "why": null
-    },
-    {
-      "t": "1:13 PM",
-      "k": "thought",
-      "x": "Sun's in the perfect spot for a nap. Not happening though.",
-      "why": null
-    },
-    {
-      "t": "1:13 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Fastest meal in the world."
-    },
-    {
-      "t": "1:28 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Coins are tight. Toast it is."
-    },
-    {
-      "t": "1:43 PM",
-      "k": "thought",
-      "x": "Even the lamp posts look lost in this fog.",
-      "why": null
-    },
-    {
-      "t": "1:43 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Quick trip to the garage."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Coins for the jar."
-    },
-    {
-      "t": "2:13 PM",
-      "k": "thought",
-      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
-      "why": null
-    },
-    {
-      "t": "2:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "2:28 PM",
-      "k": "thought",
-      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
-      "why": null
-    },
-    {
-      "t": "2:28 PM",
-      "k": "did",
-      "x": "walking to the market stall",
-      "why": "Quick trip to the market stall."
-    },
-    {
-      "t": "2:43 PM",
-      "k": "did",
-      "x": "running his market stall (pricey prices, sold 2 postcard of the towns for 6 coins)",
-      "why": "Got stock, need buyers."
-    },
-    {
-      "t": "2:58 PM",
-      "k": "did",
-      "x": "running his market stall (cheap prices, sold 1 postcard of the town for 2 coins)",
-      "why": "Let's see what sells."
-    },
-    {
-      "t": "3:13 PM",
-      "k": "thought",
-      "x": "Never had a mate this loyal.",
-      "why": null
-    },
-    {
-      "t": "3:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "3:28 PM",
-      "k": "thought",
-      "x": "Can't see the end of the street. Spooky.",
-      "why": null
-    },
-    {
-      "t": "3:28 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "did",
-      "x": "reading a book (Dog training, chapter 1/8)",
-      "why": "Where was I? Ah, ja."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "note",
-      "x": "noted (Dog training (Introduction)): Dog training is a type of animal training, the application of behavior analysis which uses the environmental events of antecedents (trigger for a behavior) and",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "thought",
-      "x": "Best decision I ever made, keeping Diesel.",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "noticed",
-      "x": "Diesel steals a sock and runs off down the street.",
-      "why": null
-    },
-    {
-      "t": "4:13 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Nothing beats an engine firing first try."
-    },
-    {
-      "t": "4:28 PM",
-      "k": "thought",
-      "x": "Foggy. Feels like a Port Alfred winter morning.",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "4:43 PM",
-      "k": "thought",
-      "x": "Even my spanner looks tired.",
-      "why": null
-    },
-    {
-      "t": "4:43 PM",
-      "k": "did",
-      "x": "walking to the beach",
-      "why": "Off to the beach."
-    },
-    {
-      "t": "4:58 PM",
-      "k": "noticed",
-      "x": "Diesel steals a sock and runs off down the street.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "did",
-      "x": "collecting shells (+2 shells (9 in the jar))",
-      "why": "Pretty ones today."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "did",
-      "x": "playing fetch with Diesel on the beach",
-      "why": "Diesel loves the beach."
-    },
-    {
-      "t": "5:28 PM",
-      "k": "thought",
-      "x": "Should I name the street? Derek Street. Ja, why not.",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "5:43 PM",
-      "k": "thought",
-      "x": "Stomach's making engine noises.",
-      "why": null
-    },
-    {
-      "t": "5:43 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "5:58 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Can't run on toast forever."
-    },
-    {
-      "t": "6:13 PM",
-      "k": "thought",
-      "x": "Got stock to sell. Stall's calling.",
-      "why": null
-    },
-    {
-      "t": "6:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "6:28 PM",
-      "k": "thought",
-      "x": "Shame, the cafe guy looked tired today.",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "did",
-      "x": "ordering a bag of dog food (6 meals in the cupboard)",
-      "why": "Stocking up for the little guy."
-    },
-    {
-      "t": "6:43 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "thought",
-      "x": "Fog's so thick you could cut it with a spanner.",
-      "why": null
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
-    {
-      "t": "7:13 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Little Thunder is making a funny noise. My kind of problem."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "noticed",
-      "x": "Diesel chases a plastic butterfly and misses.",
-      "why": null
-    },
-    {
-      "t": "7:28 PM",
-      "k": "thought",
-      "x": "That Dog training chapter got me thinking.",
-      "why": null
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "7:43 PM",
-      "k": "thought",
-      "x": "Wonder if I'm pricing my stuff right.",
-      "why": null
-    },
-    {
-      "t": "7:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "7:58 PM",
-      "k": "thought",
-      "x": "Still thinking about that bit on Dog training.",
-      "why": null
-    },
-    {
-      "t": "7:58 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "did",
-      "x": "looking something up on his old laptop (Krabi)",
-      "why": "Wonder what it says about this."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "note",
-      "x": "noted (his laptop: Krabi): Krabi (Thai: กระบี่, pronounced [krā.bìː]) is the capital of and main town in Krabi Province (thesaban mueang), on the west coast of southern Thailand, where th",
-      "why": null
-    },
-    {
-      "t": "8:28 PM",
-      "k": "thought",
-      "x": "Somewhere there's a beach in Krabi with my name on it.",
-      "why": null
-    },
-    {
-      "t": "8:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "8:43 PM",
-      "k": "thought",
-      "x": "Reading about Krabi makes me want to try it.",
-      "why": null
-    },
-    {
-      "t": "8:43 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Heading to the garage."
-    },
-    {
-      "t": "8:58 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Sputnik is making a funny noise. My kind of problem."
-    },
-    {
-      "t": "9:13 PM",
-      "k": "thought",
-      "x": "One more job, then feet up.",
-      "why": null
-    },
-    {
-      "t": "9:13 PM",
-      "k": "did",
-      "x": "training Diesel (give paw: Diesel wasn't having it)",
-      "why": "Teaching Diesel new tricks."
-    },
-    {
-      "t": "9:43 PM",
-      "k": "thought",
-      "x": "Foggy. Feels like a Port Alfred winter morning.",
-      "why": null
-    },
-    {
-      "t": "9:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "9:58 PM",
-      "k": "thought",
-      "x": "Diesel is yawning, so I'm yawning.",
-      "why": null
-    },
-    {
-      "t": "9:58 PM",
-      "k": "did",
-      "x": "walking to the market stall",
-      "why": "Quick trip to the market stall."
-    },
-    {
-      "t": "10:13 PM",
-      "k": "did",
-      "x": "running his market stall (cheap prices, no buyers this time)",
-      "why": "Market day."
-    },
-    {
-      "t": "10:28 PM",
-      "k": "did",
-      "x": "running his market stall (fair prices, no buyers this time)",
-      "why": "Market day."
-    }
-  ],
+  "today_log": [],
   "day_start": {
-    "coins": 48,
+    "coins": 74,
     "bricks": 6,
     "got": 0,
     "used": 0
   },
-  "tick": 401,
+  "tick": 408,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T03:28:21.098366+00:00",
+  "updated": "2026-11-30T05:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 177,
+      "model": 179,
       "queue": 106,
-      "autopilot": 13,
-      "sleeping": 105,
+      "autopilot": 14,
+      "sleeping": 109,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-11-29",
-      "model": 38,
-      "queue": 27,
-      "autopilot": 1,
-      "sleeping": 24,
+      "date": "2026-11-30",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 1,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -842,8 +151,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.32,
-      "tired": 0.6,
+      "hunger": 0.348,
+      "tired": 0.04,
       "bored": 0.53
     },
     "bond": 1,
@@ -854,17 +163,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "asleep at the foot of the bed",
     "last_played_tick": 396,
     "wants": null,
     "recent_thoughts": [
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "I know tricks now. I am a very clever boy.",
-      "Tummy rumble. Big one.",
-      "Is it dinner? It feels like dinner.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "My tail won't stop. I'm not stopping it.",
       "The ! block knows something. I will watch it.",
       "Eyes heavy. Paws heavy. Everything heavy.",
       "Where did the world go?",
@@ -877,9 +179,16 @@
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 386,
     "recent_ideas": [
@@ -893,8 +202,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Who names a bolt? Me. This one's Gerald.",
-    "Afternoon slump. Could do with a coffee.",
     "Someone out there needs a brick model bike. I can feel it.",
     "Sun's in the perfect spot for a nap. Not happening though.",
     "Even the lamp posts look lost in this fog.",
@@ -917,9 +224,11 @@
     "Reading about {topic} makes me want to try it.",
     "One more job, then feet up.",
     "Foggy. Feels like a Port Alfred winter morning.",
-    "{pup} is yawning, so I'm yawning."
+    "{pup} is yawning, so I'm yawning.",
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Night shift is for owls, not mechanics."
   ],
-  "real_updated": "2026-11-27T01:15:14.678838+00:00",
+  "real_updated": "2026-11-27T01:30:11.156655+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
@@ -933,7 +242,7 @@
       "rain",
       "fog"
     ],
-    "temp": 16,
+    "temp": 14,
     "snow": 0,
     "wet": 0
   }

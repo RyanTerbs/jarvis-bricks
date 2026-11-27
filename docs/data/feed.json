@@ -1,5 +1,68 @@
 [
   {
+    "at": "2026-11-30T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Fixing a car",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Two taps on the jar for luck. Sleep.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "Night shift is for owls, not mechanics.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "noticed",
+    "text": "It starts raining plastic raindrops.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Diesel follows me everywhere. Proper little shadow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T03:28:21.098366+00:00",
     "time": "10:28 PM",
     "kind": "did",
@@ -1284,69 +1347,6 @@
     "text": "Did more today than I thought I would.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Cuddle break.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "thought",
-    "text": "Shame, the cafe guy looked tired today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "thought",
-    "text": "Evenings are for slowing down. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Haven't spoken to a human all day.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "thought",
-    "text": "If it's got moving parts, I can fix it. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "noticed",
-    "text": "A loud exhaust echoes down the street.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]
