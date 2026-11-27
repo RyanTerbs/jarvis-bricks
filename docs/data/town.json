@@ -122,7 +122,20 @@
       "built": "2026-12-02"
     }
   ],
-  "site": null,
+  "site": {
+    "bp": "rooftop_garden",
+    "name": "Rooftop Garden",
+    "lot": 8,
+    "work": 5,
+    "done": 0,
+    "started": "2026-12-03",
+    "look": {
+      "kind": "shop",
+      "color": "#4e9a3a",
+      "emoji": "🌻",
+      "floors": 1
+    }
+  },
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",

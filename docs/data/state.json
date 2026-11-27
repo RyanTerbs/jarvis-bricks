@@ -1,31 +1,31 @@
 {
   "name": "Derek",
-  "place": "market_stall",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the market stall",
-  "thought": "Diesel is yawning, so I'm yawning.",
-  "feeling": "content",
+  "doing": "having a rest",
+  "thought": "Batteries low. Need a recharge.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.52,
-    "hunger": 0.415,
-    "social": 0.24,
-    "tinker": 0.375,
+    "rest": 0.55,
+    "hunger": 0.035,
+    "social": 0.12,
+    "tinker": 0.605,
     "curiosity": 0.39
   },
   "mood": 0.44,
-  "energy": 0.48,
-  "coins": 44,
+  "energy": 0.45,
+  "coins": 49,
   "coins_goal": 500,
-  "bricks": 30,
+  "bricks": 0,
   "stock": {
-    "rebuilt_carb": 4
+    "rebuilt_carb": 3
   },
   "owned": [
     "surfboard"
   ],
   "sales": {
-    "items": 4,
-    "coins": 10
+    "items": 5,
+    "coins": 17
   },
   "books": {
     "tourism_thailand": 9,
@@ -136,7 +136,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -149,18 +149,7 @@
     "waves": "small",
     "waves_date": "2026-12-03"
   },
-  "queue": [
-    {
-      "move": "run_the_stall",
-      "why": "Got stock, need buyers.",
-      "pricing": "cheap"
-    },
-    {
-      "move": "run_the_stall",
-      "why": "Market day.",
-      "pricing": "pricey"
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-03",
     "used": 2,
@@ -690,21 +679,105 @@
       "k": "did",
       "x": "walking to the market stall",
       "why": "Off to the market stall."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "running his market stall (cheap prices, sold 1 rebuilt carburettor for 7 coins)",
+      "why": "Got stock, need buyers."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
+      "why": "Market day."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "A clean toolbox is a happy toolbox.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "starting a new build: Rooftop Garden (paid 30 bricks)",
+      "why": "Time to build something new."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "noticed",
+      "x": "It starts raining plastic raindrops.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Dog's gotta walk."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "Can't wait to see the Rooftop Garden finished.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Running on coffee and hope.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
     }
   ],
   "day_start": {
     "coins": 39,
     "bricks": 16,
     "got": 14,
-    "used": 0
+    "used": 30
   },
-  "tick": 768,
+  "tick": 776,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T23:13:21.098366+00:00",
+  "updated": "2026-12-04T01:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 334,
-      "queue": 199,
+      "model": 339,
+      "queue": 202,
       "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
@@ -713,8 +786,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 30,
-      "queue": 17,
+      "model": 35,
+      "queue": 20,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -727,11 +800,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.27,
-      "tired": 0.71,
-      "bored": 0.13
+      "hunger": 0.406,
+      "tired": 0.62,
+      "bored": 0
     },
     "bond": 1.0,
     "food": 1,
@@ -742,18 +815,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 767,
+    "doing": "napping",
+    "last_played_tick": 772,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Following {owner}. Best job in the world.",
-      "My tail won't stop. I'm not stopping it.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Cold white stuff! I must eat all of it.",
-      "{owner} is the best human in the whole town.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Who left this brick here? I'll carry it somewhere else.",
       "The ground is a giant ice cream!",
@@ -765,10 +830,18 @@
       "Wet dog smell is the best smell.",
       "The cafe smells like pies. Noted.",
       "{owner} is busy again. Sigh. Big sigh.",
-      "Wet dog smell is the best smell."
+      "Wet dog smell is the best smell.",
+      "Wet dog smell is the best smell.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Must... stay... awake... for treats.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams."
     ],
-    "thought": "Wet dog smell is the best smell.",
-    "want_ticks": 0,
+    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "want_ticks": 2,
     "last_fed_tick": 759,
     "recent_ideas": [
       "follow {owner} to Thailand. Obviously.",
@@ -783,11 +856,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Toast. Noodles. Anything.",
-    "Funny what you learn. {topic}, who knew.",
-    "That {topic} chapter got me thinking.",
-    "Hands are itching. Need something to fix.",
-    "Winter. Cold mornings, slow engines.",
     "Still thinking about that bit on {topic}.",
     "Smells like oil and toast. Perfect morning.",
     "Winter on the island. Who knew?",
@@ -807,9 +875,14 @@
     "Wet again. The site turns to mud in this.",
     "Sky's going orange. Thailand sunsets must be something else.",
     "Rain on the roof. Lekker sound, rubbish for building.",
-    "{pup} is yawning, so I'm yawning."
+    "{pup} is yawning, so I'm yawning.",
+    "A clean toolbox is a happy toolbox.",
+    "{pup} fell asleep on my boots again. Can't move. Won't move.",
+    "Can't wait to see the {site} finished.",
+    "Running on coffee and hope.",
+    "Batteries low. Need a recharge."
   ],
-  "real_updated": "2026-11-27T13:30:13.651116+00:00",
+  "real_updated": "2026-11-27T13:45:19.982687+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -823,8 +896,8 @@
       "snow",
       "rain"
     ],
-    "temp": 3,
-    "snow": 0.16,
+    "temp": 1,
+    "snow": 0.08,
     "wet": 1,
     "snowman": 1
   }

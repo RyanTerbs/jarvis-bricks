@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-04T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "Batteries low. Need a recharge.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "thought",
+    "text": "Running on coffee and hope.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "Can't wait to see the Rooftop Garden finished.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Dog's gotta walk.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "noticed",
+    "text": "It starts raining plastic raindrops.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "starting a new build: Rooftop Garden (paid 30 bricks)",
+    "why": "Time to build something new.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "A clean toolbox is a happy toolbox.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
+    "why": "Market day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "running his market stall (cheap prices, sold 1 rebuilt carburettor for 7 coins)",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T23:13:21.098366+00:00",
     "time": "6:13 PM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "having a rest",
     "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Cafe next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "thought",
-    "text": "Don't spend it. Don't spend it. Don't spend it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "43 in the jar. 457 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "collecting bricks (+4 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "thought",
-    "text": "Still thinking about that bit on Dog training.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "If I finish this, I'm getting a snack. Deal.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Body says rest. Stubborn brain says one more job.",
-    "why": null,
     "by": "model",
     "ok": true
   }
