@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "ordering a bag of dog food",
-  "thought": "Little guy needs his dad. Coming, boet.",
-  "feeling": "sharp-sharp",
+  "doing": "collecting bricks",
+  "thought": "Picture it: a winding road, a good engine, no rush.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.02,
-    "hunger": 0.605,
-    "social": 0.64,
-    "tinker": 0.24,
-    "curiosity": 0.55
+    "rest": 0.22,
+    "hunger": 0.21,
+    "social": 0.36,
+    "tinker": 0.42,
+    "curiosity": 0.35
   },
-  "mood": 0.35,
-  "energy": 0.98,
-  "coins": 46,
+  "mood": 0.4,
+  "energy": 0.78,
+  "coins": 44,
   "coins_goal": 500,
-  "bricks": 21,
+  "bricks": 24,
   "stock": {
     "rebuilt_carb": 2
   },
@@ -29,7 +29,7 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 6
+    "dog_training": 7
   },
   "finished": [
     "tourism_thailand"
@@ -114,12 +114,17 @@
       "date": "2026-12-01",
       "source": "Dog training (Factors)",
       "note": "Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu"
+    },
+    {
+      "date": "2026-12-02",
+      "source": "Dog training (Individualized or class training)",
+      "note": "Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 6,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -134,8 +139,8 @@
   },
   "queue": [
     {
-      "move": "feed_the_puppy",
-      "why": "Little guy's hungry."
+      "move": "hit_the_lucky_block",
+      "why": "Jump, hit, hope."
     }
   ],
   "lucky": {
@@ -175,21 +180,99 @@
       "k": "did",
       "x": "ordering a bag of dog food (6 meals in the cupboard)",
       "why": "Can't run out of food for Diesel."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Little guy's hungry."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "The jar's getting heavier. Love that sound.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Miss the cafe gossip.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Miss the banter."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 7/8)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "note",
+      "x": "noted (Dog training (Individualized or class training)): Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Picture it: a winding road, a good engine, no rush.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "collecting bricks (+3 bricks)",
+      "why": "Can't build on dreams alone."
     }
   ],
   "day_start": {
     "coins": 49,
     "bricks": 21,
-    "got": 0,
+    "got": 3,
     "used": 0
   },
-  "tick": 625,
+  "tick": 633,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T11:28:21.098366+00:00",
+  "updated": "2026-12-02T13:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 264,
-      "queue": 156,
+      "model": 268,
+      "queue": 160,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -198,8 +281,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 1,
-      "queue": 0,
+      "model": 5,
+      "queue": 4,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -214,12 +297,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.654,
-      "tired": 0.02,
-      "bored": 0.31
+      "hunger": 0.21,
+      "tired": 0.18,
+      "bored": 0.55
     },
-    "bond": 1,
-    "food": 6,
+    "bond": 1.0,
+    "food": 5,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -227,19 +310,11 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "sniffing everything",
     "last_played_tick": 579,
-    "wants": "food",
+    "wants": "explore",
     "recent_thoughts": [
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
@@ -250,11 +325,19 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Sit means treat. I have cracked the code."
+      "Sit means treat. I have cracked the code.",
+      "I know tricks now. I am a very clever boy.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Where did the world go?",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Where did the world go?",
+      "{owner} is the best human in the whole town.",
+      "Everything smells amazing today.",
+      "Good boy? Me? Yes. Me."
     ],
-    "thought": "Sit means treat. I have cracked the code.",
-    "want_ticks": 0,
-    "last_fed_tick": 572,
+    "thought": "Good boy? Me? Yes. Me.",
+    "want_ticks": 6,
+    "last_fed_tick": 626,
     "recent_ideas": [
       "nap on the warm brick pile.",
       "teach the seagulls some manners.",
@@ -268,10 +351,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "Brain's in first gear today.",
-    "Running on half a battery.",
-    "Afternoon slump. Could do with a coffee.",
-    "Clouds sitting on the town like a lid.",
     "Reading about {topic} makes me want to try it.",
     "Thai street food. That's the dream right there.",
     "{pup}'s tail hasn't stopped since breakfast. Lekker.",
@@ -292,9 +371,13 @@
     "Even my spanner looks tired.",
     "Stars are out. Tiny town, big sky.",
     "Grey old day. Good for graft, bad for a tan.",
-    "Little guy needs his dad. Coming, boet."
+    "Little guy needs his dad. Coming, boet.",
+    "The jar's getting heavier. Love that sound.",
+    "Miss the cafe gossip.",
+    "Winter on the island. Who knew?",
+    "Picture it: a winding road, a good engine, no rush."
   ],
-  "real_updated": "2026-11-27T08:45:10.124350+00:00",
+  "real_updated": "2026-11-27T09:00:15.053719+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@6",
@@ -307,7 +390,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 3,
+    "temp": 5,
     "snow": 0,
     "wet": 0,
     "snowman": 0

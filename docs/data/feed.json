@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-02T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "collecting bricks (+3 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Picture it: a winding road, a good engine, no rush.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "note",
+    "text": "noted (Dog training (Individualized or class training)): Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "reading a book (Dog training, chapter 7/8)",
+    "why": "Where was I? Ah, ja.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Quick trip to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "thought",
+    "text": "Miss the cafe gossip.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "The jar's getting heavier. Love that sound.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Little guy's hungry.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-02T11:28:21.098366+00:00",
     "time": "6:28 AM",
     "kind": "did",
@@ -1228,123 +1345,6 @@
     "time": "6:13 AM",
     "kind": "noticed",
     "text": "❄️ Winter has arrived. Time to find the jersey.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Fixing a car",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Tapped the jar twice. Night.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "building (Noodle stall 2/4)",
-    "why": "Let's get this Noodle stall up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Hands are itching. Need something to fix.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "note",
-    "text": "noted (Dog training (History)): Although research into how dogs learn and into cross-species communication has changed the approach to dog training in recent decades, understanding the role of",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 3/8)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "So much I don't know. Love that, actually.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Little guy's hungry.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Want to learn something new today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: make friends with the crab. Or eat it. Undecided.",
     "why": null,
     "by": null,
     "ok": true
