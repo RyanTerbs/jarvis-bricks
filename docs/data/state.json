@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "brick_pit",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Even the lamp posts look lost in this fog.",
-  "feeling": "chilled",
+  "thought": "Thailand. Noodles, mountains, warm sea. Soon.",
+  "feeling": "knackered",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.3,
-    "social": 0.465,
-    "tinker": 0.395,
-    "curiosity": 0.1
+    "rest": 0.66,
+    "hunger": 0.545,
+    "social": 0.59,
+    "tinker": 0.54,
+    "curiosity": 0.075
   },
-  "mood": 0.37,
-  "energy": 0.36,
+  "mood": 0.35,
+  "energy": 0.34,
   "coins": 45,
   "coins_goal": 500,
-  "bricks": 6,
+  "bricks": 16,
   "stock": {
     "rebuilt_carb": 2
   },
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -745,21 +745,87 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Dog training.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Can't see the end of the street. Spooky.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "One more job, then feet up.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "collecting bricks (+5 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "collecting bricks (+5 bricks)",
+      "why": "Brick by brick, hey."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 49,
     "bricks": 21,
-    "got": 15,
+    "got": 25,
     "used": 30
   },
-  "tick": 678,
+  "tick": 685,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T00:43:21.098366+00:00",
+  "updated": "2026-12-03T02:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 297,
-      "queue": 176,
+      "model": 301,
+      "queue": 179,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -768,8 +834,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 34,
-      "queue": 20,
+      "model": 38,
+      "queue": 23,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -782,14 +848,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.722,
-      "tired": 0.83,
-      "bored": 0.36
+      "hunger": 0.154,
+      "tired": 0.67,
+      "bored": 0.48
     },
     "bond": 1.0,
-    "food": 4,
+    "food": 3,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -797,17 +863,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "hungry, staring at Derek",
+    "doing": "napping",
     "last_played_tick": 666,
-    "wants": "food",
+    "wants": null,
     "recent_thoughts": [
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Where did the world go?",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Where did the world go?",
-      "Where did the world go?",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "Following {owner}. Best job in the world.",
@@ -820,11 +879,18 @@
       "Fog. Can't see. Can smell. Sniffing harder.",
       "My tail won't stop. I'm not stopping it.",
       "Where did the world go?",
-      "The ! block knows something. I will watch it."
+      "The ! block knows something. I will watch it.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "If I stare at the bowl hard enough, food appears. Science.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "I am a very good boy. Probably.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "The ! block knows something. I will watch it.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
-    "last_fed_tick": 647,
+    "last_fed_tick": 680,
     "recent_ideas": [
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
@@ -838,10 +904,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "Foggy. Feels like a Port Alfred winter morning.",
-    "Got stock to sell. Stall's calling.",
-    "Wonder if the bikes in Thailand need fixing. Bet they do.",
-    "That {topic} chapter got me thinking.",
     "Yoh, I'm tired.",
     "Toast. Noodles. Anything.",
     "Me and {pup} against the world.",
@@ -862,9 +924,13 @@
     "Wonder if I'm pricing my stuff right.",
     "Looked up {topic} on the old laptop. Lekker.",
     "Too much sitting. Where's my toolbox?",
-    "Even the lamp posts look lost in this fog."
+    "Even the lamp posts look lost in this fog.",
+    "Didn't know half this stuff about {topic}.",
+    "Can't see the end of the street. Spooky.",
+    "One more job, then feet up.",
+    "Thailand. Noodles, mountains, warm sea. Soon."
   ],
-  "real_updated": "2026-11-27T10:30:11.833580+00:00",
+  "real_updated": "2026-11-27T10:43:35.121901+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
@@ -877,7 +943,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 8,
+    "temp": 7,
     "snow": 0,
     "wet": 0,
     "snowman": 0
