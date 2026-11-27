@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Somewhere there's a beach in Krabi with my name on it.",
-  "feeling": "sharp-sharp",
+  "doing": "running his market stall",
+  "thought": "Diesel is yawning, so I'm yawning.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.52,
-    "hunger": 0.37,
-    "social": 0.25,
-    "tinker": 0.56,
-    "curiosity": 0.39
+    "rest": 0.68,
+    "hunger": 0.67,
+    "social": 0,
+    "tinker": 0.44,
+    "curiosity": 0.49
   },
-  "mood": 0.41,
-  "energy": 0.48,
-  "coins": 72,
+  "mood": 0.36,
+  "energy": 0.32,
+  "coins": 76,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -92,7 +92,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 20,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -737,6 +737,72 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Reading about Krabi makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Sputnik is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "One more job, then feet up.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "training Diesel (give paw: Diesel wasn't having it)",
+      "why": "Teaching Diesel new tricks."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Foggy. Feels like a Port Alfred winter morning.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Diesel is yawning, so I'm yawning.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Quick trip to the market stall."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "running his market stall (cheap prices, no buyers this time)",
+      "why": "Market day."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "running his market stall (fair prices, no buyers this time)",
+      "why": "Market day."
     }
   ],
   "day_start": {
@@ -745,13 +811,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 393,
+  "tick": 401,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T01:28:21.098366+00:00",
+  "updated": "2026-11-30T03:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 173,
-      "queue": 102,
+      "model": 177,
+      "queue": 106,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -760,8 +826,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 34,
-      "queue": 23,
+      "model": 38,
+      "queue": 27,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -774,13 +840,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.21,
-      "tired": 0.84,
-      "bored": 0.39
+      "hunger": 0.32,
+      "tired": 0.6,
+      "bored": 0.53
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 5,
     "tricks": {
       "sit": 3
@@ -788,18 +854,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
-    "last_played_tick": 380,
-    "wants": "nap",
+    "doing": "napping",
+    "last_played_tick": 396,
+    "wants": null,
     "recent_thoughts": [
-      "Life is good. Life is SO good.",
-      "Learning is hard. Treats make it easier.",
-      "Where did the world go?",
-      "The cafe smells like pies. Noted.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Tail check: still there. Good.",
-      "I am a very good boy. Probably.",
-      "Where did the world go?",
       "Is that a squirrel? It's a bolt. Still exciting.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "I know tricks now. I am a very clever boy.",
@@ -811,9 +869,17 @@
       "Eyes heavy. Paws heavy. Everything heavy.",
       "Where did the world go?",
       "Where did the world go?",
-      "{owner} is the best human in the whole town."
+      "{owner} is the best human in the whole town.",
+      "Must... stay... awake... for treats.",
+      "Where did the world go?",
+      "That engine is loud. I will bark at it. Later.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Derek is the best human in the whole town.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 386,
     "recent_ideas": [
@@ -827,10 +893,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Rain on the roof. Lekker sound, rubbish for building.",
-    "Ja, today feels like a building day.",
-    "Early bird gets the bricks.",
-    "Had a dream about a gearbox. Normal, right?",
     "Who names a bolt? Me. This one's Gerald.",
     "Afternoon slump. Could do with a coffee.",
     "Someone out there needs a brick model bike. I can feel it.",
@@ -851,9 +913,13 @@
     "That {topic} chapter got me thinking.",
     "Wonder if I'm pricing my stuff right.",
     "Still thinking about that bit on {topic}.",
-    "Somewhere there's a beach in Krabi with my name on it."
+    "Somewhere there's a beach in Krabi with my name on it.",
+    "Reading about {topic} makes me want to try it.",
+    "One more job, then feet up.",
+    "Foggy. Feels like a Port Alfred winter morning.",
+    "{pup} is yawning, so I'm yawning."
   ],
-  "real_updated": "2026-11-27T01:00:11.975862+00:00",
+  "real_updated": "2026-11-27T01:15:14.678838+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
@@ -867,7 +933,7 @@
       "rain",
       "fog"
     ],
-    "temp": 17,
+    "temp": 16,
     "snow": 0,
     "wet": 0
   }
