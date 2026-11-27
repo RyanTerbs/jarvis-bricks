@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-11-30T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "refused",
+    "text": "tried run the stall: nothing left to sell (make something first)",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-11-30T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "running his market stall (fair prices, sold 1 postcard of the town for 2 coins)",
+    "why": "Market day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Market stall next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Ja, today feels like a building day.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "training Diesel (give paw: 1/4)",
+    "why": "Treat in the pocket, let's go.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "training Diesel (give paw: Diesel wasn't having it)",
+    "why": "Teaching Diesel new tricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "thought",
+    "text": "Can't see the end of the street. Spooky.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Customer's waiting. Can't leave them stuck.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Betsy is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T14:28:21.098366+00:00",
     "time": "9:28 AM",
     "kind": "did",
@@ -1248,105 +1347,6 @@
     "text": "Wet again. The site turns to mud in this.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "noticed",
-    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Heading to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Who invented the carburettor anyway? Must look that up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Freezing. Mug time.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Autumn. Days getting shorter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Every town needs a guy who fixes stuff. That's me.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Finished building the Park",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

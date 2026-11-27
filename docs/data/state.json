@@ -1,29 +1,27 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "walking to the garage",
-  "thought": "Sun's up, Diesel's up, so I'm up.",
+  "doing": "running his market stall",
+  "thought": "Ja, today feels like a building day.",
   "feeling": "content",
   "needs": {
-    "rest": 0.38,
-    "hunger": 0.175,
-    "social": 0.27,
-    "tinker": 0.64,
-    "curiosity": 0.43
+    "rest": 0.67,
+    "hunger": 0.495,
+    "social": 0.16,
+    "tinker": 0.12,
+    "curiosity": 0.33
   },
-  "mood": 0.43,
-  "energy": 0.62,
-  "coins": 76,
+  "mood": 0.44,
+  "energy": 0.33,
+  "coins": 86,
   "coins_goal": 500,
   "bricks": 15,
-  "stock": {
-    "postcard": 1
-  },
+  "stock": {},
   "owned": [],
   "sales": {
-    "items": 3,
-    "coins": 8
+    "items": 4,
+    "coins": 10
   },
   "books": {
     "tourism_thailand": 9,
@@ -97,7 +95,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 9,
+  "hour": 11,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -110,16 +108,7 @@
     "waves": "flat",
     "waves_date": "2026-11-30"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "Betsy is making a funny noise. My kind of problem."
-    },
-    {
-      "move": "fix_a_car",
-      "why": "Customer's waiting. Can't leave them stuck."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-30",
     "used": 1,
@@ -271,6 +260,66 @@
       "k": "did",
       "x": "walking to the garage",
       "why": "Garage next."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Betsy is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Fresh air for both of us."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "thought",
+      "x": "Can't see the end of the street. Spooky.",
+      "why": null
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "training Diesel (give paw: Diesel wasn't having it)",
+      "why": "Teaching Diesel new tricks."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "training Diesel (give paw: 1/4)",
+      "why": "Treat in the pocket, let's go."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "thought",
+      "x": "Ja, today feels like a building day.",
+      "why": null
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Market stall next."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "running his market stall (fair prices, sold 1 postcard of the town for 2 coins)",
+      "why": "Market day."
     }
   ],
   "day_start": {
@@ -279,13 +328,13 @@
     "got": 9,
     "used": 0
   },
-  "tick": 445,
+  "tick": 453,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T14:28:21.098366+00:00",
+  "updated": "2026-11-30T16:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 188,
-      "queue": 110,
+      "model": 191,
+      "queue": 115,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -294,8 +343,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 9,
-      "queue": 4,
+      "model": 12,
+      "queue": 9,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -308,32 +357,25 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.18,
-      "tired": 0.51,
-      "bored": 0.12
+      "hunger": 0.342,
+      "tired": 0.72,
+      "bored": 0.16
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 4,
     "tricks": {
-      "sit": 3
+      "sit": 3,
+      "paw": 1
     },
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 444,
-    "wants": "walk",
+    "doing": "napping",
+    "last_played_tick": 450,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Following {owner}. Best job in the world.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "So bored I'm counting my own paws. Four. Still four.",
       "Where did the world go?",
@@ -345,9 +387,17 @@
       "Fog. Can't see. Can smell. Sniffing harder.",
       "My tail won't stop. I'm not stopping it.",
       "Life is good. Life is SO good.",
-      "Where did the world go?"
+      "Where did the world go?",
+      "Where did the world go?",
+      "{owner} is making clanky noises. I will supervise.",
+      "That engine is loud. I will bark at it. Later.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "Life is good. Life is SO good.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Where did the world go?",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 439,
     "recent_ideas": [
@@ -361,9 +411,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Even my spanner looks tired.",
-    "Should I name the street? {me} Street. Ja, why not.",
-    "Stomach's making engine noises.",
     "Got stock to sell. Stall's calling.",
     "Shame, the cafe guy looked tired today.",
     "Fog's so thick you could cut it with a spanner.",
@@ -385,9 +432,12 @@
     "Even the lamp posts look lost in this fog.",
     "Even the lamp posts look lost in this fog.",
     "Hands are itching. Need something to fix.",
-    "Sun's up, {pup}'s up, so I'm up."
+    "Sun's up, {pup}'s up, so I'm up.",
+    "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "Can't see the end of the street. Spooky.",
+    "Ja, today feels like a building day."
   ],
-  "real_updated": "2026-11-27T02:45:12.633302+00:00",
+  "real_updated": "2026-11-27T03:00:13.733845+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@6",
@@ -400,7 +450,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 19,
+    "temp": 21,
     "snow": 0,
     "wet": 0
   }
