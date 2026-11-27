@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-01T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Let him run.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "Proud of Diesel. Little guy's growing up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Betsy is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "thought",
+    "text": "Every coin counts. Every single one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "note",
+    "text": "noted (Dog training (Training methods)): Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "reading a book (Dog training, chapter 5/8)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "thought",
+    "text": "Ja, today feels like a building day.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-01T14:43:21.098366+00:00",
     "time": "9:43 AM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "Diesel chews a stray brick and looks very pleased with himself.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Quick trip to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Even the lamp posts look lost in this fog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Little guy's hungry.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Slept like a log. Ready to graft.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Heading to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Funny what you learn. Dog training, who knew.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Coffee first. Then the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Mr Wobbles is making a funny noise. My kind of problem.",
-    "by": "queue",
     "ok": true
   }
 ]

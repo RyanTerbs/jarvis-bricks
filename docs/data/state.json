@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "noodle_stall",
+  "place": "beach",
   "asleep": false,
-  "doing": "building",
-  "thought": "The jar's getting heavier. Love that sound.",
-  "feeling": "content",
+  "doing": "playing fetch with Diesel on the beach",
+  "thought": "Proud of Diesel. Little guy's growing up.",
+  "feeling": "chuffed",
   "needs": {
-    "rest": 0.47,
-    "hunger": 0.14,
-    "social": 0.235,
-    "tinker": 0.5,
-    "curiosity": 0.665
+    "rest": 0.66,
+    "hunger": 0.475,
+    "social": 0.24,
+    "tinker": 0.395,
+    "curiosity": 0.54
   },
-  "mood": 0.63,
-  "energy": 0.53,
-  "coins": 76,
+  "mood": 0.53,
+  "energy": 0.34,
+  "coins": 80,
   "coins_goal": 500,
   "bricks": 2,
   "stock": {},
@@ -25,7 +25,7 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 4
+    "dog_training": 5
   },
   "finished": [
     "tourism_thailand"
@@ -100,12 +100,17 @@
       "date": "2026-12-01",
       "source": "Dog training (How dogs learn)",
       "note": "Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence"
+    },
+    {
+      "date": "2026-12-01",
+      "source": "Dog training (Training methods)",
+      "note": "Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training."
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 9,
+  "hour": 11,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -318,6 +323,78 @@
       "k": "did",
       "x": "building (finished!)",
       "why": "Back to the Noodle stall. Nearly there."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "thought",
+      "x": "Ja, today feels like a building day.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 5/8)",
+      "why": "Books are a cheap mechanics' school."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "note",
+      "x": "noted (Dog training (Training methods)): Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training.",
+      "why": null
+    },
+    {
+      "t": "10:28 AM",
+      "k": "thought",
+      "x": "Every coin counts. Every single one.",
+      "why": null
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Betsy is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "thought",
+      "x": "Proud of Diesel. Little guy's growing up.",
+      "why": null
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Let him run."
     }
   ],
   "day_start": {
@@ -326,13 +403,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 542,
+  "tick": 549,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T14:43:21.098366+00:00",
+  "updated": "2026-12-01T16:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 229,
-      "queue": 137,
+      "model": 233,
+      "queue": 140,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -341,8 +418,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 9,
-      "queue": 5,
+      "model": 13,
+      "queue": 8,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -357,12 +434,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.678,
-      "tired": 0.38,
-      "bored": 0.4
+      "hunger": 0.188,
+      "tired": 0.67,
+      "bored": 0.01
     },
     "bond": 1.0,
-    "food": 2,
+    "food": 1,
     "tricks": {
       "sit": 3,
       "paw": 1
@@ -370,17 +447,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 538,
-    "wants": "food",
+    "doing": "barking at the waves",
+    "last_played_tick": 549,
+    "wants": null,
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "Is that a squirrel? It's a bolt. Still exciting.",
       "The ground is a giant ice cream!",
       "My tail won't stop. I'm not stopping it.",
@@ -393,11 +463,18 @@
       "The ground is a giant ice cream!",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "If I stare at the bowl hard enough, food appears. Science.",
-      "Helping. I am helping. By sitting here."
+      "Helping. I am helping. By sitting here.",
+      "The ground is a giant ice cream!",
+      "My bowl is empty. This is an emergency.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Everything smells amazing today.",
+      "Cold white stuff! I must eat all of it.",
+      "Following {owner}. Best job in the world.",
+      "{owner} says a word, I do a thing, treat appears. Magic."
     ],
-    "thought": "Helping. I am helping. By sitting here.",
+    "thought": "YES! That's what I wanted!",
     "want_ticks": 0,
-    "last_fed_tick": 496,
+    "last_fed_tick": 545,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -411,10 +488,6 @@
     "idea": "make friends with the crab. Or eat it. Undecided."
   },
   "recent_thoughts": [
-    "Never had a mate this loyal.",
-    "Stomach's making engine noises.",
-    "{pup} is losing his mind over a crab.",
-    "Need a lie down before I drop a spanner on my foot.",
     "Don't spend it. Don't spend it. Don't spend it.",
     "Sun's out. Even the bricks look happy.",
     "Proper shorts weather.",
@@ -435,9 +508,13 @@
     "Food first. Then I'm useful again.",
     "The {site} is coming along. Brick by brick.",
     "{pup} first. Always {pup} first.",
-    "The jar's getting heavier. Love that sound."
+    "The jar's getting heavier. Love that sound.",
+    "Ja, today feels like a building day.",
+    "Every coin counts. Every single one.",
+    "Winter on the island. Who knew?",
+    "Proud of {pup}. Little guy's growing up."
   ],
-  "real_updated": "2026-11-27T06:00:12.934266+00:00",
+  "real_updated": "2026-11-27T06:15:10.978059+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@6",
@@ -450,7 +527,7 @@
     "seen": [
       "snow"
     ],
-    "temp": -1,
+    "temp": 0,
     "snow": 1,
     "wet": 0
   }
