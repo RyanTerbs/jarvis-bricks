@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "library",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Too much sitting. Where's my toolbox?",
-  "feeling": "happy enough",
+  "doing": "walking to the library",
+  "thought": "Wonder how they build the roads up in the Thai mountains.",
+  "feeling": "good, ja",
   "needs": {
     "rest": 0.6,
-    "hunger": 0.215,
-    "social": 0.195,
-    "tinker": 0.63,
-    "curiosity": 0.47
+    "hunger": 0.515,
+    "social": 0.215,
+    "tinker": 0.56,
+    "curiosity": 0.67
   },
   "mood": 0.42,
   "energy": 0.4,
-  "coins": 52,
+  "coins": 56,
   "coins_goal": 500,
   "bricks": 118,
   "stock": {
@@ -179,7 +179,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 20,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -192,7 +192,13 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "read_a_book",
+      "why": "One more chapter.",
+      "book": "carburetor"
+    }
+  ],
   "lucky": {
     "date": "2026-12-06",
     "used": 2,
@@ -812,6 +818,102 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Not a cloud. Diesel is going to want the beach.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Proper shorts weather.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "cuddling Diesel",
+      "why": "Cuddle break."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "thought",
+      "x": "Body says rest. Stubborn brain says one more job.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: teach the seagulls some manners.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "thought",
+      "x": "So much I don't know. Love that, actually.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "10:58 PM",
+      "k": "thought",
+      "x": "Wonder how they build the roads up in the Thai mountains.",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Heading to the library."
     }
   ],
   "day_start": {
@@ -820,13 +922,13 @@
     "got": 56,
     "used": 3
   },
-  "tick": 1067,
+  "tick": 1075,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T01:58:21.098366+00:00",
+  "updated": "2026-12-07T03:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 465,
-      "queue": 275,
+      "model": 471,
+      "queue": 277,
       "autopilot": 37,
       "sleeping": 290,
       "tokens_in": 0,
@@ -835,8 +937,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 33,
-      "queue": 24,
+      "model": 39,
+      "queue": 26,
       "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
@@ -851,12 +953,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.442,
-      "tired": 0.73,
-      "bored": 0.65
+      "hunger": 0.03,
+      "tired": 0.89,
+      "bored": 0.74
     },
     "bond": 1.0,
-    "food": 5,
+    "food": 4,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -864,18 +966,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
+    "doing": "bored, chewing whatever he can find",
     "last_played_tick": 1054,
-    "wants": "play",
+    "wants": "nap",
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "My tail won't stop. I'm not stopping it.",
-      "Is it dinner? It feels like dinner.",
-      "Walk? Walk? WALK?",
-      "Ball. Ball. Ball. Ball?",
-      "I could chew a boot. Just a little bit.",
-      "{owner} is the best human in the whole town.",
       "Sun on my belly. Perfect.",
       "Good boy? Me? Yes. Me.",
       "Grease smell. Best smell after sausages.",
@@ -887,30 +981,32 @@
       "I know tricks now. I am a very clever boy.",
       "Learning is hard. Treats make it easier.",
       "{owner} is busy again. Sigh. Big sigh.",
-      "Sun on my belly. Perfect."
+      "Sun on my belly. Perfect.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Everything smells amazing today.",
+      "The rusty thing has wheels. Wheels go places. Places have smells.",
+      "My tail won't stop. I'm not stopping it.",
+      "So bored I'm counting my own paws. Four. Still four.",
+      "My bowl is empty. This is an emergency.",
+      "{owner} is the best human in the whole town.",
+      "Everything smells amazing today."
     ],
-    "thought": "Sun on my belly. Perfect.",
+    "thought": "Everything smells amazing today.",
     "want_ticks": 0,
-    "last_fed_tick": 1053,
+    "last_fed_tick": 1074,
     "recent_ideas": [
-      "bring {owner} a stick. Then a bigger stick.",
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
       "bark at the bike until it goes vroom.",
       "guard the savings jar. Nobody touches the jar.",
       "learn the next trick and get ALL the treats.",
-      "follow {owner} to Thailand. Obviously."
+      "follow {owner} to Thailand. Obviously.",
+      "teach the seagulls some manners."
     ],
-    "idea": "follow Derek to Thailand. Obviously."
+    "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Under all that rust there's a good bike. I can see her.",
-    "{pup} fell asleep on my boots again. Can't move. Won't move.",
-    "If it's got moving parts, I can fix it. Mostly.",
-    "Blue sky, no excuses.",
-    "Best decision I ever made, keeping {pup}.",
-    "Found a 1980s coin in {bike}'s toolbox. Lucky.",
     "Never had a mate this loyal.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "Nothing like the sea to clear the head.",
@@ -929,9 +1025,15 @@
     "Could go a proper pie right now.",
     "Weather like this, Thailand feels close.",
     "Sun's out. Even the bricks look happy.",
-    "Too much sitting. Where's my toolbox?"
+    "Too much sitting. Where's my toolbox?",
+    "Not a cloud. {pup} is going to want the beach.",
+    "Proper shorts weather.",
+    "Winter on the island. Who knew?",
+    "Body says rest. Stubborn brain says one more job.",
+    "So much I don't know. Love that, actually.",
+    "Wonder how they build the roads up in the Thai mountains."
   ],
-  "real_updated": "2026-11-27T23:30:12.721267+00:00",
+  "real_updated": "2026-11-27T23:45:16.951610+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
@@ -944,7 +1046,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 10,
+    "temp": 8,
     "snow": 0,
     "wet": 0,
     "snowman": 0
