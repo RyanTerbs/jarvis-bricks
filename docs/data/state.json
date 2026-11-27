@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "beach",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the beach",
-  "thought": "Even my spanner looks tired.",
-  "feeling": "content",
+  "doing": "ordering a bag of dog food",
+  "thought": "Shame, the cafe guy looked tired today.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.65,
-    "hunger": 0.495,
-    "social": 0.125,
-    "tinker": 0.435,
-    "curiosity": 0.415
+    "rest": 0.6,
+    "hunger": 0.07,
+    "social": 0.13,
+    "tinker": 0.63,
+    "curiosity": 0.44
   },
-  "mood": 0.38,
-  "energy": 0.35,
-  "coins": 73,
+  "mood": 0.4,
+  "energy": 0.4,
+  "coins": 68,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -85,14 +85,14 @@
     }
   ],
   "looked_up": [],
-  "hour": 16,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 7,
+    "shells": 9,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "flat",
@@ -100,12 +100,8 @@
   },
   "queue": [
     {
-      "move": "collect_shells",
-      "why": "Pretty ones today."
-    },
-    {
-      "move": "play_fetch_on_the_beach",
-      "why": "Diesel loves the beach."
+      "move": "feed_the_puppy",
+      "why": "He depends on me."
     }
   ],
   "lucky": {
@@ -577,6 +573,78 @@
       "k": "did",
       "x": "walking to the beach",
       "why": "Off to the beach."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "noticed",
+      "x": "Diesel steals a sock and runs off down the street.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "collecting shells (+2 shells (9 in the jar))",
+      "why": "Pretty ones today."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach",
+      "why": "Diesel loves the beach."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Should I name the street? Derek Street. Ja, why not.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Stomach's making engine noises.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Got stock to sell. Stall's calling.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Shame, the cafe guy looked tired today.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "ordering a bag of dog food (6 meals in the cupboard)",
+      "why": "Stocking up for the little guy."
     }
   ],
   "day_start": {
@@ -585,13 +653,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 378,
+  "tick": 385,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T21:43:21.098366+00:00",
+  "updated": "2026-11-29T23:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 164,
-      "queue": 96,
+      "model": 168,
+      "queue": 99,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -600,8 +668,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 25,
-      "queue": 17,
+      "model": 29,
+      "queue": 20,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -616,29 +684,22 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.456,
-      "tired": 0.39,
-      "bored": 0.18
+      "hunger": 0.666,
+      "tired": 0.68,
+      "bored": 0.15
     },
     "bond": 1,
-    "food": 0,
+    "food": 6,
     "tricks": {
       "sit": 3
     },
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 363,
-    "wants": "cuddle",
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 380,
+    "wants": "food",
     "recent_thoughts": [
-      "{owner} is the best human in the whole town.",
-      "Nap spot: located. Engaging.",
-      "Wet dog smell is the best smell.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
@@ -651,10 +712,17 @@
       "Learning is hard. Treats make it easier.",
       "Where did the world go?",
       "The cafe smells like pies. Noted.",
-      "Fog. Can't see. Can smell. Sniffing harder."
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Tail check: still there. Good.",
+      "I am a very good boy. Probably.",
+      "Where did the world go?",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "I know tricks now. I am a very clever boy.",
+      "Tummy rumble. Big one."
     ],
-    "thought": "Fog. Can't see. Can smell. Sniffing harder.",
-    "want_ticks": 4,
+    "thought": "Tummy rumble. Big one.",
+    "want_ticks": 0,
     "last_fed_tick": 355,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -667,10 +735,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Every town needs a guy who fixes stuff. That's me.",
-    "Autumn. Days getting shorter.",
-    "Who invented the carburettor anyway? Must look that up.",
-    "Wet again. The site turns to mud in this.",
     "Reading about {topic} makes me want to try it.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Ja, no, definitely, maybe.",
@@ -691,9 +755,13 @@
     "Can't see the end of the street. Spooky.",
     "Best decision I ever made, keeping {pup}.",
     "Foggy. Feels like a Port Alfred winter morning.",
-    "Even my spanner looks tired."
+    "Even my spanner looks tired.",
+    "Should I name the street? {me} Street. Ja, why not.",
+    "Stomach's making engine noises.",
+    "Got stock to sell. Stall's calling.",
+    "Shame, the cafe guy looked tired today."
   ],
-  "real_updated": "2026-11-27T00:30:12.122219+00:00",
+  "real_updated": "2026-11-27T00:45:10.933307+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
@@ -707,8 +775,8 @@
       "rain",
       "fog"
     ],
-    "temp": 20,
+    "temp": 19,
     "snow": 0,
-    "wet": 0.25
+    "wet": 0
   }
 }
