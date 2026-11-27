@@ -7,12 +7,12 @@
   "feeling": "sharp-sharp",
   "needs": {
     "rest": 0,
-    "hunger": 0.635,
-    "social": 0.78,
-    "tinker": 0.575,
-    "curiosity": 0.605
+    "hunger": 0.705,
+    "social": 0.815,
+    "tinker": 0.61,
+    "curiosity": 0.64
   },
-  "mood": 0.21,
+  "mood": 0.1,
   "energy": 1,
   "coins": 26,
   "coins_goal": 500,
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 4,
+  "hour": 5,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -191,15 +191,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1000,
+  "tick": 1007,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T09:13:21.098366+00:00",
+  "updated": "2026-12-06T10:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 432,
       "queue": 251,
       "autopilot": 34,
-      "sleeping": 283,
+      "sleeping": 290,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -209,7 +209,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 17,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -222,7 +222,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.194,
+      "hunger": 0.222,
       "tired": 0,
       "bored": 0.42
     },
@@ -239,28 +239,28 @@
     "last_played_tick": 972,
     "wants": null,
     "recent_thoughts": [
+      "Zzz. Squirrel. Zzz.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "Dreaming: running, running, running. Legs twitching.",
     "want_ticks": 0,
     "last_fed_tick": 971,
     "recent_ideas": [
@@ -302,7 +302,7 @@
     "{pup} follows me everywhere. Proper little shadow.",
     "Winter on the island. Who knew?"
   ],
-  "real_updated": "2026-11-27T21:15:11.915449+00:00",
+  "real_updated": "2026-11-27T21:30:10.994244+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -315,7 +315,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 4,
+    "temp": 5,
     "snow": 0,
     "wet": 0,
     "snowman": 0
