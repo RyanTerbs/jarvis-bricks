@@ -6,14 +6,14 @@
   "thought": "Foggy. Feels like a Port Alfred winter morning.",
   "feeling": "content",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.1,
-    "social": 0.76,
-    "tinker": 0.06,
-    "curiosity": 0.155
+    "rest": 0.08,
+    "hunger": 0.17,
+    "social": 0.795,
+    "tinker": 0.095,
+    "curiosity": 0.19
   },
-  "mood": 0.23,
-  "energy": 0.36,
+  "mood": 0.18,
+  "energy": 0.92,
   "coins": 39,
   "coins_goal": 500,
   "bricks": 16,
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 23,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -140,13 +140,13 @@
     "shells": 10,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "flat",
-    "waves_date": "2026-12-02"
+    "waves": "small",
+    "waves_date": "2026-12-03"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-12-02",
-    "used": 3,
+    "date": "2026-12-03",
+    "used": 0,
     "max": 3
   },
   "designed_on": "2026-12-02",
@@ -158,25 +158,25 @@
     "got": 0,
     "used": 0
   },
-  "tick": 693,
+  "tick": 700,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T04:28:21.098366+00:00",
+  "updated": "2026-12-03T06:13:21.098366+00:00",
   "stats": {
     "all": {
       "model": 304,
       "queue": 182,
       "autopilot": 22,
-      "sleeping": 185,
+      "sleeping": 192,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-12-02",
-      "model": 41,
-      "queue": 26,
-      "autopilot": 2,
-      "sleeping": 25,
+      "date": "2026-12-03",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 5,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -189,8 +189,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.238,
-      "tired": 0.23,
+      "hunger": 0.266,
+      "tired": 0,
       "bored": 0.54
     },
     "bond": 1.0,
@@ -206,13 +206,6 @@
     "last_played_tick": 666,
     "wants": null,
     "recent_thoughts": [
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "My tail won't stop. I'm not stopping it.",
-      "Where did the world go?",
-      "The ! block knows something. I will watch it.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "If I stare at the bowl hard enough, food appears. Science.",
       "Eyes heavy. Paws heavy. Everything heavy.",
       "I am a very good boy. Probably.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -225,9 +218,16 @@
       "Zzz. Squirrel. Zzz.",
       "It's dark. I will guard the house. From the sofa.",
       "Where did the world go?",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 680,
     "recent_ideas": [
@@ -269,7 +269,7 @@
     "Running on coffee and hope.",
     "Foggy. Feels like a Port Alfred winter morning."
   ],
-  "real_updated": "2026-11-27T11:00:12.163914+00:00",
+  "real_updated": "2026-11-27T11:15:11.316570+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
@@ -282,7 +282,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 5,
+    "temp": 4,
     "snow": 0,
     "wet": 0,
     "snowman": 0
