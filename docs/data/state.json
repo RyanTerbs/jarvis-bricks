@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "ordering a bag of dog food",
-  "thought": "Shame, the cafe guy looked tired today.",
-  "feeling": "good, ja",
+  "doing": "having a rest",
+  "thought": "Somewhere there's a beach in Krabi with my name on it.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.6,
-    "hunger": 0.07,
-    "social": 0.13,
-    "tinker": 0.63,
-    "curiosity": 0.44
+    "rest": 0.52,
+    "hunger": 0.37,
+    "social": 0.25,
+    "tinker": 0.56,
+    "curiosity": 0.39
   },
-  "mood": 0.4,
-  "energy": 0.4,
-  "coins": 68,
+  "mood": 0.41,
+  "energy": 0.48,
+  "coins": 72,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -82,10 +82,17 @@
       "date": "2026-11-29",
       "source": "Dog training (Introduction)",
       "note": "Dog training is a type of animal training, the application of behavior analysis which uses the environmental events of antecedents (trigger for a behavior) and"
+    },
+    {
+      "date": "2026-11-29",
+      "source": "his laptop: Krabi",
+      "note": "Krabi (Thai: กระบี่, pronounced [krā.bìː]) is the capital of and main town in Krabi Province (thesaban mueang), on the west coast of southern Thailand, where th"
     }
   ],
-  "looked_up": [],
-  "hour": 18,
+  "looked_up": [
+    "Krabi"
+  ],
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -98,12 +105,7 @@
     "waves": "flat",
     "waves_date": "2026-11-29"
   },
-  "queue": [
-    {
-      "move": "feed_the_puppy",
-      "why": "He depends on me."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-11-29",
     "used": 0,
@@ -645,6 +647,96 @@
       "k": "did",
       "x": "ordering a bag of dog food (6 meals in the cupboard)",
       "why": "Stocking up for the little guy."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Fog's so thick you could cut it with a spanner.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Little Thunder is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "noticed",
+      "x": "Diesel chases a plastic butterfly and misses.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "That Dog training chapter got me thinking.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Wonder if I'm pricing my stuff right.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Dog training.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "looking something up on his old laptop (Krabi)",
+      "why": "Wonder what it says about this."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "note",
+      "x": "noted (his laptop: Krabi): Krabi (Thai: กระบี่, pronounced [krā.bìː]) is the capital of and main town in Krabi Province (thesaban mueang), on the west coast of southern Thailand, where th",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Somewhere there's a beach in Krabi with my name on it.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -653,13 +745,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 385,
+  "tick": 393,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T23:28:21.098366+00:00",
+  "updated": "2026-11-30T01:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 168,
-      "queue": 99,
+      "model": 173,
+      "queue": 102,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -668,8 +760,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 29,
-      "queue": 20,
+      "model": 34,
+      "queue": 23,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -684,30 +776,22 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.666,
-      "tired": 0.68,
-      "bored": 0.15
+      "hunger": 0.21,
+      "tired": 0.84,
+      "bored": 0.39
     },
-    "bond": 1,
-    "food": 6,
+    "bond": 1.0,
+    "food": 5,
     "tricks": {
       "sit": 3
     },
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
+    "doing": "watching Derek work",
     "last_played_tick": 380,
-    "wants": "food",
+    "wants": "nap",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Sit means treat. I have cracked the code.",
       "Life is good. Life is SO good.",
       "Learning is hard. Treats make it easier.",
       "Where did the world go?",
@@ -719,11 +803,19 @@
       "Is that a squirrel? It's a bolt. Still exciting.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "I know tricks now. I am a very clever boy.",
-      "Tummy rumble. Big one."
+      "Tummy rumble. Big one.",
+      "Is it dinner? It feels like dinner.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "My tail won't stop. I'm not stopping it.",
+      "The ! block knows something. I will watch it.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Where did the world go?",
+      "Where did the world go?",
+      "{owner} is the best human in the whole town."
     ],
-    "thought": "Tummy rumble. Big one.",
+    "thought": "Derek is the best human in the whole town.",
     "want_ticks": 0,
-    "last_fed_tick": 355,
+    "last_fed_tick": 386,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -735,11 +827,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Reading about {topic} makes me want to try it.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Ja, no, definitely, maybe.",
-    "Proud of {pup}. Little guy's growing up.",
-    "Plan for today: work hard, eat well, don't lose the 10mm.",
     "Rain on the roof. Lekker sound, rubbish for building.",
     "Ja, today feels like a building day.",
     "Early bird gets the bricks.",
@@ -759,9 +846,14 @@
     "Should I name the street? {me} Street. Ja, why not.",
     "Stomach's making engine noises.",
     "Got stock to sell. Stall's calling.",
-    "Shame, the cafe guy looked tired today."
+    "Shame, the cafe guy looked tired today.",
+    "Fog's so thick you could cut it with a spanner.",
+    "That {topic} chapter got me thinking.",
+    "Wonder if I'm pricing my stuff right.",
+    "Still thinking about that bit on {topic}.",
+    "Somewhere there's a beach in Krabi with my name on it."
   ],
-  "real_updated": "2026-11-27T00:45:10.933307+00:00",
+  "real_updated": "2026-11-27T01:00:11.975862+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
@@ -775,7 +867,7 @@
       "rain",
       "fog"
     ],
-    "temp": 19,
+    "temp": 17,
     "snow": 0,
     "wet": 0
   }
