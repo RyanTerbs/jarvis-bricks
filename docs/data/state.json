@@ -7,12 +7,12 @@
   "feeling": "good, ja",
   "needs": {
     "rest": 0,
-    "hunger": 0.38,
-    "social": 0.75,
-    "tinker": 0.585,
-    "curiosity": 0.205
+    "hunger": 0.45,
+    "social": 0.785,
+    "tinker": 0.62,
+    "curiosity": 0.24
   },
-  "mood": 0.25,
+  "mood": 0.2,
   "energy": 1,
   "coins": 18,
   "coins_goal": 500,
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 2,
+  "hour": 3,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -181,15 +181,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 896,
+  "tick": 903,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T07:13:21.098366+00:00",
+  "updated": "2026-12-05T08:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 392,
       "queue": 227,
       "autopilot": 28,
-      "sleeping": 249,
+      "sleeping": 256,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -199,7 +199,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 9,
+      "sleeping": 16,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -212,7 +212,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.526,
+      "hunger": 0.554,
       "tired": 0,
       "bored": 0.09
     },
@@ -229,13 +229,6 @@
     "last_played_tick": 874,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Following {owner}. Best job in the world.",
       "Dreaming: a sausage as big as the garage.",
@@ -248,9 +241,16 @@
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 862,
     "recent_ideas": [
@@ -292,7 +292,7 @@
     "Brick town under snow looks like a Christmas card.",
     "Every bolt on {bike} is seized. Every single one."
   ],
-  "real_updated": "2026-11-27T17:45:16.076419+00:00",
+  "real_updated": "2026-11-27T18:00:14.934579+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-04@13",
