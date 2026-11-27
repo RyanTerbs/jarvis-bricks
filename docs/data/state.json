@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "garage",
-  "asleep": false,
-  "doing": "walking to the garage",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
   "thought": "Winter on the island. Who knew?",
   "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.32,
-    "social": 0.61,
-    "tinker": 0.725,
-    "curiosity": 0.435
+    "rest": 0.33,
+    "hunger": 0.495,
+    "social": 0.71,
+    "tinker": 0.505,
+    "curiosity": 0.535
   },
-  "mood": 0.35,
-  "energy": 0.38,
-  "coins": 22,
+  "mood": 0.29,
+  "energy": 0.67,
+  "coins": 26,
   "coins_goal": 500,
   "bricks": 65,
   "stock": {
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 22,
+  "hour": 0,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -173,751 +173,43 @@
     "shells": 17,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "good",
-    "waves_date": "2026-12-05"
+    "waves": "small",
+    "waves_date": "2026-12-06"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": null
-    }
-  ],
+  "queue": [],
   "lucky": {
-    "date": "2026-12-05",
-    "used": 3,
+    "date": "2026-12-06",
+    "used": 0,
     "max": 3
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
-  "today_log": [
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "☀️ Sun's out over the island.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Slept like a log. Ready to graft.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Heading to the cafe."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Haven't spoken to a human all day."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "Sometimes I just stand here and listen to the town.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Heading to the building site."
-    },
-    {
-      "t": "7:13 AM",
-      "k": "noticed",
-      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 42 in the pile now.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "did",
-      "x": "building (Library 1/6)",
-      "why": "Back to the Library. Nearly there."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "thought",
-      "x": "Thai street food. That's the dream right there.",
-      "why": null
-    },
-    {
-      "t": "7:28 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "7:43 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "noticed",
-      "x": "A kid drops a bolt and asks Derek what it's for.",
-      "why": null
-    },
-    {
-      "t": "7:58 AM",
-      "k": "thought",
-      "x": "Diesel keeps nudging his bowl. Message received.",
-      "why": null
-    },
-    {
-      "t": "7:58 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Food for my boy."
-    },
-    {
-      "t": "8:13 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": null
-    },
-    {
-      "t": "8:28 AM",
-      "k": "did",
-      "x": "building (Library 2/6)",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "thought",
-      "x": "Penetrating oil and patience. That's the whole secret.",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Brick pit next."
-    },
-    {
-      "t": "8:58 AM",
-      "k": "did",
-      "x": "collecting bricks (+6 bricks)",
-      "why": "Got plans. Need materials."
-    },
-    {
-      "t": "9:13 AM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-      "why": "Maybe a jackpot today."
-    },
-    {
-      "t": "9:28 AM",
-      "k": "thought",
-      "x": "Shame, the cafe guy looked tired today.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "did",
-      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
-      "why": "Fresh air for both of us."
-    },
-    {
-      "t": "9:43 AM",
-      "k": "thought",
-      "x": "Not a cloud. Diesel is going to want the beach.",
-      "why": null
-    },
-    {
-      "t": "9:43 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Quick trip to the building site."
-    },
-    {
-      "t": "9:58 AM",
-      "k": "did",
-      "x": "building (Library 3/6)",
-      "why": "Let's get this Library up."
-    },
-    {
-      "t": "10:13 AM",
-      "k": "thought",
-      "x": "Found a 1980s coin in Little Thunder's toolbox. Lucky.",
-      "why": null
-    },
-    {
-      "t": "10:13 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Off to the cafe."
-    },
-    {
-      "t": "10:28 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Need some gossip."
-    },
-    {
-      "t": "10:43 AM",
-      "k": "thought",
-      "x": "First job: find my 10mm socket. Again.",
-      "why": null
-    },
-    {
-      "t": "10:43 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Play time!"
-    },
-    {
-      "t": "11:13 AM",
-      "k": "thought",
-      "x": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-      "why": null
-    },
-    {
-      "t": "11:13 AM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "11:28 AM",
-      "k": "thought",
-      "x": "Don't spend it. Don't spend it. Don't spend it.",
-      "why": null
-    },
-    {
-      "t": "11:28 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Heading to the building site."
-    },
-    {
-      "t": "11:43 AM",
-      "k": "did",
-      "x": "building (Library 4/6)",
-      "why": "Building is just fixing, but bigger."
-    },
-    {
-      "t": "11:58 AM",
-      "k": "thought",
-      "x": "Diesel follows me everywhere. Proper little shadow.",
-      "why": null
-    },
-    {
-      "t": "11:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "12:13 PM",
-      "k": "noticed",
-      "x": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
-      "why": null
-    },
-    {
-      "t": "12:13 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "thought",
-      "x": "Picture it: a winding road, a good engine, no rush.",
-      "why": null
-    },
-    {
-      "t": "12:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "12:43 PM",
-      "k": "thought",
-      "x": "Weather like this, Thailand feels close.",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "12:58 PM",
-      "k": "thought",
-      "x": "Wonder how they build the roads up in the Thai mountains.",
-      "why": null
-    },
-    {
-      "t": "12:58 PM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Off to the building site."
-    },
-    {
-      "t": "1:13 PM",
-      "k": "noticed",
-      "x": "A loud exhaust echoes down the street.",
-      "why": null
-    },
-    {
-      "t": "1:13 PM",
-      "k": "thought",
-      "x": "Reading about Bangkok makes me want to try it.",
-      "why": null
-    },
-    {
-      "t": "1:13 PM",
-      "k": "did",
-      "x": "building (Library 5/6)",
-      "why": "One more course of bricks."
-    },
-    {
-      "t": "1:28 PM",
-      "k": "thought",
-      "x": "If it's got moving parts, I can fix it. Mostly.",
-      "why": null
-    },
-    {
-      "t": "1:28 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "1:43 PM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: learn the next trick and get ALL the treats.",
-      "why": null
-    },
-    {
-      "t": "1:43 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Food for my boy."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "thought",
-      "x": "Sun's out. Even the bricks look happy.",
-      "why": null
-    },
-    {
-      "t": "1:58 PM",
-      "k": "did",
-      "x": "reading a book (Bangkok, chapter 5/10)",
-      "why": "Where was I? Ah, ja."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "note",
-      "x": "noted (Bangkok (Geography)): Bangkok covers an area of 1,568.7 km2 (605.7 sq mi), ranking 69th among the other 76 provinces of Thailand.",
-      "why": null
-    },
-    {
-      "t": "2:13 PM",
-      "k": "thought",
-      "x": "Looked up Bangkok on the old laptop. Lekker.",
-      "why": null
-    },
-    {
-      "t": "2:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "2:28 PM",
-      "k": "thought",
-      "x": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
-      "why": null
-    },
-    {
-      "t": "2:28 PM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Quick trip to the building site."
-    },
-    {
-      "t": "2:43 PM",
-      "k": "built",
-      "x": "finished building the Library!",
-      "why": null
-    },
-    {
-      "t": "2:43 PM",
-      "k": "did",
-      "x": "building (finished!)",
-      "why": "Building is just fixing, but bigger."
-    },
-    {
-      "t": "2:58 PM",
-      "k": "thought",
-      "x": "Best decision I ever made, keeping Diesel.",
-      "why": null
-    },
-    {
-      "t": "2:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "3:13 PM",
-      "k": "thought",
-      "x": "Wonder if I'm pricing my stuff right.",
-      "why": null
-    },
-    {
-      "t": "3:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "3:28 PM",
-      "k": "thought",
-      "x": "If I don't eat soon I'm eating a brick.",
-      "why": null
-    },
-    {
-      "t": "3:28 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Can't run on toast forever."
-    },
-    {
-      "t": "3:58 PM",
-      "k": "noticed",
-      "x": "It starts raining plastic raindrops.",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "thought",
-      "x": "Blue sky, no excuses.",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "did",
-      "x": "walking to the library",
-      "why": "Quick trip to the library."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "did",
-      "x": "reading a book (Bangkok, chapter 6/10)",
-      "why": "One more chapter."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "note",
-      "x": "noted (Bangkok (Demography)): The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "thought",
-      "x": "Someone out there needs a brick model bike. I can feel it.",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Quick trip to the garage."
-    },
-    {
-      "t": "4:43 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Meet Gogo. Bit of a sad case. I'll sort her out."
-    },
-    {
-      "t": "4:58 PM",
-      "k": "thought",
-      "x": "Bag and label everything. Learned that the hard way.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "noticed",
-      "x": "A kid stops to pat Diesel.",
-      "why": null
-    },
-    {
-      "t": "5:13 PM",
-      "k": "thought",
-      "x": "Me and Diesel against the world.",
-      "why": null
-    },
-    {
-      "t": "5:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "5:28 PM",
-      "k": "thought",
-      "x": "482 coins to go. That's just a lot of carbs.",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Off to the brick pit."
-    },
-    {
-      "t": "5:43 PM",
-      "k": "did",
-      "x": "collecting bricks (+10 bricks)",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "t": "5:58 PM",
-      "k": "noticed",
-      "x": "Diesel falls asleep in the toolbox for a second.",
-      "why": null
-    },
-    {
-      "t": "5:58 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-      "why": "Jump, hit, hope."
-    },
-    {
-      "t": "6:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "noticed",
-      "x": "Diesel barks at the ! block. The ! block does not bark back.",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "thought",
-      "x": "Didn't know half this stuff about Bangkok.",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Off to the cafe."
-    },
-    {
-      "t": "6:43 PM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Haven't spoken to a human all day."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "thought",
-      "x": "Haven't had grease on my hands in hours. Feels wrong.",
-      "why": null
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk",
-      "why": "Walkies, Diesel."
-    },
-    {
-      "t": "7:13 PM",
-      "k": "thought",
-      "x": "Proper shorts weather.",
-      "why": null
-    },
-    {
-      "t": "7:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Heading to the garage."
-    },
-    {
-      "t": "7:43 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Hands need grease. Simple."
-    },
-    {
-      "t": "7:58 PM",
-      "k": "thought",
-      "x": "Batteries low. Need a recharge.",
-      "why": null
-    },
-    {
-      "t": "7:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "thought",
-      "x": "Every bolt on Little Thunder is seized. Every single one.",
-      "why": null
-    },
-    {
-      "t": "8:13 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "8:28 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "8:43 PM",
-      "k": "thought",
-      "x": "Long day. Good day though.",
-      "why": null
-    },
-    {
-      "t": "8:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "8:58 PM",
-      "k": "thought",
-      "x": "Not a cloud. Diesel is going to want the beach.",
-      "why": null
-    },
-    {
-      "t": "8:58 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Diesel first, always."
-    },
-    {
-      "t": "9:13 PM",
-      "k": "thought",
-      "x": "Evening breeze off the sea. Lekker.",
-      "why": null
-    },
-    {
-      "t": "9:13 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk",
-      "why": "Fresh air for both of us."
-    },
-    {
-      "t": "9:28 PM",
-      "k": "thought",
-      "x": "Funny what you learn. Bangkok, who knew.",
-      "why": null
-    },
-    {
-      "t": "9:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "9:43 PM",
-      "k": "thought",
-      "x": "Diesel follows me everywhere. Proper little shadow.",
-      "why": null
-    },
-    {
-      "t": "9:43 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Brick pit next."
-    },
-    {
-      "t": "9:58 PM",
-      "k": "did",
-      "x": "collecting bricks (+7 bricks)",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "t": "10:13 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-      "why": "Jump, hit, hope."
-    },
-    {
-      "t": "10:28 PM",
-      "k": "thought",
-      "x": "Winter on the island. Who knew?",
-      "why": null
-    },
-    {
-      "t": "10:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "10:43 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": null
-    }
-  ],
+  "today_log": [],
   "day_start": {
-    "coins": 18,
-    "bricks": 22,
-    "got": 43,
+    "coins": 26,
+    "bricks": 65,
+    "got": 0,
     "used": 0
   },
-  "tick": 978,
+  "tick": 986,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T03:43:21.098366+00:00",
+  "updated": "2026-12-06T05:43:21.098366+00:00",
   "stats": {
     "all": {
       "model": 432,
-      "queue": 250,
-      "autopilot": 32,
-      "sleeping": 264,
+      "queue": 251,
+      "autopilot": 34,
+      "sleeping": 269,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-12-05",
-      "model": 40,
-      "queue": 23,
-      "autopilot": 4,
-      "sleeping": 24,
+      "date": "2026-12-06",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 3,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -930,8 +222,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.106,
-      "tired": 0.47,
+      "hunger": 0.138,
+      "tired": 0,
       "bored": 0.42
     },
     "bond": 1,
@@ -943,18 +235,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "asleep at the foot of the bed",
     "last_played_tick": 972,
     "wants": null,
     "recent_thoughts": [
-      "Following {owner}. Best job in the world.",
-      "I could chew a boot. Just a little bit.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Everything smells amazing today.",
-      "Sun on my belly. Perfect.",
-      "Good boy? Me? Yes. Me.",
-      "The ! block knows something. I will watch it.",
-      "I know tricks now. I am a very clever boy.",
       "Sniffed a lamp post. Interesting news.",
       "{owner} is talking to the rusty thing again. It doesn't answer.",
       "Tummy rumble. Big one.",
@@ -966,9 +250,17 @@
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
     "want_ticks": 0,
     "last_fed_tick": 971,
     "recent_ideas": [
@@ -1010,7 +302,7 @@
     "{pup} follows me everywhere. Proper little shadow.",
     "Winter on the island. Who knew?"
   ],
-  "real_updated": "2026-11-27T20:30:12.433839+00:00",
+  "real_updated": "2026-11-27T20:45:18.214084+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -1023,7 +315,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 6,
+    "temp": 4,
     "snow": 0,
     "wet": 0,
     "snowman": 0
@@ -1065,7 +357,7 @@
       "kind_name": "barn-find bike",
       "what": "an old single-cylinder road bike, rusted solid, out of a farmer's barn",
       "look": "classic",
-      "day": 2,
+      "day": 3,
       "spent": 0,
       "colour": null,
       "colour_hex": null,

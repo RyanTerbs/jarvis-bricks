@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-12-05",
+    "day": "Sat 05 Dec",
+    "title": "Finished building the Library",
+    "text": "Ja, so today. Spent most of today building, cooking a proper meal and chatting with the locals. Finished building the Library! Stood back and had a proper look at it. Lekker. Learned a bit about Bangkok. Sun out all day. Lekker. Diesel was a legend today. Pretty sure Diesel was planning to learn the next trick and get ALL the treats. Cheeky. Made 8 coins. Collected 43 bricks. Also: ☀️ Sun's out over the island. 26 coins saved. Every one of them is a kilometre of Thai road. Bed.",
+    "tomorrow": "Sell some stock at the stall.",
+    "by": "template",
+    "coins": 26,
+    "bricks": 65,
+    "coins_change": 8,
+    "bricks_change": 43,
+    "built": [
+      "finished building the Library!"
+    ]
+  },
+  {
     "date": "2026-12-04",
     "day": "Fri 04 Dec",
     "title": "Built a proper snowman",
