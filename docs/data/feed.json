@@ -1,5 +1,14 @@
 [
   {
+    "at": "2026-12-02T06:28:21.098366+00:00",
+    "time": "1:28 AM",
+    "kind": "noticed",
+    "text": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-02T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1337,15 +1346,6 @@
     "kind": "did",
     "text": "walking to the building site",
     "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Can't wait to see the Noodle stall finished.",
-    "why": null,
     "by": "model",
     "ok": true
   }
