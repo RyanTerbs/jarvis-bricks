@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "feeding Diesel",
-  "thought": "Rain on the roof. Lekker sound, rubbish for building.",
+  "doing": "splashing in puddles with Diesel",
+  "thought": "Someone out there needs a brick model bike. I can feel it.",
   "feeling": "content",
   "needs": {
     "rest": 0.5,
-    "hunger": 0.19,
-    "social": 0.164,
-    "tinker": 0.68,
-    "curiosity": 0.54
+    "hunger": 0.49,
+    "social": 0.184,
+    "tinker": 0.61,
+    "curiosity": 0.34
   },
-  "mood": 0.42,
+  "mood": 0.46,
   "energy": 0.5,
-  "coins": 53,
+  "coins": 57,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
@@ -26,9 +26,11 @@
     "coins": 0
   },
   "books": {
-    "tourism_thailand": 8
+    "tourism_thailand": 9
   },
-  "finished": [],
+  "finished": [
+    "tourism_thailand"
+  ],
   "notebook": [
     {
       "date": "2026-11-26",
@@ -69,10 +71,15 @@
       "date": "2026-11-29",
       "source": "Tourism in Thailand (Sport tourism)",
       "note": "Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists."
+    },
+    {
+      "date": "2026-11-29",
+      "source": "Tourism in Thailand (Tourism Authority of Thailand)",
+      "note": "The Tourism Authority of Thailand (TAT) has been actively leading the country's sustainable tourism efforts, focusing on innovation, sustainability, and digital"
     }
   ],
   "looked_up": [],
-  "hour": 10,
+  "hour": 12,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -297,6 +304,102 @@
       "k": "did",
       "x": "feeding Diesel (Diesel's tail goes mad)",
       "why": "Food for my boy."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "thought",
+      "x": "Ja, today feels like a building day.",
+      "why": null
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "This one's called Bessie. She'll purr by lunch."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "thought",
+      "x": "Early bird gets the bricks.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Already wet, might as well splash."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Had a dream about a gearbox. Normal, right?",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "thought",
+      "x": "Who names a bolt? Me. This one's Gerald.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "learned",
+      "x": "finished reading 'Tourism in Thailand'",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "reading a book (Tourism in Thailand, last chapter)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "note",
+      "x": "noted (Tourism in Thailand (Tourism Authority of Thailand)): The Tourism Authority of Thailand (TAT) has been actively leading the country's sustainable tourism efforts, focusing on innovation, sustainability, and digital",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "Afternoon slump. Could do with a coffee.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Someone out there needs a brick model bike. I can feel it.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "splashing in puddles with Diesel",
+      "why": "Already wet, might as well splash."
     }
   ],
   "day_start": {
@@ -305,13 +408,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 355,
+  "tick": 363,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T15:58:21.098366+00:00",
+  "updated": "2026-11-29T17:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 149,
-      "queue": 88,
+      "model": 155,
+      "queue": 90,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -320,8 +423,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 10,
-      "queue": 9,
+      "model": 16,
+      "queue": 11,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -336,11 +439,11 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0,
-      "tired": 0.63,
-      "bored": 0.09
+      "hunger": 0.24,
+      "tired": 0.99,
+      "bored": 0
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 0,
     "tricks": {
       "sit": 3
@@ -348,18 +451,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 352,
-    "wants": null,
+    "doing": "wagging his tail",
+    "last_played_tick": 363,
+    "wants": "nap",
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "PUDDLE. Must jump in puddle.",
-      "Wet dog smell is the best smell.",
-      "Life is good. Life is SO good.",
-      "{owner} is the best human in the whole town.",
-      "Sit means treat. I have cracked the code.",
-      "Water falling from the sky. Again. Suspicious.",
-      "Good boy? Me? Yes. Me.",
       "PUDDLE. Must jump in puddle.",
       "Wet dog smell is the best smell.",
       "My tail won't stop. I'm not stopping it.",
@@ -371,9 +466,17 @@
       "Food? Food. FOOD.",
       "Is it dinner? It feels like dinner.",
       "SAND! Wet sand! Best day ever!",
-      "{owner} says a word, I do a thing, treat appears. Magic."
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Following {owner}. Best job in the world.",
+      "My tail won't stop. I'm not stopping it.",
+      "I am a very good boy. Probably.",
+      "{owner} is the best human in the whole town.",
+      "Nap spot: located. Engaging.",
+      "Wet dog smell is the best smell.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "Eyes heavy. Paws heavy. Everything heavy."
     ],
-    "thought": "Best. Human. Ever.",
+    "thought": "Eyes heavy. Paws heavy. Everything heavy.",
     "want_ticks": 0,
     "last_fed_tick": 355,
     "recent_ideas": [
@@ -387,12 +490,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "{pup} follows me everywhere. Proper little shadow.",
-    "Proper rain. Good day for the garage.",
-    "Brain's in first gear today.",
-    "If it's got moving parts, I can fix it. Mostly.",
-    "Evenings are for slowing down. Mostly.",
-    "Shame, the cafe guy looked tired today.",
     "Did more today than I thought I would.",
     "{pup} thinks every puddle is a personal invitation.",
     "Thailand rains like this in the wet season. Practice.",
@@ -411,9 +508,15 @@
     "Ja, no, definitely, maybe.",
     "Proud of {pup}. Little guy's growing up.",
     "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "Rain on the roof. Lekker sound, rubbish for building."
+    "Rain on the roof. Lekker sound, rubbish for building.",
+    "Ja, today feels like a building day.",
+    "Early bird gets the bricks.",
+    "Had a dream about a gearbox. Normal, right?",
+    "Who names a bolt? Me. This one's Gerald.",
+    "Afternoon slump. Could do with a coffee.",
+    "Someone out there needs a brick model bike. I can feel it."
   ],
-  "real_updated": "2026-11-26T23:45:11.902432+00:00",
+  "real_updated": "2026-11-27T00:00:14.047649+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@6",
@@ -426,7 +529,7 @@
     "seen": [
       "rain"
     ],
-    "temp": 12,
+    "temp": 13,
     "snow": 0,
     "wet": 1
   }

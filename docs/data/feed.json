@@ -1,5 +1,149 @@
 [
   {
+    "at": "2026-11-29T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "splashing in puddles with Diesel",
+    "why": "Already wet, might as well splash.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "Someone out there needs a brick model bike. I can feel it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "thought",
+    "text": "Afternoon slump. Could do with a coffee.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "note",
+    "text": "noted (Tourism in Thailand (Tourism Authority of Thailand)): The Tourism Authority of Thailand (TAT) has been actively leading the country's sustainable tourism efforts, focusing on innovation, sustainability, and digital",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "reading a book (Tourism in Thailand, last chapter)",
+    "why": "Learning something today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "learned",
+    "text": "finished reading 'Tourism in Thailand'",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "Who names a bolt? Me. This one's Gerald.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Had a dream about a gearbox. Normal, right?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "splashing in puddles with Diesel",
+    "why": "Already wet, might as well splash.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "Early bird gets the bricks.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "This one's called Bessie. She'll purr by lunch.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "Ja, today feels like a building day.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-29T15:58:21.098366+00:00",
     "time": "10:58 AM",
     "kind": "did",
@@ -1203,150 +1347,6 @@
     "text": "A customer rolls a scooter into the garage with a dodgy carb.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Diesel deserves it.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "thought",
-    "text": "Autumn. Days getting shorter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Old Rusty. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "Reading about Tourism in Thailand makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Practising my Thai: sawadee khrap. Nailed it. Probably.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Gastronomical tourism)): The governor of the Tourism Authority of Thailand (TAT), said the agency aims to increase income from the gastronomy business from 20% of total tourism income f",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 6/9)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "Thinking about noodles. Again.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Cuddle break.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "thought",
-    "text": "Autumn leaves all over the road. Somebody should sweep that. Probably me.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Diesel first, always.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Sun's up, Diesel's up, so I'm up.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
