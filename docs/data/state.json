@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "library",
   "asleep": false,
-  "doing": "building",
-  "thought": "Reading about Bangkok makes me want to try it.",
-  "feeling": "sharp-sharp",
+  "doing": "having a rest",
+  "thought": "Wonder if I'm pricing my stuff right.",
+  "feeling": "buzzing",
   "needs": {
-    "rest": 0.66,
-    "hunger": 0.27,
-    "social": 0.31,
-    "tinker": 0.495,
-    "curiosity": 0.685
+    "rest": 0.57,
+    "hunger": 0.58,
+    "social": 0.45,
+    "tinker": 0.575,
+    "curiosity": 0.585
   },
-  "mood": 0.38,
-  "energy": 0.34,
+  "mood": 0.52,
+  "energy": 0.43,
   "coins": 16,
   "coins_goal": 500,
   "bricks": 48,
@@ -32,7 +32,7 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 4
+    "bangkok": 5
   },
   "finished": [
     "tourism_thailand",
@@ -148,12 +148,17 @@
       "date": "2026-12-04",
       "source": "Bangkok (Government)",
       "note": "The city of Bangkok is locally governed by the Bangkok Metropolitan Administration (BMA)."
+    },
+    {
+      "date": "2026-12-05",
+      "source": "Bangkok (Geography)",
+      "note": "Bangkok covers an area of 1,568.7 km2 (605.7 sq mi), ranking 69th among the other 76 provinces of Thailand."
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -462,6 +467,108 @@
       "k": "did",
       "x": "building (Library 5/6)",
       "why": "One more course of bricks."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "If it's got moving parts, I can fix it. Mostly.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: learn the next trick and get ALL the treats.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Sun's out. Even the bricks look happy.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 5/10)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "note",
+      "x": "noted (Bangkok (Geography)): Bangkok covers an area of 1,568.7 km2 (605.7 sq mi), ranking 69th among the other 76 provinces of Thailand.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Looked up Bangkok on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Quick trip to the building site."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "built",
+      "x": "finished building the Library!",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Best decision I ever made, keeping Diesel.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "thought",
+      "x": "Wonder if I'm pricing my stuff right.",
+      "why": null
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -470,13 +577,13 @@
     "got": 26,
     "used": 0
   },
-  "tick": 940,
+  "tick": 948,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T18:13:21.098366+00:00",
+  "updated": "2026-12-05T20:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 408,
-      "queue": 238,
+      "model": 414,
+      "queue": 240,
       "autopilot": 30,
       "sleeping": 264,
       "tokens_in": 0,
@@ -485,8 +592,8 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 16,
-      "queue": 11,
+      "model": 22,
+      "queue": 13,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -499,14 +606,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.73,
-      "tired": 0.81,
-      "bored": 0.3
+      "hunger": 0.192,
+      "tired": 0.67,
+      "bored": 0.45
     },
     "bond": 1.0,
-    "food": 3,
+    "food": 2,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -514,18 +621,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "hungry, staring at Derek",
+    "doing": "napping",
     "last_played_tick": 930,
-    "wants": "food",
+    "wants": null,
     "recent_thoughts": [
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "The ground is a giant ice cream!",
-      "The ground is a giant ice cream!",
-      "Good boy? Me? Yes. Me.",
-      "My tail won't stop. I'm not stopping it.",
       "Warm spot on the floor. Mine now.",
       "Tail check: still there. Good.",
       "Sun on my belly. Perfect.",
@@ -537,30 +636,32 @@
       "Warm spot on the floor. Mine now.",
       "Sit means treat. I have cracked the code.",
       "Warm spot on the floor. Mine now.",
-      "Yawn. Big yawn. Biggest yawn."
+      "Yawn. Big yawn. Biggest yawn.",
+      "The ! block knows something. I will watch it.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Life is good. Life is SO good.",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Nap spot: located. Engaging.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams."
     ],
-    "thought": "Yawn. Big yawn. Biggest yawn.",
+    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
     "want_ticks": 0,
-    "last_fed_tick": 919,
+    "last_fed_tick": 942,
     "recent_ideas": [
-      "make friends with the crab. Or eat it. Undecided.",
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
       "bark at the bike until it goes vroom.",
-      "guard the savings jar. Nobody touches the jar."
+      "guard the savings jar. Nobody touches the jar.",
+      "learn the next trick and get ALL the treats."
     ],
-    "idea": "guard the savings jar. Nobody touches the jar."
+    "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "The jar's getting heavier. Love that sound.",
-    "One more job, then feet up.",
-    "Still thinking about that bit on {topic}.",
-    "{pup} has never seen snow. He's losing his mind.",
-    "Didn't know half this stuff about {topic}.",
-    "Slow and steady fills the jar.",
     "Snowman time. Non-negotiable.",
     "Brick town under snow looks like a Christmas card.",
     "Every bolt on {bike} is seized. Every single one.",
@@ -579,9 +680,15 @@
     "Picture it: a winding road, a good engine, no rush.",
     "Weather like this, Thailand feels close.",
     "Wonder how they build the roads up in the Thai mountains.",
-    "Reading about {topic} makes me want to try it."
+    "Reading about {topic} makes me want to try it.",
+    "If it's got moving parts, I can fix it. Mostly.",
+    "Sun's out. Even the bricks look happy.",
+    "Looked up {topic} on the old laptop. Lekker.",
+    "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+    "Best decision I ever made, keeping {pup}.",
+    "Wonder if I'm pricing my stuff right."
   ],
-  "real_updated": "2026-11-27T19:15:10.242979+00:00",
+  "real_updated": "2026-11-27T19:30:13.482330+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -594,7 +701,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 10,
+    "temp": 11,
     "snow": 0,
     "wet": 0,
     "snowman": 0

@@ -136,23 +136,26 @@
       },
       "decor": false,
       "built": "2026-12-04"
+    },
+    {
+      "lot": 9,
+      "id": "library",
+      "bp": "library",
+      "name": "Library",
+      "place": "library",
+      "desc": "the town library, mostly manuals and travel books",
+      "look": {
+        "kind": "house",
+        "color": "#8a5a2b",
+        "roof": "#4e3015",
+        "emoji": "📚",
+        "floors": 2
+      },
+      "decor": false,
+      "built": "2026-12-05"
     }
   ],
-  "site": {
-    "bp": "library",
-    "name": "Library",
-    "lot": 9,
-    "work": 6,
-    "done": 5,
-    "started": "2026-12-04",
-    "look": {
-      "kind": "house",
-      "color": "#8a5a2b",
-      "roof": "#4e3015",
-      "emoji": "📚",
-      "floors": 2
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -361,6 +364,10 @@
     {
       "date": "2026-12-04",
       "text": "Designed his own building: 🔭 Stargazer Hill (a little hill with a telescope on top)."
+    },
+    {
+      "date": "2026-12-05",
+      "text": "Finished building the Library."
     }
   ]
 }

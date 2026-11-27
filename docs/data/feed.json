@@ -1,5 +1,158 @@
 [
   {
+    "at": "2026-12-05T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "thought",
+    "text": "Wonder if I'm pricing my stuff right.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "thought",
+    "text": "Best decision I ever made, keeping Diesel.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "building (finished!)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "built",
+    "text": "finished building the Library!",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Quick trip to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Looked up Bangkok on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "note",
+    "text": "noted (Bangkok (Geography)): Bangkok covers an area of 1,568.7 km2 (605.7 sq mi), ranking 69th among the other 76 provinces of Thailand.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 5/10)",
+    "why": "Where was I? Ah, ja.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Sun's out. Even the bricks look happy.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: learn the next trick and get ALL the treats.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "If it's got moving parts, I can fix it. Mostly.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T18:13:21.098366+00:00",
     "time": "1:13 PM",
     "kind": "did",
@@ -1192,159 +1345,6 @@
     "time": "1:13 PM",
     "kind": "thought",
     "text": "Town's buzzing this arvo.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Snowman time. Non-negotiable.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "note",
-    "text": "noted (Bangkok (Name)): The origin of the name Bangkok (บางกอก, pronounced in Thai as [bāːŋkɔ̀ːk] ) is unclear.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 3/10)",
-    "why": "One more chapter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "thought",
-    "text": "Life's simple. Fix things, save coins, look after the dog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "thought",
-    "text": "Every coin counts. Every single one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "thought",
-    "text": "That Bangkok chapter got me thinking.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "building (Rooftop Garden 4/5)",
-    "why": "Let's get this Rooftop Garden up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "building (Rooftop Garden 3/5)",
-    "why": "One more course of bricks.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "thought",
-    "text": "Under all that rust there's a good bike. I can see her.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "thought",
-    "text": "Should I name the street? Derek Street. Ja, why not.",
     "why": null,
     "by": "model",
     "ok": true
