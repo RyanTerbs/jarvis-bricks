@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Long day. Good day though.",
-  "feeling": "happy enough",
+  "doing": "walking to the garage",
+  "thought": "Winter on the island. Who knew?",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.59,
-    "hunger": 0.04,
-    "social": 0.44,
-    "tinker": 0.495,
-    "curiosity": 0.535
+    "rest": 0.62,
+    "hunger": 0.32,
+    "social": 0.61,
+    "tinker": 0.725,
+    "curiosity": 0.435
   },
-  "mood": 0.42,
-  "energy": 0.41,
+  "mood": 0.35,
+  "energy": 0.38,
   "coins": 22,
   "coins_goal": 500,
-  "bricks": 58,
+  "bricks": 65,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 20,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -176,10 +176,15 @@
     "waves": "good",
     "waves_date": "2026-12-05"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "fix_a_car",
+      "why": null
+    }
+  ],
   "lucky": {
     "date": "2026-12-05",
-    "used": 2,
+    "used": 3,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -808,22 +813,100 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Not a cloud. Diesel is going to want the beach.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Evening breeze off the sea. Lekker.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk",
+      "why": "Fresh air for both of us."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Funny what you learn. Bangkok, who knew.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Diesel follows me everywhere. Proper little shadow.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Brick pit next."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "collecting bricks (+7 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": null
     }
   ],
   "day_start": {
     "coins": 18,
     "bricks": 22,
-    "got": 36,
+    "got": 43,
     "used": 0
   },
-  "tick": 970,
+  "tick": 978,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T01:43:21.098366+00:00",
+  "updated": "2026-12-06T03:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 427,
-      "queue": 248,
-      "autopilot": 31,
+      "model": 432,
+      "queue": 250,
+      "autopilot": 32,
       "sleeping": 264,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -831,9 +914,9 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 35,
-      "queue": 21,
-      "autopilot": 3,
+      "model": 40,
+      "queue": 23,
+      "autopilot": 4,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -845,14 +928,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.722,
-      "tired": 0.76,
-      "bored": 0.66
+      "hunger": 0.106,
+      "tired": 0.47,
+      "bored": 0.42
     },
     "bond": 1,
-    "food": 2,
+    "food": 1,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -860,18 +943,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "hungry, staring at Derek",
-    "last_played_tick": 963,
-    "wants": "food",
+    "doing": "napping",
+    "last_played_tick": 972,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "I am a very good boy. Probably.",
-      "Sun on my belly. Perfect.",
-      "Warm spot on the floor. Mine now.",
-      "The rusty thing has wheels. Wheels go places. Places have smells.",
-      "So bored I'm counting my own paws. Four. Still four.",
       "Following {owner}. Best job in the world.",
       "I could chew a boot. Just a little bit.",
       "Who left this brick here? I'll carry it somewhere else.",
@@ -883,11 +958,19 @@
       "Sniffed a lamp post. Interesting news.",
       "{owner} is talking to the rusty thing again. It doesn't answer.",
       "Tummy rumble. Big one.",
-      "Nap spot: located. Engaging."
+      "Nap spot: located. Engaging.",
+      "{owner} is busy again. Sigh. Big sigh.",
+      "{owner} is the best human in the whole town.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Nap spot: located. Engaging.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
-    "last_fed_tick": 942,
+    "last_fed_tick": 971,
     "recent_ideas": [
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
@@ -901,11 +984,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Don't spend it. Don't spend it. Don't spend it.",
-    "{pup} follows me everywhere. Proper little shadow.",
-    "Picture it: a winding road, a good engine, no rush.",
-    "Weather like this, Thailand feels close.",
-    "Wonder how they build the roads up in the Thai mountains.",
     "Reading about {topic} makes me want to try it.",
     "If it's got moving parts, I can fix it. Mostly.",
     "Sun's out. Even the bricks look happy.",
@@ -925,9 +1003,14 @@
     "Proper shorts weather.",
     "Batteries low. Need a recharge.",
     "Every bolt on {bike} is seized. Every single one.",
-    "Long day. Good day though."
+    "Long day. Good day though.",
+    "Not a cloud. {pup} is going to want the beach.",
+    "Evening breeze off the sea. Lekker.",
+    "Funny what you learn. {topic}, who knew.",
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Winter on the island. Who knew?"
   ],
-  "real_updated": "2026-11-27T20:15:11.460298+00:00",
+  "real_updated": "2026-11-27T20:30:12.433839+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -940,7 +1023,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 8,
+    "temp": 6,
     "snow": 0,
     "wet": 0,
     "snowman": 0

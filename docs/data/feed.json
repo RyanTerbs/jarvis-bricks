@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-06T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "collecting bricks (+7 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Brick pit next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Diesel follows me everywhere. Proper little shadow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "thought",
+    "text": "Funny what you learn. Bangkok, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Evening breeze off the sea. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Diesel first, always.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Not a cloud. Diesel is going to want the beach.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-06T01:43:21.098366+00:00",
     "time": "8:43 PM",
     "kind": "did",
@@ -1228,123 +1345,6 @@
     "time": "7:13 PM",
     "kind": "thought",
     "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "noticed",
-    "text": "A neighbour pays him back for a favour. +3 coins.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman finished!)",
-    "why": "Giving my old cap to a good cause.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "built",
-    "text": "built a proper snowman: carrot nose, stone eyes and his old orange cap!",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Brick town under snow looks like a Christmas card.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "designing a brand-new building",
-    "why": "Town needs something new. Something mine.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "designed",
-    "text": "designed a new building: 🔭 Stargazer Hill, a little hill with a telescope on top",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "thought",
-    "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "thought",
-    "text": "Cold enough to freeze the carb on a scooter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Running on coffee and hope.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "thought",
-    "text": "Ja, no, definitely, maybe.",
     "why": null,
     "by": "model",
     "ok": true
