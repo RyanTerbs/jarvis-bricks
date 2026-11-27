@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Thai street food. That's the dream right there.",
-  "feeling": "happy enough",
+  "doing": "taking Diesel for a walk",
+  "thought": "Shame, the cafe guy looked tired today.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.2,
-    "hunger": 0.08,
-    "social": 0.53,
-    "tinker": 0.625,
-    "curiosity": 0.435
+    "rest": 0.46,
+    "hunger": 0.355,
+    "social": 0.635,
+    "tinker": 0.62,
+    "curiosity": 0.31
   },
-  "mood": 0.34,
-  "energy": 0.8,
-  "coins": 16,
+  "mood": 0.47,
+  "energy": 0.54,
+  "coins": 18,
   "coins_goal": 500,
-  "bricks": 42,
+  "bricks": 48,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 7,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -169,7 +169,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-05",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -240,22 +240,88 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Diesel keeps nudging his bowl. Message received.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "building (Library 2/6)",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "Penetrating oil and patience. That's the whole secret.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Brick pit next."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "collecting bricks (+6 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Shame, the cafe guy looked tired today.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Fresh air for both of us."
     }
   ],
   "day_start": {
     "coins": 18,
     "bricks": 22,
-    "got": 20,
+    "got": 26,
     "used": 0
   },
-  "tick": 918,
+  "tick": 925,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T12:43:21.098366+00:00",
+  "updated": "2026-12-05T14:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 395,
-      "queue": 230,
-      "autopilot": 29,
+      "model": 398,
+      "queue": 233,
+      "autopilot": 30,
       "sleeping": 264,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -263,9 +329,9 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 3,
-      "queue": 3,
-      "autopilot": 1,
+      "model": 6,
+      "queue": 6,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -279,12 +345,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.77,
-      "tired": 0.12,
-      "bored": 0.27
+      "hunger": 0.28,
+      "tired": 0.41,
+      "bored": 0.18
     },
     "bond": 1.0,
-    "food": 4,
+    "food": 3,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -292,17 +358,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "hungry, staring at Derek",
-    "last_played_tick": 874,
-    "wants": "food",
+    "doing": "watching Derek work",
+    "last_played_tick": 925,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
@@ -315,11 +374,18 @@
       "My bowl is empty. This is an emergency.",
       "{owner} is making clanky noises. I will supervise.",
       "{owner} is the best human in the whole town.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Cold white stuff! I must eat all of it.",
+      "Life is good. Life is SO good.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "The ground is a giant ice cream!"
     ],
-    "thought": "Everything smells amazing today.",
-    "want_ticks": 0,
-    "last_fed_tick": 862,
+    "thought": "Best. Human. Ever.",
+    "want_ticks": 4,
+    "last_fed_tick": 919,
     "recent_ideas": [
       "make friends with the crab. Or eat it. Undecided.",
       "sit by the cafe door looking sad. Free pie.",
@@ -333,9 +399,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "{pup} has never seen snow. He's losing his mind.",
-    "{bricks} bricks in the pile. Could build something lekker with that.",
-    "Picture it: a winding road, a good engine, no rush.",
     "Me and {pup} against the world.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "{temp} degrees. My fingers have stopped working.",
@@ -357,9 +420,12 @@
     "Every bolt on {bike} is seized. Every single one.",
     "Slept like a log. Ready to graft.",
     "Sometimes I just stand here and listen to the town.",
-    "Thai street food. That's the dream right there."
+    "Thai street food. That's the dream right there.",
+    "{pup} keeps nudging his bowl. Message received.",
+    "Penetrating oil and patience. That's the whole secret.",
+    "Shame, the cafe guy looked tired today."
   ],
-  "real_updated": "2026-11-27T18:30:17.344029+00:00",
+  "real_updated": "2026-11-27T18:45:11.793066+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@6",
@@ -372,8 +438,8 @@
     "seen": [
       "sunny"
     ],
-    "temp": 8,
-    "snow": 0.72,
+    "temp": 10,
+    "snow": 0.44,
     "wet": 0,
     "snowman": 3
   },

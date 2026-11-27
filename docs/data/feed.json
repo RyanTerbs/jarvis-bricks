@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-12-05T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "Shame, the cafe guy looked tired today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "collecting bricks (+6 bricks)",
+    "why": "Got plans. Need materials.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Brick pit next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "thought",
+    "text": "Penetrating oil and patience. That's the whole secret.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "building (Library 2/6)",
+    "why": null,
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "thought",
+    "text": "Diesel keeps nudging his bowl. Message received.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "noticed",
+    "text": "A kid drops a bolt and asks Derek what it's for.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-05T12:43:21.098366+00:00",
     "time": "7:43 AM",
     "kind": "did",
@@ -1248,105 +1347,6 @@
     "text": "named the barn-find bike Little Thunder.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Running on fumes. Need food.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "📦 The farmer threw in a box of old workshop books with it: Barn find, Conservation and restoration of road vehicles, Four-stroke engine, Spark plug, Tire, Spray painting. 6 new books on his shelf at home.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "bike",
-    "text": "A farmer two towns over cleared out his barn and gave Derek an old bike for nothing: flat tyres, rust everywhere, engine seized solid. It's in the garage now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 20 in the pile now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Thai street food. That's the dream right there.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "building (Rooftop Garden 2/5)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Early bird gets the bricks.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "noticed",
-    "text": "A loud exhaust echoes down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
     "ok": true
   }
 ]
