@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-11-30T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Sun's out. Even the bricks look happy.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Trusty is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "thought",
+    "text": "Don't spend it. Don't spend it. Don't spend it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "thought",
+    "text": "Need a lie down before I drop a spanner on my foot.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Diesel is losing his mind over a crab.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Fetch on the sand!",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Heading to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "thought",
+    "text": "Stomach's making engine noises.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T21:58:21.098366+00:00",
     "time": "4:58 PM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "Never had a mate this loyal.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "running his market stall (cheap prices, sold 1 postcard of the town for 2 coins)",
-    "why": "Let's see what sells.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "running his market stall (pricey prices, sold 2 postcard of the towns for 6 coins)",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Quick trip to the market stall.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "Even the lamp posts look lost in this fog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Coins are tight. Toast it is.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Fastest meal in the world.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Sun's in the perfect spot for a nap. Not happening though.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "noticed",
-    "text": "🌫️ A thick sea fog rolls in over the town.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

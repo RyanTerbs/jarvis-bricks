@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "garage",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Never had a mate this loyal.",
-  "feeling": "chilled",
+  "thought": "Sun's out. Even the bricks look happy.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.56,
-    "hunger": 0.565,
-    "social": 0.46,
-    "tinker": 0.465,
-    "curiosity": 0.23
+    "rest": 0.59,
+    "hunger": 0.165,
+    "social": 0.53,
+    "tinker": 0.345,
+    "curiosity": 0.43
   },
-  "mood": 0.45,
-  "energy": 0.44,
-  "coins": 86,
+  "mood": 0.46,
+  "energy": 0.41,
+  "coins": 88,
   "coins_goal": 500,
   "bricks": 27,
   "stock": {},
@@ -95,7 +95,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 16,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -571,6 +571,84 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "thought",
+      "x": "Stomach's making engine noises.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Fetch on the sand!"
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Diesel is losing his mind over a crab.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Need a lie down before I drop a spanner on my foot.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Trusty is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Sun's out. Even the bricks look happy.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -579,13 +657,13 @@
     "got": 21,
     "used": 0
   },
-  "tick": 475,
+  "tick": 483,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T21:58:21.098366+00:00",
+  "updated": "2026-11-30T23:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 205,
-      "queue": 123,
+      "model": 210,
+      "queue": 126,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -594,8 +672,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 26,
-      "queue": 17,
+      "model": 31,
+      "queue": 20,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -608,11 +686,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.21,
-      "tired": 0.71,
-      "bored": 0.27
+      "hunger": 0.294,
+      "tired": 0.42,
+      "bored": 0
     },
     "bond": 1.0,
     "food": 3,
@@ -623,18 +701,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 466,
-    "wants": "beach",
+    "doing": "napping",
+    "last_played_tick": 477,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Warm spot on the floor. Mine now.",
-      "The ! block knows something. I will watch it.",
-      "Good boy? Me? Yes. Me.",
-      "Sun on my belly. Perfect.",
       "Following {owner}. Best job in the world.",
       "Warm spot on the floor. Mine now.",
       "Who left this brick here? I'll carry it somewhere else.",
@@ -646,10 +716,18 @@
       "Learning is hard. Treats make it easier.",
       "Sun on my belly. Perfect.",
       "Warm spot on the floor. Mine now.",
-      "Life is good. Life is SO good."
+      "Life is good. Life is SO good.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Sun on my belly. Perfect.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Life is good. Life is SO good.",
-    "want_ticks": 1,
+    "thought": "Dreaming: a sausage as big as the garage.",
+    "want_ticks": 3,
     "last_fed_tick": 468,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -663,11 +741,6 @@
     "idea": "bury Derek's 10mm socket. He loves looking for it."
   },
   "recent_thoughts": [
-    "Ja, no, definitely, maybe.",
-    "Coffee first. Then the world.",
-    "Funny what you learn. {topic}, who knew.",
-    "Slept like a log. Ready to graft.",
-    "Even the lamp posts look lost in this fog.",
     "Even the lamp posts look lost in this fog.",
     "Hands are itching. Need something to fix.",
     "Sun's up, {pup}'s up, so I'm up.",
@@ -687,9 +760,14 @@
     "Afternoon slump. Could do with a coffee.",
     "Bit of graft now, bit of rest later.",
     "Thailand. Noodles, mountains, warm sea. Soon.",
-    "Never had a mate this loyal."
+    "Never had a mate this loyal.",
+    "Stomach's making engine noises.",
+    "{pup} is losing his mind over a crab.",
+    "Need a lie down before I drop a spanner on my foot.",
+    "Don't spend it. Don't spend it. Don't spend it.",
+    "Sun's out. Even the bricks look happy."
   ],
-  "real_updated": "2026-11-27T03:45:10.482273+00:00",
+  "real_updated": "2026-11-27T04:00:15.310253+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@13",
@@ -703,7 +781,7 @@
       "fog",
       "sunny"
     ],
-    "temp": 23,
+    "temp": 22,
     "snow": 0,
     "wet": 0
   }
