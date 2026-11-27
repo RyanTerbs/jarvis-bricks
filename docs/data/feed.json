@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-02T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "Yoh, I'm tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: dig all the way to the other side of the island.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "That Dog training chapter got me thinking.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Dog's gotta walk.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Wonder if the bikes in Thailand need fixing. Bet they do.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "building (Tuk-tuk Garage 3/5)",
+    "why": "Back to the Tuk-tuk Garage. Nearly there.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "building (Tuk-tuk Garage 2/5)",
+    "why": "One more course of bricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Got stock to sell. Stall's calling.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "building (Tuk-tuk Garage 1/5)",
+    "why": "Back to the Tuk-tuk Garage. Nearly there.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "thought",
+    "text": "Foggy. Feels like a Port Alfred winter morning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "noticed",
+    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-02T15:13:21.098366+00:00",
     "time": "10:13 AM",
     "kind": "refused",
@@ -1210,141 +1345,6 @@
     "time": "9:28 AM",
     "kind": "noticed",
     "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Diesel first. Always Diesel first.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "noticed",
-    "text": "A kid drops a bolt and asks Derek what it's for.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "noticed",
-    "text": "Diesel falls asleep in the toolbox for a second.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "The Noodle stall is coming along. Brick by brick.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "thought",
-    "text": "Food first. Then I'm useful again.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Off to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Some days you're the spanner, some days you're the bolt.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "building (the snow slowed the work, Noodle stall still 3/4)",
-    "why": "One more course of bricks.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Note to self: buy more duct tape.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "note",
-    "text": "noted (Dog training (How dogs learn)): Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence",
     "why": null,
     "by": null,
     "ok": true
