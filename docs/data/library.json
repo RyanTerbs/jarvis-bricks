@@ -310,7 +310,7 @@
     },
     "barn_find": {
       "title": "Barn find",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 2,
       "perk": "restoration work feels even better",
@@ -318,7 +318,7 @@
     },
     "vehicle_restoration": {
       "title": "Conservation and restoration of road vehicles",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 4,
       "perk": "stripping a project bike takes 1 session less",
@@ -326,7 +326,7 @@
     },
     "four_stroke": {
       "title": "Four-stroke engine",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 6,
       "perk": "engine work on a project bike takes 2 sessions less",
@@ -334,7 +334,7 @@
     },
     "spark_plug": {
       "title": "Spark plug",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 7,
       "perk": "a project bike is likelier to start first kick; electrics take 1 session less",
@@ -342,7 +342,7 @@
     },
     "tire": {
       "title": "Tire",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 10,
       "perk": "tyres + electrics take 1 session less",
@@ -350,7 +350,7 @@
     },
     "spray_painting": {
       "title": "Spray painting",
-      "where": "box",
+      "where": "home",
       "box": 1,
       "chapters": 7,
       "perk": "painting a project bike takes 1 session less",
@@ -661,7 +661,7 @@
       "source": "https://en.wikipedia.org/wiki/Vlog"
     }
   },
-  "boxes_left": 7,
+  "boxes_left": 6,
   "topics": 148,
   "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"
 }

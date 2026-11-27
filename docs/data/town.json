@@ -127,7 +127,7 @@
     "name": "Rooftop Garden",
     "lot": 8,
     "work": 5,
-    "done": 1,
+    "done": 2,
     "started": "2026-12-03",
     "look": {
       "kind": "shop",
@@ -296,6 +296,14 @@
     {
       "date": "2026-12-02",
       "text": "Designed his own building: 🏍️ Chopper Shop (a tiny custom bike shop with chrome everywhere)."
+    },
+    {
+      "date": "2026-12-04",
+      "text": "A project bike arrived in the garage: an old single-cylinder road bike, rusted solid, out of a farmer's barn."
+    },
+    {
+      "date": "2026-12-04",
+      "text": "A box of 6 books arrived: Barn find, Conservation and restoration of road vehicles, Four-stroke engine and more."
     }
   ]
 }

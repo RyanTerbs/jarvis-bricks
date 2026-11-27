@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "bike",
+    "text": "named the barn-find bike Little Thunder.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "thought",
+    "text": "Running on fumes. Need food.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "noticed",
+    "text": "📦 The farmer threw in a box of old workshop books with it: Barn find, Conservation and restoration of road vehicles, Four-stroke engine, Spark plug, Tire, Spray painting. 6 new books on his shelf at home.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "bike",
+    "text": "A farmer two towns over cleared out his barn and gave Derek an old bike for nothing: flat tyres, rust everywhere, engine seized solid. It's in the garage now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "noticed",
+    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 20 in the pile now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "building (Rooftop Garden 2/5)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Early bird gets the bricks.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "🌨️ Snow starts falling over the island.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-04T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "diary",
@@ -1221,132 +1347,6 @@
     "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "collecting bricks (+5 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "collecting bricks (+5 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "One more job, then feet up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Can't see the end of the street. Spooky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "thought",
-    "text": "Didn't know half this stuff about Dog training.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "thought",
-    "text": "Even the lamp posts look lost in this fog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Bessie is making a funny noise. My kind of problem.",
-    "by": "queue",
     "ok": true
   }
 ]
