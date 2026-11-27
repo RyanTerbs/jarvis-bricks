@@ -40,10 +40,19 @@
   #mini { position: fixed; left: 10px; bottom: 10px; width: 150px; height: 150px; border-radius: 50%; border: 2px solid #3a2a1a; cursor: crosshair; background: #3c9ad6; }
   #controls { position: fixed; right: 12px; bottom: 12px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
   #pad { display: grid; grid-template-columns: repeat(3, 42px); grid-template-rows: repeat(2, 42px); gap: 4px; }
-  #pad button, #follow, #nowbtn { font: 700 16px system-ui; border: 2px solid #3a2a1a; border-radius: 10px; background: #fbf3e4; color: #3a2a1a; cursor: pointer; touch-action: none; }
+  #pad button, #follow, #nowbtn, #walk { font: 700 16px system-ui; border: 2px solid #3a2a1a; border-radius: 10px; background: #fbf3e4; color: #3a2a1a; cursor: pointer; touch-action: none; }
   #pad button:active { background: #f6b24a; }
-  #follow, #nowbtn { font-size: 13px; padding: 6px 12px; border-radius: 99px; }
+  #follow, #nowbtn, #walk { font-size: 13px; padding: 6px 12px; border-radius: 99px; }
   #follow.on { background: #e8762b; color: #fff; }
+  #walk { background: #3fae4f; color: #fff; font-size: 14px; }
+  #walk.on { background: #2f6fb3; }
+  #stick { display: none; position: relative; width: 124px; height: 124px; border-radius: 50%; border: 2px solid #3a2a1a;
+           background: rgba(251,243,228,.6); touch-action: none; }
+  #knob { position: absolute; left: 50%; top: 50%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%;
+          background: #f6b24a; border: 2px solid #3a2a1a; pointer-events: none; }
+  body.walking #pad { display: none; }
+  @media (any-pointer: coarse), (max-width: 760px) { body.walking #stick { display: block; } }
+  @media (max-width: 760px) { body.walking #status { display: none; } }
   #hint { position: fixed; bottom: 172px; left: 12px; font-size: 11px; color: #fff; text-shadow: 0 1px 2px #000; }
   #err { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px; }
   #err a { color: #f6b24a; }
@@ -71,14 +80,16 @@
 <div id="now" class="panel"></div>
 <div id="status" class="panel pill">…</div>
 <canvas id="mini" width="300" height="300" title="Tap to jump there"></canvas>
-<div id="hint">Drag to look · scroll / pinch to zoom · WASD or arrows to roam · tap the map to jump</div>
+<div id="hint">Drag to look · scroll / pinch to zoom · WASD or arrows to roam · tap the map to jump · 🚶 Walk = go down to street level</div>
 <div id="controls">
   <button id="nowbtn">📋 Right now</button>
+  <button id="walk" title="Walk around at street level and go inside his buildings">🚶 Walk</button>
   <button id="follow" class="on">🎯 Follow Derek</button>
   <div id="pad">
     <span></span><button data-d="0,-1">▲</button><span></span>
     <button data-d="-1,0">◀</button><button data-d="0,1">▼</button><button data-d="1,0">▶</button>
   </div>
+  <div id="stick" title="Push up to walk, left/right to turn"><div id="knob"></div></div>
 </div>
 <div id="err"><div>The 3D world couldn't start on this device.<br><br><a href="./">Open his status page instead</a></div></div>
 
@@ -153,9 +164,28 @@ $("nowbtn").onclick = () => $("now").classList.toggle("open");
     W.mount(document.getElementById("world"), { full: true, minimap: document.getElementById("mini") });
     window.World = W;
     if (window.__last && window.__last[1]) W.update(...window.__last);
-    const fb = document.getElementById("follow");
+    const fb = document.getElementById("follow"), wb = document.getElementById("walk"), hint = document.getElementById("hint");
+    const FLY = hint.textContent, WALK = "W / ↑ walk · A D / ← → turn · Shift = run · drag to look · scroll = camera in/out · tap the map to jump · walk in the open doors";
     fb.onclick = () => W.follow();
-    setInterval(() => fb.classList.toggle("on", W.getMode() === "follow"), 300);
+    wb.onclick = () => W.walkMode();
+    setInterval(() => {
+      const m = W.getMode(), walking = m === "walk";
+      fb.classList.toggle("on", m === "follow"); wb.classList.toggle("on", walking);
+      wb.textContent = walking ? "🦅 Fly up" : "🚶 Walk"; document.body.classList.toggle("walking", walking);
+      hint.textContent = walking ? WALK : FLY;
+    }, 300);
+    const st = document.getElementById("stick"), kn = document.getElementById("knob");
+    let sid = null;
+    const steer = (e) => {
+      const r = st.getBoundingClientRect(), half = r.width / 2, max = half * 0.62;
+      let x = e.clientX - r.left - half, y = e.clientY - r.top - half; const d = Math.hypot(x, y);
+      if (d > max) { x *= max / d; y *= max / d; }
+      kn.style.transform = `translate(${x}px, ${y}px)`; W.stick(x / max, y / max);
+    };
+    st.addEventListener("pointerdown", (e) => { sid = e.pointerId; st.setPointerCapture(sid); steer(e); e.preventDefault(); });
+    st.addEventListener("pointermove", (e) => { if (e.pointerId === sid) steer(e); });
+    const let_go = (e) => { if (e.pointerId !== sid) return; sid = null; kn.style.transform = ""; W.stick(0, 0); };
+    st.addEventListener("pointerup", let_go); st.addEventListener("pointercancel", let_go);
     for (const b of document.querySelectorAll("#pad button")) {
       const [dx, dz] = b.dataset.d.split(",").map(Number);
       const go = (e) => { e.preventDefault(); W.explore(dx, dz); }, stop = () => W.explore(0, 0);
