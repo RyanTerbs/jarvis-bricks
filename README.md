@@ -36,9 +36,19 @@ If the AI fails or isn't set up, **autopilot** fixes his most pressing need. At 
 ## Books, laptop + notebook (offline, no internet)
 
 - `jarvis/library/` holds a fixed offline copy of some Wikipedia articles (CC BY-SA 4.0, source link kept on each), built once by `python tools/build_library.py`. **Derek never touches the live internet.**
-- **Books:** 3 on his shelf at home (Dog training, Carburetor, Thailand), 9 more at the library once he builds it. `read_a_book` reads the next chapter; finishing a book teaches him a perk (better puppy training, carbs sell for more, faster bricklaying, better haggling...).
-- **His old laptop** (at home): `use_the_computer` looks a topic up in the offline encyclopedia (56 entries: Thailand, engines, dogs, money, the sea...).
+- **Books:** 88 in all. 6 on his shelf at home, 38 at the library once he builds it (the free brain saves its bricks for the library first), and 44 more in 7 **book boxes**: when he's nearly out of things to read, the next box arrives at his door (max one a day; box 1 comes with the first barn-find bike). Nothing new left = he re-reads old favourites. `read_a_book` reads the next chapter; finishing a book teaches him a perk (better puppy training, carbs sell for more, faster bricklaying, quicker bike-project stages...). `python tools/build_library.py` only fetches new books, so books he's halfway through never change.
+- **His old laptop** (at home): `use_the_computer` looks a topic up in the offline encyclopedia (148 entries: Thailand, engines, dogs, money, the sea...).
 - **Notebook:** after reading he writes one note in his own words (one small AI call). The last 8 notes go into his prompt, so what he learns sticks.
+
+## The garage project (bike restorations)
+
+- Once he has a few coins, a **barn-find wreck** turns up in his garage (with a box of old workshop books). He names her.
+- Stages: strip + clean → carb rebuild → engine top end → electrics + tyres → paint (he picks the colour) → first start (may take a few goes).
+  `work_on_the_restoration` = one session (max 2 a day); stages with parts need `order_restoration_parts` first (coins, parts arrive the next day);
+  the carb soaks overnight, the paint dries overnight. Finished books can cut sessions. About 2–3 weeks of his time, ~53 coins of parts.
+- When she runs: `ride_a_restored_bike` (round the island in 3D, the pup in the tank bag if he knows that trick), then keep her or sell her at the stall
+  (110–150 coins). Next comes a bigger project: an **adventure bike** for the Thailand trip (30 coins to buy, 7 stages). Rules: `jarvis/world.json` → `garage_projects`.
+- 3D: walk into the garage to see her on the stand, changing per stage (rusty wreck → bare frame → engine out → wheels back on → paint → shiny). Kept bikes park outside.
 
 ## The beach
 

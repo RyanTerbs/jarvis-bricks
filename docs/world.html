@@ -109,7 +109,7 @@ async function get(name) {
   }
   return null;
 }
-const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡" };
+const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡", bike: "🏍️" };
 const PUP_WANTS = { food: "🦴 food", play: "🎾 to play", walk: "🐾 a walk", beach: "🏖️ the beach", cuddle: "❤️ a cuddle", nap: "💤 a nap", explore: "👃 to sniff around" };
 const bar = (label, value, color) => `<div class="need"><div class="t"><i class="dot" style="background:${color}"></i><span>${label}</span></div>
   <div class="track"><div class="fill" style="width:${Math.round(Math.max(0, Math.min(1, value)) * 100)}%;background:${color}"></div></div></div>`;
@@ -135,12 +135,13 @@ function render(s, feed, diary, town) {
     : `Derek is ${s.doing}${p ? ` · ${cap(pupName)} is ${p.doing}` : ""}`;
   const items = (feed || []).filter((e) => e.kind !== "thought").slice(0, 7).map((e) =>
     `<li>${ICON[e.kind] || "•"} ${esc(e.text)}${e.why ? ` <i style="color:#8a7458">“${esc(e.why)}”</i>` : ""}</li>`).join("");
-  const d = (diary || [])[0];
+  const d = (diary || [])[0], gp = (s.garage || {}).project;
   $("now").innerHTML = `<span class="x" onclick="document.getElementById('now').classList.remove('open')">×</span>
     <div class="small">right now · ${esc(String(s.place).replace(/_/g, " "))}${w.kind ? ` · ${esc(w.emoji)} ${esc(w.name)}, ${esc(w.temp)}°C` : ""}</div>
     <h3>${esc(cap(s.asleep ? "asleep" : s.doing))}</h3>
     <div class="th">“${esc(s.asleep ? "Zzz…" : s.thought)}”</div>
     <div class="small">coins ${s.coins}/${s.coins_goal} · bricks ${s.bricks}${town && town.site ? ` · building ${esc(town.site.name)} ${town.site.done}/${town.site.work}` : ""}</div>
+    ${gp ? `<div class="small">🏍️ ${esc(gp.name || "project bike")}: ${gp.finished ? "finished, she runs!" : `${esc(gp.stages[gp.stage].name)} ${gp.stages[gp.stage].done}/${gp.stages[gp.stage].need}${gp.hold ? " · " + esc(gp.hold) : ""}`}</div>` : ""}
     ${p ? `<div class="small" style="margin-top:6px">🐶 ${esc(cap(pupName))}${p.wants ? " wants " + esc(PUP_WANTS[p.wants] || p.wants) : ""}</div>
       <div class="th">“${esc(p.thought || "…")}”</div>` : ""}
     <ul>${items}</ul>

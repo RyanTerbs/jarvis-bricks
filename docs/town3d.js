@@ -29,6 +29,7 @@ function bubbleMat(e) {   // kept for the whole visit (not cleared on rebuild)
 let R, scene, cam, controls, root, studMesh, jar, pup, pupZ, zzz, bang, sun, hemi, clock, opts;
 let lastKey = "", ready = false, night = false, places = {}, homeDoor = new THREE.Vector3(), homeTop = { cx: 0, cz: 0 }, bounds = null;
 let mode = "follow", lastState = null, mini = null, miniT = 0, clouds = [];
+let garageWork = null, rideLoop = null, rideKey = "";   // where Derek stands to work on the project bike; his ride round the island
 // weather + seasons (from state.weather): sky, rain/snow, lightning, season colours, snow on the ground
 let wx = {}, snowy = false, palette = null, rain = null, flakes = null, flashT = 0, nextFlash = 4, sky = { bg: new THREE.Color("#8fd3ff"), hemi: 1 };
 const SNOWC = "#f4f7fb";
@@ -373,8 +374,88 @@ function roomGarage(l, g, look) {                  // his garage: a car up on th
   for (let i = 0; i < 5; i++) piece(g, 0.01, 0.02, 0.5, "#7a1f16", 1.715, 0.2 + i * 0.17, -0.85);
   solid(g, 1.92, -0.85, 0.4, 0.6);
   add(g, cyl(0.24, 0.24, 0.75, 16), mat("#2f6fb3"), -1.85, 0.405, 1.6); solid(g, -1.85, 1.6, 0.5);
+  // the garage project (state.garage): the bike on its stand in the middle, changing look per stage
+  const G = ((lastState && lastState.state) || {}).garage || {}, p = G.project;
+  g.updateMatrixWorld(true);
+  garageWork = { pos: g.localToWorld(new THREE.Vector3(0.1, 0, 0.5)).setY(Y_BLOCK + 0.03), yaw: g.rotation.y + Math.PI / 2 };
+  if (p) {
+    const o = bikeLook(p), b = bikeModel(o); b.position.set(0.65, 0.03, 0.15); g.add(b); solid(g, 0.65, 0.15, 0.45, 1.5);
+    if (o.wheels === "off") for (const x of [-0.3, -0.05]) add(g, tyreGeo(o.adv ? 1.15 : 1),
+      mat("#1d1d1d", { roughness: 0.6 }), x, 0.36, -1.88, -0.12);                                    // wheels off, leaning on the back wall
+    if (o.engine === false) {                                                                       // engine out on a pallet, top end off
+      piece(g, 0.5, 0.06, 0.5, "#8b5a2b", 0.0, 0.03, -1.15); piece(g, 0.3, 0.28, 0.36, mat("#9aa0a6", { metalness: 0.3 }), 0.0, 0.09, -1.15);
+      add(g, cyl(0.06, 0.06, 0.1, 12), mat("#e0e3e8", { metalness: 0.8, roughness: 0.2 }), 0.0, 0.42, -1.1); solid(g, 0.0, -1.15, 0.5);
+    }
+    if (p.wait === "soak" || p.stage_id === "carb") {                                               // carb parts soaking in a tub of cleaner
+      add(g, cyl(0.12, 0.1, 0.12, 14), mat("#5b6b7a"), 1.2 - 0.3, 0.87, -1.67);
+      add(g, cyl(0.105, 0.105, 0.01, 14), mat("#4fa3d9", { roughness: 0.05, transparent: true, opacity: 0.85 }), 1.2 - 0.3, 0.92, -1.67, 0, 0, 0, false);
+    }
+    if (p.wait === "dry") add(g, box(0.3, 0.3, 0.12), mat("#f2c230"), 1.25, 0.03 + 0.15, 0.15);     // a heater pointing at the wet paint
+    const t = label(`🏍️ ${p.name || "project bike"}${p.finished ? " ✓" : ` · ${p.stages[p.stage].name}`}`, 0.28);
+    t.position.set(0.65, 1.55, 0.15); g.add(t); signs.push(t);
+  }
+  // restored bikes he kept: parked on the street outside (the newest two)
+  (G.bikes || []).slice(-2).forEach((k, i) => {
+    const b = bikeModel({ adv: k.look === "adventure", paint: k.colour_hex || "#8b2b1f", shiny: true, boxes: k.look === "adventure", racks: k.look === "adventure" });
+    const x = i ? 2.0 : -1.9; b.position.set(x, Y_ROAD - Y_BLOCK, 3.0); b.rotation.set(0, Math.PI / 2, 0.08); g.add(b); solid(g, x, 3.0, 1.4, 0.4);
+  });
   ceilingLamp(R);
   roomSigns(g, l, look, H + 0.9, 0.25, H - 0.25);
+}
+
+// ------------------------------------------------------------------ his garage project: a bike that changes per stage
+// o: { rust, paint (hex), frame (hex), engine: true/false, wheels: "on" | "flat" | "off", tank: true/false, seat: true/false,
+//      stand, shiny, adv (adventure bike), racks, boxes, loom }  -> a bike along local z (front wheel at +z), ground at y 0
+const tyreGeo = (k) => geo(`tyre${k}`, () => new THREE.TorusGeometry(0.24 * k, 0.07 * k, 8, 18));
+function bikeModel(o = {}) {
+  const g = new THREE.Group(), k = o.adv ? 1.15 : 1, R = o.rust;
+  const rust = mat("#8b4a2b", { roughness: 0.95 }), rust2 = mat("#6e3b22", { roughness: 0.95 });
+  const paint = R ? rust : mat(o.paint || "#8d939b", { roughness: o.shiny ? 0.25 : 0.55, metalness: o.shiny ? 0.2 : 0 });
+  const frame = R ? rust2 : mat(o.frame || "#3b3f46", { roughness: 0.45 });
+  const chrome = R ? rust2 : mat("#c9ccd1", { metalness: o.shiny ? 0.75 : 0.4, roughness: 0.3 });
+  const tyre = mat(o.wheels === "flat" ? "#4a3a30" : "#1d1d1d", { roughness: o.wheels === "flat" ? 1 : 0.6 });
+  const up = o.stand ? 0.1 : 0, r = 0.24 * k, wz = 0.55 * k;
+  const tor = tyreGeo(k);
+  if (o.wheels !== "off") for (const s of [-1, 1]) {
+    const w = add(g, tor, tyre, 0, r + 0.07 * k + up, s * wz, 0, Math.PI / 2);
+    if (o.wheels === "flat") { w.scale.set(1, 0.82, 1); w.position.y -= 0.05; }
+    add(g, cyl(0.05, 0.05, 0.1, 8), chrome, 0, r + 0.07 * k + up, s * wz, 0, 0, Math.PI / 2);      // hub
+  }
+  const y = up + (o.wheels === "flat" ? -0.04 : 0);
+  piece(g, 0.09, 0.09, 0.95 * k, frame, 0, y + 0.55 * k, 0);                                        // backbone
+  add(g, box(0.08, 0.08, 0.55 * k), frame, 0, y + 0.38 * k, 0.28 * k, 0.9);                         // down tube
+  if (o.engine !== false) {
+    piece(g, 0.26, 0.26, 0.34, R ? rust2 : mat("#9aa0a6", { metalness: 0.3, roughness: 0.5 }), 0, y + 0.2 * k, 0.04);
+    add(g, cyl(0.08, 0.08, 0.2, 10), R ? rust : mat("#b8bec6", { metalness: 0.4 }), 0, y + 0.53 * k, 0.12, -0.25);
+    for (let i = 0; i < 3; i++) add(g, cyl(0.11, 0.11, 0.015, 12), R ? rust2 : mat("#8d939b"), 0, y + 0.47 * k + i * 0.05, 0.12, -0.25);
+    add(g, cyl(0.04, 0.04, 0.6 * k, 8), chrome, 0.15, y + 0.3 * k, -0.28 * k, Math.PI / 2 - 0.2);  // exhaust
+  }
+  if (o.tank !== false) piece(g, 0.28 * k, 0.2 * k, 0.42 * k, paint, 0, y + 0.62 * k, 0.16 * k);
+  if (o.seat !== false) piece(g, 0.22, 0.07, 0.5 * k, R ? mat("#5a3b22") : mat("#222"), 0, y + 0.68 * k, -0.28 * k);
+  for (const s of [-1, 1]) piece(g, 0.02, 0.16, 0.22, paint, s * 0.13, y + 0.45 * k, -0.18 * k);      // side panels
+  piece(g, 0.16, 0.03, 0.34, paint, 0, y + r * 2 + 0.12, wz, 0);                                      // front mudguard
+  piece(g, 0.18, 0.03, 0.36 * k, paint, 0, y + 0.62 * k, -0.62 * k);                                  // tail
+  for (const s of [-1, 1]) add(g, cyl(0.022, 0.022, 0.62 * k, 6), chrome, s * 0.08, y + 0.6 * k, 0.47 * k, 0.32);   // forks
+  add(g, cyl(0.02, 0.02, 0.62, 6), mat("#222"), 0, y + 0.92 * k, 0.38 * k, 0, 0, Math.PI / 2);        // bars
+  add(g, cyl(0.07, 0.07, 0.06, 12), R ? rust2 : mat("#fff3b0", { emissive: "#ffd34d", emissiveIntensity: night && !R ? 1 : 0.1 }),
+      0, y + 0.8 * k, 0.53 * k, Math.PI / 2);                                                         // headlight
+  if (o.loom) for (const [c, dx] of [["#d0453a", -0.05], ["#2f6fb3", 0], ["#f2c230", 0.05]])
+    add(g, box(0.015, 0.015, 0.5), mat(c), dx, y + 0.5 * k, 0.1, 0.4);                                // loose wires
+  if (o.racks) { piece(g, 0.5, 0.03, 0.4, mat("#3b3f46"), 0, y + 0.72 * k, -0.62 * k); add(g, box(0.03, 0.4, 0.03), mat("#3b3f46"), 0, y + 1.05 * k, 0.5 * k, 0.3); }
+  if (o.boxes) for (const s of [-1, 1]) piece(g, 0.16, 0.3, 0.42, mat("#b8bec6", { metalness: 0.5, roughness: 0.35 }), s * 0.3, y + 0.38 * k, -0.5 * k);
+  if (o.stand) { piece(g, 0.34, 0.1, 0.12, "#c0392b", 0, 0, -wz); piece(g, 0.12, y + 0.2 * k, 0.4, "#c0392b", 0, 0, 0.04); }
+  return g;
+}
+
+function bikeLook(p) {                             // the project's stage -> how the bike looks right now
+  const ids = p.stages.map((s) => s.id), at = p.finished ? ids.length : p.stage, past = (id) => ids.indexOf(id) >= 0 && ids.indexOf(id) < at;
+  const cur = p.finished ? "done" : p.stage_id, half = !p.finished && p.stages[p.stage] && p.stages[p.stage].done * 2 >= p.stages[p.stage].need;
+  const adv = p.look === "adventure", painted = past("paint") || (cur === "paint" && p.stages[p.stage].done > 0);
+  const o = { adv, paint: painted ? p.colour_hex : null, stand: !p.finished, shiny: past("paint"), racks: adv && (past("racks") || cur === "racks"), boxes: adv && past("racks") };
+  if (cur === "strip") return { ...o, rust: true, wheels: "flat", tank: !half, seat: !half, stand: false };
+  if (!past("electrics")) Object.assign(o, { wheels: cur === "electrics" && half ? "on" : "off", loom: cur === "electrics" });
+  if (cur === "engine") o.engine = false;
+  return o;
 }
 
 function roomCafe(l, g, look) {                    // the cafe: counter + coffee machine + cakes, menu board, tables, a plant
@@ -740,6 +821,11 @@ function rebuild(town, luckyLive) {
   const st = lastState && lastState.state;
   if (st && (st.owned || []).includes("surfboard")) add(root, box(0.5, 1.9, 0.09), mat("#f6b24a"), cx - 3.8, SAND_Y + 0.85, bzz - 0.3, 0, 0, 0.15);
   for (const c of ((st && st.beach && st.beach.castles) || []).slice(-1)) { castle(root, beach.castle.x, beach.castle.z, c.size); solidAt(beach.castle.x, beach.castle.z, 1.4); }
+  {                                                    // his ride on a restored bike: round the town's ring road + along the wet sand
+    const rz = bzz + 1.3, sx0 = cx - isle.w / 2 + 3, sx1 = cx + isle.w / 2 - 3, gx = beach.gate.x, b = bounds;
+    rideLoop = [V(b.x0, Y_ROAD, b.z0), V(b.x1, Y_ROAD, b.z0), V(b.x1, Y_ROAD, b.z1), V(gx, Y_ROAD, b.z1), V(gx, SAND_Y, rz), V(sx1, SAND_Y, rz),
+                V(sx0, SAND_Y, rz), V(gx, SAND_Y, rz), V(gx, Y_ROAD, b.z1), V(b.x0, Y_ROAD, b.z1)];
+  }
   waves = [];
   for (let i = 0; i < 3; i++) {
     const w = add(root, box(isle.w + 10, 0.04, 0.35), mat("#ffffff", { transparent: true, opacity: 0.7 }), cx, WATER_Y + 0.05, bzz + 3 + i * 2.2, 0, 0, 0, false);
@@ -1008,6 +1094,8 @@ export const getMode = () => mode;
 export function stick(x, y) { stickV.set(x, y); }
 export const where = () => ({ x: +you.position.x.toFixed(2), z: +you.position.z.toFixed(2), yaw: +yaw.toFixed(2), d: +curD.toFixed(2),
   rooms: rooms.map((R) => R.id + ":" + R.f.toFixed(2)) });   // for testing
+export const spots = () => ({ garage: garageWork && { x: +garageWork.pos.x.toFixed(2), z: +garageWork.pos.z.toFixed(2), yaw: +garageWork.yaw.toFixed(2) },
+  derek: { x: +jar.position.x.toFixed(2), z: +jar.position.z.toFixed(2), pose: jar.userData.pose, riding: !!jar.userData.riding, bike: !!(jar.userData.bike && jar.userData.bike.visible) } });   // for testing
 export function goTo(x, z, a = yaw) { if (mode !== "walk") walkMode(true); you.position.set(x, floorY(x, z), z); yaw = a; curD = camDist; }   // for testing
 export function walkMode(on = mode !== "walk") {
   if (!you || !opts.full) return;
@@ -1103,12 +1191,12 @@ function stepRooms(dt) {                          // roof + front wall fade out 
   }
 }
 
-function walk(obj, dt, speedMin) {
+function walk(obj, dt, speedMin, fixed = 0) {
   const path = obj.userData.path || [];
   if (!path.length) return false;
   let total = 0, prev = obj.position;
   for (const p of path) { total += p.distanceTo(prev); prev = p; }
-  let step = Math.max(speedMin, total / 2.2) * dt;
+  let step = (fixed || Math.max(speedMin, total / 2.2)) * dt;
   while (step > 0 && path.length) {
     const to = path[0], d = to.distanceTo(obj.position);
     if (d <= step) { obj.position.copy(to); path.shift(); step -= d; continue; }
@@ -1123,9 +1211,12 @@ function walk(obj, dt, speedMin) {
 function loop() {
   const dt = Math.min(clock.getDelta(), 0.1), t = clock.elapsedTime;
   if (document.hidden || !R.domElement.offsetParent) return;
-  // Derek walks the roads
-  const moving = walk(jar, dt, 4.5);
-  const pose = moving ? "walk" : (jar.userData.pose || "stand"), gy = groundY(jar.position.x, jar.position.z);
+  // Derek walks the roads (or rides his restored bike round the island, lap after lap)
+  const riding = !!jar.userData.riding;
+  if (riding && !(jar.userData.path || []).length && rideLoop) jar.userData.path = rideLoop.map((v) => v.clone());
+  const moving = walk(jar, dt, 4.5, riding ? 5.5 : 0);
+  const pose = riding ? "ride" : moving ? "walk" : (jar.userData.pose || "stand"), gy = floorY(jar.position.x, jar.position.z);
+  if (jar.userData.bike) jar.userData.bike.visible = pose === "ride";
   jar.rotation.x = pose === "lie" ? -Math.PI / 2 : 0;
   jar.rotation.z = pose === "surf" ? Math.sin(t * 1.7) * 0.12 : 0;
   if (pose === "lie") jar.rotation.y = 0;
@@ -1135,13 +1226,20 @@ function loop() {
   else if (pose === "lie") jar.position.y = SAND_Y + 0.14;
   else if (pose === "swim") jar.position.y = WATER_Y - 0.75 + Math.sin(t * 2) * 0.05;
   else if (pose === "surf") jar.position.y = WATER_Y + 0.12 + Math.sin(t * 2.2) * 0.14;
+  else if (pose === "ride") jar.position.y = groundY(jar.position.x, jar.position.z) + Math.abs(Math.sin(t * 9)) * 0.015;
+  else if (pose === "work") { jar.position.y = gy + Math.abs(Math.sin(t * 5)) * 0.02; if (jar.userData.face != null) jar.rotation.y = jar.userData.face; }
   else jar.position.y = gy + Math.abs(Math.sin(t * 3)) * 0.03;
   const rough = wx.kind === "storm" ? 1.4 : wx.kind === "windy" ? 1.0 : 0.6;
   for (const w of waves) w.position.z = w.userData.z0 + Math.sin(t * (0.8 + rough * 0.3) + w.userData.z0) * rough;
   // the puppy trots after him (or naps)
   if (pup.visible) {
     const u = pup.userData;
-    if (u.napping) {
+    pup.scale.setScalar(u.ride && riding ? 0.55 : 0.9);
+    if (u.ride && riding && !u.napping) {                // in the tank bag, ears flapping
+      const fw = new THREE.Vector3(Math.sin(jar.rotation.y), 0, Math.cos(jar.rotation.y));
+      pup.position.copy(jar.position).addScaledVector(fw, 0.2); pup.position.y += 0.44;
+      pup.rotation.y = Math.atan2(-fw.z, fw.x); u.body.scale.set(1, 1, 1); u.tail.rotation.y = Math.sin(t * 20) * 0.7;
+    } else if (u.napping) {
       u.body.scale.set(1, 0.6, 1); u.tail.rotation.y = 0;
       pupZ.position.set(pup.position.x, 0.9 + Math.sin(t * 2) * 0.05, pup.position.z);
     } else {
@@ -1194,6 +1292,8 @@ function loop() {
   if (mini && (miniT += dt) > 0.2) { miniT = 0; drawMini(); }
 }
 
+const garageKey = (G) => { const p = (G || {}).project; return JSON.stringify([p && [p.kind, p.name, p.stage, p.stages[p.stage] && p.stages[p.stage].done, p.parts, p.wait, p.colour_hex, p.finished],
+  ((G || {}).bikes || []).map((b) => b.name + b.colour_hex)]); };
 const etHour = (iso) => Number(new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", hour: "numeric", hour12: false })) % 24;
 
 export function update(state, town) {
@@ -1205,7 +1305,7 @@ export function update(state, town) {
   const lucky = state.lucky || {}, luckyLive = !(lucky.date === (state.stats.today || {}).date && lucky.used >= lucky.max);
   const key = JSON.stringify([town.lots.map((l) => [l.lot, l.id]), town.site && [town.site.lot, town.site.done], town.max_lots, night, luckyLive,
                              ((state.beach && state.beach.castles) || []).map((c) => c.size), (state.owned || []).join(), (state.pup || {}).name || "",
-                             wx.kind, wx.season, Math.round((wx.snow || 0) * 4), (wx.wet || 0) >= 0.35, wx.snowman || 0]);
+                             wx.kind, wx.season, Math.round((wx.snow || 0) * 4), (wx.wet || 0) >= 0.35, wx.snowman || 0, garageKey(state.garage)]);
   const first = !lastKey;
   if (key !== lastKey) { rebuild(town, luckyLive); lastKey = key; }
   if (jarFill) jarFill.scale.y = Math.max(0.03, Math.min(1, (state.coins || 0) / (state.coins_goal || 1)));
@@ -1217,13 +1317,30 @@ export function update(state, town) {
     else if (doing.includes("tan")) { goal = beach.towel.clone(); pose = "lie"; }
     else if (doing.includes("sand castle")) goal = beach.castle.clone().add(new THREE.Vector3(-1.3, 0, 0.3));
   }
+  const G = state.garage || {}, gp = G.project;
+  if (!state.asleep && state.place === "garage" && garageWork && doing.startsWith("restoring")) { goal = garageWork.pos.clone(); pose = "work"; }
+  jar.userData.face = pose === "work" ? garageWork.yaw : null;
+  const rb = !state.asleep && state.place === "garage" && doing.startsWith("riding") && rideLoop ? (gp && gp.finished ? gp : (G.bikes || []).slice(-1)[0]) : null;
+  if (rb) pose = "ride";
+  const rk = rb ? [rb.colour_hex, rb.look || rb.kind].join() : "";
+  if (rk !== rideKey) {                               // the bike he rides, in her real colours
+    rideKey = rk;
+    if (jar.userData.bike) jar.remove(jar.userData.bike);
+    jar.userData.bike = null;
+    if (rb) { const adv = (rb.look || "") === "adventure"; jar.userData.bike = bikeModel({ adv, paint: rb.colour_hex || "#8b2b1f", shiny: true, racks: adv, boxes: adv }); jar.userData.bike.visible = false; jar.add(jar.userData.bike); }
+  }
   jar.userData.pose = pose;
   if (jar.userData.skin) jar.userData.skin.color.set("#e9c39b").lerp(new THREE.Color("#a8683c"), Math.min(1, (state.beach && state.beach.tan) || 0));
   if (first) {   // start next to him
     jar.position.copy(goal); pup.position.copy(groundY(goal.x, goal.z) === WATER_Y && beach ? new THREE.Vector3(goal.x, SAND_Y, beach.edge) : goal).add(new THREE.Vector3(-0.8, 0, 0.4));
     controls.target.set(goal.x, 1, goal.z); cam.position.set(goal.x + (opts.full ? 9 : 7), opts.full ? 9 : 8, goal.z + (opts.full ? 15 : 12));
     jar.userData.path = [];
-  } else if (!jar.userData.goal || jar.userData.goal.distanceTo(goal) > 0.1) {
+    jar.userData.riding = pose === "ride";
+    if (pose === "ride") { jar.position.copy(rideLoop[0]); jar.userData.path = rideLoop.map((v) => v.clone()); }
+  } else if (pose === "ride") {
+    if (!jar.userData.riding) { jar.userData.riding = true; jar.userData.path = [...pathTo(jar.position, rideLoop[0]), ...rideLoop.map((v) => v.clone())]; }
+  } else if (jar.userData.riding || !jar.userData.goal || jar.userData.goal.distanceTo(goal) > 0.1) {
+    jar.userData.riding = false;
     const sandy = (v) => groundY(v.x, v.z) !== Y_ROAD;
     jar.userData.path = sandy(jar.position) && sandy(goal) ? [goal]
       : sandy(goal) ? [...pathTo(jar.position, beach.gate), beach.spot.clone(), goal]
@@ -1240,6 +1357,7 @@ export function update(state, town) {
     pup.userData.napping = p.napping || state.asleep;
     pup.userData.bond = p.bond;
     pup.userData.want = p.wants;
+    pup.userData.ride = (p.learned || []).includes("ride");
     if (state.asleep && first) pup.position.copy(homeDoor).add(new THREE.Vector3(-0.6, 0, 0));
   }
 }

@@ -72,6 +72,7 @@
   .worldlink { display: block; text-align: center; font-weight: 700; padding: 8px; margin-bottom: 8px; border-radius: 10px;
                background: var(--accent); color: #fff; text-decoration: none; }
   #books .bar { grid-template-columns: 150px 1fr 44px; }
+  #garage .bar { grid-template-columns: 170px 1fr 44px; }
   .pupgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
   footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 18px; }
   #err { display: none; color: var(--bad); }
@@ -134,6 +135,11 @@
   </div>
 
   <div class="card">
+    <h2>His garage project <span id="garageinfo"></span></h2>
+    <div id="garage"></div>
+  </div>
+
+  <div class="card">
     <h2>His books &amp; notebook <span id="libinfo"></span></h2>
     <div id="books"></div>
   </div>
@@ -180,7 +186,7 @@ if (host.endsWith(".github.io")) {
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡" };
+const ICON = { did: "▸", thought: "💭", noticed: "👀", refused: "✋", woke: "☀️", built: "🏗️", designed: "📐", diary: "📔", bought: "🛒", learned: "🐶", note: "📓", pupidea: "🐶💡", bike: "🏍️" };
 const PUP_WANTS = { food: "🦴 food", play: "🎾 to play", walk: "🐾 a walk", beach: "🏖️ the beach", cuddle: "❤️ a cuddle", nap: "💤 a nap", explore: "👃 to sniff around" };
 
 async function get(name) {
@@ -475,6 +481,36 @@ function renderPup(s) {
   $("pup").innerHTML = h;
 }
 
+// ------------------------------------------------------------------ the garage project
+const HOLD = { soak: "🧪 carb soaking overnight", dry: "🎨 paint drying overnight", start: "🔁 another go at the first start tomorrow" };
+function renderGarage(s) {
+  const G = s.garage, el = $("garage");
+  if (!G) { el.innerHTML = '<div class="muted">No garage project yet.</div>'; return; }
+  const p = G.project;
+  let h = "";
+  if (p) {
+    $("garageinfo").textContent = `day ${p.day} · ${p.spent} coins of parts`;
+    const sw = p.colour_hex ? `<span class="chip"><i class="dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${esc(p.colour_hex)};margin-right:5px"></i>${esc(p.colour)}</span>` : "";
+    h += `<div class="doing" style="font-size:16px">🏍️ ${esc(p.name || "No name yet (Derek will pick one)")}</div>
+      <div class="muted" style="margin-bottom:6px">the ${esc(p.kind_name)}: ${esc(p.what)}</div>
+      <div>${p.finished ? `<span class="chip">✅ she runs! ridden ${p.rides}×</span>` : p.hold ? `<span class="chip">⏳ ${esc(HOLD[p.wait] || p.hold)}</span>` : `<span class="chip">🔧 ready to work on</span>`}${sw}</div>`;
+    h += p.stages.map((st, i) => {
+      const done = st.done >= st.need, now = !p.finished && i === p.stage;
+      return bar((done ? "✅ " : now ? "👉 " : "") + st.name + (st.coins ? ` (${st.coins}🪙)` : ""), st.done, 0, st.need, done ? "var(--good)" : now ? "var(--accent)" : "var(--blue)")
+        .replace(/>\d+\.\d+</, `>${st.done}/${st.need}<`);
+    }).join("");
+  } else {
+    $("garageinfo").textContent = "";
+    h += G.offer ? `<div>🏷️ For sale down the road: ${esc(G.offer.what)}, <b>${G.offer.coins} coins</b>.</div>`
+                 : '<div class="muted">The garage is free. The next project bike turns up in a day or two.</div>';
+  }
+  if ((G.bikes || []).length) h += `<div class="muted" style="margin-top:8px">His bikes</div><div>` + G.bikes.map((b) =>
+    `<span class="chip"><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${esc(b.colour_hex || "#8b2b1f")};margin-right:5px"></i>${esc(b.name)} (${b.rides || 0} rides)</span>`).join("") + "</div>";
+  const sold = (G.restored || []).filter((r) => r.fate === "sold");
+  if (sold.length) h += `<div class="muted" style="margin-top:8px">Sold: ${sold.map((r) => `${esc(r.name)} for ${r.sold_for} coins`).join(" · ")}</div>`;
+  el.innerHTML = h;
+}
+
 // ------------------------------------------------------------------ books + notebook
 function renderBooks(s, lib) {
   if (!lib) { $("books").innerHTML = '<div class="muted">No library yet.</div>'; return; }
@@ -497,6 +533,7 @@ function renderBooks(s, lib) {
   };
   $("books").innerHTML =
     shelfHtml("home", "On his shelf at home") + shelfHtml("library", "At the library (once he builds it)") +
+    (lib.boxes_left ? `<div class="muted" style="margin-top:6px">📦 ${lib.boxes_left} more box${lib.boxes_left === 1 ? "" : "es"} of books on the way: one arrives whenever he's nearly out.</div>` : "") +
     (learned ? `<div class="muted" style="margin-top:8px">What his books taught him</div><div>${learned}</div>` : "") +
     `<div class="muted" style="margin-top:8px">His notebook (newest first)</div><ul class="feed">${notes || '<li><span></span><span class="muted">empty so far</span></li>'}</ul>` +
     `<div class="muted" style="margin-top:6px;font-size:11px">${esc(lib.credit)}. Offline copy: no live internet.</div>`;
@@ -542,6 +579,7 @@ async function render() {
     if (town && view === "3d" && window.Town3D) window.Town3D.update(s, town);
     renderStuff(s);
     renderPup(s);
+    renderGarage(s);
     renderBooks(s, lib);
     renderDiary(diary);
 

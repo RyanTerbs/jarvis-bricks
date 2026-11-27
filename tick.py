@@ -41,7 +41,7 @@ import urllib.parse
 import urllib.request
 import webbrowser
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -85,14 +85,37 @@ def library():
     return _LIB
 
 
-def perk_sum(state, kind, move=None, product=None):
-    """Add up what finished books taught him (e.g. faster site work, better prices)."""
+def perks_of(book):
+    """A book's perks as a list (books.json allows one perk or a list of them)."""
+    p = (book or {}).get("perk")
+    return [x for x in (p if isinstance(p, list) else [p]) if isinstance(x, dict)]
+
+
+def perk_text(book):
+    return "; ".join(p["text"] for p in perks_of(book) if p.get("text"))
+
+
+def perk_sum(state, kind, move=None, product=None, stage=None):
+    """Add up what finished books taught him (e.g. faster site work, better prices, quicker bike stages)."""
     total = 0.0
     for bid in state.get("finished", []):
-        perk = (library()["books"].get(bid) or {}).get("perk") or {}
-        if perk.get("type") == kind and perk.get("move") in (None, move) and perk.get("product") in (None, product):
-            total += perk.get("value", 0)
+        for perk in perks_of(library()["books"].get(bid)):
+            if (perk.get("type") == kind and perk.get("move") in (None, move) and perk.get("product") in (None, product)
+                    and perk.get("stage") in (None, stage)):
+                total += perk.get("value", 0)
     return total
+
+
+def book_where(state, bid):
+    """Where a book is right now: 'home', 'library', or None (still in a book box that hasn't come yet)."""
+    v = library()["books"][bid]
+    if v["where"] == "box":
+        return "home" if v.get("box") in state.get("book_boxes", []) else None
+    return v["where"]
+
+
+def has_place(town, place):
+    return any(l.get("place") == place for l in town["lots"])
 
 
 # ---------------------------------------------------------------- small helpers
@@ -166,6 +189,13 @@ def fresh_state(now):
         "hour": 12,                     # local hour of this tick (for time-of-day moves)
         "beach": {"tan": 0.0, "surf_skill": 0.0, "surf_sessions": 0, "castles": [], "best_castle": 0, "shells": 0,
                   "sun_today": 0, "burnt_until": 0, "waves": "small", "waves_date": None},
+        "book_boxes": [],               # book boxes delivered to his door so far
+        "box_date": None,
+        "project": None,                # the bike he's restoring in the garage (None = garage free)
+        "bikes": [],                    # restored bikes he kept
+        "restored": [],                 # every project he finished (kept or sold)
+        "bike_offer": None,             # a project bike for sale ({kind, since})
+        "garage_free_since": None,
         "queue": [],
         "lucky": {"date": today, "used": 0, "max": 3},
         "designed_on": None,
@@ -306,6 +336,11 @@ def pup_mind(state, log, world=None):
             w["beach"] = 3
         if any(k in str(state.get("doing", "")) for k in ("fixing", "building", "tinkering")):
             w["working"] = 2
+        doing = str(state.get("doing", ""))
+        if doing.startswith("restoring") or (state.get("project") and state["place"] == "garage"):
+            w["bike"] = 3                                  # the loud thing in the garage
+        if doing.startswith("riding") and "ride" in pup.get("learned", []):
+            w["bike_ride"] = 5                             # in the tank bag, ears flapping
         if pup.get("learned"):
             w["learning"] = 0.6
         if hr >= 21 or hr < 6:
@@ -390,6 +425,7 @@ def merged_world(world, town, state, today):
                                         f"({site['done']}/{site['work']} done)")
     moves = {m: d for m, d in world["moves"].items()
              if not m.startswith("_") and d.get("requires", "") in ("", *state["owned"])} | town["custom_moves"]
+    moves |= project_moves(state, world, town, today)      # his bike restoration in the garage
     hr = state.get("hour", 12)
     moves = {m: d for m, d in moves.items() if "hours" not in d or d["hours"][0] <= hr < d["hours"][1]}
     closed = weather_closed(state, world)                 # the weather shuts some things, opens others
@@ -500,12 +536,28 @@ def design_building(state, world, town, design, today, log):
     return None
 
 
-def read_book(state, want, log):
-    """Next chapter of a book. Home shelf = home books; the library has them all. Returns (ok, note)."""
+def reachable(state, bid, place, has_library):
+    """Can he read this book where he is? Home shelf at home; at the library, every book that's arrived."""
+    w = book_where(state, bid)
+    return w is not None and (w == "home" or (place == "library" and has_library))
+
+
+def read_book(state, want, log, has_library=True):
+    """Next chapter of a book. Home shelf = home books (+ delivered boxes); the library has them all.
+    Nothing new left = he re-reads an old favourite. Returns (ok, note)."""
     B, place = library()["books"], state["place"]
-    here = [b for b, v in B.items() if (place == "library" or v["where"] == "home") and b not in state["finished"]]
+    here = [b for b, v in B.items() if reachable(state, b, place, has_library) and b not in state["finished"]
+            and state["books"].get(b, 0) < len(v["chapters"])]
     if not here:
-        return False, "nothing left to read here" + (" (the library has more)" if place == "home" else "")
+        if place == "home" and has_library and any(book_where(state, b) == "library" and b not in state["finished"] for b in B):
+            return False, "nothing left to read here (the library has more)"
+        old = [b for b in state["finished"] if b in B and reachable(state, b, place, has_library)]
+        if not old:
+            return False, "nothing to read here"
+        bid = want if want in old else random.choice(old)
+        ch = random.choice(B[bid]["chapters"])
+        state["pending_read"] = {"source": B[bid]["title"], "part": ch["title"], "text": ch["text"]}
+        return True, f"re-reading an old favourite: {B[bid]['title']}"
     started = [b for b in here if state["books"].get(b)]
     bid = want if want in here else (started[0] if started else random.choice(here))
     book, done = B[bid], state["books"].get(bid, 0)
@@ -514,10 +566,44 @@ def read_book(state, want, log):
     state["pending_read"] = {"source": book["title"], "part": ch["title"], "text": ch["text"]}
     if done + 1 >= len(book["chapters"]):
         state["finished"].append(bid)
-        perk = book.get("perk")
-        log("learned", f"finished reading '{book['title']}'" + (f": {perk['text']}" if perk else ""))
+        perk = perk_text(book)
+        log("learned", f"finished reading '{book['title']}'" + (f": {perk}" if perk else ""))
         return True, f"{book['title']}, last chapter"
     return True, f"{book['title']}, chapter {done + 1}/{len(book['chapters'])}"
+
+
+def chapters_left(state, has_library):
+    """Unread chapters he can get at right now (home shelf + delivered boxes, + the library once it's built)."""
+    B = library()["books"]
+    return sum(max(0, len(v["chapters"]) - state["books"].get(b, 0)) for b, v in B.items() if b not in state["finished"]
+               and (book_where(state, b) == "home" or (has_library and book_where(state, b) == "library")))
+
+
+def boxes_left(state):
+    return sorted({v["box"] for v in library()["books"].values() if v["where"] == "box"} - set(state.get("book_boxes", [])))
+
+
+def deliver_books(state, town, today, log, box=None, how="A box of books turned up at his door"):
+    """A book box arrives: its books go on his shelf at home. Returns True if one came."""
+    left = boxes_left(state)
+    box = left[0] if box is None and left else box
+    if box not in left:
+        return False
+    state["book_boxes"].append(box)
+    titles = [v["title"] for v in library()["books"].values() if v["where"] == "box" and v.get("box") == box]
+    log("noticed", f"📦 {how}: {', '.join(titles)}. {len(titles)} new books on his shelf at home.")
+    town["history"].append({"date": today, "text": f"A box of {len(titles)} books arrived: {', '.join(titles[:3])}" +
+                                                   (" and more." if len(titles) > 3 else ".")})
+    return True
+
+
+def check_books(state, world, town, today, log):
+    """Never runs dry: nearly out of books = the next box arrives (max one a day)."""
+    if state.get("box_date") == today or not boxes_left(state):
+        return
+    if chapters_left(state, has_place(town, "library")) <= world.get("books", {}).get("refill_below", 10):
+        if deliver_books(state, town, today, log):
+            state["box_date"] = today
 
 
 def look_up(state, topic):
@@ -693,6 +779,338 @@ def update_weather(state, world, local, log):
     wx["wet"] = round(clamp(wet, 0, 1), 2)
 
 
+# ---------------------------------------------------------------- the garage project: bike restorations (no AI)
+
+def day_after(today):
+    return (date.fromisoformat(today) + timedelta(days=1)).isoformat()
+
+
+def bike_lines():
+    return free_brain().get("bike", {})
+
+
+def project_kind(world, pr):
+    return world["garage_projects"]["kinds"][pr["kind"]]
+
+
+def bike_name(pr, world):
+    return pr.get("name") or f"the {project_kind(world, pr)['name']}"
+
+
+def stage_of(world, pr):
+    k = project_kind(world, pr)
+    return k["stages"][min(pr["stage"], len(k["stages"]) - 1)]
+
+
+def stage_sessions(state, st):
+    """Work sessions this stage needs; finished books with project_stage perks cut it."""
+    if st.get("odds"):
+        return 1
+    return max(1, st["sessions"] - int(round(perk_sum(state, "project_stage", stage=st["id"]))))
+
+
+def project_status(state, world, today):
+    """What's holding the project up, in plain words (None = he can crack on)."""
+    pr = state.get("project")
+    if not pr or pr.get("finished"):
+        return None
+    st = stage_of(world, pr)
+    if st.get("coins") and pr["parts"] == "none":
+        return f"needs parts first ({st['coins']} coins)"
+    if pr["parts"] == "ordered":
+        return "parts on the way, here tomorrow"
+    if pr.get("wait") and today < pr["wait"]["until"]:
+        return {"soak": "carb soaking in cleaner till tomorrow", "dry": "paint drying till tomorrow",
+                "start": "try the first start again tomorrow"}.get(pr["wait"]["why"], "waiting till tomorrow")
+    if pr.get("today_date") == today and pr.get("today", 0) >= world["garage_projects"]["sessions_per_day"]:
+        return "done enough on it for today"
+    return None
+
+
+def bike_fill(text, state, world, pr=None):
+    pr = pr or state.get("project") or {}
+    if pr:
+        text = text.replace("{bike}", bike_name(pr, world)).replace("{stage}", stage_of(world, pr)["name"] if "kind" in pr else "")
+    return text.replace("{me}", me()).replace("{pup}", pup_name(state))
+
+
+def new_project(state, world, town, kid, today, log):
+    """A project bike rolls into his garage."""
+    k = world["garage_projects"]["kinds"][kid]
+    st0 = k["stages"][0]
+    state["project"] = {"kind": kid, "name": None, "found": today, "stage": 0, "done": 0,
+                        "parts": "none" if st0.get("coins") else "in", "parts_due": None, "wait": None,
+                        "colour": None, "colour_hex": None, "spent": k.get("buy", 0), "sessions": 0, "tries": 0,
+                        "today_date": None, "today": 0, "finished": None, "rides": 0}
+    state["bike_offer"] = None
+    text = bike_fill(k.get("arrive") or f"{me()} bought {k['what']}. It's in the garage now.", state, world)
+    log("bike", text)
+    town["history"].append({"date": today, "text": f"A project bike arrived in the garage: {k['what']}."})
+    if k.get("brings_box"):
+        deliver_books(state, town, today, log, box=k["brings_box"], how="The farmer threw in a box of old workshop books with it")
+
+
+def next_project_kind(state, world):
+    """Which project comes next: one he hasn't done yet first, then any that can repeat."""
+    G, done = world["garage_projects"], [r["kind"] for r in state.get("restored", [])]
+    ok = [kid for kid, k in G["kinds"].items() if not kid.startswith("_")
+          and (not k.get("after") or k["after"] in done) and (kid not in done or k.get("repeat"))]
+    fresh = [kid for kid in ok if kid not in done]
+    return (fresh or ok or [None])[0]
+
+
+def update_project(state, world, town, today, hour, log):
+    """Every awake tick: parts arriving, waits ending, a new project turning up."""
+    G = world.get("garage_projects")
+    if not G or not has_place(town, "garage"):
+        return
+    pr = state.get("project")
+    if pr and not pr.get("finished"):
+        if pr["parts"] == "ordered" and today >= (pr.get("parts_due") or today) and hour >= 7:
+            pr["parts"] = "in"
+            log("bike", f"📦 The parts for {bike_name(pr, world)}'s {stage_of(world, pr)['name']} turned up.")
+        if pr.get("wait") and today >= pr["wait"]["until"]:
+            why = pr["wait"]["why"]
+            pr["wait"] = None
+            line = (bike_lines().get("wait_over") or {}).get(why)
+            if line:
+                log("bike", bike_fill(fb_pick(line), state, world))
+        return
+    if pr:
+        return
+    T = G["turns_up"]
+    if not T["hours"][0] <= hour < T["hours"][1]:
+        return
+    free = state.get("garage_free_since")
+    if free and (date.fromisoformat(today) - date.fromisoformat(free)).days < T["gap_days"]:
+        return
+    kid = next_project_kind(state, world)
+    if not kid:
+        return
+    k = G["kinds"][kid]
+    if k.get("buy"):
+        if not state.get("bike_offer"):
+            state["bike_offer"] = {"kind": kid, "since": today}
+            log("noticed", bike_fill(k.get("offer") or f"A {k['name']} is for sale: {k['buy']} coins.", state, world))
+        return
+    if state["coins"] >= T["min_coins"]:
+        new_project(state, world, town, kid, today, log)
+
+
+def project_moves(state, world, town, today):
+    """The garage-project moves that make sense right now."""
+    G, pr, out = world.get("garage_projects"), state.get("project"), {}
+    if not G or not has_place(town, "garage"):
+        return out
+    if pr and not pr.get("finished"):
+        st, name = stage_of(world, pr), bike_name(pr, world)
+        if st.get("coins") and pr["parts"] == "none":
+            if state["coins"] >= st["coins"]:
+                out["order_restoration_parts"] = {"label": f"ordering parts for {name}'s {st['name']}", "at": ["garage"],
+                                                  "needs": {"curiosity": -0.05}, "mood": 0.03, "coins": -st["coins"], "project": "order"}
+        elif project_status(state, world, today) is None:
+            out["work_on_the_restoration"] = {"label": f"restoring {name}: {st['name']}", "at": ["garage"],
+                                              "needs": {"tinker": -0.35, "curiosity": -0.05, "rest": 0.04, "hunger": 0.02},
+                                              "mood": 0.06, "project": "work"}
+    if (pr and pr.get("finished")) or state.get("bikes"):
+        bike = bike_name(pr, world) if pr and pr.get("finished") else state["bikes"][-1]["name"]
+        out["ride_a_restored_bike"] = {"label": f"riding {bike} round the island", "at": ["garage"],
+                                       "needs": {"curiosity": -0.2, "social": -0.05, "tinker": -0.05, "rest": 0.03},
+                                       "mood": 0.15, "project": "ride"}
+    if pr and pr.get("finished"):
+        name = bike_name(pr, world)
+        out["keep_the_restored_bike"] = {"label": f"keeping {name}: parking her up for good", "at": ["garage"],
+                                         "needs": {}, "mood": 0.08, "project": "keep"}
+        if has_place(town, "market_stall"):
+            out["sell_the_restored_bike"] = {"label": f"selling {name} at the stall", "at": ["market_stall"],
+                                             "needs": {"social": -0.15}, "mood": 0.05, "project": "sell"}
+    offer = state.get("bike_offer")
+    if offer and not pr:
+        k = G["kinds"][offer["kind"]]
+        if state["coins"] >= k["buy"]:
+            out["buy_a_project_bike"] = {"label": f"buying the {k['name']}", "at": ["garage"], "needs": {"curiosity": -0.1},
+                                         "mood": 0.10, "coins": -k["buy"], "project": "buy"}
+    return out
+
+
+PROJECT_MOVES = ("work_on_the_restoration", "order_restoration_parts", "ride_a_restored_bike", "keep_the_restored_bike",
+                 "sell_the_restored_bike", "buy_a_project_bike")
+
+
+def project_refusal(state, world, town, move, today):
+    """Why a garage-project move can't happen right now (so the AI learns something from the 'no')."""
+    pr, closed = state.get("project"), weather_closed(state, world)
+    if move in closed:
+        return closed[move]
+    if move == "ride_a_restored_bike":
+        return "no restored bike to ride yet" if state["place"] == "garage" else "the bikes are at the garage"
+    if move == "buy_a_project_bike":
+        offer = state.get("bike_offer")
+        if not offer or pr:
+            return "nothing for sale right now" if not pr else "the garage already has a project in it"
+        return f"needs {world['garage_projects']['kinds'][offer['kind']]['buy']} coins"
+    if not pr:
+        return "no project bike in the garage right now"
+    if move == "sell_the_restored_bike":
+        return "she isn't finished yet" if not pr.get("finished") else "sell her at the market stall"
+    if move == "keep_the_restored_bike":
+        return "she isn't finished yet" if not pr.get("finished") else "do that at the garage"
+    if pr.get("finished"):
+        return f"{bike_name(pr, world)} is finished: ride her, then keep or sell her"
+    st = stage_of(world, pr)
+    if move == "order_restoration_parts":
+        if not st.get("coins") or pr["parts"] != "none":
+            return "parts already sorted for this stage" if st.get("coins") else "this stage doesn't need parts"
+        return f"needs {st['coins']} coins for the parts"
+    return project_status(state, world, today) or "can't work on her right now"
+
+
+def project_line(state, world, today, for_ai=True):
+    """The garage project in one or two lines (for his prompt + the diary prompt)."""
+    G, pr = world.get("garage_projects"), state.get("project")
+    if not G:
+        return ""
+    kept = ", ".join(f"{b['name']} ({b.get('colour') or 'original paint'})" for b in state.get("bikes", []))
+    tail = f" KEPT BIKES: {kept}." if kept else ""
+    if not pr:
+        offer = state.get("bike_offer")
+        if offer:
+            k = G["kinds"][offer["kind"]]
+            return f"GARAGE PROJECT: none. FOR SALE: {k['what']}, {k['buy']} coins (buy_a_project_bike at the garage).{tail}"
+        return f"GARAGE PROJECT: none right now (one turns up now and then).{tail}"
+    k, name = project_kind(world, pr), pr.get("name")
+    who = f"\"{name}\"" if name else ("NO NAME YET (add \"bike_name\" to your reply)" if for_ai else "no name yet")
+    days = (date.fromisoformat(today) - date.fromisoformat(pr["found"])).days + 1
+    if pr.get("finished"):
+        lo, hi = k["sell"]
+        return (f"GARAGE PROJECT: {who}, the {k['name']}, is FINISHED and runs ({pr.get('colour') or 'original paint'}, ridden {pr.get('rides', 0)}x). "
+                f"ride_a_restored_bike at the garage; then keep_the_restored_bike, or sell_the_restored_bike at the market stall "
+                f"(about {lo}-{hi} coins).{tail}")
+    st = stage_of(world, pr)
+    stages = ", ".join(s["name"] + (" ✓" if i < pr["stage"] else " (NOW)" if i == pr["stage"] else "") for i, s in enumerate(k["stages"]))
+    hold = project_status(state, world, today)
+    work = "first start: " + (f"tried {pr['tries']}x" if pr["tries"] else "not tried yet") if st.get("odds") else f"{pr['done']}/{stage_sessions(state, st)} sessions"
+    colours = f" Paint colours: {', '.join(G['colours'])}." if st.get("colour") and pr["parts"] == "none" and for_ai else ""
+    return (f"GARAGE PROJECT: {who}, the {k['name']} ({k['what']}), day {days}. Stage {pr['stage'] + 1}/{len(k['stages'])}: {st['name']}, {work}. "
+            f"{'Holding it up: ' + hold if hold else 'Ready to work on (work_on_the_restoration at the garage)'}.{colours} "
+            f"Stages: {stages}. Parts spent so far: {pr['spent']} coins.{tail}")
+
+
+def garage_view(state, world, today):
+    """The garage project, ready for the web pages (status card, 'right now' panel, 3D look)."""
+    G, pr = world.get("garage_projects"), state.get("project")
+    if not G:
+        return None
+    v = {"bikes": [{k: b.get(k) for k in ("name", "kind", "colour", "colour_hex", "look", "rides")} for b in state.get("bikes", [])],
+         "restored": [{k: r.get(k) for k in ("name", "kind", "finished", "fate", "sold_for", "spent")} for r in state.get("restored", [])][-6:]}
+    offer = state.get("bike_offer")
+    if offer and not pr:
+        k = G["kinds"][offer["kind"]]
+        v["offer"] = {"what": k["what"], "coins": k["buy"]}
+    if pr:
+        k = project_kind(world, pr)
+        st = stage_of(world, pr)
+        v["project"] = {
+            "name": pr.get("name"), "kind": pr["kind"], "kind_name": k["name"], "what": k["what"], "look": k.get("look", "classic"),
+            "day": (date.fromisoformat(today) - date.fromisoformat(pr["found"])).days + 1, "spent": pr["spent"],
+            "colour": pr.get("colour"), "colour_hex": pr.get("colour_hex"), "finished": pr.get("finished"), "rides": pr.get("rides", 0),
+            "hold": project_status(state, world, today), "stage": pr["stage"], "stage_id": st["id"], "parts": pr["parts"],
+            "wait": (pr.get("wait") or {}).get("why") if pr.get("wait") and today < pr["wait"]["until"] else None,
+            "stages": [{"id": s["id"], "name": s["name"], "need": stage_sessions(state, s),
+                        "done": (stage_sessions(state, s) if (i < pr["stage"] or pr.get("finished")) else pr["done"] if i == pr["stage"] else 0),
+                        "coins": s.get("coins", 0)} for i, s in enumerate(k["stages"])]}
+    return v
+
+
+def pick_colour(world, want):
+    C = world["garage_projects"]["colours"]
+    w = str(want or "").strip().lower()
+    hit = next((c for c in C if c.lower() == w), None) or next((c for c in C if w and (w in c.lower() or c.lower().split()[-1] == w)), None)
+    return hit or random.choice(list(C))
+
+
+def project_move(state, world, town, what, step, today, log):
+    """Do one garage-project move. Returns (ok, note, mood_bonus)."""
+    G, pr, L = world["garage_projects"], state.get("project"), bike_lines()
+    if what == "buy":
+        offer = state.get("bike_offer") or {}
+        new_project(state, world, town, offer.get("kind"), today, log)
+        return True, "she's in the garage", 0.0
+    if what == "order":
+        st = stage_of(world, pr)
+        pr["parts"], pr["parts_due"] = "ordered", day_after(today)
+        pr["spent"] += st["coins"]
+        note = f"{st['coins']} coins of parts, here tomorrow"
+        if st.get("colour"):
+            pr["colour"] = pick_colour(world, step.get("colour"))
+            pr["colour_hex"] = G["colours"][pr["colour"]]
+            log("bike", f"picked a colour for {bike_name(pr, world)}: {pr['colour']}.")
+            note += f", paint: {pr['colour']}"
+        return True, note, 0.0
+    if what == "work":
+        st = stage_of(world, pr)
+        if pr.get("today_date") != today:
+            pr["today_date"], pr["today"] = today, 0
+        pr["today"] += 1
+        pr["sessions"] += 1
+        if st.get("odds"):                               # the first start
+            odds = st["odds"][min(pr["tries"], len(st["odds"]) - 1)] + perk_sum(state, "project_stage", stage="start")
+            pr["tries"] += 1
+            if random.random() >= odds:
+                pr["wait"] = {"until": day_after(today), "why": "start"}
+                log("bike", bike_fill(fb_pick(L.get("start_fail") or ["{bike} coughed, spat and died. Tomorrow."]), state, world))
+                return True, f"go {pr['tries']}: she wouldn't fire", -0.04
+            pr["finished"] = today
+            days = (date.fromisoformat(today) - date.fromisoformat(pr["found"])).days + 1
+            k = project_kind(world, pr)
+            log("bike", bike_fill(fb_pick(L.get("start_ok") or ["{bike} RUNS!"]), state, world))
+            log("built", f"restored {bike_name(pr, world)}, the {k['name']}: {days} days, {pr['spent']} coins of parts, "
+                         f"started on go {pr['tries']}!")
+            town["history"].append({"date": today, "text": f"Restored {bike_name(pr, world)} ({k['what']}) in {days} days."})
+            return True, f"go {pr['tries']}: SHE RUNS!", 0.25
+        pr["done"] += 1
+        need = stage_sessions(state, st)
+        if pr["done"] >= need:                           # stage done
+            log("bike", bike_fill(fb_pick((L.get("stage_done") or {}).get(st["id"]) or ["{stage} done on {bike}."]), state, world))
+            pr["stage"] += 1
+            pr["done"], pr["wait"] = 0, None
+            nxt = stage_of(world, pr)
+            pr["parts"] = "none" if nxt.get("coins") else "in"
+            return True, f"{st['name']} done!", 0.08
+        w = st.get("wait")
+        if w and pr["done"] == w["after"]:
+            pr["wait"] = {"until": day_after(today), "why": w["why"]}
+            log("bike", bike_fill(fb_pick((L.get("wait") or {}).get(w["why"]) or ["Leaving {bike} till tomorrow."]), state, world))
+        return True, f"{st['name']} {pr['done']}/{need}", 0.0
+    if what == "ride":
+        bike = pr if pr and pr.get("finished") else state["bikes"][-1]
+        bike["rides"] = bike.get("rides", 0) + 1
+        return True, fb_pick(L.get("ride_notes") or ["a lap of the island"]), 0.0
+    if what in ("keep", "sell"):
+        k = project_kind(world, pr)
+        name = bike_name(pr, world)
+        rec = {"name": name, "kind": pr["kind"], "found": pr["found"], "finished": pr["finished"], "spent": pr["spent"],
+               "colour": pr.get("colour"), "colour_hex": pr.get("colour_hex"), "rides": pr.get("rides", 0)}
+        if what == "keep":
+            state["bikes"].append({**rec, "look": k.get("look", "classic")})
+            note = fb_pick(L.get("keep") or ["she stays"])
+            town["history"].append({"date": today, "text": f"Kept {name} for good. She lives by the garage now."})
+        else:
+            price = random.randint(*k["sell"])
+            state["coins"] += price
+            state["sales"]["items"] += 1
+            state["sales"]["coins"] += price
+            rec["sold_for"] = price
+            note = f"sold for {price} coins"
+            town["history"].append({"date": today, "text": f"Sold {name} at the stall for {price} coins."})
+            log("bike", bike_fill(fb_pick(L.get("sold") or ["Sold {bike}. Bittersweet."]), state, world) + f" (+{price} coins)")
+        state["restored"].append({**rec, "fate": "kept" if what == "keep" else "sold"})
+        state["project"] = None
+        state["garage_free_since"] = today
+        return True, note, 0.05
+    return False, "nothing to do on the bike", 0.0
+
+
 def hit_lucky(state, world):
     lb = world["lucky_block"]
     state["lucky"]["used"] += 1
@@ -793,6 +1211,8 @@ def apply_move(state, world, town, step, today, log):
             return False, reason or "can't start that", 0.0, ""
         if move == "hit_the_lucky_block" and state["place"] == "brick_pit":
             return False, "the ! block is empty till tomorrow", 0.0, ""
+        if move in PROJECT_MOVES and state["place"] in ("garage", "market_stall"):
+            return False, project_refusal(state, world, town, move, today), 0.0, ""
         wd = world["moves"].get(move, {})
         if isinstance(wd, dict) and (state["place"] in wd.get("at", []) or "any" in wd.get("at", [])):
             closed = weather_closed(state, world)
@@ -823,7 +1243,7 @@ def apply_move(state, world, town, step, today, log):
         return False, "not enough bricks", 0.0, ""
     bonus, notes = d.get("mood", 0.0), []
     if d.get("read"):
-        ok, note = read_book(state, step.get("book"), log)
+        ok, note = read_book(state, step.get("book"), log, has_place(town, "library"))
         if not ok:
             return False, note, 0.0, ""
         notes.append(note)
@@ -837,13 +1257,22 @@ def apply_move(state, world, town, step, today, log):
         bonus += extra
     if d.get("snowman"):
         wx = state["weather"]
-        wx["snowman"] = min(3, wx.get("snowman", 0) + 1)
-        if wx["snowman"] == 3:
+        before = wx.get("snowman", 0)
+        wx["snowman"] = min(3, before + 1)
+        if before >= 3:                                  # already finished: just a touch-up (no repeat news)
+            notes.append("gave the snowman a better nose")
+        elif wx["snowman"] == 3:
             log("built", "built a proper snowman: carrot nose, stone eyes and his old orange cap!")
             notes.append("snowman finished!")
             bonus += 0.05
         else:
             notes.append(f"snowman {wx['snowman']}/3")
+    if d.get("project"):
+        ok, note, extra = project_move(state, world, town, d["project"], step, today, log)
+        if not ok:
+            return False, note, 0.0, ""
+        notes.append(note)
+        bonus += extra
     if d.get("design"):
         err = design_building(state, world, town, step.get("design"), today, log)
         if err:
@@ -895,7 +1324,7 @@ def apply_move(state, world, town, step, today, log):
         bonus += 0.02
     if pup and not pup["napping"] and "fetch" in pup["learned"] and move == "collect_bricks":
         bricks += random.randint(1, 2)                 # trick perk: he fetches bricks
-    if pup and not pup["napping"] and "ride" in pup["learned"] and move == "go_for_a_ride":
+    if pup and not pup["napping"] and "ride" in pup["learned"] and move in ("go_for_a_ride", "ride_a_restored_bike"):
         pup["needs"]["bored"] = round(clamp(pup["needs"]["bored"] - 0.3, 0, 1), 3)
         bonus += 0.05
         notes.append(f"{pup_name(state)} rode along in the tank bag")
@@ -930,7 +1359,7 @@ def autopilot(state, W):
         "social": ("cafe", "chat_with_locals"),
         "tinker": ("building_site", "work_on_site") if "building_site" in P and "work_on_site" in W["moves"] else ("garage", "fix_a_car"),
         "curiosity": ("library", "read_a_book") if "library" in P else ("home", "read_a_book"
-                      if any(v["where"] == "home" and b not in state.get("finished", []) for b, v in library()["books"].items())
+                      if any(book_where(state, b) == "home" and b not in state.get("finished", []) for b in library()["books"])
                       else "use_the_computer"),
     }
     need = max(NEEDS, key=lambda n: state["needs"][n])
@@ -992,6 +1421,16 @@ LEARNING (no internet: his books and laptop are offline copies)
 - read_a_book (at home: his own shelf; at the library: every book) reads the next chapter. Add "book":"<book id>" to pick one. Finished books teach him something useful.
 - use_the_computer (at home) looks a topic up in his offline encyclopedia. Add "topic":"<topic>".
 - After reading he writes a note in his notebook. His notebook is his memory of what he learned.
+- The library (a blueprint) holds most of the books. When he's nearly out of books, a box of new ones arrives at his door.
+
+THE GARAGE PROJECT (bike restorations)
+- Now and then a project bike turns up in his garage (first a barn-find wreck), or one is for sale (buy_a_project_bike at the garage).
+- Restoring it is his call. work_on_the_restoration (at the garage) does one work session on the current stage, max a couple a day.
+  Some stages need parts first: order_restoration_parts (garage, costs coins, parts arrive the next day). Some stages have to wait overnight (carb soaking, paint drying).
+  For the paint stage add "colour":"<a colour from the list>" to order_restoration_parts. Some finished books make stages quicker.
+- If the project bike has no name yet, add "bike_name":"..." to your reply (he names every engine).
+- When she runs: ride_a_restored_bike (garage) takes her round the island. Then keep_the_restored_bike (garage), or sell_the_restored_bike
+  (at the market stall) for a big coin jump. Parts are a real trade-off against the Thailand jar.
 
 THE BEACH (always open, right round the island; the puppy comes too)
 - sunbathe (he really tans; more than 3 times a day without a beach kit = sunburn), go_for_a_swim, build_a_sand_castle (the tide takes it overnight),
@@ -1045,15 +1484,19 @@ RULES
         bps.append(f"  {bp_id} = {bp['name']}{mine} ({cost}){tag}{what}")
     B, E = library()["books"], library()["encyclopedia"]
     def shelf(where, n=8):
-        left = [b for b, v in B.items() if v["where"] == where and b not in state["finished"]]
+        left = [b for b in B if book_where(state, b) == where and b not in state["finished"]]
         left.sort(key=lambda b: -state["books"].get(b, 0))          # books he's reading first
         out = "; ".join(f"{b} \"{B[b]['title']}\" {state['books'].get(b, 0)}/{len(B[b]['chapters'])}" +
-                        (f" (teaches: {B[b]['perk']['text']})" if B[b].get("perk") else "") for b in left[:n])
+                        (f" (teaches: {perk_text(B[b])})" if perks_of(B[b]) else "") for b in left[:n])
         return out + (f"; +{len(left) - n} more on the shelf" if len(left) > n else "")
-    done_books = ", ".join(f"{B[b]['title']}" + (f" ({B[b]['perk']['text']})" if B[b].get("perk") else "") for b in state["finished"] if b in B)
+    done_books = ", ".join(f"{B[b]['title']}" + (f" ({perk_text(B[b])})" if perks_of(B[b]) else "") for b in state["finished"] if b in B)
     notes = "\n".join(f"- [{n['source']}] {n['note']}" for n in state["notebook"][-8:])
-    learn_lines = (f"BOOKS ON HIS SHELF AT HOME: {shelf('home') or 'all read'}\n"
-                   f"BOOKS AT THE LIBRARY{'' if 'library' in W['places'] else ' (not built yet)'}: {shelf('library') or 'all read'}\n"
+    lib_built = "library" in W["places"]
+    lib_wait = [b for b in B if book_where(state, b) == "library" and b not in state["finished"]]
+    lib_tag = "" if lib_built else (f" (NOT BUILT YET: {len(lib_wait)} books, {sum(len(B[b]['chapters']) for b in lib_wait)} chapters wait there; "
+                                    f"his home shelf has {chapters_left(state, False)} chapters left. start_build_library when he has the bricks)")
+    learn_lines = (f"BOOKS ON HIS SHELF AT HOME: {shelf('home') or 'all read (he can re-read old favourites)'}\n"
+                   f"BOOKS AT THE LIBRARY{lib_tag}: {shelf('library') or 'all read'}\n"
                    f"FINISHED BOOKS: {done_books or 'none yet'}\n"
                    f"HIS LAPTOP (offline encyclopedia, no internet), {len(E)} topics, e.g.: "
                    f"{', '.join(random.sample([k for k in E if k not in state['looked_up']] or list(E), min(20, len(E))))}\n"
@@ -1105,6 +1548,7 @@ TODAY'S PLAN (from last night's diary): {state.get('plan_today') or 'none yet'}
 
 {weather_line}
 {pup_lines}
+{project_line(state, world, today)}
 {learn_lines}
 {beach_line}
 STOCK TO SELL: {stock or 'nothing'} (max {world['selling']['max_stock']}). SOLD SO FAR: {state['sales']['items']} items for {state['sales']['coins']} coins
@@ -1195,9 +1639,35 @@ def fb_fill(text, state, town, place=None):
             "bricks": state["bricks"], "mood": mock_feeling(state), "me": me(),
             "weather": (state.get("weather") or {}).get("name", "fine"), "temp": (state.get("weather") or {}).get("temp", 25),
             "season": (state.get("weather") or {}).get("season", "summer")}
+    world, pr = _CUR.get("world"), state.get("project")
+    if world and ("{bike}" in text or "{stage}" in text):
+        if pr:
+            vals["bike"], vals["stage"] = bike_name(pr, world), stage_of(world, pr)["name"]
+        elif state.get("bikes"):
+            vals["bike"], vals["stage"] = state["bikes"][-1]["name"], "riding"
     for k, v in vals.items():
         text = text.replace("{" + k + "}", str(v))
     return text
+
+
+_CUR = {}            # the world rules for this tick (so phrase-book lines can name the project bike)
+
+
+def bike_situation(state, world):
+    """What's going on in the garage, as a phrase-book key (None = nothing to think about)."""
+    pr, today = state.get("project"), state["stats"]["today"]["date"]
+    if not pr:
+        return "offer" if state.get("bike_offer") else "kept" if state.get("bikes") else None
+    if pr.get("finished"):
+        return "finished"
+    if pr["parts"] == "ordered":
+        return "parts_coming"
+    if pr.get("wait") and today < pr["wait"]["until"]:
+        return pr["wait"]["why"]
+    st = stage_of(world, pr)
+    if st.get("coins") and pr["parts"] == "none":
+        return "needs_parts"
+    return st["id"]
 
 
 def mock_thought(state, town):
@@ -1230,6 +1700,12 @@ def mock_thought(state, town):
         w["money_low"] = 2
     if sum(state.get("stock", {}).values()):
         w["stall"] = 0.8
+    world = _CUR.get("world")
+    sit = bike_situation(state, world) if world and world.get("garage_projects") else None
+    BT = (bike_lines().get("thoughts") or {}).get(sit) if sit else None
+    if BT:                                                 # the bike's on his mind (more so in the garage)
+        T = dict(T, bike=BT)
+        w["bike"] = 3 if state["place"] == "garage" else 1.3 if sit != "kept" else 0.5
     cats = [c for c in w if T.get(c)]
     if not cats:
         return "One brick at a time, hey."
@@ -1276,6 +1752,35 @@ def mock_plan(state, W, world, town):
             return [random.choice(["play_with_the_puppy", "walk_the_puppy", "cuddle_the_puppy"])], None
         if "train_the_puppy" in W["moves"] and roll < 0.12:
             return ["train_the_puppy", "train_the_puppy"], None
+    # the garage project: parts first, then a couple of sessions a day; once she runs, ride her, then keep or sell
+    gm, pr = W["moves"], state.get("project")
+    if "order_restoration_parts" in gm and random.random() < 0.35:
+        return go("garage", ["order_restoration_parts"]), None
+    if "work_on_the_restoration" in gm and random.random() < 0.30:
+        return go("garage", ["work_on_the_restoration", "work_on_the_restoration"]), None
+    if pr and pr.get("finished"):
+        if "ride_a_restored_bike" in gm and pr.get("rides", 0) < 2 and random.random() < 0.35:
+            return go("garage", ["ride_a_restored_bike"]), None
+        if pr.get("rides", 0) >= 2 and random.random() < 0.25:
+            keep = project_kind(world, pr).get("keep") or state["coins"] >= 200 or random.random() < 0.4
+            if not keep and "sell_the_restored_bike" in gm:
+                return go("market_stall", ["sell_the_restored_bike"]), None
+            return go("garage", ["keep_the_restored_bike"]), None
+    elif "ride_a_restored_bike" in gm and random.random() < 0.04:
+        return go("garage", ["ride_a_restored_bike"]), None
+    if "buy_a_project_bike" in gm and random.random() < 0.15:
+        k = world["garage_projects"]["kinds"][state["bike_offer"]["kind"]]
+        if state["coins"] >= k["buy"] + 40:                  # keeps something back for parts
+            return go("garage", ["buy_a_project_bike"]), None
+    # the library first: it holds most of his books, so he saves his bricks for it
+    lib_first = "library" not in W["places"] and not (town.get("site") and town["site"]["bp"] == "library") \
+        and "library" in blueprints(world, town)
+    if lib_first:
+        if "start_build_library" in gm and random.random() < 0.8:
+            return ["start_build_library"], None
+        if not town.get("site") and random.random() < 0.35:
+            extra = "hit_the_lucky_block" if "hit_the_lucky_block" in gm else "collect_bricks"
+            return go("brick_pit", ["collect_bricks", extra]), None
     wmoves = [m for m in WEATHER_MOVES if m in W["moves"]]
     if wmoves and random.random() < 0.25:                  # make the most of the weather
         m = random.choice(wmoves)
@@ -1295,9 +1800,12 @@ def mock_plan(state, W, world, town):
     small = [m for m in starts if bp[m[12:]].get("decor")]
     grow = [m for m in starts if bp[m[12:]].get("expand") and free_lot(town) is None]
     builds = big or (small if random.random() < 0.2 else []) or grow   # saves up for real buildings
+    if lib_first:
+        builds = []                                        # every brick goes to the library first
     names = {b["name"] for b in town["custom_blueprints"].values()}
     designs = [d for d in free_brain().get("designs", []) if d["name"] not in names]
-    makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]]
+    makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]
+             and not (lib_first and W["moves"][m].get("bricks", 0) < 0)]
     orders = [m for m in W["moves"] if m.startswith("order_")]
     if "run_the_stall" in W["moves"] and "market_stall" in W["places"] and roll < 0.25:
         return go("market_stall", ["run_the_stall", "run_the_stall"]), None
@@ -1339,6 +1847,15 @@ def mock_model(state, W, world, town, system, user):
         if m["move"] == "train_the_puppy" and state.get("pup"):
             todo = [t for t in world["puppy"]["tricks"] if not t.startswith("_") and t not in state["pup"]["learned"]]
             m["trick"] = todo[0] if todo else "sit"
+        if m["move"] == "order_restoration_parts" and state.get("project") and stage_of(world, state["project"]).get("colour"):
+            m["colour"] = random.choice(list(world["garage_projects"]["colours"]))
+        if m["move"] == "read_a_book" and state.get("project") and random.random() < 0.5:
+            pr = state["project"]                      # a book that helps with the bike, if one's on the shelf
+            ahead = {s["id"] for s in project_kind(world, pr)["stages"][pr["stage"]:]}
+            useful = [b for b, v in library()["books"].items() if b not in state["finished"] and book_where(state, b) == "home"
+                      and any(p.get("type") == "project_stage" and p.get("stage") in ahead for p in perks_of(v))]
+            if useful:
+                m["book"] = random.choice(useful)
     reply = {
         "moves": moves,
         "thought": mock_thought(state, town),
@@ -1346,6 +1863,9 @@ def mock_model(state, W, world, town, system, user):
     }
     if state.get("pup") and not state["pup"]["name"]:
         reply["puppy_name"] = random.choice(free_brain().get("puppy_names") or ["Bolt"])
+    if state.get("project") and not state["project"].get("name"):
+        used = {b["name"] for b in state.get("restored", [])}
+        reply["bike_name"] = fb_pick([n for n in free_brain().get("engine_names") or ["Betsy"] if n not in used] or ["Betsy"])
     text = json.dumps(reply, ensure_ascii=False)
     return text, {"input_tokens": len(system + user) // 4, "output_tokens": len(text) // 4}
 
@@ -1369,14 +1889,14 @@ def parse_decision(text):
                 step["pricing"] = m["pricing"]
             if isinstance(m.get("trick"), str):
                 step["trick"] = m["trick"][:20]
-            for k in ("book", "topic"):
+            for k in ("book", "topic", "colour", "color"):
                 if isinstance(m.get(k), str):
-                    step[k] = m[k][:60]
+                    step["colour" if k == "color" else k] = m[k][:60]
             moves.append(step)
     if not moves:
         return None
     return {"moves": moves[:3], "thought": clean_text(d.get("thought"), 200), "feeling": clean_text(d.get("feeling"), 40),
-            "puppy_name": clean_text(d.get("puppy_name"), 16)}
+            "puppy_name": clean_text(d.get("puppy_name"), 16), "bike_name": clean_text(d.get("bike_name"), 20)}
 
 
 def count_bricks(state, delta):
@@ -1415,6 +1935,9 @@ def day_facts(state, town, day):
         "beach": [e["x"] for e in log if e["k"] == "did" and not e["x"].startswith("ordering")
                   and any(w in e["x"] for w in ("surfing", "his tan", "sand castle", "swim", "shells", "sunset", "on the beach"))],
         "books_done": [e["x"] for e in log if e["k"] == "learned" and e["x"].startswith("finished reading")],
+        "bike": [e["x"] for e in log if e["k"] == "bike"],
+        "bike_sessions": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("restoring")),
+        "project": project_line(state, _CUR["world"], day.isoformat(), for_ai=False) if _CUR.get("world") else "",
         "pup_fed": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("feeding")),
         "pup_ideas": [e["x"].split("has an idea: ", 1)[-1] for e in log if e["k"] == "pupidea"],
         "pup_trained": sum(1 for e in log if e["k"] == "did" and e["x"].startswith("training")),
@@ -1454,6 +1977,7 @@ BRICKS: {f['bricks_start']} -> {f['bricks_end']} (collected {f['bricks_got']}, u
 TOWN NOW: {', '.join(f['town'])}
 BUILDING: {f"{site['name']}, {site['done']}/{site['work']} done" if site else 'nothing right now'}
 PUPPY (in his care): {f['pup_name']}, bond {f['pup_bond']:.2f}, fed {f['pup_fed']} times today. Learned today: {', '.join(f['pup_learned']) or 'nothing new'}
+{f['project']} Garage sessions today: {f['bike_sessions']}.
 
 TODAY'S LOG (oldest first):
 {chr(10).join(lines) if lines else '- a quiet day'}
@@ -1492,6 +2016,12 @@ def template_diary(f):
         bits.append(f"The {f['site']['name']} is {f['site']['done']}/{f['site']['work']} done. Getting there.")
     if f["designed"]:
         bits.append("Drew up plans for something new: " + f["designed"][-1].split(": ", 1)[-1] + ".")
+    on_bike = bool(f["_state"].get("project"))
+    if f["bike"]:
+        line = re.sub(r"^📦 ", "", f["bike"][-1]).replace(" his ", " my ").replace(me() + " ", "I ")
+        bits.append("In the garage: " + line)
+    if on_bike and (f["bike"] or f["bike_sessions"]) and D.get("bike"):
+        bits.append(pick("bike", "{bike} is coming along."))
     if f["pup_learned"]:
         bits.append(f["pup_learned"][-1] + " Proud of the little guy.")
     elif f["pup_trained"]:
@@ -1530,7 +2060,9 @@ def template_diary(f):
     bits.append(pick("thailand", "Jar's at {coins}."))
     bits.append(pick("closers", "Bed."))
     title = cap(f["built"][-1].split(":")[0].rstrip("!")) if f["built"] else (cap(f["top"][0]) if f["top"] else "A quiet one")
-    plans = [t for t in (D.get("tomorrow") or ["Collect bricks and start something new."]) if f["site"] or "{site}" not in t]
+    busy_bike = (f["_state"].get("project") or {}) and not f["_state"]["project"].get("finished")
+    plans = [t for t in (D.get("tomorrow") or ["Collect bricks and start something new."])
+             if (f["site"] or "{site}" not in t) and (busy_bike or "{bike}" not in t)]
     tomorrow = fb_fill(random.choice(plans), f["_state"], f["_town"])
     return {"title": title[:60], "entry": " ".join(bits), "tomorrow": tomorrow}
 
@@ -1568,6 +2100,7 @@ def write_diary(state, town, sheet, diary, local, use_mock):
 
 def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     world, sheet = load(CONFIG / "world.json"), load(CONFIG / "sheet.json")
+    _CUR["world"] = world
     state = load(data_dir / "state.json") or fresh_state(now)
     for k, v in fresh_state(now).items():   # older save files: add anything new
         state.setdefault(k, v)
@@ -1646,7 +2179,14 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
         update_mood(state, world, base_bonus=decor_bonus(world, town))
         return finish(state, feed, town, diary, data_dir, now, "sleeping" if state["asleep"] else "woke")
 
-    # 3. A random event can interrupt his plans
+    # 3. The world moves on: book boxes, the garage project (parts arriving, a bike turning up),
+    #    and a random event can interrupt his plans
+    check_books(state, world, town, today, log)
+    had = (state.get("project") or {}).get("kind"), (state.get("project") or {}).get("parts"), bool(state.get("bike_offer"))
+    update_project(state, world, town, today, local.hour, log)
+    if had != ((state.get("project") or {}).get("kind"), (state.get("project") or {}).get("parts"), bool(state.get("bike_offer"))):
+        state["queue"] = []                                   # something new in the garage: rethink
+        W = merged_world(world, town, state, today)
     if rng_event() < world["events"]["chance"]:
         event = random.choice(world["events"]["list"])
         if isinstance(event, dict):
@@ -1685,6 +2225,11 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
             if decision.get("puppy_name") and state["pup"] and not state["pup"]["name"]:
                 state["pup"]["name"] = decision["puppy_name"]
                 log("learned", f"named the puppy {decision['puppy_name']}", by="model")
+            pr = state.get("project")
+            if decision.get("bike_name") and pr and not pr.get("name"):
+                pr["name"] = decision["bike_name"]
+                log("bike", f"named the {project_kind(world, pr)['name']} {pr['name']}.", by="model")
+                W = merged_world(world, town, state, today)          # labels use her name now
         except Exception as e:  # any AI problem -> carry on with autopilot
             print(f"[mind] {e}")
             plan, source = [{"move": m, "why": None} for m in autopilot(state, W)], "autopilot"
@@ -1700,7 +2245,8 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     if ok:
         state["doing"] = label
         log("did", state["doing"] + (f" ({note})" if note else ""), why=step.get("why"), by=source)
-        state["queue"] = [s for s in rest if town["site"] or s.get("move") != "work_on_site"]  # build done: stop
+        state["queue"] = [s for s in rest if (town["site"] or s.get("move") != "work_on_site")         # build done: stop
+                          and (s.get("move") != "work_on_the_restoration" or "work_on_the_restoration" in W["moves"])]
         write_note(state, sheet, use_mock, log, now)
         if step["move"] == "go_to_sleep" and (local.hour >= 20 or local.hour < bt["wake_from_hour"]):
             entry = write_diary(state, town, sheet, diary, local, use_mock)
@@ -1716,14 +2262,18 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
 
 def finish(state, feed, town, diary, data_dir, now, summary):
     state["updated"] = now.isoformat()
+    if _CUR.get("world"):
+        state["garage"] = garage_view(state, _CUR["world"], now.astimezone(TZ).date().isoformat())
     save(data_dir / "state.json", state)
     save(data_dir / "feed.json", feed[:FEED_KEEP])
     save(data_dir / "town.json", town)
     save(data_dir / "diary.json", diary)
     save(data_dir / "who.json", load(CONFIG / "sheet.json"))
-    save(data_dir / "library.json", {"books": {k: {"title": v["title"], "where": v["where"], "chapters": len(v["chapters"]),
-                                                   "perk": (v.get("perk") or {}).get("text"), "source": v.get("source")}
+    save(data_dir / "library.json", {"books": {k: {"title": v["title"], "where": book_where(state, k) or "box",
+                                                   **({"box": v["box"]} if v.get("box") else {}), "chapters": len(v["chapters"]),
+                                                   "perk": perk_text(v) or None, "source": v.get("source")}
                                                for k, v in library()["books"].items()},
+                                     "boxes_left": len(boxes_left(state)),
                                      "topics": len(library()["encyclopedia"]),
                                      "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"})
     print(f"[tick {state['tick']}] {clock(now):>8} {state['place'][:13]:<13} {summary[:44]:<44} "

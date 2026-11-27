@@ -208,14 +208,59 @@
                     "closes": { "sunbathe": "lightning about, not lying on the beach", "go_for_a_swim": "not swimming in a thunderstorm", "go_surfing": "not surfing in lightning, he's not mad",
                                 "build_a_sand_castle": "storm's flattening everything", "watch_the_sunset": "no sunset in this storm", "go_for_a_ride": "not riding in a thunderstorm",
                                 "ride_the_track": "the track's a mud bath in this storm", "run_the_stall": "the stall's shut, nobody's out in this storm",
-                                "work_on_site": "too dangerous on the scaffolding in a storm", "look_out_over_town": "not climbing a tower in lightning" } },
+                                "work_on_site": "too dangerous on the scaffolding in a storm", "look_out_over_town": "not climbing a tower in lightning",
+                                "ride_a_restored_bike": "not taking the bike out in a thunderstorm" } },
       "snow":     { "emoji": "🌨️", "name": "snowing",   "temp": 0,  "mood": 0.02, "sell": 0.7, "site_slow": 0.5, "hunger": 0.01, "pup_want": "play", "snows": true,
                     "closes": { "sunbathe": "it's snowing, not tanning weather", "go_for_a_swim": "the sea's freezing", "go_surfing": "too cold to surf",
-                                "build_a_sand_castle": "the sand's frozen solid", "ride_the_track": "the track's under snow" } },
+                                "build_a_sand_castle": "the sand's frozen solid", "ride_the_track": "the track's under snow",
+                                "ride_a_restored_bike": "the roads are icy, the bike stays in" } },
       "heatwave": { "emoji": "🥵", "name": "a heatwave", "temp": 5, "mood": -0.01, "sell": 0.8, "tan": 1.6, "sunburn_after": 2, "rest": 0.01, "waves": "flat" }
     },
     "cold_from": 8,
     "cold_closes": { "sunbathe": "too cold to sunbathe", "go_for_a_swim": "the sea's freezing" }
+  },
+
+  "books": {
+    "_note": "His reading never runs dry: when the books he can reach (home shelf + the library once it's built) are down to 'refill_below' unread chapters, the next BOOK BOX arrives at his door (max one a day). Boxes are in jarvis/library/books.json (where = box). Box 1 comes with the first barn-find bike. When every box is read he re-reads old favourites.",
+    "refill_below": 10
+  },
+
+  "garage_projects": {
+    "_note": "Bike restorations in his garage. A project TURNS UP (free, e.g. a barn find) or is OFFERED for coins (buy_a_project_bike). He works through the stages with work_on_the_restoration (max 'sessions_per_day'); a stage with 'coins' needs parts first (order_restoration_parts), which arrive the NEXT day. 'wait' = after that many sessions he has to leave it till tomorrow (soak, paint drying). The 'start' stage is the first start: 'odds' = chance it fires on the 1st, 2nd, 3rd go (a fail = try again tomorrow). Finished books with project_stage perks cut sessions. When it runs: ride_a_restored_bike, then keep_the_restored_bike or sell_the_restored_bike (at the market stall, coin range 'sell'). The next project turns up 'gap_days' after the garage is free.",
+    "sessions_per_day": 2,
+    "turns_up": { "min_coins": 15, "gap_days": 2, "hours": [7, 18] },
+    "colours": { "KTM orange": "#e8762b", "fire red": "#c0392b", "racing green": "#1f6b45", "royal blue": "#2f5fb3",
+                 "sky blue": "#5dade2", "sunshine yellow": "#f2c230", "gloss black": "#232323", "pearl white": "#f1f1ee",
+                 "silver": "#b8bec6", "purple": "#7d3c98", "cream": "#efe3c2", "teal": "#16a085" },
+    "kinds": {
+      "barn_find": {
+        "name": "barn-find bike", "what": "an old single-cylinder road bike, rusted solid, out of a farmer's barn",
+        "buy": 0, "repeat": true, "brings_box": 1, "sell": [110, 150], "look": "classic",
+        "arrive": "A farmer two towns over cleared out his barn and gave {me} an old bike for nothing: flat tyres, rust everywhere, engine seized solid. It's in the garage now.",
+        "stages": [
+          { "id": "strip",     "name": "strip + clean",     "sessions": 6, "coins": 0 },
+          { "id": "carb",      "name": "carb rebuild",      "sessions": 4, "coins": 8,  "wait": { "after": 1, "why": "soak" } },
+          { "id": "engine",    "name": "engine top end",    "sessions": 7, "coins": 20 },
+          { "id": "electrics", "name": "electrics + tyres", "sessions": 5, "coins": 15 },
+          { "id": "paint",     "name": "paint",             "sessions": 4, "coins": 10, "wait": { "after": 2, "why": "dry" }, "colour": true },
+          { "id": "start",     "name": "first start",       "sessions": 1, "coins": 0,  "odds": [0.5, 0.8, 1.0] }
+        ]
+      },
+      "adventure_bike": {
+        "name": "adventure bike", "what": "a tired big-single adventure bike: the one for the Thailand trip",
+        "buy": 30, "after": "barn_find", "keep": true, "sell": [220, 280], "look": "adventure",
+        "offer": "A tired old adventure bike is for sale down the road: 30 coins. Big single, long legs, needs everything. The Thailand bike?",
+        "stages": [
+          { "id": "strip",     "name": "strip + clean",             "sessions": 7, "coins": 0 },
+          { "id": "carb",      "name": "carb rebuild",              "sessions": 5, "coins": 12, "wait": { "after": 1, "why": "soak" } },
+          { "id": "engine",    "name": "engine rebuild",            "sessions": 9, "coins": 30 },
+          { "id": "electrics", "name": "electrics + tyres",         "sessions": 6, "coins": 20 },
+          { "id": "racks",     "name": "suspension + luggage racks", "sessions": 5, "coins": 18 },
+          { "id": "paint",     "name": "paint",                     "sessions": 4, "coins": 12, "wait": { "after": 2, "why": "dry" }, "colour": true },
+          { "id": "start",     "name": "first start",               "sessions": 1, "coins": 0,  "odds": [0.4, 0.75, 1.0] }
+        ]
+      }
+    }
   },
 
   "design_rules": {

@@ -531,6 +531,52 @@
       "Cold hands need a hot mug.",
       "Hot chocolate. Doctor's orders.",
       "Freezing. Mug time."
+    ],
+    "work_on_the_restoration": [
+      "{bike} won't fix herself.",
+      "Two hours on {bike}. Best part of the day.",
+      "Right, {stage}. Let's go.",
+      "Grease, coffee, {bike}. Happy man.",
+      "Every bolt on {bike} is a step closer.",
+      "She's ugly now. She won't be for long.",
+      "Proper mechanic work. Missed this.",
+      "Slow is smooth, smooth is fast. {stage}.",
+      "Want to hear {bike} run. Back to it.",
+      "Hands itching. {bike} it is."
+    ],
+    "order_restoration_parts": [
+      "{bike} needs parts. Worth every coin.",
+      "Can't do the {stage} with rusty bits.",
+      "Parts in, then we crack on.",
+      "Cheap parts are expensive. Buying right.",
+      "It's not spending, it's investing. Sort of.",
+      "Ordering the bits for the {stage}."
+    ],
+    "ride_a_restored_bike": [
+      "Time to see what {bike} can do.",
+      "Built her, now ride her.",
+      "Wind in the face on my own build. Lekker.",
+      "Quick lap of the island on {bike}.",
+      "She needs a run to stay happy. So do I.",
+      "Testing everything I fixed. On the road."
+    ],
+    "keep_the_restored_bike": [
+      "Can't sell her. Not after all that.",
+      "{bike} stays. She's family now.",
+      "Some things you don't sell.",
+      "Keeping her. Thailand jar can wait a bit."
+    ],
+    "sell_the_restored_bike": [
+      "Big coins for the jar. Thailand first.",
+      "Someone else can love {bike} now.",
+      "Build it, sell it, build a better one.",
+      "That's a fat jump for the Thailand fund."
+    ],
+    "buy_a_project_bike": [
+      "That's the Thailand bike. I can feel it.",
+      "Next project. A bigger one.",
+      "Worth the coins. I'll make her better than new.",
+      "Can't walk past a bike like that."
     ]
   },
   "feelings": {
@@ -742,7 +788,10 @@
       "Fix a few cars, fill the jar.",
       "Sell some stock at the stall.",
       "Teach {pup} a new trick.",
-      "Beach in the morning, graft in the afternoon."
+      "Beach in the morning, graft in the afternoon.",
+      "Back in the garage with {bike}.",
+      "Get {bike} a step closer.",
+      "Two good sessions on {bike}."
     ],
     "weather": {
       "snow": [
@@ -778,7 +827,17 @@
         "Grey sky most of the day.",
         "Cloudy day, nothing special up top."
       ]
-    }
+    },
+    "bike": [
+      "{bike} is coming along. Slowly, properly.",
+      "Garage smelled of degreaser and coffee. Perfect.",
+      "Knuckles skinned, happy as anything.",
+      "{bike} and me had a good day.",
+      "Every session on {bike} makes Thailand feel closer.",
+      "{pup} supervised the whole time. From under the bench.",
+      "Still a way to go on {bike}. Not rushing her.",
+      "Next on {bike}: the {stage}."
+    ]
   },
   "pup": {
     "_note": "The puppy's own mind (dogs think simple thoughts): used with BOTH brains. {name} = his name, {owner} = his human.",
@@ -887,6 +946,23 @@
       "weather_heatwave": [
         "Too hot. Lying flat like a pancake.",
         "Need shade. Need water. Need the sea."
+      ],
+      "bike": [
+        "The loud thing is back. I'm under the bench.",
+        "{owner} is talking to the rusty thing again. It doesn't answer.",
+        "The bike smells of old barn. And mice. MICE?",
+        "He dropped a bolt. It rolled. I chased it. I am useful.",
+        "Grease on my nose. Worth it.",
+        "Why does he lie on the floor and say bad words to it?",
+        "The rusty thing has wheels. Wheels go places. Places have smells.",
+        "I licked the shiny bit. Tastes like oil. Would lick again."
+      ],
+      "bike_ride": [
+        "WIND IN MY EARS. BEST DAY.",
+        "Tank bag life. Never walking again.",
+        "Everything smells faster from up here!",
+        "We are going SO fast. Faster than a crab even.",
+        "My ears are flying. I am basically a bird now."
       ]
     },
     "ideas": [
@@ -903,7 +979,10 @@
       "teach the seagulls some manners.",
       "find out what's inside the ! block.",
       "follow {owner} to Thailand. Obviously.",
-      "make friends with the crab. Or eat it. Undecided."
+      "make friends with the crab. Or eat it. Undecided.",
+      "hide the bike's spark plug in his bed. Finders keepers.",
+      "sleep on the bike's new seat while it's warm.",
+      "bark at the bike until it goes vroom."
     ],
     "wants": {
       "food": "🦴 food",
@@ -969,5 +1048,162 @@
         "Winter has arrived. Time to find the jersey."
       ]
     }
+  },
+  "bike": {
+    "_note": "His garage project lines. {bike} = the bike's name (or 'the barn-find bike' till he names her), {stage} = the current stage, {me} = his name, {pup} = the puppy.",
+    "thoughts": {
+      "strip": [
+        "Every bolt on {bike} is seized. Every single one.",
+        "Bag and label everything. Learned that the hard way.",
+        "Under all that rust there's a good bike. I can see her.",
+        "Penetrating oil and patience. That's the whole secret.",
+        "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+        "Found a 1980s coin in {bike}'s toolbox. Lucky."
+      ],
+      "carb": [
+        "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+        "Jets blocked solid. Thirty years of old fuel turned to varnish.",
+        "If the carb's right, the bike's right.",
+        "New float, new needle. She'll breathe again."
+      ],
+      "engine": [
+        "Piston's scored but the bore's fine. Phew.",
+        "Torque wrench, not guesswork. Every time.",
+        "Rings, gaskets, valve clearances. Proper engine work.",
+        "The heart of {bike}. Taking my time on this one.",
+        "Cleanest engine in town by Friday."
+      ],
+      "electrics": [
+        "Who wired this? A plate of spaghetti, that's who.",
+        "Fresh rubber on {bike}. Already looks ten years younger.",
+        "Electrics are just magic smoke. Don't let it out.",
+        "Earth wires. It's always the earth wires."
+      ],
+      "racks": [
+        "Racks and boxes. The Thailand bike needs to carry everything.",
+        "New fork seals, new shock. She'll float over the potholes.",
+        "Pictured {bike} loaded up on a mountain road in Pai. Back to work."
+      ],
+      "paint": [
+        "Paint is ninety percent prep. Sanding, sanding, sanding.",
+        "Thin coats. Patience. No runs.",
+        "{bike} in her new colour. Can't stop looking."
+      ],
+      "start": [
+        "Fuel on, choke on, kick. Moment of truth.",
+        "If {bike} fires first kick I'm buying the whole cafe a coffee.",
+        "Thirty years asleep. Time to wake her up."
+      ],
+      "soak": [
+        "Carb's soaking in cleaner. Tomorrow we see.",
+        "Can't rush a soak. Overnight it is.",
+        "Bits of {bike}'s carb sitting in a jar. Like pickles."
+      ],
+      "dry": [
+        "Paint's drying. Hands off. HANDS OFF.",
+        "Touching wet paint is a crime. Leaving her till tomorrow.",
+        "Keep {pup}'s hair off the paint. That's my whole job today."
+      ],
+      "parts_coming": [
+        "Parts are on the way. Like waiting for Christmas.",
+        "Checked the door twice. Parts still not here.",
+        "Tomorrow the parts come and {bike} gets better."
+      ],
+      "needs_parts": [
+        "{bike} needs parts before the {stage}. Need the coins.",
+        "Can't do the {stage} without parts. Jar or bike?",
+        "Parts for {bike} or a fatter jar. Hmm."
+      ],
+      "finished": [
+        "Built {bike} from a rusty pile. Still can't believe it.",
+        "Keep her or sell her? Heart says keep.",
+        "{bike} turned out better than I hoped.",
+        "Thailand jar says sell. Everything else says ride."
+      ],
+      "kept": [
+        "{bike} is parked by the garage. Still smiling about it.",
+        "Next project's coming. I can feel it.",
+        "Maybe the next one is the Thailand bike."
+      ],
+      "offer": [
+        "That adventure bike down the road. Can't stop thinking about it.",
+        "Big single, long legs. Could take me across Thailand.",
+        "Should I? The jar says no. My heart says go look."
+      ]
+    },
+    "stage_done": {
+      "strip": [
+        "stripped {bike} right down to the bare frame. Every bolt bagged and labelled.",
+        "{bike} is down to her bones: frame on the stand, rust gone, every bit cleaned."
+      ],
+      "carb": [
+        "rebuilt {bike}'s carb: new jets, new float, clean as a whistle.",
+        "the carb's done. {bike} can breathe again."
+      ],
+      "engine": [
+        "{bike}'s engine is back together: new rings, new gaskets, turns over sweet.",
+        "top end done on {bike}. Compression feels proper."
+      ],
+      "electrics": [
+        "new loom, new battery, fresh tyres: {bike} has lights and rubber again.",
+        "electrics + tyres done. {bike} is a rolling bike again."
+      ],
+      "racks": [
+        "new suspension and luggage racks on {bike}. Ready to carry the whole trip.",
+        "{bike} sits proper now: fresh shock, fork seals and racks for the boxes."
+      ],
+      "paint": [
+        "{bike} is painted. Stood back and stared for ten minutes.",
+        "paint's done on {bike}. She looks brand new."
+      ]
+    },
+    "wait": {
+      "soak": [
+        "Carb's soaking in cleaner overnight. Tomorrow we see.",
+        "Dropped {bike}'s carb in the cleaner. It soaks till morning."
+      ],
+      "dry": [
+        "First coats are on. Leaving {bike} to dry overnight. Hands off.",
+        "Paint on, door shut, heater on. {bike} dries overnight."
+      ]
+    },
+    "wait_over": {
+      "soak": [
+        "Carb's had its soak. Varnish just wipes off now."
+      ],
+      "dry": [
+        "Paint's hard. Time for the final coats."
+      ]
+    },
+    "start_fail": [
+      "Kicked {bike} till his leg ached. Coughed, spat, nothing. Wet plug. Tomorrow.",
+      "{bike} fired once, backfired, then sulked. Timing's out. Again tomorrow.",
+      "Nothing. Not a sniff. Checked the spark: weak. New plug tomorrow.",
+      "So close. {bike} nearly caught. One more go tomorrow."
+    ],
+    "start_ok": [
+      "{bike} RUNS! Third kick, a cough, then that beautiful thump. {me} might have cried a bit.",
+      "She fired! {bike} is alive. Whole street came out to listen.",
+      "First kick! {bike} burst into life and settled into a lovely idle. Best sound in the world.",
+      "{bike} runs! Smoke, noise, then a perfect tick-over. Thirty years asleep, awake now."
+    ],
+    "ride_notes": [
+      "a full lap of the island",
+      "down the beach road and back",
+      "round the town twice, waving at everyone",
+      "along the sand with the sea on the left",
+      "everything worked, nothing fell off",
+      "she pulls beautifully"
+    ],
+    "keep": [
+      "she stays: parked by the garage for good",
+      "not selling her. She's family now",
+      "kept her. Some things are worth more than coins"
+    ],
+    "sold": [
+      "Sold {bike} at the stall. Bittersweet, but the jar loves it.",
+      "Handed {bike}'s keys to her new owner. Big coins for Thailand.",
+      "{bike} found a new home. Proud and a bit sad."
+    ]
   }
 }
