@@ -2,23 +2,25 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Best decision I ever made, keeping Diesel.",
-  "feeling": "chilled",
+  "doing": "making toast",
+  "thought": "Every coin counts. Every single one.",
+  "feeling": "stoked",
   "needs": {
-    "rest": 0.58,
-    "hunger": 0.245,
-    "social": 0.285,
-    "tinker": 0.58,
-    "curiosity": 0.215
+    "rest": 0.61,
+    "hunger": 0,
+    "social": 0.435,
+    "tinker": 0.56,
+    "curiosity": 0.265
   },
-  "mood": 0.47,
-  "energy": 0.42,
-  "coins": 80,
+  "mood": 0.46,
+  "energy": 0.39,
+  "coins": 50,
   "coins_goal": 500,
   "bricks": 21,
   "stock": {},
-  "owned": [],
+  "owned": [
+    "surfboard"
+  ],
   "sales": {
     "items": 4,
     "coins": 10
@@ -115,12 +117,17 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [],
+    "castles": [
+      {
+        "date": "2026-12-01",
+        "size": 1
+      }
+    ],
     "best_castle": 1,
     "shells": 10,
     "sun_today": 0,
@@ -742,6 +749,84 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "Funny what you learn. Dog training, who knew.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Beach next."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "building a sand castle (sand castle size 1/6)",
+      "why": "This one's getting a moat."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "watching the sunset",
+      "why": "Every day should end like this."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "21 bricks in the pile. Could build something lekker with that.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "bought",
+      "x": "bought a surfboard: lets him go surfing",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "ordering a surfboard from the catalogue",
+      "why": "A tool that pays for itself."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "450 coins to go. That's just a lot of carbs.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Every coin counts. Every single one.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Coins are tight. Toast it is."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Fastest meal in the world."
     }
   ],
   "day_start": {
@@ -750,13 +835,13 @@
     "got": 19,
     "used": 0
   },
-  "tick": 580,
+  "tick": 588,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T00:13:21.098366+00:00",
+  "updated": "2026-12-02T02:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 254,
-      "queue": 150,
+      "model": 258,
+      "queue": 154,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -765,8 +850,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 34,
-      "queue": 18,
+      "model": 38,
+      "queue": 22,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -781,8 +866,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.214,
-      "tired": 0.89,
+      "hunger": 0.246,
+      "tired": 0.25,
       "bored": 0.16
     },
     "bond": 1,
@@ -798,14 +883,6 @@
     "last_played_tick": 579,
     "wants": null,
     "recent_thoughts": [
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Is it dinner? It feels like dinner.",
       "My bowl is empty. This is an emergency.",
@@ -817,9 +894,17 @@
       "Good boy? Me? Yes. Me.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Sky went grey. Still a good day. Every day is a good day.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
     "want_ticks": 0,
     "last_fed_tick": 572,
     "recent_ideas": [
@@ -835,10 +920,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "Ja, today feels like a building day.",
-    "Every coin counts. Every single one.",
-    "Winter on the island. Who knew?",
-    "Proud of {pup}. Little guy's growing up.",
     "{temp} degrees. My fingers have stopped working.",
     "Should I name the street? {me} Street. Ja, why not.",
     "Running on coffee and hope.",
@@ -859,9 +940,13 @@
     "Winter. Cold mornings, slow engines.",
     "{pup} has never seen snow. He's losing his mind.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Best decision I ever made, keeping {pup}."
+    "Best decision I ever made, keeping {pup}.",
+    "Funny what you learn. {topic}, who knew.",
+    "{bricks} bricks in the pile. Could build something lekker with that.",
+    "{left} coins to go. That's just a lot of carbs.",
+    "Every coin counts. Every single one."
   ],
-  "real_updated": "2026-11-27T07:15:12.013904+00:00",
+  "real_updated": "2026-11-27T07:30:13.558419+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -875,8 +960,8 @@
       "snow",
       "cloudy"
     ],
-    "temp": 8,
-    "snow": 0.5,
+    "temp": 7,
+    "snow": 0.34,
     "wet": 0,
     "snowman": 1
   }
