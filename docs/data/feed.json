@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-11-29T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "running his market stall (pricey prices, sold 2 postcard of the towns for 6 coins)",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Quick trip to the market stall.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "Even the lamp posts look lost in this fog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Coins are tight. Toast it is.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Fastest meal in the world.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "thought",
+    "text": "Sun's in the perfect spot for a nap. Not happening though.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-29T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "noticed",
+    "text": "🌫️ A thick sea fog rolls in over the town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-11-29T17:58:21.098366+00:00",
     "time": "12:58 PM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "Don't spend it. Don't spend it. Don't spend it.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach",
-    "why": "Let him run.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "collecting shells (+1 shells (4 in the jar))",
-    "why": "Pretty ones today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Heading to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "thought",
-    "text": "Funny what you learn. Tourism in Thailand, who knew.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Best part of the day.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Power's flickering. Good thing I've got candles somewhere.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "training Diesel (sit: learned it!)",
-    "why": "Treat in the pocket, let's go.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "learned",
-    "text": "Diesel learned to sit!",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "noticed",
-    "text": "Diesel falls asleep in the toolbox for a second.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "training Diesel (sit: 2/3)",
-    "why": "Practice makes perfect.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Lightning over the sea. Beautiful and terrifying.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-28T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "noticed",
-    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

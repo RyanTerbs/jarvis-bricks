@@ -1,29 +1,29 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "splashing in puddles with Diesel",
-  "thought": "Someone out there needs a brick model bike. I can feel it.",
-  "feeling": "content",
+  "doing": "running his market stall",
+  "thought": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.5,
-    "hunger": 0.49,
-    "social": 0.184,
-    "tinker": 0.61,
-    "curiosity": 0.34
+    "rest": 0.62,
+    "hunger": 0.195,
+    "social": 0.099,
+    "tinker": 0.505,
+    "curiosity": 0.515
   },
   "mood": 0.46,
-  "energy": 0.5,
-  "coins": 57,
+  "energy": 0.38,
+  "coins": 67,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
-    "postcard": 4
+    "postcard": 2
   },
   "owned": [],
   "sales": {
-    "items": 0,
-    "coins": 0
+    "items": 2,
+    "coins": 6
   },
   "books": {
     "tourism_thailand": 9
@@ -79,7 +79,7 @@
     }
   ],
   "looked_up": [],
-  "hour": 12,
+  "hour": 14,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -89,10 +89,16 @@
     "shells": 7,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "good",
+    "waves": "flat",
     "waves_date": "2026-11-29"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "run_the_stall",
+      "why": "Let's see what sells.",
+      "pricing": "cheap"
+    }
+  ],
   "lucky": {
     "date": "2026-11-29",
     "used": 0,
@@ -400,6 +406,78 @@
       "k": "did",
       "x": "splashing in puddles with Diesel",
       "why": "Already wet, might as well splash."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "🌫️ A thick sea fog rolls in over the town.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Sun's in the perfect spot for a nap. Not happening though.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Fastest meal in the world."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Coins are tight. Toast it is."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Even the lamp posts look lost in this fog.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Quick trip to the market stall."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "running his market stall (pricey prices, sold 2 postcard of the towns for 6 coins)",
+      "why": "Got stock, need buyers."
     }
   ],
   "day_start": {
@@ -408,13 +486,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 363,
+  "tick": 370,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T17:58:21.098366+00:00",
+  "updated": "2026-11-29T19:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 155,
-      "queue": 90,
+      "model": 159,
+      "queue": 93,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -423,8 +501,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 16,
-      "queue": 11,
+      "model": 20,
+      "queue": 14,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -437,10 +515,10 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.24,
-      "tired": 0.99,
+      "hunger": 0.268,
+      "tired": 0.43,
       "bored": 0
     },
     "bond": 1,
@@ -451,17 +529,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "wagging his tail",
+    "doing": "napping",
     "last_played_tick": 363,
-    "wants": "nap",
+    "wants": null,
     "recent_thoughts": [
-      "PUDDLE. Must jump in puddle.",
-      "Wet dog smell is the best smell.",
-      "My tail won't stop. I'm not stopping it.",
-      "Wet dog smell is the best smell.",
-      "Everything smells amazing today.",
-      "Water falling from the sky. Again. Suspicious.",
-      "PUDDLE. Must jump in puddle.",
       "I know tricks now. I am a very clever boy.",
       "Food? Food. FOOD.",
       "Is it dinner? It feels like dinner.",
@@ -474,9 +545,16 @@
       "Nap spot: located. Engaging.",
       "Wet dog smell is the best smell.",
       "Yawn. Big yawn. Biggest yawn.",
-      "Eyes heavy. Paws heavy. Everything heavy."
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Eyes heavy. Paws heavy. Everything heavy.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 355,
     "recent_ideas": [
@@ -490,10 +568,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Did more today than I thought I would.",
-    "{pup} thinks every puddle is a personal invitation.",
-    "Thailand rains like this in the wet season. Practice.",
-    "Rain, rain. At least it fills the tanks.",
     "Good waves. Must not get too cocky.",
     "Could sleep standing up like a horse.",
     "The jar's getting heavier. Love that sound.",
@@ -514,23 +588,28 @@
     "Had a dream about a gearbox. Normal, right?",
     "Who names a bolt? Me. This one's Gerald.",
     "Afternoon slump. Could do with a coffee.",
-    "Someone out there needs a brick model bike. I can feel it."
+    "Someone out there needs a brick model bike. I can feel it.",
+    "Sun's in the perfect spot for a nap. Not happening though.",
+    "Even the lamp posts look lost in this fog.",
+    "Thailand. Noodles, mountains, warm sea. Soon.",
+    "{pup}'s tail hasn't stopped since breakfast. Lekker."
   ],
-  "real_updated": "2026-11-27T00:00:14.047649+00:00",
+  "real_updated": "2026-11-27T00:15:11.038291+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-29@6",
-    "kind": "rain",
+    "key": "2026-11-29@13",
+    "kind": "fog",
     "season": "autumn",
-    "base": 9.8,
-    "emoji": "🌧️",
-    "name": "rainy",
+    "base": 16.9,
+    "emoji": "🌫️",
+    "name": "foggy",
     "season_emoji": "🍂",
     "seen": [
-      "rain"
+      "rain",
+      "fog"
     ],
-    "temp": 13,
+    "temp": 20,
     "snow": 0,
-    "wet": 1
+    "wet": 0.65
   }
 }
