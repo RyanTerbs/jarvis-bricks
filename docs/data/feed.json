@@ -1,5 +1,167 @@
 [
   {
+    "at": "2026-12-04T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Quick trip to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "note",
+    "text": "noted (Bangkok (Government)): The city of Bangkok is locally governed by the Bangkok Metropolitan Administration (BMA).",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 4/10)",
+    "why": "Where was I? Ah, ja.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Me and Diesel against the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Picture it: a winding road, a good engine, no rush.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman 2/3)",
+    "why": "Giving my old cap to a good cause.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "28 bricks in the pile. Could build something lekker with that.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "building (the snow slowed the work, Rooftop Garden still 4/5)",
+    "why": "Let's get this Rooftop Garden up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Building site next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "thought",
+    "text": "If I finish this, I'm getting a snack. Deal.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T19:43:21.098366+00:00",
     "time": "2:43 PM",
     "kind": "did",
@@ -1185,168 +1347,6 @@
     "text": "walking to the brick pit",
     "why": "Heading to the brick pit.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "Don't spend it. Don't spend it. Don't spend it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Yoh, I'm tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman 1/3)",
-    "why": "Snow on the ground? A man has to build a snowman.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Looked up Dog training on the old laptop. Lekker.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Afternoon slump. Could do with a coffee.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "noticed",
-    "text": "A loud exhaust echoes down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "Wonder if I'm pricing my stuff right.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Had a dream about a gearbox. Normal, right?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "noticed",
-    "text": "🌧️ It starts raining. Proper drops this time.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "1 degrees. My fingers have stopped working.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "running his market stall (fair prices, no buyers this time (quiet in this snow))",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "running his market stall (pricey prices, no buyers this time (quiet in this snow))",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
     "ok": true
   }
 ]
