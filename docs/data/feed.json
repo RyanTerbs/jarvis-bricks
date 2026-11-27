@@ -1,5 +1,149 @@
 [
   {
+    "at": "2026-12-03T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Off to the market stall.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "thought",
+    "text": "Diesel is yawning, so I'm yawning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "thought",
+    "text": "Rain on the roof. Lekker sound, rubbish for building.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Sky's going orange. Thailand sunsets must be something else.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "thought",
+    "text": "Wet again. The site turns to mud in this.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "note",
+    "text": "noted (Bangkok (Introduction)): Bangkok, known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and largest city of Thailand.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 1/10)",
+    "why": "Learning something today.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Best decision I ever made, keeping Diesel.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Winter. Cold mornings, slow engines.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T21:13:21.098366+00:00",
     "time": "4:13 PM",
     "kind": "did",
@@ -1201,150 +1345,6 @@
     "time": "2:28 PM",
     "kind": "thought",
     "text": "Body says rest. Stubborn brain says one more job.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "building (finished!)",
-    "why": "Back to the Tuk-tuk Garage. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "built",
-    "text": "finished building the Tuk-tuk Garage!",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "building (Tuk-tuk Garage 4/5)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Need a lie down before I drop a spanner on my foot.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Coins are tight. Toast it is.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Toast. Quick and honest.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Running on half a battery.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
-    "why": "Fresh air for both of us.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "thought",
-    "text": "Me and Diesel against the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "thought",
-    "text": "Toast. Noodles. Anything.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "thought",
-    "text": "Yoh, I'm tired.",
     "why": null,
     "by": "model",
     "ok": true

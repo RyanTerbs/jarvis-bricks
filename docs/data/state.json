@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "market_stall",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Diesel follows me everywhere. Proper little shadow.",
-  "feeling": "happy enough",
+  "doing": "walking to the market stall",
+  "thought": "Diesel is yawning, so I'm yawning.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.55,
-    "hunger": 0.315,
-    "social": 0.27,
-    "tinker": 0.445,
-    "curiosity": 0.49
+    "rest": 0.52,
+    "hunger": 0.415,
+    "social": 0.24,
+    "tinker": 0.375,
+    "curiosity": 0.39
   },
-  "mood": 0.41,
-  "energy": 0.45,
-  "coins": 41,
+  "mood": 0.44,
+  "energy": 0.48,
+  "coins": 44,
   "coins_goal": 500,
   "bricks": 30,
   "stock": {
@@ -29,7 +29,8 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 8
+    "dog_training": 8,
+    "bangkok": 1
   },
   "finished": [
     "tourism_thailand",
@@ -125,12 +126,17 @@
       "date": "2026-12-02",
       "source": "Dog training (Specialized training)",
       "note": "Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,"
+    },
+    {
+      "date": "2026-12-03",
+      "source": "Bangkok (Introduction)",
+      "note": "Bangkok, known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and largest city of Thailand."
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 16,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -143,7 +149,18 @@
     "waves": "small",
     "waves_date": "2026-12-03"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "run_the_stall",
+      "why": "Got stock, need buyers.",
+      "pricing": "cheap"
+    },
+    {
+      "move": "run_the_stall",
+      "why": "Market day.",
+      "pricing": "pricey"
+    }
+  ],
   "lucky": {
     "date": "2026-12-03",
     "used": 2,
@@ -577,6 +594,102 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "Best decision I ever made, keeping Diesel.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Freezing. Mug time."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 1/10)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "note",
+      "x": "noted (Bangkok (Introduction)): Bangkok, known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and largest city of Thailand.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "thought",
+      "x": "Wet again. The site turns to mud in this.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Sky's going orange. Thailand sunsets must be something else.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "thought",
+      "x": "Rain on the roof. Lekker sound, rubbish for building.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Diesel is yawning, so I'm yawning.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Off to the market stall."
     }
   ],
   "day_start": {
@@ -585,13 +698,13 @@
     "got": 14,
     "used": 0
   },
-  "tick": 760,
+  "tick": 768,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T21:13:21.098366+00:00",
+  "updated": "2026-12-03T23:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 327,
-      "queue": 198,
+      "model": 334,
+      "queue": 199,
       "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
@@ -600,8 +713,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 23,
-      "queue": 16,
+      "model": 30,
+      "queue": 17,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -616,9 +729,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.03,
-      "tired": 0.45,
-      "bored": 0.39
+      "hunger": 0.27,
+      "tired": 0.71,
+      "bored": 0.13
     },
     "bond": 1.0,
     "food": 1,
@@ -629,18 +742,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 739,
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 767,
     "wants": null,
     "recent_thoughts": [
-      "Nap spot: located. Engaging.",
-      "SAND! Wet sand! Best day ever!",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
@@ -652,9 +757,17 @@
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Who left this brick here? I'll carry it somewhere else.",
       "The ground is a giant ice cream!",
-      "Why are my paws cold? Doesn't matter. SNOW!"
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Cold white stuff! I must eat all of it.",
+      "The ground is a giant ice cream!",
+      "Wet dog smell is the best smell.",
+      "PUDDLE. Must jump in puddle.",
+      "Wet dog smell is the best smell.",
+      "The cafe smells like pies. Noted.",
+      "{owner} is busy again. Sigh. Big sigh.",
+      "Wet dog smell is the best smell."
     ],
-    "thought": "Why are my paws cold? Doesn't matter. SNOW!",
+    "thought": "Wet dog smell is the best smell.",
     "want_ticks": 0,
     "last_fed_tick": 759,
     "recent_ideas": [
@@ -670,13 +783,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Running on coffee and hope.",
-    "Foggy. Feels like a Port Alfred winter morning.",
-    "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "{pup} has never seen snow. He's losing his mind.",
-    "Sun's up, {pup}'s up, so I'm up.",
-    "Me and {pup} against the world.",
-    "Salt air, warm sand, no bolts. Perfect.",
     "Toast. Noodles. Anything.",
     "Funny what you learn. {topic}, who knew.",
     "That {topic} chapter got me thinking.",
@@ -694,9 +800,16 @@
     "Don't spend it. Don't spend it. Don't spend it.",
     "Halfway through the day and nothing's on fire. Lekker.",
     "Didn't know half this stuff about {topic}.",
-    "{pup} follows me everywhere. Proper little shadow."
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Winter. Cold mornings, slow engines.",
+    "Best decision I ever made, keeping {pup}.",
+    "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "Wet again. The site turns to mud in this.",
+    "Sky's going orange. Thailand sunsets must be something else.",
+    "Rain on the roof. Lekker sound, rubbish for building.",
+    "{pup} is yawning, so I'm yawning."
   ],
-  "real_updated": "2026-11-27T13:15:13.220257+00:00",
+  "real_updated": "2026-11-27T13:30:13.651116+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -710,8 +823,8 @@
       "snow",
       "rain"
     ],
-    "temp": 4,
-    "snow": 0.48,
+    "temp": 3,
+    "snow": 0.16,
     "wet": 1,
     "snowman": 1
   }
