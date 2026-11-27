@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-02T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "building (Tuk-tuk Garage 4/5)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "Need a lie down before I drop a spanner on my foot.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Coins are tight. Toast it is.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Toast. Quick and honest.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "Running on half a battery.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "thought",
+    "text": "Me and Diesel against the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "Toast. Noodles. Anything.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-02T17:13:21.098366+00:00",
     "time": "12:13 PM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "walking to the garage",
     "why": "Garage next.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Winter on the island. Who knew?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "thought",
-    "text": "Every coin counts. Every single one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "note",
-    "text": "noted (Dog training (Training methods)): Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 5/8)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "thought",
-    "text": "Ja, today feels like a building day.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "building (finished!)",
-    "why": "Back to the Noodle stall. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "built",
-    "text": "finished building the Noodle stall!",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "The jar's getting heavier. Love that sound.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "noticed",
-    "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]

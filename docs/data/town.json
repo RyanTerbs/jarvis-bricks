@@ -111,7 +111,7 @@
     "name": "Tuk-tuk Garage",
     "lot": 7,
     "work": 5,
-    "done": 3,
+    "done": 4,
     "started": "2026-12-02",
     "look": {
       "kind": "shop",
