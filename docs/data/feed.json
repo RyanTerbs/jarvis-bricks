@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-06T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "ordering a bag of dog food (6 meals in the cupboard)",
+    "why": "Stocking up for the little guy.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Life's simple. Fix things, save coins, look after the dog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "53 in the jar. 447 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Hot one today. The beach is calling.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "running his market stall (cheap prices, sold 2 rebuilt carburettors for 14 coins)",
+    "why": "Market day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "running his market stall (fair prices, sold 1 rebuilt carburettor, 1 postcard of the town for 11 coins)",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Market stall next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Could sleep standing up like a horse.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Bag and label everything. Learned that the hard way.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-06T20:13:21.098366+00:00",
     "time": "3:13 PM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "A loud exhaust echoes down the street.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Wonder how they build the roads up in the Thai mountains.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "thought",
-    "text": "Weather like this, Thailand feels close.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "noticed",
-    "text": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "thought",
-    "text": "Diesel follows me everywhere. Proper little shadow.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "building (Library 4/6)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "Don't spend it. Don't spend it. Don't spend it.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]

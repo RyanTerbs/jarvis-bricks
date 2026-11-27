@@ -1,33 +1,32 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "restoring Little Thunder: strip + clean",
-  "thought": "Winter. Cold mornings, slow engines.",
-  "feeling": "chilled",
+  "doing": "ordering a bag of dog food",
+  "thought": "Life's simple. Fix things, save coins, look after the dog.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0.09,
-    "social": 0.44,
-    "tinker": 0.275,
-    "curiosity": 0.395
+    "rest": 0.61,
+    "hunger": 0.37,
+    "social": 0.12,
+    "tinker": 0.555,
+    "curiosity": 0.595
   },
-  "mood": 0.48,
-  "energy": 0.31,
-  "coins": 28,
+  "mood": 0.45,
+  "energy": 0.39,
+  "coins": 50,
   "coins_goal": 500,
   "bricks": 102,
   "stock": {
-    "rebuilt_carb": 3,
-    "postcard": 2
+    "postcard": 1
   },
   "owned": [
     "surfboard",
     "wheelbarrow"
   ],
   "sales": {
-    "items": 5,
-    "coins": 17
+    "items": 9,
+    "coins": 42
   },
   "books": {
     "tourism_thailand": 9,
@@ -174,7 +173,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -187,7 +186,12 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "feed_the_puppy",
+      "why": "Diesel first, always."
+    }
+  ],
   "lucky": {
     "date": "2026-12-06",
     "used": 1,
@@ -555,6 +559,84 @@
       "k": "did",
       "x": "restoring Little Thunder: strip + clean (strip + clean 4/6)",
       "why": "She's ugly now. She won't be for long."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Bag and label everything. Learned that the hard way.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Could sleep standing up like a horse.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "walking to the market stall",
+      "why": "Market stall next."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "running his market stall (fair prices, sold 1 rebuilt carburettor, 1 postcard of the town for 11 coins)",
+      "why": "Got stock, need buyers."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "running his market stall (cheap prices, sold 2 rebuilt carburettors for 14 coins)",
+      "why": "Market day."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Hot one today. The beach is calling.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "53 in the jar. 447 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Life's simple. Fix things, save coins, look after the dog.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "ordering a bag of dog food (6 meals in the cupboard)",
+      "why": "Stocking up for the little guy."
     }
   ],
   "day_start": {
@@ -563,13 +645,13 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1044,
+  "tick": 1052,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T20:13:21.098366+00:00",
+  "updated": "2026-12-06T22:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 450,
-      "queue": 267,
+      "model": 455,
+      "queue": 270,
       "autopilot": 37,
       "sleeping": 290,
       "tokens_in": 0,
@@ -578,8 +660,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 18,
-      "queue": 16,
+      "model": 23,
+      "queue": 19,
       "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
@@ -592,14 +674,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.582,
-      "tired": 0.67,
-      "bored": 0.61
+      "hunger": 0.692,
+      "tired": 0.33,
+      "bored": 0.7
     },
-    "bond": 1.0,
-    "food": 0,
+    "bond": 1,
+    "food": 6,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -607,18 +689,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "bored, chewing whatever he can find",
     "last_played_tick": 1029,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Grease on my nose. Worth it.",
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "Warm spot on the floor. Mine now.",
-      "I know tricks now. I am a very clever boy.",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Sun on my belly. Perfect.",
-      "He dropped a bolt. It rolled. I chased it. I am useful.",
-      "Must... stay... awake... for treats.",
       "Sun on my belly. Perfect.",
       "Nap spot: located. Engaging.",
       "I am a very good boy. Probably.",
@@ -630,9 +704,17 @@
       "Warm spot on the floor. Mine now.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "My tail won't stop. I'm not stopping it.",
+      "Is it dinner? It feels like dinner.",
+      "Walk? Walk? WALK?"
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Walk? Walk? WALK?",
     "want_ticks": 0,
     "last_fed_tick": 1022,
     "recent_ideas": [
@@ -648,11 +730,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Every bolt on {bike} is seized. Every single one.",
-    "Long day. Good day though.",
-    "Not a cloud. {pup} is going to want the beach.",
-    "Evening breeze off the sea. Lekker.",
-    "Funny what you learn. {topic}, who knew.",
     "{pup} follows me everywhere. Proper little shadow.",
     "Winter on the island. Who knew?",
     "That {topic} chapter got me thinking.",
@@ -672,9 +749,14 @@
     "Never had a mate this loyal.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "Nothing like the sea to clear the head.",
-    "Winter. Cold mornings, slow engines."
+    "Winter. Cold mornings, slow engines.",
+    "Bag and label everything. Learned that the hard way.",
+    "Could sleep standing up like a horse.",
+    "Hot one today. The beach is calling.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Life's simple. Fix things, save coins, look after the dog."
   ],
-  "real_updated": "2026-11-27T22:45:10.596584+00:00",
+  "real_updated": "2026-11-27T23:00:13.014692+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
