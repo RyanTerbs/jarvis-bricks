@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "cafe",
   "asleep": false,
-  "doing": "walking to the garage",
-  "thought": "Someone out there needs a brick model bike. I can feel it.",
-  "feeling": "happy enough",
+  "doing": "taking Diesel for a walk",
+  "thought": "Haven't had grease on my hands in hours. Feels wrong.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.68,
-    "hunger": 0.105,
-    "social": 0.575,
-    "tinker": 0.7,
-    "curiosity": 0.41
+    "rest": 0.69,
+    "hunger": 0.475,
+    "social": 0.335,
+    "tinker": 0.65,
+    "curiosity": 0.36
   },
-  "mood": 0.38,
-  "energy": 0.32,
-  "coins": 14,
+  "mood": 0.4,
+  "energy": 0.31,
+  "coins": 20,
   "coins_goal": 500,
-  "bricks": 48,
+  "bricks": 58,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 16,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -176,15 +176,10 @@
     "waves": "good",
     "waves_date": "2026-12-05"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "Meet Gogo. Bit of a sad case. I'll sort her out."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-05",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -639,22 +634,130 @@
       "k": "did",
       "x": "walking to the garage",
       "why": "Quick trip to the garage."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Gogo. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Bag and label everything. Learned that the hard way.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "noticed",
+      "x": "A kid stops to pat Diesel.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "thought",
+      "x": "Me and Diesel against the world.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "482 coins to go. That's just a lot of carbs.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "collecting bricks (+10 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "noticed",
+      "x": "Diesel falls asleep in the toolbox for a second.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Bangkok.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Haven't had grease on my hands in hours. Feels wrong.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk",
+      "why": "Walkies, Diesel."
     }
   ],
   "day_start": {
     "coins": 18,
     "bricks": 22,
-    "got": 26,
+    "got": 36,
     "used": 0
   },
-  "tick": 953,
+  "tick": 963,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T21:28:21.098366+00:00",
+  "updated": "2026-12-05T23:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 417,
-      "queue": 242,
-      "autopilot": 30,
+      "model": 422,
+      "queue": 246,
+      "autopilot": 31,
       "sleeping": 264,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -662,9 +765,9 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 25,
-      "queue": 15,
-      "autopilot": 2,
+      "model": 30,
+      "queue": 19,
+      "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -676,13 +779,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.212,
-      "tired": 0.27,
+      "hunger": 0.512,
+      "tired": 0.62,
       "bored": 0.45
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 2,
     "tricks": {
       "sit": 3,
@@ -691,20 +794,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
-    "last_played_tick": 930,
-    "wants": null,
+    "doing": "bored, chewing whatever he can find",
+    "last_played_tick": 963,
+    "wants": "play",
     "recent_thoughts": [
-      "Warm spot on the floor. Mine now.",
-      "Sun on my belly. Perfect.",
-      "Following {owner}. Best job in the world.",
-      "Warm spot on the floor. Mine now.",
-      "Sit means treat. I have cracked the code.",
-      "Warm spot on the floor. Mine now.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "The ! block knows something. I will watch it.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "Life is good. Life is SO good.",
       "Is that a squirrel? It's a bolt. Still exciting.",
       "Nap spot: located. Engaging.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -714,9 +807,19 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "I am a very good boy. Probably.",
+      "Sun on my belly. Perfect.",
+      "Warm spot on the floor. Mine now.",
+      "The rusty thing has wheels. Wheels go places. Places have smells.",
+      "So bored I'm counting my own paws. Four. Still four.",
+      "Following {owner}. Best job in the world.",
+      "I could chew a boot. Just a little bit.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Everything smells amazing today.",
+      "Sun on my belly. Perfect."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Sun on my belly. Perfect.",
     "want_ticks": 0,
     "last_fed_tick": 942,
     "recent_ideas": [
@@ -732,11 +835,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Slept like a log. Ready to graft.",
-    "Sometimes I just stand here and listen to the town.",
-    "Thai street food. That's the dream right there.",
-    "{pup} keeps nudging his bowl. Message received.",
-    "Penetrating oil and patience. That's the whole secret.",
     "Shame, the cafe guy looked tired today.",
     "Not a cloud. {pup} is going to want the beach.",
     "Found a 1980s coin in {bike}'s toolbox. Lucky.",
@@ -756,9 +854,14 @@
     "Wonder if I'm pricing my stuff right.",
     "If I don't eat soon I'm eating a brick.",
     "Blue sky, no excuses.",
-    "Someone out there needs a brick model bike. I can feel it."
+    "Someone out there needs a brick model bike. I can feel it.",
+    "Bag and label everything. Learned that the hard way.",
+    "Me and {pup} against the world.",
+    "{left} coins to go. That's just a lot of carbs.",
+    "Didn't know half this stuff about {topic}.",
+    "Haven't had grease on my hands in hours. Feels wrong."
   ],
-  "real_updated": "2026-11-27T19:40:51.433467+00:00",
+  "real_updated": "2026-11-27T20:00:12.638823+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -771,7 +874,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 11,
+    "temp": 9,
     "snow": 0,
     "wet": 0,
     "snowman": 0

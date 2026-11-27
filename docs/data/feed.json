@@ -1,5 +1,167 @@
 [
   {
+    "at": "2026-12-05T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Walkies, Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Haven't had grease on my hands in hours. Feels wrong.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Haven't spoken to a human all day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Off to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "thought",
+    "text": "Didn't know half this stuff about Bangkok.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "noticed",
+    "text": "Diesel falls asleep in the toolbox for a second.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "collecting bricks (+10 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "482 coins to go. That's just a lot of carbs.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "thought",
+    "text": "Me and Diesel against the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "noticed",
+    "text": "A kid stops to pat Diesel.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Bag and label everything. Learned that the hard way.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Meet Gogo. Bit of a sad case. I'll sort her out.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T21:28:21.098366+00:00",
     "time": "4:28 PM",
     "kind": "did",
@@ -1186,167 +1348,5 @@
     "why": null,
     "by": null,
     "ok": true
-  },
-  {
-    "at": "2026-12-04T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 4/10)",
-    "why": "Where was I? Ah, ja.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Me and Diesel against the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman 2/3)",
-    "why": "Giving my old cap to a good cause.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "28 bricks in the pile. Could build something lekker with that.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "noticed",
-    "text": "A neighbour pays him back for a favour. +3 coins.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "noticed",
-    "text": "A neighbour pays him back for a favour. +3 coins.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "building (the snow slowed the work, Rooftop Garden still 4/5)",
-    "why": "Let's get this Rooftop Garden up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "thought",
-    "text": "If I finish this, I'm getting a snack. Deal.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Hot chocolate. Doctor's orders.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "Got stock to sell. Stall's calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "refused",
-    "text": "tried training Diesel: Diesel is napping",
-    "why": null,
-    "by": "queue",
-    "ok": false
   }
 ]
