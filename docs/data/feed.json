@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-04T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "Snowman time. Non-negotiable.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "note",
+    "text": "noted (Bangkok (Name)): The origin of the name Bangkok (บางกอก, pronounced in Thai as [bāːŋkɔ̀ːk] ) is unclear.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 3/10)",
+    "why": "One more chapter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "Life's simple. Fix things, save coins, look after the dog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "Every coin counts. Every single one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "That Bangkok chapter got me thinking.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "building (Rooftop Garden 4/5)",
+    "why": "Let's get this Rooftop Garden up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "building (Rooftop Garden 3/5)",
+    "why": "One more course of bricks.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Building site next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "Under all that rust there's a good bike. I can see her.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-04T15:58:21.098366+00:00",
     "time": "10:58 AM",
     "kind": "did",
@@ -1212,141 +1347,6 @@
     "text": "fixing a car (+4 coins)",
     "why": "Hands need grease. Simple.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Hands are itching. Need something to fix.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "thought",
-    "text": "That Dog training chapter got me thinking.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-    "why": "One bonk for luck.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "collecting bricks (+4 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: be the greeter at the market stall. Customers love me.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Brick pit next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Funny what you learn. Dog training, who knew.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "Toast. Noodles. Anything.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Food for my boy.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
     "ok": true
   }
 ]
