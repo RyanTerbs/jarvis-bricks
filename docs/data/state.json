@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "designing a brand-new building",
-  "thought": "Reading about Dog training makes me want to try it.",
-  "feeling": "content",
+  "doing": "having a rest",
+  "thought": "Even the lamp posts look lost in this fog.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.61,
-    "hunger": 0.035,
-    "social": 0.36,
-    "tinker": 0.55,
-    "curiosity": 0
+    "rest": 0.64,
+    "hunger": 0.3,
+    "social": 0.465,
+    "tinker": 0.395,
+    "curiosity": 0.1
   },
-  "mood": 0.5,
-  "energy": 0.39,
-  "coins": 41,
+  "mood": 0.37,
+  "energy": 0.36,
+  "coins": 45,
   "coins_goal": 500,
-  "bricks": 4,
+  "bricks": 6,
   "stock": {
     "rebuilt_carb": 2
   },
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 17,
+  "hour": 19,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -146,7 +146,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-02",
-    "used": 2,
+    "used": 3,
     "max": 3
   },
   "designed_on": "2026-12-02",
@@ -679,21 +679,87 @@
       "k": "did",
       "x": "designing a brand-new building",
       "why": "Town needs something new. Something mine."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Wonder if I'm pricing my stuff right.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "collecting bricks (+2 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Looked up Dog training on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Too much sitting. Where's my toolbox?",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Bessie is making a funny noise. My kind of problem."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Even the lamp posts look lost in this fog.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 49,
     "bricks": 21,
-    "got": 13,
+    "got": 15,
     "used": 30
   },
-  "tick": 671,
+  "tick": 678,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T22:58:21.098366+00:00",
+  "updated": "2026-12-03T00:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 293,
-      "queue": 173,
+      "model": 297,
+      "queue": 176,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -702,8 +768,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 30,
-      "queue": 17,
+      "model": 34,
+      "queue": 20,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -718,9 +784,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.512,
-      "tired": 0.69,
-      "bored": 0.15
+      "hunger": 0.722,
+      "tired": 0.83,
+      "bored": 0.36
     },
     "bond": 1.0,
     "food": 4,
@@ -731,17 +797,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
+    "doing": "hungry, staring at Derek",
     "last_played_tick": 666,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
       "{owner} says a word, I do a thing, treat appears. Magic.",
       "Where did the world go?",
       "Fog. Can't see. Can smell. Sniffing harder.",
@@ -754,10 +813,17 @@
       "Following {owner}. Best job in the world.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "Fog. Can't see. Can smell. Sniffing harder.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Grease smell. Best smell after sausages.",
+      "Where did the world go?",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "My tail won't stop. I'm not stopping it.",
+      "Where did the world go?",
+      "The ! block knows something. I will watch it."
     ],
-    "thought": "Everything smells amazing today.",
-    "want_ticks": 7,
+    "thought": "The ! block knows something. I will watch it.",
+    "want_ticks": 0,
     "last_fed_tick": 647,
     "recent_ideas": [
       "learn the next trick and get ALL the treats.",
@@ -772,10 +838,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "Coffee first. Then the world.",
-    "Thailand. Noodles, mountains, warm sea. Soon.",
-    "Even the lamp posts look lost in this fog.",
-    "Ja, today feels like a building day.",
     "Foggy. Feels like a Port Alfred winter morning.",
     "Got stock to sell. Stall's calling.",
     "Wonder if the bikes in Thailand need fixing. Bet they do.",
@@ -796,9 +858,13 @@
     "Batteries low. Need a recharge.",
     "Proud of {pup}. Little guy's growing up.",
     "Could go a proper pie right now.",
-    "Reading about {topic} makes me want to try it."
+    "Reading about {topic} makes me want to try it.",
+    "Wonder if I'm pricing my stuff right.",
+    "Looked up {topic} on the old laptop. Lekker.",
+    "Too much sitting. Where's my toolbox?",
+    "Even the lamp posts look lost in this fog."
   ],
-  "real_updated": "2026-11-27T10:15:17.463540+00:00",
+  "real_updated": "2026-11-27T10:30:11.833580+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
@@ -811,7 +877,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 10,
+    "temp": 8,
     "snow": 0,
     "wet": 0,
     "snowman": 0

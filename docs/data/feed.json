@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-12-03T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "thought",
+    "text": "Even the lamp posts look lost in this fog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Bessie is making a funny noise. My kind of problem.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Too much sitting. Where's my toolbox?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Looked up Dog training on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "collecting bricks (+2 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "thought",
+    "text": "Wonder if I'm pricing my stuff right.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-02T22:58:21.098366+00:00",
     "time": "5:58 PM",
     "kind": "did",
@@ -1248,105 +1347,6 @@
     "text": "chatting with the locals",
     "why": "Need some gossip.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Cafe next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "note",
-    "text": "noted (Dog training (Factors)): Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 6/8)",
-    "why": "One more chapter.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "thought",
-    "text": "Thai street food. That's the dream right there.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman 1/3)",
-    "why": "Every town needs a snowman. Rules.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "Reading about Dog training makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Clouds sitting on the town like a lid.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
     "ok": true
   }
 ]
