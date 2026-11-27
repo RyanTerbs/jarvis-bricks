@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "home",
   "asleep": false,
-  "doing": "starting a new build: Library",
-  "thought": "Still thinking about that bit on Bangkok.",
-  "feeling": "happy enough",
+  "doing": "having a rest",
+  "thought": "Snowman time. Non-negotiable.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.6,
-    "hunger": 0.405,
-    "social": 0.585,
-    "tinker": 0.16,
-    "curiosity": 0
+    "rest": 0.55,
+    "hunger": 0.045,
+    "social": 0.57,
+    "tinker": 0.355,
+    "curiosity": 0.175
   },
-  "mood": 0.51,
-  "energy": 0.4,
-  "coins": 20,
+  "mood": 0.46,
+  "energy": 0.45,
+  "coins": 18,
   "coins_goal": 500,
   "bricks": 22,
   "stock": {
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 20,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -175,42 +175,6 @@
   "designed_on": "2026-12-04",
   "plan_today": "Fix a few cars, fill the jar.",
   "today_log": [
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "🌨️ Snow starts falling over the island.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "noticed",
-      "x": "A loud exhaust echoes down the street.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Early bird gets the bricks.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Off to the building site."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "building (Rooftop Garden 2/5)",
-      "why": "Building is just fixing, but bigger."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "Thai street food. That's the dream right there.",
-      "why": null
-    },
     {
       "t": "6:58 AM",
       "k": "did",
@@ -870,6 +834,66 @@
       "k": "did",
       "x": "starting a new build: Library (paid 40 bricks)",
       "why": "Town's getting bigger."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Bangkok.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Slow and steady fills the jar.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "noticed",
+      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "thought",
+      "x": "Snowman time. Non-negotiable.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -878,13 +902,13 @@
     "got": 62,
     "used": 40
   },
-  "tick": 873,
+  "tick": 880,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T01:28:21.098366+00:00",
+  "updated": "2026-12-05T03:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 386,
-      "queue": 223,
+      "model": 390,
+      "queue": 226,
       "autopilot": 26,
       "sleeping": 238,
       "tokens_in": 0,
@@ -893,8 +917,8 @@
     },
     "today": {
       "date": "2026-12-04",
-      "model": 39,
-      "queue": 18,
+      "model": 43,
+      "queue": 21,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -907,11 +931,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.33,
-      "tired": 0.74,
-      "bored": 0.26
+      "hunger": 0.436,
+      "tired": 0.58,
+      "bored": 0.06
     },
     "bond": 1.0,
     "food": 4,
@@ -922,17 +946,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 865,
-    "wants": "play",
+    "doing": "napping",
+    "last_played_tick": 874,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Good boy? Me? Yes. Me.",
-      "Cold white stuff! I must eat all of it.",
-      "The ! block knows something. I will watch it.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "My bowl is empty. This is an emergency.",
       "Cold white stuff! I must eat all of it.",
       "The ground is a giant ice cream!",
@@ -945,9 +962,16 @@
       "{owner} says a word, I do a thing, treat appears. Magic.",
       "Must... stay... awake... for treats.",
       "Why are my paws cold? Doesn't matter. SNOW!",
-      "{owner} is the best human in the whole town."
+      "{owner} is the best human in the whole town.",
+      "Tail check: still there. Good.",
+      "Sit means treat. I have cracked the code.",
+      "It's dark. I will guard the house. From the sofa.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Derek is the best human in the whole town.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 862,
     "recent_ideas": [
@@ -963,10 +987,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "Every coin counts. Every single one.",
-    "Life's simple. Fix things, save coins, look after the dog.",
-    "Snowman time. Non-negotiable.",
-    "Town's buzzing this arvo.",
     "SNOW. On a tropical island. Who ordered this?",
     "Who names a bolt? Me. This one's Gerald.",
     "Measure twice, lay bricks once.",
@@ -987,9 +1007,13 @@
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "The jar's getting heavier. Love that sound.",
     "One more job, then feet up.",
-    "Still thinking about that bit on {topic}."
+    "Still thinking about that bit on {topic}.",
+    "{pup} has never seen snow. He's losing his mind.",
+    "Didn't know half this stuff about {topic}.",
+    "Slow and steady fills the jar.",
+    "Snowman time. Non-negotiable."
   ],
-  "real_updated": "2026-11-27T17:00:11.089183+00:00",
+  "real_updated": "2026-11-27T17:15:10.126845+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-04@13",
@@ -1002,7 +1026,7 @@
     "seen": [
       "snow"
     ],
-    "temp": -2,
+    "temp": -4,
     "snow": 1,
     "wet": 0,
     "snowman": 3

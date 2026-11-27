@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-05T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "thought",
+    "text": "Snowman time. Non-negotiable.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "noticed",
+    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at the brick pit",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-05T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Didn't know half this stuff about Bangkok.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at the brick pit",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-05T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T01:28:21.098366+00:00",
     "time": "8:28 PM",
     "kind": "did",
@@ -1238,114 +1346,6 @@
     "kind": "did",
     "text": "walking to the building site",
     "why": "Heading to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "making a postcard of the town (5 in stock)",
-    "why": "Handmade, proper quality.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "making a postcard of the town (4 in stock)",
-    "why": "Handmade, proper quality.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Haven't had grease on my hands in hours. Feels wrong.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "thought",
-    "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "thought",
-    "text": "Running on coffee and hope.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "thought",
-    "text": "Can't wait to see the Rooftop Garden finished.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
-    "why": "Dog's gotta walk.",
     "by": "model",
     "ok": true
   }
