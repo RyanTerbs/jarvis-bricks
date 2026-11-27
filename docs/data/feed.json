@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-12-01T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Bet someone's got a story.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Cafe next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "The Noodle stall won't build itself. Back to it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "starting a new build: Noodle stall (paid 25 bricks + 8 coins)",
+    "why": "Town's getting bigger.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "Still thinking about that bit on Dog training.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Toast. Quick and honest.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "making toast",
+    "why": "Fastest meal in the world.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Proper shorts weather.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T23:58:21.098366+00:00",
     "time": "6:58 PM",
     "kind": "did",
@@ -1247,105 +1346,6 @@
     "kind": "did",
     "text": "having a rest",
     "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Foggy. Feels like a Port Alfred winter morning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "noticed",
-    "text": "Diesel steals a sock and runs off down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "thought",
-    "text": "Best decision I ever made, keeping Diesel.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "note",
-    "text": "noted (Dog training (Introduction)): Dog training is a type of animal training, the application of behavior analysis which uses the environmental events of antecedents (trigger for a behavior) and",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 1/8)",
-    "why": "Where was I? Ah, ja.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Can't see the end of the street. Spooky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "thought",
-    "text": "Never had a mate this loyal.",
-    "why": null,
     "by": "model",
     "ok": true
   }

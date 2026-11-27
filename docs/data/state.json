@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "cafe",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Sun's out. Even the bricks look happy.",
-  "feeling": "good, ja",
+  "doing": "chatting with the locals",
+  "thought": "The Noodle stall won't build itself. Back to it.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.59,
-    "hunger": 0.165,
-    "social": 0.53,
-    "tinker": 0.345,
-    "curiosity": 0.43
+    "rest": 0.65,
+    "hunger": 0.105,
+    "social": 0.265,
+    "tinker": 0.59,
+    "curiosity": 0.505
   },
-  "mood": 0.46,
-  "energy": 0.41,
-  "coins": 88,
+  "mood": 0.44,
+  "energy": 0.35,
+  "coins": 80,
   "coins_goal": 500,
-  "bricks": 27,
+  "bricks": 2,
   "stock": {},
   "owned": [],
   "sales": {
@@ -95,7 +95,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -649,21 +649,87 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Proper shorts weather.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Fastest meal in the world."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "making toast",
+      "why": "Toast. Quick and honest."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Dog training.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "starting a new build: Noodle stall (paid 25 bricks + 8 coins)",
+      "why": "Town's getting bigger."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "The Noodle stall won't build itself. Back to it.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Cafe next."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Bet someone's got a story."
     }
   ],
   "day_start": {
     "coins": 74,
     "bricks": 6,
     "got": 21,
-    "used": 0
+    "used": 25
   },
-  "tick": 483,
+  "tick": 490,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T23:58:21.098366+00:00",
+  "updated": "2026-12-01T01:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 210,
-      "queue": 126,
+      "model": 214,
+      "queue": 129,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -672,8 +738,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 31,
-      "queue": 20,
+      "model": 35,
+      "queue": 23,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -686,11 +752,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.294,
-      "tired": 0.42,
-      "bored": 0
+      "hunger": 0.452,
+      "tired": 0.36,
+      "bored": 0.15
     },
     "bond": 1.0,
     "food": 3,
@@ -701,17 +767,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "rolling in the grass",
     "last_played_tick": 477,
-    "wants": null,
+    "wants": "cuddle",
     "recent_thoughts": [
-      "Following {owner}. Best job in the world.",
-      "Warm spot on the floor. Mine now.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Everything smells amazing today.",
-      "The cafe smells like pies. Noted.",
-      "Warm spot on the floor. Mine now.",
-      "Warm spot on the floor. Mine now.",
       "Warm spot on the floor. Mine now.",
       "Learning is hard. Treats make it easier.",
       "Sun on my belly. Perfect.",
@@ -724,10 +783,17 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Good boy? Me? Yes. Me.",
+      "Sun on my belly. Perfect.",
+      "Warm spot on the floor. Mine now.",
+      "I am a very good boy. Probably.",
+      "Following {owner}. Best job in the world."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
-    "want_ticks": 3,
+    "thought": "Following Derek. Best job in the world.",
+    "want_ticks": 2,
     "last_fed_tick": 468,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -741,10 +807,6 @@
     "idea": "bury Derek's 10mm socket. He loves looking for it."
   },
   "recent_thoughts": [
-    "Even the lamp posts look lost in this fog.",
-    "Hands are itching. Need something to fix.",
-    "Sun's up, {pup}'s up, so I'm up.",
-    "One day: me, a bike, and a mountain road outside Chiang Mai.",
     "Can't see the end of the street. Spooky.",
     "Ja, today feels like a building day.",
     "Can't see the end of the street. Spooky.",
@@ -765,9 +827,13 @@
     "{pup} is losing his mind over a crab.",
     "Need a lie down before I drop a spanner on my foot.",
     "Don't spend it. Don't spend it. Don't spend it.",
-    "Sun's out. Even the bricks look happy."
+    "Sun's out. Even the bricks look happy.",
+    "Proper shorts weather.",
+    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
+    "Still thinking about that bit on {topic}.",
+    "The {site} won't build itself. Back to it."
   ],
-  "real_updated": "2026-11-27T04:00:15.310253+00:00",
+  "real_updated": "2026-11-27T04:15:10.444014+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@13",
@@ -781,7 +847,7 @@
       "fog",
       "sunny"
     ],
-    "temp": 22,
+    "temp": 20,
     "snow": 0,
     "wet": 0
   }
