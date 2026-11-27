@@ -104,22 +104,25 @@
       },
       "decor": false,
       "built": "2026-12-01"
+    },
+    {
+      "lot": 7,
+      "id": "tuk_tuk_garage",
+      "bp": "tuk_tuk_garage",
+      "name": "Tuk-tuk Garage",
+      "place": "tuk_tuk_garage",
+      "desc": "a garage just for fixing tuk-tuks",
+      "look": {
+        "kind": "shop",
+        "color": "#e67e22",
+        "emoji": "🛺",
+        "floors": 1
+      },
+      "decor": false,
+      "built": "2026-12-02"
     }
   ],
-  "site": {
-    "bp": "tuk_tuk_garage",
-    "name": "Tuk-tuk Garage",
-    "lot": 7,
-    "work": 5,
-    "done": 4,
-    "started": "2026-12-02",
-    "look": {
-      "kind": "shop",
-      "color": "#e67e22",
-      "emoji": "🛺",
-      "floors": 1
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -244,6 +247,10 @@
     {
       "date": "2026-12-01",
       "text": "Bought a surfboard (lets him go surfing)."
+    },
+    {
+      "date": "2026-12-02",
+      "text": "Finished building the Tuk-tuk Garage."
     }
   ]
 }

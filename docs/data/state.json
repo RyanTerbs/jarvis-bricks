@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "cafe",
   "asleep": false,
-  "doing": "building",
-  "thought": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-  "feeling": "good, ja",
+  "doing": "walking to the cafe",
+  "thought": "Don't spend it. Don't spend it. Don't spend it.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.68,
-    "hunger": 0.135,
-    "social": 0.48,
-    "tinker": 0.34,
+    "rest": 0.64,
+    "hunger": 0.445,
+    "social": 0.64,
+    "tinker": 0.37,
     "curiosity": 0.5
   },
-  "mood": 0.42,
-  "energy": 0.32,
-  "coins": 41,
+  "mood": 0.37,
+  "energy": 0.36,
+  "coins": 43,
   "coins_goal": 500,
-  "bricks": 0,
+  "bricks": 4,
   "stock": {
     "rebuilt_carb": 2
   },
@@ -124,7 +124,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -139,13 +139,13 @@
   },
   "queue": [
     {
-      "move": "work_on_site",
-      "why": "Back to the Tuk-tuk Garage. Nearly there."
+      "move": "chat_with_locals",
+      "why": "Need some gossip."
     }
   ],
   "lucky": {
     "date": "2026-12-02",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -492,21 +492,105 @@
       "k": "did",
       "x": "building (Tuk-tuk Garage 4/5)",
       "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "built",
+      "x": "finished building the Tuk-tuk Garage!",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "Back to the Tuk-tuk Garage. Nearly there."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Body says rest. Stubborn brain says one more job.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "If I finish this, I'm getting a snack. Deal.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Dog training.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "collecting bricks (+4 bricks)",
+      "why": "Brick by brick, hey."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "43 in the jar. 457 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Cafe next."
     }
   ],
   "day_start": {
     "coins": 49,
     "bricks": 21,
-    "got": 9,
+    "got": 13,
     "used": 30
   },
-  "tick": 655,
+  "tick": 663,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T18:58:21.098366+00:00",
+  "updated": "2026-12-02T20:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 282,
-      "queue": 168,
+      "model": 287,
+      "queue": 171,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -515,8 +599,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 19,
-      "queue": 12,
+      "model": 24,
+      "queue": 15,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -529,11 +613,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.11,
-      "tired": 0.52,
-      "bored": 0
+      "hunger": 0.272,
+      "tired": 0.38,
+      "bored": 0.15
     },
     "bond": 1.0,
     "food": 4,
@@ -544,18 +628,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 650,
-    "wants": null,
+    "wants": "walk",
     "recent_thoughts": [
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Learning is hard. Treats make it easier.",
-      "Life is good. Life is SO good.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Where did the world go?",
-      "That engine is loud. I will bark at it. Later.",
-      "Where did the world go?",
       "Where did the world go?",
       "My tail won't stop. I'm not stopping it.",
       "Following {owner}. Best job in the world.",
@@ -567,10 +643,18 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Where did the world go?",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
-    "want_ticks": 2,
+    "thought": "Fog. Can't see. Can smell. Sniffing harder.",
+    "want_ticks": 4,
     "last_fed_tick": 647,
     "recent_ideas": [
       "learn the next trick and get ALL the treats.",
@@ -585,11 +669,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "Every coin counts. Every single one.",
-    "Lamps are coming on. Town looks proper tonight.",
-    "Evenings are for slowing down. Mostly.",
-    "Even my spanner looks tired.",
-    "Stars are out. Tiny town, big sky.",
     "Grey old day. Good for graft, bad for a tan.",
     "Little guy needs his dad. Coming, boet.",
     "The jar's getting heavier. Love that sound.",
@@ -609,9 +688,14 @@
     "Me and {pup} against the world.",
     "Running on half a battery.",
     "Need a lie down before I drop a spanner on my foot.",
-    "One day: me, a bike, and a mountain road outside Chiang Mai."
+    "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "Body says rest. Stubborn brain says one more job.",
+    "If I finish this, I'm getting a snack. Deal.",
+    "Still thinking about that bit on {topic}.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Don't spend it. Don't spend it. Don't spend it."
   ],
-  "real_updated": "2026-11-27T09:45:10.876936+00:00",
+  "real_updated": "2026-11-27T10:00:14.099896+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
