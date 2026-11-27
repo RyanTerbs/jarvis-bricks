@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Slept like a log. Ready to graft.",
+  "doing": "walking to the garage",
+  "thought": "Sun's up, Diesel's up, so I'm up.",
   "feeling": "content",
   "needs": {
-    "rest": 0.17,
-    "hunger": 0.585,
-    "social": 0.165,
-    "tinker": 0.495,
-    "curiosity": 0.555
+    "rest": 0.38,
+    "hunger": 0.175,
+    "social": 0.27,
+    "tinker": 0.64,
+    "curiosity": 0.43
   },
-  "mood": 0.39,
-  "energy": 0.83,
-  "coins": 78,
+  "mood": 0.43,
+  "energy": 0.62,
+  "coins": 76,
   "coins_goal": 500,
-  "bricks": 6,
+  "bricks": 15,
   "stock": {
     "postcard": 1
   },
@@ -97,7 +97,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 7,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -112,13 +112,17 @@
   },
   "queue": [
     {
-      "move": "feed_the_puppy",
-      "why": "Little guy's hungry."
+      "move": "fix_a_car",
+      "why": "Betsy is making a funny noise. My kind of problem."
+    },
+    {
+      "move": "fix_a_car",
+      "why": "Customer's waiting. Can't leave them stuck."
     }
   ],
   "lucky": {
     "date": "2026-11-30",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -201,21 +205,87 @@
       "k": "did",
       "x": "walking home",
       "why": "Home time."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Little guy's hungry."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Even the lamp posts look lost in this fog.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Quick trip to the brick pit."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "noticed",
+      "x": "Diesel chews a stray brick and looks very pleased with himself.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "collecting bricks (+3 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Hands are itching. Need something to fix.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Dog's gotta walk."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Sun's up, Diesel's up, so I'm up.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
     }
   ],
   "day_start": {
     "coins": 74,
     "bricks": 6,
-    "got": 0,
+    "got": 9,
     "used": 0
   },
-  "tick": 438,
+  "tick": 445,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T12:43:21.098366+00:00",
+  "updated": "2026-11-30T14:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 184,
-      "queue": 107,
+      "model": 188,
+      "queue": 110,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -224,8 +294,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 5,
-      "queue": 1,
+      "model": 9,
+      "queue": 4,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -240,12 +310,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.624,
-      "tired": 0.22,
-      "bored": 0.21
+      "hunger": 0.18,
+      "tired": 0.51,
+      "bored": 0.12
     },
     "bond": 1.0,
-    "food": 5,
+    "food": 4,
     "tricks": {
       "sit": 3
     },
@@ -253,16 +323,9 @@
       "sit"
     ],
     "doing": "sniffing everything",
-    "last_played_tick": 436,
-    "wants": "food",
+    "last_played_tick": 444,
+    "wants": "walk",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
@@ -275,11 +338,18 @@
       "So bored I'm counting my own paws. Four. Still four.",
       "Where did the world go?",
       "Fog. Can't see. Can smell. Sniffing harder.",
-      "{owner} says a word, I do a thing, treat appears. Magic."
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "{owner} is the best human in the whole town.",
+      "Good boy? Me? Yes. Me.",
+      "Everything smells amazing today.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "My tail won't stop. I'm not stopping it.",
+      "Life is good. Life is SO good.",
+      "Where did the world go?"
     ],
-    "thought": "Derek says a word, I do a thing, treat appears. Magic.",
+    "thought": "Where did the world go?",
     "want_ticks": 0,
-    "last_fed_tick": 386,
+    "last_fed_tick": 439,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -291,10 +361,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Never had a mate this loyal.",
-    "Can't see the end of the street. Spooky.",
-    "Best decision I ever made, keeping {pup}.",
-    "Foggy. Feels like a Port Alfred winter morning.",
     "Even my spanner looks tired.",
     "Should I name the street? {me} Street. Ja, why not.",
     "Stomach's making engine noises.",
@@ -315,9 +381,13 @@
     "Ja, no, definitely, maybe.",
     "Coffee first. Then the world.",
     "Funny what you learn. {topic}, who knew.",
-    "Slept like a log. Ready to graft."
+    "Slept like a log. Ready to graft.",
+    "Even the lamp posts look lost in this fog.",
+    "Even the lamp posts look lost in this fog.",
+    "Hands are itching. Need something to fix.",
+    "Sun's up, {pup}'s up, so I'm up."
   ],
-  "real_updated": "2026-11-27T02:30:12.910410+00:00",
+  "real_updated": "2026-11-27T02:45:12.633302+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@6",
@@ -330,7 +400,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 17,
+    "temp": 19,
     "snow": 0,
     "wet": 0
   }

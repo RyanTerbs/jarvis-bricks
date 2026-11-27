@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-11-30T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "Sun's up, Diesel's up, so I'm up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Dog's gotta walk.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Hands are itching. Need something to fix.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (6 bricks pop out!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "collecting bricks (+3 bricks)",
+    "why": "Got plans. Need materials.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "noticed",
+    "text": "Diesel chews a stray brick and looks very pleased with himself.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Quick trip to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Even the lamp posts look lost in this fog.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Little guy's hungry.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T12:43:21.098366+00:00",
     "time": "7:43 AM",
     "kind": "did",
@@ -1248,105 +1347,6 @@
     "text": "wrote in his diary: Finished building the Park",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Tapped the jar twice. Night.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "noticed",
-    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Elephant tourism)): Elephant trekking has been an attraction for tourists in Thailand for decades.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 7/9)",
-    "why": "Where was I? Ah, ja.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "thought",
-    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Still thinking about that bit on Tourism in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "The jar's getting heavier. Love that sound.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "feeding Diesel",
-    "why": "Little guy's hungry.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
