@@ -6,14 +6,14 @@
   "thought": "Every town needs a guy who fixes stuff. That's me.",
   "feeling": "content",
   "needs": {
-    "rest": 0.42,
-    "hunger": 0.335,
-    "social": 0.36,
-    "tinker": 0.635,
-    "curiosity": 0.4
+    "rest": 0,
+    "hunger": 0.415,
+    "social": 0.4,
+    "tinker": 0.675,
+    "curiosity": 0.44
   },
-  "mood": 0.35,
-  "energy": 0.58,
+  "mood": 0.27,
+  "energy": 1,
   "coins": 48,
   "coins_goal": 500,
   "bricks": 0,
@@ -137,7 +137,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 23,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -148,12 +148,12 @@
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "small",
-    "waves_date": "2026-12-03"
+    "waves_date": "2026-12-04"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-12-03",
-    "used": 2,
+    "date": "2026-12-04",
+    "used": 0,
     "max": 3
   },
   "designed_on": "2026-12-02",
@@ -165,25 +165,25 @@
     "got": 0,
     "used": 0
   },
-  "tick": 790,
+  "tick": 798,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T04:43:21.098366+00:00",
+  "updated": "2026-12-04T06:43:21.098366+00:00",
   "stats": {
     "all": {
       "model": 347,
       "queue": 205,
       "autopilot": 25,
-      "sleeping": 213,
+      "sleeping": 221,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-12-03",
-      "model": 43,
-      "queue": 23,
-      "autopilot": 3,
-      "sleeping": 26,
+      "date": "2026-12-04",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 7,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -196,8 +196,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.068,
-      "tired": 0.3,
+      "hunger": 0.1,
+      "tired": 0,
       "bored": 0.24
     },
     "bond": 1.0,
@@ -213,14 +213,6 @@
     "last_played_tick": 772,
     "wants": null,
     "recent_thoughts": [
-      "Must... stay... awake... for treats.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Grease smell. Best smell after sausages.",
@@ -232,9 +224,17 @@
       "Wet dog smell is the best smell.",
       "Everything smells amazing today.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 786,
     "recent_ideas": [
@@ -276,7 +276,7 @@
     "Ja, no, definitely, maybe.",
     "Every town needs a guy who fixes stuff. That's me."
   ],
-  "real_updated": "2026-11-27T14:15:10.597030+00:00",
+  "real_updated": "2026-11-27T14:30:14.294951+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -290,7 +290,7 @@
       "snow",
       "rain"
     ],
-    "temp": -2,
+    "temp": -3,
     "snow": 0.08,
     "wet": 1,
     "snowman": 1
