@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Hands are itching. Need something to fix.",
-  "feeling": "good, ja",
+  "place": "building_site",
+  "asleep": false,
+  "doing": "building",
+  "thought": "Note to self: buy more duct tape.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0,
-    "hunger": 0.81,
-    "social": 0.56,
-    "tinker": 0.705,
-    "curiosity": 0.61
+    "rest": 0.25,
+    "hunger": 0.495,
+    "social": 0.68,
+    "tinker": 0.505,
+    "curiosity": 0.49
   },
-  "mood": 0.13,
-  "energy": 1,
-  "coins": 80,
+  "mood": 0.32,
+  "energy": 0.75,
+  "coins": 78,
   "coins_goal": 500,
   "bricks": 2,
   "stock": {},
@@ -25,7 +25,7 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 3
+    "dog_training": 4
   },
   "finished": [
     "tourism_thailand"
@@ -95,22 +95,22 @@
       "date": "2026-11-30",
       "source": "Dog training (History)",
       "note": "Although research into how dogs learn and into cross-species communication has changed the approach to dog training in recent decades, understanding the role of"
+    },
+    {
+      "date": "2026-12-01",
+      "source": "Dog training (How dogs learn)",
+      "note": "Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [
-      {
-        "date": "2026-11-30",
-        "size": 1
-      }
-    ],
+    "castles": [],
     "best_castle": 1,
     "shells": 10,
     "sun_today": 0,
@@ -126,21 +126,118 @@
   },
   "designed_on": "2026-11-27",
   "plan_today": "Teach Diesel a new trick.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "❄️ Winter has arrived. Time to find the jersey.",
+      "why": null
+    },
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "🌨️ It's snowing! Big flakes falling on the brick town.",
+      "why": null
+    },
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "Overnight the tide came in and washed his sand castle away.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Every brick in the Noodle stall is one I collected myself. Feels good.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Me and Diesel against the world.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Quick trip to the building site."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "building (Noodle stall 3/4)",
+      "why": "Back to the Noodle stall. Nearly there."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Quiet day. Could do with a chat at the cafe.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 4/8)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "note",
+      "x": "noted (Dog training (How dogs learn)): Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Note to self: buy more duct tape.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "building (the snow slowed the work, Noodle stall still 3/4)",
+      "why": "One more course of bricks."
+    }
+  ],
   "day_start": {
     "coins": 80,
     "bricks": 2,
     "got": 0,
     "used": 0
   },
-  "tick": 527,
+  "tick": 535,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T10:58:21.098366+00:00",
+  "updated": "2026-12-01T12:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 220,
-      "queue": 132,
-      "autopilot": 17,
+      "model": 224,
+      "queue": 135,
+      "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -148,9 +245,9 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
+      "model": 4,
+      "queue": 3,
+      "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -162,11 +259,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.254,
-      "tired": 0,
-      "bored": 0.48
+      "hunger": 0.468,
+      "tired": 0.14,
+      "bored": 0.69
     },
     "bond": 1.0,
     "food": 2,
@@ -177,18 +274,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "sniffing everything",
     "last_played_tick": 477,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: a sausage as big as the garage.",
@@ -200,10 +289,18 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "The ground is a giant ice cream!",
+      "My tail won't stop. I'm not stopping it.",
+      "Good boy? Me? Yes. Me.",
+      "Tail check: still there. Good.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
-    "want_ticks": 4,
+    "thought": "Life is good. Life is SO good.",
+    "want_ticks": 0,
     "last_fed_tick": 496,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -218,10 +315,6 @@
     "idea": "make friends with the crab. Or eat it. Undecided."
   },
   "recent_thoughts": [
-    "Autumn. Days getting shorter.",
-    "If it's got moving parts, I can fix it. Mostly.",
-    "Weather like this, Thailand feels close.",
-    "Blue sky, no excuses.",
     "Every coin counts. Every single one.",
     "Not a cloud. {pup} is going to want the beach.",
     "Afternoon slump. Could do with a coffee.",
@@ -242,24 +335,27 @@
     "Body says rest. Stubborn brain says one more job.",
     "Want to learn something new today.",
     "So much I don't know. Love that, actually.",
-    "Hands are itching. Need something to fix."
+    "Hands are itching. Need something to fix.",
+    "Every brick in the {site} is one I collected myself. Feels good.",
+    "Me and {pup} against the world.",
+    "Quiet day. Could do with a chat at the cafe.",
+    "Note to self: buy more duct tape."
   ],
-  "real_updated": "2026-11-27T05:30:09.887312+00:00",
+  "real_updated": "2026-11-27T05:45:17.834572+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-30@13",
-    "kind": "sunny",
-    "season": "autumn",
-    "base": 19.9,
-    "emoji": "☀️",
-    "name": "sunny",
-    "season_emoji": "🍂",
+    "key": "2026-12-01@6",
+    "kind": "snow",
+    "season": "winter",
+    "base": -1.7,
+    "emoji": "🌨️",
+    "name": "snowing",
+    "season_emoji": "❄️",
     "seen": [
-      "fog",
-      "sunny"
+      "snow"
     ],
-    "temp": 17,
-    "snow": 0,
+    "temp": -3,
+    "snow": 0.64,
     "wet": 0
   }
 }

@@ -95,7 +95,7 @@
     "name": "Noodle stall",
     "lot": 6,
     "work": 4,
-    "done": 2,
+    "done": 3,
     "started": "2026-11-30",
     "look": {
       "kind": "shop",
