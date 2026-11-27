@@ -1,22 +1,22 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Every bolt on Little Thunder is seized. Every single one.",
-  "feeling": "good, ja",
+  "asleep": false,
+  "doing": "cooking a proper meal",
+  "thought": "Thai street food. That's the dream right there.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0,
-    "hunger": 0.52,
-    "social": 0.82,
-    "tinker": 0.655,
-    "curiosity": 0.275
+    "rest": 0.2,
+    "hunger": 0.08,
+    "social": 0.53,
+    "tinker": 0.625,
+    "curiosity": 0.435
   },
-  "mood": 0.14,
-  "energy": 1,
-  "coins": 18,
+  "mood": 0.34,
+  "energy": 0.8,
+  "coins": 16,
   "coins_goal": 500,
-  "bricks": 22,
+  "bricks": 42,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -174,32 +174,99 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "☀️ Sun's out over the island.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Slept like a log. Ready to graft.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Heading to the cafe."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "Sometimes I just stand here and listen to the town.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Heading to the building site."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 42 in the pile now.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "building (Library 1/6)",
+      "why": "Back to the Library. Nearly there."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Thai street food. That's the dream right there.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    }
+  ],
   "day_start": {
     "coins": 18,
     "bricks": 22,
-    "got": 0,
+    "got": 20,
     "used": 0
   },
-  "tick": 910,
+  "tick": 918,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T10:43:21.098366+00:00",
+  "updated": "2026-12-05T12:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 392,
-      "queue": 227,
-      "autopilot": 28,
-      "sleeping": 263,
+      "model": 395,
+      "queue": 230,
+      "autopilot": 29,
+      "sleeping": 264,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-05",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 23,
+      "model": 3,
+      "queue": 3,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -210,11 +277,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.582,
-      "tired": 0,
-      "bored": 0.09
+      "hunger": 0.77,
+      "tired": 0.12,
+      "bored": 0.27
     },
     "bond": 1.0,
     "food": 4,
@@ -225,18 +292,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "hungry, staring at Derek",
     "last_played_tick": 874,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -248,9 +307,17 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "The ground is a giant ice cream!",
+      "Sun on my belly. Perfect.",
+      "My bowl is empty. This is an emergency.",
+      "{owner} is making clanky noises. I will supervise.",
+      "{owner} is the best human in the whole town.",
+      "Everything smells amazing today."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Everything smells amazing today.",
     "want_ticks": 0,
     "last_fed_tick": 862,
     "recent_ideas": [
@@ -266,9 +333,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "Measure twice, lay bricks once.",
-    "Got stock to sell. Stall's calling.",
-    "If I finish this, I'm getting a snack. Deal.",
     "{pup} has never seen snow. He's losing his mind.",
     "{bricks} bricks in the pile. Could build something lekker with that.",
     "Picture it: a winding road, a good engine, no rush.",
@@ -290,30 +354,33 @@
     "Slow and steady fills the jar.",
     "Snowman time. Non-negotiable.",
     "Brick town under snow looks like a Christmas card.",
-    "Every bolt on {bike} is seized. Every single one."
+    "Every bolt on {bike} is seized. Every single one.",
+    "Slept like a log. Ready to graft.",
+    "Sometimes I just stand here and listen to the town.",
+    "Thai street food. That's the dream right there."
   ],
-  "real_updated": "2026-11-27T18:15:12.049233+00:00",
+  "real_updated": "2026-11-27T18:30:17.344029+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-04@13",
-    "kind": "snow",
+    "key": "2026-12-05@6",
+    "kind": "sunny",
     "season": "winter",
-    "base": -2.5,
-    "emoji": "🌨️",
-    "name": "snowing",
+    "base": 9.4,
+    "emoji": "☀️",
+    "name": "sunny",
     "season_emoji": "❄️",
     "seen": [
-      "snow"
+      "sunny"
     ],
-    "temp": -5,
-    "snow": 1,
+    "temp": 8,
+    "snow": 0.72,
     "wet": 0,
     "snowman": 3
   },
   "book_boxes": [
     1
   ],
-  "truck_date": "2026-12-04",
+  "truck_date": "2026-12-05",
   "box_date": null,
   "project": {
     "kind": "barn_find",
