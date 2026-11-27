@@ -7,12 +7,12 @@
   "feeling": "sharp-sharp",
   "needs": {
     "rest": 0,
-    "hunger": 0.565,
-    "social": 0.745,
-    "tinker": 0.54,
-    "curiosity": 0.57
+    "hunger": 0.635,
+    "social": 0.78,
+    "tinker": 0.575,
+    "curiosity": 0.605
   },
-  "mood": 0.26,
+  "mood": 0.21,
   "energy": 1,
   "coins": 26,
   "coins_goal": 500,
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 2,
+  "hour": 4,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -191,15 +191,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 993,
+  "tick": 1000,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T07:28:21.098366+00:00",
+  "updated": "2026-12-06T09:13:21.098366+00:00",
   "stats": {
     "all": {
       "model": 432,
       "queue": 251,
       "autopilot": 34,
-      "sleeping": 276,
+      "sleeping": 283,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -209,7 +209,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 10,
+      "sleeping": 17,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -222,7 +222,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.166,
+      "hunger": 0.194,
       "tired": 0,
       "bored": 0.42
     },
@@ -239,13 +239,6 @@
     "last_played_tick": 972,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
@@ -258,9 +251,16 @@
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 971,
     "recent_ideas": [
@@ -302,7 +302,7 @@
     "{pup} follows me everywhere. Proper little shadow.",
     "Winter on the island. Who knew?"
   ],
-  "real_updated": "2026-11-27T21:00:12.494449+00:00",
+  "real_updated": "2026-11-27T21:15:11.915449+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
