@@ -6,14 +6,14 @@
   "thought": "Hands are itching. Need something to fix.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.47,
-    "hunger": 0.59,
-    "social": 0.45,
-    "tinker": 0.595,
-    "curiosity": 0.5
+    "rest": 0,
+    "hunger": 0.67,
+    "social": 0.49,
+    "tinker": 0.635,
+    "curiosity": 0.54
   },
-  "mood": 0.35,
-  "energy": 0.53,
+  "mood": 0.31,
+  "energy": 1,
   "coins": 80,
   "coins_goal": 500,
   "bricks": 2,
@@ -100,7 +100,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 0,
+  "hour": 2,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -133,15 +133,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 505,
+  "tick": 513,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T05:28:21.098366+00:00",
+  "updated": "2026-12-01T07:28:21.098366+00:00",
   "stats": {
     "all": {
       "model": 220,
       "queue": 132,
       "autopilot": 17,
-      "sleeping": 136,
+      "sleeping": 144,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -151,7 +151,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 2,
+      "sleeping": 10,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -164,8 +164,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.166,
-      "tired": 0.26,
+      "hunger": 0.198,
+      "tired": 0,
       "bored": 0.48
     },
     "bond": 1.0,
@@ -181,14 +181,6 @@
     "last_played_tick": 477,
     "wants": null,
     "recent_thoughts": [
-      "Good boy? Me? Yes. Me.",
-      "Sun on my belly. Perfect.",
-      "Warm spot on the floor. Mine now.",
-      "I am a very good boy. Probably.",
-      "Following {owner}. Best job in the world.",
-      "My tail won't stop. I'm not stopping it.",
-      "Night noises. Probably nothing. Probably.",
-      "Warm spot on the floor. Mine now.",
       "Sit means treat. I have cracked the code.",
       "Sun on my belly. Perfect.",
       "Who left this brick here? I'll carry it somewhere else.",
@@ -200,9 +192,17 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 4,
     "last_fed_tick": 496,
     "recent_ideas": [
@@ -244,7 +244,7 @@
     "So much I don't know. Love that, actually.",
     "Hands are itching. Need something to fix."
   ],
-  "real_updated": "2026-11-27T04:45:10.381089+00:00",
+  "real_updated": "2026-11-27T05:00:14.499312+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@13",
@@ -258,7 +258,7 @@
       "fog",
       "sunny"
     ],
-    "temp": 17,
+    "temp": 16,
     "snow": 0,
     "wet": 0
   }
