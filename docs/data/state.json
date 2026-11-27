@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the cafe",
-  "thought": "Don't spend it. Don't spend it. Don't spend it.",
-  "feeling": "happy enough",
+  "doing": "designing a brand-new building",
+  "thought": "Reading about Dog training makes me want to try it.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.445,
-    "social": 0.64,
-    "tinker": 0.37,
-    "curiosity": 0.5
+    "rest": 0.61,
+    "hunger": 0.035,
+    "social": 0.36,
+    "tinker": 0.55,
+    "curiosity": 0
   },
-  "mood": 0.37,
-  "energy": 0.36,
-  "coins": 43,
+  "mood": 0.5,
+  "energy": 0.39,
+  "coins": 41,
   "coins_goal": 500,
   "bricks": 4,
   "stock": {
@@ -29,10 +29,11 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 7
+    "dog_training": 8
   },
   "finished": [
-    "tourism_thailand"
+    "tourism_thailand",
+    "dog_training"
   ],
   "notebook": [
     {
@@ -119,12 +120,17 @@
       "date": "2026-12-02",
       "source": "Dog training (Individualized or class training)",
       "note": "Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref"
+    },
+    {
+      "date": "2026-12-02",
+      "source": "Dog training (Specialized training)",
+      "note": "Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -137,18 +143,13 @@
     "waves": "flat",
     "waves_date": "2026-12-02"
   },
-  "queue": [
-    {
-      "move": "chat_with_locals",
-      "why": "Need some gossip."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-02",
     "used": 2,
     "max": 3
   },
-  "designed_on": "2026-11-27",
+  "designed_on": "2026-12-02",
   "plan_today": "Beach in the morning, graft in the afternoon.",
   "today_log": [
     {
@@ -576,6 +577,108 @@
       "k": "did",
       "x": "walking to the cafe",
       "why": "Cafe next."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "Never had a mate this loyal.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Fresh air for both of us."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "learned",
+      "x": "finished reading 'Dog training': puppy training works more often",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "reading a book (Dog training, last chapter)",
+      "why": "Books are a cheap mechanics' school."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "note",
+      "x": "noted (Dog training (Specialized training)): Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Proud of Diesel. Little guy's growing up.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Could go a proper pie right now.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "thought",
+      "x": "Reading about Dog training makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "designed",
+      "x": "designed a new building: 🏍️ Chopper Shop, a tiny custom bike shop with chrome everywhere",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "designing a brand-new building",
+      "why": "Town needs something new. Something mine."
     }
   ],
   "day_start": {
@@ -584,13 +687,13 @@
     "got": 13,
     "used": 30
   },
-  "tick": 663,
+  "tick": 671,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T20:58:21.098366+00:00",
+  "updated": "2026-12-02T22:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 287,
-      "queue": 171,
+      "model": 293,
+      "queue": 173,
       "autopilot": 21,
       "sleeping": 184,
       "tokens_in": 0,
@@ -599,8 +702,8 @@
     },
     "today": {
       "date": "2026-12-02",
-      "model": 24,
-      "queue": 15,
+      "model": 30,
+      "queue": 17,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -615,8 +718,8 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.272,
-      "tired": 0.38,
+      "hunger": 0.512,
+      "tired": 0.69,
       "bored": 0.15
     },
     "bond": 1.0,
@@ -629,17 +732,9 @@
       "sit"
     ],
     "doing": "sniffing everything",
-    "last_played_tick": 650,
-    "wants": "walk",
+    "last_played_tick": 666,
+    "wants": null,
     "recent_thoughts": [
-      "Where did the world go?",
-      "My tail won't stop. I'm not stopping it.",
-      "Following {owner}. Best job in the world.",
-      "Life is good. Life is SO good.",
-      "I know tricks now. I am a very clever boy.",
-      "My tail won't stop. I'm not stopping it.",
-      "{owner} is the best human in the whole town.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -651,10 +746,18 @@
       "Where did the world go?",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder."
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Where did the world go?",
+      "Where did the world go?",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Following {owner}. Best job in the world.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Everything smells amazing today."
     ],
-    "thought": "Fog. Can't see. Can smell. Sniffing harder.",
-    "want_ticks": 4,
+    "thought": "Everything smells amazing today.",
+    "want_ticks": 7,
     "last_fed_tick": 647,
     "recent_ideas": [
       "learn the next trick and get ALL the treats.",
@@ -669,12 +772,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "Grey old day. Good for graft, bad for a tan.",
-    "Little guy needs his dad. Coming, boet.",
-    "The jar's getting heavier. Love that sound.",
-    "Miss the cafe gossip.",
-    "Winter on the island. Who knew?",
-    "Picture it: a winding road, a good engine, no rush.",
     "Coffee first. Then the world.",
     "Thailand. Noodles, mountains, warm sea. Soon.",
     "Even the lamp posts look lost in this fog.",
@@ -693,9 +790,15 @@
     "If I finish this, I'm getting a snack. Deal.",
     "Still thinking about that bit on {topic}.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Don't spend it. Don't spend it. Don't spend it."
+    "Don't spend it. Don't spend it. Don't spend it.",
+    "Winter. Cold mornings, slow engines.",
+    "Never had a mate this loyal.",
+    "Batteries low. Need a recharge.",
+    "Proud of {pup}. Little guy's growing up.",
+    "Could go a proper pie right now.",
+    "Reading about {topic} makes me want to try it."
   ],
-  "real_updated": "2026-11-27T10:00:14.099896+00:00",
+  "real_updated": "2026-11-27T10:15:17.463540+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",

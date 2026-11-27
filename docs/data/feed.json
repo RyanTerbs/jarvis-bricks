@@ -1,5 +1,158 @@
 [
   {
+    "at": "2026-12-02T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "designing a brand-new building",
+    "why": "Town needs something new. Something mine.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "designed",
+    "text": "designed a new building: 🏍️ Chopper Shop, a tiny custom bike shop with chrome everywhere",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "thought",
+    "text": "Reading about Dog training makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Could go a proper pie right now.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Proud of Diesel. Little guy's growing up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "note",
+    "text": "noted (Dog training (Specialized training)): Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "reading a book (Dog training, last chapter)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "learned",
+    "text": "finished reading 'Dog training': puppy training works more often",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Batteries low. Need a recharge.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Never had a mate this loyal.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Winter. Cold mornings, slow engines.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-02T20:58:21.098366+00:00",
     "time": "3:58 PM",
     "kind": "did",
@@ -1193,159 +1346,6 @@
     "kind": "did",
     "text": "having a rest",
     "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "thought",
-    "text": "Afternoon slump. Could do with a coffee.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Hands need grease. Simple.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "Running on half a battery.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Brain's in first gear today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (6 bricks pop out!)",
-    "why": "One bonk for luck.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "collecting bricks (+3 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Brick pit next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "Snowman time. Non-negotiable.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "noticed",
-    "text": "☁️ A grey lid of cloud rolls in.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Toast. Noodles. Anything.",
-    "why": null,
     "by": "model",
     "ok": true
   }

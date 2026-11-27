@@ -177,6 +177,24 @@
       "designed": "2026-11-27",
       "helps": "tinker",
       "activity": "Fixing a tuk-tuk"
+    },
+    "chopper_shop": {
+      "name": "Chopper Shop",
+      "bricks": 30,
+      "coins": 0,
+      "work": 5,
+      "place": "chopper_shop",
+      "desc": "a tiny custom bike shop with chrome everywhere",
+      "look": {
+        "kind": "shop",
+        "color": "#34495e",
+        "emoji": "🏍️",
+        "floors": 1
+      },
+      "custom": true,
+      "designed": "2026-12-02",
+      "helps": "tinker",
+      "activity": "Polishing chrome"
     }
   },
   "custom_moves": {
@@ -204,6 +222,16 @@
       "label": "fixing a tuk-tuk",
       "at": [
         "tuk_tuk_garage"
+      ],
+      "needs": {
+        "tinker": -0.35
+      },
+      "mood": 0.06
+    },
+    "use_chopper_shop": {
+      "label": "polishing chrome",
+      "at": [
+        "chopper_shop"
       ],
       "needs": {
         "tinker": -0.35
@@ -251,6 +279,10 @@
     {
       "date": "2026-12-02",
       "text": "Finished building the Tuk-tuk Garage."
+    },
+    {
+      "date": "2026-12-02",
+      "text": "Designed his own building: 🏍️ Chopper Shop (a tiny custom bike shop with chrome everywhere)."
     }
   ]
 }
