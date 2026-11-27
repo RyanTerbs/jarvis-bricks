@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "building_site",
   "asleep": false,
-  "doing": "taking Diesel for a walk",
-  "thought": "Shame, the cafe guy looked tired today.",
-  "feeling": "content",
+  "doing": "walking to the building site",
+  "thought": "Don't spend it. Don't spend it. Don't spend it.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.46,
-    "hunger": 0.355,
-    "social": 0.635,
-    "tinker": 0.62,
-    "curiosity": 0.31
+    "rest": 0.6,
+    "hunger": 0.665,
+    "social": 0.205,
+    "tinker": 0.7,
+    "curiosity": 0.51
   },
-  "mood": 0.47,
-  "energy": 0.54,
+  "mood": 0.39,
+  "energy": 0.4,
   "coins": 18,
   "coins_goal": 500,
   "bricks": 48,
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 9,
+  "hour": 11,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -166,7 +166,12 @@
     "waves": "good",
     "waves_date": "2026-12-05"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "work_on_site",
+      "why": "Building is just fixing, but bigger."
+    }
+  ],
   "lucky": {
     "date": "2026-12-05",
     "used": 1,
@@ -306,6 +311,78 @@
       "k": "did",
       "x": "taking Diesel for a walk (Diesel's tail goes mad)",
       "why": "Fresh air for both of us."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "Not a cloud. Diesel is going to want the beach.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Quick trip to the building site."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "building (Library 3/6)",
+      "why": "Let's get this Library up."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Found a 1980s coin in Little Thunder's toolbox. Lucky.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "First job: find my 10mm socket. Again.",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "11:13 AM",
+      "k": "thought",
+      "x": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+      "why": null
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Heading to the building site."
     }
   ],
   "day_start": {
@@ -314,13 +391,13 @@
     "got": 26,
     "used": 0
   },
-  "tick": 925,
+  "tick": 933,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T14:28:21.098366+00:00",
+  "updated": "2026-12-05T16:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 398,
-      "queue": 233,
+      "model": 403,
+      "queue": 236,
       "autopilot": 30,
       "sleeping": 264,
       "tokens_in": 0,
@@ -329,8 +406,8 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 6,
-      "queue": 6,
+      "model": 11,
+      "queue": 9,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -345,9 +422,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.28,
-      "tired": 0.41,
-      "bored": 0.18
+      "hunger": 0.52,
+      "tired": 0.67,
+      "bored": 0.09
     },
     "bond": 1.0,
     "food": 3,
@@ -358,18 +435,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
-    "last_played_tick": 925,
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 930,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "The ground is a giant ice cream!",
       "Sun on my belly. Perfect.",
       "My bowl is empty. This is an emergency.",
       "{owner} is making clanky noises. I will supervise.",
@@ -381,9 +450,17 @@
       "Who left this brick here? I'll carry it somewhere else.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "The ground is a giant ice cream!",
-      "The ground is a giant ice cream!"
+      "The ground is a giant ice cream!",
+      "The ground is a giant ice cream!",
+      "Good boy? Me? Yes. Me.",
+      "My tail won't stop. I'm not stopping it.",
+      "Warm spot on the floor. Mine now.",
+      "Tail check: still there. Good.",
+      "Sun on my belly. Perfect.",
+      "Warm spot on the floor. Mine now.",
+      "I know tricks now. I am a very clever boy."
     ],
-    "thought": "Best. Human. Ever.",
+    "thought": "I know tricks now. I am a very clever boy.",
     "want_ticks": 4,
     "last_fed_tick": 919,
     "recent_ideas": [
@@ -399,11 +476,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "Me and {pup} against the world.",
-    "Who parks a bike in a barn for thirty years? Thank you, whoever.",
-    "{temp} degrees. My fingers have stopped working.",
-    "Even my spanner looks tired.",
-    "Ja, no, definitely, maybe.",
     "Running on coffee and hope.",
     "Cold enough to freeze the carb on a scooter.",
     "Batteries low. Need a recharge.",
@@ -423,9 +495,14 @@
     "Thai street food. That's the dream right there.",
     "{pup} keeps nudging his bowl. Message received.",
     "Penetrating oil and patience. That's the whole secret.",
-    "Shame, the cafe guy looked tired today."
+    "Shame, the cafe guy looked tired today.",
+    "Not a cloud. {pup} is going to want the beach.",
+    "Found a 1980s coin in {bike}'s toolbox. Lucky.",
+    "First job: find my 10mm socket. Again.",
+    "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "Don't spend it. Don't spend it. Don't spend it."
   ],
-  "real_updated": "2026-11-27T18:45:11.793066+00:00",
+  "real_updated": "2026-11-27T19:00:12.145616+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@6",
@@ -438,8 +515,8 @@
     "seen": [
       "sunny"
     ],
-    "temp": 10,
-    "snow": 0.44,
+    "temp": 12,
+    "snow": 0.12,
     "wet": 0,
     "snowman": 3
   },

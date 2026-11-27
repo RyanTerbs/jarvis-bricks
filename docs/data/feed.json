@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-05T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Don't spend it. Don't spend it. Don't spend it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at the cafe",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-05T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "First job: find my 10mm socket. Again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Off to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Found a 1980s coin in Little Thunder's toolbox. Lucky.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "building (Library 3/6)",
+    "why": "Let's get this Library up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Quick trip to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "Not a cloud. Diesel is going to want the beach.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T14:28:21.098366+00:00",
     "time": "9:28 AM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "restoring Little Thunder: strip + clean (strip + clean 1/6)",
     "why": "Two hours on Little Thunder. Best part of the day.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Sun's up, Diesel's up, so I'm up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "note",
-    "text": "noted (Bangkok (History)): The history of Bangkok dates at least back to the early 15th century, to when it was a village on the west bank of the Chao Phraya River, under the rule of Ayut",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 2/10)",
-    "why": "Learning something today.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Penetrating oil and patience. That's the whole secret.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "noticed",
-    "text": "Someone left a box of spare bricks at the pit. +8 bricks.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "thought",
-    "text": "Wonder if the bikes in Thailand need fixing. Bet they do.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "building (the snow slowed the work, Rooftop Garden still 2/5)",
-    "why": "Let's get this Rooftop Garden up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Brick town under snow looks like a Christmas card.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "bike",
-    "text": "named the barn-find bike Little Thunder.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
