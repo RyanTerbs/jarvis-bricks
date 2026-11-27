@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "beach",
+  "place": "garage",
   "asleep": false,
-  "doing": "collecting shells",
-  "thought": "Never had a mate this loyal.",
+  "doing": "restoring Little Thunder: strip + clean",
+  "thought": "Winter. Cold mornings, slow engines.",
   "feeling": "chilled",
   "needs": {
-    "rest": 0.65,
-    "hunger": 0.405,
-    "social": 0.315,
-    "tinker": 0.43,
-    "curiosity": 0.32
+    "rest": 0.69,
+    "hunger": 0.09,
+    "social": 0.44,
+    "tinker": 0.275,
+    "curiosity": 0.395
   },
-  "mood": 0.44,
-  "energy": 0.35,
-  "coins": 30,
+  "mood": 0.48,
+  "energy": 0.31,
+  "coins": 28,
   "coins_goal": 500,
   "bricks": 102,
   "stock": {
@@ -174,7 +174,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -187,12 +187,7 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [
-    {
-      "move": "go_for_a_swim",
-      "why": "Quick dip to cool off."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-06",
     "used": 1,
@@ -500,6 +495,66 @@
       "k": "did",
       "x": "collecting shells (+3 shells (20 in the jar))",
       "why": "Shells for the jar on the shelf."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "going for a swim",
+      "why": "Quick dip to cool off."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Nothing like the sea to clear the head.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean 4/6)",
+      "why": "She's ugly now. She won't be for long."
     }
   ],
   "day_start": {
@@ -508,14 +563,14 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1037,
+  "tick": 1044,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T18:28:21.098366+00:00",
+  "updated": "2026-12-06T20:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 447,
-      "queue": 264,
-      "autopilot": 36,
+      "model": 450,
+      "queue": 267,
+      "autopilot": 37,
       "sleeping": 290,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -523,9 +578,9 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 15,
-      "queue": 13,
-      "autopilot": 2,
+      "model": 18,
+      "queue": 16,
+      "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -537,11 +592,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.45,
-      "tired": 0.83,
-      "bored": 0.49
+      "hunger": 0.582,
+      "tired": 0.67,
+      "bored": 0.61
     },
     "bond": 1.0,
     "food": 0,
@@ -552,17 +607,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "barking at the waves",
+    "doing": "napping",
     "last_played_tick": 1029,
-    "wants": "nap",
+    "wants": null,
     "recent_thoughts": [
-      "Who left this brick here? I'll carry it somewhere else.",
-      "{owner} is the best human in the whole town.",
-      "Warm spot on the floor. Mine now.",
-      "Tummy rumble. Big one.",
-      "Sit means treat. I have cracked the code.",
-      "Following {owner}. Best job in the world.",
-      "Warm spot on the floor. Mine now.",
       "Grease on my nose. Worth it.",
       "Is that a squirrel? It's a bolt. Still exciting.",
       "Warm spot on the floor. Mine now.",
@@ -575,9 +623,16 @@
       "Nap spot: located. Engaging.",
       "I am a very good boy. Probably.",
       "Tail check: still there. Good.",
-      "Learning is hard. Treats make it easier."
+      "Learning is hard. Treats make it easier.",
+      "Sun on my belly. Perfect.",
+      "Yawn. Big yawn. Biggest yawn.",
+      "The ! block knows something. I will watch it.",
+      "Warm spot on the floor. Mine now.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Learning is hard. Treats make it easier.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 1022,
     "recent_ideas": [
@@ -593,9 +648,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Proper shorts weather.",
-    "Proper shorts weather.",
-    "Batteries low. Need a recharge.",
     "Every bolt on {bike} is seized. Every single one.",
     "Long day. Good day though.",
     "Not a cloud. {pup} is going to want the beach.",
@@ -617,9 +669,12 @@
     "Blue sky, no excuses.",
     "Best decision I ever made, keeping {pup}.",
     "Found a 1980s coin in {bike}'s toolbox. Lucky.",
-    "Never had a mate this loyal."
+    "Never had a mate this loyal.",
+    "Who parks a bike in a barn for thirty years? Thank you, whoever.",
+    "Nothing like the sea to clear the head.",
+    "Winter. Cold mornings, slow engines."
   ],
-  "real_updated": "2026-11-27T22:30:11.426318+00:00",
+  "real_updated": "2026-11-27T22:45:10.596584+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
@@ -647,17 +702,17 @@
     "name": "Little Thunder",
     "found": "2026-12-04",
     "stage": 0,
-    "done": 3,
+    "done": 4,
     "parts": "in",
     "parts_due": null,
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 0,
-    "sessions": 3,
+    "sessions": 4,
     "tries": 0,
     "today_date": "2026-12-06",
-    "today": 1,
+    "today": 2,
     "finished": null,
     "rides": 0
   },
@@ -680,7 +735,7 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
+      "hold": "done enough on it for today",
       "stage": 0,
       "stage_id": "strip",
       "parts": "in",
@@ -690,7 +745,7 @@
           "id": "strip",
           "name": "strip + clean",
           "need": 6,
-          "done": 3,
+          "done": 4,
           "coins": 0
         },
         {
