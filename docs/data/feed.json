@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-04T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Hot chocolate. Doctor's orders.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "Got stock to sell. Stall's calling.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "refused",
+    "text": "tried training Diesel: Diesel is napping",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-04T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "training Diesel (give paw: 3/4)",
+    "why": "Treat in the pocket, let's go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Measure twice, lay bricks once.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: bark at the bike until it goes vroom.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Who names a bolt? Me. This one's Gerald.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "SNOW. On a tropical island. Who ordered this?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at home",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-04T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "thought",
+    "text": "Town's buzzing this arvo.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T17:58:21.098366+00:00",
     "time": "12:58 PM",
     "kind": "did",
@@ -1229,123 +1346,6 @@
     "kind": "did",
     "text": "running his market stall (pricey prices, no buyers this time (quiet in this snow))",
     "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Market stall next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "thought",
-    "text": "Winter on the island. Who knew?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Freezing. Mug time.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "thought",
-    "text": "Smells like oil and toast. Perfect morning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "noticed",
-    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "collecting shells (+3 shells (14 in the jar))",
-    "why": "Pretty ones today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Quick trip to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "thought",
-    "text": "Still thinking about that bit on Dog training.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Hands need grease. Simple.",
     "by": "queue",
     "ok": true
   }

@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Snowman time. Non-negotiable.",
+  "doing": "making a hot chocolate",
+  "thought": "Got stock to sell. Stall's calling.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.57,
-    "social": 0.355,
-    "tinker": 0.175,
-    "curiosity": 0.455
+    "rest": 0.58,
+    "hunger": 0,
+    "social": 0.32,
+    "tinker": 0.32,
+    "curiosity": 0.53
   },
-  "mood": 0.41,
-  "energy": 0.43,
-  "coins": 16,
+  "mood": 0.51,
+  "energy": 0.42,
+  "coins": 13,
   "coins_goal": 500,
   "bricks": 28,
   "stock": {
@@ -148,7 +148,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 12,
+  "hour": 14,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -499,6 +499,72 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Town's buzzing this arvo.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "SNOW. On a tropical island. Who ordered this?",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Who names a bolt? Me. This one's Gerald.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: bark at the bike until it goes vroom.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Measure twice, lay bricks once.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "training Diesel (give paw: 3/4)",
+      "why": "Treat in the pocket, let's go."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Got stock to sell. Stall's calling.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Hot chocolate. Doctor's orders."
     }
   ],
   "day_start": {
@@ -507,13 +573,13 @@
     "got": 28,
     "used": 0
   },
-  "tick": 843,
+  "tick": 850,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T17:58:21.098366+00:00",
+  "updated": "2026-12-04T19:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 364,
-      "queue": 215,
+      "model": 369,
+      "queue": 217,
       "autopilot": 26,
       "sleeping": 238,
       "tokens_in": 0,
@@ -522,8 +588,8 @@
     },
     "today": {
       "date": "2026-12-04",
-      "model": 17,
-      "queue": 10,
+      "model": 22,
+      "queue": 12,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -536,32 +602,25 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.282,
-      "tired": 0.64,
-      "bored": 0.55
+      "hunger": 0.44,
+      "tired": 0.78,
+      "bored": 0.25
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 5,
     "tricks": {
       "sit": 3,
-      "paw": 2
+      "paw": 3
     },
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 835,
-    "wants": "play",
+    "doing": "napping",
+    "last_played_tick": 848,
+    "wants": null,
     "recent_thoughts": [
-      "The ground is a giant ice cream!",
-      "My tail won't stop. I'm not stopping it.",
-      "The rusty thing has wheels. Wheels go places. Places have smells.",
-      "Life is good. Life is SO good.",
-      "The bike smells of old barn. And mice. MICE?",
-      "I could chew a boot. Just a little bit.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "Sit means treat. I have cracked the code.",
       "The ground is a giant ice cream!",
       "Tummy rumble. Big one.",
@@ -574,29 +633,31 @@
       "I am a very good boy. Probably.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Why are my paws cold? Doesn't matter. SNOW!",
-      "{owner} is the best human in the whole town."
+      "{owner} is the best human in the whole town.",
+      "Sniffed a lamp post. Interesting news.",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Following {owner}. Best job in the world.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "The ground is a giant ice cream!",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Derek is the best human in the whole town.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 834,
     "recent_ideas": [
-      "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
       "make friends with the crab. Or eat it. Undecided.",
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
-      "be the greeter at the market stall. Customers love me."
+      "be the greeter at the market stall. Customers love me.",
+      "bark at the bike until it goes vroom."
     ],
-    "idea": "be the greeter at the market stall. Customers love me."
+    "idea": "bark at the bike until it goes vroom."
   },
   "recent_thoughts": [
-    "Haven't had grease on my hands in hours. Feels wrong.",
-    "Could sleep standing up like a horse.",
-    "Need a nap. A proper one.",
-    "Running on half a battery.",
-    "Slow and steady fills the jar.",
     "Thailand rains like this in the wet season. Practice.",
     "Ja, no, definitely, maybe.",
     "Every town needs a guy who fixes stuff. That's me.",
@@ -616,22 +677,27 @@
     "That {topic} chapter got me thinking.",
     "Every coin counts. Every single one.",
     "Life's simple. Fix things, save coins, look after the dog.",
-    "Snowman time. Non-negotiable."
+    "Snowman time. Non-negotiable.",
+    "Town's buzzing this arvo.",
+    "SNOW. On a tropical island. Who ordered this?",
+    "Who names a bolt? Me. This one's Gerald.",
+    "Measure twice, lay bricks once.",
+    "Got stock to sell. Stall's calling."
   ],
-  "real_updated": "2026-11-27T16:00:14.879425+00:00",
+  "real_updated": "2026-11-27T16:15:11.295224+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-04@6",
+    "key": "2026-12-04@13",
     "kind": "snow",
     "season": "winter",
-    "base": -2.6,
+    "base": -2.5,
     "emoji": "🌨️",
     "name": "snowing",
     "season_emoji": "❄️",
     "seen": [
       "snow"
     ],
-    "temp": 0,
+    "temp": 1,
     "snow": 1,
     "wet": 0,
     "snowman": 1
