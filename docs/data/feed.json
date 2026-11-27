@@ -1,5 +1,50 @@
 [
   {
+    "at": "2026-12-02T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "ordering a bag of dog food (6 meals in the cupboard)",
+    "why": "Can't run out of food for Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Little guy needs his dad. Coming, boet.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "Overnight the tide came in and washed his sand castle away.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "🌫️ A thick sea fog rolls in over the town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-02T06:28:21.098366+00:00",
     "time": "1:28 AM",
     "kind": "noticed",
@@ -1302,51 +1347,6 @@
     "text": "Diesel has an idea: make friends with the crab. Or eat it. Undecided.",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "noticed",
-    "text": "A kid stops to pat Diesel.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Body says rest. Stubborn brain says one more job.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "building (Noodle stall 1/4)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Building site next.",
-    "by": "model",
     "ok": true
   }
 ]

@@ -1,20 +1,20 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Grey old day. Good for graft, bad for a tan.",
-  "feeling": "content",
+  "asleep": false,
+  "doing": "ordering a bag of dog food",
+  "thought": "Little guy needs his dad. Coming, boet.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0,
-    "hunger": 0.51,
-    "social": 0.585,
-    "tinker": 0.175,
-    "curiosity": 0.495
+    "rest": 0.02,
+    "hunger": 0.605,
+    "social": 0.64,
+    "tinker": 0.24,
+    "curiosity": 0.55
   },
-  "mood": 0.36,
-  "energy": 1,
-  "coins": 49,
+  "mood": 0.35,
+  "energy": 0.98,
+  "coins": 46,
   "coins_goal": 500,
   "bricks": 21,
   "stock": {
@@ -119,25 +119,25 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 4,
+  "hour": 6,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [
-      {
-        "date": "2026-12-01",
-        "size": 1
-      }
-    ],
+    "castles": [],
     "best_castle": 1,
     "shells": 10,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "small",
+    "waves": "flat",
     "waves_date": "2026-12-02"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "feed_the_puppy",
+      "why": "Little guy's hungry."
+    }
+  ],
   "lucky": {
     "date": "2026-12-02",
     "used": 0,
@@ -151,6 +151,30 @@
       "k": "noticed",
       "x": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
       "why": null
+    },
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "🌫️ A thick sea fog rolls in over the town.",
+      "why": null
+    },
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "Overnight the tide came in and washed his sand castle away.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Little guy needs his dad. Coming, boet.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "ordering a bag of dog food (6 meals in the cupboard)",
+      "why": "Can't run out of food for Diesel."
     }
   ],
   "day_start": {
@@ -159,25 +183,25 @@
     "got": 0,
     "used": 0
   },
-  "tick": 618,
+  "tick": 625,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T09:43:21.098366+00:00",
+  "updated": "2026-12-02T11:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 263,
+      "model": 264,
       "queue": 156,
-      "autopilot": 20,
-      "sleeping": 179,
+      "autopilot": 21,
+      "sleeping": 184,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-02",
-      "model": 0,
+      "model": 1,
       "queue": 0,
-      "autopilot": 0,
-      "sleeping": 19,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -188,14 +212,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.6,
-      "tired": 0,
-      "bored": 0.28
+      "hunger": 0.654,
+      "tired": 0.02,
+      "bored": 0.31
     },
-    "bond": 1.0,
-    "food": 0,
+    "bond": 1,
+    "food": 6,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -203,17 +227,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "watching Derek work",
     "last_played_tick": 579,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -226,9 +243,16 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Sit means treat. I have cracked the code."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Sit means treat. I have cracked the code.",
     "want_ticks": 0,
     "last_fed_tick": 572,
     "recent_ideas": [
@@ -244,7 +268,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "Snowman time. Non-negotiable.",
     "Brain's in first gear today.",
     "Running on half a battery.",
     "Afternoon slump. Could do with a coffee.",
@@ -268,23 +291,23 @@
     "Evenings are for slowing down. Mostly.",
     "Even my spanner looks tired.",
     "Stars are out. Tiny town, big sky.",
-    "Grey old day. Good for graft, bad for a tan."
+    "Grey old day. Good for graft, bad for a tan.",
+    "Little guy needs his dad. Coming, boet."
   ],
-  "real_updated": "2026-11-27T08:30:11.416670+00:00",
+  "real_updated": "2026-11-27T08:45:10.124350+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-01@13",
-    "kind": "cloudy",
+    "key": "2026-12-02@6",
+    "kind": "fog",
     "season": "winter",
-    "base": 6.7,
-    "emoji": "☁️",
-    "name": "cloudy",
+    "base": 5.5,
+    "emoji": "🌫️",
+    "name": "foggy",
     "season_emoji": "❄️",
     "seen": [
-      "snow",
-      "cloudy"
+      "fog"
     ],
-    "temp": 4,
+    "temp": 3,
     "snow": 0,
     "wet": 0,
     "snowman": 0
