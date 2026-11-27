@@ -1,5 +1,68 @@
 [
   {
+    "at": "2026-12-03T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Heading to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "🌨️ It's snowing! Big flakes falling on the brick town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-03T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "diary",
@@ -1284,69 +1347,6 @@
     "text": "having a rest",
     "why": "Taking a breather.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "450 coins to go. That's just a lot of carbs.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "ordering a surfboard from the catalogue",
-    "why": "A tool that pays for itself.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "bought",
-    "text": "bought a surfboard: lets him go surfing",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "thought",
-    "text": "21 bricks in the pile. Could build something lekker with that.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "watching the sunset",
-    "why": "Every day should end like this.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "building a sand castle (sand castle size 1/6)",
-    "why": "This one's getting a moat.",
-    "by": "queue",
     "ok": true
   }
 ]
