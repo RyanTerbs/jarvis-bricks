@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-12-03T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Diesel follows me everywhere. Proper little shadow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Didn't know half this stuff about Dog training.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Halfway through the day and nothing's on fire. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (6 bricks pop out!)",
+    "why": "One bonk for luck.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "collecting bricks (+4 bricks)",
+    "why": "Brick by brick, hey.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Heading to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "Don't spend it. Don't spend it. Don't spend it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T19:28:21.098366+00:00",
     "time": "2:28 PM",
     "kind": "did",
@@ -1247,105 +1346,6 @@
     "kind": "thought",
     "text": "Yoh, I'm tired.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: dig all the way to the other side of the island.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "thought",
-    "text": "That Dog training chapter got me thinking.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
-    "why": "Dog's gotta walk.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "Wonder if the bikes in Thailand need fixing. Bet they do.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "building (Tuk-tuk Garage 3/5)",
-    "why": "Back to the Tuk-tuk Garage. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "building (Tuk-tuk Garage 2/5)",
-    "why": "One more course of bricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "thought",
-    "text": "Got stock to sell. Stall's calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "building (Tuk-tuk Garage 1/5)",
-    "why": "Back to the Tuk-tuk Garage. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
     "by": "model",
     "ok": true
   }

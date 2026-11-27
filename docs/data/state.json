@@ -3,20 +3,20 @@
   "place": "home",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Yoh, I'm tired.",
+  "thought": "Diesel follows me everywhere. Proper little shadow.",
   "feeling": "happy enough",
   "needs": {
-    "rest": 0.56,
-    "hunger": 0.07,
-    "social": 0.165,
-    "tinker": 0.25,
-    "curiosity": 0.515
+    "rest": 0.55,
+    "hunger": 0.315,
+    "social": 0.27,
+    "tinker": 0.445,
+    "curiosity": 0.49
   },
-  "mood": 0.47,
-  "energy": 0.44,
+  "mood": 0.41,
+  "energy": 0.45,
   "coins": 41,
   "coins_goal": 500,
-  "bricks": 20,
+  "bricks": 30,
   "stock": {
     "rebuilt_carb": 4
   },
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 14,
+  "hour": 16,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -146,7 +146,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-03",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-12-02",
@@ -511,21 +511,87 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Heading to the brick pit."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "collecting bricks (+4 bricks)",
+      "why": "Brick by brick, hey."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "One bonk for luck."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Halfway through the day and nothing's on fire. Lekker.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Dog training.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Diesel follows me everywhere. Proper little shadow.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 39,
     "bricks": 16,
-    "got": 4,
+    "got": 14,
     "used": 0
   },
-  "tick": 753,
+  "tick": 760,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T19:28:21.098366+00:00",
+  "updated": "2026-12-03T21:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 323,
-      "queue": 195,
+      "model": 327,
+      "queue": 198,
       "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
@@ -534,8 +600,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 19,
-      "queue": 13,
+      "model": 23,
+      "queue": 16,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -550,12 +616,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.482,
-      "tired": 0.31,
-      "bored": 0.18
+      "hunger": 0.03,
+      "tired": 0.45,
+      "bored": 0.39
     },
     "bond": 1.0,
-    "food": 2,
+    "food": 1,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -563,17 +629,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "sniffing everything",
     "last_played_tick": 739,
     "wants": null,
     "recent_thoughts": [
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "Cold white stuff! I must eat all of it.",
-      "Everything smells amazing today.",
-      "Is that a squirrel? It's a bolt. Still exciting.",
       "Nap spot: located. Engaging.",
       "SAND! Wet sand! Best day ever!",
       "Why are my paws cold? Doesn't matter. SNOW!",
@@ -586,11 +645,18 @@
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Following {owner}. Best job in the world.",
-      "My tail won't stop. I'm not stopping it."
+      "My tail won't stop. I'm not stopping it.",
+      "Water falling from the sky. Again. Suspicious.",
+      "Cold white stuff! I must eat all of it.",
+      "{owner} is the best human in the whole town.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "The ground is a giant ice cream!",
+      "Why are my paws cold? Doesn't matter. SNOW!"
     ],
-    "thought": "My tail won't stop. I'm not stopping it.",
+    "thought": "Why are my paws cold? Doesn't matter. SNOW!",
     "want_ticks": 0,
-    "last_fed_tick": 730,
+    "last_fed_tick": 759,
     "recent_ideas": [
       "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
@@ -604,10 +670,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Can't see the end of the street. Spooky.",
-    "One more job, then feet up.",
-    "Thailand. Noodles, mountains, warm sea. Soon.",
-    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
     "Running on coffee and hope.",
     "Foggy. Feels like a Port Alfred winter morning.",
     "Plan for today: work hard, eat well, don't lose the 10mm.",
@@ -628,9 +690,13 @@
     "Wonder if I'm pricing my stuff right.",
     "Afternoon slump. Could do with a coffee.",
     "Looked up {topic} on the old laptop. Lekker.",
-    "Yoh, I'm tired."
+    "Yoh, I'm tired.",
+    "Don't spend it. Don't spend it. Don't spend it.",
+    "Halfway through the day and nothing's on fire. Lekker.",
+    "Didn't know half this stuff about {topic}.",
+    "{pup} follows me everywhere. Proper little shadow."
   ],
-  "real_updated": "2026-11-27T13:00:15.061855+00:00",
+  "real_updated": "2026-11-27T13:15:13.220257+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -645,7 +711,7 @@
       "rain"
     ],
     "temp": 4,
-    "snow": 0.76,
+    "snow": 0.48,
     "wet": 1,
     "snowman": 1
   }
