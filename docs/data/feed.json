@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-03T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "running his market stall (pricey prices, no buyers this time (quiet in this snow))",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Market stall next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "Smells like oil and toast. Perfect morning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "noticed",
+    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "collecting shells (+3 shells (14 in the jar))",
+    "why": "Pretty ones today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Quick trip to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "Still thinking about that bit on Dog training.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Winter. Cold mornings, slow engines.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T15:43:21.098366+00:00",
     "time": "10:43 AM",
     "kind": "did",
@@ -1238,114 +1346,6 @@
     "kind": "did",
     "text": "collecting bricks (+3 bricks)",
     "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "note",
-    "text": "noted (Dog training (Individualized or class training)): Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "reading a book (Dog training, chapter 7/8)",
-    "why": "Where was I? Ah, ja.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Winter on the island. Who knew?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Miss the banter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Quick trip to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Miss the cafe gossip.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "The jar's getting heavier. Love that sound.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Little guy's hungry.",
     "by": "queue",
     "ok": true
   }
