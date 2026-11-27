@@ -6,14 +6,14 @@
   "thought": "Night shift is for owls, not mechanics.",
   "feeling": "chilled",
   "needs": {
-    "rest": 0.43,
-    "hunger": 0.115,
-    "social": 0.095,
-    "tinker": 0.515,
-    "curiosity": 0.585
+    "rest": 0,
+    "hunger": 0.185,
+    "social": 0.13,
+    "tinker": 0.55,
+    "curiosity": 0.62
   },
   "mood": 0.33,
-  "energy": 0.57,
+  "energy": 1,
   "coins": 74,
   "coins_goal": 500,
   "bricks": 6,
@@ -92,7 +92,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 0,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -120,15 +120,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 408,
+  "tick": 415,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T05:13:21.098366+00:00",
+  "updated": "2026-11-30T06:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 179,
       "queue": 106,
       "autopilot": 14,
-      "sleeping": 109,
+      "sleeping": 116,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -138,7 +138,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 1,
+      "sleeping": 8,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -151,8 +151,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.348,
-      "tired": 0.04,
+      "hunger": 0.376,
+      "tired": 0,
       "bored": 0.53
     },
     "bond": 1,
@@ -167,13 +167,6 @@
     "last_played_tick": 396,
     "wants": null,
     "recent_thoughts": [
-      "The ! block knows something. I will watch it.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "Where did the world go?",
-      "Where did the world go?",
-      "{owner} is the best human in the whole town.",
-      "Must... stay... awake... for treats.",
-      "Where did the world go?",
       "That engine is loud. I will bark at it. Later.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
@@ -186,9 +179,16 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 386,
     "recent_ideas": [
@@ -228,7 +228,7 @@
     "{pup} follows me everywhere. Proper little shadow.",
     "Night shift is for owls, not mechanics."
   ],
-  "real_updated": "2026-11-27T01:30:11.156655+00:00",
+  "real_updated": "2026-11-27T01:45:10.624232+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
