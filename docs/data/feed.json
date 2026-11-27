@@ -1,5 +1,167 @@
 [
   {
+    "at": "2026-12-01T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Hands are itching. Need something to fix.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "note",
+    "text": "noted (Dog training (History)): Although research into how dogs learn and into cross-species communication has changed the approach to dog training in recent decades, understanding the role of",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "reading a book (Dog training, chapter 3/8)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "So much I don't know. Love that, actually.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Little guy's hungry.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Want to learn something new today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: make friends with the crab. Or eat it. Undecided.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "noticed",
+    "text": "A kid stops to pat Diesel.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Body says rest. Stubborn brain says one more job.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "building (Noodle stall 1/4)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Building site next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Can't wait to see the Noodle stall finished.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Didn't know half this stuff about Dog training.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-01T01:43:21.098366+00:00",
     "time": "8:43 PM",
     "kind": "did",
@@ -1185,168 +1347,6 @@
     "text": "fixing a car (+4 coins)",
     "why": "Little Thunder is making a funny noise. My kind of problem.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Fog's so thick you could cut it with a spanner.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "ordering a bag of dog food (6 meals in the cupboard)",
-    "why": "Stocking up for the little guy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "thought",
-    "text": "Shame, the cafe guy looked tired today.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Got stock to sell. Stall's calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "thought",
-    "text": "Stomach's making engine noises.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "thought",
-    "text": "Should I name the street? Derek Street. Ja, why not.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach",
-    "why": "Diesel loves the beach.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "collecting shells (+2 shells (9 in the jar))",
-    "why": "Pretty ones today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "noticed",
-    "text": "Diesel steals a sock and runs off down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Off to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "thought",
-    "text": "Even my spanner looks tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
     "ok": true
   }
 ]
