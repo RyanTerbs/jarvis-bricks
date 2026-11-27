@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-11-30T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "noticed",
+    "text": "☀️ The clouds clear off. Sunshine over the town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "Toast. Noodles. Anything.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "thought",
+    "text": "Nothing like the sea to clear the head.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "collecting shells (+1 shells (10 in the jar))",
+    "why": "Shells for the jar on the shelf.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "building a sand castle (sand castle size 1/6)",
+    "why": "This one's getting a moat.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Beach next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Picture it: a winding road, a good engine, no rush.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-11-30T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "Can't see the end of the street. Spooky.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-11-30T16:28:21.098366+00:00",
     "time": "11:28 AM",
     "kind": "refused",
@@ -1237,114 +1345,6 @@
     "time": "9:13 AM",
     "kind": "thought",
     "text": "Ja, no, definitely, maybe.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "noticed",
-    "text": "A loud exhaust echoes down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Haven't spoken to a human all day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "noticed",
-    "text": "Diesel steals a sock and runs off down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Cafe next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "thought",
-    "text": "55 in the jar. 445 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Reading about Tourism in Thailand makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "note",
-    "text": "noted (Tourism in Thailand (Sport tourism)): Muay Thai is the national sport of Thailand, and a trip to a stadium to witness the 'science of the eight limbs' is an essential experience for many tourists.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "reading a book (Tourism in Thailand, chapter 8/9)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-29T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Wet again. The site turns to mud in this.",
     "why": null,
     "by": "model",
     "ok": true

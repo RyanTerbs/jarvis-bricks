@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "market_stall",
+  "place": "home",
   "asleep": false,
-  "doing": "running his market stall",
-  "thought": "Ja, today feels like a building day.",
-  "feeling": "content",
+  "doing": "cooking a proper meal",
+  "thought": "Toast. Noodles. Anything.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.67,
-    "hunger": 0.495,
-    "social": 0.16,
-    "tinker": 0.12,
-    "curiosity": 0.33
+    "rest": 0.63,
+    "hunger": 0.04,
+    "social": 0.335,
+    "tinker": 0.09,
+    "curiosity": 0.255
   },
-  "mood": 0.44,
-  "energy": 0.33,
-  "coins": 86,
+  "mood": 0.43,
+  "energy": 0.37,
+  "coins": 84,
   "coins_goal": 500,
   "bricks": 15,
   "stock": {},
@@ -95,14 +95,19 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
-    "castles": [],
+    "castles": [
+      {
+        "date": "2026-11-30",
+        "size": 1
+      }
+    ],
     "best_castle": 1,
-    "shells": 9,
+    "shells": 10,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "flat",
@@ -320,6 +325,78 @@
       "k": "did",
       "x": "running his market stall (fair prices, sold 1 postcard of the town for 2 coins)",
       "why": "Market day."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "thought",
+      "x": "Can't see the end of the street. Spooky.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Picture it: a winding road, a good engine, no rush.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Beach next."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "building a sand castle (sand castle size 1/6)",
+      "why": "This one's getting a moat."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "collecting shells (+1 shells (10 in the jar))",
+      "why": "Shells for the jar on the shelf."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "Nothing like the sea to clear the head.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Toast. Noodles. Anything.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "☀️ The clouds clear off. Sunshine over the town.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
     }
   ],
   "day_start": {
@@ -328,13 +405,13 @@
     "got": 9,
     "used": 0
   },
-  "tick": 453,
+  "tick": 460,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T16:28:21.098366+00:00",
+  "updated": "2026-11-30T18:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 191,
-      "queue": 115,
+      "model": 195,
+      "queue": 118,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -343,8 +420,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 12,
-      "queue": 9,
+      "model": 16,
+      "queue": 12,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -357,11 +434,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.342,
-      "tired": 0.72,
-      "bored": 0.16
+      "hunger": 0.396,
+      "tired": 0.26,
+      "bored": 0.19
     },
     "bond": 1,
     "food": 4,
@@ -372,17 +449,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 450,
-    "wants": null,
+    "wants": "beach",
     "recent_thoughts": [
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "Where did the world go?",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "{owner} is the best human in the whole town.",
-      "Good boy? Me? Yes. Me.",
       "Everything smells amazing today.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "My tail won't stop. I'm not stopping it.",
@@ -395,9 +465,16 @@
       "Life is good. Life is SO good.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Warm spot on the floor. Mine now."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "Warm spot on the floor. Mine now.",
     "want_ticks": 0,
     "last_fed_tick": 439,
     "recent_ideas": [
@@ -411,10 +488,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Got stock to sell. Stall's calling.",
-    "Shame, the cafe guy looked tired today.",
-    "Fog's so thick you could cut it with a spanner.",
-    "That {topic} chapter got me thinking.",
     "Wonder if I'm pricing my stuff right.",
     "Still thinking about that bit on {topic}.",
     "Somewhere there's a beach in Krabi with my name on it.",
@@ -435,22 +508,27 @@
     "Sun's up, {pup}'s up, so I'm up.",
     "One day: me, a bike, and a mountain road outside Chiang Mai.",
     "Can't see the end of the street. Spooky.",
-    "Ja, today feels like a building day."
+    "Ja, today feels like a building day.",
+    "Can't see the end of the street. Spooky.",
+    "Picture it: a winding road, a good engine, no rush.",
+    "Nothing like the sea to clear the head.",
+    "Toast. Noodles. Anything."
   ],
-  "real_updated": "2026-11-27T03:00:13.733845+00:00",
+  "real_updated": "2026-11-27T03:15:12.229505+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-11-30@6",
-    "kind": "fog",
+    "key": "2026-11-30@13",
+    "kind": "sunny",
     "season": "autumn",
-    "base": 18.6,
-    "emoji": "🌫️",
-    "name": "foggy",
+    "base": 19.9,
+    "emoji": "☀️",
+    "name": "sunny",
     "season_emoji": "🍂",
     "seen": [
-      "fog"
+      "fog",
+      "sunny"
     ],
-    "temp": 21,
+    "temp": 23,
     "snow": 0,
     "wet": 0
   }
