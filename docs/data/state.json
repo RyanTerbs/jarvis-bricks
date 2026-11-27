@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "beach",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "If it's got moving parts, I can fix it. Mostly.",
-  "feeling": "on top of the world",
+  "doing": "collecting shells",
+  "thought": "Never had a mate this loyal.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.58,
-    "hunger": 0.16,
-    "social": 0.61,
-    "tinker": 0.185,
-    "curiosity": 0.545
+    "rest": 0.65,
+    "hunger": 0.405,
+    "social": 0.315,
+    "tinker": 0.43,
+    "curiosity": 0.32
   },
-  "mood": 0.49,
-  "energy": 0.42,
+  "mood": 0.44,
+  "energy": 0.35,
   "coins": 30,
   "coins_goal": 500,
   "bricks": 102,
@@ -163,25 +163,36 @@
       "date": "2026-12-06",
       "source": "Bangkok (Economy)",
       "note": "Bangkok is the economic centre of Thailand, and the heart of the country's investment and development."
+    },
+    {
+      "date": "2026-12-06",
+      "source": "his laptop: Chiang Mai",
+      "note": "Chiang Mai is the largest city in northern Thailand, the capital of Chiang Mai province and the second-largest city in Thailand by urban population."
     }
   ],
   "looked_up": [
-    "Krabi"
+    "Krabi",
+    "Chiang Mai"
   ],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 17,
+    "shells": 20,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "go_for_a_swim",
+      "why": "Quick dip to cool off."
+    }
+  ],
   "lucky": {
     "date": "2026-12-06",
     "used": 1,
@@ -411,6 +422,84 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Blue sky, no excuses.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "looking something up on his old laptop (Chiang Mai)",
+      "why": "Quick look-up."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "note",
+      "x": "noted (his laptop: Chiang Mai): Chiang Mai is the largest city in northern Thailand, the capital of Chiang Mai province and the second-largest city in Thailand by urban population.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "noticed",
+      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "Best decision I ever made, keeping Diesel.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Found a 1980s coin in Little Thunder's toolbox. Lucky.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Never had a mate this loyal.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Heading to the beach."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "collecting shells (+3 shells (20 in the jar))",
+      "why": "Shells for the jar on the shelf."
     }
   ],
   "day_start": {
@@ -419,13 +508,13 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1030,
+  "tick": 1037,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T16:43:21.098366+00:00",
+  "updated": "2026-12-06T18:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 443,
-      "queue": 261,
+      "model": 447,
+      "queue": 264,
       "autopilot": 36,
       "sleeping": 290,
       "tokens_in": 0,
@@ -434,8 +523,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 11,
-      "queue": 10,
+      "model": 15,
+      "queue": 13,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -450,9 +539,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.24,
-      "tired": 0.69,
-      "bored": 0.28
+      "hunger": 0.45,
+      "tired": 0.83,
+      "bored": 0.49
     },
     "bond": 1.0,
     "food": 0,
@@ -463,17 +552,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "barking at the waves",
     "last_played_tick": 1029,
-    "wants": null,
+    "wants": "nap",
     "recent_thoughts": [
-      "Good boy? Me? Yes. Me.",
-      "My tail won't stop. I'm not stopping it.",
-      "Sun on my belly. Perfect.",
-      "I could chew a boot. Just a little bit.",
-      "Life is good. Life is SO good.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "{owner} is busy again. Sigh. Big sigh.",
       "Who left this brick here? I'll carry it somewhere else.",
       "{owner} is the best human in the whole town.",
       "Warm spot on the floor. Mine now.",
@@ -486,10 +568,17 @@
       "Warm spot on the floor. Mine now.",
       "I know tricks now. I am a very clever boy.",
       "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Sun on my belly. Perfect."
+      "Sun on my belly. Perfect.",
+      "He dropped a bolt. It rolled. I chased it. I am useful.",
+      "Must... stay... awake... for treats.",
+      "Sun on my belly. Perfect.",
+      "Nap spot: located. Engaging.",
+      "I am a very good boy. Probably.",
+      "Tail check: still there. Good.",
+      "Learning is hard. Treats make it easier."
     ],
-    "thought": "Sun on my belly. Perfect.",
-    "want_ticks": 5,
+    "thought": "Learning is hard. Treats make it easier.",
+    "want_ticks": 0,
     "last_fed_tick": 1022,
     "recent_ideas": [
       "sit by the cafe door looking sad. Free pie.",
@@ -504,10 +593,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Me and {pup} against the world.",
-    "{left} coins to go. That's just a lot of carbs.",
-    "Didn't know half this stuff about {topic}.",
-    "Haven't had grease on my hands in hours. Feels wrong.",
     "Proper shorts weather.",
     "Proper shorts weather.",
     "Batteries low. Need a recharge.",
@@ -528,22 +613,26 @@
     "Eish, forgot to eat again.",
     "Under all that rust there's a good bike. I can see her.",
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
-    "If it's got moving parts, I can fix it. Mostly."
+    "If it's got moving parts, I can fix it. Mostly.",
+    "Blue sky, no excuses.",
+    "Best decision I ever made, keeping {pup}.",
+    "Found a 1980s coin in {bike}'s toolbox. Lucky.",
+    "Never had a mate this loyal."
   ],
-  "real_updated": "2026-11-27T22:15:16.443661+00:00",
+  "real_updated": "2026-11-27T22:30:11.426318+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-06@6",
+    "key": "2026-12-06@13",
     "kind": "sunny",
     "season": "winter",
-    "base": -0.9,
+    "base": 9.6,
     "emoji": "☀️",
     "name": "sunny",
     "season_emoji": "❄️",
     "seen": [
       "sunny"
     ],
-    "temp": 1,
+    "temp": 13,
     "snow": 0,
     "wet": 0,
     "snowman": 0
