@@ -1,5 +1,104 @@
 [
   {
+    "at": "2026-12-03T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Finished building the Tuk-tuk Garage",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Lights out, Diesel.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Foggy. Feels like a Port Alfred winter morning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "making a rebuilt carburettor (4 in stock)",
+    "why": "Making stock for the stall.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "making a rebuilt carburettor (3 in stock)",
+    "why": "Handmade, proper quality.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Heading to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Running on coffee and hope.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T02:28:21.098366+00:00",
     "time": "9:28 PM",
     "kind": "did",
@@ -1248,105 +1347,6 @@
     "text": "building a sand castle (sand castle size 1/6)",
     "why": "This one's getting a moat.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Beach next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "thought",
-    "text": "Funny what you learn. Dog training, who knew.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Best decision I ever made, keeping Diesel.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "training Diesel (give paw: Diesel wasn't having it)",
-    "why": "Practice makes perfect.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "training Diesel (give paw: 2/4)",
-    "why": "Teaching Diesel new tricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "thought",
-    "text": "80 in the jar. 420 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "playing in the snow with Diesel",
-    "why": "Snowball fight. Diesel versus me.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]

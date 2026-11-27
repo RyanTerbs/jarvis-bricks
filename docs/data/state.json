@@ -1,24 +1,24 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
-  "asleep": false,
-  "doing": "having a rest",
-  "thought": "Thailand. Noodles, mountains, warm sea. Soon.",
-  "feeling": "knackered",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
+  "thought": "Foggy. Feels like a Port Alfred winter morning.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.66,
-    "hunger": 0.545,
-    "social": 0.59,
-    "tinker": 0.54,
-    "curiosity": 0.075
+    "rest": 0.64,
+    "hunger": 0.1,
+    "social": 0.76,
+    "tinker": 0.06,
+    "curiosity": 0.155
   },
-  "mood": 0.35,
-  "energy": 0.34,
-  "coins": 45,
+  "mood": 0.23,
+  "energy": 0.36,
+  "coins": 39,
   "coins_goal": 500,
   "bricks": 16,
   "stock": {
-    "rebuilt_carb": 2
+    "rebuilt_carb": 4
   },
   "owned": [
     "surfboard"
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 21,
+  "hour": 23,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -151,693 +151,32 @@
   },
   "designed_on": "2026-12-02",
   "plan_today": "Beach in the morning, graft in the afternoon.",
-  "today_log": [
-    {
-      "t": "1:28 AM",
-      "k": "noticed",
-      "x": "The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass.",
-      "why": null
-    },
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "🌫️ A thick sea fog rolls in over the town.",
-      "why": null
-    },
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "Overnight the tide came in and washed his sand castle away.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Little guy needs his dad. Coming, boet.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "ordering a bag of dog food (6 meals in the cupboard)",
-      "why": "Can't run out of food for Diesel."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Little guy's hungry."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "The jar's getting heavier. Love that sound.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "7:13 AM",
-      "k": "thought",
-      "x": "Miss the cafe gossip.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Quick trip to the cafe."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Miss the banter."
-    },
-    {
-      "t": "7:43 AM",
-      "k": "thought",
-      "x": "Winter on the island. Who knew?",
-      "why": null
-    },
-    {
-      "t": "7:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "did",
-      "x": "reading a book (Dog training, chapter 7/8)",
-      "why": "Where was I? Ah, ja."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "note",
-      "x": "noted (Dog training (Individualized or class training)): Individualized or one-to-one training is helpful for the trainer to focus on an individual dog's abilities and needs, as well as address a specific owner's pref",
-      "why": null
-    },
-    {
-      "t": "8:13 AM",
-      "k": "thought",
-      "x": "Picture it: a winding road, a good engine, no rush.",
-      "why": null
-    },
-    {
-      "t": "8:13 AM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Off to the brick pit."
-    },
-    {
-      "t": "8:28 AM",
-      "k": "did",
-      "x": "collecting bricks (+3 bricks)",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "t": "8:43 AM",
-      "k": "noticed",
-      "x": "Diesel barks at the ! block. The ! block does not bark back.",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (6 bricks pop out!)",
-      "why": "Jump, hit, hope."
-    },
-    {
-      "t": "8:58 AM",
-      "k": "thought",
-      "x": "Coffee first. Then the world.",
-      "why": null
-    },
-    {
-      "t": "8:58 AM",
-      "k": "did",
-      "x": "cuddling Diesel",
-      "why": "Best part of the day."
-    },
-    {
-      "t": "9:13 AM",
-      "k": "thought",
-      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Look at that tail go."
-    },
-    {
-      "t": "9:28 AM",
-      "k": "thought",
-      "x": "Even the lamp posts look lost in this fog.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "did",
-      "x": "starting a new build: Tuk-tuk Garage (paid 30 bricks)",
-      "why": "Got the bricks, let's go."
-    },
-    {
-      "t": "9:43 AM",
-      "k": "thought",
-      "x": "Ja, today feels like a building day.",
-      "why": null
-    },
-    {
-      "t": "9:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "9:58 AM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: find out what's inside the ! block.",
-      "why": null
-    },
-    {
-      "t": "9:58 AM",
-      "k": "did",
-      "x": "making a hot chocolate",
-      "why": "Cold hands need a hot mug."
-    },
-    {
-      "t": "10:28 AM",
-      "k": "noticed",
-      "x": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-      "why": null
-    },
-    {
-      "t": "10:28 AM",
-      "k": "thought",
-      "x": "Foggy. Feels like a Port Alfred winter morning.",
-      "why": null
-    },
-    {
-      "t": "10:28 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Heading to the building site."
-    },
-    {
-      "t": "10:43 AM",
-      "k": "did",
-      "x": "building (Tuk-tuk Garage 1/5)",
-      "why": "Back to the Tuk-tuk Garage. Nearly there."
-    },
-    {
-      "t": "10:58 AM",
-      "k": "thought",
-      "x": "Got stock to sell. Stall's calling.",
-      "why": null
-    },
-    {
-      "t": "10:58 AM",
-      "k": "did",
-      "x": "building (Tuk-tuk Garage 2/5)",
-      "why": "One more course of bricks."
-    },
-    {
-      "t": "11:13 AM",
-      "k": "did",
-      "x": "building (Tuk-tuk Garage 3/5)",
-      "why": "Back to the Tuk-tuk Garage. Nearly there."
-    },
-    {
-      "t": "11:28 AM",
-      "k": "thought",
-      "x": "Wonder if the bikes in Thailand need fixing. Bet they do.",
-      "why": null
-    },
-    {
-      "t": "11:28 AM",
-      "k": "did",
-      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
-      "why": "Dog's gotta walk."
-    },
-    {
-      "t": "11:43 AM",
-      "k": "thought",
-      "x": "That Dog training chapter got me thinking.",
-      "why": null
-    },
-    {
-      "t": "11:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "11:58 AM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: dig all the way to the other side of the island.",
-      "why": null
-    },
-    {
-      "t": "11:58 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "12:13 PM",
-      "k": "thought",
-      "x": "Yoh, I'm tired.",
-      "why": null
-    },
-    {
-      "t": "12:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "thought",
-      "x": "Toast. Noodles. Anything.",
-      "why": null
-    },
-    {
-      "t": "12:28 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Can't run on toast forever."
-    },
-    {
-      "t": "12:43 PM",
-      "k": "thought",
-      "x": "Me and Diesel against the world.",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
-      "why": "Fresh air for both of us."
-    },
-    {
-      "t": "12:58 PM",
-      "k": "thought",
-      "x": "Running on half a battery.",
-      "why": null
-    },
-    {
-      "t": "12:58 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Toast. Quick and honest."
-    },
-    {
-      "t": "1:13 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Coins are tight. Toast it is."
-    },
-    {
-      "t": "1:28 PM",
-      "k": "thought",
-      "x": "Need a lie down before I drop a spanner on my foot.",
-      "why": null
-    },
-    {
-      "t": "1:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "1:43 PM",
-      "k": "thought",
-      "x": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-      "why": null
-    },
-    {
-      "t": "1:43 PM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Heading to the building site."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "did",
-      "x": "building (Tuk-tuk Garage 4/5)",
-      "why": "Building is just fixing, but bigger."
-    },
-    {
-      "t": "2:13 PM",
-      "k": "built",
-      "x": "finished building the Tuk-tuk Garage!",
-      "why": null
-    },
-    {
-      "t": "2:13 PM",
-      "k": "did",
-      "x": "building (finished!)",
-      "why": "Back to the Tuk-tuk Garage. Nearly there."
-    },
-    {
-      "t": "2:28 PM",
-      "k": "thought",
-      "x": "Body says rest. Stubborn brain says one more job.",
-      "why": null
-    },
-    {
-      "t": "2:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "2:43 PM",
-      "k": "thought",
-      "x": "If I finish this, I'm getting a snack. Deal.",
-      "why": null
-    },
-    {
-      "t": "2:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "2:58 PM",
-      "k": "thought",
-      "x": "Still thinking about that bit on Dog training.",
-      "why": null
-    },
-    {
-      "t": "2:58 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Off to the brick pit."
-    },
-    {
-      "t": "3:13 PM",
-      "k": "did",
-      "x": "collecting bricks (+4 bricks)",
-      "why": "Brick by brick, hey."
-    },
-    {
-      "t": "3:28 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-      "why": "Maybe a jackpot today."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "thought",
-      "x": "43 in the jar. 457 more and I'm on that bike in Thailand.",
-      "why": null
-    },
-    {
-      "t": "3:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "3:58 PM",
-      "k": "thought",
-      "x": "Don't spend it. Don't spend it. Don't spend it.",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Cafe next."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Need some gossip."
-    },
-    {
-      "t": "4:28 PM",
-      "k": "thought",
-      "x": "Winter. Cold mornings, slow engines.",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "4:43 PM",
-      "k": "thought",
-      "x": "Never had a mate this loyal.",
-      "why": null
-    },
-    {
-      "t": "4:43 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
-      "why": "Fresh air for both of us."
-    },
-    {
-      "t": "4:58 PM",
-      "k": "thought",
-      "x": "Batteries low. Need a recharge.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "learned",
-      "x": "finished reading 'Dog training': puppy training works more often",
-      "why": null
-    },
-    {
-      "t": "5:13 PM",
-      "k": "did",
-      "x": "reading a book (Dog training, last chapter)",
-      "why": "Books are a cheap mechanics' school."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "note",
-      "x": "noted (Dog training (Specialized training)): Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "thought",
-      "x": "Proud of Diesel. Little guy's growing up.",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "5:43 PM",
-      "k": "thought",
-      "x": "Could go a proper pie right now.",
-      "why": null
-    },
-    {
-      "t": "5:43 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "5:58 PM",
-      "k": "thought",
-      "x": "Reading about Dog training makes me want to try it.",
-      "why": null
-    },
-    {
-      "t": "5:58 PM",
-      "k": "designed",
-      "x": "designed a new building: 🏍️ Chopper Shop, a tiny custom bike shop with chrome everywhere",
-      "why": null
-    },
-    {
-      "t": "5:58 PM",
-      "k": "did",
-      "x": "designing a brand-new building",
-      "why": "Town needs something new. Something mine."
-    },
-    {
-      "t": "6:13 PM",
-      "k": "thought",
-      "x": "Wonder if I'm pricing my stuff right.",
-      "why": null
-    },
-    {
-      "t": "6:13 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Off to the brick pit."
-    },
-    {
-      "t": "6:28 PM",
-      "k": "did",
-      "x": "collecting bricks (+2 bricks)",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "t": "6:43 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-      "why": "Maybe a jackpot today."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "thought",
-      "x": "Looked up Dog training on the old laptop. Lekker.",
-      "why": null
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "7:13 PM",
-      "k": "thought",
-      "x": "Too much sitting. Where's my toolbox?",
-      "why": null
-    },
-    {
-      "t": "7:13 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Off to the garage."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Bessie is making a funny noise. My kind of problem."
-    },
-    {
-      "t": "7:43 PM",
-      "k": "thought",
-      "x": "Even the lamp posts look lost in this fog.",
-      "why": null
-    },
-    {
-      "t": "7:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "7:58 PM",
-      "k": "thought",
-      "x": "Didn't know half this stuff about Dog training.",
-      "why": null
-    },
-    {
-      "t": "7:58 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "8:28 PM",
-      "k": "thought",
-      "x": "Can't see the end of the street. Spooky.",
-      "why": null
-    },
-    {
-      "t": "8:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "8:43 PM",
-      "k": "thought",
-      "x": "One more job, then feet up.",
-      "why": null
-    },
-    {
-      "t": "8:43 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Off to the brick pit."
-    },
-    {
-      "t": "8:58 PM",
-      "k": "did",
-      "x": "collecting bricks (+5 bricks)",
-      "why": "Can't build on dreams alone."
-    },
-    {
-      "t": "9:13 PM",
-      "k": "did",
-      "x": "collecting bricks (+5 bricks)",
-      "why": "Brick by brick, hey."
-    },
-    {
-      "t": "9:28 PM",
-      "k": "thought",
-      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
-      "why": null
-    },
-    {
-      "t": "9:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    }
-  ],
+  "today_log": [],
   "day_start": {
-    "coins": 49,
-    "bricks": 21,
-    "got": 25,
-    "used": 30
+    "coins": 39,
+    "bricks": 16,
+    "got": 0,
+    "used": 0
   },
-  "tick": 685,
+  "tick": 693,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T02:28:21.098366+00:00",
+  "updated": "2026-12-03T04:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 301,
-      "queue": 179,
-      "autopilot": 21,
-      "sleeping": 184,
+      "model": 304,
+      "queue": 182,
+      "autopilot": 22,
+      "sleeping": 185,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-02",
-      "model": 38,
-      "queue": 23,
-      "autopilot": 1,
-      "sleeping": 24,
+      "model": 41,
+      "queue": 26,
+      "autopilot": 2,
+      "sleeping": 25,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -850,9 +189,9 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.154,
-      "tired": 0.67,
-      "bored": 0.48
+      "hunger": 0.238,
+      "tired": 0.23,
+      "bored": 0.54
     },
     "bond": 1.0,
     "food": 3,
@@ -863,18 +202,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "asleep at the foot of the bed",
     "last_played_tick": 666,
     "wants": null,
     "recent_thoughts": [
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Following {owner}. Best job in the world.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Everything smells amazing today.",
-      "Grease smell. Best smell after sausages.",
-      "Where did the world go?",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "Fog. Can't see. Can smell. Sniffing harder.",
       "My tail won't stop. I'm not stopping it.",
@@ -886,6 +217,14 @@
       "I am a very good boy. Probably.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "It's dark. I will guard the house. From the sofa.",
+      "Where did the world go?",
       "Dreaming: {owner} throws the ball forever."
     ],
     "thought": "Dreaming: Derek throws the ball forever.",
@@ -904,9 +243,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "Yoh, I'm tired.",
-    "Toast. Noodles. Anything.",
-    "Me and {pup} against the world.",
     "Running on half a battery.",
     "Need a lie down before I drop a spanner on my foot.",
     "One day: me, a bike, and a mountain road outside Chiang Mai.",
@@ -928,9 +264,12 @@
     "Didn't know half this stuff about {topic}.",
     "Can't see the end of the street. Spooky.",
     "One more job, then feet up.",
-    "Thailand. Noodles, mountains, warm sea. Soon."
+    "Thailand. Noodles, mountains, warm sea. Soon.",
+    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
+    "Running on coffee and hope.",
+    "Foggy. Feels like a Port Alfred winter morning."
   ],
-  "real_updated": "2026-11-27T10:43:35.121901+00:00",
+  "real_updated": "2026-11-27T11:00:12.163914+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-02@13",
@@ -943,7 +282,7 @@
     "seen": [
       "fog"
     ],
-    "temp": 7,
+    "temp": 5,
     "snow": 0,
     "wet": 0,
     "snowman": 0

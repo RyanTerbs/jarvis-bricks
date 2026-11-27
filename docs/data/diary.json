@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-12-02",
+    "day": "Wed 02 Dec",
+    "title": "Finished building the Tuk-tuk Garage",
+    "text": "What a day. Spent most of today collecting bricks, building and cooking a proper meal. Finished building the Tuk-tuk Garage! Stood back and had a proper look at it. Lekker. Drew up plans for something new: 🏍️ Chopper Shop, a tiny custom bike shop with chrome everywhere. Finished reading 'Dog training': puppy training works more often. Lekker. Sea fog hung around most of the day. Proud of Diesel. Little guy's growing up. Pretty sure Diesel was planning to dig all the way to the other side of the island. Cheeky. Spent 10 coins. Eish. Collected 25 bricks, used 30 on building. Also: The snow's gone, and so is the snowman. Just a carrot and an old cap left on the grass. Still dreaming of Thailand. 461 coins between me and that road. Bed.",
+    "tomorrow": "Beach in the morning, graft in the afternoon.",
+    "by": "template",
+    "coins": 39,
+    "bricks": 16,
+    "coins_change": -10,
+    "bricks_change": -5,
+    "built": [
+      "finished building the Tuk-tuk Garage!"
+    ]
+  },
+  {
     "date": "2026-12-01",
     "day": "Tue 01 Dec",
     "title": "Finished building the Noodle stall",
