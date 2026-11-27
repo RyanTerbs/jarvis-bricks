@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "noodle_stall",
   "asleep": false,
   "doing": "building",
-  "thought": "Note to self: buy more duct tape.",
-  "feeling": "sharp-sharp",
+  "thought": "The jar's getting heavier. Love that sound.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.25,
-    "hunger": 0.495,
-    "social": 0.68,
-    "tinker": 0.505,
-    "curiosity": 0.49
+    "rest": 0.47,
+    "hunger": 0.14,
+    "social": 0.235,
+    "tinker": 0.5,
+    "curiosity": 0.665
   },
-  "mood": 0.32,
-  "energy": 0.75,
-  "coins": 78,
+  "mood": 0.63,
+  "energy": 0.53,
+  "coins": 76,
   "coins_goal": 500,
   "bricks": 2,
   "stock": {},
@@ -105,7 +105,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 7,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -222,6 +222,102 @@
       "k": "did",
       "x": "building (the snow slowed the work, Noodle stall still 3/4)",
       "why": "One more course of bricks."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Some days you're the spanner, some days you're the bolt.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "Food first. Then I'm useful again.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "The Noodle stall is coming along. Brick by brick.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "noticed",
+      "x": "Diesel falls asleep in the toolbox for a second.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Diesel first. Always Diesel first.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "noticed",
+      "x": "It starts raining plastic raindrops.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "The jar's getting heavier. Love that sound.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Building site next."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "built",
+      "x": "finished building the Noodle stall!",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "Back to the Noodle stall. Nearly there."
     }
   ],
   "day_start": {
@@ -230,13 +326,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 535,
+  "tick": 542,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T12:58:21.098366+00:00",
+  "updated": "2026-12-01T14:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 224,
-      "queue": 135,
+      "model": 229,
+      "queue": 137,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -245,8 +341,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 4,
-      "queue": 3,
+      "model": 9,
+      "queue": 5,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -261,9 +357,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.468,
-      "tired": 0.14,
-      "bored": 0.69
+      "hunger": 0.678,
+      "tired": 0.38,
+      "bored": 0.4
     },
     "bond": 1.0,
     "food": 2,
@@ -274,17 +370,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 477,
-    "wants": "play",
+    "doing": "rolling in the grass",
+    "last_played_tick": 538,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -297,9 +386,16 @@
       "My tail won't stop. I'm not stopping it.",
       "Good boy? Me? Yes. Me.",
       "Tail check: still there. Good.",
-      "Life is good. Life is SO good."
+      "Life is good. Life is SO good.",
+      "Cold white stuff! I must eat all of it.",
+      "The ground is a giant ice cream!",
+      "The ground is a giant ice cream!",
+      "The ground is a giant ice cream!",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "If I stare at the bowl hard enough, food appears. Science.",
+      "Helping. I am helping. By sitting here."
     ],
-    "thought": "Life is good. Life is SO good.",
+    "thought": "Helping. I am helping. By sitting here.",
     "want_ticks": 0,
     "last_fed_tick": 496,
     "recent_ideas": [
@@ -315,11 +411,6 @@
     "idea": "make friends with the crab. Or eat it. Undecided."
   },
   "recent_thoughts": [
-    "Every coin counts. Every single one.",
-    "Not a cloud. {pup} is going to want the beach.",
-    "Afternoon slump. Could do with a coffee.",
-    "Bit of graft now, bit of rest later.",
-    "Thailand. Noodles, mountains, warm sea. Soon.",
     "Never had a mate this loyal.",
     "Stomach's making engine noises.",
     "{pup} is losing his mind over a crab.",
@@ -339,9 +430,14 @@
     "Every brick in the {site} is one I collected myself. Feels good.",
     "Me and {pup} against the world.",
     "Quiet day. Could do with a chat at the cafe.",
-    "Note to self: buy more duct tape."
+    "Note to self: buy more duct tape.",
+    "Some days you're the spanner, some days you're the bolt.",
+    "Food first. Then I'm useful again.",
+    "The {site} is coming along. Brick by brick.",
+    "{pup} first. Always {pup} first.",
+    "The jar's getting heavier. Love that sound."
   ],
-  "real_updated": "2026-11-27T05:45:17.834572+00:00",
+  "real_updated": "2026-11-27T06:00:12.934266+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@6",
@@ -354,8 +450,8 @@
     "seen": [
       "snow"
     ],
-    "temp": -3,
-    "snow": 0.64,
+    "temp": -1,
+    "snow": 1,
     "wet": 0
   }
 }
