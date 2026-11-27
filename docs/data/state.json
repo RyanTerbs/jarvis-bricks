@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "library",
   "asleep": false,
-  "doing": "ordering a bag of dog food",
-  "thought": "Life's simple. Fix things, save coins, look after the dog.",
-  "feeling": "good, ja",
+  "doing": "reading a book",
+  "thought": "The jar's getting heavier. Love that sound.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.61,
-    "hunger": 0.37,
-    "social": 0.12,
-    "tinker": 0.555,
-    "curiosity": 0.595
+    "rest": 0.69,
+    "hunger": 0.635,
+    "social": 0.075,
+    "tinker": 0.45,
+    "curiosity": 0.47
   },
-  "mood": 0.45,
-  "energy": 0.39,
-  "coins": 50,
+  "mood": 0.36,
+  "energy": 0.31,
+  "coins": 54,
   "coins_goal": 500,
-  "bricks": 102,
+  "bricks": 99,
   "stock": {
     "postcard": 1
   },
@@ -31,7 +31,8 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 7
+    "bangkok": 7,
+    "carburetor": 1
   },
   "finished": [
     "tourism_thailand",
@@ -167,13 +168,18 @@
       "date": "2026-12-06",
       "source": "his laptop: Chiang Mai",
       "note": "Chiang Mai is the largest city in northern Thailand, the capital of Chiang Mai province and the second-largest city in Thailand by urban population."
+    },
+    {
+      "date": "2026-12-06",
+      "source": "Carburetor (Introduction)",
+      "note": "A carburetor (also spelled carburettor or carburetter) is a device used by a gasoline internal combustion engine to control and mix air and fuel entering the en"
     }
   ],
   "looked_up": [
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 17,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -186,12 +192,7 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [
-    {
-      "move": "feed_the_puppy",
-      "why": "Diesel first, always."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-06",
     "used": 1,
@@ -637,21 +638,111 @@
       "k": "did",
       "x": "ordering a bag of dog food (6 meals in the cupboard)",
       "why": "Stocking up for the little guy."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "noticed",
+      "x": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Proper shorts weather.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "thought",
+      "x": "Got stock to sell. Stall's calling.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Hands are itching. Need something to fix.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Little Thunder. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "thought",
+      "x": "Every town needs a guy who fixes stuff. That's me.",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Library next."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "noticed",
+      "x": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "The jar's getting heavier. Love that sound.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 1/9)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "note",
+      "x": "noted (Carburetor (Introduction)): A carburetor (also spelled carburettor or carburetter) is a device used by a gasoline internal combustion engine to control and mix air and fuel entering the en",
+      "why": null
     }
   ],
   "day_start": {
     "coins": 26,
     "bricks": 65,
     "got": 37,
-    "used": 0
+    "used": 3
   },
-  "tick": 1052,
+  "tick": 1059,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T22:13:21.098366+00:00",
+  "updated": "2026-12-06T23:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 455,
-      "queue": 270,
+      "model": 460,
+      "queue": 272,
       "autopilot": 37,
       "sleeping": 290,
       "tokens_in": 0,
@@ -660,8 +751,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 23,
-      "queue": 19,
+      "model": 28,
+      "queue": 21,
       "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
@@ -676,12 +767,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.692,
-      "tired": 0.33,
-      "bored": 0.7
+      "hunger": 0.202,
+      "tired": 0.57,
+      "bored": 0.41
     },
-    "bond": 1,
-    "food": 6,
+    "bond": 1.0,
+    "food": 5,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -689,17 +780,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "bored, chewing whatever he can find",
-    "last_played_tick": 1029,
-    "wants": "food",
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 1054,
+    "wants": null,
     "recent_thoughts": [
-      "Sun on my belly. Perfect.",
-      "Nap spot: located. Engaging.",
-      "I am a very good boy. Probably.",
-      "Tail check: still there. Good.",
-      "Learning is hard. Treats make it easier.",
-      "Sun on my belly. Perfect.",
-      "Yawn. Big yawn. Biggest yawn.",
       "The ! block knows something. I will watch it.",
       "Warm spot on the floor. Mine now.",
       "Dreaming: a sausage as big as the garage.",
@@ -712,11 +796,18 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "My tail won't stop. I'm not stopping it.",
       "Is it dinner? It feels like dinner.",
-      "Walk? Walk? WALK?"
+      "Walk? Walk? WALK?",
+      "Ball. Ball. Ball. Ball?",
+      "I could chew a boot. Just a little bit.",
+      "{owner} is the best human in the whole town.",
+      "Sun on my belly. Perfect.",
+      "Good boy? Me? Yes. Me.",
+      "Grease smell. Best smell after sausages.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "Walk? Walk? WALK?",
+    "thought": "Life is good. Life is SO good.",
     "want_ticks": 0,
-    "last_fed_tick": 1022,
+    "last_fed_tick": 1053,
     "recent_ideas": [
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
@@ -730,11 +821,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "{pup} follows me everywhere. Proper little shadow.",
-    "Winter on the island. Who knew?",
-    "That {topic} chapter got me thinking.",
-    "Running on coffee and hope.",
-    "Too much sitting. Where's my toolbox?",
     "Weather like this, Thailand feels close.",
     "Sun's out. Even the bricks look happy.",
     "{pup} brought me his lead. Subtle.",
@@ -754,9 +840,14 @@
     "Could sleep standing up like a horse.",
     "Hot one today. The beach is calling.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Life's simple. Fix things, save coins, look after the dog."
+    "Life's simple. Fix things, save coins, look after the dog.",
+    "Proper shorts weather.",
+    "Got stock to sell. Stall's calling.",
+    "Hands are itching. Need something to fix.",
+    "Every town needs a guy who fixes stuff. That's me.",
+    "The jar's getting heavier. Love that sound."
   ],
-  "real_updated": "2026-11-27T23:00:13.014692+00:00",
+  "real_updated": "2026-11-27T23:15:11.434960+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
@@ -769,7 +860,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 13,
+    "temp": 11,
     "snow": 0,
     "wet": 0,
     "snowman": 0
