@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-04T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "restoring Little Thunder: strip + clean (strip + clean 2/6)",
+    "why": "Two hours on Little Thunder. Best part of the day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "restoring Little Thunder: strip + clean (strip + clean 1/6)",
+    "why": "Two hours on Little Thunder. Best part of the day.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "Sun's up, Diesel's up, so I'm up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "note",
+    "text": "noted (Bangkok (History)): The history of Bangkok dates at least back to the early 15th century, to when it was a village on the west bank of the Chao Phraya River, under the rule of Ayut",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 2/10)",
+    "why": "Learning something today.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Penetrating oil and patience. That's the whole secret.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "noticed",
+    "text": "Someone left a box of spare bricks at the pit. +8 bricks.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "thought",
+    "text": "Wonder if the bikes in Thailand need fixing. Bet they do.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "building (the snow slowed the work, Rooftop Garden still 2/5)",
+    "why": "Let's get this Rooftop Garden up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T12:13:21.098366+00:00",
     "time": "7:13 AM",
     "kind": "did",
@@ -1228,123 +1345,6 @@
     "time": "6:28 AM",
     "kind": "thought",
     "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "🌨️ It's snowing! Big flakes falling on the brick town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Finished building the Tuk-tuk Garage",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Lights out, Diesel.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Foggy. Feels like a Port Alfred winter morning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "making a rebuilt carburettor (4 in stock)",
-    "why": "Making stock for the stall.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "making a rebuilt carburettor (3 in stock)",
-    "why": "Handmade, proper quality.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Running on coffee and hope.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
     "why": null,
     "by": "model",
     "ok": true

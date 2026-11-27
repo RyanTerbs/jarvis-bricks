@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Running on fumes. Need food.",
-  "feeling": "starving",
+  "doing": "restoring Little Thunder: strip + clean",
+  "thought": "Sun's up, Diesel's up, so I'm up.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.15,
-    "hunger": 0.105,
-    "social": 0.56,
-    "tinker": 0.655,
-    "curiosity": 0.63
+    "rest": 0.43,
+    "hunger": 0.49,
+    "social": 0.665,
+    "tinker": 0,
+    "curiosity": 0.405
   },
-  "mood": 0.31,
-  "energy": 0.85,
+  "mood": 0.44,
+  "energy": 0.57,
   "coins": 46,
   "coins_goal": 500,
-  "bricks": 20,
+  "bricks": 28,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -31,7 +31,7 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 1
+    "bangkok": 2
   },
   "finished": [
     "tourism_thailand",
@@ -132,12 +132,17 @@
       "date": "2026-12-03",
       "source": "Bangkok (Introduction)",
       "note": "Bangkok, known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and largest city of Thailand."
+    },
+    {
+      "date": "2026-12-04",
+      "source": "Bangkok (History)",
+      "note": "The history of Bangkok dates at least back to the early 15th century, to when it was a village on the west bank of the Chao Phraya River, under the rule of Ayut"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 7,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -236,21 +241,99 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "building (the snow slowed the work, Rooftop Garden still 2/5)",
+      "why": "Let's get this Rooftop Garden up."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Wonder if the bikes in Thailand need fixing. Bet they do.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "noticed",
+      "x": "Someone left a box of spare bricks at the pit. +8 bricks.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Penetrating oil and patience. That's the whole secret.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 2/10)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "note",
+      "x": "noted (Bangkok (History)): The history of Bangkok dates at least back to the early 15th century, to when it was a village on the west bank of the Chao Phraya River, under the rule of Ayut",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "Sun's up, Diesel's up, so I'm up.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean 1/6)",
+      "why": "Two hours on Little Thunder. Best part of the day."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean 2/6)",
+      "why": "Two hours on Little Thunder. Best part of the day."
     }
   ],
   "day_start": {
     "coins": 48,
     "bricks": 0,
-    "got": 20,
+    "got": 28,
     "used": 0
   },
-  "tick": 820,
+  "tick": 827,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T12:13:21.098366+00:00",
+  "updated": "2026-12-04T13:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 350,
-      "queue": 206,
+      "model": 354,
+      "queue": 209,
       "autopilot": 26,
       "sleeping": 238,
       "tokens_in": 0,
@@ -259,8 +342,8 @@
     },
     "today": {
       "date": "2026-12-04",
-      "model": 3,
-      "queue": 1,
+      "model": 7,
+      "queue": 4,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -275,9 +358,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.292,
-      "tired": 0.08,
-      "bored": 0.36
+      "hunger": 0.502,
+      "tired": 0.22,
+      "bored": 0.57
     },
     "bond": 1.0,
     "food": 0,
@@ -288,17 +371,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "wagging his tail",
+    "doing": "rolling in the grass",
     "last_played_tick": 772,
     "wants": "play",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -311,10 +387,17 @@
       "I am a very good boy. Probably.",
       "Grease smell. Best smell after sausages.",
       "Who left this brick here? I'll carry it somewhere else.",
-      "Cold white stuff! I must eat all of it."
+      "Cold white stuff! I must eat all of it.",
+      "{owner} is the best human in the whole town.",
+      "Good boy? Me? Yes. Me.",
+      "Following {owner}. Best job in the world.",
+      "The ground is a giant ice cream!",
+      "My tail won't stop. I'm not stopping it.",
+      "The rusty thing has wheels. Wheels go places. Places have smells.",
+      "Life is good. Life is SO good."
     ],
-    "thought": "Cold white stuff! I must eat all of it.",
-    "want_ticks": 2,
+    "thought": "Life is good. Life is SO good.",
+    "want_ticks": 0,
     "last_fed_tick": 786,
     "recent_ideas": [
       "follow {owner} to Thailand. Obviously.",
@@ -329,10 +412,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Didn't know half this stuff about {topic}.",
-    "{pup} follows me everywhere. Proper little shadow.",
-    "Winter. Cold mornings, slow engines.",
-    "Best decision I ever made, keeping {pup}.",
     "One day: me, a bike, and a mountain road outside Chiang Mai.",
     "Wet again. The site turns to mud in this.",
     "Sky's going orange. Thailand sunsets must be something else.",
@@ -353,9 +432,13 @@
     "Every town needs a guy who fixes stuff. That's me.",
     "Early bird gets the bricks.",
     "Thai street food. That's the dream right there.",
-    "Running on fumes. Need food."
+    "Running on fumes. Need food.",
+    "Brick town under snow looks like a Christmas card.",
+    "Wonder if the bikes in Thailand need fixing. Bet they do.",
+    "Penetrating oil and patience. That's the whole secret.",
+    "Sun's up, {pup}'s up, so I'm up."
   ],
-  "real_updated": "2026-11-27T15:15:11.420513+00:00",
+  "real_updated": "2026-11-27T15:30:10.868308+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-04@6",
@@ -368,9 +451,9 @@
     "seen": [
       "snow"
     ],
-    "temp": -4,
-    "snow": 0.48,
-    "wet": 0.75,
+    "temp": -3,
+    "snow": 1,
+    "wet": 0.4,
     "snowman": 1
   },
   "book_boxes": [
@@ -383,17 +466,17 @@
     "name": "Little Thunder",
     "found": "2026-12-04",
     "stage": 0,
-    "done": 0,
+    "done": 2,
     "parts": "in",
     "parts_due": null,
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 0,
-    "sessions": 0,
+    "sessions": 2,
     "tries": 0,
-    "today_date": null,
-    "today": 0,
+    "today_date": "2026-12-04",
+    "today": 2,
     "finished": null,
     "rides": 0
   },
@@ -416,7 +499,7 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
+      "hold": "done enough on it for today",
       "stage": 0,
       "stage_id": "strip",
       "parts": "in",
@@ -426,7 +509,7 @@
           "id": "strip",
           "name": "strip + clean",
           "need": 6,
-          "done": 0,
+          "done": 2,
           "coins": 0
         },
         {
