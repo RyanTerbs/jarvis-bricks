@@ -1,5 +1,86 @@
 [
   {
+    "at": "2026-12-04T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Making a hot chocolate",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Two taps on the jar for luck. Sleep.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "Every town needs a guy who fixes stuff. That's me.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Ja, no, definitely, maybe.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "thought",
+    "text": "Thailand rains like this in the wet season. Practice.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T02:58:21.098366+00:00",
     "time": "9:58 PM",
     "kind": "did",
@@ -1266,87 +1347,6 @@
     "text": "fixing a car (+4 coins)",
     "why": "Bessie is making a funny noise. My kind of problem.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Too much sitting. Where's my toolbox?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Looked up Dog training on the old laptop. Lekker.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "collecting bricks (+2 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Wonder if I'm pricing my stuff right.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "designing a brand-new building",
-    "why": "Town needs something new. Something mine.",
-    "by": "model",
     "ok": true
   }
 ]
