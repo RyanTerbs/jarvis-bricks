@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Could sleep standing up like a horse.",
-  "feeling": "chilled",
+  "thought": "Clouds sitting on the town like a lid.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.115,
-    "social": 0.36,
-    "tinker": 0.575,
+    "rest": 0.52,
+    "hunger": 0.415,
+    "social": 0.51,
+    "tinker": 0.455,
     "curiosity": 0.54
   },
-  "mood": 0.41,
-  "energy": 0.43,
-  "coins": 78,
+  "mood": 0.4,
+  "energy": 0.48,
+  "coins": 82,
   "coins_goal": 500,
-  "bricks": 12,
+  "bricks": 21,
   "stock": {},
   "owned": [],
   "sales": {
@@ -110,7 +110,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -126,7 +126,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-01",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-11-27",
@@ -485,21 +485,105 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Snowman time. Non-negotiable.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Brick pit next."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "collecting bricks (+3 bricks)",
+      "why": "Brick by brick, hey."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (6 bricks pop out!)",
+      "why": "One bonk for luck."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Brain's in first gear today.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Running on half a battery.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Hands need grease. Simple."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "thought",
+      "x": "Afternoon slump. Could do with a coffee.",
+      "why": null
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Clouds sitting on the town like a lid.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 80,
     "bricks": 2,
-    "got": 10,
+    "got": 19,
     "used": 0
   },
-  "tick": 557,
+  "tick": 565,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T18:28:21.098366+00:00",
+  "updated": "2026-12-01T20:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 238,
-      "queue": 143,
+      "model": 243,
+      "queue": 146,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -508,8 +592,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 18,
-      "queue": 11,
+      "model": 23,
+      "queue": 14,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -522,11 +606,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.428,
-      "tired": 0.83,
-      "bored": 0.25
+      "hunger": 0.564,
+      "tired": 0.59,
+      "bored": 0.37
     },
     "bond": 1.0,
     "food": 1,
@@ -537,18 +621,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
+    "doing": "napping",
     "last_played_tick": 549,
-    "wants": "nap",
+    "wants": null,
     "recent_thoughts": [
-      "The ground is a giant ice cream!",
-      "The ground is a giant ice cream!",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "If I stare at the bowl hard enough, food appears. Science.",
-      "Helping. I am helping. By sitting here.",
-      "The ground is a giant ice cream!",
-      "My bowl is empty. This is an emergency.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "Everything smells amazing today.",
       "Cold white stuff! I must eat all of it.",
       "Following {owner}. Best job in the world.",
@@ -560,9 +636,17 @@
       "Nap spot: located. Engaging.",
       "{owner} is the best human in the whole town.",
       "I am a very good boy. Probably.",
-      "Why are my paws cold? Doesn't matter. SNOW!"
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "The ground is a giant ice cream!",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Why are my paws cold? Doesn't matter. SNOW!",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 545,
     "recent_ideas": [
@@ -578,11 +662,6 @@
     "idea": "sit by the cafe door looking sad. Free pie."
   },
   "recent_thoughts": [
-    "The {site} won't build itself. Back to it.",
-    "Didn't know half this stuff about {topic}.",
-    "Can't wait to see the {site} finished.",
-    "Body says rest. Stubborn brain says one more job.",
-    "Want to learn something new today.",
     "So much I don't know. Love that, actually.",
     "Hands are itching. Need something to fix.",
     "Every brick in the {site} is one I collected myself. Feels good.",
@@ -602,9 +681,14 @@
     "Should I name the street? {me} Street. Ja, why not.",
     "Running on coffee and hope.",
     "Toast. Noodles. Anything.",
-    "Could sleep standing up like a horse."
+    "Could sleep standing up like a horse.",
+    "Snowman time. Non-negotiable.",
+    "Brain's in first gear today.",
+    "Running on half a battery.",
+    "Afternoon slump. Could do with a coffee.",
+    "Clouds sitting on the town like a lid."
   ],
-  "real_updated": "2026-11-27T06:30:12.061829+00:00",
+  "real_updated": "2026-11-27T06:45:12.307459+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -619,7 +703,7 @@
       "cloudy"
     ],
     "temp": 10,
-    "snow": 0.96,
+    "snow": 0.8,
     "wet": 0
   }
 }
