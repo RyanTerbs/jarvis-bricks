@@ -120,22 +120,25 @@
       },
       "decor": false,
       "built": "2026-12-02"
+    },
+    {
+      "lot": 8,
+      "id": "rooftop_garden",
+      "bp": "rooftop_garden",
+      "name": "Rooftop Garden",
+      "place": "rooftop_garden",
+      "desc": "a garden on a roof full of sunflowers",
+      "look": {
+        "kind": "shop",
+        "color": "#4e9a3a",
+        "emoji": "🌻",
+        "floors": 1
+      },
+      "decor": false,
+      "built": "2026-12-04"
     }
   ],
-  "site": {
-    "bp": "rooftop_garden",
-    "name": "Rooftop Garden",
-    "lot": 8,
-    "work": 5,
-    "done": 4,
-    "started": "2026-12-03",
-    "look": {
-      "kind": "shop",
-      "color": "#4e9a3a",
-      "emoji": "🌻",
-      "floors": 1
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -308,6 +311,10 @@
     {
       "date": "2026-12-04",
       "text": "Bought a wheelbarrow (+2 bricks every time he collects)."
+    },
+    {
+      "date": "2026-12-04",
+      "text": "Finished building the Rooftop Garden."
     }
   ]
 }
