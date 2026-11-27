@@ -1,5 +1,41 @@
 [
   {
+    "at": "2026-12-02T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Finished building the Noodle stall",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Two taps on the jar for luck. Sleep.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "noticed",
+    "text": "The cafe has a new coffee on the board.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-02T03:58:21.098366+00:00",
     "time": "10:58 PM",
     "kind": "did",
@@ -1311,42 +1347,6 @@
     "text": "Can't wait to see the Noodle stall finished.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Didn't know half this stuff about Dog training.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-01T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Bet someone's got a story.",
-    "by": "queue",
     "ok": true
   }
 ]

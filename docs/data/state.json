@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "garage",
-  "asleep": false,
-  "doing": "making a rebuilt carburettor",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
   "thought": "Grey old day. Good for graft, bad for a tan.",
   "feeling": "content",
   "needs": {
-    "rest": 0.64,
-    "hunger": 0.23,
-    "social": 0.45,
-    "tinker": 0,
-    "curiosity": 0.34
+    "rest": 0.21,
+    "hunger": 0.36,
+    "social": 0.51,
+    "tinker": 0.1,
+    "curiosity": 0.42
   },
-  "mood": 0.49,
-  "energy": 0.36,
+  "mood": 0.36,
+  "energy": 0.79,
   "coins": 49,
   "coins_goal": 500,
   "bricks": 21,
@@ -119,7 +119,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 22,
+  "hour": 0,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -135,763 +135,42 @@
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "small",
-    "waves_date": "2026-12-01"
+    "waves_date": "2026-12-02"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-12-01",
-    "used": 2,
+    "date": "2026-12-02",
+    "used": 0,
     "max": 3
   },
   "designed_on": "2026-11-27",
-  "plan_today": "Teach Diesel a new trick.",
-  "today_log": [
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Quick trip to the building site."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "building (Noodle stall 3/4)",
-      "why": "Back to the Noodle stall. Nearly there."
-    },
-    {
-      "t": "7:13 AM",
-      "k": "noticed",
-      "x": "A kid drops a bolt and asks Derek what it's for.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "thought",
-      "x": "Quiet day. Could do with a chat at the cafe.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "did",
-      "x": "reading a book (Dog training, chapter 4/8)",
-      "why": "One more chapter."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "note",
-      "x": "noted (Dog training (How dogs learn)): Operant conditioning: Operant conditioning (or instrumental conditioning) is a form of learning in which an individual's behavior is modified by its consequence",
-      "why": null
-    },
-    {
-      "t": "7:43 AM",
-      "k": "thought",
-      "x": "Note to self: buy more duct tape.",
-      "why": null
-    },
-    {
-      "t": "7:43 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Off to the building site."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "did",
-      "x": "building (the snow slowed the work, Noodle stall still 3/4)",
-      "why": "One more course of bricks."
-    },
-    {
-      "t": "8:13 AM",
-      "k": "thought",
-      "x": "Some days you're the spanner, some days you're the bolt.",
-      "why": null
-    },
-    {
-      "t": "8:13 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Off to the cafe."
-    },
-    {
-      "t": "8:28 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Need some gossip."
-    },
-    {
-      "t": "8:43 AM",
-      "k": "thought",
-      "x": "Food first. Then I'm useful again.",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Play time!"
-    },
-    {
-      "t": "8:58 AM",
-      "k": "thought",
-      "x": "The Noodle stall is coming along. Brick by brick.",
-      "why": null
-    },
-    {
-      "t": "8:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "9:13 AM",
-      "k": "noticed",
-      "x": "Diesel falls asleep in the toolbox for a second.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "noticed",
-      "x": "A kid drops a bolt and asks Derek what it's for.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "thought",
-      "x": "Diesel first. Always Diesel first.",
-      "why": null
-    },
-    {
-      "t": "9:13 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "9:28 AM",
-      "k": "noticed",
-      "x": "It starts raining plastic raindrops.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "thought",
-      "x": "The jar's getting heavier. Love that sound.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Building site next."
-    },
-    {
-      "t": "9:43 AM",
-      "k": "built",
-      "x": "finished building the Noodle stall!",
-      "why": null
-    },
-    {
-      "t": "9:43 AM",
-      "k": "did",
-      "x": "building (finished!)",
-      "why": "Back to the Noodle stall. Nearly there."
-    },
-    {
-      "t": "9:58 AM",
-      "k": "thought",
-      "x": "Ja, today feels like a building day.",
-      "why": null
-    },
-    {
-      "t": "9:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "10:13 AM",
-      "k": "did",
-      "x": "reading a book (Dog training, chapter 5/8)",
-      "why": "Books are a cheap mechanics' school."
-    },
-    {
-      "t": "10:13 AM",
-      "k": "note",
-      "x": "noted (Dog training (Training methods)): Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training.",
-      "why": null
-    },
-    {
-      "t": "10:28 AM",
-      "k": "thought",
-      "x": "Every coin counts. Every single one.",
-      "why": null
-    },
-    {
-      "t": "10:28 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "10:43 AM",
-      "k": "thought",
-      "x": "Winter on the island. Who knew?",
-      "why": null
-    },
-    {
-      "t": "10:43 AM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
-    {
-      "t": "10:58 AM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Betsy is making a funny noise. My kind of problem."
-    },
-    {
-      "t": "11:13 AM",
-      "k": "thought",
-      "x": "Proud of Diesel. Little guy's growing up.",
-      "why": null
-    },
-    {
-      "t": "11:13 AM",
-      "k": "did",
-      "x": "walking to the beach",
-      "why": "Heading to the beach."
-    },
-    {
-      "t": "11:28 AM",
-      "k": "did",
-      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
-      "why": "Let him run."
-    },
-    {
-      "t": "11:43 AM",
-      "k": "thought",
-      "x": "1 degrees. My fingers have stopped working.",
-      "why": null
-    },
-    {
-      "t": "11:43 AM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "11:58 AM",
-      "k": "thought",
-      "x": "Should I name the street? Derek Street. Ja, why not.",
-      "why": null
-    },
-    {
-      "t": "11:58 AM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Brick pit next."
-    },
-    {
-      "t": "12:13 PM",
-      "k": "did",
-      "x": "collecting bricks (+4 bricks)",
-      "why": "Got plans. Need materials."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (6 bricks pop out!)",
-      "why": "Jump, hit, hope."
-    },
-    {
-      "t": "12:43 PM",
-      "k": "thought",
-      "x": "Running on coffee and hope.",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "12:58 PM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: sit by the cafe door looking sad. Free pie.",
-      "why": null
-    },
-    {
-      "t": "12:58 PM",
-      "k": "thought",
-      "x": "Toast. Noodles. Anything.",
-      "why": null
-    },
-    {
-      "t": "12:58 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "1:13 PM",
-      "k": "noticed",
-      "x": "☁️ A grey lid of cloud rolls in.",
-      "why": null
-    },
-    {
-      "t": "1:13 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Can't run on toast forever."
-    },
-    {
-      "t": "1:28 PM",
-      "k": "thought",
-      "x": "Could sleep standing up like a horse.",
-      "why": null
-    },
-    {
-      "t": "1:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "1:43 PM",
-      "k": "thought",
-      "x": "Snowman time. Non-negotiable.",
-      "why": null
-    },
-    {
-      "t": "1:43 PM",
-      "k": "did",
-      "x": "walking to the brick pit",
-      "why": "Brick pit next."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "did",
-      "x": "collecting bricks (+3 bricks)",
-      "why": "Brick by brick, hey."
-    },
-    {
-      "t": "2:13 PM",
-      "k": "did",
-      "x": "jumping up to hit the ! block (6 bricks pop out!)",
-      "why": "One bonk for luck."
-    },
-    {
-      "t": "2:28 PM",
-      "k": "noticed",
-      "x": "A bike roars past heading out of town.",
-      "why": null
-    },
-    {
-      "t": "2:28 PM",
-      "k": "thought",
-      "x": "Brain's in first gear today.",
-      "why": null
-    },
-    {
-      "t": "2:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "2:43 PM",
-      "k": "thought",
-      "x": "Running on half a battery.",
-      "why": null
-    },
-    {
-      "t": "2:43 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Garage next."
-    },
-    {
-      "t": "2:58 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Hands need grease. Simple."
-    },
-    {
-      "t": "3:13 PM",
-      "k": "thought",
-      "x": "Afternoon slump. Could do with a coffee.",
-      "why": null
-    },
-    {
-      "t": "3:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "3:28 PM",
-      "k": "thought",
-      "x": "Clouds sitting on the town like a lid.",
-      "why": null
-    },
-    {
-      "t": "3:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "thought",
-      "x": "Reading about Dog training makes me want to try it.",
-      "why": null
-    },
-    {
-      "t": "3:43 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "3:58 PM",
-      "k": "did",
-      "x": "building a snowman (snowman 1/3)",
-      "why": "Every town needs a snowman. Rules."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "thought",
-      "x": "Thai street food. That's the dream right there.",
-      "why": null
-    },
-    {
-      "t": "4:13 PM",
-      "k": "did",
-      "x": "reading a book (Dog training, chapter 6/8)",
-      "why": "One more chapter."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "note",
-      "x": "noted (Dog training (Factors)): Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "thought",
-      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
-      "why": null
-    },
-    {
-      "t": "4:28 PM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Cafe next."
-    },
-    {
-      "t": "4:43 PM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Need some gossip."
-    },
-    {
-      "t": "4:58 PM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: bring Derek a stick. Then a bigger stick.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "thought",
-      "x": "Diesel keeps nudging his bowl. Message received.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "5:28 PM",
-      "k": "thought",
-      "x": "Cloudy. Fine. Engines don't care.",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "5:43 PM",
-      "k": "thought",
-      "x": "Evening breeze off the sea. Lekker.",
-      "why": null
-    },
-    {
-      "t": "5:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "5:58 PM",
-      "k": "thought",
-      "x": "Plastic rain, plastic trees, real problems.",
-      "why": null
-    },
-    {
-      "t": "5:58 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
-      "why": "Walkies, Diesel."
-    },
-    {
-      "t": "6:13 PM",
-      "k": "thought",
-      "x": "Winter. Cold mornings, slow engines.",
-      "why": null
-    },
-    {
-      "t": "6:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "6:28 PM",
-      "k": "thought",
-      "x": "Diesel has never seen snow. He's losing his mind.",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "did",
-      "x": "playing in the snow with Diesel",
-      "why": "Snowball fight. Diesel versus me."
-    },
-    {
-      "t": "6:43 PM",
-      "k": "thought",
-      "x": "80 in the jar. 420 more and I'm on that bike in Thailand.",
-      "why": null
-    },
-    {
-      "t": "6:43 PM",
-      "k": "did",
-      "x": "training Diesel (give paw: 2/4)",
-      "why": "Teaching Diesel new tricks."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "training Diesel (give paw: Diesel wasn't having it)",
-      "why": "Practice makes perfect."
-    },
-    {
-      "t": "7:13 PM",
-      "k": "thought",
-      "x": "Best decision I ever made, keeping Diesel.",
-      "why": null
-    },
-    {
-      "t": "7:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "thought",
-      "x": "Funny what you learn. Dog training, who knew.",
-      "why": null
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "walking to the beach",
-      "why": "Beach next."
-    },
-    {
-      "t": "7:43 PM",
-      "k": "did",
-      "x": "building a sand castle (sand castle size 1/6)",
-      "why": "This one's getting a moat."
-    },
-    {
-      "t": "7:58 PM",
-      "k": "did",
-      "x": "watching the sunset",
-      "why": "Every day should end like this."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "thought",
-      "x": "21 bricks in the pile. Could build something lekker with that.",
-      "why": null
-    },
-    {
-      "t": "8:13 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "8:28 PM",
-      "k": "bought",
-      "x": "bought a surfboard: lets him go surfing",
-      "why": null
-    },
-    {
-      "t": "8:28 PM",
-      "k": "did",
-      "x": "ordering a surfboard from the catalogue",
-      "why": "A tool that pays for itself."
-    },
-    {
-      "t": "8:43 PM",
-      "k": "thought",
-      "x": "450 coins to go. That's just a lot of carbs.",
-      "why": null
-    },
-    {
-      "t": "8:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "8:58 PM",
-      "k": "thought",
-      "x": "Every coin counts. Every single one.",
-      "why": null
-    },
-    {
-      "t": "8:58 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Coins are tight. Toast it is."
-    },
-    {
-      "t": "9:13 PM",
-      "k": "did",
-      "x": "making toast",
-      "why": "Fastest meal in the world."
-    },
-    {
-      "t": "9:28 PM",
-      "k": "thought",
-      "x": "Lamps are coming on. Town looks proper tonight.",
-      "why": null
-    },
-    {
-      "t": "9:28 PM",
-      "k": "did",
-      "x": "making a hot chocolate",
-      "why": "Hot chocolate. Doctor's orders."
-    },
-    {
-      "t": "9:43 PM",
-      "k": "thought",
-      "x": "Evenings are for slowing down. Mostly.",
-      "why": null
-    },
-    {
-      "t": "9:43 PM",
-      "k": "did",
-      "x": "cuddling Diesel (Diesel's tail goes mad)",
-      "why": "Diesel deserves it."
-    },
-    {
-      "t": "9:58 PM",
-      "k": "thought",
-      "x": "Even my spanner looks tired.",
-      "why": null
-    },
-    {
-      "t": "9:58 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Quick trip to the garage."
-    },
-    {
-      "t": "10:13 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Customer's waiting. Can't leave them stuck."
-    },
-    {
-      "t": "10:28 PM",
-      "k": "thought",
-      "x": "Stars are out. Tiny town, big sky.",
-      "why": null
-    },
-    {
-      "t": "10:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "10:43 PM",
-      "k": "thought",
-      "x": "Grey old day. Good for graft, bad for a tan.",
-      "why": null
-    },
-    {
-      "t": "10:43 PM",
-      "k": "did",
-      "x": "making a rebuilt carburettor (1 in stock)",
-      "why": "Making stock for the stall."
-    },
-    {
-      "t": "10:58 PM",
-      "k": "did",
-      "x": "making a rebuilt carburettor (2 in stock)",
-      "why": "Got an order in my head."
-    }
-  ],
+  "plan_today": "Beach in the morning, graft in the afternoon.",
+  "today_log": [],
   "day_start": {
-    "coins": 80,
-    "bricks": 2,
-    "got": 19,
+    "coins": 49,
+    "bricks": 21,
+    "got": 0,
     "used": 0
   },
-  "tick": 595,
+  "tick": 603,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T03:58:21.098366+00:00",
+  "updated": "2026-12-02T05:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 263,
       "queue": 156,
-      "autopilot": 18,
-      "sleeping": 158,
+      "autopilot": 20,
+      "sleeping": 164,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-12-01",
-      "model": 43,
-      "queue": 24,
-      "autopilot": 1,
-      "sleeping": 24,
+      "date": "2026-12-02",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 4,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -902,11 +181,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.456,
-      "tired": 0.39,
-      "bored": 0.22
+      "hunger": 0.54,
+      "tired": 0,
+      "bored": 0.28
     },
     "bond": 1.0,
     "food": 0,
@@ -917,18 +196,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "asleep at the foot of the bed",
     "last_played_tick": 579,
     "wants": null,
     "recent_thoughts": [
-      "{owner} is the best human in the whole town.",
-      "Good boy? Me? Yes. Me.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -940,9 +211,17 @@
       "Sky went grey. Still a good day. Every day is a good day.",
       "Grease smell. Best smell after sausages.",
       "I am a very good boy. Probably.",
-      "Sky went grey. Still a good day. Every day is a good day."
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Sniffed a lamp post. Interesting news.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 572,
     "recent_ideas": [
@@ -984,7 +263,7 @@
     "Stars are out. Tiny town, big sky.",
     "Grey old day. Good for graft, bad for a tan."
   ],
-  "real_updated": "2026-11-27T07:45:12.068594+00:00",
+  "real_updated": "2026-11-27T08:00:14.100286+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -998,8 +277,8 @@
       "snow",
       "cloudy"
     ],
-    "temp": 5,
-    "snow": 0.2,
+    "temp": 4,
+    "snow": 0.04,
     "wet": 0,
     "snowman": 1
   }

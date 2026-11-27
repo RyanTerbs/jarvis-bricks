@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-12-01",
+    "day": "Tue 01 Dec",
+    "title": "Finished building the Noodle stall",
+    "text": "Not a bad day, all things considered. Spent most of today reading a book, cooking a proper meal and fixing a car. Finished building the Noodle stall! Stood back and had a proper look at it. Lekker. Worked on tricks with Diesel a few times. Got stuck into Dog training for a bit. Snow everywhere today. Diesel went completely mad in it. Beach time: watching the sunset. Diesel made me laugh about ten times today. Pretty sure Diesel was planning to bring me a stick. Then a bigger stick. Cheeky. Bought a surfboard: lets me go surfing. Spent 31 coins. Eish. Collected 19 bricks. Also: Diesel falls asleep in the toolbox for a second. Thailand feels closer today. 451 to go. Not bad, hey.",
+    "tomorrow": "Beach in the morning, graft in the afternoon.",
+    "by": "template",
+    "coins": 49,
+    "bricks": 21,
+    "coins_change": -31,
+    "bricks_change": 19,
+    "built": [
+      "finished building the Noodle stall!"
+    ]
+  },
+  {
     "date": "2026-11-30",
     "day": "Mon 30 Nov",
     "title": "Fixing a car",
