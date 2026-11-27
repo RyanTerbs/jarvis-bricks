@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "feeding Diesel",
-  "thought": "Diesel brought me his lead. Subtle.",
-  "feeling": "happy enough",
+  "doing": "having a rest",
+  "thought": "If it's got moving parts, I can fix it. Mostly.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.39,
-    "hunger": 0.525,
-    "social": 0.49,
-    "tinker": 0.655,
-    "curiosity": 0.495
+    "rest": 0.58,
+    "hunger": 0.16,
+    "social": 0.61,
+    "tinker": 0.185,
+    "curiosity": 0.545
   },
-  "mood": 0.44,
-  "energy": 0.61,
-  "coins": 28,
+  "mood": 0.49,
+  "energy": 0.42,
+  "coins": 30,
   "coins_goal": 500,
   "bricks": 102,
   "stock": {
@@ -168,7 +168,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 9,
+  "hour": 11,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -327,6 +327,90 @@
       "k": "did",
       "x": "feeding Diesel (Diesel's tail goes mad)",
       "why": "He depends on me."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "thought",
+      "x": "Not a cloud. Diesel is going to want the beach.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Nothing beats an engine firing first try."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "thought",
+      "x": "Eish, forgot to eat again.",
+      "why": null
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "thought",
+      "x": "Under all that rust there's a good bike. I can see her.",
+      "why": null
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean 3/6)",
+      "why": "Grease, coffee, Little Thunder. Happy man."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "11:28 AM",
+      "k": "thought",
+      "x": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+      "why": null
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Fresh air for both of us."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "thought",
+      "x": "If it's got moving parts, I can fix it. Mostly.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -335,13 +419,13 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1022,
+  "tick": 1030,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T14:43:21.098366+00:00",
+  "updated": "2026-12-06T16:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 438,
-      "queue": 258,
+      "model": 443,
+      "queue": 261,
       "autopilot": 36,
       "sleeping": 290,
       "tokens_in": 0,
@@ -350,8 +434,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 6,
-      "queue": 7,
+      "model": 11,
+      "queue": 10,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -366,9 +450,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0,
-      "tired": 0.38,
-      "bored": 0.34
+      "hunger": 0.24,
+      "tired": 0.69,
+      "bored": 0.28
     },
     "bond": 1.0,
     "food": 0,
@@ -379,18 +463,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 1017,
+    "doing": "watching Derek work",
+    "last_played_tick": 1029,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Sun on my belly. Perfect.",
-      "Warm spot on the floor. Mine now.",
       "Good boy? Me? Yes. Me.",
       "My tail won't stop. I'm not stopping it.",
       "Sun on my belly. Perfect.",
@@ -402,10 +478,18 @@
       "{owner} is the best human in the whole town.",
       "Warm spot on the floor. Mine now.",
       "Tummy rumble. Big one.",
-      "Sit means treat. I have cracked the code."
+      "Sit means treat. I have cracked the code.",
+      "Following {owner}. Best job in the world.",
+      "Warm spot on the floor. Mine now.",
+      "Grease on my nose. Worth it.",
+      "Is that a squirrel? It's a bolt. Still exciting.",
+      "Warm spot on the floor. Mine now.",
+      "I know tricks now. I am a very clever boy.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Sun on my belly. Perfect."
     ],
-    "thought": "YES! That's what I wanted!",
-    "want_ticks": 0,
+    "thought": "Sun on my belly. Perfect.",
+    "want_ticks": 5,
     "last_fed_tick": 1022,
     "recent_ideas": [
       "sit by the cafe door looking sad. Free pie.",
@@ -420,11 +504,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Wonder if I'm pricing my stuff right.",
-    "If I don't eat soon I'm eating a brick.",
-    "Blue sky, no excuses.",
-    "Someone out there needs a brick model bike. I can feel it.",
-    "Bag and label everything. Learned that the hard way.",
     "Me and {pup} against the world.",
     "{left} coins to go. That's just a lot of carbs.",
     "Didn't know half this stuff about {topic}.",
@@ -444,9 +523,14 @@
     "Too much sitting. Where's my toolbox?",
     "Weather like this, Thailand feels close.",
     "Sun's out. Even the bricks look happy.",
-    "{pup} brought me his lead. Subtle."
+    "{pup} brought me his lead. Subtle.",
+    "Not a cloud. {pup} is going to want the beach.",
+    "Eish, forgot to eat again.",
+    "Under all that rust there's a good bike. I can see her.",
+    "{pup} fell asleep on my boots again. Can't move. Won't move.",
+    "If it's got moving parts, I can fix it. Mostly."
   ],
-  "real_updated": "2026-11-27T22:00:11.829365+00:00",
+  "real_updated": "2026-11-27T22:15:16.443661+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@6",
@@ -459,7 +543,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 0,
+    "temp": 1,
     "snow": 0,
     "wet": 0,
     "snowman": 0
@@ -474,17 +558,17 @@
     "name": "Little Thunder",
     "found": "2026-12-04",
     "stage": 0,
-    "done": 2,
+    "done": 3,
     "parts": "in",
     "parts_due": null,
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 0,
-    "sessions": 2,
+    "sessions": 3,
     "tries": 0,
-    "today_date": "2026-12-04",
-    "today": 2,
+    "today_date": "2026-12-06",
+    "today": 1,
     "finished": null,
     "rides": 0
   },
@@ -517,7 +601,7 @@
           "id": "strip",
           "name": "strip + clean",
           "need": 6,
-          "done": 2,
+          "done": 3,
           "coins": 0
         },
         {

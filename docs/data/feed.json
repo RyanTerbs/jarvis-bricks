@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-06T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "thought",
+    "text": "If it's got moving parts, I can fix it. Mostly.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "restoring Little Thunder: strip + clean (strip + clean 3/6)",
+    "why": "Grease, coffee, Little Thunder. Happy man.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Under all that rust there's a good bike. I can see her.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "thought",
+    "text": "Eish, forgot to eat again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Nothing beats an engine firing first try.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-06T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "thought",
+    "text": "Not a cloud. Diesel is going to want the beach.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-06T14:43:21.098366+00:00",
     "time": "9:43 AM",
     "kind": "did",
@@ -1221,132 +1347,6 @@
     "text": "cooking a proper meal",
     "why": "Cooking something lekker tonight.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Thai street food. That's the dream right there.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "building (Library 1/6)",
-    "why": "Back to the Library. Nearly there.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 42 in the pile now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Sometimes I just stand here and listen to the town.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Haven't spoken to a human all day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Heading to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Slept like a log. Ready to graft.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "noticed",
-    "text": "☀️ Sun's out over the island.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Built a proper snowman",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Long day. Bed.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
     "ok": true
   }
 ]
