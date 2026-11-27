@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "market_stall",
+  "place": "home",
   "asleep": false,
-  "doing": "running his market stall",
-  "thought": "Winter on the island. Who knew?",
-  "feeling": "on top of the world",
+  "doing": "having a rest",
+  "thought": "Yoh, I'm tired.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.52,
-    "hunger": 0.45,
-    "social": 0.09,
-    "tinker": 0.62,
-    "curiosity": 0.415
+    "rest": 0.56,
+    "hunger": 0.07,
+    "social": 0.165,
+    "tinker": 0.25,
+    "curiosity": 0.515
   },
-  "mood": 0.46,
-  "energy": 0.48,
-  "coins": 39,
+  "mood": 0.47,
+  "energy": 0.44,
+  "coins": 41,
   "coins_goal": 500,
   "bricks": 20,
   "stock": {
@@ -130,7 +130,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 12,
+  "hour": 14,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -143,13 +143,7 @@
     "waves": "small",
     "waves_date": "2026-12-03"
   },
-  "queue": [
-    {
-      "move": "run_the_stall",
-      "why": "Got stock, need buyers.",
-      "pricing": "fair"
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-03",
     "used": 1,
@@ -421,6 +415,102 @@
       "k": "did",
       "x": "running his market stall (pricey prices, no buyers this time (quiet in this snow))",
       "why": "Got stock, need buyers."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "running his market stall (fair prices, no buyers this time (quiet in this snow))",
+      "why": "Got stock, need buyers."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "1 degrees. My fingers have stopped working.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "🌧️ It starts raining. Proper drops this time.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Had a dream about a gearbox. Normal, right?",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Wonder if I'm pricing my stuff right.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Afternoon slump. Could do with a coffee.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Looked up Dog training on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "building a snowman (snowman 1/3)",
+      "why": "Snow on the ground? A man has to build a snowman."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Yoh, I'm tired.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -429,13 +519,13 @@
     "got": 4,
     "used": 0
   },
-  "tick": 745,
+  "tick": 753,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T17:28:21.098366+00:00",
+  "updated": "2026-12-03T19:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 317,
-      "queue": 193,
+      "model": 323,
+      "queue": 195,
       "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
@@ -444,8 +534,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 13,
-      "queue": 11,
+      "model": 19,
+      "queue": 13,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -458,11 +548,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.398,
-      "tired": 0.75,
-      "bored": 0.12
+      "hunger": 0.482,
+      "tired": 0.31,
+      "bored": 0.18
     },
     "bond": 1.0,
     "food": 2,
@@ -473,18 +563,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "watching Derek work",
     "last_played_tick": 739,
     "wants": null,
     "recent_thoughts": [
-      "{owner} is the best human in the whole town.",
-      "Good boy? Me? Yes. Me.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "Cold white stuff! I must eat all of it.",
-      "Cold white stuff! I must eat all of it.",
-      "My tail won't stop. I'm not stopping it.",
-      "The ! block knows something. I will watch it.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "The ground is a giant ice cream!",
       "Why are my paws cold? Doesn't matter. SNOW!",
@@ -496,9 +578,17 @@
       "SAND! Wet sand! Best day ever!",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz.",
+      "Following {owner}. Best job in the world.",
+      "My tail won't stop. I'm not stopping it."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "My tail won't stop. I'm not stopping it.",
     "want_ticks": 0,
     "last_fed_tick": 730,
     "recent_ideas": [
@@ -514,12 +604,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Reading about {topic} makes me want to try it.",
-    "Wonder if I'm pricing my stuff right.",
-    "Looked up {topic} on the old laptop. Lekker.",
-    "Too much sitting. Where's my toolbox?",
-    "Even the lamp posts look lost in this fog.",
-    "Didn't know half this stuff about {topic}.",
     "Can't see the end of the street. Spooky.",
     "One more job, then feet up.",
     "Thailand. Noodles, mountains, warm sea. Soon.",
@@ -538,24 +622,31 @@
     "Winter. Cold mornings, slow engines.",
     "Still thinking about that bit on {topic}.",
     "Smells like oil and toast. Perfect morning.",
-    "Winter on the island. Who knew?"
+    "Winter on the island. Who knew?",
+    "{temp} degrees. My fingers have stopped working.",
+    "Had a dream about a gearbox. Normal, right?",
+    "Wonder if I'm pricing my stuff right.",
+    "Afternoon slump. Could do with a coffee.",
+    "Looked up {topic} on the old laptop. Lekker.",
+    "Yoh, I'm tired."
   ],
-  "real_updated": "2026-11-27T12:45:10.408746+00:00",
+  "real_updated": "2026-11-27T13:00:15.061855+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-03@6",
-    "kind": "snow",
+    "key": "2026-12-03@13",
+    "kind": "rain",
     "season": "winter",
-    "base": -1.4,
-    "emoji": "🌨️",
-    "name": "snowing",
+    "base": 0.2,
+    "emoji": "🌧️",
+    "name": "rainy",
     "season_emoji": "❄️",
     "seen": [
-      "snow"
+      "snow",
+      "rain"
     ],
-    "temp": 1,
-    "snow": 1,
-    "wet": 0,
-    "snowman": 0
+    "temp": 4,
+    "snow": 0.76,
+    "wet": 1,
+    "snowman": 1
   }
 }

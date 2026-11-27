@@ -1,5 +1,149 @@
 [
   {
+    "at": "2026-12-03T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Yoh, I'm tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman 1/3)",
+    "why": "Snow on the ground? A man has to build a snowman.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Looked up Dog training on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Afternoon slump. Could do with a coffee.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "Wonder if I'm pricing my stuff right.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "Had a dream about a gearbox. Normal, right?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "noticed",
+    "text": "🌧️ It starts raining. Proper drops this time.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "thought",
+    "text": "1 degrees. My fingers have stopped working.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "running his market stall (fair prices, no buyers this time (quiet in this snow))",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T17:28:21.098366+00:00",
     "time": "12:28 PM",
     "kind": "did",
@@ -1203,150 +1347,6 @@
     "text": "walking to the building site",
     "why": "Heading to the building site.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "thought",
-    "text": "Foggy. Feels like a Port Alfred winter morning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "noticed",
-    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "refused",
-    "text": "tried fixing a car: can't do that at home",
-    "why": null,
-    "by": "queue",
-    "ok": false
-  },
-  {
-    "at": "2026-12-02T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Cold hands need a hot mug.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: find out what's inside the ! block.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "thought",
-    "text": "Ja, today feels like a building day.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "starting a new build: Tuk-tuk Garage (paid 30 bricks)",
-    "why": "Got the bricks, let's go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "Even the lamp posts look lost in this fog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Look at that tail go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "thought",
-    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "cuddling Diesel",
-    "why": "Best part of the day.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "Coffee first. Then the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (6 bricks pop out!)",
-    "why": "Jump, hit, hope.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "collecting bricks (+3 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
     "ok": true
   }
 ]
