@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-03T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "thought",
+    "text": "Toast. Noodles. Anything.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "Salt air, warm sand, no bolts. Perfect.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "collecting shells (+1 shells (11 in the jar))",
+    "why": "Pretty ones today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+    "why": "Diesel loves the beach.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Quick trip to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "thought",
+    "text": "Me and Diesel against the world.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Look at that tail go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "Sun's up, Diesel's up, so I'm up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "noticed",
+    "text": "Diesel chases a plastic butterfly and misses.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-03T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Cold hands need a hot mug.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-03T11:58:21.098366+00:00",
     "time": "6:58 AM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "making a rebuilt carburettor (1 in stock)",
     "why": "Making stock for the stall.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Grey old day. Good for graft, bad for a tan.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "Stars are out. Tiny town, big sky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Customer's waiting. Can't leave them stuck.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Even my spanner looks tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "cuddling Diesel (Diesel's tail goes mad)",
-    "why": "Diesel deserves it.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Evenings are for slowing down. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Hot chocolate. Doctor's orders.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Lamps are coming on. Town looks proper tonight.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Fastest meal in the world.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "making toast",
-    "why": "Coins are tight. Toast it is.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Every coin counts. Every single one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
     "by": "model",
     "ok": true
   }

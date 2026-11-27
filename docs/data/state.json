@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Diesel has never seen snow. He's losing his mind.",
-  "feeling": "okay-ish",
+  "doing": "cooking a proper meal",
+  "thought": "Toast. Noodles. Anything.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.08,
-    "hunger": 0.505,
-    "social": 0.55,
-    "tinker": 0.3,
-    "curiosity": 0.365
+    "rest": 0.23,
+    "hunger": 0,
+    "social": 0.42,
+    "tinker": 0.53,
+    "curiosity": 0.415
   },
-  "mood": 0.25,
-  "energy": 0.92,
-  "coins": 39,
+  "mood": 0.52,
+  "energy": 0.77,
+  "coins": 36,
   "coins_goal": 500,
   "bricks": 16,
   "stock": {
@@ -130,25 +130,20 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 6,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 10,
+    "shells": 11,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "small",
     "waves_date": "2026-12-03"
   },
-  "queue": [
-    {
-      "move": "make_hot_chocolate",
-      "why": "Cold hands need a hot mug."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-03",
     "used": 0,
@@ -192,6 +187,90 @@
       "k": "did",
       "x": "walking home",
       "why": "Home for a bit."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Cold hands need a hot mug."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "noticed",
+      "x": "Diesel chases a plastic butterfly and misses.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "Sun's up, Diesel's up, so I'm up.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Look at that tail go."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Me and Diesel against the world.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Quick trip to the beach."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Diesel loves the beach."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "collecting shells (+1 shells (11 in the jar))",
+      "why": "Pretty ones today."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "Salt air, warm sand, no bolts. Perfect.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "Toast. Noodles. Anything.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
     }
   ],
   "day_start": {
@@ -200,13 +279,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 723,
+  "tick": 731,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-03T11:58:21.098366+00:00",
+  "updated": "2026-12-03T13:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 306,
-      "queue": 183,
+      "model": 310,
+      "queue": 187,
       "autopilot": 23,
       "sleeping": 211,
       "tokens_in": 0,
@@ -215,8 +294,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 2,
-      "queue": 1,
+      "model": 6,
+      "queue": 5,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -231,12 +310,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.436,
-      "tired": 0.06,
-      "bored": 0.63
+      "hunger": 0.03,
+      "tired": 0.47,
+      "bored": 0.12
     },
     "bond": 1.0,
-    "food": 3,
+    "food": 2,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -244,18 +323,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 666,
-    "wants": "play",
+    "doing": "trotting along behind Derek",
+    "last_played_tick": 727,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
@@ -267,11 +338,19 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Following {owner}. Best job in the world.",
       "Ball. Ball. Ball. Ball?",
-      "Who left this brick here? I'll carry it somewhere else."
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Cold white stuff! I must eat all of it.",
+      "Life is good. Life is SO good.",
+      "{owner} is the best human in the whole town.",
+      "Good boy? Me? Yes. Me.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "Cold white stuff! I must eat all of it.",
+      "Cold white stuff! I must eat all of it."
     ],
-    "thought": "Who left this brick here? I'll carry it somewhere else.",
+    "thought": "Cold white stuff! I must eat all of it.",
     "want_ticks": 0,
-    "last_fed_tick": 680,
+    "last_fed_tick": 730,
     "recent_ideas": [
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
@@ -285,10 +364,6 @@
     "idea": "dig all the way to the other side of the island."
   },
   "recent_thoughts": [
-    "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "Body says rest. Stubborn brain says one more job.",
-    "If I finish this, I'm getting a snack. Deal.",
-    "Still thinking about that bit on {topic}.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Don't spend it. Don't spend it. Don't spend it.",
     "Winter. Cold mornings, slow engines.",
@@ -309,9 +384,13 @@
     "Running on coffee and hope.",
     "Foggy. Feels like a Port Alfred winter morning.",
     "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "{pup} has never seen snow. He's losing his mind."
+    "{pup} has never seen snow. He's losing his mind.",
+    "Sun's up, {pup}'s up, so I'm up.",
+    "Me and {pup} against the world.",
+    "Salt air, warm sand, no bolts. Perfect.",
+    "Toast. Noodles. Anything."
   ],
-  "real_updated": "2026-11-27T12:00:13.073940+00:00",
+  "real_updated": "2026-11-27T12:15:16.862839+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@6",
@@ -324,8 +403,8 @@
     "seen": [
       "snow"
     ],
-    "temp": -3,
-    "snow": 0.32,
+    "temp": -1,
+    "snow": 0.96,
     "wet": 0,
     "snowman": 0
   }
