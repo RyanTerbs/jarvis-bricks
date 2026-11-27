@@ -1,5 +1,95 @@
 [
   {
+    "at": "2026-12-05T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Someone out there needs a brick model bike. I can feel it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "note",
+    "text": "noted (Bangkok (Demography)): The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "reading a book (Bangkok, chapter 6/10)",
+    "why": "One more chapter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Quick trip to the library.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "thought",
+    "text": "Blue sky, no excuses.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "noticed",
+    "text": "It starts raining plastic raindrops.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "If I don't eat soon I'm eating a brick.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T20:13:21.098366+00:00",
     "time": "3:13 PM",
     "kind": "did",
@@ -1258,95 +1348,5 @@
     "why": null,
     "by": "queue",
     "ok": false
-  },
-  {
-    "at": "2026-12-04T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "training Diesel (give paw: 3/4)",
-    "why": "Treat in the pocket, let's go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Measure twice, lay bricks once.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: bark at the bike until it goes vroom.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Who names a bolt? Me. This one's Gerald.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "SNOW. On a tropical island. Who ordered this?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "refused",
-    "text": "tried fixing a car: can't do that at home",
-    "why": null,
-    "by": "queue",
-    "ok": false
-  },
-  {
-    "at": "2026-12-04T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Town's buzzing this arvo.",
-    "why": null,
-    "by": "model",
-    "ok": true
   }
 ]

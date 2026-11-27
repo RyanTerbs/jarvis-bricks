@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "library",
+  "place": "garage",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Wonder if I'm pricing my stuff right.",
-  "feeling": "buzzing",
+  "doing": "walking to the garage",
+  "thought": "Someone out there needs a brick model bike. I can feel it.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.58,
-    "social": 0.45,
-    "tinker": 0.575,
-    "curiosity": 0.585
+    "rest": 0.68,
+    "hunger": 0.105,
+    "social": 0.575,
+    "tinker": 0.7,
+    "curiosity": 0.41
   },
-  "mood": 0.52,
-  "energy": 0.43,
-  "coins": 16,
+  "mood": 0.38,
+  "energy": 0.32,
+  "coins": 14,
   "coins_goal": 500,
   "bricks": 48,
   "stock": {
@@ -32,7 +32,7 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 5
+    "bangkok": 6
   },
   "finished": [
     "tourism_thailand",
@@ -153,12 +153,17 @@
       "date": "2026-12-05",
       "source": "Bangkok (Geography)",
       "note": "Bangkok covers an area of 1,568.7 km2 (605.7 sq mi), ranking 69th among the other 76 provinces of Thailand."
+    },
+    {
+      "date": "2026-12-05",
+      "source": "Bangkok (Demography)",
+      "note": "The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 15,
+  "hour": 16,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -171,7 +176,12 @@
     "waves": "good",
     "waves_date": "2026-12-05"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "fix_a_car",
+      "why": "Meet Gogo. Bit of a sad case. I'll sort her out."
+    }
+  ],
   "lucky": {
     "date": "2026-12-05",
     "used": 1,
@@ -569,6 +579,66 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "If I don't eat soon I'm eating a brick.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "noticed",
+      "x": "It starts raining plastic raindrops.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Blue sky, no excuses.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Quick trip to the library."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 6/10)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "note",
+      "x": "noted (Bangkok (Demography)): The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Someone out there needs a brick model bike. I can feel it.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
     }
   ],
   "day_start": {
@@ -577,13 +647,13 @@
     "got": 26,
     "used": 0
   },
-  "tick": 948,
+  "tick": 953,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T20:13:21.098366+00:00",
+  "updated": "2026-12-05T21:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 414,
-      "queue": 240,
+      "model": 417,
+      "queue": 242,
       "autopilot": 30,
       "sleeping": 264,
       "tokens_in": 0,
@@ -592,8 +662,8 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 22,
-      "queue": 13,
+      "model": 25,
+      "queue": 15,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -608,8 +678,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.192,
-      "tired": 0.67,
+      "hunger": 0.212,
+      "tired": 0.27,
       "bored": 0.45
     },
     "bond": 1.0,
@@ -626,11 +696,6 @@
     "wants": null,
     "recent_thoughts": [
       "Warm spot on the floor. Mine now.",
-      "Tail check: still there. Good.",
-      "Sun on my belly. Perfect.",
-      "Warm spot on the floor. Mine now.",
-      "I know tricks now. I am a very clever boy.",
-      "Warm spot on the floor. Mine now.",
       "Sun on my belly. Perfect.",
       "Following {owner}. Best job in the world.",
       "Warm spot on the floor. Mine now.",
@@ -644,9 +709,14 @@
       "Nap spot: located. Engaging.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 942,
     "recent_ideas": [
@@ -662,9 +732,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Snowman time. Non-negotiable.",
-    "Brick town under snow looks like a Christmas card.",
-    "Every bolt on {bike} is seized. Every single one.",
     "Slept like a log. Ready to graft.",
     "Sometimes I just stand here and listen to the town.",
     "Thai street food. That's the dream right there.",
@@ -686,9 +753,12 @@
     "Looked up {topic} on the old laptop. Lekker.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "Best decision I ever made, keeping {pup}.",
-    "Wonder if I'm pricing my stuff right."
+    "Wonder if I'm pricing my stuff right.",
+    "If I don't eat soon I'm eating a brick.",
+    "Blue sky, no excuses.",
+    "Someone out there needs a brick model bike. I can feel it."
   ],
-  "real_updated": "2026-11-27T19:30:13.482330+00:00",
+  "real_updated": "2026-11-27T19:40:51.433467+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
