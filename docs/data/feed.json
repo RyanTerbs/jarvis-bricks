@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-01T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Cloudy. Fine. Engines don't care.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Diesel keeps nudging his bowl. Message received.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: bring Derek a stick. Then a bigger stick.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Need some gossip.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Cafe next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "note",
+    "text": "noted (Dog training (Factors)): Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "reading a book (Dog training, chapter 6/8)",
+    "why": "One more chapter.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman 1/3)",
+    "why": "Every town needs a snowman. Rules.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Reading about Dog training makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-01T20:28:21.098366+00:00",
     "time": "3:28 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "did",
     "text": "feeding Diesel (Diesel's tail goes mad)",
     "why": "Diesel first, always.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "thought",
-    "text": "Every coin counts. Every single one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
-    "why": "Fetch on the sand!",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Quick trip to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Blue sky, no excuses.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Weather like this, Thailand feels close.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "noticed",
-    "text": "A bike roars past heading out of town.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "collecting bricks (+4 bricks)",
-    "why": "Got plans. Need materials.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "If it's got moving parts, I can fix it. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Autumn. Days getting shorter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
     "by": "queue",
     "ok": true
   }

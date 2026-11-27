@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Clouds sitting on the town like a lid.",
-  "feeling": "happy enough",
+  "doing": "cooking a proper meal",
+  "thought": "Cloudy. Fine. Engines don't care.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.52,
-    "hunger": 0.415,
-    "social": 0.51,
-    "tinker": 0.455,
-    "curiosity": 0.54
+    "rest": 0.69,
+    "hunger": 0,
+    "social": 0.28,
+    "tinker": 0.435,
+    "curiosity": 0.34
   },
-  "mood": 0.4,
-  "energy": 0.48,
-  "coins": 82,
+  "mood": 0.44,
+  "energy": 0.31,
+  "coins": 80,
   "coins_goal": 500,
   "bricks": 21,
   "stock": {},
@@ -25,7 +25,7 @@
   },
   "books": {
     "tourism_thailand": 9,
-    "dog_training": 5
+    "dog_training": 6
   },
   "finished": [
     "tourism_thailand"
@@ -105,12 +105,17 @@
       "date": "2026-12-01",
       "source": "Dog training (Training methods)",
       "note": "Positive reinforcement: Positive reinforcement training is also known as humane training, force-free training, and reward-based training."
+    },
+    {
+      "date": "2026-12-01",
+      "source": "Dog training (Factors)",
+      "note": "Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu"
     }
   ],
   "looked_up": [
     "Krabi"
   ],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -569,6 +574,96 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Reading about Dog training makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "building a snowman (snowman 1/3)",
+      "why": "Every town needs a snowman. Rules."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Thai street food. That's the dream right there.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 6/8)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "note",
+      "x": "noted (Dog training (Factors)): Training can take as many forms as there are trainers, however a detailed study of animal trainers found common characteristics of successful methods: thoughtfu",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Cafe next."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Need some gossip."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: bring Derek a stick. Then a bigger stick.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Diesel keeps nudging his bowl. Message received.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Cloudy. Fine. Engines don't care.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
     }
   ],
   "day_start": {
@@ -577,13 +672,13 @@
     "got": 19,
     "used": 0
   },
-  "tick": 565,
+  "tick": 573,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T20:28:21.098366+00:00",
+  "updated": "2026-12-01T22:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 243,
-      "queue": 146,
+      "model": 248,
+      "queue": 149,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -592,8 +687,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 23,
-      "queue": 14,
+      "model": 28,
+      "queue": 17,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -606,14 +701,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.564,
-      "tired": 0.59,
-      "bored": 0.37
+      "hunger": 0.03,
+      "tired": 0.35,
+      "bored": 0.49
     },
     "bond": 1.0,
-    "food": 1,
+    "food": 0,
     "tricks": {
       "sit": 3,
       "paw": 1
@@ -621,18 +716,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 549,
-    "wants": null,
+    "wants": "explore",
     "recent_thoughts": [
-      "Everything smells amazing today.",
-      "Cold white stuff! I must eat all of it.",
-      "Following {owner}. Best job in the world.",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Sniffed a lamp post. Interesting news.",
-      "The ground is a giant ice cream!",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Eyes heavy. Paws heavy. Everything heavy.",
       "Nap spot: located. Engaging.",
       "{owner} is the best human in the whole town.",
       "I am a very good boy. Probably.",
@@ -644,29 +731,32 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage."
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Is it dinner? It feels like dinner.",
+      "My bowl is empty. This is an emergency.",
+      "{owner} smells like toast. Share?",
+      "Who left this brick here? I'll carry it somewhere else."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
+    "thought": "Who left this brick here? I'll carry it somewhere else.",
     "want_ticks": 0,
-    "last_fed_tick": 545,
+    "last_fed_tick": 572,
     "recent_ideas": [
-      "sleep IN the toolbox. Cosy.",
       "nap on the warm brick pile.",
       "teach the seagulls some manners.",
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
       "make friends with the crab. Or eat it. Undecided.",
-      "sit by the cafe door looking sad. Free pie."
+      "sit by the cafe door looking sad. Free pie.",
+      "bring {owner} a stick. Then a bigger stick."
     ],
-    "idea": "sit by the cafe door looking sad. Free pie."
+    "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "So much I don't know. Love that, actually.",
-    "Hands are itching. Need something to fix.",
-    "Every brick in the {site} is one I collected myself. Feels good.",
-    "Me and {pup} against the world.",
-    "Quiet day. Could do with a chat at the cafe.",
     "Note to self: buy more duct tape.",
     "Some days you're the spanner, some days you're the bolt.",
     "Food first. Then I'm useful again.",
@@ -686,9 +776,14 @@
     "Brain's in first gear today.",
     "Running on half a battery.",
     "Afternoon slump. Could do with a coffee.",
-    "Clouds sitting on the town like a lid."
+    "Clouds sitting on the town like a lid.",
+    "Reading about {topic} makes me want to try it.",
+    "Thai street food. That's the dream right there.",
+    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
+    "{pup} keeps nudging his bowl. Message received.",
+    "Cloudy. Fine. Engines don't care."
   ],
-  "real_updated": "2026-11-27T06:45:12.307459+00:00",
+  "real_updated": "2026-11-27T07:00:12.355547+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -702,8 +797,9 @@
       "snow",
       "cloudy"
     ],
-    "temp": 10,
-    "snow": 0.8,
-    "wet": 0
+    "temp": 9,
+    "snow": 0.64,
+    "wet": 0,
+    "snowman": 1
   }
 }
