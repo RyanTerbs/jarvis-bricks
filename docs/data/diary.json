@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-12-04",
+    "day": "Fri 04 Dec",
+    "title": "Built a proper snowman",
+    "text": "Quick one tonight. Spent most of today building, cooking a proper meal and playing with Diesel. Built a proper snowman: carrot nose, stone eyes and his old orange cap! Stood back and had a proper look at it. Lekker. Drew up plans for something new: 🔭 Stargazer Hill, a little hill with a telescope on top. Every session on Little Thunder makes Thailand feel closer. Worked on tricks with Diesel a few times. Got stuck into Bangkok for a bit. Proper winter day, snow on every roof. Beach time: collecting shells (+3 shells (17 in the jar)). Diesel was a legend today. Pretty sure Diesel was planning to guard the savings jar. Nobody touches the jar. Cheeky. Bought a wheelbarrow: +2 bricks every time he collects. Spent 30 coins. Eish. Collected 62 bricks, used 40 on building. Also: Someone left a box of spare bricks at the pit. +8 bricks. Thailand feels closer today. 482 to go. Night, Diesel.",
+    "tomorrow": "Sell some stock at the stall.",
+    "by": "template",
+    "coins": 18,
+    "bricks": 22,
+    "coins_change": -30,
+    "bricks_change": 22,
+    "built": [
+      "finished building the Rooftop Garden!",
+      "built a proper snowman: carrot nose, stone eyes and his old orange cap!"
+    ]
+  },
+  {
     "date": "2026-12-03",
     "day": "Thu 03 Dec",
     "title": "Making a hot chocolate",

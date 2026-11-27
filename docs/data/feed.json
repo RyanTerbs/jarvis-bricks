@@ -1,5 +1,77 @@
 [
   {
+    "at": "2026-12-05T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Built a proper snowman",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Long day. Bed.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Building site next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "Every bolt on Little Thunder is seized. Every single one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "collecting shells (+3 shells (17 in the jar))",
+    "why": "Shells for the jar on the shelf.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-05T03:13:21.098366+00:00",
     "time": "10:13 PM",
     "kind": "did",
@@ -1274,78 +1346,6 @@
     "kind": "thought",
     "text": "Slow and steady fills the jar.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "noticed",
-    "text": "A kid drops a bolt and asks Derek what it's for.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "building (Rooftop Garden 1/5)",
-    "why": "One more course of bricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Running on half a battery.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Need a nap. A proper one.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "building (the rain slowed the work, Rooftop Garden still 0/5)",
-    "why": "Let's get this Rooftop Garden up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Heading to the building site.",
     "by": "model",
     "ok": true
   }
