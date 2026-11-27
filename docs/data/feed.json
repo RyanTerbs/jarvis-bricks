@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-04T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "thought",
+    "text": "Should I name the street? Derek Street. Ja, why not.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Little guy's hungry.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "ordering a bag of dog food (6 meals in the cupboard)",
+    "why": "Stocking up for the little guy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "thought",
+    "text": "Looked up Bangkok on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Shame, the cafe guy looked tired today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "ordering a wheelbarrow from the catalogue",
+    "why": "Worth the coins. I think.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "bought",
+    "text": "bought a wheelbarrow: +2 bricks every time he collects",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "Toast. Noodles. Anything.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Quick trip to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "thought",
+    "text": "Every brick in the Rooftop Garden is one I collected myself. Feels good.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T13:58:21.098366+00:00",
     "time": "8:58 AM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "walking home",
     "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Salt air, warm sand, no bolts. Perfect.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "collecting shells (+1 shells (11 in the jar))",
-    "why": "Pretty ones today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
-    "why": "Diesel loves the beach.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Quick trip to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Me and Diesel against the world.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Look at that tail go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "thought",
-    "text": "Sun's up, Diesel's up, so I'm up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "noticed",
-    "text": "Diesel chases a plastic butterfly and misses.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Cold hands need a hot mug.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Heading to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "thought",
-    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "why": null,
     "by": "model",
     "ok": true
   }

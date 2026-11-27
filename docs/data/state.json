@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "restoring Little Thunder: strip + clean",
-  "thought": "Sun's up, Diesel's up, so I'm up.",
-  "feeling": "chilled",
+  "doing": "playing with Diesel",
+  "thought": "Should I name the street? Derek Street. Ja, why not.",
+  "feeling": "lekker",
   "needs": {
-    "rest": 0.43,
-    "hunger": 0.49,
-    "social": 0.665,
-    "tinker": 0,
-    "curiosity": 0.405
+    "rest": 0.61,
+    "hunger": 0.15,
+    "social": 0.235,
+    "tinker": 0.23,
+    "curiosity": 0.555
   },
-  "mood": 0.44,
-  "energy": 0.57,
-  "coins": 46,
+  "mood": 0.55,
+  "energy": 0.39,
+  "coins": 16,
   "coins_goal": 500,
   "bricks": 28,
   "stock": {
@@ -22,7 +22,8 @@
     "postcard": 2
   },
   "owned": [
-    "surfboard"
+    "surfboard",
+    "wheelbarrow"
   ],
   "sales": {
     "items": 5,
@@ -142,7 +143,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -319,6 +320,90 @@
       "k": "did",
       "x": "restoring Little Thunder: strip + clean (strip + clean 2/6)",
       "why": "Two hours on Little Thunder. Best part of the day."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "thought",
+      "x": "Every brick in the Rooftop Garden is one I collected myself. Feels good.",
+      "why": null
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Quick trip to the cafe."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Miss the banter."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "Toast. Noodles. Anything.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "bought",
+      "x": "bought a wheelbarrow: +2 bricks every time he collects",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "ordering a wheelbarrow from the catalogue",
+      "why": "Worth the coins. I think."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Shame, the cafe guy looked tired today.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "thought",
+      "x": "Looked up Bangkok on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "ordering a bag of dog food (6 meals in the cupboard)",
+      "why": "Stocking up for the little guy."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Little guy's hungry."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "thought",
+      "x": "Should I name the street? Derek Street. Ja, why not.",
+      "why": null
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
     }
   ],
   "day_start": {
@@ -327,13 +412,13 @@
     "got": 28,
     "used": 0
   },
-  "tick": 827,
+  "tick": 835,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T13:58:21.098366+00:00",
+  "updated": "2026-12-04T15:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 354,
-      "queue": 209,
+      "model": 359,
+      "queue": 212,
       "autopilot": 26,
       "sleeping": 238,
       "tokens_in": 0,
@@ -342,8 +427,8 @@
     },
     "today": {
       "date": "2026-12-04",
-      "model": 7,
-      "queue": 4,
+      "model": 12,
+      "queue": 7,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -358,12 +443,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.502,
-      "tired": 0.22,
-      "bored": 0.57
+      "hunger": 0.042,
+      "tired": 0.48,
+      "bored": 0.31
     },
     "bond": 1.0,
-    "food": 0,
+    "food": 5,
     "tricks": {
       "sit": 3,
       "paw": 2
@@ -371,18 +456,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 772,
-    "wants": "play",
+    "doing": "bored, chewing whatever he can find",
+    "last_played_tick": 835,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: {owner} throws the ball forever.",
       "I am a very good boy. Probably.",
       "Grease smell. Best smell after sausages.",
@@ -394,11 +471,19 @@
       "The ground is a giant ice cream!",
       "My tail won't stop. I'm not stopping it.",
       "The rusty thing has wheels. Wheels go places. Places have smells.",
-      "Life is good. Life is SO good."
+      "Life is good. Life is SO good.",
+      "The bike smells of old barn. And mice. MICE?",
+      "I could chew a boot. Just a little bit.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Sit means treat. I have cracked the code.",
+      "The ground is a giant ice cream!",
+      "Tummy rumble. Big one.",
+      "If I stare at the bowl hard enough, food appears. Science.",
+      "Why are my paws cold? Doesn't matter. SNOW!"
     ],
-    "thought": "Life is good. Life is SO good.",
+    "thought": "YES! That's what I wanted!",
     "want_ticks": 0,
-    "last_fed_tick": 786,
+    "last_fed_tick": 834,
     "recent_ideas": [
       "follow {owner} to Thailand. Obviously.",
       "bury {owner}'s 10mm socket. He loves looking for it.",
@@ -412,11 +497,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "Wet again. The site turns to mud in this.",
-    "Sky's going orange. Thailand sunsets must be something else.",
-    "Rain on the roof. Lekker sound, rubbish for building.",
-    "{pup} is yawning, so I'm yawning.",
     "A clean toolbox is a happy toolbox.",
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "Can't wait to see the {site} finished.",
@@ -436,9 +516,14 @@
     "Brick town under snow looks like a Christmas card.",
     "Wonder if the bikes in Thailand need fixing. Bet they do.",
     "Penetrating oil and patience. That's the whole secret.",
-    "Sun's up, {pup}'s up, so I'm up."
+    "Sun's up, {pup}'s up, so I'm up.",
+    "Every brick in the {site} is one I collected myself. Feels good.",
+    "Toast. Noodles. Anything.",
+    "Shame, the cafe guy looked tired today.",
+    "Looked up {topic} on the old laptop. Lekker.",
+    "Should I name the street? {me} Street. Ja, why not."
   ],
-  "real_updated": "2026-11-27T15:30:10.868308+00:00",
+  "real_updated": "2026-11-27T15:45:12.787905+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-04@6",
@@ -451,9 +536,9 @@
     "seen": [
       "snow"
     ],
-    "temp": -3,
+    "temp": -1,
     "snow": 1,
-    "wet": 0.4,
+    "wet": 0,
     "snowman": 1
   },
   "book_boxes": [
