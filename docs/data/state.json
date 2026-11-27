@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "home",
   "asleep": false,
-  "doing": "taking Diesel for a walk",
-  "thought": "Haven't had grease on my hands in hours. Feels wrong.",
-  "feeling": "sharp-sharp",
+  "doing": "having a rest",
+  "thought": "Long day. Good day though.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0.475,
-    "social": 0.335,
-    "tinker": 0.65,
-    "curiosity": 0.36
+    "rest": 0.59,
+    "hunger": 0.04,
+    "social": 0.44,
+    "tinker": 0.495,
+    "curiosity": 0.535
   },
-  "mood": 0.4,
-  "energy": 0.31,
-  "coins": 20,
+  "mood": 0.42,
+  "energy": 0.41,
+  "coins": 22,
   "coins_goal": 500,
   "bricks": 58,
   "stock": {
@@ -163,7 +163,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -742,6 +742,72 @@
       "k": "did",
       "x": "taking Diesel for a walk",
       "why": "Walkies, Diesel."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Proper shorts weather.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Hands need grease. Simple."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Every bolt on Little Thunder is seized. Every single one.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Long day. Good day though.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -750,13 +816,13 @@
     "got": 36,
     "used": 0
   },
-  "tick": 963,
+  "tick": 970,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-05T23:58:21.098366+00:00",
+  "updated": "2026-12-06T01:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 422,
-      "queue": 246,
+      "model": 427,
+      "queue": 248,
       "autopilot": 31,
       "sleeping": 264,
       "tokens_in": 0,
@@ -765,8 +831,8 @@
     },
     "today": {
       "date": "2026-12-05",
-      "model": 30,
-      "queue": 19,
+      "model": 35,
+      "queue": 21,
       "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
@@ -781,9 +847,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.512,
-      "tired": 0.62,
-      "bored": 0.45
+      "hunger": 0.722,
+      "tired": 0.76,
+      "bored": 0.66
     },
     "bond": 1,
     "food": 2,
@@ -794,17 +860,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "bored, chewing whatever he can find",
+    "doing": "hungry, staring at Derek",
     "last_played_tick": 963,
-    "wants": "play",
+    "wants": "food",
     "recent_thoughts": [
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "Nap spot: located. Engaging.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
@@ -817,9 +876,16 @@
       "I could chew a boot. Just a little bit.",
       "Who left this brick here? I'll carry it somewhere else.",
       "Everything smells amazing today.",
-      "Sun on my belly. Perfect."
+      "Sun on my belly. Perfect.",
+      "Good boy? Me? Yes. Me.",
+      "The ! block knows something. I will watch it.",
+      "I know tricks now. I am a very clever boy.",
+      "Sniffed a lamp post. Interesting news.",
+      "{owner} is talking to the rusty thing again. It doesn't answer.",
+      "Tummy rumble. Big one.",
+      "Nap spot: located. Engaging."
     ],
-    "thought": "Sun on my belly. Perfect.",
+    "thought": "Nap spot: located. Engaging.",
     "want_ticks": 0,
     "last_fed_tick": 942,
     "recent_ideas": [
@@ -835,11 +901,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Shame, the cafe guy looked tired today.",
-    "Not a cloud. {pup} is going to want the beach.",
-    "Found a 1980s coin in {bike}'s toolbox. Lucky.",
-    "First job: find my 10mm socket. Again.",
-    "One day: me, a bike, and a mountain road outside Chiang Mai.",
     "Don't spend it. Don't spend it. Don't spend it.",
     "{pup} follows me everywhere. Proper little shadow.",
     "Picture it: a winding road, a good engine, no rush.",
@@ -859,9 +920,14 @@
     "Me and {pup} against the world.",
     "{left} coins to go. That's just a lot of carbs.",
     "Didn't know half this stuff about {topic}.",
-    "Haven't had grease on my hands in hours. Feels wrong."
+    "Haven't had grease on my hands in hours. Feels wrong.",
+    "Proper shorts weather.",
+    "Proper shorts weather.",
+    "Batteries low. Need a recharge.",
+    "Every bolt on {bike} is seized. Every single one.",
+    "Long day. Good day though."
   ],
-  "real_updated": "2026-11-27T20:00:12.638823+00:00",
+  "real_updated": "2026-11-27T20:15:11.460298+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-05@13",
@@ -874,7 +940,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 9,
+    "temp": 8,
     "snow": 0,
     "wet": 0,
     "snowman": 0
