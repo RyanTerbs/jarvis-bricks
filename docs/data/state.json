@@ -1,23 +1,25 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "making toast",
-  "thought": "Every coin counts. Every single one.",
-  "feeling": "stoked",
+  "doing": "making a rebuilt carburettor",
+  "thought": "Grey old day. Good for graft, bad for a tan.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.61,
-    "hunger": 0,
-    "social": 0.435,
-    "tinker": 0.56,
-    "curiosity": 0.265
+    "rest": 0.64,
+    "hunger": 0.23,
+    "social": 0.45,
+    "tinker": 0,
+    "curiosity": 0.34
   },
-  "mood": 0.46,
-  "energy": 0.39,
-  "coins": 50,
+  "mood": 0.49,
+  "energy": 0.36,
+  "coins": 49,
   "coins_goal": 500,
   "bricks": 21,
-  "stock": {},
+  "stock": {
+    "rebuilt_carb": 2
+  },
   "owned": [
     "surfboard"
   ],
@@ -117,7 +119,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 21,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -144,42 +146,6 @@
   "designed_on": "2026-11-27",
   "plan_today": "Teach Diesel a new trick.",
   "today_log": [
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "❄️ Winter has arrived. Time to find the jersey.",
-      "why": null
-    },
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "🌨️ It's snowing! Big flakes falling on the brick town.",
-      "why": null
-    },
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "Overnight the tide came in and washed his sand castle away.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Every brick in the Noodle stall is one I collected myself. Feels good.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "thought",
-      "x": "Me and Diesel against the world.",
-      "why": null
-    },
     {
       "t": "6:43 AM",
       "k": "did",
@@ -827,6 +793,78 @@
       "k": "did",
       "x": "making toast",
       "why": "Fastest meal in the world."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Lamps are coming on. Town looks proper tonight.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Hot chocolate. Doctor's orders."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Evenings are for slowing down. Mostly.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "cuddling Diesel (Diesel's tail goes mad)",
+      "why": "Diesel deserves it."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Even my spanner looks tired.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "10:28 PM",
+      "k": "thought",
+      "x": "Stars are out. Tiny town, big sky.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "thought",
+      "x": "Grey old day. Good for graft, bad for a tan.",
+      "why": null
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "making a rebuilt carburettor (1 in stock)",
+      "why": "Making stock for the stall."
+    },
+    {
+      "t": "10:58 PM",
+      "k": "did",
+      "x": "making a rebuilt carburettor (2 in stock)",
+      "why": "Got an order in my head."
     }
   ],
   "day_start": {
@@ -835,13 +873,13 @@
     "got": 19,
     "used": 0
   },
-  "tick": 588,
+  "tick": 595,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-02T02:13:21.098366+00:00",
+  "updated": "2026-12-02T03:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 258,
-      "queue": 154,
+      "model": 263,
+      "queue": 156,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -850,8 +888,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 38,
-      "queue": 22,
+      "model": 43,
+      "queue": 24,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -864,13 +902,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.246,
-      "tired": 0.25,
-      "bored": 0.16
+      "hunger": 0.456,
+      "tired": 0.39,
+      "bored": 0.22
     },
-    "bond": 1,
+    "bond": 1.0,
     "food": 0,
     "tricks": {
       "sit": 3,
@@ -879,17 +917,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "watching Derek work",
     "last_played_tick": 579,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Is it dinner? It feels like dinner.",
-      "My bowl is empty. This is an emergency.",
-      "{owner} smells like toast. Share?",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Cold white stuff! I must eat all of it.",
-      "Sky went grey. Still a good day. Every day is a good day.",
       "{owner} is the best human in the whole town.",
       "Good boy? Me? Yes. Me.",
       "Why are my paws cold? Doesn't matter. SNOW!",
@@ -902,9 +933,16 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "The ground is a giant ice cream!",
+      "Learning is hard. Treats make it easier.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Grease smell. Best smell after sausages.",
+      "I am a very good boy. Probably.",
+      "Sky went grey. Still a good day. Every day is a good day."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Sky went grey. Still a good day. Every day is a good day.",
     "want_ticks": 0,
     "last_fed_tick": 572,
     "recent_ideas": [
@@ -920,11 +958,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "{temp} degrees. My fingers have stopped working.",
-    "Should I name the street? {me} Street. Ja, why not.",
-    "Running on coffee and hope.",
-    "Toast. Noodles. Anything.",
-    "Could sleep standing up like a horse.",
     "Snowman time. Non-negotiable.",
     "Brain's in first gear today.",
     "Running on half a battery.",
@@ -944,9 +977,14 @@
     "Funny what you learn. {topic}, who knew.",
     "{bricks} bricks in the pile. Could build something lekker with that.",
     "{left} coins to go. That's just a lot of carbs.",
-    "Every coin counts. Every single one."
+    "Every coin counts. Every single one.",
+    "Lamps are coming on. Town looks proper tonight.",
+    "Evenings are for slowing down. Mostly.",
+    "Even my spanner looks tired.",
+    "Stars are out. Tiny town, big sky.",
+    "Grey old day. Good for graft, bad for a tan."
   ],
-  "real_updated": "2026-11-27T07:30:13.558419+00:00",
+  "real_updated": "2026-11-27T07:45:12.068594+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -960,8 +998,8 @@
       "snow",
       "cloudy"
     ],
-    "temp": 7,
-    "snow": 0.34,
+    "temp": 5,
+    "snow": 0.2,
     "wet": 0,
     "snowman": 1
   }
