@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-07T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Too much sitting. Where's my toolbox?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (10 bricks pop out!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: follow Derek to Thailand. Obviously.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "collecting bricks (+9 bricks)",
+    "why": "Brick by brick, hey.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Quick trip to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "Sun's out. Even the bricks look happy.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "thought",
+    "text": "Weather like this, Thailand feels close.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "Could go a proper pie right now.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-06T23:58:21.098366+00:00",
     "time": "6:58 PM",
     "kind": "note",
@@ -1221,132 +1347,6 @@
     "text": "walking to the garage",
     "why": "Quick trip to the garage.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Someone out there needs a brick model bike. I can feel it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "note",
-    "text": "noted (Bangkok (Demography)): The city of Bangkok has a population of 8,305,218 according to the 2010 census, or 12.6 per cent of the national population, while 2020 estimates place the figu",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 6/10)",
-    "why": "One more chapter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Quick trip to the library.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "thought",
-    "text": "Blue sky, no excuses.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "noticed",
-    "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "If I don't eat soon I'm eating a brick.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "thought",
-    "text": "Wonder if I'm pricing my stuff right.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "thought",
-    "text": "Best decision I ever made, keeping Diesel.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "building (finished!)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
     "ok": true
   }
 ]

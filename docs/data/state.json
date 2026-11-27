@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "library",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "reading a book",
-  "thought": "The jar's getting heavier. Love that sound.",
-  "feeling": "content",
+  "doing": "having a rest",
+  "thought": "Too much sitting. Where's my toolbox?",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0.635,
-    "social": 0.075,
-    "tinker": 0.45,
+    "rest": 0.6,
+    "hunger": 0.215,
+    "social": 0.195,
+    "tinker": 0.63,
     "curiosity": 0.47
   },
-  "mood": 0.36,
-  "energy": 0.31,
-  "coins": 54,
+  "mood": 0.42,
+  "energy": 0.4,
+  "coins": 52,
   "coins_goal": 500,
-  "bricks": 99,
+  "bricks": 118,
   "stock": {
     "postcard": 1
   },
@@ -179,7 +179,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -195,7 +195,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-06",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -728,21 +728,105 @@
       "k": "note",
       "x": "noted (Carburetor (Introduction)): A carburetor (also spelled carburettor or carburetter) is a device used by a gasoline internal combustion engine to control and mix air and fuel entering the en",
       "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Thai street food. That's the dream right there.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "Could go a proper pie right now.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Weather like this, Thailand feels close.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "Sun's out. Even the bricks look happy.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Quick trip to the brick pit."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "collecting bricks (+9 bricks)",
+      "why": "Brick by brick, hey."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: follow Derek to Thailand. Obviously.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (10 bricks pop out!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Too much sitting. Where's my toolbox?",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 26,
     "bricks": 65,
-    "got": 37,
+    "got": 56,
     "used": 3
   },
-  "tick": 1059,
+  "tick": 1067,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T23:58:21.098366+00:00",
+  "updated": "2026-12-07T01:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 460,
-      "queue": 272,
+      "model": 465,
+      "queue": 275,
       "autopilot": 37,
       "sleeping": 290,
       "tokens_in": 0,
@@ -751,8 +835,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 28,
-      "queue": 21,
+      "model": 33,
+      "queue": 24,
       "autopilot": 3,
       "sleeping": 24,
       "tokens_in": 0,
@@ -767,9 +851,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.202,
-      "tired": 0.57,
-      "bored": 0.41
+      "hunger": 0.442,
+      "tired": 0.73,
+      "bored": 0.65
     },
     "bond": 1.0,
     "food": 5,
@@ -782,16 +866,8 @@
     ],
     "doing": "trotting along behind Derek",
     "last_played_tick": 1054,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "The ! block knows something. I will watch it.",
-      "Warm spot on the floor. Mine now.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "My tail won't stop. I'm not stopping it.",
@@ -803,29 +879,32 @@
       "Sun on my belly. Perfect.",
       "Good boy? Me? Yes. Me.",
       "Grease smell. Best smell after sausages.",
-      "Life is good. Life is SO good."
+      "Life is good. Life is SO good.",
+      "Warm spot on the floor. Mine now.",
+      "Everything smells amazing today.",
+      "Warm spot on the floor. Mine now.",
+      "Following {owner}. Best job in the world.",
+      "I know tricks now. I am a very clever boy.",
+      "Learning is hard. Treats make it easier.",
+      "{owner} is busy again. Sigh. Big sigh.",
+      "Sun on my belly. Perfect."
     ],
-    "thought": "Life is good. Life is SO good.",
+    "thought": "Sun on my belly. Perfect.",
     "want_ticks": 0,
     "last_fed_tick": 1053,
     "recent_ideas": [
-      "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
       "bark at the bike until it goes vroom.",
       "guard the savings jar. Nobody touches the jar.",
-      "learn the next trick and get ALL the treats."
+      "learn the next trick and get ALL the treats.",
+      "follow {owner} to Thailand. Obviously."
     ],
-    "idea": "learn the next trick and get ALL the treats."
+    "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Weather like this, Thailand feels close.",
-    "Sun's out. Even the bricks look happy.",
-    "{pup} brought me his lead. Subtle.",
-    "Not a cloud. {pup} is going to want the beach.",
-    "Eish, forgot to eat again.",
     "Under all that rust there's a good bike. I can see her.",
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "If it's got moving parts, I can fix it. Mostly.",
@@ -845,9 +924,14 @@
     "Got stock to sell. Stall's calling.",
     "Hands are itching. Need something to fix.",
     "Every town needs a guy who fixes stuff. That's me.",
-    "The jar's getting heavier. Love that sound."
+    "The jar's getting heavier. Love that sound.",
+    "Thai street food. That's the dream right there.",
+    "Could go a proper pie right now.",
+    "Weather like this, Thailand feels close.",
+    "Sun's out. Even the bricks look happy.",
+    "Too much sitting. Where's my toolbox?"
   ],
-  "real_updated": "2026-11-27T23:15:11.434960+00:00",
+  "real_updated": "2026-11-27T23:30:12.721267+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
@@ -860,7 +944,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": 11,
+    "temp": 10,
     "snow": 0,
     "wet": 0,
     "snowman": 0
