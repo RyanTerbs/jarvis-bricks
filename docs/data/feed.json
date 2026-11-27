@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-02T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-02T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Best decision I ever made, keeping Diesel.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "training Diesel (give paw: Diesel wasn't having it)",
+    "why": "Practice makes perfect.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "training Diesel (give paw: 2/4)",
+    "why": "Teaching Diesel new tricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "thought",
+    "text": "80 in the jar. 420 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "playing in the snow with Diesel",
+    "why": "Snowball fight. Diesel versus me.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "thought",
+    "text": "Winter. Cold mornings, slow engines.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Walkies, Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "thought",
+    "text": "Plastic rain, plastic trees, real problems.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Evening breeze off the sea. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-01T22:28:21.098366+00:00",
     "time": "5:28 PM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "Never had a mate this loyal.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "collecting bricks (+5 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "thought",
-    "text": "Bit of graft now, bit of rest later.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "noticed",
-    "text": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "collecting bricks (+3 bricks)",
-    "why": "Brick by brick, hey.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "Afternoon slump. Could do with a coffee.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: bury Derek's 10mm socket. He loves looking for it.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Not a cloud. Diesel is going to want the beach.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Diesel first, always.",
-    "by": "queue",
     "ok": true
   }
 ]

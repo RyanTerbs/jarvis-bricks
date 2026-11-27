@@ -2,18 +2,18 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Cloudy. Fine. Engines don't care.",
-  "feeling": "sharp-sharp",
+  "doing": "having a rest",
+  "thought": "Best decision I ever made, keeping Diesel.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.69,
-    "hunger": 0,
-    "social": 0.28,
-    "tinker": 0.435,
-    "curiosity": 0.34
+    "rest": 0.58,
+    "hunger": 0.245,
+    "social": 0.285,
+    "tinker": 0.58,
+    "curiosity": 0.215
   },
-  "mood": 0.44,
-  "energy": 0.31,
+  "mood": 0.47,
+  "energy": 0.42,
   "coins": 80,
   "coins_goal": 500,
   "bricks": 21,
@@ -115,7 +115,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 17,
+  "hour": 19,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -664,6 +664,84 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "thought",
+      "x": "Evening breeze off the sea. Lekker.",
+      "why": null
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "thought",
+      "x": "Plastic rain, plastic trees, real problems.",
+      "why": null
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk (Diesel's tail goes mad)",
+      "why": "Walkies, Diesel."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "playing in the snow with Diesel",
+      "why": "Snowball fight. Diesel versus me."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "thought",
+      "x": "80 in the jar. 420 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "training Diesel (give paw: 2/4)",
+      "why": "Teaching Diesel new tricks."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "training Diesel (give paw: Diesel wasn't having it)",
+      "why": "Practice makes perfect."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Best decision I ever made, keeping Diesel.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -672,13 +750,13 @@
     "got": 19,
     "used": 0
   },
-  "tick": 573,
+  "tick": 580,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-01T22:28:21.098366+00:00",
+  "updated": "2026-12-02T00:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 248,
-      "queue": 149,
+      "model": 254,
+      "queue": 150,
       "autopilot": 18,
       "sleeping": 158,
       "tokens_in": 0,
@@ -687,8 +765,8 @@
     },
     "today": {
       "date": "2026-12-01",
-      "model": 28,
-      "queue": 17,
+      "model": 34,
+      "queue": 18,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -701,32 +779,25 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.03,
-      "tired": 0.35,
-      "bored": 0.49
+      "hunger": 0.214,
+      "tired": 0.89,
+      "bored": 0.16
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 0,
     "tricks": {
       "sit": 3,
-      "paw": 1
+      "paw": 2
     },
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 549,
-    "wants": "explore",
+    "doing": "napping",
+    "last_played_tick": 579,
+    "wants": null,
     "recent_thoughts": [
-      "Nap spot: located. Engaging.",
-      "{owner} is the best human in the whole town.",
-      "I am a very good boy. Probably.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Is that a squirrel? It's a bolt. Still exciting.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "The ground is a giant ice cream!",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -739,9 +810,16 @@
       "Is it dinner? It feels like dinner.",
       "My bowl is empty. This is an emergency.",
       "{owner} smells like toast. Share?",
-      "Who left this brick here? I'll carry it somewhere else."
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Cold white stuff! I must eat all of it.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "{owner} is the best human in the whole town.",
+      "Good boy? Me? Yes. Me.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Who left this brick here? I'll carry it somewhere else.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 572,
     "recent_ideas": [
@@ -757,12 +835,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "Note to self: buy more duct tape.",
-    "Some days you're the spanner, some days you're the bolt.",
-    "Food first. Then I'm useful again.",
-    "The {site} is coming along. Brick by brick.",
-    "{pup} first. Always {pup} first.",
-    "The jar's getting heavier. Love that sound.",
     "Ja, today feels like a building day.",
     "Every coin counts. Every single one.",
     "Winter on the island. Who knew?",
@@ -781,9 +853,15 @@
     "Thai street food. That's the dream right there.",
     "{pup}'s tail hasn't stopped since breakfast. Lekker.",
     "{pup} keeps nudging his bowl. Message received.",
-    "Cloudy. Fine. Engines don't care."
+    "Cloudy. Fine. Engines don't care.",
+    "Evening breeze off the sea. Lekker.",
+    "Plastic rain, plastic trees, real problems.",
+    "Winter. Cold mornings, slow engines.",
+    "{pup} has never seen snow. He's losing his mind.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Best decision I ever made, keeping {pup}."
   ],
-  "real_updated": "2026-11-27T07:00:12.355547+00:00",
+  "real_updated": "2026-11-27T07:15:12.013904+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-01@13",
@@ -797,8 +875,8 @@
       "snow",
       "cloudy"
     ],
-    "temp": 9,
-    "snow": 0.64,
+    "temp": 8,
+    "snow": 0.5,
     "wet": 0,
     "snowman": 1
   }
