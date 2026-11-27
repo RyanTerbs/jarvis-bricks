@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-04T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "noticed",
+    "text": "A kid drops a bolt and asks Derek what it's for.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "building (Rooftop Garden 1/5)",
+    "why": "One more course of bricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "thought",
+    "text": "Running on half a battery.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "thought",
+    "text": "Need a nap. A proper one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "noticed",
+    "text": "Diesel barks at the ! block. The ! block does not bark back.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "building (the rain slowed the work, Rooftop Garden still 0/5)",
+    "why": "Let's get this Rooftop Garden up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Could sleep standing up like a horse.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "making a postcard of the town (5 in stock)",
+    "why": "Handmade, proper quality.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "making a postcard of the town (4 in stock)",
+    "why": "Handmade, proper quality.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Haven't had grease on my hands in hours. Feels wrong.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T01:13:21.098366+00:00",
     "time": "8:13 PM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "designing a brand-new building",
     "why": "Town needs something new. Something mine.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "designed",
-    "text": "designed a new building: 🏍️ Chopper Shop, a tiny custom bike shop with chrome everywhere",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "thought",
-    "text": "Reading about Dog training makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "thought",
-    "text": "Could go a proper pie right now.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "thought",
-    "text": "Proud of Diesel. Little guy's growing up.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "note",
-    "text": "noted (Dog training (Specialized training)): Dogs are also trained for special purposes such as CGC Certification; for dog sports, including but not limited to competition obedience, dog agility, herding,",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "reading a book (Dog training, last chapter)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "learned",
-    "text": "finished reading 'Dog training': puppy training works more often",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "thought",
-    "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
-    "why": "Fresh air for both of us.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "thought",
-    "text": "Never had a mate this loyal.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-02T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
     "by": "model",
     "ok": true
   }

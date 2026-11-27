@@ -127,7 +127,7 @@
     "name": "Rooftop Garden",
     "lot": 8,
     "work": 5,
-    "done": 0,
+    "done": 1,
     "started": "2026-12-03",
     "look": {
       "kind": "shop",

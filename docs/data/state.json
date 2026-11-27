@@ -1,24 +1,25 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "building_site",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Batteries low. Need a recharge.",
-  "feeling": "good, ja",
+  "thought": "Slow and steady fills the jar.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.55,
-    "hunger": 0.035,
-    "social": 0.12,
-    "tinker": 0.605,
-    "curiosity": 0.39
+    "rest": 0.6,
+    "hunger": 0.34,
+    "social": 0.275,
+    "tinker": 0.45,
+    "curiosity": 0.265
   },
-  "mood": 0.44,
-  "energy": 0.45,
+  "mood": 0.4,
+  "energy": 0.4,
   "coins": 49,
   "coins_goal": 500,
   "bricks": 0,
   "stock": {
-    "rebuilt_carb": 3
+    "rebuilt_carb": 3,
+    "postcard": 2
   },
   "owned": [
     "surfboard"
@@ -136,7 +137,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 20,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -763,6 +764,90 @@
       "k": "did",
       "x": "having a rest",
       "why": "Even engines need to cool down."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Haven't had grease on my hands in hours. Feels wrong.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "making a postcard of the town (4 in stock)",
+      "why": "Handmade, proper quality."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "making a postcard of the town (5 in stock)",
+      "why": "Handmade, proper quality."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Could sleep standing up like a horse.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Heading to the building site."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "building (the rain slowed the work, Rooftop Garden still 0/5)",
+      "why": "Let's get this Rooftop Garden up."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Need a nap. A proper one.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Running on half a battery.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "building (Rooftop Garden 1/5)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "noticed",
+      "x": "A kid drops a bolt and asks Derek what it's for.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Slow and steady fills the jar.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -771,13 +856,13 @@
     "got": 14,
     "used": 30
   },
-  "tick": 776,
+  "tick": 783,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T01:13:21.098366+00:00",
+  "updated": "2026-12-04T02:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 339,
-      "queue": 202,
+      "model": 344,
+      "queue": 204,
       "autopilot": 24,
       "sleeping": 211,
       "tokens_in": 0,
@@ -786,8 +871,8 @@
     },
     "today": {
       "date": "2026-12-03",
-      "model": 35,
-      "queue": 20,
+      "model": 40,
+      "queue": 22,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -800,11 +885,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.406,
-      "tired": 0.62,
-      "bored": 0
+      "hunger": 0.512,
+      "tired": 0.36,
+      "bored": 0.09
     },
     "bond": 1.0,
     "food": 1,
@@ -815,17 +900,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 772,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "The ground is a giant ice cream!",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Cold white stuff! I must eat all of it.",
-      "The ground is a giant ice cream!",
-      "Wet dog smell is the best smell.",
       "PUDDLE. Must jump in puddle.",
       "Wet dog smell is the best smell.",
       "The cafe smells like pies. Noted.",
@@ -838,9 +916,16 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Grease smell. Best smell after sausages.",
+      "Wet dog smell is the best smell.",
+      "Water falling from the sky. Again. Suspicious."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Water falling from the sky. Again. Suspicious.",
     "want_ticks": 2,
     "last_fed_tick": 759,
     "recent_ideas": [
@@ -856,11 +941,6 @@
     "idea": "be the greeter at the market stall. Customers love me."
   },
   "recent_thoughts": [
-    "Still thinking about that bit on {topic}.",
-    "Smells like oil and toast. Perfect morning.",
-    "Winter on the island. Who knew?",
-    "{temp} degrees. My fingers have stopped working.",
-    "Had a dream about a gearbox. Normal, right?",
     "Wonder if I'm pricing my stuff right.",
     "Afternoon slump. Could do with a coffee.",
     "Looked up {topic} on the old laptop. Lekker.",
@@ -880,9 +960,14 @@
     "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "Can't wait to see the {site} finished.",
     "Running on coffee and hope.",
-    "Batteries low. Need a recharge."
+    "Batteries low. Need a recharge.",
+    "Haven't had grease on my hands in hours. Feels wrong.",
+    "Could sleep standing up like a horse.",
+    "Need a nap. A proper one.",
+    "Running on half a battery.",
+    "Slow and steady fills the jar."
   ],
-  "real_updated": "2026-11-27T13:45:19.982687+00:00",
+  "real_updated": "2026-11-27T14:00:13.869520+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -896,7 +981,7 @@
       "snow",
       "rain"
     ],
-    "temp": 1,
+    "temp": -1,
     "snow": 0.08,
     "wet": 1,
     "snowman": 1
