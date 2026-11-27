@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "walking to the garage",
-  "thought": "Too much sitting. Where's my toolbox?",
-  "feeling": "meh, fine",
+  "doing": "feeding Diesel",
+  "thought": "Diesel brought me his lead. Subtle.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.16,
-    "hunger": 0.26,
-    "social": 0.535,
-    "tinker": 0.81,
-    "curiosity": 0.52
+    "rest": 0.39,
+    "hunger": 0.525,
+    "social": 0.49,
+    "tinker": 0.655,
+    "curiosity": 0.495
   },
-  "mood": 0.19,
-  "energy": 0.84,
-  "coins": 24,
+  "mood": 0.44,
+  "energy": 0.61,
+  "coins": 28,
   "coins_goal": 500,
-  "bricks": 85,
+  "bricks": 102,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -168,7 +168,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 7,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -181,15 +181,10 @@
     "waves": "small",
     "waves_date": "2026-12-06"
   },
-  "queue": [
-    {
-      "move": "fix_a_car",
-      "why": "Nothing beats an engine firing first try."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-06",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -272,21 +267,81 @@
       "k": "did",
       "x": "walking to the garage",
       "why": "Garage next."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Nothing beats an engine firing first try."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "Weather like this, Thailand feels close.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "Sun's out. Even the bricks look happy.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "collecting bricks (+7 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (10 bricks pop out!)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Diesel brought me his lead. Subtle.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
     }
   ],
   "day_start": {
     "coins": 26,
     "bricks": 65,
-    "got": 20,
+    "got": 37,
     "used": 0
   },
-  "tick": 1015,
+  "tick": 1022,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-06T12:58:21.098366+00:00",
+  "updated": "2026-12-06T14:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 435,
-      "queue": 254,
+      "model": 438,
+      "queue": 258,
       "autopilot": 36,
       "sleeping": 290,
       "tokens_in": 0,
@@ -295,8 +350,8 @@
     },
     "today": {
       "date": "2026-12-06",
-      "model": 3,
-      "queue": 3,
+      "model": 6,
+      "queue": 7,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -311,12 +366,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.436,
-      "tired": 0.14,
-      "bored": 0.63
+      "hunger": 0,
+      "tired": 0.38,
+      "bored": 0.34
     },
-    "bond": 1,
-    "food": 1,
+    "bond": 1.0,
+    "food": 0,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -324,17 +379,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 972,
-    "wants": "play",
+    "doing": "sniffing everything",
+    "last_played_tick": 1017,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
@@ -347,11 +395,18 @@
       "My tail won't stop. I'm not stopping it.",
       "Sun on my belly. Perfect.",
       "I could chew a boot. Just a little bit.",
-      "Life is good. Life is SO good."
+      "Life is good. Life is SO good.",
+      "So bored I'm counting my own paws. Four. Still four.",
+      "{owner} is busy again. Sigh. Big sigh.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "{owner} is the best human in the whole town.",
+      "Warm spot on the floor. Mine now.",
+      "Tummy rumble. Big one.",
+      "Sit means treat. I have cracked the code."
     ],
-    "thought": "Life is good. Life is SO good.",
+    "thought": "YES! That's what I wanted!",
     "want_ticks": 0,
-    "last_fed_tick": 971,
+    "last_fed_tick": 1022,
     "recent_ideas": [
       "sit by the cafe door looking sad. Free pie.",
       "bring {owner} a stick. Then a bigger stick.",
@@ -365,9 +420,6 @@
     "idea": "learn the next trick and get ALL the treats."
   },
   "recent_thoughts": [
-    "Looked up {topic} on the old laptop. Lekker.",
-    "Who parks a bike in a barn for thirty years? Thank you, whoever.",
-    "Best decision I ever made, keeping {pup}.",
     "Wonder if I'm pricing my stuff right.",
     "If I don't eat soon I'm eating a brick.",
     "Blue sky, no excuses.",
@@ -389,9 +441,12 @@
     "Winter on the island. Who knew?",
     "That {topic} chapter got me thinking.",
     "Running on coffee and hope.",
-    "Too much sitting. Where's my toolbox?"
+    "Too much sitting. Where's my toolbox?",
+    "Weather like this, Thailand feels close.",
+    "Sun's out. Even the bricks look happy.",
+    "{pup} brought me his lead. Subtle."
   ],
-  "real_updated": "2026-11-27T21:45:14.892430+00:00",
+  "real_updated": "2026-11-27T22:00:11.829365+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@6",
@@ -404,7 +459,7 @@
     "seen": [
       "sunny"
     ],
-    "temp": -2,
+    "temp": 0,
     "snow": 0,
     "wet": 0,
     "snowman": 0
