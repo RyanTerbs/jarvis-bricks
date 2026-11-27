@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "playing with Diesel",
-  "thought": "Cold enough to freeze the carb on a scooter.",
-  "feeling": "on top of the world",
+  "doing": "starting a new build: Library",
+  "thought": "Still thinking about that bit on Bangkok.",
+  "feeling": "happy enough",
   "needs": {
     "rest": 0.6,
-    "hunger": 0.045,
-    "social": 0.465,
+    "hunger": 0.405,
+    "social": 0.585,
     "tinker": 0.16,
-    "curiosity": 0.505
+    "curiosity": 0
   },
-  "mood": 0.57,
+  "mood": 0.51,
   "energy": 0.4,
-  "coins": 17,
+  "coins": 20,
   "coins_goal": 500,
-  "bricks": 28,
+  "bricks": 22,
   "stock": {
     "rebuilt_carb": 3,
     "postcard": 2
@@ -153,7 +153,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -169,10 +169,10 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-04",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
-  "designed_on": "2026-12-02",
+  "designed_on": "2026-12-04",
   "plan_today": "Fix a few cars, fill the jar.",
   "today_log": [
     {
@@ -762,21 +762,129 @@
       "k": "did",
       "x": "playing with Diesel (Diesel's tail goes mad)",
       "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "designed",
+      "x": "designed a new building: 🔭 Stargazer Hill, a little hill with a telescope on top",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "designing a brand-new building",
+      "why": "Town needs something new. Something mine."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "built",
+      "x": "built a proper snowman: carrot nose, stone eyes and his old orange cap!",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "building a snowman (snowman finished!)",
+      "why": "Giving my old cap to a good cause."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "noticed",
+      "x": "A neighbour pays him back for a favour. +3 coins.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "The jar's getting heavier. Love that sound.",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "collecting bricks (+9 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (JACKPOT: 25 bricks!)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "noticed",
+      "x": "Diesel chases a plastic butterfly and misses.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "One more job, then feet up.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Bangkok.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "starting a new build: Library (paid 40 bricks)",
+      "why": "Town's getting bigger."
     }
   ],
   "day_start": {
     "coins": 48,
     "bricks": 0,
-    "got": 28,
-    "used": 0
+    "got": 62,
+    "used": 40
   },
-  "tick": 865,
+  "tick": 873,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T23:28:21.098366+00:00",
+  "updated": "2026-12-05T01:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 380,
-      "queue": 221,
+      "model": 386,
+      "queue": 223,
       "autopilot": 26,
       "sleeping": 238,
       "tokens_in": 0,
@@ -785,8 +893,8 @@
     },
     "today": {
       "date": "2026-12-04",
-      "model": 33,
-      "queue": 16,
+      "model": 39,
+      "queue": 18,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -801,9 +909,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.09,
-      "tired": 0.58,
-      "bored": 0.02
+      "hunger": 0.33,
+      "tired": 0.74,
+      "bored": 0.26
     },
     "bond": 1.0,
     "food": 4,
@@ -814,18 +922,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
+    "doing": "rolling in the grass",
     "last_played_tick": 865,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "Following {owner}. Best job in the world.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "The ground is a giant ice cream!",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -837,9 +937,17 @@
       "Cold white stuff! I must eat all of it.",
       "The ground is a giant ice cream!",
       "Who left this brick here? I'll carry it somewhere else.",
-      "Cold white stuff! I must eat all of it."
+      "Cold white stuff! I must eat all of it.",
+      "Sniffed a lamp post. Interesting news.",
+      "The cafe smells like pies. Noted.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Must... stay... awake... for treats.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "{owner} is the best human in the whole town."
     ],
-    "thought": "YES! That's what I wanted!",
+    "thought": "Derek is the best human in the whole town.",
     "want_ticks": 0,
     "last_fed_tick": 862,
     "recent_ideas": [
@@ -855,12 +963,6 @@
     "idea": "guard the savings jar. Nobody touches the jar."
   },
   "recent_thoughts": [
-    "Toast. Noodles. Anything.",
-    "Shame, the cafe guy looked tired today.",
-    "Looked up {topic} on the old laptop. Lekker.",
-    "Should I name the street? {me} Street. Ja, why not.",
-    "Under all that rust there's a good bike. I can see her.",
-    "That {topic} chapter got me thinking.",
     "Every coin counts. Every single one.",
     "Life's simple. Fix things, save coins, look after the dog.",
     "Snowman time. Non-negotiable.",
@@ -879,9 +981,15 @@
     "Even my spanner looks tired.",
     "Ja, no, definitely, maybe.",
     "Running on coffee and hope.",
-    "Cold enough to freeze the carb on a scooter."
+    "Cold enough to freeze the carb on a scooter.",
+    "Batteries low. Need a recharge.",
+    "Brick town under snow looks like a Christmas card.",
+    "{pup} fell asleep on my boots again. Can't move. Won't move.",
+    "The jar's getting heavier. Love that sound.",
+    "One more job, then feet up.",
+    "Still thinking about that bit on {topic}."
   ],
-  "real_updated": "2026-11-27T16:45:10.698084+00:00",
+  "real_updated": "2026-11-27T17:00:11.089183+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-04@13",
@@ -894,10 +1002,10 @@
     "seen": [
       "snow"
     ],
-    "temp": 0,
+    "temp": -2,
     "snow": 1,
     "wet": 0,
-    "snowman": 2
+    "snowman": 3
   },
   "book_boxes": [
     1

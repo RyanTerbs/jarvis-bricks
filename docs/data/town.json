@@ -138,7 +138,21 @@
       "built": "2026-12-04"
     }
   ],
-  "site": null,
+  "site": {
+    "bp": "library",
+    "name": "Library",
+    "lot": 9,
+    "work": 6,
+    "done": 0,
+    "started": "2026-12-04",
+    "look": {
+      "kind": "house",
+      "color": "#8a5a2b",
+      "roof": "#4e3015",
+      "emoji": "📚",
+      "floors": 2
+    }
+  },
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -211,6 +225,24 @@
       "designed": "2026-12-02",
       "helps": "tinker",
       "activity": "Polishing chrome"
+    },
+    "stargazer_hill": {
+      "name": "Stargazer Hill",
+      "bricks": 30,
+      "coins": 0,
+      "work": 5,
+      "place": "stargazer_hill",
+      "desc": "a little hill with a telescope on top",
+      "look": {
+        "kind": "shop",
+        "color": "#2c3e50",
+        "emoji": "🔭",
+        "floors": 1
+      },
+      "custom": true,
+      "designed": "2026-12-04",
+      "helps": "curiosity",
+      "activity": "Looking at the stars"
     }
   },
   "custom_moves": {
@@ -251,6 +283,16 @@
       ],
       "needs": {
         "tinker": -0.35
+      },
+      "mood": 0.06
+    },
+    "use_stargazer_hill": {
+      "label": "looking at the stars",
+      "at": [
+        "stargazer_hill"
+      ],
+      "needs": {
+        "curiosity": -0.35
       },
       "mood": 0.06
     }
@@ -315,6 +357,10 @@
     {
       "date": "2026-12-04",
       "text": "Finished building the Rooftop Garden."
+    },
+    {
+      "date": "2026-12-04",
+      "text": "Designed his own building: 🔭 Stargazer Hill (a little hill with a telescope on top)."
     }
   ]
 }

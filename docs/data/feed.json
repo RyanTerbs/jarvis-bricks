@@ -1,5 +1,167 @@
 [
   {
+    "at": "2026-12-05T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "starting a new build: Library (paid 40 bricks)",
+    "why": "Town's getting bigger.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Still thinking about that bit on Bangkok.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "One more job, then feet up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "noticed",
+    "text": "Diesel chases a plastic butterfly and misses.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (JACKPOT: 25 bricks!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "collecting bricks (+9 bricks)",
+    "why": "Got plans. Need materials.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Off to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "The jar's getting heavier. Love that sound.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-05T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman finished!)",
+    "why": "Giving my old cap to a good cause.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "built",
+    "text": "built a proper snowman: carrot nose, stone eyes and his old orange cap!",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "designing a brand-new building",
+    "why": "Town needs something new. Something mine.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "designed",
+    "text": "designed a new building: 🔭 Stargazer Hill, a little hill with a telescope on top",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-04T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "thought",
+    "text": "Batteries low. Need a recharge.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-04T23:28:21.098366+00:00",
     "time": "6:28 PM",
     "kind": "did",
@@ -1184,168 +1346,6 @@
     "kind": "did",
     "text": "taking Diesel for a walk (Diesel's tail goes mad)",
     "why": "Dog's gotta walk.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-04T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "noticed",
-    "text": "It starts raining plastic raindrops.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "starting a new build: Rooftop Garden (paid 30 bricks)",
-    "why": "Time to build something new.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "A clean toolbox is a happy toolbox.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "running his market stall (pricey prices, no buyers this time (quiet in this rain))",
-    "why": "Market day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "running his market stall (cheap prices, sold 1 rebuilt carburettor for 7 coins)",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Off to the market stall.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Diesel is yawning, so I'm yawning.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "thought",
-    "text": "Rain on the roof. Lekker sound, rubbish for building.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "thought",
-    "text": "Sky's going orange. Thailand sunsets must be something else.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "thought",
-    "text": "Wet again. The site turns to mud in this.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "note",
-    "text": "noted (Bangkok (Introduction)): Bangkok, known in Thai as Krung Thep Maha Nakhon and colloquially as Krung Thep, is the capital and largest city of Thailand.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 1/10)",
-    "why": "Learning something today.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-03T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "thought",
-    "text": "One day: me, a bike, and a mountain road outside Chiang Mai.",
-    "why": null,
     "by": "model",
     "ok": true
   }
