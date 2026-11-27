@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-30",
+    "day": "Mon 30 Nov",
+    "title": "Fixing a car",
+    "text": "Ja, so today. Spent most of today fixing a car, collecting bricks and feeding Diesel. The Noodle stall is 2/4 done. Getting there. Worked on tricks with Diesel a few times. Read up on Dog training. Foggy day, couldn't see the end of the street. Beach time: playing fetch with Diesel on the beach (Diesel's tail goes mad). Diesel and me, best team in town. Pretty sure Diesel was planning to make friends with the crab. Or eat it. Undecided. Cheeky. Stall made 2 coins today. Made 6 coins. Collected 21 bricks, used 25 on building. Also: A bike roars past heading out of town. Still dreaming of Thailand. 420 coins between me and that road. Bed.",
+    "tomorrow": "Teach Diesel a new trick.",
+    "by": "template",
+    "coins": 80,
+    "bricks": 2,
+    "coins_change": 6,
+    "bricks_change": -4,
+    "built": []
+  },
+  {
     "date": "2026-11-29",
     "day": "Sun 29 Nov",
     "title": "Fixing a car",

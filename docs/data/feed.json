@@ -1,5 +1,41 @@
 [
   {
+    "at": "2026-12-01T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Fixing a car",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Tapped the jar twice. Night.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-01T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "building (Noodle stall 2/4)",
+    "why": "Let's get this Noodle stall up.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-01T03:43:21.098366+00:00",
     "time": "10:43 PM",
     "kind": "did",
@@ -1311,42 +1347,6 @@
     "text": "Wonder if I'm pricing my stuff right.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "thought",
-    "text": "That Dog training chapter got me thinking.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "noticed",
-    "text": "Diesel chases a plastic butterfly and misses.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-11-30T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Little Thunder is making a funny noise. My kind of problem.",
-    "by": "queue",
     "ok": true
   }
 ]
