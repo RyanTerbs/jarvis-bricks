@@ -2,21 +2,21 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Toast. Noodles. Anything.",
-  "feeling": "chilled",
+  "doing": "feeding Diesel",
+  "thought": "Every coin counts. Every single one.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.63,
-    "hunger": 0.04,
-    "social": 0.335,
-    "tinker": 0.09,
-    "curiosity": 0.255
+    "rest": 0.65,
+    "hunger": 0.32,
+    "social": 0.355,
+    "tinker": 0.32,
+    "curiosity": 0.355
   },
-  "mood": 0.43,
-  "energy": 0.37,
+  "mood": 0.49,
+  "energy": 0.35,
   "coins": 84,
   "coins_goal": 500,
-  "bricks": 15,
+  "bricks": 19,
   "stock": {},
   "owned": [],
   "sales": {
@@ -95,7 +95,7 @@
   "looked_up": [
     "Krabi"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -397,21 +397,111 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Autumn. Days getting shorter.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "If it's got moving parts, I can fix it. Mostly.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Off to the brick pit."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "collecting bricks (+4 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Weather like this, Thailand feels close.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Blue sky, no excuses.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Quick trip to the beach."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "playing fetch with Diesel on the beach (Diesel's tail goes mad)",
+      "why": "Fetch on the sand!"
+    },
+    {
+      "t": "2:58 PM",
+      "k": "noticed",
+      "x": "A bike roars past heading out of town.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "thought",
+      "x": "Every coin counts. Every single one.",
+      "why": null
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
     }
   ],
   "day_start": {
     "coins": 74,
     "bricks": 6,
-    "got": 9,
+    "got": 13,
     "used": 0
   },
-  "tick": 460,
+  "tick": 468,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-30T18:13:21.098366+00:00",
+  "updated": "2026-11-30T20:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 195,
-      "queue": 118,
+      "model": 200,
+      "queue": 121,
       "autopilot": 15,
       "sleeping": 132,
       "tokens_in": 0,
@@ -420,8 +510,8 @@
     },
     "today": {
       "date": "2026-11-30",
-      "model": 16,
-      "queue": 12,
+      "model": 21,
+      "queue": 15,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -436,12 +526,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.396,
-      "tired": 0.26,
-      "bored": 0.19
+      "hunger": 0,
+      "tired": 0.57,
+      "bored": 0.06
     },
-    "bond": 1,
-    "food": 4,
+    "bond": 1.0,
+    "food": 3,
     "tricks": {
       "sit": 3,
       "paw": 1
@@ -449,18 +539,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
-    "last_played_tick": 450,
-    "wants": "beach",
+    "doing": "rolling in the grass",
+    "last_played_tick": 466,
+    "wants": null,
     "recent_thoughts": [
-      "Everything smells amazing today.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "My tail won't stop. I'm not stopping it.",
-      "Life is good. Life is SO good.",
-      "Where did the world go?",
-      "Where did the world go?",
-      "{owner} is making clanky noises. I will supervise.",
-      "That engine is loud. I will bark at it. Later.",
       "Yawn. Big yawn. Biggest yawn.",
       "Life is good. Life is SO good.",
       "Dreaming: the whole beach is made of treats.",
@@ -472,11 +554,19 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Warm spot on the floor. Mine now."
+      "Warm spot on the floor. Mine now.",
+      "The ! block knows something. I will watch it.",
+      "Good boy? Me? Yes. Me.",
+      "Sun on my belly. Perfect.",
+      "Following {owner}. Best job in the world.",
+      "Warm spot on the floor. Mine now.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Everything smells amazing today.",
+      "The cafe smells like pies. Noted."
     ],
-    "thought": "Warm spot on the floor. Mine now.",
+    "thought": "Tail going at full speed!",
     "want_ticks": 0,
-    "last_fed_tick": 439,
+    "last_fed_tick": 468,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
       "sleep IN the toolbox. Cosy.",
@@ -488,11 +578,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Wonder if I'm pricing my stuff right.",
-    "Still thinking about that bit on {topic}.",
-    "Somewhere there's a beach in Krabi with my name on it.",
-    "Reading about {topic} makes me want to try it.",
-    "One more job, then feet up.",
     "Foggy. Feels like a Port Alfred winter morning.",
     "{pup} is yawning, so I'm yawning.",
     "{pup} follows me everywhere. Proper little shadow.",
@@ -512,9 +597,14 @@
     "Can't see the end of the street. Spooky.",
     "Picture it: a winding road, a good engine, no rush.",
     "Nothing like the sea to clear the head.",
-    "Toast. Noodles. Anything."
+    "Toast. Noodles. Anything.",
+    "Autumn. Days getting shorter.",
+    "If it's got moving parts, I can fix it. Mostly.",
+    "Weather like this, Thailand feels close.",
+    "Blue sky, no excuses.",
+    "Every coin counts. Every single one."
   ],
-  "real_updated": "2026-11-27T03:15:12.229505+00:00",
+  "real_updated": "2026-11-27T03:30:15.773770+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-30@13",
