@@ -1,32 +1,33 @@
 {
   "name": "Derek",
-  "place": "market_stall",
+  "place": "beach",
   "asleep": false,
-  "doing": "running his market stall",
-  "thought": "Diesel's tail hasn't stopped since breakfast. Lekker.",
-  "feeling": "chilled",
+  "doing": "walking to the beach",
+  "thought": "Even my spanner looks tired.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.195,
-    "social": 0.099,
-    "tinker": 0.505,
-    "curiosity": 0.515
+    "rest": 0.65,
+    "hunger": 0.495,
+    "social": 0.125,
+    "tinker": 0.435,
+    "curiosity": 0.415
   },
-  "mood": 0.46,
-  "energy": 0.38,
-  "coins": 67,
+  "mood": 0.38,
+  "energy": 0.35,
+  "coins": 73,
   "coins_goal": 500,
   "bricks": 6,
   "stock": {
-    "postcard": 2
+    "postcard": 1
   },
   "owned": [],
   "sales": {
-    "items": 2,
-    "coins": 6
+    "items": 3,
+    "coins": 8
   },
   "books": {
-    "tourism_thailand": 9
+    "tourism_thailand": 9,
+    "dog_training": 1
   },
   "finished": [
     "tourism_thailand"
@@ -76,10 +77,15 @@
       "date": "2026-11-29",
       "source": "Tourism in Thailand (Tourism Authority of Thailand)",
       "note": "The Tourism Authority of Thailand (TAT) has been actively leading the country's sustainable tourism efforts, focusing on innovation, sustainability, and digital"
+    },
+    {
+      "date": "2026-11-29",
+      "source": "Dog training (Introduction)",
+      "note": "Dog training is a type of animal training, the application of behavior analysis which uses the environmental events of antecedents (trigger for a behavior) and"
     }
   ],
   "looked_up": [],
-  "hour": 14,
+  "hour": 16,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -94,9 +100,12 @@
   },
   "queue": [
     {
-      "move": "run_the_stall",
-      "why": "Let's see what sells.",
-      "pricing": "cheap"
+      "move": "collect_shells",
+      "why": "Pretty ones today."
+    },
+    {
+      "move": "play_fetch_on_the_beach",
+      "why": "Diesel loves the beach."
     }
   ],
   "lucky": {
@@ -478,6 +487,96 @@
       "k": "did",
       "x": "running his market stall (pricey prices, sold 2 postcard of the towns for 6 coins)",
       "why": "Got stock, need buyers."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "running his market stall (cheap prices, sold 1 postcard of the town for 2 coins)",
+      "why": "Let's see what sells."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "thought",
+      "x": "Never had a mate this loyal.",
+      "why": null
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "thought",
+      "x": "Can't see the end of the street. Spooky.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "reading a book (Dog training, chapter 1/8)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "note",
+      "x": "noted (Dog training (Introduction)): Dog training is a type of animal training, the application of behavior analysis which uses the environmental events of antecedents (trigger for a behavior) and",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Best decision I ever made, keeping Diesel.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "noticed",
+      "x": "Diesel steals a sock and runs off down the street.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Nothing beats an engine firing first try."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "thought",
+      "x": "Foggy. Feels like a Port Alfred winter morning.",
+      "why": null
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "thought",
+      "x": "Even my spanner looks tired.",
+      "why": null
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Off to the beach."
     }
   ],
   "day_start": {
@@ -486,13 +585,13 @@
     "got": 0,
     "used": 0
   },
-  "tick": 370,
+  "tick": 378,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-11-29T19:43:21.098366+00:00",
+  "updated": "2026-11-29T21:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 159,
-      "queue": 93,
+      "model": 164,
+      "queue": 96,
       "autopilot": 13,
       "sleeping": 105,
       "tokens_in": 0,
@@ -501,8 +600,8 @@
     },
     "today": {
       "date": "2026-11-29",
-      "model": 20,
-      "queue": 14,
+      "model": 25,
+      "queue": 17,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -515,11 +614,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.268,
-      "tired": 0.43,
-      "bored": 0
+      "hunger": 0.456,
+      "tired": 0.39,
+      "bored": 0.18
     },
     "bond": 1,
     "food": 0,
@@ -529,18 +628,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 363,
-    "wants": null,
+    "wants": "cuddle",
     "recent_thoughts": [
-      "I know tricks now. I am a very clever boy.",
-      "Food? Food. FOOD.",
-      "Is it dinner? It feels like dinner.",
-      "SAND! Wet sand! Best day ever!",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Following {owner}. Best job in the world.",
-      "My tail won't stop. I'm not stopping it.",
-      "I am a very good boy. Probably.",
       "{owner} is the best human in the whole town.",
       "Nap spot: located. Engaging.",
       "Wet dog smell is the best smell.",
@@ -552,10 +643,18 @@
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Sit means treat. I have cracked the code.",
+      "Life is good. Life is SO good.",
+      "Learning is hard. Treats make it easier.",
+      "Where did the world go?",
+      "The cafe smells like pies. Noted.",
+      "Fog. Can't see. Can smell. Sniffing harder."
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
-    "want_ticks": 0,
+    "thought": "Fog. Can't see. Can smell. Sniffing harder.",
+    "want_ticks": 4,
     "last_fed_tick": 355,
     "recent_ideas": [
       "be the greeter at the market stall. Customers love me.",
@@ -568,11 +667,6 @@
     "idea": "follow Derek to Thailand. Obviously."
   },
   "recent_thoughts": [
-    "Good waves. Must not get too cocky.",
-    "Could sleep standing up like a horse.",
-    "The jar's getting heavier. Love that sound.",
-    "Still thinking about that bit on {topic}.",
-    "{pup} fell asleep on my boots again. Can't move. Won't move.",
     "Every town needs a guy who fixes stuff. That's me.",
     "Autumn. Days getting shorter.",
     "Who invented the carburettor anyway? Must look that up.",
@@ -592,9 +686,14 @@
     "Sun's in the perfect spot for a nap. Not happening though.",
     "Even the lamp posts look lost in this fog.",
     "Thailand. Noodles, mountains, warm sea. Soon.",
-    "{pup}'s tail hasn't stopped since breakfast. Lekker."
+    "{pup}'s tail hasn't stopped since breakfast. Lekker.",
+    "Never had a mate this loyal.",
+    "Can't see the end of the street. Spooky.",
+    "Best decision I ever made, keeping {pup}.",
+    "Foggy. Feels like a Port Alfred winter morning.",
+    "Even my spanner looks tired."
   ],
-  "real_updated": "2026-11-27T00:15:11.038291+00:00",
+  "real_updated": "2026-11-27T00:30:12.122219+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-11-29@13",
@@ -610,6 +709,6 @@
     ],
     "temp": 20,
     "snow": 0,
-    "wet": 0.65
+    "wet": 0.25
   }
 }
