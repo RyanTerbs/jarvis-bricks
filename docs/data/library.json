@@ -11,7 +11,7 @@
       "title": "Carburetor",
       "where": "home",
       "chapters": 9,
-      "perk": "his rebuilt carbs sell for 2 coins more",
+      "perk": "his rebuilt carbs sell for 2 coins more; carb rebuilds on a project bike take 2 sessions less",
       "source": "https://en.wikipedia.org/wiki/Carburetor"
     },
     "thailand": {
@@ -200,7 +200,7 @@
       "title": "Two-stroke engine",
       "where": "library",
       "chapters": 8,
-      "perk": "+1 coin for every car he fixes",
+      "perk": "+1 coin for every car he fixes; engine work on a project bike takes 1 session less",
       "source": "https://en.wikipedia.org/wiki/Two-stroke_engine"
     },
     "motorcycle": {
@@ -307,8 +307,361 @@
       "chapters": 9,
       "perk": null,
       "source": "https://en.wikipedia.org/wiki/Lego"
+    },
+    "barn_find": {
+      "title": "Barn find",
+      "where": "box",
+      "box": 1,
+      "chapters": 2,
+      "perk": "restoration work feels even better",
+      "source": "https://en.wikipedia.org/wiki/Barn_find"
+    },
+    "vehicle_restoration": {
+      "title": "Conservation and restoration of road vehicles",
+      "where": "box",
+      "box": 1,
+      "chapters": 4,
+      "perk": "stripping a project bike takes 1 session less",
+      "source": "https://en.wikipedia.org/wiki/Conservation_and_restoration_of_road_vehicles"
+    },
+    "four_stroke": {
+      "title": "Four-stroke engine",
+      "where": "box",
+      "box": 1,
+      "chapters": 6,
+      "perk": "engine work on a project bike takes 2 sessions less",
+      "source": "https://en.wikipedia.org/wiki/Four-stroke_engine"
+    },
+    "spark_plug": {
+      "title": "Spark plug",
+      "where": "box",
+      "box": 1,
+      "chapters": 7,
+      "perk": "a project bike is likelier to start first kick; electrics take 1 session less",
+      "source": "https://en.wikipedia.org/wiki/Spark_plug"
+    },
+    "tire": {
+      "title": "Tire",
+      "where": "box",
+      "box": 1,
+      "chapters": 10,
+      "perk": "tyres + electrics take 1 session less",
+      "source": "https://en.wikipedia.org/wiki/Tire"
+    },
+    "spray_painting": {
+      "title": "Spray painting",
+      "where": "box",
+      "box": 1,
+      "chapters": 7,
+      "perk": "painting a project bike takes 1 session less",
+      "source": "https://en.wikipedia.org/wiki/Spray_painting"
+    },
+    "pai": {
+      "title": "Pai, Thailand",
+      "where": "box",
+      "box": 2,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Pai,_Thailand"
+    },
+    "mae_hong_son": {
+      "title": "Mae Hong Son province",
+      "where": "box",
+      "box": 2,
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Mae_Hong_Son_province"
+    },
+    "chiang_rai": {
+      "title": "Chiang Rai province",
+      "where": "box",
+      "box": 2,
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Chiang_Rai_province"
+    },
+    "golden_triangle": {
+      "title": "Golden Triangle (Southeast Asia)",
+      "where": "box",
+      "box": 2,
+      "chapters": 7,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Golden_Triangle_(Southeast_Asia)"
+    },
+    "isan": {
+      "title": "Isan",
+      "where": "box",
+      "box": 2,
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Isan"
+    },
+    "loy_krathong": {
+      "title": "Loy Krathong",
+      "where": "box",
+      "box": 2,
+      "chapters": 6,
+      "perk": "a little extra cheer",
+      "source": "https://en.wikipedia.org/wiki/Loy_Krathong"
+    },
+    "welding": {
+      "title": "Welding",
+      "where": "box",
+      "box": 3,
+      "chapters": 10,
+      "perk": "frame work on a project bike takes 1 session less",
+      "source": "https://en.wikipedia.org/wiki/Welding"
+    },
+    "fuel_injection": {
+      "title": "Fuel injection",
+      "where": "box",
+      "box": 3,
+      "chapters": 5,
+      "perk": "+1 coin for every car he fixes",
+      "source": "https://en.wikipedia.org/wiki/Fuel_injection"
+    },
+    "ignition": {
+      "title": "Ignition system",
+      "where": "box",
+      "box": 3,
+      "chapters": 4,
+      "perk": "project bikes start more easily",
+      "source": "https://en.wikipedia.org/wiki/Ignition_system"
+    },
+    "enduro": {
+      "title": "Enduro",
+      "where": "box",
+      "box": 3,
+      "chapters": 8,
+      "perk": "track laps feel even better",
+      "source": "https://en.wikipedia.org/wiki/Enduro"
+    },
+    "dual_sport": {
+      "title": "Dual-sport motorcycle",
+      "where": "box",
+      "box": 3,
+      "chapters": 5,
+      "perk": "rides on his restored bikes feel even better",
+      "source": "https://en.wikipedia.org/wiki/Dual-sport_motorcycle"
+    },
+    "motocross": {
+      "title": "Motocross",
+      "where": "box",
+      "box": 3,
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Motocross"
+    },
+    "phi_phi": {
+      "title": "Phi Phi Islands",
+      "where": "box",
+      "box": 4,
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Phi_Phi_Islands"
+    },
+    "ko_tao": {
+      "title": "Ko Tao",
+      "where": "box",
+      "box": 4,
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Ko_Tao"
+    },
+    "thai_street_food": {
+      "title": "Street food of Thailand",
+      "where": "box",
+      "box": 4,
+      "chapters": 5,
+      "perk": "his noodle kits sell for 1 coin more",
+      "source": "https://en.wikipedia.org/wiki/Street_food_of_Thailand"
+    },
+    "khaosan": {
+      "title": "Khaosan Road",
+      "where": "box",
+      "box": 4,
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Khaosan_Road"
+    },
+    "songthaew": {
+      "title": "Songthaew",
+      "where": "box",
+      "box": 4,
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Songthaew"
+    },
+    "thai_culture": {
+      "title": "Culture of Thailand",
+      "where": "box",
+      "box": 4,
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Culture_of_Thailand"
+    },
+    "dca": {
+      "title": "Dollar-cost averaging",
+      "where": "box",
+      "box": 5,
+      "chapters": 5,
+      "perk": "counting the jar feels even better",
+      "source": "https://en.wikipedia.org/wiki/Dollar-cost_averaging"
+    },
+    "sp500": {
+      "title": "S&P 500",
+      "where": "box",
+      "box": 5,
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/S%26P_500"
+    },
+    "compound_interest": {
+      "title": "Compound interest",
+      "where": "box",
+      "box": 5,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Compound_interest"
+    },
+    "frugality": {
+      "title": "Frugality",
+      "where": "box",
+      "box": 5,
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Frugality"
+    },
+    "retirement": {
+      "title": "Retirement",
+      "where": "box",
+      "box": 5,
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Retirement"
+    },
+    "expatriate": {
+      "title": "Expatriate",
+      "where": "box",
+      "box": 5,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Expatriate"
+    },
+    "scaffolding": {
+      "title": "Scaffolding",
+      "where": "box",
+      "box": 6,
+      "chapters": 5,
+      "perk": "builds go a touch faster",
+      "source": "https://en.wikipedia.org/wiki/Scaffolding"
+    },
+    "masonry": {
+      "title": "Masonry",
+      "where": "box",
+      "box": 6,
+      "chapters": 10,
+      "perk": "builds go a bit faster",
+      "source": "https://en.wikipedia.org/wiki/Masonry"
+    },
+    "punch_list": {
+      "title": "Punch list",
+      "where": "box",
+      "box": 6,
+      "chapters": 2,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Punch_list"
+    },
+    "site_safety": {
+      "title": "Construction site safety",
+      "where": "box",
+      "box": 6,
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Construction_site_safety"
+    },
+    "eastern_cape": {
+      "title": "Eastern Cape",
+      "where": "box",
+      "box": 6,
+      "chapters": 10,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Eastern_Cape"
+    },
+    "port_alfred": {
+      "title": "Port Alfred",
+      "where": "box",
+      "box": 6,
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Port_Alfred"
+    },
+    "everglades": {
+      "title": "Everglades",
+      "where": "box",
+      "box": 6,
+      "chapters": 9,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Everglades"
+    },
+    "jet_ski": {
+      "title": "Jet ski",
+      "where": "box",
+      "box": 6,
+      "chapters": 5,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Jet_ski"
+    },
+    "rust": {
+      "title": "Rust",
+      "where": "box",
+      "box": 7,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Rust"
+    },
+    "automotive_paint": {
+      "title": "Automotive paint",
+      "where": "box",
+      "box": 7,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Automotive_paint"
+    },
+    "clutch": {
+      "title": "Clutch",
+      "where": "box",
+      "box": 7,
+      "chapters": 4,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Clutch"
+    },
+    "off_roading": {
+      "title": "Off-roading",
+      "where": "box",
+      "box": 7,
+      "chapters": 6,
+      "perk": "rides feel a bit better",
+      "source": "https://en.wikipedia.org/wiki/Off-roading"
+    },
+    "elephant_park": {
+      "title": "Elephant Nature Park",
+      "where": "box",
+      "box": 7,
+      "chapters": 3,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Elephant_Nature_Park"
+    },
+    "vlog": {
+      "title": "Vlog",
+      "where": "box",
+      "box": 7,
+      "chapters": 6,
+      "perk": null,
+      "source": "https://en.wikipedia.org/wiki/Vlog"
     }
   },
-  "topics": 110,
+  "boxes_left": 7,
+  "topics": 148,
   "credit": "Books + encyclopedia: offline copy of Wikipedia articles, CC BY-SA 4.0"
 }

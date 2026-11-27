@@ -7,12 +7,12 @@
   "feeling": "content",
   "needs": {
     "rest": 0,
-    "hunger": 0.485,
-    "social": 0.435,
-    "tinker": 0.71,
-    "curiosity": 0.475
+    "hunger": 0.505,
+    "social": 0.445,
+    "tinker": 0.72,
+    "curiosity": 0.485
   },
-  "mood": 0.24,
+  "mood": 0.23,
   "energy": 1,
   "coins": 48,
   "coins_goal": 500,
@@ -165,15 +165,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 805,
+  "tick": 807,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-04T08:28:21.098366+00:00",
+  "updated": "2026-12-04T08:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 347,
       "queue": 205,
       "autopilot": 25,
-      "sleeping": 228,
+      "sleeping": 230,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -183,7 +183,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 14,
+      "sleeping": 16,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -196,7 +196,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.128,
+      "hunger": 0.136,
       "tired": 0,
       "bored": 0.24
     },
@@ -213,8 +213,6 @@
     "last_played_tick": 772,
     "wants": null,
     "recent_thoughts": [
-      "PUDDLE. Must jump in puddle.",
-      "Wet dog smell is the best smell.",
       "Everything smells amazing today.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: the whole beach is made of treats.",
@@ -232,9 +230,11 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
     "want_ticks": 0,
     "last_fed_tick": 786,
     "recent_ideas": [
@@ -276,7 +276,7 @@
     "Ja, no, definitely, maybe.",
     "Every town needs a guy who fixes stuff. That's me."
   ],
-  "real_updated": "2026-11-27T14:45:11.963911+00:00",
+  "real_updated": "2026-11-27T14:49:01.010403+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-03@13",
@@ -294,5 +294,17 @@
     "snow": 0.08,
     "wet": 1,
     "snowman": 1
+  },
+  "book_boxes": [],
+  "truck_date": null,
+  "box_date": null,
+  "project": null,
+  "bikes": [],
+  "restored": [],
+  "bike_offer": null,
+  "garage_free_since": null,
+  "garage": {
+    "bikes": [],
+    "restored": []
   }
 }
