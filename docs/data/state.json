@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "gym",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Someone out there needs a brick model bike. I can feel it.",
-  "feeling": "lekker",
+  "doing": "feeding Diesel",
+  "thought": "Thailand. Noodles, mountains, warm sea. Soon.",
+  "feeling": "sharp-sharp",
   "needs": {
-    "rest": 0.51,
-    "hunger": 0.405,
-    "social": 0.485,
-    "tinker": 0.23,
-    "curiosity": 0.53
+    "rest": 0.65,
+    "hunger": 0.525,
+    "social": 0.605,
+    "tinker": 0.105,
+    "curiosity": 0.63
   },
-  "mood": 0.51,
-  "energy": 0.49,
-  "coins": 57,
+  "mood": 0.42,
+  "energy": 0.35,
+  "coins": 56,
   "coins_goal": 500,
   "bricks": 197,
   "stock": {
@@ -230,7 +230,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 14,
+  "hour": 16,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -605,6 +605,78 @@
       "k": "did",
       "x": "having a rest",
       "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Saw a coffee machine at the Mega Mart. The jar says not yet.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Freezing. Mug time."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "thought",
+      "x": "Cold enough to freeze the carb on a scooter.",
+      "why": null
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: carb rebuild (carb rebuild 2/4)",
+      "why": "Little Thunder won't fix herself."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: carb rebuild (carb rebuild 3/4)",
+      "why": "She's ugly now. She won't be for long."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
     }
   ],
   "day_start": {
@@ -613,13 +685,13 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1329,
+  "tick": 1337,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T19:28:21.098366+00:00",
+  "updated": "2026-12-09T21:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 577,
-      "queue": 336,
+      "model": 581,
+      "queue": 340,
       "autopilot": 47,
       "sleeping": 369,
       "tokens_in": 0,
@@ -628,8 +700,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 19,
-      "queue": 13,
+      "model": 23,
+      "queue": 17,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -644,12 +716,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.422,
-      "tired": 0.41,
-      "bored": 0.39
+      "hunger": 0,
+      "tired": 0.634,
+      "bored": 0.582
     },
     "bond": 1.0,
-    "food": 4,
+    "food": 3,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -661,14 +733,6 @@
     "last_played_tick": 1306,
     "wants": null,
     "recent_thoughts": [
-      "Nap spot: located. Engaging.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "{owner} is the best human in the whole town.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Everything smells amazing today.",
-      "The ground is a giant ice cream!",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -680,11 +744,19 @@
       "The ! block knows something. I will watch it.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Grease smell. Best smell after sausages.",
-      "Cold white stuff! I must eat all of it."
+      "Cold white stuff! I must eat all of it.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Life is good. Life is SO good.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The loud thing is back. I'm under the bench.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Tummy rumble. Big one.",
+      "My bowl is empty. This is an emergency."
     ],
-    "thought": "Cold white stuff! I must eat all of it.",
+    "thought": "Best. Human. Ever.",
     "want_ticks": 0,
-    "last_fed_tick": 1308,
+    "last_fed_tick": 1337,
     "recent_ideas": [
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
@@ -698,10 +770,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Bits of {bike}'s carb sitting in a jar. Like pickles.",
-    "Little guy depends on me. Feed him first, then the rest.",
-    "Reading about {topic} makes me want to try it.",
     "Body says rest. Stubborn brain says one more job.",
     "Had a dream about a gearbox. Normal, right?",
     "Grey old day. Good for graft, bad for a tan.",
@@ -722,9 +790,13 @@
     "Best thing I bought? Probably the {thing}.",
     "Looked up {topic} on the old laptop. Lekker.",
     "The {site} is coming along. Brick by brick.",
-    "Someone out there needs a brick model bike. I can feel it."
+    "Someone out there needs a brick model bike. I can feel it.",
+    "Saw a {want} at the Mega Mart. The jar says not yet.",
+    "Cold enough to freeze the carb on a scooter.",
+    "Winter. Cold mornings, slow engines.",
+    "Thailand. Noodles, mountains, warm sea. Soon."
   ],
-  "real_updated": "2026-11-28T08:15:10.829108+00:00",
+  "real_updated": "2026-11-28T08:30:13.764111+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
@@ -752,17 +824,17 @@
     "name": "Little Thunder",
     "found": "2026-12-04",
     "stage": 1,
-    "done": 1,
+    "done": 3,
     "parts": "in",
     "parts_due": "2026-12-08",
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 8,
-    "sessions": 7,
+    "sessions": 9,
     "tries": 0,
-    "today_date": "2026-12-08",
-    "today": 1,
+    "today_date": "2026-12-09",
+    "today": 2,
     "finished": null,
     "rides": 0
   },
@@ -785,7 +857,7 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
+      "hold": "done enough on it for today",
       "stage": 1,
       "stage_id": "carb",
       "parts": "in",
@@ -802,7 +874,7 @@
           "id": "carb",
           "name": "carb rebuild",
           "need": 4,
-          "done": 1,
+          "done": 3,
           "coins": 8
         },
         {
