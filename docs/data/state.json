@@ -1,23 +1,25 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "building_site",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Brick town under snow looks like a Christmas card.",
-  "feeling": "content",
+  "doing": "walking to the building site",
+  "thought": "Some days you're the spanner, some days you're the bolt.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.48,
-    "hunger": 0.45,
-    "social": 0.18,
-    "tinker": 0.555,
-    "curiosity": 0.455
+    "rest": 0.62,
+    "hunger": 0.07,
+    "social": 0.35,
+    "tinker": 0.585,
+    "curiosity": 0.355
   },
-  "mood": 0.44,
-  "energy": 0.52,
+  "mood": 0.39,
+  "energy": 0.38,
   "coins": 57,
   "coins_goal": 500,
   "bricks": 197,
-  "stock": {},
+  "stock": {
+    "postcard": 2
+  },
   "owned": [
     "surfboard",
     "wheelbarrow",
@@ -228,7 +230,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 10,
+  "hour": 12,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -243,12 +245,12 @@
   },
   "queue": [
     {
-      "move": "make_postcard",
-      "why": "Got an order in my head."
+      "move": "work_on_site",
+      "why": "Back to the Gym. Nearly there."
     },
     {
-      "move": "make_postcard",
-      "why": "Making stock for the stall."
+      "move": "work_on_site",
+      "why": "Back to the Gym. Nearly there."
     }
   ],
   "lucky": {
@@ -468,6 +470,78 @@
       "k": "did",
       "x": "walking home",
       "why": "Heading home."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "making a postcard of the town (1 in stock)",
+      "why": "Got an order in my head."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "making a postcard of the town (2 in stock)",
+      "why": "Making stock for the stall."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "thought",
+      "x": "Too much sitting. Where's my toolbox?",
+      "why": null
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "building (Gym 2/5)",
+      "why": "Building is just fixing, but bigger."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Toast. Noodles. Anything.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "Some days you're the spanner, some days you're the bolt.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Heading to the building site."
     }
   ],
   "day_start": {
@@ -476,13 +550,13 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1314,
+  "tick": 1322,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T15:43:21.098366+00:00",
+  "updated": "2026-12-09T17:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 569,
-      "queue": 330,
+      "model": 573,
+      "queue": 334,
       "autopilot": 46,
       "sleeping": 369,
       "tokens_in": 0,
@@ -491,8 +565,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 11,
-      "queue": 7,
+      "model": 15,
+      "queue": 11,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -505,11 +579,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.18,
-      "tired": 0.854,
-      "bored": 0.222
+      "hunger": 0.264,
+      "tired": 0.43,
+      "bored": 0.27
     },
     "bond": 1.0,
     "food": 4,
@@ -520,18 +594,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
+    "doing": "napping",
     "last_played_tick": 1306,
-    "wants": "nap",
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "I am a very good boy. Probably.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Cold white stuff! I must eat all of it.",
       "I know tricks now. I am a very clever boy.",
       "Life is good. Life is SO good.",
       "Good boy? Me? Yes. Me.",
@@ -543,9 +609,17 @@
       "Sky went grey. Still a good day. Every day is a good day.",
       "{owner} is the best human in the whole town.",
       "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day."
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Everything smells amazing today.",
+      "The ground is a giant ice cream!",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "thought": "Zzz. Squirrel. Zzz.",
     "want_ticks": 0,
     "last_fed_tick": 1308,
     "recent_ideas": [
@@ -561,10 +635,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Need a lie down before I drop a spanner on my foot.",
-    "{pup} is bored stiff. Time for a walk.",
-    "That dog needs a run. So do I, honestly.",
-    "Clouds sitting on the town like a lid.",
     "Still thinking about that bit on {topic}.",
     "Nice when the street goes quiet.",
     "Cloudy. Fine. Engines don't care.",
@@ -585,9 +655,13 @@
     "Ja, today feels like a building day.",
     "New float, new needle. She'll breathe again.",
     "{pup} would love the dog aisle. Strictly no dogs, says the sign.",
-    "Brick town under snow looks like a Christmas card."
+    "Brick town under snow looks like a Christmas card.",
+    "Too much sitting. Where's my toolbox?",
+    "Toast. Noodles. Anything.",
+    "Winter on the island. Who knew?",
+    "Some days you're the spanner, some days you're the bolt."
   ],
-  "real_updated": "2026-11-28T07:45:10.268893+00:00",
+  "real_updated": "2026-11-28T08:00:12.938404+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@6",
@@ -600,8 +674,8 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 3,
-    "snow": 0.52,
+    "temp": 4,
+    "snow": 0.36,
     "wet": 0,
     "snowman": 3
   },
@@ -700,7 +774,7 @@
     }
   },
   "supplies": {
-    "meals": 3,
+    "meals": 2,
     "treats": 10
   },
   "skills": {},
@@ -797,7 +871,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 3,
+        "n": 2,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       },

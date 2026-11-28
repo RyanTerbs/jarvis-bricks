@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-09T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Heading to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "thought",
+    "text": "Some days you're the spanner, some days you're the bolt.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Toast. Noodles. Anything.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "building (Gym 2/5)",
+    "why": "Building is just fixing, but bigger.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Too much sitting. Where's my toolbox?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "making a postcard of the town (2 in stock)",
+    "why": "Making stock for the stall.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "making a postcard of the town (1 in stock)",
+    "why": "Got an order in my head.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T15:43:21.098366+00:00",
     "time": "10:43 AM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "So much I don't know. Love that, actually.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Look at that tail go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "Brick town under snow looks like a Christmas card.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Bet someone's got a story.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Off to the cafe.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "If the carb's right, the bike's right.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Quiet out. Just me, Diesel and the seagulls.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "thought",
-    "text": "Need a proper chat with someone who talks back.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "noticed",
-    "text": "Someone left a box of spare bricks at the pit. +8 bricks.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Food for my boy.",
-    "by": "queue",
     "ok": true
   }
 ]

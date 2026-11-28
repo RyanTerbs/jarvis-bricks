@@ -160,7 +160,7 @@
     "name": "Gym",
     "lot": 10,
     "work": 5,
-    "done": 1,
+    "done": 2,
     "started": "2026-12-09",
     "look": {
       "kind": "shop",
