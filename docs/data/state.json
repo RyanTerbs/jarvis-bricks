@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "building_site",
+  "place": "gym",
   "asleep": false,
-  "doing": "walking to the building site",
-  "thought": "Some days you're the spanner, some days you're the bolt.",
-  "feeling": "chilled",
+  "doing": "having a rest",
+  "thought": "Someone out there needs a brick model bike. I can feel it.",
+  "feeling": "lekker",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.07,
-    "social": 0.35,
-    "tinker": 0.585,
-    "curiosity": 0.355
+    "rest": 0.51,
+    "hunger": 0.405,
+    "social": 0.485,
+    "tinker": 0.23,
+    "curiosity": 0.53
   },
-  "mood": 0.39,
-  "energy": 0.38,
+  "mood": 0.51,
+  "energy": 0.49,
   "coins": 57,
   "coins_goal": 500,
   "bricks": 197,
@@ -230,7 +230,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 12,
+  "hour": 14,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -243,16 +243,7 @@
     "waves": "good",
     "waves_date": "2026-12-09"
   },
-  "queue": [
-    {
-      "move": "work_on_site",
-      "why": "Back to the Gym. Nearly there."
-    },
-    {
-      "move": "work_on_site",
-      "why": "Back to the Gym. Nearly there."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-09",
     "used": 0,
@@ -542,6 +533,78 @@
       "k": "did",
       "x": "walking to the building site",
       "why": "Heading to the building site."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "building (Gym 3/5)",
+      "why": "Back to the Gym. Nearly there."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "building (Gym 4/5)",
+      "why": "Back to the Gym. Nearly there."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Best thing I bought? Probably the surfboard.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Looked up Carburetor on the old laptop. Lekker.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "The Gym is coming along. Brick by brick.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "built",
+      "x": "finished building the Gym!",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "building (finished!)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Someone out there needs a brick model bike. I can feel it.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": null
     }
   ],
   "day_start": {
@@ -550,14 +613,14 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1322,
+  "tick": 1329,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T17:43:21.098366+00:00",
+  "updated": "2026-12-09T19:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 573,
-      "queue": 334,
-      "autopilot": 46,
+      "model": 577,
+      "queue": 336,
+      "autopilot": 47,
       "sleeping": 369,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -565,9 +628,9 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 15,
-      "queue": 11,
-      "autopilot": 1,
+      "model": 19,
+      "queue": 13,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -579,11 +642,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.264,
-      "tired": 0.43,
-      "bored": 0.27
+      "hunger": 0.422,
+      "tired": 0.41,
+      "bored": 0.39
     },
     "bond": 1.0,
     "food": 4,
@@ -594,17 +657,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "sniffing everything",
     "last_played_tick": 1306,
     "wants": null,
     "recent_thoughts": [
-      "I know tricks now. I am a very clever boy.",
-      "Life is good. Life is SO good.",
-      "Good boy? Me? Yes. Me.",
-      "The ground is a giant ice cream!",
-      "Following {owner}. Best job in the world.",
-      "Tummy rumble. Big one.",
-      "Sky went grey. Still a good day. Every day is a good day.",
       "Nap spot: located. Engaging.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "{owner} is the best human in the whole town.",
@@ -617,9 +673,16 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "The ! block knows something. I will watch it.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Grease smell. Best smell after sausages.",
+      "Cold white stuff! I must eat all of it."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Cold white stuff! I must eat all of it.",
     "want_ticks": 0,
     "last_fed_tick": 1308,
     "recent_ideas": [
@@ -635,10 +698,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Still thinking about that bit on {topic}.",
-    "Nice when the street goes quiet.",
-    "Cloudy. Fine. Engines don't care.",
-    "{pup} has never seen snow. He's losing his mind.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Bits of {bike}'s carb sitting in a jar. Like pickles.",
     "Little guy depends on me. Feed him first, then the rest.",
@@ -659,23 +718,27 @@
     "Too much sitting. Where's my toolbox?",
     "Toast. Noodles. Anything.",
     "Winter on the island. Who knew?",
-    "Some days you're the spanner, some days you're the bolt."
+    "Some days you're the spanner, some days you're the bolt.",
+    "Best thing I bought? Probably the {thing}.",
+    "Looked up {topic} on the old laptop. Lekker.",
+    "The {site} is coming along. Brick by brick.",
+    "Someone out there needs a brick model bike. I can feel it."
   ],
-  "real_updated": "2026-11-28T08:00:12.938404+00:00",
+  "real_updated": "2026-11-28T08:15:10.829108+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-09@6",
+    "key": "2026-12-09@13",
     "kind": "cloudy",
     "season": "winter",
-    "base": 1.4,
+    "base": -1.7,
     "emoji": "☁️",
     "name": "cloudy",
     "season_emoji": "❄️",
     "seen": [
       "cloudy"
     ],
-    "temp": 4,
-    "snow": 0.36,
+    "temp": 2,
+    "snow": 0.34,
     "wet": 0,
     "snowman": 3
   },

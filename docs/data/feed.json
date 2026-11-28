@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-09T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Someone out there needs a brick model bike. I can feel it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "building (finished!)",
+    "why": "One more course of bricks.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "built",
+    "text": "finished building the Gym!",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "The Gym is coming along. Brick by brick.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "Looked up Carburetor on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "Best thing I bought? Probably the surfboard.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "building (Gym 4/5)",
+    "why": "Back to the Gym. Nearly there.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "building (Gym 3/5)",
+    "why": "Back to the Gym. Nearly there.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T17:43:21.098366+00:00",
     "time": "12:43 PM",
     "kind": "did",
@@ -1237,114 +1345,6 @@
     "time": "11:28 AM",
     "kind": "thought",
     "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Look at that tail go.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "thought",
-    "text": "New float, new needle. She'll breathe again.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Cold hands need a hot mug.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "This one's called Mr Wobbles. She'll purr by lunch.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "note",
-    "text": "noted (his laptop: Torque wrench): A torque wrench is a tool used to apply a specific torque to a fastener such as a nut, bolt, or lag screw.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "looking something up on his old laptop (Torque wrench)",
-    "why": "Wonder what it says about this.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "thought",
-    "text": "So much I don't know. Love that, actually.",
     "why": null,
     "by": "model",
     "ok": true

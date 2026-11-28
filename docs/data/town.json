@@ -153,22 +153,25 @@
       },
       "decor": false,
       "built": "2026-12-05"
+    },
+    {
+      "lot": 10,
+      "id": "gym",
+      "bp": "gym",
+      "name": "Gym",
+      "place": "gym",
+      "desc": "a tiny gym with brick dumbbells",
+      "look": {
+        "kind": "shop",
+        "color": "#c0392b",
+        "emoji": "🏋️",
+        "floors": 1
+      },
+      "decor": false,
+      "built": "2026-12-09"
     }
   ],
-  "site": {
-    "bp": "gym",
-    "name": "Gym",
-    "lot": 10,
-    "work": 5,
-    "done": 2,
-    "started": "2026-12-09",
-    "look": {
-      "kind": "shop",
-      "color": "#c0392b",
-      "emoji": "🏋️",
-      "floors": 1
-    }
-  },
+  "site": null,
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",
@@ -393,6 +396,10 @@
     {
       "date": "2026-12-09",
       "text": "Bought some chew toys at the Mega Mart (the pup gets bored 20% slower)."
+    },
+    {
+      "date": "2026-12-09",
+      "text": "Finished building the Gym."
     }
   ]
 }
