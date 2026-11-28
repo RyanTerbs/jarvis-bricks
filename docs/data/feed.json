@@ -1,5 +1,41 @@
 [
   {
+    "at": "2026-12-08T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Playing with Diesel",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Long day. Bed.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "noticed",
+    "text": "Diesel chews a stray brick and looks very pleased with himself.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "noticed",
+    "text": "🛒 A massive supermarket opened at the north end of the island: the Mega Mart. Aisles and aisles of stuff.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-08T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "did",
@@ -1311,42 +1347,6 @@
     "text": "fixing a car (+4 coins)",
     "why": "Customer's waiting. Can't leave them stuck.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Not a cloud. Diesel is going to want the beach.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Too much sitting. Where's my toolbox?",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]
