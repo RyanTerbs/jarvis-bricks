@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Bit of a meh sky today.",
-  "feeling": "on top of the world",
+  "place": "library",
+  "asleep": false,
+  "doing": "walking to the library",
+  "thought": "Smells like oil and toast. Perfect morning.",
+  "feeling": "meh, fine",
   "needs": {
-    "rest": 0,
-    "hunger": 0.875,
-    "social": 0.54,
-    "tinker": 0.81,
-    "curiosity": 0.555
+    "rest": 0.19,
+    "hunger": 0.425,
+    "social": 0.65,
+    "tinker": 0.63,
+    "curiosity": 0.715
   },
-  "mood": -0.07,
-  "energy": 1,
-  "coins": 51,
+  "mood": 0.21,
+  "energy": 0.81,
+  "coins": 55,
   "coins_goal": 500,
-  "bricks": 197,
+  "bricks": 217,
   "stock": {
     "postcard": 2
   },
@@ -240,7 +240,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -250,10 +250,15 @@
     "shells": 22,
     "sun_today": 0,
     "burnt_until": 0,
-    "waves": "good",
+    "waves": "flat",
     "waves_date": "2026-12-10"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "read_a_book",
+      "why": "Where was I? Ah, ja."
+    }
+  ],
   "lucky": {
     "date": "2026-12-10",
     "used": 0,
@@ -261,32 +266,105 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Two good sessions on Little Thunder.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "🌫️ A thick sea fog rolls in over the town.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Can't see the end of the street. Spooky.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Snowman time. Non-negotiable.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "This one's called Tannie Marie. She'll purr by lunch."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 217 in the pile now.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Little guy depends on me. Feed him first, then the rest.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "Smells like oil and toast. Perfect morning.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Library next."
+    }
+  ],
   "day_start": {
     "coins": 51,
     "bricks": 197,
-    "got": 0,
+    "got": 20,
     "used": 0
   },
-  "tick": 1390,
+  "tick": 1398,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T10:43:21.098366+00:00",
+  "updated": "2026-12-10T12:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 598,
-      "queue": 349,
-      "autopilot": 49,
-      "sleeping": 394,
+      "model": 602,
+      "queue": 351,
+      "autopilot": 50,
+      "sleeping": 395,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-10",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 23,
+      "model": 4,
+      "queue": 2,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -297,14 +375,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.706,
-      "tired": 0,
-      "bored": 0.096
+      "hunger": 0.194,
+      "tired": 0.168,
+      "bored": 0.24
     },
-    "bond": 1,
-    "food": 3,
+    "bond": 1.0,
+    "food": 2,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -312,18 +390,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "watching Derek work",
     "last_played_tick": 1361,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
@@ -335,11 +405,19 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams."
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Life is good. Life is SO good.",
+      "The ground is a giant ice cream!",
+      "If I stare at the bowl hard enough, food appears. Science.",
+      "Food? Food. FOOD.",
+      "Cold white stuff! I must eat all of it.",
+      "Everything smells amazing today."
     ],
-    "thought": "Dreaming: chasing the ! block. It's slow in dreams.",
+    "thought": "Everything smells amazing today.",
     "want_ticks": 0,
-    "last_fed_tick": 1337,
+    "last_fed_tick": 1397,
     "recent_ideas": [
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
@@ -353,10 +431,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Best thing I bought? Probably the {thing}.",
-    "Looked up {topic} on the old laptop. Lekker.",
-    "The {site} is coming along. Brick by brick.",
-    "Someone out there needs a brick model bike. I can feel it.",
     "Saw a {want} at the Mega Mart. The jar says not yet.",
     "Cold enough to freeze the carb on a scooter.",
     "Winter. Cold mornings, slow engines.",
@@ -377,22 +451,26 @@
     "Funny what you learn. {topic}, who knew.",
     "Thai street food. That's the dream right there.",
     "A clean toolbox is a happy toolbox.",
-    "Bit of a meh sky today."
+    "Bit of a meh sky today.",
+    "Can't see the end of the street. Spooky.",
+    "Snowman time. Non-negotiable.",
+    "Little guy depends on me. Feed him first, then the rest.",
+    "Smells like oil and toast. Perfect morning."
   ],
-  "real_updated": "2026-11-28T10:15:10.306825+00:00",
+  "real_updated": "2026-11-28T10:30:16.918992+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-09@13",
-    "kind": "cloudy",
+    "key": "2026-12-10@6",
+    "kind": "fog",
     "season": "winter",
-    "base": -1.7,
-    "emoji": "☁️",
-    "name": "cloudy",
+    "base": -0.4,
+    "emoji": "🌫️",
+    "name": "foggy",
     "season_emoji": "❄️",
     "seen": [
-      "cloudy"
+      "fog"
     ],
-    "temp": -4,
+    "temp": -2,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
@@ -400,7 +478,7 @@
   "book_boxes": [
     1
   ],
-  "truck_date": "2026-12-09",
+  "truck_date": "2026-12-10",
   "box_date": null,
   "project": {
     "kind": "barn_find",
@@ -492,19 +570,19 @@
     }
   },
   "supplies": {
-    "meals": 7,
+    "meals": 6,
     "treats": 10
   },
   "skills": {},
   "shop": {
-    "date": "2026-12-09",
+    "date": "2026-12-10",
     "big": 0,
     "trip": 0,
     "spent": 31,
     "bought": 5,
     "budget_spent": 15
   },
-  "earned": 92,
+  "earned": 96,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -589,7 +667,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 7,
+        "n": 6,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       },
@@ -601,7 +679,7 @@
       }
     ],
     "spent": 31,
-    "earned": 92,
+    "earned": 96,
     "owned": 4,
     "total": 38,
     "skills": {},
