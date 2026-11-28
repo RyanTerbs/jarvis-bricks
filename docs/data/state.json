@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
+  "place": "garage",
+  "asleep": false,
+  "doing": "fixing a car",
   "thought": "Parts are on the way. Like waiting for Christmas.",
   "feeling": "lekker",
   "needs": {
-    "rest": 0,
-    "hunger": 0.355,
-    "social": 0.495,
-    "tinker": 0.82,
-    "curiosity": 0.54
+    "rest": 0.09,
+    "hunger": 0.515,
+    "social": 0.56,
+    "tinker": 0.565,
+    "curiosity": 0.615
   },
-  "mood": 0.16,
-  "energy": 1,
-  "coins": 56,
+  "mood": 0.22,
+  "energy": 0.91,
+  "coins": 60,
   "coins_goal": 500,
   "bricks": 177,
   "stock": {
@@ -202,7 +202,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 4,
+  "hour": 6,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -223,22 +223,35 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": null
+    }
+  ],
   "day_start": {
     "coins": 56,
     "bricks": 177,
     "got": 0,
     "used": 0
   },
-  "tick": 1195,
+  "tick": 1202,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T09:58:21.098366+00:00",
+  "updated": "2026-12-08T11:43:21.098366+00:00",
   "stats": {
     "all": {
       "model": 517,
-      "queue": 298,
-      "autopilot": 42,
-      "sleeping": 338,
+      "queue": 299,
+      "autopilot": 44,
+      "sleeping": 342,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -246,9 +259,9 @@
     "today": {
       "date": "2026-12-08",
       "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 20,
+      "queue": 1,
+      "autopilot": 2,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -259,11 +272,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.592,
-      "tired": 0,
-      "bored": 0.15
+      "hunger": 0.672,
+      "tired": 0.056,
+      "bored": 0.21
     },
     "bond": 1.0,
     "food": 2,
@@ -274,33 +287,33 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 1168,
-    "wants": null,
+    "wants": "food",
     "recent_thoughts": [
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage."
+      "Is it dinner? It feels like dinner.",
+      "Following {owner}. Best job in the world."
     ],
-    "thought": "Dreaming: a sausage as big as the garage.",
-    "want_ticks": 1,
+    "thought": "Following Derek. Best job in the world.",
+    "want_ticks": 0,
     "last_fed_tick": 1150,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -341,20 +354,20 @@
     "Hands are itching. Need something to fix.",
     "Parts are on the way. Like waiting for Christmas."
   ],
-  "real_updated": "2026-11-28T03:45:11.282133+00:00",
+  "real_updated": "2026-11-28T04:00:10.131543+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-07@13",
+    "key": "2026-12-08@6",
     "kind": "snow",
     "season": "winter",
-    "base": -0.9,
+    "base": -0.6,
     "emoji": "🌨️",
     "name": "snowing",
     "season_emoji": "❄️",
     "seen": [
       "snow"
     ],
-    "temp": -4,
+    "temp": -3,
     "snow": 1,
     "wet": 0,
     "snowman": 1
@@ -456,13 +469,13 @@
   "supplies": {},
   "skills": {},
   "shop": {
-    "date": null,
+    "date": "2026-12-08",
     "big": 0,
     "trip": 0,
     "spent": 0,
     "bought": 0
   },
-  "earned": 56,
+  "earned": 60,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -532,7 +545,7 @@
     ],
     "supplies": [],
     "spent": 0,
-    "earned": 56,
+    "earned": 60,
     "owned": 2,
     "total": 38,
     "skills": {},

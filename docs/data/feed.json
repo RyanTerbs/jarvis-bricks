@@ -1,5 +1,32 @@
 [
   {
+    "at": "2026-12-08T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": null,
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-12-08T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1320,33 +1347,6 @@
     "text": "Winter on the island. Who knew?",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Proper shorts weather.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Customer's waiting. Can't leave them stuck.",
-    "by": "queue",
     "ok": true
   }
 ]
