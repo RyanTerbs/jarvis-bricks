@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "beach",
   "asleep": false,
-  "doing": "feeding Diesel",
-  "thought": "Need a nap. A proper one.",
-  "feeling": "good, ja",
+  "doing": "walking to the beach",
+  "thought": "One day I'll get that fishing rod. When the jar's fat.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.63,
-    "hunger": 0.29,
-    "social": 0.425,
-    "tinker": 0.405,
-    "curiosity": 0.64
+    "rest": 0.62,
+    "hunger": 0.555,
+    "social": 0.53,
+    "tinker": 0.3,
+    "curiosity": 0.465
   },
-  "mood": 0.4,
-  "energy": 0.37,
+  "mood": 0.42,
+  "energy": 0.38,
   "coins": 60,
   "coins_goal": 500,
   "bricks": 217,
@@ -33,7 +33,7 @@
   "books": {
     "tourism_thailand": 9,
     "dog_training": 8,
-    "bangkok": 7,
+    "bangkok": 8,
     "carburetor": 9,
     "four_stroke": 1,
     "vehicle_restoration": 1,
@@ -239,6 +239,11 @@
       "date": "2026-12-10",
       "source": "Carburetor (Icing in aircraft engine carburetors)",
       "note": "A significant concern for aircraft engines is the formation of ice inside the carburetor."
+    },
+    {
+      "date": "2026-12-10",
+      "source": "Bangkok (Tourism)",
+      "note": "Bangkok is one of the world's top tourist destinations."
     }
   ],
   "looked_up": [
@@ -246,7 +251,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -259,7 +264,16 @@
     "waves": "flat",
     "waves_date": "2026-12-10"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "go_for_a_swim",
+      "why": "Quick dip to cool off."
+    },
+    {
+      "move": "go_surfing",
+      "why": "Waves are calling."
+    }
+  ],
   "lucky": {
     "date": "2026-12-10",
     "used": 0,
@@ -507,6 +521,96 @@
       "k": "did",
       "x": "feeding Diesel (Diesel's tail goes mad)",
       "why": "Food for my boy."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Quick trip to the library."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: bring Derek a stick. Then a bigger stick.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "reading a book (Bangkok, chapter 8/10)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "note",
+      "x": "noted (Bangkok (Tourism)): Bangkok is one of the world's top tourist destinations.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "thought",
+      "x": "Jets blocked solid. Thirty years of old fuel turned to varnish.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "If I finish this, I'm getting a snack. Deal.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "bike",
+      "x": "rebuilt Little Thunder's carb: new jets, new float, clean as a whistle.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: carb rebuild (carb rebuild done!)",
+      "why": "Slow is smooth, smooth is fast. carb rebuild."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Town's buzzing this arvo.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "One day I'll get that fishing rod. When the jar's fat.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "walking to the beach",
+      "why": "Beach next."
     }
   ],
   "day_start": {
@@ -515,13 +619,13 @@
     "got": 20,
     "used": 0
   },
-  "tick": 1413,
+  "tick": 1420,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T16:28:21.098366+00:00",
+  "updated": "2026-12-10T18:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 610,
-      "queue": 358,
+      "model": 615,
+      "queue": 360,
       "autopilot": 50,
       "sleeping": 395,
       "tokens_in": 0,
@@ -530,8 +634,8 @@
     },
     "today": {
       "date": "2026-12-10",
-      "model": 12,
-      "queue": 9,
+      "model": 17,
+      "queue": 11,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -544,11 +648,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0,
-      "tired": 0.738,
-      "bored": 0.3
+      "hunger": 0.184,
+      "tired": 0.826,
+      "bored": 0.444
     },
     "bond": 1.0,
     "food": 1,
@@ -559,17 +663,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "sniffing everything",
+    "doing": "napping",
     "last_played_tick": 1407,
     "wants": null,
     "recent_thoughts": [
-      "The ground is a giant ice cream!",
-      "If I stare at the bowl hard enough, food appears. Science.",
-      "Food? Food. FOOD.",
-      "Cold white stuff! I must eat all of it.",
-      "Everything smells amazing today.",
-      "Good boy? Me? Yes. Me.",
-      "Fog. Can't see. Can smell. Sniffing harder.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "The ground is a giant ice cream!",
       "Cold white stuff! I must eat all of it.",
@@ -582,29 +679,31 @@
       "Sit means treat. I have cracked the code.",
       "Cold white stuff! I must eat all of it.",
       "{owner} smells like toast. Share?",
-      "Tummy rumble. Big one."
+      "Tummy rumble. Big one.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Cold white stuff! I must eat all of it.",
+      "Cold white stuff! I must eat all of it.",
+      "Life is good. Life is SO good.",
+      "Nap spot: located. Engaging.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "YES! That's what I wanted!",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 1413,
     "recent_ideas": [
-      "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
       "bark at the bike until it goes vroom.",
       "guard the savings jar. Nobody touches the jar.",
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
       "teach the seagulls some manners.",
-      "hide the bike's spark plug in his bed. Finders keepers."
+      "hide the bike's spark plug in his bed. Finders keepers.",
+      "bring {owner} a stick. Then a bigger stick."
     ],
-    "idea": "hide the bike's spark plug in his bed. Finders keepers."
+    "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "That {topic} chapter got me thinking.",
-    "One more yawn and I'm out.",
-    "Cloudy. Fine. Engines don't care.",
-    "Winter on the island. Who knew?",
-    "Body says rest. Stubborn brain says one more job.",
     "{temp} degrees. My fingers have stopped working.",
     "Sometimes I just stand here and listen to the town.",
     "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
@@ -624,23 +723,28 @@
     "Fog's so thick you could cut it with a spanner.",
     "Me and {pup} against the world.",
     "Just here for one thing. Famous last words.",
-    "Need a nap. A proper one."
+    "Need a nap. A proper one.",
+    "Batteries low. Need a recharge.",
+    "Jets blocked solid. Thirty years of old fuel turned to varnish.",
+    "If I finish this, I'm getting a snack. Deal.",
+    "Town's buzzing this arvo.",
+    "One day I'll get that {want}. When the jar's fat."
   ],
-  "real_updated": "2026-11-28T11:00:11.741342+00:00",
+  "real_updated": "2026-11-28T11:15:11.372037+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-10@6",
+    "key": "2026-12-10@13",
     "kind": "fog",
     "season": "winter",
-    "base": -0.4,
+    "base": 6.7,
     "emoji": "🌫️",
     "name": "foggy",
     "season_emoji": "❄️",
     "seen": [
       "fog"
     ],
-    "temp": 2,
-    "snow": 0.34,
+    "temp": 10,
+    "snow": 0.22,
     "wet": 0,
     "snowman": 3
   },
@@ -653,18 +757,18 @@
     "kind": "barn_find",
     "name": "Little Thunder",
     "found": "2026-12-04",
-    "stage": 1,
-    "done": 3,
-    "parts": "in",
+    "stage": 2,
+    "done": 0,
+    "parts": "none",
     "parts_due": "2026-12-08",
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 8,
-    "sessions": 9,
+    "sessions": 10,
     "tries": 0,
-    "today_date": "2026-12-09",
-    "today": 2,
+    "today_date": "2026-12-10",
+    "today": 1,
     "finished": null,
     "rides": 0
   },
@@ -687,10 +791,10 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
-      "stage": 1,
-      "stage_id": "carb",
-      "parts": "in",
+      "hold": "needs parts first (20 coins)",
+      "stage": 2,
+      "stage_id": "engine",
+      "parts": "none",
       "wait": null,
       "stages": [
         {
@@ -704,7 +808,7 @@
           "id": "carb",
           "name": "carb rebuild",
           "need": 2,
-          "done": 3,
+          "done": 2,
           "coins": 8
         },
         {
