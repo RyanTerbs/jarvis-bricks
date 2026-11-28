@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-07T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (10 bricks pop out!)",
+    "why": "Jump, hit, hope.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "collecting bricks (+7 bricks)",
+    "why": "Brick by brick, hey.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Brick pit next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Every bolt on Little Thunder is seized. Every single one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "Penetrating oil and patience. That's the whole secret.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Nothing beats an engine firing first try.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "59 in the jar. 441 more and I'm on that bike in Thailand.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "note",
+    "text": "noted (Conservation and restoration of road vehicles (Introduction)): Conservation and restoration of road vehicles is the process of restoring a vehicle back to its original working condition.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "reading a book (Conservation and restoration of road vehicles, chapter 1/4)",
+    "why": "One more chapter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Off to the library.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Thailand. Noodles, mountains, warm sea. Soon.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "noticed",
+    "text": "Diesel falls asleep in the toolbox for a second.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-07T14:58:21.098366+00:00",
     "time": "9:58 AM",
     "kind": "did",
@@ -1221,132 +1347,6 @@
     "text": "Sun's out. Even the bricks look happy.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Weather like this, Thailand feels close.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "thought",
-    "text": "Too much sitting. Where's my toolbox?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "note",
-    "text": "noted (Bangkok (Economy)): Bangkok is the economic centre of Thailand, and the heart of the country's investment and development.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "reading a book (Bangkok, chapter 7/10)",
-    "why": null,
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Proper food, proper fuel.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 85 in the pile now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Running on coffee and hope.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]
