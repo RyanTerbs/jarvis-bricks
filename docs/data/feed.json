@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-08T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "thought",
+    "text": "205 bricks in the pile. Could build something lekker with that.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Nothing beats an engine firing first try.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "thought",
+    "text": "Snowman time. Non-negotiable.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "running his market stall (fair prices, sold 1 postcard of the town for 2 coins)",
+    "why": "Let's see what sells.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "running his market stall (cheap prices, no buyers this time)",
+    "why": "Got stock, need buyers.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "walking to the market stall",
+    "why": "Quick trip to the market stall.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "Free samples in aisle three. Don't mind if I do.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-08T19:28:21.098366+00:00",
     "time": "2:28 PM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "1 degrees. My fingers have stopped working.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman 1/3)",
-    "why": "Giving my old cap to a good cause.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Brick town under snow looks like a Christmas card.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Snowman time. Non-negotiable.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "thought",
-    "text": "Yoh, I'm tired.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Diesel has never seen snow. He's losing his mind.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "restoring Little Thunder: strip + clean (strip + clean done!)",
-    "why": "Slow is smooth, smooth is fast. strip + clean.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "bike",
-    "text": "stripped Little Thunder right down to the bare frame. Every bolt bagged and labelled.",
-    "why": null,
-    "by": null,
     "ok": true
   }
 ]
