@@ -6,14 +6,14 @@
   "thought": "Parts are on the way. Like waiting for Christmas.",
   "feeling": "lekker",
   "needs": {
-    "rest": 0.33,
-    "hunger": 0.175,
-    "social": 0.405,
-    "tinker": 0.73,
-    "curiosity": 0.45
+    "rest": 0,
+    "hunger": 0.275,
+    "social": 0.455,
+    "tinker": 0.78,
+    "curiosity": 0.5
   },
-  "mood": 0.27,
-  "energy": 0.67,
+  "mood": 0.19,
+  "energy": 1,
   "coins": 56,
   "coins_goal": 500,
   "bricks": 177,
@@ -202,7 +202,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 0,
+  "hour": 2,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -230,15 +230,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1177,
+  "tick": 1187,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T05:28:21.098366+00:00",
+  "updated": "2026-12-08T07:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 517,
       "queue": 298,
       "autopilot": 42,
-      "sleeping": 320,
+      "sleeping": 330,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -248,7 +248,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 2,
+      "sleeping": 12,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -261,8 +261,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.52,
-      "tired": 0.418,
+      "hunger": 0.56,
+      "tired": 0,
       "bored": 0.15
     },
     "bond": 1.0,
@@ -278,16 +278,6 @@
     "last_played_tick": 1168,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Grease smell. Best smell after sausages.",
-      "Life is good. Life is SO good.",
-      "Cold white stuff! I must eat all of it.",
-      "Night noises. Probably nothing. Probably.",
-      "Tail check: still there. Good.",
-      "{owner} is the best human in the whole town.",
-      "The ground is a giant ice cream!",
       "The cafe smells like pies. Noted.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Who left this brick here? I'll carry it somewhere else.",
@@ -297,6 +287,16 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: the whole beach is made of treats."
     ],
     "thought": "Dreaming: the whole beach is made of treats.",
@@ -341,7 +341,7 @@
     "Hands are itching. Need something to fix.",
     "Parts are on the way. Like waiting for Christmas."
   ],
-  "real_updated": "2026-11-28T03:10:37.167913+00:00",
+  "real_updated": "2026-11-28T03:30:10.931311+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
