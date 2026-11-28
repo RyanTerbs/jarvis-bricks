@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "ordering a bag of dog food",
-  "thought": "Nice when the street goes quiet.",
+  "doing": "walking home",
+  "thought": "Little guy depends on me. Feed him first, then the rest.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.4,
-    "social": 0.285,
-    "tinker": 0.57,
-    "curiosity": 0.34
+    "rest": 0.63,
+    "hunger": 0.72,
+    "social": 0.465,
+    "tinker": 0.15,
+    "curiosity": 0.54
   },
-  "mood": 0.37,
-  "energy": 0.43,
-  "coins": 55,
+  "mood": 0.34,
+  "energy": 0.37,
+  "coins": 63,
   "coins_goal": 500,
   "bricks": 212,
   "stock": {},
@@ -222,7 +222,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -237,8 +237,8 @@
   },
   "queue": [
     {
-      "move": "feed_the_puppy",
-      "why": "Diesel first, always."
+      "move": "cook_dinner",
+      "why": "Cooking something lekker tonight."
     }
   ],
   "lucky": {
@@ -854,6 +854,78 @@
       "k": "did",
       "x": "ordering a bag of dog food (6 meals in the cupboard)",
       "why": "Stocking up for the little guy."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Diesel first, always."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Cloudy. Fine. Engines don't care.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "59 in the jar. 441 more and I'm on that bike in Thailand.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Bits of Little Thunder's carb sitting in a jar. Like pickles.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Nothing beats an engine firing first try."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Little guy depends on me. Feed him first, then the rest.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
     }
   ],
   "day_start": {
@@ -862,13 +934,13 @@
     "got": 35,
     "used": 0
   },
-  "tick": 1255,
+  "tick": 1263,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T00:58:21.098366+00:00",
+  "updated": "2026-12-09T02:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 550,
-      "queue": 319,
+      "model": 555,
+      "queue": 322,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -877,8 +949,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 33,
-      "queue": 21,
+      "model": 38,
+      "queue": 24,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -891,14 +963,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.688,
-      "tired": 0.876,
-      "bored": 0.81
+      "hunger": 0.046,
+      "tired": 0.344,
+      "bored": 0.84
     },
-    "bond": 1,
-    "food": 6,
+    "bond": 1.0,
+    "food": 5,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -906,18 +978,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "bored, chewing whatever he can find",
+    "doing": "napping",
     "last_played_tick": 1220,
-    "wants": "food",
+    "wants": null,
     "recent_thoughts": [
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Good boy? Me? Yes. Me.",
-      "The ground is a giant ice cream!",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Cold white stuff! I must eat all of it.",
       "Life is good. Life is SO good.",
@@ -929,11 +993,19 @@
       "Why are my paws cold? Doesn't matter. SNOW!",
       "Cold white stuff! I must eat all of it.",
       "Following {owner}. Best job in the world.",
-      "Sky went grey. Still a good day. Every day is a good day."
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "{owner} smells like toast. Share?",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching."
     ],
-    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "thought": "Dreaming: running, running, running. Legs twitching.",
     "want_ticks": 0,
-    "last_fed_tick": 1226,
+    "last_fed_tick": 1256,
     "recent_ideas": [
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
@@ -947,11 +1019,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "{pup} has never seen snow. He's losing his mind.",
-    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
-    "New float, new needle. She'll breathe again.",
-    "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "Lunch. Now. Please.",
     "Bit of graft now, bit of rest later.",
     "Wonder how they build the roads up in the Thai mountains.",
     "Could sleep standing up like a horse.",
@@ -971,9 +1038,14 @@
     "That dog needs a run. So do I, honestly.",
     "Clouds sitting on the town like a lid.",
     "Still thinking about that bit on {topic}.",
-    "Nice when the street goes quiet."
+    "Nice when the street goes quiet.",
+    "Cloudy. Fine. Engines don't care.",
+    "{pup} has never seen snow. He's losing his mind.",
+    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
+    "Bits of {bike}'s carb sitting in a jar. Like pickles.",
+    "Little guy depends on me. Feed him first, then the rest."
   ],
-  "real_updated": "2026-11-28T05:45:09.861451+00:00",
+  "real_updated": "2026-11-28T06:00:12.479107+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@13",
@@ -987,7 +1059,7 @@
       "snow",
       "cloudy"
     ],
-    "temp": 0,
+    "temp": -1,
     "snow": 0.62,
     "wet": 0,
     "snowman": 2
@@ -1101,7 +1173,7 @@
     "bought": 2,
     "budget_spent": 6
   },
-  "earned": 77,
+  "earned": 85,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -1185,7 +1257,7 @@
       }
     ],
     "spent": 14,
-    "earned": 77,
+    "earned": 85,
     "owned": 3,
     "total": 38,
     "skills": {},
