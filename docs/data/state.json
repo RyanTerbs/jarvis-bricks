@@ -2,19 +2,19 @@
   "name": "Derek",
   "place": "home",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+  "doing": "cooking a proper meal",
+  "thought": "Bit of graft now, bit of rest later.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.55,
-    "hunger": 0.575,
-    "social": 0.25,
-    "tinker": 0.375,
-    "curiosity": 0.465
+    "rest": 0.62,
+    "hunger": 0.01,
+    "social": 0.205,
+    "tinker": 0.22,
+    "curiosity": 0.59
   },
-  "mood": 0.4,
-  "energy": 0.45,
-  "coins": 66,
+  "mood": 0.46,
+  "energy": 0.38,
+  "coins": 63,
   "coins_goal": 500,
   "bricks": 205,
   "stock": {
@@ -213,7 +213,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 10,
+  "hour": 12,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -226,12 +226,7 @@
     "waves": "flat",
     "waves_date": "2026-12-08"
   },
-  "queue": [
-    {
-      "move": "make_hot_chocolate",
-      "why": "Cold hands need a hot mug."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-08",
     "used": 0,
@@ -443,6 +438,84 @@
       "k": "did",
       "x": "walking home",
       "why": "Home time."
+    },
+    {
+      "t": "10:58 AM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Cold hands need a hot mug."
+    },
+    {
+      "t": "11:13 AM",
+      "k": "thought",
+      "x": "New float, new needle. She'll breathe again.",
+      "why": null
+    },
+    {
+      "t": "11:13 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Look at that tail go."
+    },
+    {
+      "t": "11:28 AM",
+      "k": "thought",
+      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
+      "why": null
+    },
+    {
+      "t": "11:28 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "11:43 AM",
+      "k": "noticed",
+      "x": "A kid stops to pat Diesel.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "bike",
+      "x": "Carb's soaking in cleaner overnight. Tomorrow we see.",
+      "why": null
+    },
+    {
+      "t": "11:43 AM",
+      "k": "did",
+      "x": "restoring Little Thunder: carb rebuild (carb rebuild 1/4)",
+      "why": "Every bolt on Little Thunder is a step closer."
+    },
+    {
+      "t": "11:58 AM",
+      "k": "thought",
+      "x": "Lunch. Now. Please.",
+      "why": null
+    },
+    {
+      "t": "11:58 AM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "thought",
+      "x": "Bit of graft now, bit of rest later.",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
     }
   ],
   "day_start": {
@@ -451,13 +524,13 @@
     "got": 28,
     "used": 0
   },
-  "tick": 1218,
+  "tick": 1225,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T15:43:21.098366+00:00",
+  "updated": "2026-12-08T17:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 527,
-      "queue": 305,
+      "model": 531,
+      "queue": 308,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -466,8 +539,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 10,
-      "queue": 7,
+      "model": 14,
+      "queue": 10,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -482,9 +555,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.452,
-      "tired": 0.604,
-      "bored": 0.19
+      "hunger": 0.662,
+      "tired": 0.9,
+      "bored": 0.15
     },
     "bond": 1.0,
     "food": 1,
@@ -496,16 +569,9 @@
       "sit"
     ],
     "doing": "watching Derek work",
-    "last_played_tick": 1213,
-    "wants": "play",
+    "last_played_tick": 1220,
+    "wants": "food",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Is it dinner? It feels like dinner.",
-      "Following {owner}. Best job in the world.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "{owner} smells like toast. Share?",
-      "Tummy rumble. Big one.",
       "Tail check: still there. Good.",
       "{owner} is the best human in the whole town.",
       "Learning is hard. Treats make it easier.",
@@ -518,10 +584,17 @@
       "{owner} says a word, I do a thing, treat appears. Magic.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "The ground is a giant ice cream!",
-      "{owner} is talking to the rusty thing again. It doesn't answer."
+      "{owner} is talking to the rusty thing again. It doesn't answer.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The bike smells of old barn. And mice. MICE?",
+      "Life is good. Life is SO good.",
+      "Food? Food. FOOD.",
+      "My bowl is empty. This is an emergency."
     ],
-    "thought": "Derek is talking to the rusty thing again. It doesn't answer.",
-    "want_ticks": 1,
+    "thought": "My bowl is empty. This is an emergency.",
+    "want_ticks": 0,
     "last_fed_tick": 1207,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -536,10 +609,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Looked up {topic} on the old laptop. Lekker.",
-    "Shame, the cafe guy looked tired today.",
-    "Need a nap. A proper one.",
-    "Knackered. Eyes keep closing on their own.",
     "Never had a mate this loyal.",
     "Every town needs a guy who fixes stuff. That's me.",
     "Cold enough to freeze the carb on a scooter.",
@@ -560,9 +629,13 @@
     "Brick town under snow looks like a Christmas card.",
     "So much I don't know. Love that, actually.",
     "{pup} has never seen snow. He's losing his mind.",
-    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing."
+    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+    "New float, new needle. She'll breathe again.",
+    "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "Lunch. Now. Please.",
+    "Bit of graft now, bit of rest later."
   ],
-  "real_updated": "2026-11-28T04:30:11.124204+00:00",
+  "real_updated": "2026-11-28T04:45:09.636413+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@6",
@@ -590,17 +663,20 @@
     "name": "Little Thunder",
     "found": "2026-12-04",
     "stage": 1,
-    "done": 0,
+    "done": 1,
     "parts": "in",
     "parts_due": "2026-12-08",
-    "wait": null,
+    "wait": {
+      "until": "2026-12-09",
+      "why": "soak"
+    },
     "colour": null,
     "colour_hex": null,
     "spent": 8,
-    "sessions": 6,
+    "sessions": 7,
     "tries": 0,
-    "today_date": "2026-12-07",
-    "today": 2,
+    "today_date": "2026-12-08",
+    "today": 1,
     "finished": null,
     "rides": 0
   },
@@ -623,11 +699,11 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
+      "hold": "carb soaking in cleaner till tomorrow",
       "stage": 1,
       "stage_id": "carb",
       "parts": "in",
-      "wait": null,
+      "wait": "soak",
       "stages": [
         {
           "id": "strip",
@@ -640,7 +716,7 @@
           "id": "carb",
           "name": "carb rebuild",
           "need": 4,
-          "done": 0,
+          "done": 1,
           "coins": 8
         },
         {

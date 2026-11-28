@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-08T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "Bit of graft now, bit of rest later.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:58:21.098366+00:00",
+    "time": "11:58 AM",
+    "kind": "thought",
+    "text": "Lunch. Now. Please.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "did",
+    "text": "restoring Little Thunder: carb rebuild (carb rebuild 1/4)",
+    "why": "Every bolt on Little Thunder is a step closer.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "bike",
+    "text": "Carb's soaking in cleaner overnight. Tomorrow we see.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:43:21.098366+00:00",
+    "time": "11:43 AM",
+    "kind": "noticed",
+    "text": "A kid stops to pat Diesel.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:28:21.098366+00:00",
+    "time": "11:28 AM",
+    "kind": "thought",
+    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Look at that tail go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T16:13:21.098366+00:00",
+    "time": "11:13 AM",
+    "kind": "thought",
+    "text": "New float, new needle. She'll breathe again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T15:58:21.098366+00:00",
+    "time": "10:58 AM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Cold hands need a hot mug.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-08T15:43:21.098366+00:00",
     "time": "10:43 AM",
     "kind": "did",
@@ -1228,123 +1345,6 @@
     "time": "10:13 AM",
     "kind": "noticed",
     "text": "Diesel falls asleep in the toolbox for a second.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Food for my boy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "thought",
-    "text": "New day, same jar. 441 coins to go.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "making a hot chocolate",
-    "why": "Hot chocolate. Doctor's orders.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "thought",
-    "text": "Cold enough to freeze the carb on a scooter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "Reading about Four-stroke engine makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Sputnik. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:28:21.098366+00:00",
-    "time": "8:28 AM",
-    "kind": "thought",
-    "text": "Plan for today: work hard, eat well, don't lose the 10mm.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "note",
-    "text": "noted (Four-stroke engine (Introduction)): A four-stroke (also four-cycle) engine is an internal combustion engine (ICE or IC engine) in which the piston completes four separate strokes while turning the",
     "why": null,
     "by": null,
     "ok": true
