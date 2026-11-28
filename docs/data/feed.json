@@ -1,5 +1,41 @@
 [
   {
+    "at": "2026-12-07T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Diesel brought me his lead. Subtle.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "noticed",
+    "text": "🌨️ It's snowing! Big flakes falling on the brick town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-07T04:28:21.098366+00:00",
     "time": "11:28 PM",
     "kind": "diary",
@@ -1309,42 +1345,6 @@
     "time": "7:58 PM",
     "kind": "thought",
     "text": "Batteries low. Need a recharge.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Hands need grease. Simple.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Proper shorts weather.",
     "why": null,
     "by": "model",
     "ok": true

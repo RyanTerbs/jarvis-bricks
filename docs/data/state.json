@@ -1,20 +1,20 @@
 {
   "name": "Derek",
   "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Wonder how they build the roads up in the Thai mountains.",
-  "feeling": "good, ja",
+  "asleep": false,
+  "doing": "cooking a proper meal",
+  "thought": "Diesel brought me his lead. Subtle.",
+  "feeling": "hangry",
   "needs": {
-    "rest": 0,
-    "hunger": 0.795,
-    "social": 0.35,
-    "tinker": 0.735,
-    "curiosity": 0.825
+    "rest": 0.02,
+    "hunger": 0.2,
+    "social": 0.405,
+    "tinker": 0.75,
+    "curiosity": 0.88
   },
-  "mood": -0.07,
-  "energy": 1,
-  "coins": 56,
+  "mood": -0.08,
+  "energy": 0.98,
+  "coins": 54,
   "coins_goal": 500,
   "bricks": 118,
   "stock": {
@@ -179,7 +179,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 4,
+  "hour": 6,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -200,32 +200,51 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:13 AM",
+      "k": "noticed",
+      "x": "🌨️ It's snowing! Big flakes falling on the brick town.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Diesel brought me his lead. Subtle.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    }
+  ],
   "day_start": {
     "coins": 56,
     "bricks": 118,
     "got": 0,
     "used": 0
   },
-  "tick": 1098,
+  "tick": 1105,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T09:43:21.098366+00:00",
+  "updated": "2026-12-07T11:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 471,
+      "model": 472,
       "queue": 277,
-      "autopilot": 39,
-      "sleeping": 311,
+      "autopilot": 40,
+      "sleeping": 316,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-07",
-      "model": 0,
+      "model": 1,
       "queue": 0,
-      "autopilot": 0,
-      "sleeping": 19,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -236,11 +255,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.148,
-      "tired": 0,
-      "bored": 0.77
+      "hunger": 0.202,
+      "tired": 0.02,
+      "bored": 0.8
     },
     "bond": 1.0,
     "food": 4,
@@ -251,17 +270,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
+    "doing": "bored, chewing whatever he can find",
     "last_played_tick": 1054,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -274,9 +286,16 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Why are my paws cold? Doesn't matter. SNOW!"
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Why are my paws cold? Doesn't matter. SNOW!",
     "want_ticks": 0,
     "last_fed_tick": 1074,
     "recent_ideas": [
@@ -292,7 +311,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Never had a mate this loyal.",
     "Who parks a bike in a barn for thirty years? Thank you, whoever.",
     "Nothing like the sea to clear the head.",
     "Winter. Cold mornings, slow engines.",
@@ -316,23 +334,24 @@
     "Winter on the island. Who knew?",
     "Body says rest. Stubborn brain says one more job.",
     "So much I don't know. Love that, actually.",
-    "Wonder how they build the roads up in the Thai mountains."
+    "Wonder how they build the roads up in the Thai mountains.",
+    "{pup} brought me his lead. Subtle."
   ],
-  "real_updated": "2026-11-28T00:30:19.334318+00:00",
+  "real_updated": "2026-11-28T00:45:12.619056+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-06@13",
-    "kind": "sunny",
+    "key": "2026-12-07@6",
+    "kind": "snow",
     "season": "winter",
-    "base": 9.6,
-    "emoji": "☀️",
-    "name": "sunny",
+    "base": -3.6,
+    "emoji": "🌨️",
+    "name": "snowing",
     "season_emoji": "❄️",
     "seen": [
-      "sunny"
+      "snow"
     ],
-    "temp": 6,
-    "snow": 0,
+    "temp": -6,
+    "snow": 0.16,
     "wet": 0,
     "snowman": 0
   },
