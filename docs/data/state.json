@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Diesel is bored stiff. Time for a walk.",
+  "doing": "ordering a bag of dog food",
+  "thought": "Nice when the street goes quiet.",
   "feeling": "good, ja",
   "needs": {
-    "rest": 0.63,
-    "hunger": 0.155,
-    "social": 0.18,
-    "tinker": 0.325,
-    "curiosity": 0.465
+    "rest": 0.57,
+    "hunger": 0.4,
+    "social": 0.285,
+    "tinker": 0.57,
+    "curiosity": 0.34
   },
-  "mood": 0.36,
-  "energy": 0.37,
-  "coins": 58,
+  "mood": 0.37,
+  "energy": 0.43,
+  "coins": 55,
   "coins_goal": 500,
   "bricks": 212,
   "stock": {},
@@ -31,7 +31,7 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 4,
+    "carburetor": 5,
     "four_stroke": 1,
     "vehicle_restoration": 1,
     "tire": 1
@@ -210,6 +210,11 @@
       "date": "2026-12-08",
       "source": "Carburetor (Fuel circuits)",
       "note": "Main metering circuit: The main metering circuit usually consists of barrel/s which reduces to a narrow part where the air is at its highest speed, forming a ch"
+    },
+    {
+      "date": "2026-12-08",
+      "source": "Carburetor (Fuel supply)",
+      "note": "Float chamber: In order to ensure an adequate supply at all times, carburetors include a reservoir of fuel, called a \"float chamber\" or \"float bowl\"."
     }
   ],
   "looked_up": [
@@ -217,7 +222,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 18,
+  "hour": 19,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -230,7 +235,12 @@
     "waves": "flat",
     "waves_date": "2026-12-08"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "feed_the_puppy",
+      "why": "Diesel first, always."
+    }
+  ],
   "lucky": {
     "date": "2026-12-08",
     "used": 1,
@@ -778,6 +788,72 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "That dog needs a run. So do I, honestly.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Clouds sitting on the town like a lid.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "7:13 PM",
+      "k": "thought",
+      "x": "Still thinking about that bit on Carburetor.",
+      "why": null
+    },
+    {
+      "t": "7:13 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Library next."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 5/9)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "note",
+      "x": "noted (Carburetor (Fuel supply)): Float chamber: In order to ensure an adequate supply at all times, carburetors include a reservoir of fuel, called a \"float chamber\" or \"float bowl\".",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "thought",
+      "x": "Nice when the street goes quiet.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "ordering a bag of dog food (6 meals in the cupboard)",
+      "why": "Stocking up for the little guy."
     }
   ],
   "day_start": {
@@ -786,13 +862,13 @@
     "got": 35,
     "used": 0
   },
-  "tick": 1248,
+  "tick": 1255,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T23:13:21.098366+00:00",
+  "updated": "2026-12-09T00:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 546,
-      "queue": 316,
+      "model": 550,
+      "queue": 319,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -801,8 +877,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 29,
-      "queue": 18,
+      "model": 33,
+      "queue": 21,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -817,12 +893,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.478,
-      "tired": 0.68,
-      "bored": 0.6
+      "hunger": 0.688,
+      "tired": 0.876,
+      "bored": 0.81
     },
     "bond": 1,
-    "food": 0,
+    "food": 6,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -830,17 +906,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "bored, chewing whatever he can find",
     "last_played_tick": 1220,
-    "wants": "play",
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Everything smells amazing today.",
-      "Cold white stuff! I must eat all of it.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Good boy? Me? Yes. Me.",
@@ -853,9 +922,16 @@
       "Cold white stuff! I must eat all of it.",
       "Life is good. Life is SO good.",
       "Cold white stuff! I must eat all of it.",
-      "The cafe smells like pies. Noted."
+      "The cafe smells like pies. Noted.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "The ! block knows something. I will watch it.",
+      "Cold white stuff! I must eat all of it.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Cold white stuff! I must eat all of it.",
+      "Following {owner}. Best job in the world.",
+      "Sky went grey. Still a good day. Every day is a good day."
     ],
-    "thought": "The cafe smells like pies. Noted.",
+    "thought": "Sky went grey. Still a good day. Every day is a good day.",
     "want_ticks": 0,
     "last_fed_tick": 1226,
     "recent_ideas": [
@@ -871,10 +947,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Quiet out. Just me, {pup} and the seagulls.",
-    "If the carb's right, the bike's right.",
-    "Brick town under snow looks like a Christmas card.",
-    "So much I don't know. Love that, actually.",
     "{pup} has never seen snow. He's losing his mind.",
     "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
     "New float, new needle. She'll breathe again.",
@@ -895,9 +967,13 @@
     "Food first. Then I'm useful again.",
     "Cold enough to freeze the carb on a scooter.",
     "Need a lie down before I drop a spanner on my foot.",
-    "{pup} is bored stiff. Time for a walk."
+    "{pup} is bored stiff. Time for a walk.",
+    "That dog needs a run. So do I, honestly.",
+    "Clouds sitting on the town like a lid.",
+    "Still thinking about that bit on {topic}.",
+    "Nice when the street goes quiet."
   ],
-  "real_updated": "2026-11-28T05:30:11.884278+00:00",
+  "real_updated": "2026-11-28T05:45:09.861451+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@13",
@@ -911,7 +987,7 @@
       "snow",
       "cloudy"
     ],
-    "temp": 2,
+    "temp": 0,
     "snow": 0.62,
     "wet": 0,
     "snowman": 2
