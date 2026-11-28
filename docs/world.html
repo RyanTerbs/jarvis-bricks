@@ -141,6 +141,7 @@ function render(s, feed, diary, town) {
     <h3>${esc(cap(s.asleep ? "asleep" : s.doing))}</h3>
     <div class="th">“${esc(s.asleep ? "Zzz…" : s.thought)}”</div>
     <div class="small">coins ${s.coins}/${s.coins_goal} · bricks ${s.bricks}${town && town.site ? ` · building ${esc(town.site.name)} ${town.site.done}/${town.site.work}` : ""}</div>
+    ${s.mart && s.mart.owned ? `<div class="small">🛒 ${s.mart.owned} things from the Mega Mart${s.mart.supplies.length ? " · " + s.mart.supplies.map((x) => `${x.n} ${esc(x.key === "meals" ? "meals" : x.key.replace(/_/g, " "))}`).join(", ") : ""}</div>` : ""}
     ${gp ? `<div class="small">🏍️ ${esc(gp.name || "project bike")}: ${gp.finished ? "finished, she runs!" : `${esc(gp.stages[gp.stage].name)} ${gp.stages[gp.stage].done}/${gp.stages[gp.stage].need}${gp.hold ? " · " + esc(gp.hold) : ""}`}</div>` : ""}
     ${p ? `<div class="small" style="margin-top:6px">🐶 ${esc(cap(pupName))}${p.wants ? " wants " + esc(PUP_WANTS[p.wants] || p.wants) : ""}</div>
       <div class="th">“${esc(p.thought || "…")}”</div>` : ""}

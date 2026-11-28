@@ -450,11 +450,21 @@ const PRODUCT_NAMES = { model_bike: "brick model bike", rebuilt_carb: "rebuilt c
 const ITEM_NAMES = { surfboard: "🏄 Surfboard", beach_kit: "⛱️ Beach kit", wheelbarrow: "🛒 Wheelbarrow", impact_wrench: "🔧 Impact wrench", shop_sign: "💡 Neon shop sign", coffee_machine: "☕ Coffee machine", hammock: "🏝️ Hammock" };
 function renderStuff(s) {
   const stock = Object.entries(s.stock || {}).map(([k, n]) => `<span class="chip">📦 ${n}× ${esc(PRODUCT_NAMES[k] || k.replace(/_/g, " "))}</span>`).join("");
-  const owned = (s.owned || []).map((k) => `<span class="chip">${esc(ITEM_NAMES[k] || k.replace(/_/g, " "))}</span>`).join("");
+  const M = s.mart;
+  let owned = (s.owned || []).map((k) => `<span class="chip">${esc(ITEM_NAMES[k] || k.replace(/_/g, " "))}</span>`).join("");
+  let mart = "";
+  if (M) {   // his stuff from the Mega Mart, grouped by aisle
+    owned = M.aisles.filter((a) => a.items.length).map((a) => `<div style="margin:3px 0"><span class="muted">${esc(a.emoji)} ${esc(a.name)} ${a.items.length}/${a.total}</span> ` +
+      a.items.map((i) => `<span class="chip" title="${esc(i.what)}">${esc(i.emoji)} ${esc(i.name)}</span>`).join("") + `</div>`).join("");
+    const sup = M.supplies.map((x) => `<span class="chip">${esc(x.emoji)} ${x.n} ${esc(x.key === "meals" ? x.name : x.key.replace(/_/g, " "))}</span>`).join("");
+    const sk = Object.entries(M.skills || {}).map(([k, v]) => `<span class="chip">${k === "guitar" ? "🎸" : k === "thai" ? "🇹🇭" : "⭐"} ${esc(k)} ${Math.round(v * 100)}%</span>`).join("");
+    mart = `<div class="muted" style="margin-top:8px">🛒 Mega Mart: ${M.owned}/${M.total} things bought · spent ${M.spent} coins there (open ${M.hours[0]} AM to ${M.hours[1] - 12} PM)</div>` +
+      (sup ? `<div class="muted" style="margin-top:6px">In the cupboard</div><div>${sup}</div>` : "") + (sk ? `<div class="muted" style="margin-top:6px">Getting better at</div><div>${sk}</div>` : "");
+  }
   const sales = s.sales || { items: 0, coins: 0 };
   $("stuff").innerHTML =
     `<div class="muted">For sale</div><div>${stock || '<span class="muted">nothing in stock</span>'}</div>` +
-    `<div class="muted" style="margin-top:8px">Owns</div><div>${owned || '<span class="muted">nothing bought yet</span>'}</div>` +
+    `<div class="muted" style="margin-top:8px">His stuff</div><div>${owned || '<span class="muted">nothing bought yet</span>'}</div>` + mart +
     (s.beach ? `<div class="muted" style="margin-top:8px">Beach</div><div><span class="chip">🌊 waves today: ${esc(s.beach.waves)}</span><span class="chip">☀️ tan ${Math.round(s.beach.tan * 100)}%</span>` +
       `<span class="chip">🏄 surf skill ${Math.round(s.beach.surf_skill * 100)}% (${s.beach.surf_sessions} goes)</span><span class="chip">🏰 best castle ${s.beach.best_castle}/6</span><span class="chip">🐚 ${s.beach.shells} shells</span></div>` : "") +
     `<div class="muted" style="margin-top:8px">Sold so far: <b style="color:var(--ink)">${sales.items}</b> things for <b style="color:var(--ink)">${sales.coins}</b> coins</div>`;

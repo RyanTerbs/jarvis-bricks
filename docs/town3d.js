@@ -209,10 +209,10 @@ function wallSide(R, side, ops, wm, im) {
   }
   for (const o of ops) if (o.y0 > 0.01) put(o.a, o.b, o.y0, o.y1, front ? fmat(R, glassMat()) : glassMat(), 0.04, 0).castShadow = false;
 }
-function newRoom(l, g, H, roof = true) {
-  const R = { id: l.place, g, W: RW, D: RD, H, roof, fade: new THREE.Group(), mats: [], f: 0, sh: true, light: null };
+function newRoom(l, g, H, roof = true, W = RW, D = RD) {
+  const R = { id: l.place, g, W, D, H, roof, fade: new THREE.Group(), mats: [], f: 0, sh: true, light: null };
   g.add(R.fade);
-  R.box = aabb(g, 0, 0, RW, RD);
+  R.box = aabb(g, 0, 0, W, D);
   if (roof) { R.light = new THREE.PointLight("#ffd9a0", 0, 4.2, 1.6); R.light.position.set(0, H - 0.5, 0); g.add(R.light); }
   rooms.push(R);
   return R;
@@ -257,8 +257,9 @@ function roomHome(l, g, look) {                    // his house: bed, Diesel's b
     for (let y = 0; y < 128; y += 16) { x.fillRect(0, y, 128, 2); x.fillRect((y * 5) % 128, y, 2, 16); x.fillRect((y * 5 + 64) % 128, y, 2, 16); } }, 2, 2));
   piece(g, 1.5, 0.01, 1.1, "#c75b39", 0.1, 0.03, 0.45); piece(g, 1.3, 0.012, 0.9, "#e8b04a", 0.1, 0.03, 0.45);   // rug
   // bed (back left) + a Thailand poster over it
-  piece(g, 1.0, 0.3, 1.9, "#8b5a2b", -1.6, 0.03, -0.95); piece(g, 0.92, 0.15, 1.8, "#f4f1e8", -1.6, 0.33, -0.95);
-  piece(g, 0.96, 0.07, 1.15, "#2f6fb3", -1.6, 0.46, -0.5); piece(g, 0.6, 0.12, 0.34, "#ffffff", -1.6, 0.48, -1.62);
+  const own = (k) => (st.owned || []).includes(k), mt = own("mattress") ? 0.12 : 0;   // a big comfy mattress sits higher
+  piece(g, 1.0, 0.3, 1.9, "#8b5a2b", -1.6, 0.03, -0.95); piece(g, 0.92, 0.15 + mt, 1.8, "#f4f1e8", -1.6, 0.33, -0.95);
+  piece(g, 0.96, 0.07, 1.15, own("mattress") ? "#7d3c98" : "#2f6fb3", -1.6, 0.46 + mt, -0.5); piece(g, 0.6, 0.12, 0.34, "#ffffff", -1.6, 0.48 + mt, -1.62);
   piece(g, 1.0, 0.8, 0.1, "#6b4423", -1.6, 0.03, -1.9);
   solid(g, -1.6, -0.95, 1.0, 1.9);
   poster(g, 0.9, 0.6, -1.6, 1.45, -1.92, 0, (x, w, h) => {
@@ -272,8 +273,11 @@ function roomHome(l, g, look) {                    // his house: bed, Diesel's b
     x.strokeStyle = "#fff"; x.lineWidth = 6; x.strokeRect(3, 3, w - 6, h - 6);
   });
   // Diesel's bed + bowl + name plate
-  add(g, cyl(0.42, 0.44, 0.16, 20), mat("#c0392b"), -0.5, 0.11, -1.45); add(g, cyl(0.32, 0.32, 0.17, 20), mat("#f2e1c1"), -0.5, 0.12, -1.45);
-  add(g, cyl(0.12, 0.1, 0.07, 14), mat("#2f6fb3"), -0.45, 0.065, -0.7);
+  if (own("dog_bed")) { add(g, cyl(0.44, 0.46, 0.26, 20), mat("#2f6fb3"), -0.5, 0.16, -1.45); add(g, cyl(0.34, 0.34, 0.27, 20), mat("#f4f1e8"), -0.5, 0.17, -1.45); }
+  else { add(g, cyl(0.42, 0.44, 0.16, 20), mat("#c0392b"), -0.5, 0.11, -1.45); add(g, cyl(0.32, 0.32, 0.17, 20), mat("#f2e1c1"), -0.5, 0.12, -1.45); }
+  const bowl = own("film_box") ? [-0.95, -0.5] : [-0.45, -0.7];
+  add(g, cyl(0.12, 0.1, 0.07, 14), mat(own("premium_dog_food") ? "#f2c230" : "#2f6fb3"), bowl[0], 0.065, bowl[1]);
+  if (own("chew_toys")) { add(g, box(0.22, 0.05, 0.06), mat("#f4f1e8"), -0.05, 0.06, -1.15, 0, 0.6); add(g, sph(0.06, 10), mat("#e05a8a"), -0.9, 0.09, -1.15); }
   const pupName = String((st.pup && st.pup.name) || "PUPPY").toUpperCase();
   poster(g, 0.62, 0.2, -0.5, 0.78, -1.92, 0, (x, w, h) => { x.fillStyle = "#f2c230"; x.fillRect(0, 0, w, h); x.fillStyle = "#3a2a1a";
     x.font = "bold 50px system-ui"; x.textAlign = "center"; x.textBaseline = "middle"; x.fillText(pupName, w / 2, h / 2 + 3); });
@@ -310,7 +314,64 @@ function roomHome(l, g, look) {                    // his house: bed, Diesel's b
   for (const z of [1.15, 1.45]) add(g, cyl(0.1, 0.1, 0.012, 14), mat("#111"), kx + 0.05, 0.905, z, 0, 0, 0, false);
   add(g, cyl(0.11, 0.1, 0.12, 14), mat("#9aa0a6", { metalness: 0.5, roughness: 0.3 }), kx + 0.05, 0.97, 1.15);
   piece(g, 0.36, 0.42, 0.95, "#e8d9bd", kx - 0.08, 1.45, 1.43);
-  if ((st.owned || []).includes("coffee_machine")) { piece(g, 0.25, 0.3, 0.22, "#3b3f46", kx + 0.03, 0.9, 1.75); add(g, cyl(0.04, 0.035, 0.07, 10), mat("#fff"), kx + 0.12, 0.94, 1.75); }
+  if (own("sofa")) {                               // facing the TV spot, its back to the front window
+    const sc = "#7a8b99";
+    piece(g, 1.4, 0.25, 0.6, sc, -0.3, 0.03, 1.15); piece(g, 1.4, 0.45, 0.16, shade(sc, -0.15), -0.3, 0.28, 1.4);
+    for (const a of [-1, 1]) { piece(g, 0.14, 0.4, 0.6, shade(sc, -0.15), -0.3 + a * 0.63, 0.03, 1.15); piece(g, 0.55, 0.08, 0.44, shade(sc, 0.25), -0.3 + a * 0.29, 0.28, 1.12); }
+    solid(g, -0.3, 1.15, 1.4, 0.6);
+  }
+  if (own("film_box")) {                           // old TV on a low stand + his box of films
+    piece(g, 0.9, 0.35, 0.3, "#6b4423", -0.3, 0.03, -0.72); piece(g, 0.85, 0.5, 0.06, "#222222", -0.3, 0.38, -0.8);
+    add(g, box(0.77, 0.42, 0.01), mat("#7fb8e0", { emissive: "#2f6fb3", emissiveIntensity: 0.6 }), -0.3, 0.63, -0.765, 0, 0, 0, false);
+    piece(g, 0.24, 0.12, 0.2, "#e8762b", 0.02, 0.38, -0.66); solid(g, -0.3, -0.72, 0.9, 0.3);
+  }
+  if (own("guitar")) {                             // leaning on the right wall
+    const red = mat("#c0392b");
+    add(g, cyl(0.18, 0.18, 0.07, 16), red, 2.06, 0.3, 0.55, 0, 0, Math.PI / 2); add(g, cyl(0.13, 0.13, 0.07, 16), red, 2.08, 0.56, 0.55, 0, 0, Math.PI / 2);
+    add(g, cyl(0.05, 0.05, 0.075, 12), mat("#222"), 2.04, 0.36, 0.55, 0, 0, Math.PI / 2); add(g, box(0.04, 0.55, 0.06), mat("#6b4423"), 2.1, 0.96, 0.55, 0, 0, -0.05);
+    solid(g, 2.06, 0.55, 0.2, 0.4);
+  }
+  if (own("plants")) for (const [x, z] of [[0.1, 1.72], [-0.2, 2.38]]) {   // one by the door inside, one out front
+    add(g, cyl(0.14, 0.1, 0.22, 12), mat("#b5652e"), x, 0.14, z); add(g, sph(0.22, 10), mat(snowy && z > 2.1 ? "#2f6b45" : "#3fae4f"), x, 0.42, z); solid(g, x, z, 0.32);
+  }
+  if (own("reading_lamp")) {
+    add(g, cyl(0.12, 0.14, 0.04, 12), mat("#3b3f46"), 0.55, 0.05, -1.2); add(g, cyl(0.015, 0.015, 1.35, 6), mat("#3b3f46"), 0.55, 0.72, -1.2);
+    add(g, cone(0.17, 0.2, 12), mat("#f2c230"), 0.55, 1.45, -1.2); add(g, sph(0.05, 8), mat("#fff3b0", { emissive: "#ffd34d", emissiveIntensity: night ? 1.5 : 0.3 }), 0.55, 1.36, -1.2, 0, 0, 0, false);
+    solid(g, 0.55, -1.2, 0.26);
+  }
+  if (own("heater")) {                             // bars glow on cold days
+    const hot = (wx.temp ?? 20) <= 8 || night;
+    piece(g, 0.12, 0.5, 0.6, "#f4f1e8", 2.08, 0.1, 1.55);
+    for (const y of [0.25, 0.37, 0.49]) add(g, box(0.02, 0.04, 0.5), mat("#ff7a2b", { emissive: "#ff5a00", emissiveIntensity: hot ? 1.3 : 0.15 }), 2.01, y, 1.55, 0, 0, 0, false);
+    solid(g, 2.08, 1.55, 0.14, 0.6);
+  }
+  if (own("air_con")) {                            // split unit on the back wall, the box outside behind the house
+    piece(g, 0.9, 0.28, 0.2, "#f4f6f8", -0.5, 1.9, -1.86); add(g, box(0.8, 0.02, 0.02), mat("#9aa0a6"), -0.5, 1.93, -1.75, 0, 0, 0, false);
+    piece(g, 0.7, 0.5, 0.3, "#c9ccd1", 1.5, 0.0, -2.38); add(g, cyl(0.16, 0.16, 0.02, 14), mat("#3b3f46"), 1.5, 0.25, -2.535, Math.PI / 2, 0, 0, false);
+    solid(g, 1.5, -2.38, 0.7, 0.3);
+  }
+  if (own("thailand_map")) poster(g, 0.9, 0.6, 2.13, 1.55, -0.55, -Math.PI / 2, (x, w, h) => {
+    x.fillStyle = "#7fc4e8"; x.fillRect(0, 0, w, h); x.fillStyle = "#e8d48a"; x.strokeStyle = "#8b6a3e"; x.lineWidth = 2; x.beginPath();
+    [[112, 14], [150, 22], [170, 52], [196, 70], [182, 96], [150, 92], [138, 118], [126, 150], [112, 162], [120, 136], [104, 104], [92, 70], [98, 40]]
+      .forEach(([px, py], i) => (i ? x.lineTo(px, py) : x.moveTo(px, py))); x.closePath(); x.fill(); x.stroke();
+    x.strokeStyle = "#d0453a"; x.lineWidth = 3; x.setLineDash([6, 4]); x.beginPath(); x.moveTo(132, 98); x.lineTo(118, 40); x.lineTo(124, 22); x.stroke(); x.setLineDash([]);
+    x.fillStyle = "#d0453a"; for (const [px, py] of [[132, 98], [118, 40], [124, 22]]) { x.beginPath(); x.arc(px, py, 4, 0, 7); x.fill(); }
+    x.fillStyle = "#1f3b57"; x.font = "bold 18px system-ui"; x.textAlign = "left"; x.fillText("THAILAND", 10, 26); x.font = "12px system-ui"; x.fillText("Bangkok", 140, 104); x.fillText("Chiang Mai", 32, 44);
+  });
+  if (own("backpack")) { piece(g, 0.32, 0.42, 0.22, "#2f8f5b", -0.95, 0.03, 0.2); piece(g, 0.26, 0.14, 0.05, "#1f6b45", -0.95, 0.12, 0.33); solid(g, -0.95, 0.2, 0.32, 0.22); }
+  if (own("riding_gear")) { add(g, sph(0.15, 12), mat("#232323", { roughness: 0.3 }), sx + 0.38, 1.88, sz).scale.set(1, 0.9, 1.1); add(g, box(0.2, 0.08, 0.02), mat("#5dade2", { roughness: 0.1 }), sx + 0.38, 1.87, sz + 0.16); }
+  // out front: telescope, the ball launcher, the braai
+  if (own("telescope")) {
+    for (let i = 0; i < 3; i++) { const a = i * 2.1; add(g, cyl(0.015, 0.015, 0.8, 5), mat("#3b3f46"), -1.95 + Math.cos(a) * 0.12, 0.38, 2.38 + Math.sin(a) * 0.12, Math.sin(a) * 0.3, 0, -Math.cos(a) * 0.3); }
+    add(g, cyl(0.06, 0.08, 0.7, 12), mat("#f4f1e8"), -1.95, 0.9, 2.3, -0.9); solid(g, -1.95, 2.38, 0.35);
+  }
+  if (own("ball_launcher")) { piece(g, 0.3, 0.3, 0.3, "#2f6fb3", -1.15, 0.03, 2.38); add(g, sph(0.07, 10), mat("#d4e157"), -1.15, 0.4, 2.38); solid(g, -1.15, 2.38, 0.32); }
+  if (own("braai_grill")) {
+    add(g, sph(0.26, 14), mat("#232323", { roughness: 0.6 }), 1.95, 0.62, 2.38).scale.set(1, 0.65, 1);
+    for (let i = 0; i < 3; i++) { const a = i * 2.1; add(g, cyl(0.015, 0.015, 0.6, 5), mat("#3b3f46"), 1.95 + Math.cos(a) * 0.14, 0.3, 2.38 + Math.sin(a) * 0.14, Math.sin(a) * 0.25, 0, -Math.cos(a) * 0.25); }
+    solid(g, 1.95, 2.38, 0.5);
+  }
+  if (own("coffee_machine")) { piece(g, 0.25, 0.3, 0.22, "#3b3f46", kx + 0.03, 0.9, 1.75); add(g, cyl(0.04, 0.035, 0.07, 10), mat("#fff"), kx + 0.12, 0.94, 1.75); }
   solid(g, kx, 1.12, 0.6, 1.6);
   // the front door, swung open inside
   piece(g, 0.06, 1.72, 0.86, "#5a3b22", 1.36, 0.03, 1.48); add(g, sph(0.035, 8), mat("#f2c230"), 1.31, 0.9, 1.2);
@@ -394,6 +455,17 @@ function roomGarage(l, g, look) {                  // his garage: a car up on th
     const t = label(`🏍️ ${p.name || "project bike"}${p.finished ? " ✓" : ` · ${p.stages[p.stage].name}`}`, 0.28);
     t.position.set(0.65, 1.55, 0.15); g.add(t); signs.push(t);
   }
+  // tools he bought at the Mega Mart
+  const go = (k) => ((((lastState && lastState.state) || {}).owned) || []).includes(k);
+  if (go("compressor")) { add(g, cyl(0.2, 0.2, 0.6, 14), mat("#c0392b"), -1.85, 0.27, 0.95, Math.PI / 2); add(g, cyl(0.06, 0.06, 0.03, 10), mat("#f4f1e8"), -1.85, 0.5, 0.75, Math.PI / 2); solid(g, -1.85, 0.95, 0.45, 0.65); }
+  if (go("work_lights")) for (const [x, z] of [[-0.65, -1.8], [1.95, 1.75]]) {
+    add(g, cyl(0.015, 0.015, 1.4, 5), mat("#3b3f46"), x, 0.73, z); add(g, box(0.3, 0.22, 0.12), mat("#f2c230"), x, 1.5, z);
+    add(g, box(0.24, 0.16, 0.01), mat("#fff8d0", { emissive: "#ffe28a", emissiveIntensity: night ? 1.6 : 0.6 }), x, 1.5, z + (z < 0 ? 0.065 : -0.065), 0, 0, 0, false); solid(g, x, z, 0.25);
+  }
+  if (go("parts_washer")) { piece(g, 0.55, 0.8, 0.42, "#2f6fb3", -0.1, 0.03, -1.72); piece(g, 0.5, 0.04, 0.36, "#9aa0a6", -0.1, 0.84, -1.72); solid(g, -0.1, -1.72, 0.55, 0.42); }
+  if (go("welder")) { piece(g, 0.35, 0.45, 0.4, "#1f3b57", 1.95, 0.08, -0.25); add(g, cyl(0.02, 0.02, 0.5, 5), mat("#222"), 1.8, 0.4, -0.05, 0.6); solid(g, 1.95, -0.25, 0.35, 0.4); }
+  if (go("socket_set")) { piece(g, 0.3, 0.08, 0.2, "#c0392b", bx - 0.32, 0.84, bz + 0.05); piece(g, 0.28, 0.01, 0.18, "#c9ccd1", bx - 0.32, 0.925, bz + 0.05); }
+  if (go("creeper")) { piece(g, 0.42, 0.05, 1.0, "#2f6fb3", -0.45, 0.07, 1.05, 0.2); for (const a of [-1, 1]) for (const b of [-1, 1]) add(g, sph(0.035, 8), mat("#222"), -0.45 + a * 0.17, 0.05, 1.05 + b * 0.42, 0, 0, 0, false); }
   // restored bikes he kept: parked on the street outside (the newest two)
   (G.bikes || []).slice(-2).forEach((k, i) => {
     const b = bikeModel({ adv: k.look === "adventure", paint: k.colour_hex || "#8b2b1f", shiny: true, boxes: k.look === "adventure", racks: k.look === "adventure" });
@@ -501,6 +573,11 @@ function roomCafe(l, g, look) {                    // the cafe: counter + coffee
       add(g, cyl(0.17, 0.17, 0.06, 14), mat("#d0453a"), sx, 0.47, tz); add(g, cyl(0.035, 0.035, 0.44, 6), mat("#3b3f46"), sx, 0.25, tz);
       solid(g, sx, tz, 0.3);
     }
+  }
+  if ((((lastState && lastState.state) || {}).owned || []).includes("board_games")) {   // a game of checkers on the first table
+    add(g, box(0.34, 0.012, 0.34), new THREE.MeshStandardMaterial({ map: canvasTex(64, 64, (x) => { for (let i = 0; i < 8; i++) for (let j = 0; j < 8; j++) { x.fillStyle = (i + j) % 2 ? "#222" : "#d0453a"; x.fillRect(i * 8, j * 8, 8, 8); } }) }),
+        -1.35, 0.752, -0.45, 0, 0.3, 0, false);
+    for (let i = 0; i < 2; i++) add(g, box(0.05, 0.05, 0.05), mat("#ffffff"), -1.1 + i * 0.07, 0.775, -0.3, 0, i, 0, false);
   }
   add(g, cyl(0.18, 0.14, 0.3, 12), mat("#b5652e"), 1.9, 0.18, 1.65); add(g, sph(0.3, 10), mat(snowy ? "#2f6b45" : "#3fae4f"), 1.9, 0.6, 1.65);
   solid(g, 1.9, 1.65, 0.4);
@@ -744,6 +821,39 @@ function makeDerek() {
   add(umb, cyl(0.03, 0.03, 1.3, 6), mat("#3b3f46"), 0, 0.65, 0);
   add(umb, cone(0.8, 0.35, 10), mat("#2f6fb3"), 0, 1.35, 0);
   g.userData.skin = skin; g.userData.board = board; g.userData.umbrella = umb;
+  g.userData.trolley = makeTrolley(); g.userData.trolley.position.set(0, 0, 0.95); g.userData.trolley.visible = false; g.add(g.userData.trolley);
+  const kay = new THREE.Group(); kay.visible = false; g.add(kay);                 // his kayak (when he's paddling)
+  add(kay, sph(0.5, 14), mat("#f2c230"), 0, 0.05, 0).scale.set(0.9, 0.35, 3.2);
+  add(kay, cyl(0.03, 0.03, 2.4, 6), mat("#3b3f46"), 0, 0.75, 0.25, 0, 0, Math.PI / 2);
+  for (const s of [-1, 1]) add(kay, box(0.25, 0.04, 0.4), mat("#d0453a"), s * 1.2, 0.75, 0.25);
+  const rod = new THREE.Group(); rod.visible = false; g.add(rod);                 // his fishing rod (when he's fishing)
+  add(rod, cyl(0.02, 0.03, 2.6, 6), mat("#3b3f46"), 0.47, 1.6, 1.0, 0.9);
+  add(rod, cyl(0.06, 0.06, 0.08, 10), mat("#c9ccd1"), 0.47, 0.95, 0.45, 0, 0, Math.PI / 2);
+  g.userData.kayak = kay; g.userData.rod = rod;
+  g.scale.setScalar(0.62);
+  return g;
+}
+function makeTrolley(k = 1) {                       // a Mega Mart trolley: wire basket, red handle, a few things in it
+  const t = new THREE.Group(), wire = mat("#b8bec6", { metalness: 0.6, roughness: 0.3, wireframe: true }), steel = mat("#9aa0a6", { metalness: 0.5 });
+  add(t, box(0.7 * k, 0.5 * k, 0.9 * k), wire, 0, 0.95 * k, 0.45 * k, 0, 0, 0, false);
+  add(t, box(0.66 * k, 0.03, 0.86 * k), steel, 0, 0.71 * k, 0.45 * k, 0, 0, 0, false);
+  for (const a of [-1, 1]) for (const b of [0, 1]) {
+    add(t, box(0.04, 0.62 * k, 0.04), steel, a * 0.3 * k, 0.4 * k, b * 0.85 * k, 0, 0, 0, false);
+    add(t, cyl(0.07 * k, 0.07 * k, 0.05, 10), mat("#222"), a * 0.3 * k, 0.07 * k, b * 0.85 * k, 0, 0, Math.PI / 2, false);
+  }
+  add(t, cyl(0.035, 0.035, 0.76 * k, 8), mat("#d0453a"), 0, 1.2 * k, -0.02, 0, 0, Math.PI / 2, false);
+  [["#d0453a", -0.15, 0.3], ["#2f6fb3", 0.12, 0.5], ["#3fae4f", -0.05, 0.72]].forEach(([c, x, z]) => add(t, box(0.22 * k, 0.2 * k, 0.18 * k), mat(c), x * k, 0.83 * k, z * k, 0, 0, 0, false));
+  return t;
+}
+function minifig(shirt, hat) {                      // a shop worker (or anyone): like Derek, other clothes
+  const g = new THREE.Group(), skin = mat("#e9c39b"), dark = mat("#3b3f46"), top = mat(shirt), ink = mat("#222");
+  for (const x of [-0.16, 0.16]) add(g, box(0.28, 0.7, 0.32), dark, x, 0.35, 0);
+  add(g, box(0.68, 0.62, 0.36), top, 0, 1.03, 0);
+  add(g, box(0.5, 0.45, 0.02), mat("#ffffff"), 0, 0.98, 0.19);
+  for (const s of [-1, 1]) add(g, box(0.17, 0.52, 0.22), top, s * 0.43, 1.02, 0, 0, 0, s * 0.12);
+  add(g, cyl(0.24, 0.24, 0.42, 18), skin, 0, 1.62, 0);
+  for (const x of [-0.08, 0.08]) add(g, sph(0.035, 8), ink, x, 1.66, 0.23);
+  add(g, cyl(0.26, 0.26, 0.12, 18), mat(hat), 0, 1.88, 0);
   g.scale.setScalar(0.62);
   return g;
 }
@@ -760,7 +870,8 @@ function makePup() {
   for (const x of [-0.17, 0.17]) for (const z of [-0.09, 0.09]) add(body, box(0.08, 0.22, 0.08), fur, x, 0.11, z);
   const tail = new THREE.Group(); tail.position.set(-0.25, 0.42, 0); body.add(tail);
   add(tail, box(0.2, 0.05, 0.05), dark, -0.09, 0.05, 0, 0, 0, 0.6);
-  g.userData = { tail, body };
+  const coat = add(body, box(0.42, 0.2, 0.3), mat("#c0392b"), -0.02, 0.4, 0); coat.visible = false;   // his winter coat
+  g.userData = { tail, body, coat };
   g.scale.setScalar(0.9);
   return g;
 }
@@ -784,11 +895,114 @@ function makeVisitor() {   // you: red shirt, jeans, sunglasses (legs + arms swi
   return g;
 }
 
+// ------------------------------------------------------------------ the Mega Mart: a massive walk-in supermarket at the north end of the island
+const MW = 18, MD = 9, MH = 3.4;                    // store footprint + wall height
+const AISLES = [["🥦", "FOOD", ["#3fae4f", "#d0453a", "#f2c230", "#e8762b"]], ["🏠", "HOME", ["#2f6fb3", "#f4f1e8", "#8e9aa6", "#5dade2"]],
+  ["🔧", "TOOLS", ["#c0392b", "#3b3f46", "#9aa0a6", "#f2c230"]], ["🐶", "PUPPY", ["#b07a4a", "#e98a8a", "#f4a6c8", "#2f6fb3"]],
+  ["🏖️", "OUTDOORS", ["#e8762b", "#16a085", "#f2c230", "#5dade2"]], ["🎸", "HOBBIES", ["#7d3c98", "#d0453a", "#232323", "#f4f1e8"]],
+  ["✈️", "THAILAND", ["#f2c230", "#c0392b", "#2f6fb3", "#f4f1e8"]]];
+let mart = null;                                    // { box, park, door, inside, wait }
+function megaMart(cx, z0) {
+  const zc = z0 - ROAD / 2 - 5 - MD / 2, V = (x, y, z) => new THREE.Vector3(x, y, z);
+  const g = new THREE.Group(); g.position.set(cx, Y_BLOCK, zc); root.add(g);
+  add(root, box(MW + 0.4, Y_BLOCK, MD + 0.4), mat(snowy ? "#e8ecf0" : "#c9c4b8"), cx, Y_BLOCK / 2, zc, 0, 0, 0, false);   // its own baseplate
+  plates.push({ x0: cx - MW / 2 - 0.2, x1: cx + MW / 2 + 0.2, z0: zc - MD / 2 - 0.2, z1: zc + MD / 2 + 0.2 });
+  const R = newRoom({ place: "mega_mart" }, g, MH, true, MW, MD), c = "#d0453a", inner = "#f6f3ec";
+  R.light.distance = 18; R.light.decay = 1; R.light.position.set(0, MH - 0.4, 0);
+  wallSide(R, "back", [], mat(shade(c, -0.15)), mat(inner));
+  wallSide(R, "left", [{ a: -2.5, b: 2.5, y0: 1.2, y1: 2.6 }], mat(c), mat(inner));
+  wallSide(R, "right", [{ a: -2.5, b: 2.5, y0: 1.2, y1: 2.6 }], mat(c), mat(inner));
+  wallSide(R, "front", [{ a: -1.4, b: 1.4, y0: 0, y1: 2.5 }, { a: -8.4, b: -2.0, y0: 0.35, y1: 2.9 }, { a: 2.0, b: 8.4, y0: 0.35, y1: 2.9 }],
+    fmat(R, mat(c)), fmat(R, mat(inner)));
+  flatRoof(R, "#8e9aa6");
+  const am = new THREE.MeshStandardMaterial({ map: stripes("#d0453a", "#ffffff") }); disposables.push(am);   // canopy over the doors
+  add(R.fade, box(4.2, 0.1, 1.3), fmat(R, am), 0, 2.75, MD / 2 + 0.6, 0.25);
+  floorOf(R, texMat(64, 64, (x) => { x.fillStyle = "#f4f1e8"; x.fillRect(0, 0, 64, 64); x.fillStyle = "#d9d4c8"; x.fillRect(0, 0, 32, 32); x.fillRect(32, 32, 32, 32); }, MW / 1.2, MD / 1.2));
+  // the big sign on the roof edge (stays up when the roof fades)
+  const sm = new THREE.MeshStandardMaterial({ map: canvasTex(512, 96, (x, w, h) => {
+    x.fillStyle = "#d0453a"; x.fillRect(0, 0, w, h); x.strokeStyle = "#f2c230"; x.lineWidth = 10; x.strokeRect(5, 5, w - 10, h - 10);
+    x.fillStyle = "#ffffff"; x.font = "900 64px system-ui, sans-serif"; x.textAlign = "center"; x.textBaseline = "middle"; x.fillText("🛒 MEGA MART", w / 2, h / 2 + 3);
+  }), roughness: 0.5, emissive: night ? "#ffffff" : "#000000", emissiveIntensity: night ? 0.35 : 0 });
+  disposables.push(sm);
+  add(g, box(8, 1.5, 0.2), sm, 0, MH + 0.95, MD / 2 - 0.25);
+  for (const s of [-1, 1]) add(g, box(0.12, 1.0, 0.12), mat("#3b3f46"), s * 3.6, MH + 0.3, MD / 2 - 0.4);
+  // sliding glass doors, pulled open
+  for (const s of [-1, 1]) add(R.fade, box(1.3, 2.3, 0.05), fmat(R, mat("#cfeaff", { roughness: 0.05, transparent: true, opacity: 0.35 })), s * 2.05, 1.18, MD / 2 - 0.22, 0, 0, 0, false);
+  piece(g, 2.6, 0.012, 1.0, "#d0453a", 0, 0.03, MD / 2 - 0.75);                                                    // welcome mat
+  // 7 aisles of shelves (front-back), one per aisle of the shop, each with a hanging sign
+  const pg = box(0.15, 0.2, 0.13), prods = [], xs = [-7.5, -5.0, -2.5, 0, 2.5, 5.0, 7.5], zs0 = -3.0, zs1 = 1.0, L = zs1 - zs0, zm = (zs0 + zs1) / 2;
+  xs.forEach((x, i) => {
+    const [emoji, name, cols] = AISLES[i];
+    piece(g, 0.72, 0.12, L, "#3b3f46", x, 0.03, zm); piece(g, 0.05, 1.85, L, "#e4e0d6", x, 0.15, zm);
+    for (const z of [zs0, zs1]) piece(g, 0.74, 1.9, 0.05, cols[0], x, 0.03, z);
+    for (const side of [-1, 1]) for (let r = 0; r < 4; r++) {
+      const y = 0.2 + r * 0.45;
+      piece(g, 0.32, 0.03, L, "#cfcac0", x + side * 0.19, y, zm);
+      for (let z = zs0 + 0.15; z < zs1 - 0.1; z += 0.19) if (rnd(`p${i}.${side}.${r}.${z.toFixed(2)}`) > 0.12)
+        prods.push([x + side * 0.24, y + 0.13, z, cols[(r + Math.floor((z - zs0) / 0.57)) % cols.length]]);
+    }
+    solid(g, x, zm, 0.75, L + 0.05);
+    const sg = poster(g, 1.5, 0.5, x, 2.75, zm, 0, (c2, w, h) => { c2.fillStyle = cols[0]; c2.fillRect(0, 0, w, h); c2.fillStyle = "#fff"; c2.fillRect(6, 6, w - 12, h - 12);
+      c2.fillStyle = "#222"; c2.font = "bold 46px system-ui, 'Segoe UI Emoji', sans-serif"; c2.textAlign = "center"; c2.textBaseline = "middle"; c2.fillText(`${emoji} ${name}`, w / 2, h / 2 + 2); }, 320);
+    sg.material.side = THREE.DoubleSide;
+    add(g, cyl(0.01, 0.01, MH - 3.0, 4), mat("#333"), x, 3.0 + (MH - 3.0) / 2, zm, 0, 0, 0, false);
+  });
+  // freezers along the back wall + the fruit and veg stand by the door
+  piece(g, MW - 1.2, 1.15, 0.6, "#f4f6f8", 0, 0.03, -MD / 2 + 0.5);
+  add(g, box(MW - 1.3, 0.75, 0.02), mat("#9fd4f5", { transparent: true, opacity: 0.55, roughness: 0.05, emissive: "#2f8fd0", emissiveIntensity: 0.25 }), 0, 0.68, -MD / 2 + 0.81, 0, 0, 0, false);
+  for (let x = -8; x <= 8; x += 0.5) prods.push([x, 0.62, -MD / 2 + 0.5, ["#f4f1e8", "#d0453a", "#f2c230", "#2f6fb3"][Math.abs(Math.round(x * 2)) % 4]]);
+  solid(g, 0, -MD / 2 + 0.5, MW - 1.2, 0.6);
+  const fruit = [];
+  for (const [fx, cols] of [[4.4, ["#d0453a", "#3fae4f", "#f2c230"]], [6.9, ["#e8762b", "#7d3c98", "#3fae4f"]]]) {
+    piece(g, 1.9, 0.7, 1.0, "#8b5a2b", fx, 0.03, 2.75); solid(g, fx, 2.75, 1.9, 1.0);
+    cols.forEach((col, k) => { piece(g, 0.6, 0.12, 0.9, "#c8a77a", fx - 0.62 + k * 0.62, 0.73, 2.75);
+      for (let a = 0; a < 3; a++) for (let b = 0; b < 4; b++) fruit.push([fx - 0.78 + k * 0.62 + a * 0.16, 0.92, 2.42 + b * 0.22, col]); });
+  }
+  // two checkout tills with a cashier each
+  for (const tx of [-6.6, -3.9]) {
+    piece(g, 0.7, 0.85, 1.7, "#3b3f46", tx, 0.03, 2.7); piece(g, 0.6, 0.02, 1.4, "#111111", tx, 0.88, 2.65);
+    piece(g, 0.3, 0.25, 0.25, "#9aa0a6", tx, 0.9, 3.35); add(g, box(0.28, 0.2, 0.03), mat("#7fd3ff", { emissive: "#2f8fd0", emissiveIntensity: 0.7 }), tx, 1.25, 3.25, -0.3, 0, 0, false);
+    solid(g, tx, 2.7, 0.7, 1.7);
+    const cw = minifig("#3fae4f", "#d0453a"); cw.position.set(tx - 0.75, 0.03, 2.75); cw.rotation.y = Math.PI / 2; g.add(cw); solid(g, tx - 0.75, 2.75, 0.45);
+  }
+  // ceiling light panels
+  for (const z of [-2.6, -0.4, 1.8]) add(g, box(MW - 2, 0.05, 0.3), mat("#ffffff", { emissive: "#fff6dd", emissiveIntensity: night ? 1.2 : 0.5 }), 0, MH - 0.06, z, 0, 0, 0, false);
+  for (const [list, geom] of [[prods, pg], [fruit, sph(0.08, 8)]]) {   // every product + piece of fruit: one instanced mesh each
+    const im = new THREE.InstancedMesh(geom, new THREE.MeshStandardMaterial({ roughness: 0.5 }), list.length), m4 = new THREE.Matrix4(), col = new THREE.Color();
+    list.forEach(([x, y, z, c2], i) => { m4.makeTranslation(x, y, z); im.setMatrixAt(i, m4); im.setColorAt(i, col.set(c2)); });
+    im.castShadow = false; im.receiveShadow = true; g.add(im); disposables.push(im, im.material);
+  }
+  ceilingLamp(R);
+  const nm = label("Mega Mart", 0.5); nm.position.set(0, 0.6, MD / 2 + 3.0); g.add(nm); signs.push(nm);
+  // the car park out front: bays, a trolley bay, a few parked brick cars, lamps
+  const pz0 = z0 - ROAD / 2, pz1 = zc + MD / 2, pzc = (pz0 + pz1) / 2, pd = pz0 - pz1;
+  add(root, box(MW + 1, 0.06, pd), mat("#55595f", { roughness: 0.95 }), cx, 0.03, pzc, 0, 0, 0, false);
+  for (let x = -8.5; x <= 8.5; x += 2.0) if (Math.abs(x) > 2.2) add(root, box(0.08, 0.01, 2.0), mat("#f4f1e8"), cx + x, 0.065, pz1 + 1.3, 0, 0, 0, false);
+  [[-7.5, "#2f6fb3"], [-5.5, "#f2c230"], [3.5, "#3f9b5a"]].forEach(([x, col]) => {
+    const car = new THREE.Group(); car.position.set(cx + x + 1.0, 0.06, pz1 + 1.3); root.add(car);
+    piece(car, 0.95, 0.45, 1.9, col, 0, 0.15, 0); piece(car, 0.85, 0.35, 1.0, col, 0, 0.6, -0.1); piece(car, 0.87, 0.2, 1.02, "#bfe3ff", 0, 0.66, -0.1);
+    for (const a of [-1, 1]) for (const b of [-1, 1]) add(car, cyl(0.19, 0.19, 0.14, 12), mat("#222"), a * 0.47, 0.19, b * 0.62, 0, 0, Math.PI / 2);
+    solidAt(cx + x + 1.0, pz1 + 1.3, 1.0, 2.0);
+  });
+  add(root, box(0.05, 0.6, 2.6), mat("#9aa0a6", { metalness: 0.5 }), cx + 7.0, 0.36, pz1 + 1.6);               // the trolley bay
+  for (let i = 0; i < 4; i++) { const t = makeTrolley(0.62); t.position.set(cx + 7.45, 0.06, pz1 + 0.5 + i * 0.55); root.add(t); }
+  solidAt(cx + 7.3, pz1 + 1.6, 0.9, 2.8);
+  for (const x of [-4, 4]) { lamp(root, cx + x, pz0 - 0.4, 1.1); solidAt(cx + x, pz0 - 0.4, 0.2); }
+  // where Derek goes: the doors, an aisle inside (with a trolley); Diesel waits outside by the post (no dogs allowed)
+  add(root, box(0.08, 0.9, 0.08), mat("#8b5a2b"), cx - 2.4, 0.5, pz1 + 0.6); solidAt(cx - 2.4, pz1 + 0.6, 0.12);
+  poster(root, 0.8, 0.3, cx - 2.4, 1.05, pz1 + 0.65, 0, (x, w, h) => { x.fillStyle = "#fbf3e4"; x.fillRect(0, 0, w, h); x.fillStyle = "#3a2a1a";
+    x.font = "bold 36px system-ui, 'Segoe UI Emoji', sans-serif"; x.textAlign = "center"; x.textBaseline = "middle"; x.fillText("🐶 WAIT HERE", w / 2, h / 2 + 2); });
+  mart = { box: aabb(g, 0, 0, MW, MD), park: { x0: cx - MW / 2 - 0.5, x1: cx + MW / 2 + 0.5, z0: pz1, z1: pz0 },
+           door: V(cx + 0.9, Y_ROAD, pz1 + 1.6), inside: V(cx + 1.25, Y_BLOCK + 0.03, zc + 0.4), wait: V(cx - 2.0, Y_ROAD, pz1 + 0.9),
+           area: { x0: cx - MW / 2 - 1.5, x1: cx + MW / 2 + 1.5, z0: zc - MD / 2 - 1.5, z1: pz0 } };
+  return mart.door;
+}
+
 // ------------------------------------------------------------------ the world
 function rebuild(town, luckyLive) {
   if (root) { scene.remove(root); for (const d of disposables) d.dispose(); }
   disposables = []; studs = []; clouds = []; bang = null;
-  solids = []; rooms = []; plates = []; blockers = []; jarFill = null; signs = [];
+  solids = []; rooms = []; plates = []; blockers = []; jarFill = null; signs = []; mart = null;
   root = new THREE.Group(); scene.add(root);
   palette = SEASON[wx.season] || SEASON.summer;
   snowy = (wx.snow || 0) >= 0.15;
@@ -820,6 +1034,15 @@ function rebuild(town, luckyLive) {
   solidAt(beach.towel.x + 0.9, beach.towel.z - 0.6, 0.12);
   const st = lastState && lastState.state;
   if (st && (st.owned || []).includes("surfboard")) add(root, box(0.5, 1.9, 0.09), mat("#f6b24a"), cx - 3.8, SAND_Y + 0.85, bzz - 0.3, 0, 0, 0.15);
+  Object.assign(beach, { fish: V(cx + 5.6, SAND_Y, bzz + 1.7), kayak: V(cx + 3.2, WATER_Y, bzz + 7.5), kayakMesh: null });
+  const bown = (k) => !!st && (st.owned || []).includes(k);
+  if (bown("fishing_rod")) { add(root, cyl(0.02, 0.03, 2.2, 6), mat("#3b3f46"), cx + 5.0, SAND_Y + 1.0, bzz + 1.0, 0.35); add(root, cyl(0.16, 0.13, 0.3, 12), mat("#2f6fb3"), cx + 5.5, SAND_Y + 0.15, bzz + 0.8); }
+  if (bown("kayak")) {
+    const k = new THREE.Group(); k.position.set(cx + 4.3, SAND_Y + 0.12, bzz - 1.0); k.rotation.y = 0.3; root.add(k);
+    add(k, sph(0.32, 14), mat("#f2c230"), 0, 0, 0).scale.set(0.9, 0.35, 3.2); add(k, cyl(0.02, 0.02, 1.6, 6), mat("#3b3f46"), 0.5, 0.05, 0.2, 0, 0.4, Math.PI / 2);
+    solidAt(cx + 4.3, bzz - 1.0, 0.7, 2.0); beach.kayakMesh = k;
+  }
+  if (bown("snorkel_set")) { add(root, box(0.22, 0.1, 0.1), mat("#16a085"), cx - 1.2, SAND_Y + 0.05, bzz + 0.9); for (const d of [-0.12, 0.12]) add(root, box(0.12, 0.02, 0.36), mat("#2f6fb3"), cx - 0.8 + d, SAND_Y + 0.02, bzz + 1.0, 0, 0, 0, false); }
   for (const c of ((st && st.beach && st.beach.castles) || []).slice(-1)) { castle(root, beach.castle.x, beach.castle.z, c.size); solidAt(beach.castle.x, beach.castle.z, 1.4); }
   {                                                    // his ride on a restored bike: round the town's ring road + along the wet sand
     const rz = bzz + 1.3, sx0 = cx - isle.w / 2 + 3, sx1 = cx + isle.w / 2 - 3, gx = beach.gate.x, b = bounds;
@@ -886,10 +1109,11 @@ function rebuild(town, luckyLive) {
     }
   }
   places.beach = beach.spot;
+  if (st && (st.mart_open || st.mart)) places.mega_mart = megaMart(cx, bounds.z0);   // the Mega Mart, north end of the island
   const hl = town.lots.find((l) => l.place === "home"); if (hl) homeTop = lotSpot(hl.lot);
 
   // open countryside: trees, bushes, rocks, flowers around the town; palms on the beach
-  const inTown = (x, z) => x > bounds.x0 - 2 && x < bounds.x1 + 2 && z > bounds.z0 - 2 && z < bounds.z1 + 2;
+  const inTown = (x, z) => (x > bounds.x0 - 2 && x < bounds.x1 + 2 && z > bounds.z0 - 2 && z < bounds.z1 + 2) || (mart && inBox(mart.area, x, z));
   const nat = new THREE.Group(); root.add(nat);
   const count = Math.round(isle.w * isle.d / 22);
   for (let i = 0; i < count; i++) {
@@ -931,7 +1155,7 @@ function rebuild(town, luckyLive) {
   if (bang && !luckyLive) bang.material.color.set("#8a8a8a");
 
   // every stud in one instanced mesh (none under the walk-in floors)
-  studs = studs.filter(([x, y, z]) => y > Y_BLOCK + 0.05 || !rooms.some((R) => inBox(R.box, x, z)));
+  studs = studs.filter(([x, y, z]) => (y > Y_BLOCK + 0.05 || !rooms.some((R) => inBox(R.box, x, z))) && !(mart && y < 0.3 && inBox(mart.park, x, z)));
   if (studMesh) { scene.remove(studMesh); studMesh.material.dispose(); studMesh.dispose(); }
   studMesh = new THREE.InstancedMesh(cyl(0.12, 0.12, 0.1, 10), new THREE.MeshStandardMaterial({ roughness: 0.42 }), studs.length);
   const m4 = new THREE.Matrix4(), col = new THREE.Color();
@@ -963,6 +1187,10 @@ function drawMini() {
     const sp = lotSpot(l.lot), look = l.look || {}, [fw, fd] = ROOM_OF[l.place] ? [RW, RD] : [3.2, 2.8];
     g.fillStyle = look.color || (look.kind === "pit" ? "#f2c230" : "#58b05f");
     g.fillRect(X(sp.cx - fw / 2), Z(sp.cz - fd / 2), fw * s, fd * s);
+  }
+  if (mart) {
+    g.fillStyle = "#55595f"; g.fillRect(X(mart.park.x0), Z(mart.park.z0), (mart.park.x1 - mart.park.x0) * s, (mart.park.z1 - mart.park.z0) * s);
+    g.fillStyle = "#d0453a"; g.fillRect(X(mart.box.x0), Z(mart.box.z0), (mart.box.x1 - mart.box.x0) * s, (mart.box.z1 - mart.box.z0) * s);
   }
   if (town.site) { const sp = lotSpot(town.site.lot); g.strokeStyle = "#ff9b2f"; g.lineWidth = 2; g.strokeRect(X(sp.cx - 1.6), Z(sp.cz - 1.4), 3.2 * s, 2.8 * s); }
   const dot = (v, col, r) => { g.fillStyle = col; g.beginPath(); g.arc(X(v.x), Z(v.z), r, 0, 7); g.fill(); g.strokeStyle = "#fff"; g.lineWidth = 1.5; g.stroke(); };
@@ -1096,6 +1324,8 @@ export const where = () => ({ x: +you.position.x.toFixed(2), z: +you.position.z.
   rooms: rooms.map((R) => R.id + ":" + R.f.toFixed(2)) });   // for testing
 export const spots = () => ({ garage: garageWork && { x: +garageWork.pos.x.toFixed(2), z: +garageWork.pos.z.toFixed(2), yaw: +garageWork.yaw.toFixed(2) },
   derek: { x: +jar.position.x.toFixed(2), z: +jar.position.z.toFixed(2), pose: jar.userData.pose, riding: !!jar.userData.riding, bike: !!(jar.userData.bike && jar.userData.bike.visible) } });   // for testing
+export const roomSpots = () => rooms.map((R) => ({ id: R.id, x: +((R.box.x0 + R.box.x1) / 2).toFixed(2), z: +((R.box.z0 + R.box.z1) / 2).toFixed(2), face: +R.g.rotation.y.toFixed(2) }));   // for testing
+export const martSpots = () => mart && { door: [mart.door.x, mart.door.z], inside: [mart.inside.x, mart.inside.z], box: mart.box };   // for testing
 export function goTo(x, z, a = yaw) { if (mode !== "walk") walkMode(true); you.position.set(x, floorY(x, z), z); yaw = a; curD = camDist; }   // for testing
 export function walkMode(on = mode !== "walk") {
   if (!you || !opts.full) return;
@@ -1221,11 +1451,15 @@ function loop() {
   jar.rotation.z = pose === "surf" ? Math.sin(t * 1.7) * 0.12 : 0;
   if (pose === "lie") jar.rotation.y = 0;
   if (jar.userData.board) jar.userData.board.visible = pose === "surf";
+  if (jar.userData.trolley) jar.userData.trolley.visible = jar.userData.pose === "shop" && !!mart && inBox(mart.box, jar.position.x, jar.position.z, 1.2);
+  if (jar.userData.kayak) jar.userData.kayak.visible = jar.userData.pose === "kayak" && groundY(jar.position.x, jar.position.z) === WATER_Y;
+  if (jar.userData.rod) jar.userData.rod.visible = pose === "fish";
   if (jar.userData.umbrella) jar.userData.umbrella.visible = ["rain", "storm", "snow"].includes(wx.kind) && (pose === "walk" || pose === "stand");
   if (pose === "walk") jar.position.y = gy + Math.abs(Math.sin(t * 14)) * 0.08;
   else if (pose === "lie") jar.position.y = SAND_Y + 0.14;
   else if (pose === "swim") jar.position.y = WATER_Y - 0.75 + Math.sin(t * 2) * 0.05;
   else if (pose === "surf") jar.position.y = WATER_Y + 0.12 + Math.sin(t * 2.2) * 0.14;
+  else if (pose === "kayak") jar.position.y = WATER_Y + 0.08 + Math.sin(t * 1.8) * 0.06;
   else if (pose === "ride") jar.position.y = groundY(jar.position.x, jar.position.z) + Math.abs(Math.sin(t * 9)) * 0.015;
   else if (pose === "work") { jar.position.y = gy + Math.abs(Math.sin(t * 5)) * 0.02; if (jar.userData.face != null) jar.rotation.y = jar.userData.face; }
   else jar.position.y = gy + Math.abs(Math.sin(t * 3)) * 0.03;
@@ -1247,6 +1481,7 @@ function loop() {
       const back = new THREE.Vector3(Math.sin(jar.rotation.y), 0, Math.cos(jar.rotation.y));
       let goal = jar.visible ? jar.position.clone().addScaledVector(back, -0.9).add(new THREE.Vector3(back.z * 0.5, 0, -back.x * 0.5)) : homeDoor;
       if (beach && groundY(goal.x, goal.z) === WATER_Y) goal = new THREE.Vector3(jar.position.x, SAND_Y, beach.edge);   // waits on the shore
+      if (mart && jar.visible && inBox(mart.box, jar.position.x, jar.position.z, 0.3)) goal = mart.wait;                 // no dogs in the shop
       const d = goal.clone().sub(pup.position); d.y = 0;
       const dist = d.length();
       if (dist > 0.15) {
@@ -1305,7 +1540,7 @@ export function update(state, town) {
   const lucky = state.lucky || {}, luckyLive = !(lucky.date === (state.stats.today || {}).date && lucky.used >= lucky.max);
   const key = JSON.stringify([town.lots.map((l) => [l.lot, l.id]), town.site && [town.site.lot, town.site.done], town.max_lots, night, luckyLive,
                              ((state.beach && state.beach.castles) || []).map((c) => c.size), (state.owned || []).join(), (state.pup || {}).name || "",
-                             wx.kind, wx.season, Math.round((wx.snow || 0) * 4), (wx.wet || 0) >= 0.35, wx.snowman || 0, garageKey(state.garage)]);
+                             wx.kind, wx.season, Math.round((wx.snow || 0) * 4), (wx.wet || 0) >= 0.35, wx.snowman || 0, garageKey(state.garage), !!state.mart_open]);
   const first = !lastKey;
   if (key !== lastKey) { rebuild(town, luckyLive); lastKey = key; }
   if (jarFill) jarFill.scale.y = Math.max(0.03, Math.min(1, (state.coins || 0) / (state.coins_goal || 1)));
@@ -1313,10 +1548,15 @@ export function update(state, town) {
   let pose = "stand", goal = (places[state.place] || homeDoor).clone();
   if (state.place === "beach" && beach && !state.asleep) {
     if (doing.includes("surf")) { goal = beach.surf.clone(); pose = "surf"; }
+    else if (doing.includes("kayak")) { goal = beach.kayak.clone(); pose = "kayak"; }
+    else if (doing.includes("snorkel")) { goal = beach.swim.clone().add(new THREE.Vector3(2.0, 0, 1.0)); pose = "swim"; }
+    else if (doing.includes("fishing")) { goal = beach.fish.clone(); pose = "fish"; }
     else if (doing.includes("swim")) { goal = beach.swim.clone(); pose = "swim"; }
     else if (doing.includes("tan")) { goal = beach.towel.clone(); pose = "lie"; }
     else if (doing.includes("sand castle")) goal = beach.castle.clone().add(new THREE.Vector3(-1.3, 0, 0.3));
   }
+  if (!state.asleep && state.place === "mega_mart" && mart && doing.startsWith("shopping")) { goal = mart.inside.clone(); pose = "shop"; }
+  if (beach && beach.kayakMesh) beach.kayakMesh.visible = pose !== "kayak";
   const G = state.garage || {}, gp = G.project;
   if (!state.asleep && state.place === "garage" && garageWork && doing.startsWith("restoring")) { goal = garageWork.pos.clone(); pose = "work"; }
   jar.userData.face = pose === "work" ? garageWork.yaw : null;
@@ -1358,6 +1598,7 @@ export function update(state, town) {
     pup.userData.bond = p.bond;
     pup.userData.want = p.wants;
     pup.userData.ride = (p.learned || []).includes("ride");
+    pup.userData.coat.visible = (state.owned || []).includes("dog_coat") && ((state.weather || {}).temp ?? 20) <= 8;
     if (state.asleep && first) pup.position.copy(homeDoor).add(new THREE.Vector3(-0.6, 0, 0));
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_note": "The FREE brain's phrase book: used for his thoughts, reasons, feelings and diary until the real AI is switched on. Add your own lines! Placeholders: {pup} puppy's name, {coins} coins in the jar, {left} coins still needed, {site} what he's building, {book} book he's reading, {engine} a name for an engine, {place} where he's going, {note} something from his notebook, {topic} what he last read about, {waves} today's waves, {bricks} bricks he has, {mood} a feeling word, {weather} the weather, {temp} degrees C, {season} the season. No em dashes.",
+  "_note": "The FREE brain's phrase book: used for his thoughts, reasons, feelings and diary until the real AI is switched on. Add your own lines! Placeholders: {pup} puppy's name, {coins} coins in the jar, {left} coins still needed, {site} what he's building, {book} book he's reading, {engine} a name for an engine, {place} where he's going, {note} something from his notebook, {topic} what he last read about, {waves} today's waves, {bricks} bricks he has, {mood} a feeling word, {weather} the weather, {temp} degrees C, {season} the season, {want} something at the Mega Mart he hasn't got, {thing} something he owns. No em dashes.",
   "thoughts": {
     "morning": [
       "Coffee first. Then the world.",
@@ -577,6 +577,69 @@
       "Next project. A bigger one.",
       "Worth the coins. I'll make her better than new.",
       "Can't walk past a bike like that."
+    ],
+    "go_shopping": [
+      "Mega Mart run.",
+      "Just a quick look. Honest.",
+      "Shopping list's short. Should be."
+    ],
+    "eat_a_snack": [
+      "Biscuit break.",
+      "Tummy's rumbling. Snack time.",
+      "Quick snack, then back to it."
+    ],
+    "nap_on_the_sofa": [
+      "Five minutes on the sofa. Maybe ten.",
+      "Sofa's calling.",
+      "Power nap. Like a pro."
+    ],
+    "watch_a_film": [
+      "Film night. Feet up.",
+      "Haven't watched this one yet.",
+      "Something with motorbikes in it, hopefully."
+    ],
+    "play_guitar": [
+      "Practice makes less terrible.",
+      "Few chords before dinner.",
+      "Let's see if I remember that riff."
+    ],
+    "practise_thai": [
+      "Must learn to order noodles properly.",
+      "Ten new words today.",
+      "Sawasdee khrap. Again."
+    ],
+    "stargaze": [
+      "Clear sky tonight. Telescope out.",
+      "Let's find Saturn.",
+      "Stars look the same over Thailand, I reckon."
+    ],
+    "have_a_braai": [
+      "Fire's going. Locals are coming.",
+      "Braai time. Nothing better.",
+      "Boerewors on the coals. Lekker."
+    ],
+    "fish_off_the_beach": [
+      "Free dinner if they're biting.",
+      "Line in the water, mind in neutral.",
+      "Fishing. Best kind of doing nothing."
+    ],
+    "go_snorkelling": [
+      "Let's see what's on the reef.",
+      "Mask on. Fish spotting.",
+      "Water's clear today."
+    ],
+    "go_kayaking": [
+      "Paddle round the point.",
+      "Kayak time. Good for the arms.",
+      "Out on the water for a bit."
+    ],
+    "make_coffee": [
+      "Proper coffee. Home made.",
+      "Coffee first, then everything else."
+    ],
+    "lie_in_the_hammock": [
+      "Hammock time. Thailand practice.",
+      "Swing and think. Or just swing."
     ]
   },
   "feelings": {
@@ -1205,5 +1268,241 @@
       "Handed {bike}'s keys to her new owner. Big coins for Thailand.",
       "{bike} found a new home. Proud and a bit sad."
     ]
+  },
+  "mart": {
+    "_note": "The Mega Mart (2026-11-27). bought = his line when he buys each thing ({me}, {pup} work). whys_shop = why he's off shopping ({item} = what he's after). thoughts: in_store = while he's there, wanting = something he's eyeing ({want}), his_stuff = enjoying what he's got ({thing}). skill = notes as he practises.",
+    "bought": {
+      "wheelbarrow": [
+        "Twice the bricks, half the back ache.",
+        "Every brick man needs a barrow."
+      ],
+      "impact_wrench": [
+        "Brrrap. Wheel nuts don't stand a chance.",
+        "The rattle gun. Finally."
+      ],
+      "shop_sign": [
+        "Neon. The stall's going to glow like a casino.",
+        "Now they'll see the stall from the beach."
+      ],
+      "coffee_machine": [
+        "No more cafe queue for my first cup.",
+        "Proper coffee at home. Life upgrade."
+      ],
+      "surfboard": [
+        "Time to stand up on a wave. Or try.",
+        "{pup} looked at it like it's a boat. It's not."
+      ],
+      "beach_kit": [
+        "Sunscreen and a brolly. No more lobster days.",
+        "Learned the sunburn lesson. Expensive lesson."
+      ],
+      "hammock": [
+        "A hammock. Retirement practice.",
+        "Swinging between two posts. Thailand mode."
+      ],
+      "groceries": [
+        "Fridge is full. Proper meals all week.",
+        "Cheaper than cooking from scratch every night. Lekker."
+      ],
+      "coffee_beans": [
+        "Good beans for the machine. Treat yourself, hey.",
+        "The good stuff. Smells like a cafe in Chiang Mai."
+      ],
+      "thai_spice_kit": [
+        "Chilli, lemongrass, fish sauce. The noodle kits just got serious.",
+        "Proper Thai spices. My kitchen smells like Bangkok."
+      ],
+      "braai_pack": [
+        "Boerewors and chops. Braai time.",
+        "Meat for the fire. The locals will smell it a mile off."
+      ],
+      "snacks": [
+        "A box of snacks for the road.",
+        "Emergency biscuits. Every toolbox needs some."
+      ],
+      "mattress": [
+        "A proper mattress. My back says thank you.",
+        "Goodbye lumpy bed. Hello eight hours."
+      ],
+      "sofa": [
+        "A sofa. Somewhere to put my feet up for once.",
+        "{pup} claimed the sofa before I sat down."
+      ],
+      "air_con": [
+        "Air-con. Heatwaves can do their worst.",
+        "Cool house, cool head."
+      ],
+      "heater": [
+        "A heater. No more shivering under three blankets.",
+        "Toasty. Even {pup} approves."
+      ],
+      "reading_lamp": [
+        "A proper reading lamp. No more squinting at manuals.",
+        "Good light, good books."
+      ],
+      "film_box": [
+        "An old TV and a box of films. Movie nights sorted.",
+        "Popcorn not included. Will sort that."
+      ],
+      "plants": [
+        "Some green in the house. Makes it feel like home.",
+        "Pot plants. Must remember to water them."
+      ],
+      "socket_set": [
+        "A pro socket set. Every size. Including the 10mm. Two of them.",
+        "Shiny sockets in a proper case. Beautiful."
+      ],
+      "parts_washer": [
+        "A parts washer. No more waiting overnight for a carb to soak.",
+        "Clean parts in minutes. Game changer."
+      ],
+      "compressor": [
+        "An air compressor. Tyres, tools, blowing dust off everything.",
+        "Hiss of the compressor. Music."
+      ],
+      "work_lights": [
+        "Work lights. The garage doesn't close at sunset now.",
+        "Bright as day in there. Late nights on the bike."
+      ],
+      "welder": [
+        "A welder. Now I can fix anything metal.",
+        "Sparks are flying in the garage from today."
+      ],
+      "creeper": [
+        "A creeper. Rolling under cars like a pro.",
+        "My back's been asking for this one."
+      ],
+      "premium_dog_food": [
+        "The good dog food for {pup}. Only the best for the little guy.",
+        "{pup} sniffed the bag and approved."
+      ],
+      "chew_toys": [
+        "Chew toys. Maybe my boots survive now.",
+        "{pup} has a whole toy box now. Spoilt."
+      ],
+      "ball_launcher": [
+        "A ball launcher. {pup} is going to lose his mind.",
+        "Throws further than I can. {pup}'s new favourite thing."
+      ],
+      "dog_bed": [
+        "A proper dog bed for {pup}. Softer than mine was.",
+        "{pup} turned three times and passed out. Good buy."
+      ],
+      "dog_coat": [
+        "A winter coat for {pup}. He looks ridiculous. He loves it.",
+        "Little coat, little legs. Warm pup."
+      ],
+      "training_treats": [
+        "Training treats. Bribery works.",
+        "{pup} will do anything for these."
+      ],
+      "fishing_rod": [
+        "A fishing rod. Free dinners off the beach, hopefully.",
+        "Rod and reel. Supper's in the sea somewhere."
+      ],
+      "snorkel_set": [
+        "Snorkel and mask. Time to see what's under the waves.",
+        "Like Ko Tao, but on a shelf."
+      ],
+      "kayak": [
+        "A kayak. Round the point and back.",
+        "Big buy. Worth it for the sunsets on the water."
+      ],
+      "braai_grill": [
+        "A proper braai. Now I just need wood and friends.",
+        "Fire, meat, mates. The South African way."
+      ],
+      "guitar": [
+        "A guitar. The neighbours will love that.",
+        "Three chords and the truth. Starting with one chord."
+      ],
+      "camera": [
+        "A camera. Better postcards, better memories.",
+        "Every sunset gets a photo now."
+      ],
+      "telescope": [
+        "A telescope. Clear night, here I come.",
+        "Going to find Saturn. Or a satellite. Either way."
+      ],
+      "board_games": [
+        "Board games for the cafe. Someone's going to lose at checkers.",
+        "Cards and dice. The locals are in trouble."
+      ],
+      "backpack": [
+        "A proper travel backpack. Half packed already.",
+        "Bought the bag. Now I just need the trip."
+      ],
+      "thai_phrasebook": [
+        "A Thai phrasebook. Sawasdee khrap, everyone.",
+        "Going to order noodles in Thai one day."
+      ],
+      "riding_gear": [
+        "Riding jacket and helmet. Ready for Thai roads.",
+        "Proper kit. Looks fast standing still."
+      ],
+      "thailand_map": [
+        "A map of Thailand on the wall. Every day I see where I'm going.",
+        "Drew a line from Bangkok to Chiang Mai already."
+      ]
+    },
+    "bought_any": [
+      "Worth it, I reckon.",
+      "Into the trolley.",
+      "Jar took a hit. Life got better.",
+      "Lekker buy."
+    ],
+    "whys_shop": [
+      "Mega Mart run: need {item}.",
+      "Been eyeing {item} for days.",
+      "{item} will make life easier. Worth the coins.",
+      "Quick trip to the Mega Mart for {item}.",
+      "Right. {item}. Then straight home.",
+      "Budget says yes to {item}. Just."
+    ],
+    "thoughts": {
+      "in_store": [
+        "Aisles and aisles of stuff. Must. Not. Buy. Everything.",
+        "Trolley's got a dodgy wheel. Could fix that.",
+        "Everything a brick man could want. And a few things he doesn't.",
+        "Cashier knows my name now. That's a bad sign.",
+        "Just here for one thing. Famous last words.",
+        "Free samples in aisle three. Don't mind if I do.",
+        "This place is bigger than my whole street.",
+        "The tool aisle. My happy place.",
+        "{pup} would love the dog aisle. Strictly no dogs, says the sign."
+      ],
+      "wanting": [
+        "Saw a {want} at the Mega Mart. The jar says not yet.",
+        "Thinking about that {want}. Thinking. Not buying.",
+        "A {want} would be nice. Thailand would be nicer.",
+        "One day I'll get that {want}. When the jar's fat."
+      ],
+      "his_stuff": [
+        "Best thing I bought? Probably the {thing}.",
+        "The {thing} was worth every coin.",
+        "Don't know how I lived without the {thing}.",
+        "Gave the {thing} a proper clean. Look after your stuff."
+      ]
+    },
+    "skill": {
+      "guitar": [
+        "still mostly one chord",
+        "nailed the intro, lost the rest",
+        "{pup} howled along",
+        "the neighbours didn't complain this time",
+        "found a riff that sounds like an engine",
+        "played a whole song, nearly"
+      ],
+      "thai": [
+        "sawasdee khrap (hello)",
+        "khop khun khrap (thank you)",
+        "phet mak (very spicy)",
+        "tao rai khrap? (how much?)",
+        "mai pen rai (no worries)",
+        "aroi mak (very tasty)",
+        "rot motosai (motorbike)",
+        "pai nai? (where are you going?)"
+      ]
+    }
   }
 }

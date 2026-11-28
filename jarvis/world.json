@@ -89,7 +89,19 @@
     "play_in_the_snow": { "label": "playing in the snow with the puppy", "at": ["any"], "needs": { "social": -0.10, "rest": 0.03 },                      "mood": 0.10, "pup": { "bored": -0.60, "tired": 0.15 }, "bond": 0.03, "pup_awake": true, "snow_cover": true },
     "splash_in_puddles": { "label": "splashing in puddles with the puppy", "at": ["any"], "needs": { "social": -0.05, "curiosity": -0.05 },             "mood": 0.07, "pup": { "bored": -0.50, "tired": 0.10 }, "bond": 0.03, "pup_awake": true, "weather": ["rain"] },
     "watch_the_storm":  { "label": "watching the storm from the window", "at": ["home"], "needs": { "rest": -0.05, "curiosity": -0.15 },                  "mood": 0.06, "weather": ["storm"] },
-    "make_hot_chocolate": { "label": "making a hot chocolate",      "at": ["home"],    "needs": { "hunger": -0.20, "rest": -0.03 },                      "mood": 0.07, "coins": -1, "max_temp": 8 }
+    "make_hot_chocolate": { "label": "making a hot chocolate",      "at": ["home"],    "needs": { "hunger": -0.20, "rest": -0.03 },                      "mood": 0.07, "coins": -1, "max_temp": 8 },
+    "_mart_moves": "The Mega Mart (2026-11-27). go_shopping buys ONE thing (add \"item\"). The rest come with things he buys there: 'requires' = he has to own it, 'uses' = it uses up one of a supply (snacks, braai packs). 'skill' = he gets better with practice.",
+    "go_shopping":      { "label": "shopping at the Mega Mart",     "at": ["mega_mart"], "needs": { "curiosity": -0.05, "social": -0.05 },             "mood": 0.03, "shop": true, "hours": [7, 22] },
+    "eat_a_snack":      { "label": "eating a snack",                "at": ["any"],     "needs": { "hunger": -0.30 },                                     "mood": 0.03, "uses": "snacks" },
+    "nap_on_the_sofa":  { "label": "napping on the sofa",           "at": ["home"],    "needs": { "rest": -0.18 },                                       "mood": 0.04, "requires": "sofa" },
+    "watch_a_film":     { "label": "watching a film",               "at": ["home"],    "needs": { "curiosity": -0.20, "rest": -0.05, "social": -0.05 },  "mood": 0.08, "requires": "film_box" },
+    "play_guitar":      { "label": "playing his guitar",            "at": ["home"],    "needs": { "tinker": -0.15, "curiosity": -0.10, "social": -0.05 }, "mood": 0.04, "requires": "guitar", "skill": "guitar" },
+    "practise_thai":    { "label": "practising his Thai",           "at": ["home"],    "needs": { "curiosity": -0.20 },                                  "mood": 0.04, "requires": "thai_phrasebook", "skill": "thai" },
+    "stargaze":         { "label": "stargazing with his telescope", "at": ["home"],    "needs": { "curiosity": -0.35, "rest": -0.03 },                   "mood": 0.08, "requires": "telescope", "hours": [19, 23], "weather": ["sunny", "windy", "heatwave"] },
+    "have_a_braai":     { "label": "having a braai with the locals", "at": ["home"],   "needs": { "social": -0.50, "hunger": -0.60 },                    "mood": 0.10, "requires": "braai_grill", "uses": "braai_packs", "hours": [11, 21] },
+    "fish_off_the_beach": { "label": "fishing off the beach",       "at": ["beach"],   "needs": { "tinker": -0.10, "curiosity": -0.10, "rest": -0.05 },  "mood": 0.05, "requires": "fishing_rod", "fish": true, "hours": [6, 20] },
+    "go_snorkelling":   { "label": "snorkelling over the reef",     "at": ["beach"],   "needs": { "curiosity": -0.30, "rest": 0.04, "hunger": 0.04 },    "mood": 0.09, "requires": "snorkel_set", "hours": [7, 18] },
+    "go_kayaking":      { "label": "paddling his kayak round the point", "at": ["beach"], "needs": { "curiosity": -0.15, "tinker": -0.05, "rest": 0.06, "hunger": 0.04 }, "mood": 0.10, "requires": "kayak", "hours": [7, 19] }
   },
 
   "blueprints": {
@@ -128,15 +140,82 @@
     }
   },
 
+  "mega_mart": {
+    "_note": "A massive supermarket at the north end of the island (a gift, opened 2026-11-27; a fixed place, not a lot). go_shopping there + \"item\":\"<id>\" buys one thing from the catalogue. Brick coins only. max_per_trip = things per visit; big_per_day = buys of big_from+ coins per day (a world rule for both brains, so the Thailand jar keeps growing). The FREE brain also keeps to budget_share of everything he has earned and always keeps 'reserve' coins (groceries, which SAVE him coins, only need the reserve), and shops mostly in this order: pays -> pup -> comfort -> fun ('whim' = how much he strays from it). The real brain sees 'prompt_items' useful things he can afford.",
+    "name": "Mega Mart",
+    "desc": "the Mega Mart at the north end of the island: a massive supermarket with everything a brick man could want",
+    "opened": "A massive supermarket opened at the north end of the island: the Mega Mart. Aisles and aisles of stuff.",
+    "hours": [7, 22],
+    "max_per_trip": 2,
+    "big_from": 20,
+    "big_per_day": 1,
+    "budget_share": 0.2,
+    "whim": 2.2,
+    "reserve": 30,
+    "prompt_items": 10,
+    "aisles": {
+      "food":     { "name": "Food",          "emoji": "🥦" },
+      "home":     { "name": "Home",          "emoji": "🏠" },
+      "garage":   { "name": "Tools + garage", "emoji": "🔧" },
+      "puppy":    { "name": "Puppy",         "emoji": "🐶" },
+      "outdoors": { "name": "Outdoors",      "emoji": "🏖️" },
+      "hobbies":  { "name": "Hobbies",       "emoji": "🎸" },
+      "thailand": { "name": "Thailand trip", "emoji": "✈️" }
+    }
+  },
+
   "catalogue": {
-    "_note": "Things he can BUY with coins (move order_<id>, at home). One of each. 'bonus' = extra coins/bricks on a move, 'sell_chance' = sells more at the stall, 'unlocks' = a new move.",
-    "wheelbarrow":    { "name": "Wheelbarrow",    "coins": 25, "what": "+2 bricks every time he collects", "bonus": { "collect_bricks": { "bricks": 2 } } },
-    "impact_wrench":  { "name": "Impact wrench",  "coins": 30, "what": "+2 coins for every car he fixes",  "bonus": { "fix_a_car": { "coins": 2 } } },
-    "shop_sign":      { "name": "Neon shop sign", "coins": 20, "what": "more people stop at his stall",    "sell_chance": 0.10 },
-    "coffee_machine": { "name": "Coffee machine", "coins": 15, "what": "proper coffee at home",            "unlocks": "make_coffee" },
-    "surfboard":      { "name": "Surfboard",      "coins": 30, "what": "lets him go surfing",              "unlocks": "go_surfing" },
-    "beach_kit":      { "name": "Beach kit",      "coins": 8,  "what": "sunscreen + umbrella: no more sunburn" },
-    "hammock":        { "name": "Hammock",        "coins": 12, "what": "a hammock at home",                "unlocks": "lie_in_the_hammock" }
+    "_note": "Everything on the Mega Mart shelves (go_shopping + \"item\"). One of each, except 'stock' things (supplies he uses up and buys again: 'stock' = how many uses a pack gives, 'supply' = the cupboard it goes in). What things DO: 'on' = extra effects on a move (needs, 'mult' = that need fixed x times better, mood, coins, bricks, pup, 'pup_mult', 'free' = no coin cost, 'train' = better training odds); 'rates' / 'pup_rates' = his / the pup's needs change x times as fast; 'shield' = heat or cold stops bothering him ('pup_shield' for the pup); 'mood_base' = a small lift all the time; 'sell_chance'; 'product_value' = his things sell for more; 'stage' = fewer bike-restoration sessions; 'no_wait' = skips an overnight wait; 'sessions' = more bike sessions a day; 'unlocks' = a new move. 'needs_item' / 'needs_place' / 'season' = only worth it then (the free brain checks). 'group' = the free brain's shopping order.",
+    "wheelbarrow":    { "name": "Wheelbarrow",    "emoji": "🛒", "aisle": "garage", "group": "pays", "coins": 25, "what": "+2 bricks every time he collects", "on": { "collect_bricks": { "bricks": 2 } } },
+    "impact_wrench":  { "name": "Impact wrench",  "emoji": "🔧", "aisle": "garage", "group": "pays", "coins": 30, "what": "+2 coins for every car he fixes", "on": { "fix_a_car": { "coins": 2 } } },
+    "shop_sign":      { "name": "Neon shop sign", "emoji": "💡", "aisle": "hobbies", "group": "pays", "coins": 20, "what": "more people stop at his stall", "sell_chance": 0.10, "needs_place": "market_stall" },
+    "coffee_machine": { "name": "Coffee machine", "emoji": "☕", "aisle": "home", "group": "comfort", "coins": 15, "what": "proper coffee at home", "unlocks": "make_coffee" },
+    "surfboard":      { "name": "Surfboard",      "emoji": "🏄", "aisle": "outdoors", "group": "fun", "coins": 30, "what": "lets him go surfing", "unlocks": "go_surfing" },
+    "beach_kit":      { "name": "Beach kit",      "emoji": "⛱️", "aisle": "outdoors", "group": "comfort", "coins": 8, "what": "sunscreen + umbrella: no more sunburn" },
+    "hammock":        { "name": "Hammock",        "emoji": "🏝️", "aisle": "home", "group": "comfort", "coins": 12, "what": "a hammock at home", "unlocks": "lie_in_the_hammock" },
+
+    "groceries":      { "name": "Bag of groceries", "emoji": "🛍️", "aisle": "food", "group": "pays", "coins": 8, "stock": 6, "supply": "meals", "saves": true, "what": "6 proper meals at home with no 2-coin cooking cost", "on": { "cook_dinner": { "free": true, "mood": 0.02 } } },
+    "coffee_beans":   { "name": "Good coffee beans", "emoji": "🫘", "aisle": "food", "group": "comfort", "coins": 4, "stock": 10, "supply": "beans", "what": "10 proper coffees that rest him more", "needs_item": "coffee_machine", "on": { "make_coffee": { "mult": { "rest": 1.6 }, "mood": 0.02 } } },
+    "thai_spice_kit": { "name": "Thai spice kit", "emoji": "🌶️", "aisle": "food", "group": "pays", "coins": 6, "what": "noodle kits sell for 1 more coin, tastier dinners", "needs_place": "noodle_stall", "product_value": { "noodle_kit": 1 }, "on": { "cook_dinner": { "mood": 0.02 } } },
+    "braai_pack":     { "name": "Braai pack",     "emoji": "🥩", "aisle": "food", "group": "fun", "coins": 5, "stock": 2, "supply": "braai_packs", "what": "meat + boerewors for 2 braais", "needs_item": "braai_grill" },
+    "snacks":         { "name": "Box of snacks",  "emoji": "🍪", "aisle": "food", "group": "comfort", "coins": 3, "stock": 6, "supply": "snacks", "what": "6 snacks he can eat anywhere (eat_a_snack)" },
+
+    "mattress":       { "name": "Big comfy mattress", "emoji": "🛏️", "aisle": "home", "group": "comfort", "coins": 35, "what": "sleep recovers him 30% faster", "rates": { "rest": { "asleep": 1.3 } } },
+    "sofa":           { "name": "Sofa",           "emoji": "🛋️", "aisle": "home", "group": "comfort", "coins": 30, "what": "naps on the sofa", "unlocks": "nap_on_the_sofa" },
+    "air_con":        { "name": "Air-con",        "emoji": "❄️", "aisle": "home", "group": "comfort", "coins": 45, "what": "heatwaves stop tiring him", "shield": "heat", "season": ["spring", "summer"] },
+    "heater":         { "name": "Heater",         "emoji": "🔥", "aisle": "home", "group": "comfort", "coins": 20, "what": "cold days stop dragging his mood down", "shield": "cold", "season": ["autumn", "winter"] },
+    "reading_lamp":   { "name": "Reading lamp",   "emoji": "💡", "aisle": "home", "group": "comfort", "coins": 8, "what": "reading fixes his curiosity 30% better", "on": { "read_a_book": { "mult": { "curiosity": 1.3 } }, "read_a_manual": { "mult": { "curiosity": 1.3 } }, "read_about_thailand": { "mult": { "curiosity": 1.3 } } } },
+    "film_box":       { "name": "TV + box of films", "emoji": "📺", "aisle": "home", "group": "fun", "coins": 40, "what": "an old TV and a box of offline films (watch_a_film)", "unlocks": "watch_a_film" },
+    "plants":         { "name": "Pot plants",     "emoji": "🪴", "aisle": "home", "group": "comfort", "coins": 6, "what": "a bit of green: a small mood lift all the time", "mood_base": 0.02 },
+
+    "socket_set":     { "name": "Pro socket set", "emoji": "🧰", "aisle": "garage", "group": "pays", "coins": 25, "what": "engine stages of a restoration take 1 session less, tinkering is more fun", "stage": { "engine": -1 }, "on": { "tinker_with_bike": { "mood": 0.03 } } },
+    "parts_washer":   { "name": "Parts washer",   "emoji": "🧪", "aisle": "garage", "group": "pays", "coins": 30, "what": "carbs come clean in the washer: no overnight soak", "no_wait": ["soak"] },
+    "compressor":     { "name": "Air compressor", "emoji": "💨", "aisle": "garage", "group": "pays", "coins": 35, "what": "+1 coin for every car he fixes", "on": { "fix_a_car": { "coins": 1 } } },
+    "work_lights":    { "name": "Work lights",    "emoji": "🔦", "aisle": "garage", "group": "pays", "coins": 15, "what": "one more bike-restoration session a day (late nights in the garage)", "sessions": 1 },
+    "welder":         { "name": "Welder",         "emoji": "⚡", "aisle": "garage", "group": "pays", "coins": 40, "what": "strip + racks stages take 1 session less", "stage": { "strip": -1, "racks": -1 } },
+    "creeper":        { "name": "Mechanic's creeper", "emoji": "🛹", "aisle": "garage", "group": "comfort", "coins": 10, "what": "lying on a creeper: car + bike work tire him less", "on": { "fix_a_car": { "needs": { "rest": -0.03 } }, "work_on_the_restoration": { "needs": { "rest": -0.03 } } } },
+
+    "premium_dog_food": { "name": "Premium dog food", "a": "some", "emoji": "🦴", "aisle": "puppy", "group": "pup", "coins": 12, "what": "the pup gets hungry 20% slower", "pup_rates": { "hunger": { "awake": 0.8 } } },
+    "chew_toys":      { "name": "Chew toys",      "emoji": "🧸", "aisle": "puppy", "group": "pup", "coins": 5, "what": "the pup gets bored 20% slower", "pup_rates": { "bored": { "awake": 0.8 } } },
+    "ball_launcher":  { "name": "Ball launcher",  "emoji": "🎾", "aisle": "puppy", "group": "pup", "coins": 18, "what": "playing with the pup counts double", "on": { "play_with_the_puppy": { "pup_mult": { "bored": 2 } }, "play_fetch_on_the_beach": { "pup_mult": { "bored": 1.5 } } } },
+    "dog_bed":        { "name": "Proper dog bed", "emoji": "🛏️", "aisle": "puppy", "group": "pup", "coins": 15, "what": "the pup's naps rest him 30% faster", "pup_rates": { "tired": { "asleep": 1.3 } } },
+    "dog_coat":       { "name": "Winter dog coat", "emoji": "🧥", "aisle": "puppy", "group": "pup", "coins": 10, "what": "the cold stops wearing the pup out; snow play is even better", "pup_shield": "cold", "season": ["autumn", "winter"], "on": { "play_in_the_snow": { "mood": 0.03 } } },
+    "training_treats": { "name": "Training treats", "emoji": "🍖", "aisle": "puppy", "group": "pup", "coins": 4, "stock": 10, "supply": "treats", "what": "10 training sessions with +15% odds", "on": { "train_the_puppy": { "train": 0.15 } } },
+
+    "fishing_rod":    { "name": "Fishing rod",    "emoji": "🎣", "aisle": "outdoors", "group": "pays", "coins": 15, "what": "fish off the beach: a catch = a free dinner", "unlocks": "fish_off_the_beach" },
+    "snorkel_set":    { "name": "Snorkel set",    "emoji": "🤿", "aisle": "outdoors", "group": "fun", "coins": 12, "what": "snorkelling over the reef", "unlocks": "go_snorkelling" },
+    "kayak":          { "name": "Kayak",          "emoji": "🛶", "aisle": "outdoors", "group": "fun", "coins": 45, "what": "paddling round the point", "unlocks": "go_kayaking" },
+    "braai_grill":    { "name": "Braai grill",    "emoji": "🍖", "aisle": "outdoors", "group": "fun", "coins": 20, "what": "braais with the locals at home (needs braai packs)", "unlocks": "have_a_braai" },
+
+    "guitar":         { "name": "Guitar",         "emoji": "🎸", "aisle": "hobbies", "group": "fun", "coins": 30, "what": "plays guitar, gets better with practice", "unlocks": "play_guitar" },
+    "camera":         { "name": "Camera",         "emoji": "📷", "aisle": "hobbies", "group": "pays", "coins": 25, "what": "his postcards sell for 1 more coin; sunsets are better", "product_value": { "postcard": 1 }, "needs_place": "market_stall", "on": { "watch_the_sunset": { "mood": 0.03 } } },
+    "telescope":      { "name": "Telescope",      "emoji": "🔭", "aisle": "hobbies", "group": "fun", "coins": 40, "what": "stargazing on clear evenings", "unlocks": "stargaze" },
+    "board_games":    { "name": "Board games",    "emoji": "🎲", "aisle": "hobbies", "group": "fun", "coins": 10, "what": "more company at the cafe (chatting fixes loneliness 40% better)", "on": { "chat_with_locals": { "mult": { "social": 1.4 }, "mood": 0.02 } } },
+
+    "backpack":       { "name": "Travel backpack", "emoji": "🎒", "aisle": "thailand", "group": "fun", "coins": 15, "what": "packed and ready: counting the jar + reading about Thailand feel even better", "on": { "count_savings": { "mood": 0.03 }, "read_about_thailand": { "mood": 0.03 } } },
+    "thai_phrasebook": { "name": "Thai phrasebook", "emoji": "📕", "aisle": "thailand", "group": "fun", "coins": 6, "what": "practising Thai, gets better with practice", "unlocks": "practise_thai" },
+    "riding_gear":    { "name": "Riding jacket + helmet", "emoji": "🪖", "aisle": "thailand", "group": "fun", "coins": 35, "what": "every ride lifts him more", "on": { "go_for_a_ride": { "mood": 0.05 }, "ride_a_restored_bike": { "mood": 0.05 }, "ride_the_track": { "mood": 0.05 } } },
+    "thailand_map":   { "name": "Map of Thailand", "emoji": "🗺️", "aisle": "thailand", "group": "fun", "coins": 5, "what": "on the wall at home: keeps the dream in view (small mood lift, counting the jar feels better)", "mood_base": 0.02, "on": { "count_savings": { "mood": 0.03 } } }
   },
 
   "puppy": {
@@ -200,24 +279,30 @@
     "kinds": {
       "sunny":    { "emoji": "☀️",  "name": "sunny",     "temp": 1,  "mood": 0.03 },
       "cloudy":   { "emoji": "☁️",  "name": "cloudy",    "temp": -1, "mood": 0.0,  "tan": 0.5 },
-      "windy":    { "emoji": "💨", "name": "windy",     "temp": -2, "mood": 0.0,  "waves": "good", "closes": { "look_out_over_town": "too windy up the tower" } },
-      "fog":      { "emoji": "🌫️", "name": "foggy",     "temp": -1, "mood": -0.01, "waves": "flat", "closes": { "sunbathe": "no sun in this fog", "watch_the_sunset": "can't see the sunset in this fog", "look_out_over_town": "can't see a thing in this fog" } },
+      "windy":    { "emoji": "💨", "name": "windy",     "temp": -2, "mood": 0.0,  "waves": "good", "closes": { "look_out_over_town": "too windy up the tower", "go_kayaking": "too choppy for the kayak" } },
+      "fog":      { "emoji": "🌫️", "name": "foggy",     "temp": -1, "mood": -0.01, "waves": "flat", "closes": { "sunbathe": "no sun in this fog", "watch_the_sunset": "can't see the sunset in this fog", "look_out_over_town": "can't see a thing in this fog", "go_snorkelling": "can't see the reef in this fog" } },
       "rain":     { "emoji": "🌧️", "name": "rainy",     "temp": -2, "mood": -0.03, "sell": 0.6, "site_slow": 0.4,
-                    "closes": { "sunbathe": "it's raining, no sun to tan in", "watch_the_sunset": "the sunset's hiding behind the rain", "build_a_sand_castle": "the sand's turned to soup" } },
+                    "closes": { "sunbathe": "it's raining, no sun to tan in", "watch_the_sunset": "the sunset's hiding behind the rain", "build_a_sand_castle": "the sand's turned to soup", "have_a_braai": "the braai's rained out" } },
       "storm":    { "emoji": "⛈️", "name": "stormy",    "temp": -3, "mood": -0.05, "sell": 0.0, "site_slow": 1.0, "waves": "good", "pup_want": "cuddle",
                     "closes": { "sunbathe": "lightning about, not lying on the beach", "go_for_a_swim": "not swimming in a thunderstorm", "go_surfing": "not surfing in lightning, he's not mad",
                                 "build_a_sand_castle": "storm's flattening everything", "watch_the_sunset": "no sunset in this storm", "go_for_a_ride": "not riding in a thunderstorm",
                                 "ride_the_track": "the track's a mud bath in this storm", "run_the_stall": "the stall's shut, nobody's out in this storm",
                                 "work_on_site": "too dangerous on the scaffolding in a storm", "look_out_over_town": "not climbing a tower in lightning",
-                                "ride_a_restored_bike": "not taking the bike out in a thunderstorm" } },
+                                "ride_a_restored_bike": "not taking the bike out in a thunderstorm", "go_snorkelling": "not in the sea in a thunderstorm",
+                                "go_kayaking": "not paddling out in a thunderstorm", "fish_off_the_beach": "not standing on the beach with a rod in lightning",
+                                "have_a_braai": "no braai in this storm" } },
       "snow":     { "emoji": "🌨️", "name": "snowing",   "temp": 0,  "mood": 0.02, "sell": 0.7, "site_slow": 0.5, "hunger": 0.01, "pup_want": "play", "snows": true,
                     "closes": { "sunbathe": "it's snowing, not tanning weather", "go_for_a_swim": "the sea's freezing", "go_surfing": "too cold to surf",
                                 "build_a_sand_castle": "the sand's frozen solid", "ride_the_track": "the track's under snow",
-                                "ride_a_restored_bike": "the roads are icy, the bike stays in" } },
+                                "ride_a_restored_bike": "the roads are icy, the bike stays in", "go_snorkelling": "the sea's freezing",
+                                "go_kayaking": "too cold to paddle", "have_a_braai": "no braai in the snow" } },
       "heatwave": { "emoji": "🥵", "name": "a heatwave", "temp": 5, "mood": -0.01, "sell": 0.8, "tan": 1.6, "sunburn_after": 2, "rest": 0.01, "waves": "flat" }
     },
     "cold_from": 8,
-    "cold_closes": { "sunbathe": "too cold to sunbathe", "go_for_a_swim": "the sea's freezing" }
+    "cold_closes": { "sunbathe": "too cold to sunbathe", "go_for_a_swim": "the sea's freezing", "go_snorkelling": "the sea's freezing", "go_kayaking": "too cold to paddle" },
+    "_cold": "At cold_from C or colder (Mega Mart, 2026-11-27): his mood target drops by cold_mood unless he owns a heater; the pup gets tired pup_cold_tired faster per awake tick unless he has a winter coat.",
+    "cold_mood": -0.03,
+    "pup_cold_tired": 0.008
   },
 
   "books": {

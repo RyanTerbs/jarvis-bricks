@@ -197,6 +197,11 @@ def fresh_state(now):
         "restored": [],                 # every project he finished (kept or sold)
         "bike_offer": None,             # a project bike for sale ({kind, since})
         "garage_free_since": None,
+        "supplies": {},                 # things from the Mega Mart he uses up (meals, snacks, coffee beans...)
+        "skills": {},                   # guitar, Thai: better with practice
+        "shop": {"date": None, "big": 0, "trip": 0, "spent": 0, "bought": 0},
+        "earned": 0,                    # every coin he has ever earned (the free brain shops from a share of it)
+        "mart_open": False,
         "queue": [],
         "lucky": {"date": today, "used": 0, "max": 3},
         "designed_on": None,
@@ -247,8 +252,11 @@ def update_pup(state, world, now, log):
     tired = pup["needs"]["tired"]
     pup["napping"] = state["asleep"] or tired >= 0.9 or (pup["napping"] and tired > 0.3)
     mode = "asleep" if pup["napping"] else "awake"
-    for n, rate in P["needs"].items():
-        pup["needs"][n] = round(clamp(pup["needs"][n] + rate[mode], 0, 1), 3)
+    for n, r in P["needs"].items():
+        d = r[mode] * rate(state, n, mode, pup=True, world=world)          # premium food, chew toys, a proper bed
+        if n == "tired" and mode == "awake" and is_cold(state, world) and not shielded(state, "cold", pup=True, world=world):
+            d += world["weather"].get("pup_cold_tired", 0)             # the cold wears him out (a winter coat fixes it)
+        pup["needs"][n] = round(clamp(pup["needs"][n] + d, 0, 1), 3)
     neglected = max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= P["neglect_from"]
     if neglected and not pup["napping"]:         # only counts while he's awake
         pup["bond"] = round(max(0.0, pup["bond"] - 0.01), 3)
@@ -271,7 +279,7 @@ def update_pup(state, world, now, log):
             log("noticed", random.choice(P["events"]).replace("{pup}", name[:1].upper() + name[1:]))
 
 
-def train_pup(state, world, trick, log):
+def train_pup(state, world, trick, log, extra=0.0):
     """One training session. Works best when he's fed, rested and bonded. Returns (note, mood_bonus)."""
     pup, T = state["pup"], world["puppy"]["tricks"]
     todo = [t for t in T if not t.startswith("_") and t not in pup["learned"]]
@@ -279,7 +287,7 @@ def train_pup(state, world, trick, log):
         return "he knows every trick already", 0.0
     trick = trick if trick in todo else todo[0]
     n, name = pup["needs"], pup_name(state)
-    chance = 0.45 + perk_sum(state, "train_chance") + 0.35 * pup["bond"] - 0.5 * max(0, n["hunger"] - 0.6) - 0.5 * max(0, n["tired"] - 0.6)
+    chance = 0.45 + extra + perk_sum(state, "train_chance") + 0.35 * pup["bond"] - 0.5 * max(0, n["hunger"] - 0.6) - 0.5 * max(0, n["tired"] - 0.6)
     if random.random() >= chance:
         return f"{T[trick]['name']}: {name} wasn't having it", -0.01
     pup["tricks"][trick] = pup["tricks"].get(trick, 0) + 1
@@ -420,12 +428,15 @@ def merged_world(world, town, state, today):
     W = dict(world)
     W["places"] = {l["place"]: l["desc"] for l in sorted(town["lots"], key=lambda l: l["lot"]) if l.get("place")}
     W["places"] |= {k: v for k, v in world.get("fixed_places", {}).items() if not k.startswith("_")}
+    if world.get("mega_mart"):
+        W["places"]["mega_mart"] = world["mega_mart"]["desc"]
     site = town["site"]
     if site:
         W["places"]["building_site"] = (f"the building site, where the {site['name']} is going up "
                                         f"({site['done']}/{site['work']} done)")
     moves = {m: d for m, d in world["moves"].items()
-             if not m.startswith("_") and d.get("requires", "") in ("", *state["owned"])} | town["custom_moves"]
+             if not m.startswith("_") and d.get("requires", "") in ("", *state["owned"])
+             and (not d.get("uses") or state["supplies"].get(d["uses"], 0) > 0)} | town["custom_moves"]
     moves |= project_moves(state, world, town, today)      # his bike restoration in the garage
     hr = state.get("hour", 12)
     moves = {m: d for m, d in moves.items() if "hours" not in d or d["hours"][0] <= hr < d["hours"][1]}
@@ -448,10 +459,9 @@ def merged_world(world, town, state, today):
             if not pid.startswith("_") and state["bricks"] >= pr["bricks"] and state["coins"] >= pr["coins"]:
                 moves[f"make_{pid}"] = {"label": f"making a {pr['name']}", "at": pr["at"], "needs": pr.get("needs", {}),
                                         "mood": pr.get("mood", 0.0), "bricks": -pr["bricks"], "coins": -pr["coins"], "make": pid}
-    for cid, c in world["catalogue"].items():
-        if not cid.startswith("_") and cid not in state["owned"] and state["coins"] >= c["coins"]:
-            moves[f"order_{cid}"] = {"label": f"ordering a {c['name'].lower()} from the catalogue", "at": ["home"],
-                                     "needs": {"curiosity": -0.05}, "mood": 0.10, "coins": -c["coins"], "buy": cid}
+    if "go_shopping" in moves and ((state["place"] == "mega_mart" and state["shop"].get("trip", 0) >= world["mega_mart"]["max_per_trip"])
+                                   or not any(can_buy(state, world, i, today)[0] for i in items(world))):
+        moves.pop("go_shopping")                  # trolley full, or nothing he can afford
     luck = state["lucky"]
     if luck["date"] == today and luck["used"] >= world["lucky_block"]["per_day"]:
         moves.pop("hit_the_lucky_block", None)
@@ -807,7 +817,7 @@ def stage_sessions(state, st):
     """Work sessions this stage needs; finished books with project_stage perks cut it."""
     if st.get("odds"):
         return 1
-    return max(1, st["sessions"] - int(round(perk_sum(state, "project_stage", stage=st["id"]))))
+    return max(1, st["sessions"] - int(round(perk_sum(state, "project_stage", stage=st["id"]))) + int(item_sum(state, "stage", st["id"])))
 
 
 def project_status(state, world, today):
@@ -823,7 +833,7 @@ def project_status(state, world, today):
     if pr.get("wait") and today < pr["wait"]["until"]:
         return {"soak": "carb soaking in cleaner till tomorrow", "dry": "paint drying till tomorrow",
                 "start": "try the first start again tomorrow"}.get(pr["wait"]["why"], "waiting till tomorrow")
-    if pr.get("today_date") == today and pr.get("today", 0) >= world["garage_projects"]["sessions_per_day"]:
+    if pr.get("today_date") == today and pr.get("today", 0) >= world["garage_projects"]["sessions_per_day"] + int(item_sum(state, "sessions", world=world)):
         return "done enough on it for today"
     return None
 
@@ -1079,7 +1089,7 @@ def project_move(state, world, town, what, step, today, log):
             pr["parts"] = "none" if nxt.get("coins") else "in"
             return True, f"{st['name']} done!", 0.08
         w = st.get("wait")
-        if w and pr["done"] == w["after"]:
+        if w and pr["done"] == w["after"] and not no_wait(state, w["why"]):   # parts washer: no overnight soak
             pr["wait"] = {"until": day_after(today), "why": w["why"]}
             log("bike", bike_fill(fb_pick((L.get("wait") or {}).get(w["why"]) or ["Leaving {bike} till tomorrow."]), state, world))
         return True, f"{st['name']} {pr['done']}/{need}", 0.0
@@ -1136,7 +1146,7 @@ def sell_stock(state, world, pricing):
             break
         if random.random() < chance:
             sold[pid] += 1
-            coins += max(1, round((P[pid]["value"] + perk_sum(state, "product_value", product=pid)) * rule["price"]))
+            coins += max(1, round((P[pid]["value"] + perk_sum(state, "product_value", product=pid) + item_sum(state, "product_value", pid, world)) * rule["price"]))
             state["stock"][pid] -= 1
     state["stock"] = {k: v for k, v in state["stock"].items() if v > 0}
     state["coins"] += coins
@@ -1147,6 +1157,234 @@ def sell_stock(state, world, pricing):
         return f"{pricing} prices, no buyers this time" + (f" (quiet in this {state['weather']['kind']})" if quiet else ""), -0.02
     what = ", ".join(f"{n} {P[pid]['name']}" + ("s" if n > 1 else "") for pid, n in sold.items())
     return f"{pricing} prices, sold {what} for {coins} coins", 0.05
+
+
+# ---------------------------------------------------------------- the Mega Mart (no AI)
+
+GROUPS = ["pays", "pup", "comfort", "fun"]          # the free brain's shopping order
+MART_MOVES = ("nap_on_the_sofa", "watch_a_film", "play_guitar", "practise_thai", "stargaze", "have_a_braai",
+              "fish_off_the_beach", "go_snorkelling", "go_kayaking", "eat_a_snack", "make_coffee", "lie_in_the_hammock")
+
+
+def items(world=None):
+    world = world or _CUR.get("world") or {}
+    return {k: v for k, v in world.get("catalogue", {}).items() if not k.startswith("_")}
+
+
+def supply_of(iid, it):
+    return it.get("supply", iid)
+
+
+def an(name):
+    return "an" if name[:1].lower() in "aeiou" else "a"
+
+
+def item_label(it):
+    """'a bag of groceries', 'some work lights', 'a Thai phrasebook'."""
+    n = it["name"] if it["name"].startswith(("Thai", "TV")) else it["name"][:1].lower() + it["name"][1:]
+    head = n.split(" of ")[0].split(" + ")[0]
+    a = it.get("a") or ("some" if head.endswith("s") and not head.endswith("ss") else an(n))
+    return f"{a} {n}"
+
+
+def active_items(state, world=None):
+    """Things whose effects work right now: what he owns, plus supplies that aren't used up yet."""
+    out = []
+    for iid, it in items(world).items():
+        if it.get("stock"):
+            if state.get("supplies", {}).get(supply_of(iid, it), 0) > 0:
+                out.append((iid, it))
+        elif iid in state.get("owned", []):
+            out.append((iid, it))
+    return out
+
+
+def item_sum(state, field, key=None, world=None):
+    """Add up a number his things give (mood_base, sessions, stage[engine], product_value[postcard]...)."""
+    total = 0
+    for _, it in active_items(state, world):
+        v = it.get(field)
+        if isinstance(v, dict):
+            v = v.get(key, 0) if key is not None else 0
+        if isinstance(v, (int, float)) and not isinstance(v, bool):
+            total += v
+    return total
+
+
+def shielded(state, kind, pup=False, world=None):
+    f = "pup_shield" if pup else "shield"
+    return any(it.get(f) == kind for _, it in active_items(state, world))
+
+
+def rate(state, need, mode, pup=False, world=None):
+    """How fast a need moves with his things (mattress = sleep recovers faster, premium food = pup hungry slower)."""
+    r = 1.0
+    for _, it in active_items(state, world):
+        r *= ((it.get("pup_rates" if pup else "rates") or {}).get(need) or {}).get(mode, 1.0)
+    return r
+
+
+def no_wait(state, why):
+    return any(why in (it.get("no_wait") or []) for _, it in active_items(state))
+
+
+def is_cold(state, world):
+    return (state.get("weather") or {}).get("temp", 20) <= world["weather"]["cold_from"]
+
+
+def shop_day(state, today):
+    sh = state["shop"]
+    if sh.get("date") != today:
+        sh.update(date=today, big=0)
+    return sh
+
+
+def can_buy(state, world, iid, today):
+    """Can he buy this right now? (ok, reason). World rules for BOTH brains."""
+    it, M = items(world).get(iid), world["mega_mart"]
+    if not it:
+        return False, f"no '{clean_text(iid, 24)}' on the shelves (say an item id)"
+    if not it.get("stock") and iid in state["owned"]:
+        return False, f"already has {an(it['name'])} {it['name'].lower()}"
+    if state["coins"] < it["coins"]:
+        return False, f"{it['name']} costs {it['coins']} coins, he has {state['coins']}"
+    if state["shop"].get("trip", 0) >= M["max_per_trip"]:
+        return False, f"trolley's full: {M['max_per_trip']} things a trip"
+    if it["coins"] >= M["big_from"] and shop_day(state, today)["big"] >= M["big_per_day"]:
+        return False, "already made one big buy today (one a day keeps the Thailand jar growing)"
+    return True, None
+
+
+def worth_it(state, world, town, iid, it):
+    """Free brain + the real brain's short list: is this one useful right now?"""
+    if it.get("stock"):
+        if state["supplies"].get(supply_of(iid, it), 0) > 1:
+            return False
+    elif iid in state["owned"]:
+        return False
+    if it.get("needs_item") and it["needs_item"] not in state["owned"]:
+        return False
+    if it.get("needs_place") and not has_place(town, it["needs_place"]):
+        return False
+    return True
+
+
+def mart_offer(state, world, town, today, n=10):
+    """The ~10 useful things he can afford now, for the real brain's prompt (keeps it lean)."""
+    pool = [(iid, it) for iid, it in items(world).items() if worth_it(state, world, town, iid, it) and can_buy(state, world, iid, today)[0]]
+    random.shuffle(pool)
+    pool.sort(key=lambda x: (GROUPS.index(x[1].get("group", "fun")) if x[1].get("group") in GROUPS else 9))
+    return pool[:n]
+
+
+def shop_pick(state, world, town, today):
+    """FREE brain: what to buy this trip (up to 2). Thailand-jar guard: keeps 'reserve' coins, spends at most
+    budget_share of everything earned (groceries only need the reserve: they save coins), one big buy a day,
+    order = pays for itself -> the pup -> comfort -> fun. Seasonal things only in their season."""
+    M = world["mega_mart"]
+    budget = M["budget_share"] * state.get("earned", 0) - state["shop"].get("budget_spent", 0)
+    season = (state.get("weather") or {}).get("season")
+    coins, big, picks = state["coins"], shop_day(state, today)["big"], []
+    # mostly in group order (pays -> pup -> comfort -> fun), with a bit of whim so the fun stuff isn't months away;
+    # supplies he's run out of come first. Groceries ('saves') save him coins, so they only need the reserve.
+    pool = [(iid, it) for iid, it in items(world).items() if worth_it(state, world, town, iid, it)
+            and (not it.get("season") or season in it["season"])]
+    rank = lambda iid, it: ((-5 if it.get("stock") and it.get("saves") and not state["supplies"].get(supply_of(iid, it)) else 0)
+                            + (GROUPS.index(it["group"]) if it.get("group") in GROUPS else 4) + random.uniform(0, M.get("whim", 2.2)))
+    for iid, it in sorted(pool, key=lambda x: rank(*x)):
+        price = it["coins"]
+        if coins - price < M["reserve"] or (price >= M["big_from"] and big >= M["big_per_day"]):
+            continue
+        if not it.get("saves"):
+            if price > budget:
+                continue
+            budget -= price
+        picks.append(iid)
+        coins -= price
+        big += price >= M["big_from"]
+        if len(picks) >= M["max_per_trip"]:
+            break
+    return picks
+
+
+def buy_line(iid, it):
+    L = free_brain().get("mart", {}).get("bought", {})
+    return fb_pick(L.get(iid) or free_brain().get("mart", {}).get("bought_any") or ["Lekker."])
+
+
+def go_shopping(state, world, town, iid, today, log):
+    """One thing into the trolley. Returns (ok, note, mood_bonus)."""
+    if not iid:
+        return False, 'say what to buy: add "item":"<id>" to go_shopping', 0.0
+    iid = str(iid).strip().lower().replace(" ", "_")
+    ok, why = can_buy(state, world, iid, today)
+    if not ok:
+        return False, why, 0.0
+    it, sh = items(world)[iid], state["shop"]
+    state["coins"] -= it["coins"]
+    sh["spent"] = sh.get("spent", 0) + it["coins"]
+    if not it.get("saves"):
+        sh["budget_spent"] = sh.get("budget_spent", 0) + it["coins"]
+    sh["bought"] = sh.get("bought", 0) + 1
+    sh["trip"] = sh.get("trip", 0) + 1
+    if it["coins"] >= world["mega_mart"]["big_from"]:
+        sh["big"] += 1
+    name, label = it["name"].lower(), item_label(it)
+    if it.get("stock"):
+        k = supply_of(iid, it)
+        state["supplies"][k] = state["supplies"].get(k, 0) + it["stock"]
+        note = f"{it['coins']} coins, {state['supplies'][k]} in the cupboard"
+    else:
+        state["owned"].append(iid)
+        note = f"{it['coins']} coins: {it['what']}"
+        town["history"].append({"date": today, "text": f"Bought {label} at the Mega Mart ({it['what']})."})
+    log("bought", f"bought {label} at the Mega Mart. {bike_fill(buy_line(iid, it), state, world)}")
+    return True, note, 0.10 if not it.get("stock") else 0.02
+
+
+def item_effects(state, world, move):
+    """What his things add to this move: {"needs","mult","mood","coins","bricks","pup","pup_mult","free","train","use"}."""
+    fx = {"needs": {}, "mult": {}, "mood": 0.0, "coins": 0, "bricks": 0, "pup": {}, "pup_mult": {}, "free": False, "train": 0.0, "use": []}
+    for iid, it in active_items(state, world):
+        e = (it.get("on") or {}).get(move)
+        if not e:
+            continue
+        for n, v in (e.get("needs") or {}).items():
+            fx["needs"][n] = fx["needs"].get(n, 0) + v
+        for n, v in (e.get("mult") or {}).items():
+            fx["mult"][n] = fx["mult"].get(n, 1.0) * v
+        for n, v in (e.get("pup") or {}).items():
+            fx["pup"][n] = fx["pup"].get(n, 0) + v
+        for n, v in (e.get("pup_mult") or {}).items():
+            fx["pup_mult"][n] = fx["pup_mult"].get(n, 1.0) * v
+        fx["mood"] += e.get("mood", 0)
+        fx["coins"] += e.get("coins", 0)
+        fx["bricks"] += e.get("bricks", 0)
+        fx["train"] += e.get("train", 0)
+        fx["free"] = fx["free"] or bool(e.get("free"))
+        if it.get("stock"):
+            fx["use"].append(supply_of(iid, it))
+    return fx
+
+
+def mart_view(state, world):
+    """His stuff for the web pages: grouped by aisle, plus his cupboard."""
+    M, I = world.get("mega_mart"), items(world)
+    if not M:
+        return None
+    aisles = []
+    for aid, a in M["aisles"].items():
+        mine = [{"id": i, "name": I[i]["name"], "emoji": I[i].get("emoji", ""), "what": I[i]["what"]}
+                for i in state["owned"] if i in I and I[i].get("aisle") == aid]
+        aisles.append({"id": aid, "name": a["name"], "emoji": a["emoji"], "items": mine,
+                       "total": sum(1 for it in I.values() if it.get("aisle") == aid and not it.get("stock"))})
+    names = {supply_of(i, it): (it["name"], it.get("emoji", "")) for i, it in I.items() if it.get("stock")}
+    names["meals"] = ("meals in the fridge", "🛍️")
+    sup = [{"key": k, "n": n, "name": names.get(k, (k, ""))[0], "emoji": names.get(k, ("", ""))[1]}
+           for k, n in state.get("supplies", {}).items() if n > 0]
+    return {"aisles": aisles, "supplies": sup, "spent": state["shop"].get("spent", 0), "earned": state.get("earned", 0),
+            "owned": len([i for i in state["owned"] if i in I]), "total": sum(1 for it in I.values() if not it.get("stock")),
+            "skills": state.get("skills", {}), "hours": M["hours"]}
 
 
 # ---------------------------------------------------------------- the world's rules (no AI)
@@ -1168,7 +1406,7 @@ def update_needs(state, world):
     """Needs creep up (or rest drops while asleep). Pure maths."""
     mode = "asleep" if state["asleep"] else "awake"
     for n in NEEDS:
-        state["needs"][n] = round(clamp(state["needs"][n] + world["needs"][n][mode], 0, 1), 3)
+        state["needs"][n] = round(clamp(state["needs"][n] + world["needs"][n][mode] * rate(state, n, mode, world=world), 0, 1), 3)
     pup = state.get("pup")
     if pup and not state["asleep"] and not pup["napping"]:      # a puppy is good company
         cut = world["needs"]["social"]["awake"] * world["puppy"]["company"] * pup["bond"]
@@ -1176,7 +1414,7 @@ def update_needs(state, world):
     if not state["asleep"]:                                 # heat tires him, cold makes him hungry
         k = wkind(state, world)
         for n in ("rest", "hunger"):
-            if k.get(n):
+            if k.get(n) and not (n == "rest" and shielded(state, "heat", world=world)):   # air-con: the heat can't tire him
                 state["needs"][n] = round(clamp(state["needs"][n] + k[n], 0, 1), 3)
     state["energy"] = round(1 - state["needs"]["rest"], 2)
 
@@ -1187,6 +1425,9 @@ def update_mood(state, world, bonus=0.0, base_bonus=0.0):
     pressing = sum(max(0, state["needs"][n] - m["pressing_from"]) for n in NEEDS)
     target = m["base"] + base_bonus + perk_sum(state, "mood_base") - m["pressing_pull"] * pressing
     target += wkind(state, world).get("mood", 0.0)        # sunshine lifts him, a storm drags him down
+    target += item_sum(state, "mood_base", world=world)   # pot plants, the map of Thailand on the wall
+    if is_cold(state, world) and not shielded(state, "cold", world=world):
+        target += world["weather"].get("cold_mood", 0.0)  # cold days drag him down (a heater fixes it)
     pup = state.get("pup")
     if pup and max(pup["needs"]["hunger"], pup["needs"]["bored"]) >= world["puppy"]["neglect_from"]:
         target -= 0.10                                     # he worries about the pup
@@ -1201,6 +1442,7 @@ def apply_move(state, world, town, step, today, log):
     here, walks = moves_here(W, state["place"])
     if move in walks:
         state["place"] = move[8:]
+        state["shop"]["trip"] = 0                     # a new trip (2 things per visit)
         state["needs"]["rest"] = round(clamp(state["needs"]["rest"] + 0.01, 0, 1), 3)
         return True, None, 0.0, ""
     if move.startswith("walk_to_"):
@@ -1212,6 +1454,15 @@ def apply_move(state, world, town, step, today, log):
             return False, reason or "can't start that", 0.0, ""
         if move == "hit_the_lucky_block" and state["place"] == "brick_pit":
             return False, "the ! block is empty till tomorrow", 0.0, ""
+        if move == "go_shopping" and state["place"] == "mega_mart":
+            M = world["mega_mart"]
+            if not M["hours"][0] <= state.get("hour", 12) < M["hours"][1]:
+                return False, f"the Mega Mart's shut (open {M['hours'][0]} AM to {M['hours'][1] - 12} PM)", 0.0, ""
+            if state["shop"].get("trip", 0) >= M["max_per_trip"]:
+                return False, f"trolley's full: {M['max_per_trip']} things a trip", 0.0, ""
+            return False, "can't afford anything he hasn't got already", 0.0, ""
+        if move.startswith("order_") and move != "order_restoration_parts":
+            return False, "the catalogue's gone: everything's at the Mega Mart now (walk_to_mega_mart, then go_shopping)", 0.0, ""
         if move in PROJECT_MOVES and state["place"] in ("garage", "market_stall"):
             return False, project_refusal(state, world, town, move, today), 0.0, ""
         wd = world["moves"].get(move, {})
@@ -1224,7 +1475,10 @@ def apply_move(state, world, town, step, today, log):
         if state["place"] in wd.get("at", []) and "hours" in wd and not wd["hours"][0] <= state.get("hour", 12) < wd["hours"][1]:
             return False, f"not now (only {wd['hours'][0]}:00 to {wd['hours'][1]}:00)", 0.0, ""
         if wd.get("requires") and wd["requires"] not in state["owned"] and state["place"] in wd.get("at", []):
-            return False, f"needs a {wd['requires'].replace('_', ' ')} first (order one at home)", 0.0, ""
+            lab = item_label(items(world).get(wd["requires"]) or {"name": wd["requires"].replace("_", " ")})
+            return False, f"needs {lab} first (buy it at the Mega Mart)", 0.0, ""
+        if wd.get("uses") and state["supplies"].get(wd["uses"], 0) <= 0 and (state["place"] in wd.get("at", []) or "any" in wd.get("at", [])):
+            return False, f"no {wd['uses'].replace('_', ' ')} left (stock up at the Mega Mart)", 0.0, ""
         if wd.get("pup_awake") and state.get("pup") and state["pup"]["napping"]:
             return False, f"{pup_name(state)} is napping", 0.0, ""
         if move == "feed_the_puppy" and state.get("pup") and state["pup"]["food"] <= 0:
@@ -1237,12 +1491,21 @@ def apply_move(state, world, town, step, today, log):
         return False, f"can't do that {where}", 0.0, ""
 
     d = W["moves"][move]
+    fx = item_effects(state, world, move)            # what his Mega Mart things add to this move
     coins, bricks = d.get("coins", 0), d.get("bricks", 0)
+    if fx["free"] and coins < 0:
+        coins = 0                                    # groceries in the fridge: cooking costs nothing
     if state["coins"] + coins < 0:
         return False, "can't afford it", 0.0, ""
     if state["bricks"] + bricks < 0:
         return False, "not enough bricks", 0.0, ""
-    bonus, notes = d.get("mood", 0.0), []
+    bonus, notes = d.get("mood", 0.0) + fx["mood"], []
+    if d.get("shop"):
+        ok, note, extra = go_shopping(state, world, town, step.get("item"), today, log)
+        if not ok:
+            return False, note, 0.0, ""
+        notes.append(note)
+        bonus += extra
     if d.get("read"):
         ok, note = read_book(state, step.get("book"), log, has_place(town, "library"))
         if not ok:
@@ -1274,6 +1537,23 @@ def apply_move(state, world, town, step, today, log):
             return False, note, 0.0, ""
         notes.append(note)
         bonus += extra
+    if d.get("fish"):
+        if random.random() < 0.45:
+            state["supplies"]["meals"] = state["supplies"].get("meals", 0) + 1
+            notes.append(f"caught a fish! dinner sorted ({state['supplies']['meals']} meals in the fridge)")
+            bonus += 0.04
+        else:
+            notes.append(random.choice(["nothing biting", "a nibble, then nothing", "lost the bait to something clever"]))
+    if d.get("skill"):
+        sk, k = state["skills"], d["skill"]
+        v = sk.get(k, 0.0)
+        sk[k] = round(min(1.0, v + 0.05 * (1 - v)), 3)
+        bonus += 0.05 * v                            # the better he gets, the more he enjoys it
+        line = fb_pick((free_brain().get("mart", {}).get("skill", {}) or {}).get(k) or [""])
+        notes.append(f"{nice(k)} {sk[k]:.0%}" + (f": {line}" if line else ""))
+    if d.get("uses"):
+        state["supplies"][d["uses"]] = max(0, state["supplies"].get(d["uses"], 0) - 1)
+        notes.append(f"{state['supplies'][d['uses']]} {nice(d['uses'])} left")
     if d.get("design"):
         err = design_building(state, world, town, step.get("design"), today, log)
         if err:
@@ -1291,12 +1571,6 @@ def apply_move(state, world, town, step, today, log):
     if d.get("make"):
         state["stock"][d["make"]] = state["stock"].get(d["make"], 0) + 1
         notes.append(f"{sum(state['stock'].values())} in stock")
-    if d.get("buy"):
-        item = world["catalogue"][d["buy"]]
-        state["owned"].append(d["buy"])
-        an = "an" if item["name"][:1].lower() in "aeiou" else "a"
-        town["history"].append({"date": today, "text": f"Bought {an} {item['name'].lower()} ({item['what']})."})
-        log("bought", f"bought {an} {item['name'].lower()}: {item['what']}")
     if d.get("sell"):
         note, extra = sell_stock(state, world, step.get("pricing"))
         notes.append(note)
@@ -1304,10 +1578,13 @@ def apply_move(state, world, town, step, today, log):
     pup = state.get("pup")
     if pup and (d.get("pup") or d.get("bond") or d.get("food") or d.get("train")):
         if d.get("train"):
-            note, extra = train_pup(state, world, step.get("trick"), log)
+            note, extra = train_pup(state, world, step.get("trick"), log, fx["train"])
             notes.append(note)
             bonus += extra
         for n, delta in d.get("pup", {}).items():
+            delta *= fx["pup_mult"].get(n, 1.0) if delta < 0 else 1.0      # ball launcher: play counts double
+            pup["needs"][n] = round(clamp(pup["needs"][n] + delta, 0, 1), 3)
+        for n, delta in fx["pup"].items():
             pup["needs"][n] = round(clamp(pup["needs"][n] + delta, 0, 1), 3)
         pup["bond"] = round(clamp(pup["bond"] + d.get("bond", 0) * (1 + perk_sum(state, "bond_gain")), 0, 1), 3)
         if move == "feed_the_puppy":
@@ -1331,10 +1608,8 @@ def apply_move(state, world, town, step, today, log):
         notes.append(f"{pup_name(state)} rode along in the tank bag")
     coins += int(perk_sum(state, "move_coins", move=move))   # perks from books he finished
     bonus += perk_sum(state, "move_mood", move=move)
-    for item in state["owned"]:                    # perks from things he bought
-        perk = world["catalogue"].get(item, {}).get("bonus", {}).get(move, {})
-        coins += perk.get("coins", 0)
-        bricks += perk.get("bricks", 0)
+    coins += fx["coins"]                           # perks from things he bought (impact wrench, wheelbarrow...)
+    bricks += fx["bricks"]
     if d.get("bricks_rand"):
         n = random.randint(*d["bricks_rand"]) + max(0, bricks)
         bricks = min(0, bricks)
@@ -1345,7 +1620,12 @@ def apply_move(state, world, town, step, today, log):
     if coins > 0:
         notes.append(f"+{coins} coins")
     for n, delta in d.get("needs", {}).items():
+        delta *= fx["mult"].get(n, 1.0) if delta < 0 else 1.0           # reading lamp, good beans, board games
         state["needs"][n] = round(clamp(state["needs"][n] + delta, 0, 1), 3)
+    for n, delta in fx["needs"].items():
+        state["needs"][n] = round(clamp(state["needs"][n] + delta, 0, 1), 3)
+    for k in fx["use"]:                            # supplies used up (a meal, a coffee, a treat)
+        state["supplies"][k] = max(0, state["supplies"].get(k, 0) - 1)
     if d.get("sleep"):
         state["asleep"] = True
     return True, None, bonus, ", ".join(notes)
@@ -1356,7 +1636,7 @@ def autopilot(state, W):
     P = W["places"]
     fixes = {  # need -> (place, move)
         "rest": (state["place"], "rest"),
-        "hunger": ("home", "cook_dinner") if state["coins"] >= 2 else ("home", "make_toast"),
+        "hunger": ("home", "cook_dinner") if state["coins"] >= 2 or state["supplies"].get("meals", 0) > 0 else ("home", "make_toast"),
         "social": ("cafe", "chat_with_locals"),
         "tinker": ("building_site", "work_on_site") if "building_site" in P and "work_on_site" in W["moves"] else ("garage", "fix_a_car"),
         "curiosity": ("library", "read_a_book") if "library" in P else ("home", "read_a_book"
@@ -1446,7 +1726,9 @@ WEATHER AND SEASONS
 MONEY
 - make_X makes something to sell (costs a few bricks or coins). Once he has built a market stall he can sell his stock there:
   run_the_stall, and add "pricing":"cheap|fair|pricey" to that move (cheap sells fast, pricey earns more but sells slowly).
-- order_X (at home) buys something from the catalogue. Some tools pay for themselves; every coin spent is a coin less for Thailand.
+- THE MEGA MART (a massive supermarket at the north end of the island, open 7 AM to 10 PM): walk_to_mega_mart, then go_shopping
+  + "item":"<id>" buys ONE thing. Max 2 things a trip, one big buy (20+ coins) a day. Some things pay for themselves, the rest make
+  life nicer (often with a new move); every coin spent is a coin less for Thailand. Supplies (groceries, snacks...) get used up.
 
 RULES
 - Pick 1 to 3 moves, in order, ONLY from the move ids you are given.
@@ -1531,11 +1813,14 @@ RULES
                      f"{free_brain().get('pup', {}).get('wants', {}).get(pp.get('wants'), 'nothing right now') if pp.get('wants') else 'nothing right now'}")
     P, cat = world["products"], world["catalogue"]
     stock = ", ".join(f"{n} {P[pid]['name']}" for pid, n in state["stock"].items())
-    owned = ", ".join(f"{cat[i]['name']} ({cat[i]['what']})" for i in state["owned"] if i in cat)
+    owned = ", ".join(cat[i]["name"] for i in state["owned"] if i in cat)
+    sup = ", ".join(f"{nice(k)} {n}" for k, n in state["supplies"].items() if n > 0)
+    skills = ", ".join(f"{nice(k)} {v:.0%}" for k, v in state["skills"].items())
     makeable = "; ".join(f"make_{pid} at {'/'.join(p['at'])} ({p['bricks']} bricks, {p['coins']} coins) ~{p['value']} coins"
                          for pid, p in P.items() if not pid.startswith("_"))
-    catalogue = "; ".join(f"{cid} {c['coins']} coins: {c['what']}" for cid, c in cat.items()
-                          if not cid.startswith("_") and cid not in state["owned"])
+    M = world.get("mega_mart") or {}
+    offer = "; ".join(f"{iid} {it['coins']}: {it['what']}" for iid, it in mart_offer(state, world, town, today, M.get("prompt_items", 10)))
+    shut = not (M.get("hours", [7, 22])[0] <= local.hour < M.get("hours", [7, 22])[1])
     lucky_left = world["lucky_block"]["per_day"] - (state["lucky"]["used"] if state["lucky"]["date"] == today else 0)
 
     user = f"""TIME: {local.strftime('%a %d %b')}, {clock(now)} ({part})
@@ -1553,9 +1838,9 @@ TODAY'S PLAN (from last night's diary): {state.get('plan_today') or 'none yet'}
 {learn_lines}
 {beach_line}
 STOCK TO SELL: {stock or 'nothing'} (max {world['selling']['max_stock']}). SOLD SO FAR: {state['sales']['items']} items for {state['sales']['coins']} coins
-OWNS: {owned or 'nothing yet'}
+HIS STUFF: {owned or 'nothing yet'}. SUPPLIES: {sup or 'none'}{f'. SKILLS: {skills}' if skills else ''}
 CAN MAKE (where, cost, fair price): {makeable}
-CATALOGUE (order_X at home): {catalogue}
+MEGA MART ({'SHUT till 7 AM' if shut else 'open'}; spent there so far {state['shop'].get('spent', 0)} coins), useful things he can afford (id coins: what): {offer or 'nothing he can afford right now'}
 
 TOWN ({len(lots)}/{town['max_lots']} lots used): {', '.join(l['name'] for l in lots)}
 BUILDING NOW: {f"{site['name']}, {site['done']}/{site['work']} work done" if site else 'nothing'}
@@ -1640,6 +1925,11 @@ def fb_fill(text, state, town, place=None):
             "bricks": state["bricks"], "mood": mock_feeling(state), "me": me(),
             "weather": (state.get("weather") or {}).get("name", "fine"), "temp": (state.get("weather") or {}).get("temp", 25),
             "season": (state.get("weather") or {}).get("season", "summer")}
+    if "{want}" in text or "{thing}" in text:
+        I = items()
+        wants = [v["name"].lower() for k, v in I.items() if k not in state.get("owned", []) and not v.get("stock")]
+        mine = [I[k]["name"].lower() for k in state.get("owned", []) if k in I]
+        vals["want"], vals["thing"] = random.choice(wants or ["guitar"]), random.choice(mine or ["toolbox"])
     world, pr = _CUR.get("world"), state.get("project")
     if world and ("{bike}" in text or "{stage}" in text):
         if pr:
@@ -1707,6 +1997,14 @@ def mock_thought(state, town):
     if BT:                                                 # the bike's on his mind (more so in the garage)
         T = dict(T, bike=BT)
         w["bike"] = 3 if state["place"] == "garage" else 1.3 if sit != "kept" else 0.5
+    MT = free_brain().get("mart", {}).get("thoughts", {})
+    if MT:
+        T = dict(T, mart=MT.get("in_store", []), mart_want=MT.get("wanting", []), stuff=MT.get("his_stuff", []))
+        if state["place"] == "mega_mart":
+            w["mart"] = 4
+        w["mart_want"] = 0.4
+        if [i for i in state.get("owned", []) if i in items()]:
+            w["stuff"] = 0.7
     cats = [c for c in w if T.get(c)]
     if not cats:
         return "One brick at a time, hey."
@@ -1773,8 +2071,18 @@ def mock_plan(state, W, world, town):
         k = world["garage_projects"]["kinds"][state["bike_offer"]["kind"]]
         if state["coins"] >= k["buy"] + 40:                  # keeps something back for parts
             return go("garage", ["buy_a_project_bike"]), None
-    if "order_wheelbarrow" in gm and random.random() < 0.3:        # the tool that pays for itself, before any toys
-        return go("home", ["order_wheelbarrow"]), None
+    if "go_shopping" in gm and state.get("hour", 12) < world["mega_mart"]["hours"][1] - 1 and random.random() < 0.3:
+        # the Mega Mart (not right before closing): pays-for-itself first, then the pup, comfort, fun
+        picks = shop_pick(state, world, town, state["stats"]["today"]["date"])
+        if picks:
+            return go("mega_mart", [f"go_shopping:{i}" for i in picks]), None
+    mine = [m for m in MART_MOVES if m in gm]                # using the things he bought
+    if mine and random.random() < 0.16:
+        if "eat_a_snack" in mine and state["needs"]["hunger"] >= 0.45:
+            return ["eat_a_snack"], None
+        m = random.choice(mine)
+        at = gm[m]["at"]
+        return go(state["place"] if "any" in at or state["place"] in at else at[0], [m]), None
     # the library first: it holds most of his books, so he saves his bricks for it
     lib_first = "library" not in W["places"] and not (town.get("site") and town["site"]["bp"] == "library") \
         and "library" in blueprints(world, town)
@@ -1809,12 +2117,8 @@ def mock_plan(state, W, world, town):
     designs = [d for d in free_brain().get("designs", []) if d["name"] not in names]
     makes = [m for m in W["moves"] if m.startswith("make_") and W["moves"][m]["at"][0] in W["places"]
              and not (lib_first and W["moves"][m].get("bricks", 0) < 0)]
-    orders = [m for m in W["moves"] if m.startswith("order_") and m != "order_restoration_parts"
-              and ("wheelbarrow" in state["owned"] or m == "order_wheelbarrow")]
     if "run_the_stall" in W["moves"] and "market_stall" in W["places"] and roll < 0.25:
         return go("market_stall", ["run_the_stall", "run_the_stall"]), None
-    if orders and state["coins"] > 70 and roll < 0.30:
-        return go("home", [random.choice(orders)]), None
     if makes and "market_stall" in W["places"] and roll < 0.40:
         m = random.choice(makes)
         return go(W["moves"][m]["at"][0], [m, m]), None
@@ -1840,7 +2144,17 @@ def mock_model(state, W, world, town, system, user):
     plan, design = mock_plan(state, W, world, town)
     if roll < 0.03:
         plan = plan + ["fix_a_car"]  # often not allowed where he'll be: tests the world saying no
-    moves = [{"move": m, "why": mock_why(m, state, town)} for m in plan[:3]]
+    moves = []
+    for m in plan[:3]:
+        mv, _, item = m.partition(":")                     # "go_shopping:<item>"
+        step = {"move": mv, "why": mock_why(mv, state, town)}
+        if item:
+            step["item"] = item
+            lab = item_label(items(world).get(item) or {"name": nice(item)})
+            pool = free_brain().get("mart", {}).get("whys_shop") or ["Need {item}."]
+            step["why"] = fb_fill(random.choice(pool), state, town).replace("{item}", lab)
+            step["why"] = step["why"][:1].upper() + step["why"][1:]
+        moves.append(step)
     for m in moves:
         if m["move"] == "design_a_building" and design:
             m["design"] = design
@@ -1893,7 +2207,7 @@ def parse_decision(text):
                 step["pricing"] = m["pricing"]
             if isinstance(m.get("trick"), str):
                 step["trick"] = m["trick"][:20]
-            for k in ("book", "topic", "colour", "color"):
+            for k in ("book", "topic", "colour", "color", "item"):
                 if isinstance(m.get(k), str):
                     step["colour" if k == "color" else k] = m[k][:60]
             moves.append(step)
@@ -2052,7 +2366,8 @@ def template_diary(f):
     if f["sold_coins"]:
         bits.append(f"Stall made {f['sold_coins']} coins today.")
     if f["bought"]:
-        bits.append(cap(f["bought"][-1]).replace(" his ", " my ").replace(" him ", " me ") + ".")
+        b = cap(f["bought"][-1]).replace(" his ", " my ").replace(" him ", " me ").replace(me() + " ", "I ")
+        bits.append(b if b.endswith((".", "!", "?")) else b + ".")
     c = f["coins_end"] - f["coins_start"]
     bits.append(f"Made {c} coins." if c > 0 else f"Spent {-c} coins. Eish." if c < 0 else "Coins didn't move.")
     got, used = f["bricks_got"], f["bricks_used"]
@@ -2154,6 +2469,11 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
     if not state.get("pup"):                   # his puppy turns up
         state["pup"] = new_pup(world, now, state["tick"])
         log("noticed", f"A scruffy little brick puppy followed {me()} home and won't leave. He needs a name.")
+    if world.get("mega_mart") and not state.get("mart_open"):      # the Mega Mart opens (a gift, not a build)
+        state["mart_open"] = True
+        state["earned"] = max(state.get("earned", 0), state["coins"])
+        town["history"].append({"date": today, "text": world["mega_mart"]["opened"]})
+        log("noticed", "🛒 " + world["mega_mart"]["opened"])
     W = merged_world(world, town, state, today)
     if state["place"] not in W["places"]:      # e.g. a site that just finished
         state["place"] = "home"
@@ -2203,6 +2523,7 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
             count_bricks(state, max(0, state["bricks"] + event.get("bricks", 0)) - state["bricks"])
             state["bricks"] = max(0, state["bricks"] + event.get("bricks", 0))
             state["coins"] = max(0, state["coins"] + event.get("coins", 0))
+            state["earned"] = state.get("earned", 0) + max(0, event.get("coins", 0))
             event = event["text"]
         log("noticed", event)
         state["queue"] = []
@@ -2246,9 +2567,10 @@ def tick(now, data_dir=DATA, use_mock=False, rng_event=random.random):
 
     # 5. CODE: do the first move now, queue the rest. The world can refuse.
     step, rest = plan[0], plan[1:]
-    bricks_before = state["bricks"]
+    bricks_before, coins_before = state["bricks"], state["coins"]
     label = move_label(W, step["move"]).replace("the puppy", pup_name(state))
     ok, refused, bonus, note = apply_move(state, world, town, step, today, log)
+    state["earned"] = state.get("earned", 0) + max(0, state["coins"] - coins_before)
     count_bricks(state, state["bricks"] - bricks_before)
     count(source)
     W = merged_world(world, town, state, today)
@@ -2274,6 +2596,7 @@ def finish(state, feed, town, diary, data_dir, now, summary):
     state["updated"] = now.isoformat()
     if _CUR.get("world"):
         state["garage"] = garage_view(state, _CUR["world"], now.astimezone(TZ).date().isoformat())
+        state["mart"] = mart_view(state, _CUR["world"])
     save(data_dir / "state.json", state)
     save(data_dir / "feed.json", feed[:FEED_KEEP])
     save(data_dir / "town.json", town)
