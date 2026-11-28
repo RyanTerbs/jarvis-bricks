@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-10T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "thought",
+    "text": "-1 degrees. My fingers have stopped working.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "thought",
+    "text": "Body says rest. Stubborn brain says one more job.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "shopping at the Mega Mart (8 coins, 7 in the cupboard)",
+    "why": "Right. a bag of groceries. Then straight home.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "bought",
+    "text": "bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "walking to the mega mart",
+    "why": "Heading to the mega mart.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at the cafe",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-09T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Cloudy. Fine. Engines don't care.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "thought",
+    "text": "One more yawn and I'm out.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Dog's gotta walk.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "thought",
+    "text": "That Carburetor chapter got me thinking.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T23:13:21.098366+00:00",
     "time": "6:13 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "did",
     "text": "having a rest",
     "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "thought",
-    "text": "Winter on the island. Who knew?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "Slow and steady fills the jar.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Snowman time. Non-negotiable.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "running his market stall (fair prices, sold 1 postcard of the town for 2 coins)",
-    "why": "Let's see what sells.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "running his market stall (cheap prices, no buyers this time)",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Quick trip to the market stall.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "thought",
-    "text": "Free samples in aisle three. Don't mind if I do.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "shopping at the Mega Mart (6 coins: noodle kits sell for 1 more coin, tastier dinners)",
-    "why": "Been eyeing a Thai spice kit for days.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "bought",
-    "text": "bought a Thai spice kit at the Mega Mart. Chilli, lemongrass, fish sauce. The noodle kits just got serious.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "shopping at the Mega Mart (8 coins, 6 in the cupboard)",
-    "why": "Been eyeing a bag of groceries for days.",
     "by": "model",
     "ok": true
   }

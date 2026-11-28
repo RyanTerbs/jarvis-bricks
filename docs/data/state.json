@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "mega_mart",
   "asleep": false,
-  "doing": "chatting with the locals",
-  "thought": "Had a dream about a gearbox. Normal, right?",
-  "feeling": "chilled",
+  "doing": "having a rest",
+  "thought": "-1 degrees. My fingers have stopped working.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.7,
-    "hunger": 0.07,
-    "social": 0.31,
-    "tinker": 0.3,
-    "curiosity": 0.505
+    "rest": 0.49,
+    "hunger": 0.35,
+    "social": 0.44,
+    "tinker": 0.58,
+    "curiosity": 0.555
   },
-  "mood": 0.35,
-  "energy": 0.3,
-  "coins": 56,
+  "mood": 0.39,
+  "energy": 0.51,
+  "coins": 48,
   "coins_goal": 500,
   "bricks": 197,
   "stock": {
@@ -235,7 +235,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 18,
+  "hour": 20,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -754,6 +754,90 @@
       "k": "did",
       "x": "chatting with the locals",
       "why": "Bet someone's got a story."
+    },
+    {
+      "t": "6:28 PM",
+      "k": "thought",
+      "x": "That Carburetor chapter got me thinking.",
+      "why": null
+    },
+    {
+      "t": "6:28 PM",
+      "k": "did",
+      "x": "taking Diesel for a walk",
+      "why": "Dog's gotta walk."
+    },
+    {
+      "t": "6:43 PM",
+      "k": "thought",
+      "x": "One more yawn and I'm out.",
+      "why": null
+    },
+    {
+      "t": "6:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "6:58 PM",
+      "k": "thought",
+      "x": "Cloudy. Fine. Engines don't care.",
+      "why": null
+    },
+    {
+      "t": "6:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "7:28 PM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "7:28 PM",
+      "k": "did",
+      "x": "walking to the mega mart",
+      "why": "Heading to the mega mart."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "bought",
+      "x": "bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week.",
+      "why": null
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "shopping at the Mega Mart (8 coins, 7 in the cupboard)",
+      "why": "Right. a bag of groceries. Then straight home."
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Body says rest. Stubborn brain says one more job.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "thought",
+      "x": "-1 degrees. My fingers have stopped working.",
+      "why": null
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -762,13 +846,13 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1344,
+  "tick": 1352,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T23:13:21.098366+00:00",
+  "updated": "2026-12-10T01:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 585,
-      "queue": 343,
+      "model": 591,
+      "queue": 345,
       "autopilot": 47,
       "sleeping": 369,
       "tokens_in": 0,
@@ -777,8 +861,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 27,
-      "queue": 20,
+      "model": 33,
+      "queue": 22,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -791,13 +875,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.21,
-      "tired": 0.83,
-      "bored": 0.75
+      "hunger": 0.268,
+      "tired": 0.44,
+      "bored": 0.474
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 3,
     "tricks": {
       "sit": 3,
@@ -806,18 +890,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "bored, chewing whatever he can find",
-    "last_played_tick": 1306,
-    "wants": "nap",
+    "doing": "napping",
+    "last_played_tick": 1345,
+    "wants": null,
     "recent_thoughts": [
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "The ! block knows something. I will watch it.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Grease smell. Best smell after sausages.",
-      "Cold white stuff! I must eat all of it.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Life is good. Life is SO good.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "The loud thing is back. I'm under the bench.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "Sky went grey. Still a good day. Every day is a good day.",
@@ -829,9 +905,17 @@
       "Sky went grey. Still a good day. Every day is a good day.",
       "The ground is a giant ice cream!",
       "The ground is a giant ice cream!",
-      "Nap spot: located. Engaging."
+      "Nap spot: located. Engaging.",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats."
     ],
-    "thought": "Nap spot: located. Engaging.",
+    "thought": "Dreaming: the whole beach is made of treats.",
     "want_ticks": 0,
     "last_fed_tick": 1337,
     "recent_ideas": [
@@ -847,12 +931,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Running on coffee and hope.",
-    "If I don't eat soon I'm eating a brick.",
-    "Don't know how I lived without the {thing}.",
-    "{temp} degrees. My fingers have stopped working.",
-    "First job: find my 10mm socket. Again.",
-    "Ja, today feels like a building day.",
     "New float, new needle. She'll breathe again.",
     "{pup} would love the dog aisle. Strictly no dogs, says the sign.",
     "Brick town under snow looks like a Christmas card.",
@@ -871,9 +949,15 @@
     "{pup} has never seen snow. He's losing his mind.",
     "Clouds sitting on the town like a lid.",
     "Running on fumes. Need food.",
-    "Had a dream about a gearbox. Normal, right?"
+    "Had a dream about a gearbox. Normal, right?",
+    "That {topic} chapter got me thinking.",
+    "One more yawn and I'm out.",
+    "Cloudy. Fine. Engines don't care.",
+    "Winter on the island. Who knew?",
+    "Body says rest. Stubborn brain says one more job.",
+    "{temp} degrees. My fingers have stopped working."
   ],
-  "real_updated": "2026-11-28T08:45:12.634662+00:00",
+  "real_updated": "2026-11-28T09:00:12.817737+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
@@ -886,7 +970,7 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 1,
+    "temp": -1,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
@@ -986,16 +1070,16 @@
     }
   },
   "supplies": {
-    "meals": 1,
+    "meals": 7,
     "treats": 10
   },
   "skills": {},
   "shop": {
     "date": "2026-12-09",
     "big": 0,
-    "trip": 0,
-    "spent": 23,
-    "bought": 4,
+    "trip": 1,
+    "spent": 31,
+    "bought": 5,
     "budget_spent": 15
   },
   "earned": 88,
@@ -1083,7 +1167,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 1,
+        "n": 7,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       },
@@ -1094,7 +1178,7 @@
         "emoji": "🍖"
       }
     ],
-    "spent": 23,
+    "spent": 31,
     "earned": 88,
     "owned": 4,
     "total": 38,
