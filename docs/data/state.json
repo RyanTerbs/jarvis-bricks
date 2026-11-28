@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "library",
+  "place": "home",
   "asleep": false,
-  "doing": "reading a book",
-  "thought": "Some days you're the spanner, some days you're the bolt.",
-  "feeling": "steady",
+  "doing": "feeding Diesel",
+  "thought": "New day, same jar. 441 coins to go.",
+  "feeling": "stoked",
   "needs": {
-    "rest": 0.19,
-    "hunger": 0.535,
-    "social": 0.36,
-    "tinker": 0.645,
-    "curiosity": 0.455
+    "rest": 0.36,
+    "hunger": 0.045,
+    "social": 0.315,
+    "tinker": 0.49,
+    "curiosity": 0.63
   },
-  "mood": 0.29,
-  "energy": 0.81,
-  "coins": 58,
+  "mood": 0.52,
+  "energy": 0.64,
+  "coins": 59,
   "coins_goal": 500,
   "bricks": 138,
   "stock": {
@@ -190,7 +190,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 8,
+  "hour": 9,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -319,6 +319,78 @@
       "k": "note",
       "x": "noted (Four-stroke engine (Introduction)): A four-stroke (also four-cycle) engine is an internal combustion engine (ICE or IC engine) in which the piston completes four separate strokes while turning the",
       "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "Plan for today: work hard, eat well, don't lose the 10mm.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Sputnik. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Reading about Four-stroke engine makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "Cold enough to freeze the carb on a scooter.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Hot chocolate. Doctor's orders."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "thought",
+      "x": "New day, same jar. 441 coins to go.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "Food for my boy."
     }
   ],
   "day_start": {
@@ -327,13 +399,13 @@
     "got": 20,
     "used": 0
   },
-  "tick": 1112,
+  "tick": 1119,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T13:13:21.098366+00:00",
+  "updated": "2026-12-07T14:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 476,
-      "queue": 280,
+      "model": 481,
+      "queue": 282,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -342,8 +414,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 5,
-      "queue": 3,
+      "model": 10,
+      "queue": 5,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -358,12 +430,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.412,
-      "tired": 0.26,
-      "bored": 0.51
+      "hunger": 0,
+      "tired": 0.5,
+      "bored": 0.22
     },
     "bond": 1.0,
-    "food": 4,
+    "food": 3,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -371,17 +443,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "wagging his tail",
-    "last_played_tick": 1110,
-    "wants": "cuddle",
+    "doing": "sniffing everything",
+    "last_played_tick": 1117,
+    "wants": null,
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
@@ -394,11 +459,18 @@
       "The ! block knows something. I will watch it.",
       "The ground is a giant ice cream!",
       "Why does he lie on the floor and say bad words to it?",
-      "My tail won't stop. I'm not stopping it."
+      "My tail won't stop. I'm not stopping it.",
+      "Sniffed a lamp post. Interesting news.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Nobody is throwing anything. Rude.",
+      "Ball. Ball. Ball. Ball?",
+      "I could chew a boot. Just a little bit.",
+      "{owner} is the best human in the whole town.",
+      "Following {owner}. Best job in the world."
     ],
-    "thought": "My tail won't stop. I'm not stopping it.",
-    "want_ticks": 1,
-    "last_fed_tick": 1074,
+    "thought": "Best. Human. Ever.",
+    "want_ticks": 0,
+    "last_fed_tick": 1119,
     "recent_ideas": [
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
@@ -412,11 +484,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Could sleep standing up like a horse.",
-    "Hot one today. The beach is calling.",
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Life's simple. Fix things, save coins, look after the dog.",
-    "Proper shorts weather.",
     "Got stock to sell. Stall's calling.",
     "Hands are itching. Need something to fix.",
     "Every town needs a guy who fixes stuff. That's me.",
@@ -436,9 +503,14 @@
     "Want to learn something new today.",
     "Picture it: a winding road, a good engine, no rush.",
     "That {topic} chapter got me thinking.",
-    "Some days you're the spanner, some days you're the bolt."
+    "Some days you're the spanner, some days you're the bolt.",
+    "Plan for today: work hard, eat well, don't lose the 10mm.",
+    "Winter. Cold mornings, slow engines.",
+    "Reading about {topic} makes me want to try it.",
+    "Cold enough to freeze the carb on a scooter.",
+    "New day, same jar. {left} coins to go."
   ],
-  "real_updated": "2026-11-28T01:00:11.666409+00:00",
+  "real_updated": "2026-11-28T01:15:10.901408+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@6",
@@ -451,8 +523,8 @@
     "seen": [
       "snow"
     ],
-    "temp": -4,
-    "snow": 0.72,
+    "temp": -3,
+    "snow": 1,
     "wet": 0,
     "snowman": 0
   },
