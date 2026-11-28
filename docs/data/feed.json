@@ -1,5 +1,149 @@
 [
   {
+    "at": "2026-12-08T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Heading to the library.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:28:21.098366+00:00",
+    "time": "7:28 PM",
+    "kind": "thought",
+    "text": "Never had a mate this loyal.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:13:21.098366+00:00",
+    "time": "7:13 PM",
+    "kind": "thought",
+    "text": "Knackered. Eyes keep closing on their own.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Cold hands need a hot mug.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "thought",
+    "text": "Need a nap. A proper one.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:58:21.098366+00:00",
+    "time": "6:58 PM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:43:21.098366+00:00",
+    "time": "6:43 PM",
+    "kind": "thought",
+    "text": "Shame, the cafe guy looked tired today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:28:21.098366+00:00",
+    "time": "6:28 PM",
+    "kind": "thought",
+    "text": "Looked up Conservation and restoration of road vehicles on the old laptop. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "refused",
+    "text": "tried fixing a car: can't do that at home",
+    "why": null,
+    "by": "queue",
+    "ok": false
+  },
+  {
+    "at": "2026-12-07T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
+    "why": "Walkies, Diesel.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "thought",
+    "text": "Tomorrow the parts come and Little Thunder gets better.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "Food for my boy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "thought",
+    "text": "Slow and steady fills the jar.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-07T22:28:21.098366+00:00",
     "time": "5:28 PM",
     "kind": "did",
@@ -1203,150 +1347,6 @@
     "text": "walking home",
     "why": "Home time.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "thought",
-    "text": "Life's simple. Fix things, save coins, look after the dog.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "thought",
-    "text": "53 in the jar. 447 more and I'm on that bike in Thailand.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "Hot one today. The beach is calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "running his market stall (cheap prices, sold 2 rebuilt carburettors for 14 coins)",
-    "why": "Market day.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:58:21.098366+00:00",
-    "time": "3:58 PM",
-    "kind": "did",
-    "text": "running his market stall (fair prices, sold 1 rebuilt carburettor, 1 postcard of the town for 11 coins)",
-    "why": "Got stock, need buyers.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "did",
-    "text": "walking to the market stall",
-    "why": "Market stall next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:43:21.098366+00:00",
-    "time": "3:43 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:28:21.098366+00:00",
-    "time": "3:28 PM",
-    "kind": "thought",
-    "text": "Bag and label everything. Learned that the hard way.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T20:13:21.098366+00:00",
-    "time": "3:13 PM",
-    "kind": "did",
-    "text": "restoring Little Thunder: strip + clean (strip + clean 4/6)",
-    "why": "She's ugly now. She won't be for long.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Quick trip to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:58:21.098366+00:00",
-    "time": "2:58 PM",
-    "kind": "thought",
-    "text": "Winter. Cold mornings, slow engines.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:43:21.098366+00:00",
-    "time": "2:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": null,
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:28:21.098366+00:00",
-    "time": "2:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": null,
-    "by": "autopilot",
     "ok": true
   }
 ]
