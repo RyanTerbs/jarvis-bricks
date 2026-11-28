@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "mega_mart",
+  "place": "library",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "-1 degrees. My fingers have stopped working.",
-  "feeling": "happy enough",
+  "doing": "playing with Diesel",
+  "thought": "Thai street food. That's the dream right there.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.49,
-    "hunger": 0.35,
+    "rest": 0.57,
+    "hunger": 0.45,
     "social": 0.44,
-    "tinker": 0.58,
-    "curiosity": 0.555
+    "tinker": 0.51,
+    "curiosity": 0.455
   },
-  "mood": 0.39,
-  "energy": 0.51,
-  "coins": 48,
+  "mood": 0.45,
+  "energy": 0.43,
+  "coins": 51,
   "coins_goal": 500,
   "bricks": 197,
   "stock": {
@@ -34,7 +34,7 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 7,
+    "carburetor": 8,
     "four_stroke": 1,
     "vehicle_restoration": 1,
     "tire": 1
@@ -228,6 +228,11 @@
       "date": "2026-12-09",
       "source": "Carburetor (Two-barrel and four-barrel designs)",
       "note": "The basic design for a carburetor consists of a single venturi (main metering circuit), though designs with two or four venturi (two-barrel and four-barrel carb"
+    },
+    {
+      "date": "2026-12-09",
+      "source": "Carburetor (History)",
+      "note": "In 1826, American engineer Samuel Morey received a patent for a \"gas or vapor engine\", which had a carburetor that mixed turpentine and air."
     }
   ],
   "looked_up": [
@@ -235,7 +240,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 20,
+  "hour": 22,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -838,6 +843,90 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Sometimes I just stand here and listen to the town.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "making a hot chocolate",
+      "why": "Freezing. Mug time."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Proud of Diesel. Little guy's growing up.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Quick trip to the library."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 8/9)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "note",
+      "x": "noted (Carburetor (History)): In 1826, American engineer Samuel Morey received a patent for a \"gas or vapor engine\", which had a carburetor that mixed turpentine and air.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "thought",
+      "x": "Funny what you learn. Carburetor, who knew.",
+      "why": null
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "thought",
+      "x": "Thai street food. That's the dream right there.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
     }
   ],
   "day_start": {
@@ -846,13 +935,13 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1352,
+  "tick": 1360,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T01:13:21.098366+00:00",
+  "updated": "2026-12-10T03:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 591,
-      "queue": 345,
+      "model": 596,
+      "queue": 348,
       "autopilot": 47,
       "sleeping": 369,
       "tokens_in": 0,
@@ -861,8 +950,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 33,
-      "queue": 22,
+      "model": 38,
+      "queue": 25,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -875,13 +964,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.268,
-      "tired": 0.44,
-      "bored": 0.474
+      "hunger": 0.456,
+      "tired": 0.548,
+      "bored": 0.118
     },
-    "bond": 1,
+    "bond": 1.0,
     "food": 3,
     "tricks": {
       "sit": 3,
@@ -890,18 +979,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
-    "last_played_tick": 1345,
+    "doing": "rolling in the grass",
+    "last_played_tick": 1360,
     "wants": null,
     "recent_thoughts": [
-      "The loud thing is back. I'm under the bench.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Tummy rumble. Big one.",
-      "My bowl is empty. This is an emergency.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "I could chew a boot. Just a little bit.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "The ground is a giant ice cream!",
       "The ground is a giant ice cream!",
@@ -913,9 +994,17 @@
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Cold white stuff! I must eat all of it.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "{owner} is talking to the rusty thing again. It doesn't answer.",
+      "Cold white stuff! I must eat all of it.",
+      "It's dark. I will guard the house. From the sofa.",
+      "So bored I'm counting my own paws. Four. Still four."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Tail going at full speed!",
     "want_ticks": 0,
     "last_fed_tick": 1337,
     "recent_ideas": [
@@ -931,11 +1020,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "New float, new needle. She'll breathe again.",
-    "{pup} would love the dog aisle. Strictly no dogs, says the sign.",
-    "Brick town under snow looks like a Christmas card.",
-    "Too much sitting. Where's my toolbox?",
-    "Toast. Noodles. Anything.",
     "Winter on the island. Who knew?",
     "Some days you're the spanner, some days you're the bolt.",
     "Best thing I bought? Probably the {thing}.",
@@ -955,9 +1039,14 @@
     "Cloudy. Fine. Engines don't care.",
     "Winter on the island. Who knew?",
     "Body says rest. Stubborn brain says one more job.",
-    "{temp} degrees. My fingers have stopped working."
+    "{temp} degrees. My fingers have stopped working.",
+    "Sometimes I just stand here and listen to the town.",
+    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+    "Proud of {pup}. Little guy's growing up.",
+    "Funny what you learn. {topic}, who knew.",
+    "Thai street food. That's the dream right there."
   ],
-  "real_updated": "2026-11-28T09:00:12.817737+00:00",
+  "real_updated": "2026-11-28T09:15:15.105816+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
@@ -970,7 +1059,7 @@
     "seen": [
       "cloudy"
     ],
-    "temp": -1,
+    "temp": -3,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
@@ -1077,12 +1166,12 @@
   "shop": {
     "date": "2026-12-09",
     "big": 0,
-    "trip": 1,
+    "trip": 0,
     "spent": 31,
     "bought": 5,
     "budget_spent": 15
   },
-  "earned": 88,
+  "earned": 92,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -1179,7 +1268,7 @@
       }
     ],
     "spent": 31,
-    "earned": 88,
+    "earned": 92,
     "owned": 4,
     "total": 38,
     "skills": {},

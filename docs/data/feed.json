@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-10T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "thought",
+    "text": "Thai street food. That's the dream right there.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:58:21.098366+00:00",
+    "time": "9:58 PM",
+    "kind": "thought",
+    "text": "Funny what you learn. Carburetor, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "note",
+    "text": "noted (Carburetor (History)): In 1826, American engineer Samuel Morey received a patent for a \"gas or vapor engine\", which had a carburetor that mixed turpentine and air.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:43:21.098366+00:00",
+    "time": "9:43 PM",
+    "kind": "did",
+    "text": "reading a book (Carburetor, chapter 8/9)",
+    "why": "Where was I? Ah, ja.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Quick trip to the library.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:28:21.098366+00:00",
+    "time": "9:28 PM",
+    "kind": "thought",
+    "text": "Proud of Diesel. Little guy's growing up.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Coins for the jar.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "making a hot chocolate",
+    "why": "Freezing. Mug time.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Sometimes I just stand here and listen to the town.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-10T01:13:21.098366+00:00",
     "time": "8:13 PM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "thought",
     "text": "That dog needs a run. So do I, honestly.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Diesel is bored stiff. Time for a walk.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
-    "why": "Jump, hit, hope.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "collecting bricks (+7 bricks)",
-    "why": "Got plans. Need materials.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Quick trip to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "thought",
-    "text": "Need a lie down before I drop a spanner on my foot.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "thought",
-    "text": "Cold enough to freeze the carb on a scooter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "thought",
-    "text": "Food first. Then I'm useful again.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:43:21.098366+00:00",
-    "time": "4:43 PM",
-    "kind": "did",
-    "text": "building a snowman (snowman 2/3)",
-    "why": "Snow on the ground? A man has to build a snowman.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:28:21.098366+00:00",
-    "time": "4:28 PM",
-    "kind": "thought",
-    "text": "205 bricks in the pile. Could build something lekker with that.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T21:13:21.098366+00:00",
-    "time": "4:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
     "by": "model",
     "ok": true
   }
