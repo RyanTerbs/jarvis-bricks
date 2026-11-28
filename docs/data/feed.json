@@ -1,5 +1,32 @@
 [
   {
+    "at": "2026-12-07T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Cooking a proper meal",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Tapped the jar twice. Night.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-12-07T03:58:21.098366+00:00",
     "time": "10:58 PM",
     "kind": "did",
@@ -1320,33 +1347,6 @@
     "text": "Proper shorts weather.",
     "why": null,
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "taking Diesel for a walk",
-    "why": "Walkies, Diesel.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Haven't had grease on my hands in hours. Feels wrong.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-05T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Haven't spoken to a human all day.",
-    "by": "queue",
     "ok": true
   }
 ]

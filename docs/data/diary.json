@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-12-06",
+    "day": "Sun 06 Dec",
+    "title": "Cooking a proper meal",
+    "text": "Right, diary. Spent most of today cooking a proper meal, fixing a car and feeding Diesel. Little Thunder is coming along. Slowly, properly. Read up on Carburetor. Beautiful sunny day. Beach time: going for a swim. Diesel was a legend today. Pretty sure Diesel was planning to teach the seagulls some manners. Cheeky. Stall made 25 coins today. Made 30 coins. Collected 56 bricks, used 3 on building. Also: Diesel barks at the ! block. The ! block does not bark back. 56 coins saved. Every one of them is a kilometre of Thai road. Night, Diesel.",
+    "tomorrow": "Sell some stock at the stall.",
+    "by": "template",
+    "coins": 56,
+    "bricks": 118,
+    "coins_change": 30,
+    "bricks_change": 53,
+    "built": []
+  },
+  {
     "date": "2026-12-05",
     "day": "Sat 05 Dec",
     "title": "Finished building the Library",
