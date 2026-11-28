@@ -1,5 +1,95 @@
 [
   {
+    "at": "2026-12-09T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "thought",
+    "text": "Running on coffee and hope.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:13:21.098366+00:00",
+    "time": "7:13 AM",
+    "kind": "noticed",
+    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 232 in the pile now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "did",
+    "text": "taking Diesel for a walk",
+    "why": "Fresh air for both of us.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:58:21.098366+00:00",
+    "time": "6:58 AM",
+    "kind": "thought",
+    "text": "The thai spice kit was worth every coin.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:43:21.098366+00:00",
+    "time": "6:43 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Bet someone's got a story.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Heading to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "thought",
+    "text": "Grey old day. Good for graft, bad for a tan.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:28:21.098366+00:00",
+    "time": "6:28 AM",
+    "kind": "bike",
+    "text": "Carb's had its soak. Varnish just wipes off now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T11:13:21.098366+00:00",
+    "time": "6:13 AM",
+    "kind": "woke",
+    "text": "woke up",
+    "why": null,
+    "by": "autopilot",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T04:13:21.098366+00:00",
     "time": "11:13 PM",
     "kind": "diary",
@@ -1256,96 +1346,6 @@
     "kind": "did",
     "text": "playing with Diesel (Diesel's tail goes mad)",
     "why": "Play time!",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "thought",
-    "text": "Running on coffee and hope.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (10 bricks pop out!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "collecting bricks (+8 bricks)",
-    "why": "Town needs bricks. I need bricks.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "thought",
-    "text": "Checked the door twice. Parts still not here.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:28:21.098366+00:00",
-    "time": "9:28 PM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T02:13:21.098366+00:00",
-    "time": "9:13 PM",
-    "kind": "thought",
-    "text": "Somewhere there's a beach in Krabi with my name on it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:58:21.098366+00:00",
-    "time": "8:58 PM",
-    "kind": "thought",
-    "text": "Funny what you learn. Tire, who knew.",
-    "why": null,
     "by": "model",
     "ok": true
   }

@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
-  "asleep": true,
-  "doing": "asleep",
-  "thought": "Had a dream about a gearbox. Normal, right?",
-  "feeling": "sharp-sharp",
+  "place": "cafe",
+  "asleep": false,
+  "doing": "playing with Diesel",
+  "thought": "Running on coffee and hope.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0,
-    "hunger": 0.445,
-    "social": 0.685,
-    "tinker": 0.16,
-    "curiosity": 0.59
+    "rest": 0.11,
+    "hunger": 0.615,
+    "social": 0.22,
+    "tinker": 0.315,
+    "curiosity": 0.605
   },
-  "mood": 0.26,
-  "energy": 1,
+  "mood": 0.41,
+  "energy": 0.89,
   "coins": 66,
   "coins_goal": 500,
-  "bricks": 212,
+  "bricks": 232,
   "stock": {},
   "owned": [
     "surfboard",
@@ -222,7 +222,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 5,
+  "hour": 7,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -243,32 +243,87 @@
   },
   "designed_on": "2026-12-04",
   "plan_today": "Back in the garage with Little Thunder.",
-  "today_log": [],
+  "today_log": [
+    {
+      "t": "6:28 AM",
+      "k": "bike",
+      "x": "Carb's had its soak. Varnish just wipes off now.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "thought",
+      "x": "Grey old day. Good for graft, bad for a tan.",
+      "why": null
+    },
+    {
+      "t": "6:28 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Heading to the cafe."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Bet someone's got a story."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "thought",
+      "x": "The thai spice kit was worth every coin.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "taking Diesel for a walk",
+      "why": "Fresh air for both of us."
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 232 in the pile now.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Running on coffee and hope.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    }
+  ],
   "day_start": {
     "coins": 66,
     "bricks": 212,
-    "got": 0,
+    "got": 20,
     "used": 0
   },
-  "tick": 1293,
+  "tick": 1300,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T10:28:21.098366+00:00",
+  "updated": "2026-12-09T12:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 558,
-      "queue": 323,
-      "autopilot": 45,
-      "sleeping": 367,
+      "model": 561,
+      "queue": 324,
+      "autopilot": 46,
+      "sleeping": 369,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-09",
-      "model": 0,
-      "queue": 0,
-      "autopilot": 0,
-      "sleeping": 22,
+      "model": 3,
+      "queue": 1,
+      "autopilot": 1,
+      "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -279,13 +334,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.27,
-      "tired": 0,
-      "bored": 0.66
+      "hunger": 0.402,
+      "tired": 0.362,
+      "bored": 0
     },
-    "bond": 1,
+    "bond": 1.0,
     "food": 5,
     "tricks": {
       "sit": 3,
@@ -294,17 +349,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "asleep at the foot of the bed",
-    "last_played_tick": 1265,
+    "doing": "wagging his tail",
+    "last_played_tick": 1300,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: running, running, running. Legs twitching.",
@@ -317,10 +365,17 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "I am a very good boy. Probably.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "So bored I'm counting my own paws. Four. Still four.",
+      "Why are my paws cold? Doesn't matter. SNOW!"
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
-    "want_ticks": 0,
+    "thought": "YES! That's what I wanted!",
+    "want_ticks": 1,
     "last_fed_tick": 1256,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -335,9 +390,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Didn't know half this stuff about {topic}.",
-    "Hot one today. The beach is calling.",
-    "Carb's soaking in cleaner. Tomorrow we see.",
     "Winter. Cold mornings, slow engines.",
     "Free samples in aisle three. Don't mind if I do.",
     "Snowman time. Non-negotiable.",
@@ -359,23 +411,25 @@
     "Little guy depends on me. Feed him first, then the rest.",
     "Reading about {topic} makes me want to try it.",
     "Body says rest. Stubborn brain says one more job.",
-    "Had a dream about a gearbox. Normal, right?"
+    "Had a dream about a gearbox. Normal, right?",
+    "Grey old day. Good for graft, bad for a tan.",
+    "The {thing} was worth every coin.",
+    "Running on coffee and hope."
   ],
-  "real_updated": "2026-11-28T07:00:18.895307+00:00",
+  "real_updated": "2026-11-28T07:15:11.829144+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-08@13",
+    "key": "2026-12-09@6",
     "kind": "cloudy",
     "season": "winter",
-    "base": -0.5,
+    "base": 1.4,
     "emoji": "☁️",
     "name": "cloudy",
     "season_emoji": "❄️",
     "seen": [
-      "snow",
       "cloudy"
     ],
-    "temp": -3,
+    "temp": 0,
     "snow": 0.62,
     "wet": 0,
     "snowman": 3
@@ -383,7 +437,7 @@
   "book_boxes": [
     1
   ],
-  "truck_date": "2026-12-08",
+  "truck_date": "2026-12-09",
   "box_date": null,
   "project": {
     "kind": "barn_find",
@@ -393,10 +447,7 @@
     "done": 1,
     "parts": "in",
     "parts_due": "2026-12-08",
-    "wait": {
-      "until": "2026-12-09",
-      "why": "soak"
-    },
+    "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 8,
@@ -482,7 +533,7 @@
   },
   "skills": {},
   "shop": {
-    "date": "2026-12-08",
+    "date": "2026-12-09",
     "big": 0,
     "trip": 0,
     "spent": 14,
