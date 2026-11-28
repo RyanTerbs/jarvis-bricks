@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-08T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "This one's called Mr Wobbles. She'll purr by lunch.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "note",
+    "text": "noted (his laptop: Torque wrench): A torque wrench is a tool used to apply a specific torque to a fastener such as a nut, bolt, or lag screw.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "looking something up on his old laptop (Torque wrench)",
+    "why": "Wonder what it says about this.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "thought",
+    "text": "So much I don't know. Love that, actually.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Look at that tail go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Bet someone's got a story.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Off to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "thought",
+    "text": "If the carb's right, the bike's right.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-08T13:43:21.098366+00:00",
     "time": "8:43 AM",
     "kind": "did",
@@ -1221,132 +1347,6 @@
     "text": "noted (Four-stroke engine (Introduction)): A four-stroke (also four-cycle) engine is an internal combustion engine (ICE or IC engine) in which the piston completes four separate strokes while turning the",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T13:13:21.098366+00:00",
-    "time": "8:13 AM",
-    "kind": "did",
-    "text": "reading a book (Four-stroke engine, chapter 1/6)",
-    "why": "Books are a cheap mechanics' school.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Library next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:58:21.098366+00:00",
-    "time": "7:58 AM",
-    "kind": "thought",
-    "text": "Some days you're the spanner, some days you're the bolt.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "That Carburetor chapter got me thinking.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Coins for the jar.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Picture it: a winding road, a good engine, no rush.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 138 in the pile now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "note",
-    "text": "noted (Carburetor (Etymology)): The term \"carburetor\" is derived from the English verb carburet, meaning \"to charge with hydrocarbons\"; in early motoring books the product of the carburetor is",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "reading a book (Carburetor, chapter 2/9)",
-    "why": "Learning something today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "noticed",
-    "text": "Diesel barks at the ! block. The ! block does not bark back.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Heading to the library.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-07T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "thought",
-    "text": "Want to learn something new today.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]

@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
-  "doing": "fixing a car",
-  "thought": "Quiet out. Just me, Diesel and the seagulls.",
-  "feeling": "chilled",
+  "doing": "walking home",
+  "thought": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.31,
-    "hunger": 0.195,
-    "social": 0.68,
-    "tinker": 0.445,
-    "curiosity": 0.515
+    "rest": 0.55,
+    "hunger": 0.575,
+    "social": 0.25,
+    "tinker": 0.375,
+    "curiosity": 0.465
   },
-  "mood": 0.3,
-  "energy": 0.69,
-  "coins": 62,
+  "mood": 0.4,
+  "energy": 0.45,
+  "coins": 66,
   "coins_goal": 500,
   "bricks": 205,
   "stock": {
@@ -201,13 +201,19 @@
       "date": "2026-12-08",
       "source": "Carburetor (Operating principle)",
       "note": "Air from the atmosphere enters the carburetor (usually via an air cleaner), has fuel added within the carburetor, then the air fuel mixture leaves the carbureto"
+    },
+    {
+      "date": "2026-12-08",
+      "source": "his laptop: Torque wrench",
+      "note": "A torque wrench is a tool used to apply a specific torque to a fastener such as a nut, bolt, or lag screw."
     }
   ],
   "looked_up": [
     "Krabi",
-    "Chiang Mai"
+    "Chiang Mai",
+    "Torque wrench"
   ],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -220,7 +226,12 @@
     "waves": "flat",
     "waves_date": "2026-12-08"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "make_hot_chocolate",
+      "why": "Cold hands need a hot mug."
+    }
+  ],
   "lucky": {
     "date": "2026-12-08",
     "used": 0,
@@ -348,6 +359,90 @@
       "k": "did",
       "x": "fixing a car (+4 coins)",
       "why": "Coins for the jar."
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "If the carb's right, the bike's right.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Bet someone's got a story."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Look at that tail go."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "thought",
+      "x": "So much I don't know. Love that, actually.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "looking something up on his old laptop (Torque wrench)",
+      "why": "Wonder what it says about this."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "note",
+      "x": "noted (his laptop: Torque wrench): A torque wrench is a tool used to apply a specific torque to a fastener such as a nut, bolt, or lag screw.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "This one's called Mr Wobbles. She'll purr by lunch."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
     }
   ],
   "day_start": {
@@ -356,13 +451,13 @@
     "got": 28,
     "used": 0
   },
-  "tick": 1210,
+  "tick": 1218,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T13:43:21.098366+00:00",
+  "updated": "2026-12-08T15:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 522,
-      "queue": 302,
+      "model": 527,
+      "queue": 305,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -371,8 +466,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 5,
-      "queue": 4,
+      "model": 10,
+      "queue": 7,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -387,9 +482,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.212,
-      "tired": 0.28,
-      "bored": 0.45
+      "hunger": 0.452,
+      "tired": 0.604,
+      "bored": 0.19
     },
     "bond": 1.0,
     "food": 1,
@@ -401,17 +496,9 @@
       "sit"
     ],
     "doing": "watching Derek work",
-    "last_played_tick": 1168,
-    "wants": null,
+    "last_played_tick": 1213,
+    "wants": "play",
     "recent_thoughts": [
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Is it dinner? It feels like dinner.",
@@ -423,10 +510,18 @@
       "{owner} is the best human in the whole town.",
       "Learning is hard. Treats make it easier.",
       "Everything smells amazing today.",
-      "The ground is a giant ice cream!"
+      "The ground is a giant ice cream!",
+      "Good boy? Me? Yes. Me.",
+      "Cold white stuff! I must eat all of it.",
+      "Cold white stuff! I must eat all of it.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "{owner} is talking to the rusty thing again. It doesn't answer."
     ],
-    "thought": "The ground is a giant ice cream!",
-    "want_ticks": 0,
+    "thought": "Derek is talking to the rusty thing again. It doesn't answer.",
+    "want_ticks": 1,
     "last_fed_tick": 1207,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -441,11 +536,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Don't spend it. Don't spend it. Don't spend it.",
-    "{pup} keeps nudging his bowl. Message received.",
-    "Little guy depends on me. Feed him first, then the rest.",
-    "Slow and steady fills the jar.",
-    "Tomorrow the parts come and {bike} gets better.",
     "Looked up {topic} on the old laptop. Lekker.",
     "Shame, the cafe guy looked tired today.",
     "Need a nap. A proper one.",
@@ -465,9 +555,14 @@
     "Winter on the island. Who knew?",
     "Been talking to bolts all day. Time for real people.",
     "Need a proper chat with someone who talks back.",
-    "Quiet out. Just me, {pup} and the seagulls."
+    "Quiet out. Just me, {pup} and the seagulls.",
+    "If the carb's right, the bike's right.",
+    "Brick town under snow looks like a Christmas card.",
+    "So much I don't know. Love that, actually.",
+    "{pup} has never seen snow. He's losing his mind.",
+    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing."
   ],
-  "real_updated": "2026-11-28T04:15:11.004587+00:00",
+  "real_updated": "2026-11-28T04:30:11.124204+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@6",
@@ -480,7 +575,7 @@
     "seen": [
       "snow"
     ],
-    "temp": -1,
+    "temp": 1,
     "snow": 1,
     "wet": 0,
     "snowman": 1
@@ -588,7 +683,7 @@
     "spent": 0,
     "bought": 0
   },
-  "earned": 64,
+  "earned": 68,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -658,7 +753,7 @@
     ],
     "supplies": [],
     "spent": 0,
-    "earned": 64,
+    "earned": 68,
     "owned": 2,
     "total": 38,
     "skills": {},
