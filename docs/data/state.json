@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "library",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Diesel brought me his lead. Subtle.",
-  "feeling": "hangry",
+  "doing": "reading a book",
+  "thought": "Some days you're the spanner, some days you're the bolt.",
+  "feeling": "steady",
   "needs": {
-    "rest": 0.02,
-    "hunger": 0.2,
-    "social": 0.405,
-    "tinker": 0.75,
-    "curiosity": 0.88
+    "rest": 0.19,
+    "hunger": 0.535,
+    "social": 0.36,
+    "tinker": 0.645,
+    "curiosity": 0.455
   },
-  "mood": -0.08,
-  "energy": 0.98,
-  "coins": 54,
+  "mood": 0.29,
+  "energy": 0.81,
+  "coins": 58,
   "coins_goal": 500,
-  "bricks": 118,
+  "bricks": 138,
   "stock": {
     "postcard": 1
   },
@@ -32,7 +32,8 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 1
+    "carburetor": 2,
+    "four_stroke": 1
   },
   "finished": [
     "tourism_thailand",
@@ -173,13 +174,23 @@
       "date": "2026-12-06",
       "source": "Carburetor (Introduction)",
       "note": "A carburetor (also spelled carburettor or carburetter) is a device used by a gasoline internal combustion engine to control and mix air and fuel entering the en"
+    },
+    {
+      "date": "2026-12-07",
+      "source": "Carburetor (Etymology)",
+      "note": "The term \"carburetor\" is derived from the English verb carburet, meaning \"to charge with hydrocarbons\"; in early motoring books the product of the carburetor is"
+    },
+    {
+      "date": "2026-12-07",
+      "source": "Four-stroke engine (Introduction)",
+      "note": "A four-stroke (also four-cycle) engine is an internal combustion engine (ICE or IC engine) in which the piston completes four separate strokes while turning the"
     }
   ],
   "looked_up": [
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 6,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -218,21 +229,111 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "6:43 AM",
+      "k": "thought",
+      "x": "Want to learn something new today.",
+      "why": null
+    },
+    {
+      "t": "6:43 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Heading to the library."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "noticed",
+      "x": "Diesel barks at the ! block. The ! block does not bark back.",
+      "why": null
+    },
+    {
+      "t": "6:58 AM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 2/9)",
+      "why": "Learning something today."
+    },
+    {
+      "t": "6:58 AM",
+      "k": "note",
+      "x": "noted (Carburetor (Etymology)): The term \"carburetor\" is derived from the English verb carburet, meaning \"to charge with hydrocarbons\"; in early motoring books the product of the carburetor is",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "noticed",
+      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 138 in the pile now.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "thought",
+      "x": "Picture it: a winding road, a good engine, no rush.",
+      "why": null
+    },
+    {
+      "t": "7:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Coins for the jar."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "thought",
+      "x": "That Carburetor chapter got me thinking.",
+      "why": null
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Some days you're the spanner, some days you're the bolt.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Library next."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "reading a book (Four-stroke engine, chapter 1/6)",
+      "why": "Books are a cheap mechanics' school."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "note",
+      "x": "noted (Four-stroke engine (Introduction)): A four-stroke (also four-cycle) engine is an internal combustion engine (ICE or IC engine) in which the piston completes four separate strokes while turning the",
+      "why": null
     }
   ],
   "day_start": {
     "coins": 56,
     "bricks": 118,
-    "got": 0,
+    "got": 20,
     "used": 0
   },
-  "tick": 1105,
+  "tick": 1112,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T11:28:21.098366+00:00",
+  "updated": "2026-12-07T13:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 472,
-      "queue": 277,
+      "model": 476,
+      "queue": 280,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -241,8 +342,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 1,
-      "queue": 0,
+      "model": 5,
+      "queue": 3,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -257,9 +358,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.202,
-      "tired": 0.02,
-      "bored": 0.8
+      "hunger": 0.412,
+      "tired": 0.26,
+      "bored": 0.51
     },
     "bond": 1.0,
     "food": 4,
@@ -270,17 +371,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "bored, chewing whatever he can find",
-    "last_played_tick": 1054,
-    "wants": "play",
+    "doing": "wagging his tail",
+    "last_played_tick": 1110,
+    "wants": "cuddle",
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: a sausage as big as the garage.",
@@ -293,10 +387,17 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Why are my paws cold? Doesn't matter. SNOW!"
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!",
+      "Life is good. Life is SO good.",
+      "Cold white stuff! I must eat all of it.",
+      "The ! block knows something. I will watch it.",
+      "The ground is a giant ice cream!",
+      "Why does he lie on the floor and say bad words to it?",
+      "My tail won't stop. I'm not stopping it."
     ],
-    "thought": "Why are my paws cold? Doesn't matter. SNOW!",
-    "want_ticks": 0,
+    "thought": "My tail won't stop. I'm not stopping it.",
+    "want_ticks": 1,
     "last_fed_tick": 1074,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -311,10 +412,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Who parks a bike in a barn for thirty years? Thank you, whoever.",
-    "Nothing like the sea to clear the head.",
-    "Winter. Cold mornings, slow engines.",
-    "Bag and label everything. Learned that the hard way.",
     "Could sleep standing up like a horse.",
     "Hot one today. The beach is calling.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
@@ -335,9 +432,13 @@
     "Body says rest. Stubborn brain says one more job.",
     "So much I don't know. Love that, actually.",
     "Wonder how they build the roads up in the Thai mountains.",
-    "{pup} brought me his lead. Subtle."
+    "{pup} brought me his lead. Subtle.",
+    "Want to learn something new today.",
+    "Picture it: a winding road, a good engine, no rush.",
+    "That {topic} chapter got me thinking.",
+    "Some days you're the spanner, some days you're the bolt."
   ],
-  "real_updated": "2026-11-28T00:45:12.619056+00:00",
+  "real_updated": "2026-11-28T01:00:11.666409+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@6",
@@ -350,15 +451,15 @@
     "seen": [
       "snow"
     ],
-    "temp": -6,
-    "snow": 0.16,
+    "temp": -4,
+    "snow": 0.72,
     "wet": 0,
     "snowman": 0
   },
   "book_boxes": [
     1
   ],
-  "truck_date": "2026-12-06",
+  "truck_date": "2026-12-07",
   "box_date": null,
   "project": {
     "kind": "barn_find",
