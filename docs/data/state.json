@@ -7,12 +7,12 @@
   "feeling": "on top of the world",
   "needs": {
     "rest": 0,
-    "hunger": 0.725,
-    "social": 0.465,
-    "tinker": 0.735,
-    "curiosity": 0.48
+    "hunger": 0.805,
+    "social": 0.505,
+    "tinker": 0.775,
+    "curiosity": 0.52
   },
-  "mood": 0.13,
+  "mood": 0.02,
   "energy": 1,
   "coins": 51,
   "coins_goal": 500,
@@ -240,7 +240,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 1,
+  "hour": 3,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -268,15 +268,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1375,
+  "tick": 1383,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T06:58:21.098366+00:00",
+  "updated": "2026-12-10T08:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 598,
       "queue": 349,
       "autopilot": 49,
-      "sleeping": 379,
+      "sleeping": 387,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -286,7 +286,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 8,
+      "sleeping": 16,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -299,8 +299,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.646,
-      "tired": 0.038,
+      "hunger": 0.678,
+      "tired": 0,
       "bored": 0.096
     },
     "bond": 1,
@@ -316,14 +316,6 @@
     "last_played_tick": 1361,
     "wants": null,
     "recent_thoughts": [
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "{owner} is talking to the rusty thing again. It doesn't answer.",
-      "Cold white stuff! I must eat all of it.",
-      "It's dark. I will guard the house. From the sofa.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "{owner} is the best human in the whole town.",
-      "Sniffed a lamp post. Interesting news.",
-      "Eyes heavy. Paws heavy. Everything heavy.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "The ground is a giant ice cream!",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -335,9 +327,17 @@
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
-      "Dreaming: running, running, running. Legs twitching."
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: running, running, running. Legs twitching.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 0,
     "last_fed_tick": 1337,
     "recent_ideas": [
@@ -379,7 +379,7 @@
     "A clean toolbox is a happy toolbox.",
     "Bit of a meh sky today."
   ],
-  "real_updated": "2026-11-28T09:45:12.332145+00:00",
+  "real_updated": "2026-11-28T10:00:12.487981+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
