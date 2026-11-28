@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-09T23:13:21.098366+00:00",
+    "time": "6:13 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Bet someone's got a story.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Quick trip to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:58:21.098366+00:00",
+    "time": "5:58 PM",
+    "kind": "thought",
+    "text": "Had a dream about a gearbox. Normal, right?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:43:21.098366+00:00",
+    "time": "5:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Running on fumes. Need food.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "note",
+    "text": "noted (Carburetor (Two-barrel and four-barrel designs)): The basic design for a carburetor consists of a single venturi (main metering circuit), though designs with two or four venturi (two-barrel and four-barrel carb",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "reading a book (Carburetor, chapter 7/9)",
+    "why": "Books are a cheap mechanics' school.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Heading to the library.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Clouds sitting on the town like a lid.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T21:28:21.098366+00:00",
     "time": "4:28 PM",
     "kind": "did",
@@ -1238,114 +1346,6 @@
     "kind": "did",
     "text": "shopping at the Mega Mart (8 coins, 6 in the cupboard)",
     "why": "Been eyeing a bag of groceries for days.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "bought",
-    "text": "bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Carb's soaking in cleaner. Tomorrow we see.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "noticed",
-    "text": "A neighbour pays him back for a favour. +3 coins.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "walking to the mega mart",
-    "why": "Mega mart next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "thought",
-    "text": "Hot one today. The beach is calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "note",
-    "text": "noted (Carburetor (Fuel circuits)): Main metering circuit: The main metering circuit usually consists of barrel/s which reduces to a narrow part where the air is at its highest speed, forming a ch",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "reading a book (Carburetor, chapter 4/9)",
-    "why": "One more chapter.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Heading to the library.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Didn't know half this stuff about Torque wrench.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "noticed",
-    "text": "☁️ The sky clouds over.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Could sleep standing up like a horse.",
-    "why": null,
     "by": "model",
     "ok": true
   }
