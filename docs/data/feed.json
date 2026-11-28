@@ -1,5 +1,131 @@
 [
   {
+    "at": "2026-12-10T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "thought",
+    "text": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "chatting with the locals",
+    "why": "Miss the banter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Heading to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "Winter on the island. Who knew?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Yoh, I'm tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home time.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Waves are flat today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "thought",
+    "text": "Didn't know half this stuff about Bangkok.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "noticed",
+    "text": "It starts raining plastic raindrops.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "going for a swim",
+    "why": "Quick dip to cool off.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-10T18:13:21.098366+00:00",
     "time": "1:13 PM",
     "kind": "did",
@@ -1220,132 +1346,6 @@
     "kind": "did",
     "text": "cooking a proper meal",
     "why": "Cooking something lekker tonight.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "thought",
-    "text": "Toast. Noodles. Anything.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "building (Gym 2/5)",
-    "why": "Building is just fixing, but bigger.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "Too much sitting. Where's my toolbox?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "making a postcard of the town (2 in stock)",
-    "why": "Making stock for the stall.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "making a postcard of the town (1 in stock)",
-    "why": "Got an order in my head.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "thought",
-    "text": "Brick town under snow looks like a Christmas card.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "building (Gym 1/5)",
-    "why": "One more course of bricks.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "walking to the building site",
-    "why": "Off to the building site.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "thought",
-    "text": "Diesel would love the dog aisle. Strictly no dogs, says the sign.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "pupidea",
-    "text": "Diesel has an idea: hide the bike's spark plug in his bed. Finders keepers.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "shopping at the Mega Mart (5 coins: the pup gets bored 20% slower)",
-    "why": "Quick trip to the Mega Mart for some chew toys.",
     "by": "queue",
     "ok": true
   }

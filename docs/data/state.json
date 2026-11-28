@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "beach",
+  "place": "cafe",
   "asleep": false,
-  "doing": "walking to the beach",
-  "thought": "One day I'll get that fishing rod. When the jar's fat.",
-  "feeling": "chilled",
+  "doing": "having a rest",
+  "thought": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.555,
-    "social": 0.53,
-    "tinker": 0.3,
-    "curiosity": 0.465
+    "rest": 0.54,
+    "hunger": 0.175,
+    "social": 0.33,
+    "tinker": 0.53,
+    "curiosity": 0.615
   },
   "mood": 0.42,
-  "energy": 0.38,
+  "energy": 0.46,
   "coins": 60,
   "coins_goal": 500,
   "bricks": 217,
@@ -251,7 +251,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -264,16 +264,7 @@
     "waves": "flat",
     "waves_date": "2026-12-10"
   },
-  "queue": [
-    {
-      "move": "go_for_a_swim",
-      "why": "Quick dip to cool off."
-    },
-    {
-      "move": "go_surfing",
-      "why": "Waves are calling."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-10",
     "used": 0,
@@ -611,6 +602,90 @@
       "k": "did",
       "x": "walking to the beach",
       "why": "Beach next."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "going for a swim",
+      "why": "Quick dip to cool off."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "noticed",
+      "x": "It starts raining plastic raindrops.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Bangkok.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Waves are flat today.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home time."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Yoh, I'm tired.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "Winter on the island. Who knew?",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Heading to the cafe."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "chatting with the locals",
+      "why": "Miss the banter."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "thought",
+      "x": "Diesel's tail hasn't stopped since breakfast. Lekker.",
+      "why": null
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -619,13 +694,13 @@
     "got": 20,
     "used": 0
   },
-  "tick": 1420,
+  "tick": 1428,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T18:13:21.098366+00:00",
+  "updated": "2026-12-10T20:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 615,
-      "queue": 360,
+      "model": 620,
+      "queue": 363,
       "autopilot": 50,
       "sleeping": 395,
       "tokens_in": 0,
@@ -634,8 +709,8 @@
     },
     "today": {
       "date": "2026-12-10",
-      "model": 17,
-      "queue": 11,
+      "model": 22,
+      "queue": 14,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -648,11 +723,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.184,
-      "tired": 0.826,
-      "bored": 0.444
+      "hunger": 0.242,
+      "tired": 0.286,
+      "bored": 0.468
     },
     "bond": 1.0,
     "food": 1,
@@ -663,18 +738,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
+    "doing": "watching Derek work",
     "last_played_tick": 1407,
     "wants": null,
     "recent_thoughts": [
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "Cold white stuff! I must eat all of it.",
-      "My tail won't stop. I'm not stopping it.",
-      "Where did the world go?",
-      "The ground is a giant ice cream!",
-      "Fog. Can't see. Can smell. Sniffing harder.",
-      "Cold white stuff! I must eat all of it.",
       "Cold white stuff! I must eat all of it.",
       "Sit means treat. I have cracked the code.",
       "Cold white stuff! I must eat all of it.",
@@ -686,9 +753,17 @@
       "Life is good. Life is SO good.",
       "Nap spot: located. Engaging.",
       "Fog. Can't see. Can smell. Sniffing harder.",
-      "Dreaming: {owner} throws the ball forever."
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Where did the world go?"
     ],
-    "thought": "Dreaming: Derek throws the ball forever.",
+    "thought": "Where did the world go?",
     "want_ticks": 0,
     "last_fed_tick": 1413,
     "recent_ideas": [
@@ -704,11 +779,6 @@
     "idea": "bring Derek a stick. Then a bigger stick."
   },
   "recent_thoughts": [
-    "{temp} degrees. My fingers have stopped working.",
-    "Sometimes I just stand here and listen to the town.",
-    "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
-    "Proud of {pup}. Little guy's growing up.",
-    "Funny what you learn. {topic}, who knew.",
     "Thai street food. That's the dream right there.",
     "A clean toolbox is a happy toolbox.",
     "Bit of a meh sky today.",
@@ -728,9 +798,14 @@
     "Jets blocked solid. Thirty years of old fuel turned to varnish.",
     "If I finish this, I'm getting a snack. Deal.",
     "Town's buzzing this arvo.",
-    "One day I'll get that {want}. When the jar's fat."
+    "One day I'll get that {want}. When the jar's fat.",
+    "Didn't know half this stuff about {topic}.",
+    "Waves are {waves} today.",
+    "Yoh, I'm tired.",
+    "Winter on the island. Who knew?",
+    "{pup}'s tail hasn't stopped since breakfast. Lekker."
   ],
-  "real_updated": "2026-11-28T11:15:11.372037+00:00",
+  "real_updated": "2026-11-28T11:30:16.728263+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-10@13",
@@ -744,7 +819,7 @@
       "fog"
     ],
     "temp": 10,
-    "snow": 0.22,
+    "snow": 0.06,
     "wet": 0,
     "snowman": 3
   },
@@ -843,7 +918,7 @@
     }
   },
   "supplies": {
-    "meals": 5,
+    "meals": 4,
     "treats": 10,
     "snacks": 6
   },
@@ -941,7 +1016,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 5,
+        "n": 4,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       },
