@@ -7,12 +7,12 @@
   "feeling": "good, ja",
   "needs": {
     "rest": 0,
-    "hunger": 0.715,
-    "social": 0.31,
-    "tinker": 0.695,
-    "curiosity": 0.785
+    "hunger": 0.795,
+    "social": 0.35,
+    "tinker": 0.735,
+    "curiosity": 0.825
   },
-  "mood": 0.07,
+  "mood": -0.07,
   "energy": 1,
   "coins": 56,
   "coins_goal": 500,
@@ -179,7 +179,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 2,
+  "hour": 4,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -207,15 +207,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1090,
+  "tick": 1098,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T07:43:21.098366+00:00",
+  "updated": "2026-12-07T09:43:21.098366+00:00",
   "stats": {
     "all": {
       "model": 471,
       "queue": 277,
       "autopilot": 39,
-      "sleeping": 303,
+      "sleeping": 311,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -225,7 +225,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 11,
+      "sleeping": 19,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -238,7 +238,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.116,
+      "hunger": 0.148,
       "tired": 0,
       "bored": 0.77
     },
@@ -255,14 +255,6 @@
     "last_played_tick": 1054,
     "wants": null,
     "recent_thoughts": [
-      "My tail won't stop. I'm not stopping it.",
-      "So bored I'm counting my own paws. Four. Still four.",
-      "My bowl is empty. This is an emergency.",
-      "{owner} is the best human in the whole town.",
-      "Everything smells amazing today.",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats.",
@@ -274,9 +266,17 @@
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: {owner} throws the ball forever."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Dreaming: Derek throws the ball forever.",
     "want_ticks": 0,
     "last_fed_tick": 1074,
     "recent_ideas": [
@@ -318,7 +318,7 @@
     "So much I don't know. Love that, actually.",
     "Wonder how they build the roads up in the Thai mountains."
   ],
-  "real_updated": "2026-11-28T00:15:10.883983+00:00",
+  "real_updated": "2026-11-28T00:30:19.334318+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-06@13",
