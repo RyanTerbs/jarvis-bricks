@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-08T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T02:13:21.098366+00:00",
+    "time": "9:13 PM",
+    "kind": "thought",
+    "text": "Somewhere there's a beach in Krabi with my name on it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:58:21.098366+00:00",
+    "time": "8:58 PM",
+    "kind": "thought",
+    "text": "Funny what you learn. Tire, who knew.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "thought",
+    "text": "Diesel follows me everywhere. Proper little shadow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:43:21.098366+00:00",
+    "time": "8:43 PM",
+    "kind": "noticed",
+    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Heading to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:28:21.098366+00:00",
+    "time": "8:28 PM",
+    "kind": "thought",
+    "text": "Cold enough to freeze the carb on a scooter.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T01:13:21.098366+00:00",
+    "time": "8:13 PM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Meet Betsy. Bit of a sad case. I'll sort her out.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "thought",
+    "text": "Every town needs a guy who fixes stuff. That's me.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:58:21.098366+00:00",
+    "time": "7:58 PM",
+    "kind": "noticed",
+    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "note",
+    "text": "noted (Tire (Introduction)): A tire (North American English) or tyre (Commonwealth English) is a ring-shaped component that surrounds a wheel's rim to transfer a vehicle's load from the axl",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-08T00:43:21.098366+00:00",
+    "time": "7:43 PM",
+    "kind": "did",
+    "text": "reading a book (Tire, chapter 1/10)",
+    "why": "Where was I? Ah, ja.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-08T00:28:21.098366+00:00",
     "time": "7:28 PM",
     "kind": "did",
@@ -1211,141 +1346,6 @@
     "kind": "did",
     "text": "reading a book (Carburetor, chapter 1/9)",
     "why": "Learning something today.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "The jar's getting heavier. Love that sound.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "noticed",
-    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Library next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "thought",
-    "text": "Every town needs a guy who fixes stuff. That's me.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Little Thunder. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T23:13:21.098366+00:00",
-    "time": "6:13 PM",
-    "kind": "thought",
-    "text": "Hands are itching. Need something to fix.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:58:21.098366+00:00",
-    "time": "5:58 PM",
-    "kind": "thought",
-    "text": "Got stock to sell. Stall's calling.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Diesel needs to burn some energy.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "thought",
-    "text": "Proper shorts weather.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:43:21.098366+00:00",
-    "time": "5:43 PM",
-    "kind": "noticed",
-    "text": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:28:21.098366+00:00",
-    "time": "5:28 PM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "Diesel first, always.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T22:13:21.098366+00:00",
-    "time": "5:13 PM",
-    "kind": "did",
-    "text": "ordering a bag of dog food (6 meals in the cupboard)",
-    "why": "Stocking up for the little guy.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T21:58:21.098366+00:00",
-    "time": "4:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
     "by": "model",
     "ok": true
   }

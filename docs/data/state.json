@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "library",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "walking to the library",
-  "thought": "Never had a mate this loyal.",
-  "feeling": "lekker",
+  "doing": "having a rest",
+  "thought": "Somewhere there's a beach in Krabi with my name on it.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.53,
-    "hunger": 0.09,
-    "social": 0.405,
-    "tinker": 0.6,
-    "curiosity": 0.53
+    "rest": 0.51,
+    "hunger": 0.425,
+    "social": 0.4,
+    "tinker": 0.495,
+    "curiosity": 0.405
   },
   "mood": 0.48,
-  "energy": 0.47,
-  "coins": 54,
+  "energy": 0.49,
+  "coins": 58,
   "coins_goal": 500,
-  "bricks": 165,
+  "bricks": 162,
   "stock": {
     "postcard": 1
   },
@@ -34,7 +34,8 @@
     "bangkok": 7,
     "carburetor": 2,
     "four_stroke": 1,
-    "vehicle_restoration": 1
+    "vehicle_restoration": 1,
+    "tire": 1
   },
   "finished": [
     "tourism_thailand",
@@ -190,13 +191,18 @@
       "date": "2026-12-07",
       "source": "Conservation and restoration of road vehicles (Introduction)",
       "note": "Conservation and restoration of road vehicles is the process of restoring a vehicle back to its original working condition."
+    },
+    {
+      "date": "2026-12-07",
+      "source": "Tire (Introduction)",
+      "note": "A tire (North American English) or tyre (Commonwealth English) is a ring-shaped component that surrounds a wheel's rim to transfer a vehicle's load from the axl"
     }
   ],
   "looked_up": [
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 19,
+  "hour": 21,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -209,13 +215,7 @@
     "waves": "small",
     "waves_date": "2026-12-07"
   },
-  "queue": [
-    {
-      "move": "read_a_book",
-      "why": "Where was I? Ah, ja.",
-      "book": "tire"
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-07",
     "used": 2,
@@ -811,21 +811,111 @@
       "k": "did",
       "x": "walking to the library",
       "why": "Heading to the library."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "did",
+      "x": "reading a book (Tire, chapter 1/10)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "7:43 PM",
+      "k": "note",
+      "x": "noted (Tire (Introduction)): A tire (North American English) or tyre (Commonwealth English) is a ring-shaped component that surrounds a wheel's rim to transfer a vehicle's load from the axl",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "noticed",
+      "x": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "thought",
+      "x": "Every town needs a guy who fixes stuff. That's me.",
+      "why": null
+    },
+    {
+      "t": "7:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "8:13 PM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Meet Betsy. Bit of a sad case. I'll sort her out."
+    },
+    {
+      "t": "8:28 PM",
+      "k": "thought",
+      "x": "Cold enough to freeze the carb on a scooter.",
+      "why": null
+    },
+    {
+      "t": "8:28 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Heading to the brick pit."
+    },
+    {
+      "t": "8:43 PM",
+      "k": "noticed",
+      "x": "A customer rolls a scooter into the garage with a dodgy carb.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "thought",
+      "x": "Diesel follows me everywhere. Proper little shadow.",
+      "why": null
+    },
+    {
+      "t": "8:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "8:58 PM",
+      "k": "thought",
+      "x": "Funny what you learn. Tire, who knew.",
+      "why": null
+    },
+    {
+      "t": "8:58 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "9:13 PM",
+      "k": "thought",
+      "x": "Somewhere there's a beach in Krabi with my name on it.",
+      "why": null
+    },
+    {
+      "t": "9:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 56,
     "bricks": 118,
     "got": 47,
-    "used": 0
+    "used": 3
   },
-  "tick": 1157,
+  "tick": 1164,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T00:28:21.098366+00:00",
+  "updated": "2026-12-08T02:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 507,
-      "queue": 294,
+      "model": 512,
+      "queue": 296,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -834,8 +924,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 36,
-      "queue": 17,
+      "model": 41,
+      "queue": 19,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -848,10 +938,10 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.102,
-      "tired": 0.51,
+      "hunger": 0.234,
+      "tired": 0.45,
       "bored": 0.03
     },
     "bond": 1.0,
@@ -863,17 +953,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
-    "last_played_tick": 1151,
+    "doing": "wagging his tail",
+    "last_played_tick": 1163,
     "wants": null,
     "recent_thoughts": [
-      "{owner} says a word, I do a thing, treat appears. Magic.",
-      "Life is good. Life is SO good.",
-      "Cold white stuff! I must eat all of it.",
-      "{owner} is the best human in the whole town.",
-      "Everything smells amazing today.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The bike smells of old barn. And mice. MICE?",
       "Cold white stuff! I must eat all of it.",
       "{owner} smells like toast. Share?",
       "My tail won't stop. I'm not stopping it.",
@@ -886,10 +969,17 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Grease smell. Best smell after sausages.",
+      "Life is good. Life is SO good.",
+      "Cold white stuff! I must eat all of it.",
+      "Night noises. Probably nothing. Probably."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
-    "want_ticks": 0,
+    "thought": "Night noises. Probably nothing. Probably.",
+    "want_ticks": 1,
     "last_fed_tick": 1150,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -904,11 +994,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
-    "Penetrating oil and patience. That's the whole secret.",
-    "Every bolt on {bike} is seized. Every single one.",
-    "SNOW. On a tropical island. Who ordered this?",
-    "One more yawn and I'm out.",
     "{pup} has never seen snow. He's losing his mind.",
     "Yoh, I'm tired.",
     "Batteries low. Need a recharge.",
@@ -928,9 +1013,14 @@
     "Shame, the cafe guy looked tired today.",
     "Need a nap. A proper one.",
     "Knackered. Eyes keep closing on their own.",
-    "Never had a mate this loyal."
+    "Never had a mate this loyal.",
+    "Every town needs a guy who fixes stuff. That's me.",
+    "Cold enough to freeze the carb on a scooter.",
+    "{pup} follows me everywhere. Proper little shadow.",
+    "Funny what you learn. {topic}, who knew.",
+    "Somewhere there's a beach in Krabi with my name on it."
   ],
-  "real_updated": "2026-11-28T02:30:16.025935+00:00",
+  "real_updated": "2026-11-28T02:45:12.386487+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
@@ -943,7 +1033,7 @@
     "seen": [
       "snow"
     ],
-    "temp": 0,
+    "temp": -1,
     "snow": 1,
     "wet": 0,
     "snowman": 1
