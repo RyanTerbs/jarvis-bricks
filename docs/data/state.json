@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "library",
+  "place": "cafe",
   "asleep": false,
-  "doing": "walking to the library",
-  "thought": "Smells like oil and toast. Perfect morning.",
-  "feeling": "meh, fine",
+  "doing": "walking to the cafe",
+  "thought": "Reading about Carburetor makes me want to try it.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.19,
-    "hunger": 0.425,
-    "social": 0.65,
-    "tinker": 0.63,
-    "curiosity": 0.715
+    "rest": 0.31,
+    "hunger": 0.585,
+    "social": 0.71,
+    "tinker": 0.42,
+    "curiosity": 0.515
   },
-  "mood": 0.21,
-  "energy": 0.81,
-  "coins": 55,
+  "mood": 0.26,
+  "energy": 0.69,
+  "coins": 59,
   "coins_goal": 500,
   "bricks": 217,
   "stock": {
@@ -34,14 +34,15 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 8,
+    "carburetor": 9,
     "four_stroke": 1,
     "vehicle_restoration": 1,
     "tire": 1
   },
   "finished": [
     "tourism_thailand",
-    "dog_training"
+    "dog_training",
+    "carburetor"
   ],
   "notebook": [
     {
@@ -233,6 +234,11 @@
       "date": "2026-12-09",
       "source": "Carburetor (History)",
       "note": "In 1826, American engineer Samuel Morey received a patent for a \"gas or vapor engine\", which had a carburetor that mixed turpentine and air."
+    },
+    {
+      "date": "2026-12-10",
+      "source": "Carburetor (Icing in aircraft engine carburetors)",
+      "note": "A significant concern for aircraft engines is the formation of ice inside the carburetor."
     }
   ],
   "looked_up": [
@@ -240,7 +246,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 7,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -255,8 +261,12 @@
   },
   "queue": [
     {
-      "move": "read_a_book",
-      "why": "Where was I? Ah, ja."
+      "move": "chat_with_locals",
+      "why": "Haven't spoken to a human all day."
+    },
+    {
+      "move": "fix_a_car",
+      "why": "This one's called Sputnik. She'll purr by lunch."
     }
   ],
   "lucky": {
@@ -338,6 +348,66 @@
       "k": "did",
       "x": "walking to the library",
       "why": "Library next."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "learned",
+      "x": "finished reading 'Carburetor': his rebuilt carbs sell for 2 coins more; carb rebuilds on a project bike take 2 sessions less",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "reading a book (Carburetor, last chapter)",
+      "why": "Where was I? Ah, ja."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "note",
+      "x": "noted (Carburetor (Icing in aircraft engine carburetors)): A significant concern for aircraft engines is the formation of ice inside the carburetor.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "thought",
+      "x": "Foggy. Feels like a Port Alfred winter morning.",
+      "why": null
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Garage next."
+    },
+    {
+      "t": "8:28 AM",
+      "k": "noticed",
+      "x": "A loud exhaust echoes down the street.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "If the carb's right, the bike's right.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "fixing a car (+4 coins)",
+      "why": "Customer's waiting. Can't leave them stuck."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "Reading about Carburetor makes me want to try it.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "walking to the cafe",
+      "why": "Off to the cafe."
     }
   ],
   "day_start": {
@@ -346,13 +416,13 @@
     "got": 20,
     "used": 0
   },
-  "tick": 1398,
+  "tick": 1402,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T12:43:21.098366+00:00",
+  "updated": "2026-12-10T13:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 602,
-      "queue": 351,
+      "model": 605,
+      "queue": 352,
       "autopilot": 50,
       "sleeping": 395,
       "tokens_in": 0,
@@ -361,8 +431,8 @@
     },
     "today": {
       "date": "2026-12-10",
-      "model": 4,
-      "queue": 2,
+      "model": 7,
+      "queue": 3,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -377,9 +447,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.194,
-      "tired": 0.168,
-      "bored": 0.24
+      "hunger": 0.314,
+      "tired": 0.28,
+      "bored": 0.336
     },
     "bond": 1.0,
     "food": 2,
@@ -390,14 +460,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "wagging his tail",
     "last_played_tick": 1361,
-    "wants": null,
+    "wants": "walk",
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Zzz. Squirrel. Zzz.",
@@ -413,10 +479,14 @@
       "If I stare at the bowl hard enough, food appears. Science.",
       "Food? Food. FOOD.",
       "Cold white stuff! I must eat all of it.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Good boy? Me? Yes. Me.",
+      "Fog. Can't see. Can smell. Sniffing harder.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The ground is a giant ice cream!"
     ],
-    "thought": "Everything smells amazing today.",
-    "want_ticks": 0,
+    "thought": "The ground is a giant ice cream!",
+    "want_ticks": 3,
     "last_fed_tick": 1397,
     "recent_ideas": [
       "dig all the way to the other side of the island.",
@@ -431,9 +501,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Saw a {want} at the Mega Mart. The jar says not yet.",
-    "Cold enough to freeze the carb on a scooter.",
-    "Winter. Cold mornings, slow engines.",
     "Thailand. Noodles, mountains, warm sea. Soon.",
     "{pup} has never seen snow. He's losing his mind.",
     "Clouds sitting on the town like a lid.",
@@ -455,9 +522,12 @@
     "Can't see the end of the street. Spooky.",
     "Snowman time. Non-negotiable.",
     "Little guy depends on me. Feed him first, then the rest.",
-    "Smells like oil and toast. Perfect morning."
+    "Smells like oil and toast. Perfect morning.",
+    "Foggy. Feels like a Port Alfred winter morning.",
+    "If the carb's right, the bike's right.",
+    "Reading about {topic} makes me want to try it."
   ],
-  "real_updated": "2026-11-28T10:30:16.918992+00:00",
+  "real_updated": "2026-11-28T10:38:16.453013+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-10@6",
@@ -470,7 +540,7 @@
     "seen": [
       "fog"
     ],
-    "temp": -2,
+    "temp": -1,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
@@ -534,7 +604,7 @@
         {
           "id": "carb",
           "name": "carb rebuild",
-          "need": 4,
+          "need": 2,
           "done": 3,
           "coins": 8
         },
@@ -582,7 +652,7 @@
     "bought": 5,
     "budget_spent": 15
   },
-  "earned": 96,
+  "earned": 100,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -679,7 +749,7 @@
       }
     ],
     "spent": 31,
-    "earned": 96,
+    "earned": 100,
     "owned": 4,
     "total": 38,
     "skills": {},

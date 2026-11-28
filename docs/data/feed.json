@@ -1,5 +1,95 @@
 [
   {
+    "at": "2026-12-10T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "walking to the cafe",
+    "why": "Off to the cafe.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "thought",
+    "text": "Reading about Carburetor makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "fixing a car (+4 coins)",
+    "why": "Customer's waiting. Can't leave them stuck.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "If the carb's right, the bike's right.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "noticed",
+    "text": "A loud exhaust echoes down the street.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Garage next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "thought",
+    "text": "Foggy. Feels like a Port Alfred winter morning.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "note",
+    "text": "noted (Carburetor (Icing in aircraft engine carburetors)): A significant concern for aircraft engines is the formation of ice inside the carburetor.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "reading a book (Carburetor, last chapter)",
+    "why": "Where was I? Ah, ja.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "learned",
+    "text": "finished reading 'Carburetor': his rebuilt carbs sell for 2 coins more; carb rebuilds on a project bike take 2 sessions less",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
     "at": "2026-12-10T12:43:21.098366+00:00",
     "time": "7:43 AM",
     "kind": "did",
@@ -1257,96 +1347,6 @@
     "text": "built a proper snowman: carrot nose, stone eyes and his old orange cap!",
     "why": null,
     "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "thought",
-    "text": "Had a dream about a gearbox. Normal, right?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "thought",
-    "text": "Body says rest. Stubborn brain says one more job.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "noticed",
-    "text": "A neighbour pays him back for a favour. +3 coins.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "walk Diesel",
-    "why": "Dog's gotta walk.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "Reading about Carburetor makes me want to try it.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Cooking something lekker tonight.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T02:58:21.098366+00:00",
-    "time": "9:58 PM",
-    "kind": "thought",
-    "text": "Little guy depends on me. Feed him first, then the rest.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T02:43:21.098366+00:00",
-    "time": "9:43 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
     "ok": true
   }
 ]
