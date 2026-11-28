@@ -155,7 +155,20 @@
       "built": "2026-12-05"
     }
   ],
-  "site": null,
+  "site": {
+    "bp": "gym",
+    "name": "Gym",
+    "lot": 10,
+    "work": 5,
+    "done": 0,
+    "started": "2026-12-09",
+    "look": {
+      "kind": "shop",
+      "color": "#c0392b",
+      "emoji": "🏋️",
+      "floors": 1
+    }
+  },
   "custom_blueprints": {
     "sunset_pier": {
       "name": "Sunset Pier",

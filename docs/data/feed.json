@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-09T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:58:21.098366+00:00",
+    "time": "8:58 AM",
+    "kind": "thought",
+    "text": "Ja, today feels like a building day.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Play time!",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:43:21.098366+00:00",
+    "time": "8:43 AM",
+    "kind": "thought",
+    "text": "First job: find my 10mm socket. Again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "did",
+    "text": "starting a new build: Gym (paid 35 bricks)",
+    "why": "Town's getting bigger.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:28:21.098366+00:00",
+    "time": "8:28 AM",
+    "kind": "thought",
+    "text": "1 degrees. My fingers have stopped working.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "note",
+    "text": "noted (Carburetor (Other components)): Other components that have been used on carburetors include: Air bleeds allowing air into various portions of the fuel passages, to premix air and fuel, and min",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T13:13:21.098366+00:00",
+    "time": "8:13 AM",
+    "kind": "did",
+    "text": "reading a book (Carburetor, chapter 6/9)",
+    "why": "One more chapter.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "did",
+    "text": "walking to the library",
+    "why": "Library next.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:58:21.098366+00:00",
+    "time": "7:58 AM",
+    "kind": "thought",
+    "text": "Don't know how I lived without the wheelbarrow.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:43:21.098366+00:00",
+    "time": "7:43 AM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Proper food, proper fuel.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Home for a bit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T12:28:21.098366+00:00",
+    "time": "7:28 AM",
+    "kind": "thought",
+    "text": "If I don't eat soon I'm eating a brick.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T12:13:21.098366+00:00",
     "time": "7:13 AM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "walking to the garage",
     "why": null,
     "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T11:13:21.098366+00:00",
-    "time": "6:13 AM",
-    "kind": "woke",
-    "text": "woke up",
-    "why": null,
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "diary",
-    "text": "wrote in his diary: Playing with Diesel",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "did",
-    "text": "going to sleep",
-    "why": "Long day. Bed.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "noticed",
-    "text": "Diesel chews a stray brick and looks very pleased with himself.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T04:28:21.098366+00:00",
-    "time": "11:28 PM",
-    "kind": "noticed",
-    "text": "🛒 A massive supermarket opened at the north end of the island: the Mega Mart. Aisles and aisles of stuff.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T04:13:21.098366+00:00",
-    "time": "11:13 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Time to head home.",
-    "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Heading to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "thought",
-    "text": "Parts are on the way. Like waiting for Christmas.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:58:21.098366+00:00",
-    "time": "10:58 PM",
-    "kind": "noticed",
-    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:43:21.098366+00:00",
-    "time": "10:43 PM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Back home quick.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:28:21.098366+00:00",
-    "time": "10:28 PM",
-    "kind": "thought",
-    "text": "Hands are itching. Need something to fix.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T03:13:21.098366+00:00",
-    "time": "10:13 PM",
-    "kind": "did",
-    "text": "playing with Diesel (Diesel's tail goes mad)",
-    "why": "Play time!",
-    "by": "model",
     "ok": true
   }
 ]

@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "cafe",
+  "place": "home",
   "asleep": false,
-  "doing": "playing with Diesel",
-  "thought": "Running on coffee and hope.",
-  "feeling": "happy enough",
+  "doing": "walking home",
+  "thought": "Ja, today feels like a building day.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.11,
-    "hunger": 0.615,
-    "social": 0.22,
-    "tinker": 0.315,
-    "curiosity": 0.605
+    "rest": 0.26,
+    "hunger": 0.175,
+    "social": 0.175,
+    "tinker": 0.51,
+    "curiosity": 0.38
   },
-  "mood": 0.41,
-  "energy": 0.89,
+  "mood": 0.45,
+  "energy": 0.74,
   "coins": 66,
   "coins_goal": 500,
-  "bricks": 232,
+  "bricks": 197,
   "stock": {},
   "owned": [
     "surfboard",
@@ -31,7 +31,7 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 5,
+    "carburetor": 6,
     "four_stroke": 1,
     "vehicle_restoration": 1,
     "tire": 1
@@ -215,6 +215,11 @@
       "date": "2026-12-08",
       "source": "Carburetor (Fuel supply)",
       "note": "Float chamber: In order to ensure an adequate supply at all times, carburetors include a reservoir of fuel, called a \"float chamber\" or \"float bowl\"."
+    },
+    {
+      "date": "2026-12-09",
+      "source": "Carburetor (Other components)",
+      "note": "Other components that have been used on carburetors include: Air bleeds allowing air into various portions of the fuel passages, to premix air and fuel, and min"
     }
   ],
   "looked_up": [
@@ -222,7 +227,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 7,
+  "hour": 8,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -235,7 +240,12 @@
     "waves": "good",
     "waves_date": "2026-12-09"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "feed_the_puppy",
+      "why": "He depends on me."
+    }
+  ],
   "lucky": {
     "date": "2026-12-09",
     "used": 0,
@@ -297,21 +307,99 @@
       "k": "did",
       "x": "playing with Diesel (Diesel's tail goes mad)",
       "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "7:28 AM",
+      "k": "thought",
+      "x": "If I don't eat soon I'm eating a brick.",
+      "why": null
+    },
+    {
+      "t": "7:28 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Home for a bit."
+    },
+    {
+      "t": "7:43 AM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "7:58 AM",
+      "k": "thought",
+      "x": "Don't know how I lived without the wheelbarrow.",
+      "why": null
+    },
+    {
+      "t": "7:58 AM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Library next."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 6/9)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "8:13 AM",
+      "k": "note",
+      "x": "noted (Carburetor (Other components)): Other components that have been used on carburetors include: Air bleeds allowing air into various portions of the fuel passages, to premix air and fuel, and min",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "thought",
+      "x": "1 degrees. My fingers have stopped working.",
+      "why": null
+    },
+    {
+      "t": "8:28 AM",
+      "k": "did",
+      "x": "starting a new build: Gym (paid 35 bricks)",
+      "why": "Town's getting bigger."
+    },
+    {
+      "t": "8:43 AM",
+      "k": "thought",
+      "x": "First job: find my 10mm socket. Again.",
+      "why": null
+    },
+    {
+      "t": "8:43 AM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "8:58 AM",
+      "k": "thought",
+      "x": "Ja, today feels like a building day.",
+      "why": null
+    },
+    {
+      "t": "8:58 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
     }
   ],
   "day_start": {
     "coins": 66,
     "bricks": 212,
     "got": 20,
-    "used": 0
+    "used": 35
   },
-  "tick": 1300,
+  "tick": 1307,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T12:13:21.098366+00:00",
+  "updated": "2026-12-09T13:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 561,
-      "queue": 324,
+      "model": 566,
+      "queue": 326,
       "autopilot": 46,
       "sleeping": 369,
       "tokens_in": 0,
@@ -320,8 +408,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 3,
-      "queue": 1,
+      "model": 8,
+      "queue": 3,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -336,9 +424,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.402,
-      "tired": 0.362,
-      "bored": 0
+      "hunger": 0.612,
+      "tired": 0.658,
+      "bored": 0.03
     },
     "bond": 1.0,
     "food": 5,
@@ -349,17 +437,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "wagging his tail",
-    "last_played_tick": 1300,
-    "wants": null,
+    "doing": "watching Derek work",
+    "last_played_tick": 1306,
+    "wants": "food",
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: the whole beach is made of treats.",
@@ -372,10 +453,17 @@
       "I am a very good boy. Probably.",
       "Sky went grey. Still a good day. Every day is a good day.",
       "So bored I'm counting my own paws. Four. Still four.",
-      "Why are my paws cold? Doesn't matter. SNOW!"
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Cold white stuff! I must eat all of it.",
+      "I know tricks now. I am a very clever boy.",
+      "Life is good. Life is SO good.",
+      "Good boy? Me? Yes. Me.",
+      "The ground is a giant ice cream!",
+      "Following {owner}. Best job in the world."
     ],
-    "thought": "YES! That's what I wanted!",
-    "want_ticks": 1,
+    "thought": "Following Derek. Best job in the world.",
+    "want_ticks": 0,
     "last_fed_tick": 1256,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -390,11 +478,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Winter. Cold mornings, slow engines.",
-    "Free samples in aisle three. Don't mind if I do.",
-    "Snowman time. Non-negotiable.",
-    "Slow and steady fills the jar.",
-    "Winter on the island. Who knew?",
     "{bricks} bricks in the pile. Could build something lekker with that.",
     "Food first. Then I'm useful again.",
     "Cold enough to freeze the carb on a scooter.",
@@ -414,9 +497,14 @@
     "Had a dream about a gearbox. Normal, right?",
     "Grey old day. Good for graft, bad for a tan.",
     "The {thing} was worth every coin.",
-    "Running on coffee and hope."
+    "Running on coffee and hope.",
+    "If I don't eat soon I'm eating a brick.",
+    "Don't know how I lived without the {thing}.",
+    "{temp} degrees. My fingers have stopped working.",
+    "First job: find my 10mm socket. Again.",
+    "Ja, today feels like a building day."
   ],
-  "real_updated": "2026-11-28T07:15:11.829144+00:00",
+  "real_updated": "2026-11-28T07:30:11.500859+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@6",
@@ -429,7 +517,7 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 0,
+    "temp": 1,
     "snow": 0.62,
     "wet": 0,
     "snowman": 3
@@ -529,7 +617,7 @@
     }
   },
   "supplies": {
-    "meals": 4
+    "meals": 3
   },
   "skills": {},
   "shop": {
@@ -618,7 +706,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 4,
+        "n": 3,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       }
