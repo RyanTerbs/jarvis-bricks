@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "mega_mart",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Bit of graft now, bit of rest later.",
-  "feeling": "good, ja",
+  "doing": "having a rest",
+  "thought": "Winter. Cold mornings, slow engines.",
+  "feeling": "chuffed",
   "needs": {
-    "rest": 0.62,
-    "hunger": 0.01,
-    "social": 0.205,
-    "tinker": 0.22,
-    "curiosity": 0.59
+    "rest": 0.58,
+    "hunger": 0.31,
+    "social": 0.295,
+    "tinker": 0.5,
+    "curiosity": 0.39
   },
-  "mood": 0.46,
-  "energy": 0.38,
-  "coins": 63,
+  "mood": 0.47,
+  "energy": 0.42,
+  "coins": 52,
   "coins_goal": 500,
   "bricks": 205,
   "stock": {
@@ -22,7 +22,8 @@
   },
   "owned": [
     "surfboard",
-    "wheelbarrow"
+    "wheelbarrow",
+    "thai_spice_kit"
   ],
   "sales": {
     "items": 9,
@@ -32,7 +33,7 @@
     "tourism_thailand": 9,
     "dog_training": 8,
     "bangkok": 7,
-    "carburetor": 3,
+    "carburetor": 4,
     "four_stroke": 1,
     "vehicle_restoration": 1,
     "tire": 1
@@ -206,6 +207,11 @@
       "date": "2026-12-08",
       "source": "his laptop: Torque wrench",
       "note": "A torque wrench is a tool used to apply a specific torque to a fastener such as a nut, bolt, or lag screw."
+    },
+    {
+      "date": "2026-12-08",
+      "source": "Carburetor (Fuel circuits)",
+      "note": "Main metering circuit: The main metering circuit usually consists of barrel/s which reduces to a narrow part where the air is at its highest speed, forming a ch"
     }
   ],
   "looked_up": [
@@ -213,7 +219,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 12,
+  "hour": 14,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -516,6 +522,120 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Proper food, proper fuel."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "thought",
+      "x": "Wonder how they build the roads up in the Thai mountains.",
+      "why": null
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "feeding Diesel",
+      "why": "Food for my boy."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "thought",
+      "x": "Could sleep standing up like a horse.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "noticed",
+      "x": "☁️ The sky clouds over.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Didn't know half this stuff about Torque wrench.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "walking to the library",
+      "why": "Heading to the library."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "reading a book (Carburetor, chapter 4/9)",
+      "why": "One more chapter."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "note",
+      "x": "noted (Carburetor (Fuel circuits)): Main metering circuit: The main metering circuit usually consists of barrel/s which reduces to a narrow part where the air is at its highest speed, forming a ch",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "thought",
+      "x": "Hot one today. The beach is calling.",
+      "why": null
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "walking to the mega mart",
+      "why": "Mega mart next."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "noticed",
+      "x": "A neighbour pays him back for a favour. +3 coins.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Carb's soaking in cleaner. Tomorrow we see.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "bought",
+      "x": "bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "shopping at the Mega Mart (8 coins, 6 in the cupboard)",
+      "why": "Been eyeing a bag of groceries for days."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "bought",
+      "x": "bought a Thai spice kit at the Mega Mart. Chilli, lemongrass, fish sauce. The noodle kits just got serious.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "shopping at the Mega Mart (6 coins: noodle kits sell for 1 more coin, tastier dinners)",
+      "why": "Been eyeing a Thai spice kit for days."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Winter. Cold mornings, slow engines.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
@@ -524,13 +644,13 @@
     "got": 28,
     "used": 0
   },
-  "tick": 1225,
+  "tick": 1233,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T17:28:21.098366+00:00",
+  "updated": "2026-12-08T19:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 531,
-      "queue": 308,
+      "model": 537,
+      "queue": 310,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -539,8 +659,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 14,
-      "queue": 10,
+      "model": 20,
+      "queue": 12,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -553,14 +673,14 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.662,
-      "tired": 0.9,
+      "hunger": 0.028,
+      "tired": 0.26,
       "bored": 0.15
     },
-    "bond": 1.0,
-    "food": 1,
+    "bond": 1,
+    "food": 0,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -568,18 +688,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "napping",
     "last_played_tick": 1220,
-    "wants": "food",
+    "wants": null,
     "recent_thoughts": [
-      "Tail check: still there. Good.",
-      "{owner} is the best human in the whole town.",
-      "Learning is hard. Treats make it easier.",
-      "Everything smells amazing today.",
-      "The ground is a giant ice cream!",
-      "Good boy? Me? Yes. Me.",
-      "Cold white stuff! I must eat all of it.",
-      "Cold white stuff! I must eat all of it.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "{owner} says a word, I do a thing, treat appears. Magic.",
       "Why are my paws cold? Doesn't matter. SNOW!",
@@ -591,11 +703,19 @@
       "The bike smells of old barn. And mice. MICE?",
       "Life is good. Life is SO good.",
       "Food? Food. FOOD.",
-      "My bowl is empty. This is an emergency."
+      "My bowl is empty. This is an emergency.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Zzz. Squirrel. Zzz.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching."
     ],
-    "thought": "My bowl is empty. This is an emergency.",
+    "thought": "Dreaming: running, running, running. Legs twitching.",
     "want_ticks": 0,
-    "last_fed_tick": 1207,
+    "last_fed_tick": 1226,
     "recent_ideas": [
       "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
@@ -609,12 +729,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Never had a mate this loyal.",
-    "Every town needs a guy who fixes stuff. That's me.",
-    "Cold enough to freeze the carb on a scooter.",
-    "{pup} follows me everywhere. Proper little shadow.",
-    "Funny what you learn. {topic}, who knew.",
-    "Somewhere there's a beach in Krabi with my name on it.",
     "Picture it: a winding road, a good engine, no rush.",
     "Checked the door twice. Parts still not here.",
     "Running on coffee and hope.",
@@ -633,23 +747,30 @@
     "New float, new needle. She'll breathe again.",
     "Plan for today: work hard, eat well, don't lose the 10mm.",
     "Lunch. Now. Please.",
-    "Bit of graft now, bit of rest later."
+    "Bit of graft now, bit of rest later.",
+    "Wonder how they build the roads up in the Thai mountains.",
+    "Could sleep standing up like a horse.",
+    "Didn't know half this stuff about {topic}.",
+    "Hot one today. The beach is calling.",
+    "Carb's soaking in cleaner. Tomorrow we see.",
+    "Winter. Cold mornings, slow engines."
   ],
-  "real_updated": "2026-11-28T04:45:09.636413+00:00",
+  "real_updated": "2026-11-28T05:00:13.085497+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-08@6",
-    "kind": "snow",
+    "key": "2026-12-08@13",
+    "kind": "cloudy",
     "season": "winter",
-    "base": -0.6,
-    "emoji": "🌨️",
-    "name": "snowing",
+    "base": -0.5,
+    "emoji": "☁️",
+    "name": "cloudy",
     "season_emoji": "❄️",
     "seen": [
-      "snow"
+      "snow",
+      "cloudy"
     ],
-    "temp": 1,
-    "snow": 1,
+    "temp": 3,
+    "snow": 0.88,
     "wet": 0,
     "snowman": 1
   },
@@ -750,16 +871,19 @@
       ]
     }
   },
-  "supplies": {},
+  "supplies": {
+    "meals": 6
+  },
   "skills": {},
   "shop": {
     "date": "2026-12-08",
     "big": 0,
-    "trip": 0,
-    "spent": 0,
-    "bought": 0
+    "trip": 2,
+    "spent": 14,
+    "bought": 2,
+    "budget_spent": 6
   },
-  "earned": 68,
+  "earned": 71,
   "mart_open": true,
   "mart": {
     "aisles": [
@@ -767,7 +891,14 @@
         "id": "food",
         "name": "Food",
         "emoji": "🥦",
-        "items": [],
+        "items": [
+          {
+            "id": "thai_spice_kit",
+            "name": "Thai spice kit",
+            "emoji": "🌶️",
+            "what": "noodle kits sell for 1 more coin, tastier dinners"
+          }
+        ],
         "total": 1
       },
       {
@@ -827,10 +958,17 @@
         "total": 4
       }
     ],
-    "supplies": [],
-    "spent": 0,
-    "earned": 68,
-    "owned": 2,
+    "supplies": [
+      {
+        "key": "meals",
+        "n": 6,
+        "name": "meals in the fridge",
+        "emoji": "🛍️"
+      }
+    ],
+    "spent": 14,
+    "earned": 71,
+    "owned": 3,
     "total": 38,
     "skills": {},
     "hours": [
