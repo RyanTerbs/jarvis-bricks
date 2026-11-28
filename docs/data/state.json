@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "home",
   "asleep": false,
-  "doing": "having a rest",
-  "thought": "Somewhere there's a beach in Krabi with my name on it.",
-  "feeling": "happy enough",
+  "doing": "walking home",
+  "thought": "Parts are on the way. Like waiting for Christmas.",
+  "feeling": "lekker",
   "needs": {
-    "rest": 0.51,
-    "hunger": 0.425,
-    "social": 0.4,
-    "tinker": 0.495,
+    "rest": 0.63,
+    "hunger": 0.09,
+    "social": 0.37,
+    "tinker": 0.675,
     "curiosity": 0.405
   },
-  "mood": 0.48,
-  "energy": 0.49,
-  "coins": 58,
+  "mood": 0.41,
+  "energy": 0.37,
+  "coins": 56,
   "coins_goal": 500,
-  "bricks": 162,
+  "bricks": 177,
   "stock": {
     "postcard": 1
   },
@@ -202,7 +202,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 21,
+  "hour": 23,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -215,57 +215,20 @@
     "waves": "small",
     "waves_date": "2026-12-07"
   },
-  "queue": [],
+  "queue": [
+    {
+      "move": "go_to_sleep",
+      "why": "Long day. Bed."
+    }
+  ],
   "lucky": {
     "date": "2026-12-07",
-    "used": 2,
+    "used": 3,
     "max": 3
   },
   "designed_on": "2026-12-04",
   "plan_today": "Sell some stock at the stall.",
   "today_log": [
-    {
-      "t": "6:13 AM",
-      "k": "noticed",
-      "x": "🌨️ It's snowing! Big flakes falling on the brick town.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Diesel brought me his lead. Subtle.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "thought",
-      "x": "Want to learn something new today.",
-      "why": null
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "walking to the library",
-      "why": "Heading to the library."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "noticed",
-      "x": "Diesel barks at the ! block. The ! block does not bark back.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "reading a book (Carburetor, chapter 2/9)",
-      "why": "Learning something today."
-    },
     {
       "t": "6:58 AM",
       "k": "note",
@@ -901,22 +864,106 @@
       "k": "did",
       "x": "having a rest",
       "why": "Taking a breather."
+    },
+    {
+      "t": "9:28 PM",
+      "k": "thought",
+      "x": "Picture it: a winding road, a good engine, no rush.",
+      "why": null
+    },
+    {
+      "t": "9:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "9:43 PM",
+      "k": "thought",
+      "x": "Checked the door twice. Parts still not here.",
+      "why": null
+    },
+    {
+      "t": "9:43 PM",
+      "k": "did",
+      "x": "collecting bricks (+8 bricks)",
+      "why": "Town needs bricks. I need bricks."
+    },
+    {
+      "t": "9:58 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (10 bricks pop out!)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "10:13 PM",
+      "k": "thought",
+      "x": "Running on coffee and hope.",
+      "why": null
+    },
+    {
+      "t": "10:13 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Play time!"
+    },
+    {
+      "t": "10:28 PM",
+      "k": "thought",
+      "x": "Hands are itching. Need something to fix.",
+      "why": null
+    },
+    {
+      "t": "10:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "10:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "10:58 PM",
+      "k": "noticed",
+      "x": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "thought",
+      "x": "Parts are on the way. Like waiting for Christmas.",
+      "why": null
+    },
+    {
+      "t": "10:58 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Heading to the garage."
+    },
+    {
+      "t": "11:13 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Time to head home."
     }
   ],
   "day_start": {
     "coins": 56,
     "bricks": 118,
-    "got": 47,
-    "used": 3
+    "got": 65,
+    "used": 6
   },
-  "tick": 1164,
+  "tick": 1172,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T02:13:21.098366+00:00",
+  "updated": "2026-12-08T04:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 512,
-      "queue": 296,
-      "autopilot": 40,
+      "model": 517,
+      "queue": 298,
+      "autopilot": 41,
       "sleeping": 316,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -924,9 +971,9 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 41,
-      "queue": 19,
-      "autopilot": 1,
+      "model": 46,
+      "queue": 21,
+      "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
       "tokens_out": 0,
@@ -940,9 +987,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.234,
-      "tired": 0.45,
-      "bored": 0.03
+      "hunger": 0.474,
+      "tired": 0.71,
+      "bored": 0.12
     },
     "bond": 1.0,
     "food": 2,
@@ -954,17 +1001,9 @@
       "sit"
     ],
     "doing": "wagging his tail",
-    "last_played_tick": 1163,
-    "wants": null,
+    "last_played_tick": 1168,
+    "wants": "play",
     "recent_thoughts": [
-      "Cold white stuff! I must eat all of it.",
-      "{owner} smells like toast. Share?",
-      "My tail won't stop. I'm not stopping it.",
-      "Good boy? Me? Yes. Me.",
-      "Learning is hard. Treats make it easier.",
-      "The ground is a giant ice cream!",
-      "Yawn. Big yawn. Biggest yawn.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
@@ -976,10 +1015,18 @@
       "Grease smell. Best smell after sausages.",
       "Life is good. Life is SO good.",
       "Cold white stuff! I must eat all of it.",
-      "Night noises. Probably nothing. Probably."
+      "Night noises. Probably nothing. Probably.",
+      "Tail check: still there. Good.",
+      "{owner} is the best human in the whole town.",
+      "The ground is a giant ice cream!",
+      "The cafe smells like pies. Noted.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Who left this brick here? I'll carry it somewhere else.",
+      "Following {owner}. Best job in the world.",
+      "Good boy? Me? Yes. Me."
     ],
-    "thought": "Night noises. Probably nothing. Probably.",
-    "want_ticks": 1,
+    "thought": "Good boy? Me? Yes. Me.",
+    "want_ticks": 0,
     "last_fed_tick": 1150,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -994,11 +1041,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "{pup} has never seen snow. He's losing his mind.",
-    "Yoh, I'm tired.",
-    "Batteries low. Need a recharge.",
-    "Snowman time. Non-negotiable.",
-    "Brick town under snow looks like a Christmas card.",
     "{temp} degrees. My fingers have stopped working.",
     "{temp} degrees. My fingers have stopped working.",
     "{temp} degrees. My fingers have stopped working.",
@@ -1018,9 +1060,14 @@
     "Cold enough to freeze the carb on a scooter.",
     "{pup} follows me everywhere. Proper little shadow.",
     "Funny what you learn. {topic}, who knew.",
-    "Somewhere there's a beach in Krabi with my name on it."
+    "Somewhere there's a beach in Krabi with my name on it.",
+    "Picture it: a winding road, a good engine, no rush.",
+    "Checked the door twice. Parts still not here.",
+    "Running on coffee and hope.",
+    "Hands are itching. Need something to fix.",
+    "Parts are on the way. Like waiting for Christmas."
   ],
-  "real_updated": "2026-11-28T02:45:12.386487+00:00",
+  "real_updated": "2026-11-28T03:00:12.750481+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
@@ -1033,7 +1080,7 @@
     "seen": [
       "snow"
     ],
-    "temp": -1,
+    "temp": -3,
     "snow": 1,
     "wet": 0,
     "snowman": 1
