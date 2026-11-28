@@ -7,12 +7,12 @@
   "feeling": "lekker",
   "needs": {
     "rest": 0,
-    "hunger": 0.275,
-    "social": 0.455,
-    "tinker": 0.78,
-    "curiosity": 0.5
+    "hunger": 0.355,
+    "social": 0.495,
+    "tinker": 0.82,
+    "curiosity": 0.54
   },
-  "mood": 0.19,
+  "mood": 0.16,
   "energy": 1,
   "coins": 56,
   "coins_goal": 500,
@@ -202,7 +202,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 2,
+  "hour": 4,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -230,15 +230,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1187,
+  "tick": 1195,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T07:58:21.098366+00:00",
+  "updated": "2026-12-08T09:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 517,
       "queue": 298,
       "autopilot": 42,
-      "sleeping": 330,
+      "sleeping": 338,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -248,7 +248,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 12,
+      "sleeping": 20,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -261,7 +261,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.56,
+      "hunger": 0.592,
       "tired": 0,
       "bored": 0.15
     },
@@ -278,14 +278,6 @@
     "last_played_tick": 1168,
     "wants": null,
     "recent_thoughts": [
-      "The cafe smells like pies. Noted.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Following {owner}. Best job in the world.",
-      "Good boy? Me? Yes. Me.",
-      "Nap spot: located. Engaging.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: the whole beach is made of treats.",
       "Zzz. Squirrel. Zzz.",
@@ -297,9 +289,17 @@
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: the whole beach is made of treats."
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage."
     ],
-    "thought": "Dreaming: the whole beach is made of treats.",
+    "thought": "Dreaming: a sausage as big as the garage.",
     "want_ticks": 1,
     "last_fed_tick": 1150,
     "recent_ideas": [
@@ -341,7 +341,7 @@
     "Hands are itching. Need something to fix.",
     "Parts are on the way. Like waiting for Christmas."
   ],
-  "real_updated": "2026-11-28T03:30:10.931311+00:00",
+  "real_updated": "2026-11-28T03:45:11.282133+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
