@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-07T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T22:28:21.098366+00:00",
+    "time": "5:28 PM",
+    "kind": "thought",
+    "text": "Little guy depends on me. Feed him first, then the rest.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T22:13:21.098366+00:00",
+    "time": "5:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Can't run on toast forever.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Back home quick.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:58:21.098366+00:00",
+    "time": "4:58 PM",
+    "kind": "thought",
+    "text": "Diesel keeps nudging his bowl. Message received.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:43:21.098366+00:00",
+    "time": "4:43 PM",
+    "kind": "did",
+    "text": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+    "why": "Maybe a jackpot today.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:28:21.098366+00:00",
+    "time": "4:28 PM",
+    "kind": "did",
+    "text": "collecting bricks (+10 bricks)",
+    "why": "Can't build on dreams alone.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "did",
+    "text": "walking to the brick pit",
+    "why": "Quick trip to the brick pit.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "thought",
+    "text": "Don't spend it. Don't spend it. Don't spend it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T21:13:21.098366+00:00",
+    "time": "4:13 PM",
+    "kind": "noticed",
+    "text": "A kid stops to pat Diesel.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Look at that tail go.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:58:21.098366+00:00",
+    "time": "3:58 PM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-07T20:43:21.098366+00:00",
     "time": "3:43 PM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "walking home",
     "why": null,
     "by": "autopilot",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T19:13:21.098366+00:00",
-    "time": "2:13 PM",
-    "kind": "thought",
-    "text": "Nothing like the sea to clear the head.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:58:21.098366+00:00",
-    "time": "1:58 PM",
-    "kind": "thought",
-    "text": "Who parks a bike in a barn for thirty years? Thank you, whoever.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:43:21.098366+00:00",
-    "time": "1:43 PM",
-    "kind": "did",
-    "text": "going for a swim",
-    "why": "Quick dip to cool off.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:28:21.098366+00:00",
-    "time": "1:28 PM",
-    "kind": "did",
-    "text": "collecting shells (+3 shells (20 in the jar))",
-    "why": "Shells for the jar on the shelf.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "did",
-    "text": "walking to the beach",
-    "why": "Heading to the beach.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T18:13:21.098366+00:00",
-    "time": "1:13 PM",
-    "kind": "thought",
-    "text": "Never had a mate this loyal.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:58:21.098366+00:00",
-    "time": "12:58 PM",
-    "kind": "thought",
-    "text": "Found a 1980s coin in Little Thunder's toolbox. Lucky.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:43:21.098366+00:00",
-    "time": "12:43 PM",
-    "kind": "did",
-    "text": "chatting with the locals",
-    "why": "Need some gossip.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "did",
-    "text": "walking to the cafe",
-    "why": "Quick trip to the cafe.",
-    "by": "model",
     "ok": true
   }
 ]

@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "garage",
+  "place": "home",
   "asleep": false,
   "doing": "having a rest",
-  "thought": "Diesel has never seen snow. He's losing his mind.",
-  "feeling": "on top of the world",
+  "thought": "Little guy depends on me. Feed him first, then the rest.",
+  "feeling": "happy enough",
   "needs": {
-    "rest": 0.51,
-    "hunger": 0.44,
-    "social": 0.29,
-    "tinker": 0.175,
-    "curiosity": 0.455
+    "rest": 0.6,
+    "hunger": 0.055,
+    "social": 0.245,
+    "tinker": 0.32,
+    "curiosity": 0.43
   },
-  "mood": 0.5,
-  "energy": 0.49,
+  "mood": 0.45,
+  "energy": 0.4,
   "coins": 53,
   "coins_goal": 500,
-  "bricks": 155,
+  "bricks": 165,
   "stock": {
     "postcard": 1
   },
@@ -196,7 +196,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 15,
+  "hour": 17,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -212,7 +212,7 @@
   "queue": [],
   "lucky": {
     "date": "2026-12-07",
-    "used": 1,
+    "used": 2,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -643,21 +643,93 @@
       "k": "did",
       "x": "having a rest",
       "why": "Five minutes. Just five."
+    },
+    {
+      "t": "3:58 PM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "3:58 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Look at that tail go."
+    },
+    {
+      "t": "4:13 PM",
+      "k": "noticed",
+      "x": "A kid stops to pat Diesel.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "thought",
+      "x": "Don't spend it. Don't spend it. Don't spend it.",
+      "why": null
+    },
+    {
+      "t": "4:13 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Quick trip to the brick pit."
+    },
+    {
+      "t": "4:28 PM",
+      "k": "did",
+      "x": "collecting bricks (+10 bricks)",
+      "why": "Can't build on dreams alone."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (a coin spins out... 2 coins!)",
+      "why": "Maybe a jackpot today."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Diesel keeps nudging his bowl. Message received.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Back home quick."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Can't run on toast forever."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Little guy depends on me. Feed him first, then the rest.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
     "coins": 56,
     "bricks": 118,
-    "got": 37,
+    "got": 47,
     "used": 0
   },
-  "tick": 1142,
+  "tick": 1149,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T20:43:21.098366+00:00",
+  "updated": "2026-12-07T22:28:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 496,
-      "queue": 290,
+      "model": 500,
+      "queue": 293,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -666,8 +738,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 25,
-      "queue": 13,
+      "model": 29,
+      "queue": 16,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -682,9 +754,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.482,
-      "tired": 0.46,
-      "bored": 0.03
+      "hunger": 0.692,
+      "tired": 0.7,
+      "bored": 0.18
     },
     "bond": 1.0,
     "food": 3,
@@ -696,16 +768,9 @@
       "sit"
     ],
     "doing": "sniffing everything",
-    "last_played_tick": 1141,
-    "wants": "play",
+    "last_played_tick": 1143,
+    "wants": "food",
     "recent_thoughts": [
-      "Grease on my nose. Worth it.",
-      "Grease smell. Best smell after sausages.",
-      "Good boy? Me? Yes. Me.",
-      "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!",
-      "Eyes heavy. Paws heavy. Everything heavy.",
-      "Cold white stuff! I must eat all of it.",
       "Dreaming: the whole beach is made of treats.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
@@ -718,9 +783,16 @@
       "Life is good. Life is SO good.",
       "Cold white stuff! I must eat all of it.",
       "{owner} is the best human in the whole town.",
-      "Everything smells amazing today."
+      "Everything smells amazing today.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "The bike smells of old barn. And mice. MICE?",
+      "Cold white stuff! I must eat all of it.",
+      "{owner} smells like toast. Share?",
+      "My tail won't stop. I'm not stopping it.",
+      "Good boy? Me? Yes. Me.",
+      "Learning is hard. Treats make it easier."
     ],
-    "thought": "Everything smells amazing today.",
+    "thought": "Learning is hard. Treats make it easier.",
     "want_ticks": 0,
     "last_fed_tick": 1119,
     "recent_ideas": [
@@ -736,10 +808,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "{pup} brought me his lead. Subtle.",
-    "Want to learn something new today.",
-    "Picture it: a winding road, a good engine, no rush.",
-    "That {topic} chapter got me thinking.",
     "Some days you're the spanner, some days you're the bolt.",
     "Plan for today: work hard, eat well, don't lose the 10mm.",
     "Winter. Cold mornings, slow engines.",
@@ -760,9 +828,13 @@
     "{temp} degrees. My fingers have stopped working.",
     "{temp} degrees. My fingers have stopped working.",
     "{temp} degrees. My fingers have stopped working.",
-    "{pup} has never seen snow. He's losing his mind."
+    "{pup} has never seen snow. He's losing his mind.",
+    "Brick town under snow looks like a Christmas card.",
+    "Don't spend it. Don't spend it. Don't spend it.",
+    "{pup} keeps nudging his bowl. Message received.",
+    "Little guy depends on me. Feed him first, then the rest."
   ],
-  "real_updated": "2026-11-28T02:00:13.122052+00:00",
+  "real_updated": "2026-11-28T02:13:47.620998+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
