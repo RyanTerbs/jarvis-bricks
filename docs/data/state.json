@@ -7,12 +7,12 @@
   "feeling": "sharp-sharp",
   "needs": {
     "rest": 0,
-    "hunger": 0.285,
-    "social": 0.605,
-    "tinker": 0.08,
-    "curiosity": 0.51
+    "hunger": 0.365,
+    "social": 0.645,
+    "tinker": 0.12,
+    "curiosity": 0.55
   },
-  "mood": 0.33,
+  "mood": 0.29,
   "energy": 1,
   "coins": 66,
   "coins_goal": 500,
@@ -222,7 +222,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 1,
+  "hour": 3,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -250,15 +250,15 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1277,
+  "tick": 1285,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T06:28:21.098366+00:00",
+  "updated": "2026-12-09T08:28:21.098366+00:00",
   "stats": {
     "all": {
       "model": 558,
       "queue": 323,
       "autopilot": 45,
-      "sleeping": 351,
+      "sleeping": 359,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -268,7 +268,7 @@
       "model": 0,
       "queue": 0,
       "autopilot": 0,
-      "sleeping": 6,
+      "sleeping": 14,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -281,7 +281,7 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.206,
+      "hunger": 0.238,
       "tired": 0,
       "bored": 0.66
     },
@@ -298,14 +298,6 @@
     "last_played_tick": 1265,
     "wants": null,
     "recent_thoughts": [
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Sky went grey. Still a good day. Every day is a good day.",
       "The ground is a giant ice cream!",
       "Night noises. Probably nothing. Probably.",
       "Grease smell. Best smell after sausages.",
@@ -317,6 +309,14 @@
       "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
       "Dreaming: the whole beach is made of treats."
     ],
     "thought": "Dreaming: the whole beach is made of treats.",
@@ -361,7 +361,7 @@
     "Body says rest. Stubborn brain says one more job.",
     "Had a dream about a gearbox. Normal, right?"
   ],
-  "real_updated": "2026-11-28T06:30:11.068534+00:00",
+  "real_updated": "2026-11-28T06:45:14.537318+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@13",
