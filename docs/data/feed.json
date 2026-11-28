@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-07T18:43:21.098366+00:00",
+    "time": "1:43 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:28:21.098366+00:00",
+    "time": "1:28 PM",
+    "kind": "thought",
+    "text": "Yoh, I'm tired.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:13:21.098366+00:00",
+    "time": "1:13 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "did",
+    "text": "restoring Little Thunder: strip + clean (strip + clean done!)",
+    "why": "Slow is smooth, smooth is fast. strip + clean.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:58:21.098366+00:00",
+    "time": "12:58 PM",
+    "kind": "bike",
+    "text": "stripped Little Thunder right down to the bare frame. Every bolt bagged and labelled.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:43:21.098366+00:00",
+    "time": "12:43 PM",
+    "kind": "did",
+    "text": "restoring Little Thunder: strip + clean (strip + clean 5/6)",
+    "why": "Want to hear Little Thunder run. Back to it.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Quick trip to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:28:21.098366+00:00",
+    "time": "12:28 PM",
+    "kind": "thought",
+    "text": "One more yawn and I'm out.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T17:13:21.098366+00:00",
+    "time": "12:13 PM",
+    "kind": "thought",
+    "text": "SNOW. On a tropical island. Who ordered this?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-07T16:58:21.098366+00:00",
     "time": "11:58 AM",
     "kind": "did",
@@ -1239,114 +1347,6 @@
     "text": "cooking a proper meal",
     "why": "Can't run on toast forever.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:28:21.098366+00:00",
-    "time": "10:28 AM",
-    "kind": "thought",
-    "text": "Eish, forgot to eat again.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:13:21.098366+00:00",
-    "time": "10:13 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Nothing beats an engine firing first try.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:58:21.098366+00:00",
-    "time": "9:58 AM",
-    "kind": "thought",
-    "text": "Not a cloud. Diesel is going to want the beach.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:43:21.098366+00:00",
-    "time": "9:43 AM",
-    "kind": "did",
-    "text": "feeding Diesel (Diesel's tail goes mad)",
-    "why": "He depends on me.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:28:21.098366+00:00",
-    "time": "9:28 AM",
-    "kind": "thought",
-    "text": "Diesel brought me his lead. Subtle.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T14:13:21.098366+00:00",
-    "time": "9:13 AM",
-    "kind": "did",
-    "text": "jumping up to hit the ! block (10 bricks pop out!)",
-    "why": "Maybe a jackpot today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:58:21.098366+00:00",
-    "time": "8:58 AM",
-    "kind": "did",
-    "text": "collecting bricks (+7 bricks)",
-    "why": "Can't build on dreams alone.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Off to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T13:43:21.098366+00:00",
-    "time": "8:43 AM",
-    "kind": "thought",
-    "text": "Sun's out. Even the bricks look happy.",
-    "why": null,
-    "by": "model",
     "ok": true
   }
 ]

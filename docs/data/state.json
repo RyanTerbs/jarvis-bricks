@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "brick_pit",
+  "place": "home",
   "asleep": false,
-  "doing": "jumping up to hit the ! block",
-  "thought": "Every bolt on Little Thunder is seized. Every single one.",
-  "feeling": "on top of the world",
+  "doing": "cooking a proper meal",
+  "thought": "Yoh, I'm tired.",
+  "feeling": "chilled",
   "needs": {
-    "rest": 0.6,
-    "hunger": 0.425,
-    "social": 0.285,
-    "tinker": 0.37,
-    "curiosity": 0.33
+    "rest": 0.74,
+    "hunger": 0.08,
+    "social": 0.28,
+    "tinker": 0.055,
+    "curiosity": 0.405
   },
-  "mood": 0.48,
-  "energy": 0.4,
-  "coins": 63,
+  "mood": 0.42,
+  "energy": 0.26,
+  "coins": 61,
   "coins_goal": 500,
   "bricks": 155,
   "stock": {
@@ -196,7 +196,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 11,
+  "hour": 13,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -481,6 +481,78 @@
       "k": "did",
       "x": "jumping up to hit the ! block (10 bricks pop out!)",
       "why": "Jump, hit, hope."
+    },
+    {
+      "t": "12:13 PM",
+      "k": "thought",
+      "x": "SNOW. On a tropical island. Who ordered this?",
+      "why": null
+    },
+    {
+      "t": "12:13 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "12:28 PM",
+      "k": "thought",
+      "x": "One more yawn and I'm out.",
+      "why": null
+    },
+    {
+      "t": "12:28 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Quick trip to the garage."
+    },
+    {
+      "t": "12:43 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean 5/6)",
+      "why": "Want to hear Little Thunder run. Back to it."
+    },
+    {
+      "t": "12:58 PM",
+      "k": "bike",
+      "x": "stripped Little Thunder right down to the bare frame. Every bolt bagged and labelled.",
+      "why": null
+    },
+    {
+      "t": "12:58 PM",
+      "k": "did",
+      "x": "restoring Little Thunder: strip + clean (strip + clean done!)",
+      "why": "Slow is smooth, smooth is fast. strip + clean."
+    },
+    {
+      "t": "1:13 PM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "1:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "1:28 PM",
+      "k": "thought",
+      "x": "Yoh, I'm tired.",
+      "why": null
+    },
+    {
+      "t": "1:28 PM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
+    },
+    {
+      "t": "1:43 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
     }
   ],
   "day_start": {
@@ -489,13 +561,13 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1127,
+  "tick": 1134,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T16:58:21.098366+00:00",
+  "updated": "2026-12-07T18:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 485,
-      "queue": 286,
+      "model": 489,
+      "queue": 289,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -504,8 +576,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 14,
-      "queue": 9,
+      "model": 18,
+      "queue": 12,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -518,11 +590,11 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.24,
-      "tired": 0.76,
-      "bored": 0.09
+      "hunger": 0.32,
+      "tired": 0.5,
+      "bored": 0.03
     },
     "bond": 1.0,
     "food": 3,
@@ -533,17 +605,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "trotting along behind Derek",
-    "last_played_tick": 1124,
-    "wants": "play",
+    "doing": "napping",
+    "last_played_tick": 1128,
+    "wants": null,
     "recent_thoughts": [
-      "Cold white stuff! I must eat all of it.",
-      "The ! block knows something. I will watch it.",
-      "The ground is a giant ice cream!",
-      "Why does he lie on the floor and say bad words to it?",
-      "My tail won't stop. I'm not stopping it.",
-      "Sniffed a lamp post. Interesting news.",
-      "{owner} says a word, I do a thing, treat appears. Magic.",
       "Nobody is throwing anything. Rude.",
       "Ball. Ball. Ball. Ball?",
       "I could chew a boot. Just a little bit.",
@@ -556,10 +621,17 @@
       "Grease smell. Best smell after sausages.",
       "Good boy? Me? Yes. Me.",
       "Why are my paws cold? Doesn't matter. SNOW!",
-      "The ground is a giant ice cream!"
+      "The ground is a giant ice cream!",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Cold white stuff! I must eat all of it.",
+      "Dreaming: the whole beach is made of treats.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Zzz. Squirrel. Zzz."
     ],
-    "thought": "The ground is a giant ice cream!",
-    "want_ticks": 1,
+    "thought": "Zzz. Squirrel. Zzz.",
+    "want_ticks": 0,
     "last_fed_tick": 1119,
     "recent_ideas": [
       "find out what's inside the ! block.",
@@ -574,10 +646,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Thai street food. That's the dream right there.",
-    "Could go a proper pie right now.",
-    "Weather like this, Thailand feels close.",
-    "Sun's out. Even the bricks look happy.",
     "Too much sitting. Where's my toolbox?",
     "Not a cloud. {pup} is going to want the beach.",
     "Proper shorts weather.",
@@ -598,22 +666,26 @@
     "Thailand. Noodles, mountains, warm sea. Soon.",
     "{coins} in the jar. {left} more and I'm on that bike in Thailand.",
     "Penetrating oil and patience. That's the whole secret.",
-    "Every bolt on {bike} is seized. Every single one."
+    "Every bolt on {bike} is seized. Every single one.",
+    "SNOW. On a tropical island. Who ordered this?",
+    "One more yawn and I'm out.",
+    "{pup} has never seen snow. He's losing his mind.",
+    "Yoh, I'm tired."
   ],
-  "real_updated": "2026-11-28T01:30:11.271882+00:00",
+  "real_updated": "2026-11-28T01:45:10.345692+00:00",
   "speed": 8,
   "weather": {
-    "key": "2026-12-07@6",
+    "key": "2026-12-07@13",
     "kind": "snow",
     "season": "winter",
-    "base": -3.6,
+    "base": -0.9,
     "emoji": "🌨️",
     "name": "snowing",
     "season_emoji": "❄️",
     "seen": [
       "snow"
     ],
-    "temp": -1,
+    "temp": 1,
     "snow": 1,
     "wet": 0,
     "snowman": 0
@@ -627,17 +699,17 @@
     "kind": "barn_find",
     "name": "Little Thunder",
     "found": "2026-12-04",
-    "stage": 0,
-    "done": 4,
-    "parts": "in",
+    "stage": 1,
+    "done": 0,
+    "parts": "none",
     "parts_due": null,
     "wait": null,
     "colour": null,
     "colour_hex": null,
     "spent": 0,
-    "sessions": 4,
+    "sessions": 6,
     "tries": 0,
-    "today_date": "2026-12-06",
+    "today_date": "2026-12-07",
     "today": 2,
     "finished": null,
     "rides": 0
@@ -661,17 +733,17 @@
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": null,
-      "stage": 0,
-      "stage_id": "strip",
-      "parts": "in",
+      "hold": "needs parts first (8 coins)",
+      "stage": 1,
+      "stage_id": "carb",
+      "parts": "none",
       "wait": null,
       "stages": [
         {
           "id": "strip",
           "name": "strip + clean",
           "need": 6,
-          "done": 4,
+          "done": 6,
           "coins": 0
         },
         {
