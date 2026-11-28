@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-12-08",
+    "day": "Tue 08 Dec",
+    "title": "Built a proper snowman",
+    "text": "Quick one tonight. Spent most of today fixing a car, cooking a proper meal and reading a book. Built a proper snowman: carrot nose, stone eyes and his old orange cap! Stood back and had a proper look at it. Lekker. In the garage: Carb's soaking in cleaner overnight. Tomorrow we see. Next on Little Thunder: the carb rebuild. Did some reading on Carburetor. Interesting stuff. Proper winter day, snow on every roof. Diesel made me laugh about ten times today. Stall made 2 coins today. Bought a Thai spice kit at the Mega Mart. Chilli, lemongrass, fish sauce. The noodle kits just got serious. Made 10 coins. Collected 35 bricks. Also: A kid stops to pat Diesel. Thailand feels closer today. 434 to go. Tomorrow again.",
+    "tomorrow": "Back in the garage with Little Thunder.",
+    "by": "template",
+    "coins": 66,
+    "bricks": 212,
+    "coins_change": 10,
+    "bricks_change": 35,
+    "built": [
+      "built a proper snowman: carrot nose, stone eyes and his old orange cap!"
+    ]
+  },
+  {
     "date": "2026-12-07",
     "day": "Mon 07 Dec",
     "title": "Playing with Diesel",

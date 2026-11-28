@@ -1,5 +1,113 @@
 [
   {
+    "at": "2026-12-09T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Built a proper snowman",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Long day. Bed.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "noticed",
+    "text": "Diesel falls asleep in the toolbox for a second.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman finished!)",
+    "why": "Giving my old cap to a good cause.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "built",
+    "text": "built a proper snowman: carrot nose, stone eyes and his old orange cap!",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "thought",
+    "text": "Had a dream about a gearbox. Normal, right?",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Body says rest. Stubborn brain says one more job.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "noticed",
+    "text": "A neighbour pays him back for a favour. +3 coins.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "walk Diesel",
+    "why": "Dog's gotta walk.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "Reading about Carburetor makes me want to try it.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T03:13:21.098366+00:00",
+    "time": "10:13 PM",
+    "kind": "did",
+    "text": "cooking a proper meal",
+    "why": "Cooking something lekker tonight.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T02:58:21.098366+00:00",
     "time": "9:58 PM",
     "kind": "did",
@@ -1238,114 +1346,6 @@
     "kind": "thought",
     "text": "Funny what you learn. Tire, who knew.",
     "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "thought",
-    "text": "Diesel follows me everywhere. Proper little shadow.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:43:21.098366+00:00",
-    "time": "8:43 PM",
-    "kind": "noticed",
-    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "did",
-    "text": "walking to the brick pit",
-    "why": "Heading to the brick pit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:28:21.098366+00:00",
-    "time": "8:28 PM",
-    "kind": "thought",
-    "text": "Cold enough to freeze the carb on a scooter.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T01:13:21.098366+00:00",
-    "time": "8:13 PM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": "Meet Betsy. Bit of a sad case. I'll sort her out.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Garage next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "thought",
-    "text": "Every town needs a guy who fixes stuff. That's me.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:58:21.098366+00:00",
-    "time": "7:58 PM",
-    "kind": "noticed",
-    "text": "A gust of wind knocks 3 bricks off the pile and they roll under the shelf.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "note",
-    "text": "noted (Tire (Introduction)): A tire (North American English) or tyre (Commonwealth English) is a ring-shaped component that surrounds a wheel's rim to transfer a vehicle's load from the axl",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:43:21.098366+00:00",
-    "time": "7:43 PM",
-    "kind": "did",
-    "text": "reading a book (Tire, chapter 1/10)",
-    "why": "Where was I? Ah, ja.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Heading to the library.",
     "by": "model",
     "ok": true
   }
