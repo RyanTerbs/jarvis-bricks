@@ -1,20 +1,20 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "garage",
   "asleep": false,
-  "doing": "cooking a proper meal",
-  "thought": "Yoh, I'm tired.",
-  "feeling": "chilled",
+  "doing": "having a rest",
+  "thought": "Diesel has never seen snow. He's losing his mind.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.74,
-    "hunger": 0.08,
-    "social": 0.28,
-    "tinker": 0.055,
-    "curiosity": 0.405
+    "rest": 0.51,
+    "hunger": 0.44,
+    "social": 0.29,
+    "tinker": 0.175,
+    "curiosity": 0.455
   },
-  "mood": 0.42,
-  "energy": 0.26,
-  "coins": 61,
+  "mood": 0.5,
+  "energy": 0.49,
+  "coins": 53,
   "coins_goal": 500,
   "bricks": 155,
   "stock": {
@@ -196,7 +196,7 @@
     "Krabi",
     "Chiang Mai"
   ],
-  "hour": 13,
+  "hour": 15,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -553,6 +553,96 @@
       "k": "did",
       "x": "cooking a proper meal",
       "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "1:58 PM",
+      "k": "thought",
+      "x": "Batteries low. Need a recharge.",
+      "why": null
+    },
+    {
+      "t": "1:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
+    },
+    {
+      "t": "2:13 PM",
+      "k": "thought",
+      "x": "Snowman time. Non-negotiable.",
+      "why": null
+    },
+    {
+      "t": "2:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "2:28 PM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "2:28 PM",
+      "k": "did",
+      "x": "building a snowman (snowman 1/3)",
+      "why": "Giving my old cap to a good cause."
+    },
+    {
+      "t": "2:43 PM",
+      "k": "thought",
+      "x": "1 degrees. My fingers have stopped working.",
+      "why": null
+    },
+    {
+      "t": "2:43 PM",
+      "k": "did",
+      "x": "walking to the garage",
+      "why": "Off to the garage."
+    },
+    {
+      "t": "2:58 PM",
+      "k": "did",
+      "x": "ordering parts for Little Thunder's carb rebuild (8 coins of parts, here tomorrow)",
+      "why": "Cheap parts are expensive. Buying right."
+    },
+    {
+      "t": "3:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Even engines need to cool down."
+    },
+    {
+      "t": "3:28 PM",
+      "k": "noticed",
+      "x": "Diesel chews a stray brick and looks very pleased with himself.",
+      "why": null
+    },
+    {
+      "t": "3:28 PM",
+      "k": "did",
+      "x": "playing with Diesel (Diesel's tail goes mad)",
+      "why": "Diesel needs to burn some energy."
+    },
+    {
+      "t": "3:43 PM",
+      "k": "noticed",
+      "x": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "thought",
+      "x": "Diesel has never seen snow. He's losing his mind.",
+      "why": null
+    },
+    {
+      "t": "3:43 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Five minutes. Just five."
     }
   ],
   "day_start": {
@@ -561,13 +651,13 @@
     "got": 37,
     "used": 0
   },
-  "tick": 1134,
+  "tick": 1142,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-07T18:43:21.098366+00:00",
+  "updated": "2026-12-07T20:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 489,
-      "queue": 289,
+      "model": 496,
+      "queue": 290,
       "autopilot": 40,
       "sleeping": 316,
       "tokens_in": 0,
@@ -576,8 +666,8 @@
     },
     "today": {
       "date": "2026-12-07",
-      "model": 18,
-      "queue": 12,
+      "model": 25,
+      "queue": 13,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -590,10 +680,10 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": true,
+    "napping": false,
     "needs": {
-      "hunger": 0.32,
-      "tired": 0.5,
+      "hunger": 0.482,
+      "tired": 0.46,
       "bored": 0.03
     },
     "bond": 1.0,
@@ -605,18 +695,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "napping",
-    "last_played_tick": 1128,
-    "wants": null,
+    "doing": "sniffing everything",
+    "last_played_tick": 1141,
+    "wants": "play",
     "recent_thoughts": [
-      "Nobody is throwing anything. Rude.",
-      "Ball. Ball. Ball. Ball?",
-      "I could chew a boot. Just a little bit.",
-      "{owner} is the best human in the whole town.",
-      "Following {owner}. Best job in the world.",
-      "Sit means treat. I have cracked the code.",
-      "Everything smells amazing today.",
-      "I know tricks now. I am a very clever boy.",
       "Grease on my nose. Worth it.",
       "Grease smell. Best smell after sausages.",
       "Good boy? Me? Yes. Me.",
@@ -628,9 +710,17 @@
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
-      "Zzz. Squirrel. Zzz."
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "{owner} says a word, I do a thing, treat appears. Magic.",
+      "Life is good. Life is SO good.",
+      "Cold white stuff! I must eat all of it.",
+      "{owner} is the best human in the whole town.",
+      "Everything smells amazing today."
     ],
-    "thought": "Zzz. Squirrel. Zzz.",
+    "thought": "Everything smells amazing today.",
     "want_ticks": 0,
     "last_fed_tick": 1119,
     "recent_ideas": [
@@ -646,13 +736,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "Too much sitting. Where's my toolbox?",
-    "Not a cloud. {pup} is going to want the beach.",
-    "Proper shorts weather.",
-    "Winter on the island. Who knew?",
-    "Body says rest. Stubborn brain says one more job.",
-    "So much I don't know. Love that, actually.",
-    "Wonder how they build the roads up in the Thai mountains.",
     "{pup} brought me his lead. Subtle.",
     "Want to learn something new today.",
     "Picture it: a winding road, a good engine, no rush.",
@@ -670,9 +753,16 @@
     "SNOW. On a tropical island. Who ordered this?",
     "One more yawn and I'm out.",
     "{pup} has never seen snow. He's losing his mind.",
-    "Yoh, I'm tired."
+    "Yoh, I'm tired.",
+    "Batteries low. Need a recharge.",
+    "Snowman time. Non-negotiable.",
+    "Brick town under snow looks like a Christmas card.",
+    "{temp} degrees. My fingers have stopped working.",
+    "{temp} degrees. My fingers have stopped working.",
+    "{temp} degrees. My fingers have stopped working.",
+    "{pup} has never seen snow. He's losing his mind."
   ],
-  "real_updated": "2026-11-28T01:45:10.345692+00:00",
+  "real_updated": "2026-11-28T02:00:13.122052+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-07@13",
@@ -688,7 +778,7 @@
     "temp": 1,
     "snow": 1,
     "wet": 0,
-    "snowman": 0
+    "snowman": 1
   },
   "book_boxes": [
     1
@@ -701,12 +791,12 @@
     "found": "2026-12-04",
     "stage": 1,
     "done": 0,
-    "parts": "none",
-    "parts_due": null,
+    "parts": "ordered",
+    "parts_due": "2026-12-08",
     "wait": null,
     "colour": null,
     "colour_hex": null,
-    "spent": 0,
+    "spent": 8,
     "sessions": 6,
     "tries": 0,
     "today_date": "2026-12-07",
@@ -728,15 +818,15 @@
       "what": "an old single-cylinder road bike, rusted solid, out of a farmer's barn",
       "look": "classic",
       "day": 4,
-      "spent": 0,
+      "spent": 8,
       "colour": null,
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": "needs parts first (8 coins)",
+      "hold": "parts on the way, here tomorrow",
       "stage": 1,
       "stage_id": "carb",
-      "parts": "none",
+      "parts": "ordered",
       "wait": null,
       "stages": [
         {

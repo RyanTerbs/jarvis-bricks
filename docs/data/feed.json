@@ -1,5 +1,140 @@
 [
   {
+    "at": "2026-12-07T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "thought",
+    "text": "Diesel has never seen snow. He's losing his mind.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:43:21.098366+00:00",
+    "time": "3:43 PM",
+    "kind": "noticed",
+    "text": "Someone left a travel brochure for Chiang Mai on the cafe counter.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "did",
+    "text": "playing with Diesel (Diesel's tail goes mad)",
+    "why": "Diesel needs to burn some energy.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:28:21.098366+00:00",
+    "time": "3:28 PM",
+    "kind": "noticed",
+    "text": "Diesel chews a stray brick and looks very pleased with himself.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T20:13:21.098366+00:00",
+    "time": "3:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Even engines need to cool down.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:58:21.098366+00:00",
+    "time": "2:58 PM",
+    "kind": "did",
+    "text": "ordering parts for Little Thunder's carb rebuild (8 coins of parts, here tomorrow)",
+    "why": "Cheap parts are expensive. Buying right.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "did",
+    "text": "walking to the garage",
+    "why": "Off to the garage.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:43:21.098366+00:00",
+    "time": "2:43 PM",
+    "kind": "thought",
+    "text": "1 degrees. My fingers have stopped working.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "did",
+    "text": "building a snowman (snowman 1/3)",
+    "why": "Giving my old cap to a good cause.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:28:21.098366+00:00",
+    "time": "2:28 PM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Taking a breather.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T19:13:21.098366+00:00",
+    "time": "2:13 PM",
+    "kind": "thought",
+    "text": "Snowman time. Non-negotiable.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "did",
+    "text": "having a rest",
+    "why": "Five minutes. Just five.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-07T18:58:21.098366+00:00",
+    "time": "1:58 PM",
+    "kind": "thought",
+    "text": "Batteries low. Need a recharge.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-07T18:43:21.098366+00:00",
     "time": "1:43 PM",
     "kind": "did",
@@ -1212,141 +1347,6 @@
     "text": "walking to the cafe",
     "why": "Quick trip to the cafe.",
     "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "thought",
-    "text": "Best decision I ever made, keeping Diesel.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:28:21.098366+00:00",
-    "time": "12:28 PM",
-    "kind": "noticed",
-    "text": "A customer rolls a scooter into the garage with a dodgy carb.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "note",
-    "text": "noted (his laptop: Chiang Mai): Chiang Mai is the largest city in northern Thailand, the capital of Chiang Mai province and the second-largest city in Thailand by urban population.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T17:13:21.098366+00:00",
-    "time": "12:13 PM",
-    "kind": "did",
-    "text": "looking something up on his old laptop (Chiang Mai)",
-    "why": "Quick look-up.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home for a bit.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:58:21.098366+00:00",
-    "time": "11:58 AM",
-    "kind": "thought",
-    "text": "Blue sky, no excuses.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Taking a breather.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:43:21.098366+00:00",
-    "time": "11:43 AM",
-    "kind": "thought",
-    "text": "If it's got moving parts, I can fix it. Mostly.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "did",
-    "text": "taking Diesel for a walk (Diesel's tail goes mad)",
-    "why": "Fresh air for both of us.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "thought",
-    "text": "Diesel fell asleep on my boots again. Can't move. Won't move.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:28:21.098366+00:00",
-    "time": "11:28 AM",
-    "kind": "noticed",
-    "text": "A loud exhaust echoes down the street.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T16:13:21.098366+00:00",
-    "time": "11:13 AM",
-    "kind": "did",
-    "text": "restoring Little Thunder: strip + clean (strip + clean 3/6)",
-    "why": "Grease, coffee, Little Thunder. Happy man.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": "Off to the garage.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:58:21.098366+00:00",
-    "time": "10:58 AM",
-    "kind": "thought",
-    "text": "Under all that rust there's a good bike. I can see her.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-06T15:43:21.098366+00:00",
-    "time": "10:43 AM",
-    "kind": "did",
-    "text": "cooking a proper meal",
-    "why": "Can't run on toast forever.",
-    "by": "queue",
     "ok": true
   }
 ]
