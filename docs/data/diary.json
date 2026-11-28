@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-12-09",
+    "day": "Wed 09 Dec",
+    "title": "Finished building the Gym",
+    "text": "Short and sweet tonight. Spent most of today building, playing with Diesel and cooking a proper meal. Finished building the Gym! Stood back and had a proper look at it. Lekker. In the garage: Carb's had its soak. Varnish just wipes off now. Next on Little Thunder: the carb rebuild. Learned a bit about Carburetor. Grey sky most of the day. Beach time: collecting shells (+2 shells (22 in the jar)). Diesel slept on my boots again. Can't complain. Pretty sure Diesel was planning to hide the bike's spark plug in his bed. Finders keepers. Cheeky. Bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week. Spent 15 coins. Eish. Collected 20 bricks, used 35 on building. Also: 🚚 The brick truck dropped 20 free bricks at the pit. 232 in the pile now. 51 coins saved. Every one of them is a kilometre of Thai road. Night, Diesel.",
+    "tomorrow": "Two good sessions on Little Thunder.",
+    "by": "template",
+    "coins": 51,
+    "bricks": 197,
+    "coins_change": -15,
+    "bricks_change": -15,
+    "built": [
+      "finished building the Gym!"
+    ]
+  },
+  {
     "date": "2026-12-08",
     "day": "Tue 08 Dec",
     "title": "Built a proper snowman",

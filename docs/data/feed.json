@@ -1,5 +1,86 @@
 [
   {
+    "at": "2026-12-10T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "diary",
+    "text": "wrote in his diary: Finished building the Gym",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T04:28:21.098366+00:00",
+    "time": "11:28 PM",
+    "kind": "did",
+    "text": "going to sleep",
+    "why": "Tomorrow's another day.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Time to head home.",
+    "by": "autopilot",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T04:13:21.098366+00:00",
+    "time": "11:13 PM",
+    "kind": "noticed",
+    "text": "A bike roars past heading out of town.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:58:21.098366+00:00",
+    "time": "10:58 PM",
+    "kind": "did",
+    "text": "collecting shells (+2 shells (22 in the jar))",
+    "why": "Shells for the jar on the shelf.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "did",
+    "text": "walking to the beach",
+    "why": "Off to the beach.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:43:21.098366+00:00",
+    "time": "10:43 PM",
+    "kind": "thought",
+    "text": "Bit of a meh sky today.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "did",
+    "text": "playing in the snow with Diesel",
+    "why": "Can't waste good snow.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-10T03:28:21.098366+00:00",
+    "time": "10:28 PM",
+    "kind": "thought",
+    "text": "A clean toolbox is a happy toolbox.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
     "at": "2026-12-10T03:13:21.098366+00:00",
     "time": "10:13 PM",
     "kind": "did",
@@ -1264,87 +1345,6 @@
     "time": "7:43 PM",
     "kind": "thought",
     "text": "Nice when the street goes quiet.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "note",
-    "text": "noted (Carburetor (Fuel supply)): Float chamber: In order to ensure an adequate supply at all times, carburetors include a reservoir of fuel, called a \"float chamber\" or \"float bowl\".",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T00:28:21.098366+00:00",
-    "time": "7:28 PM",
-    "kind": "did",
-    "text": "reading a book (Carburetor, chapter 5/9)",
-    "why": "Learning something today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Library next.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-09T00:13:21.098366+00:00",
-    "time": "7:13 PM",
-    "kind": "thought",
-    "text": "Still thinking about that bit on Carburetor.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Even engines need to cool down.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:58:21.098366+00:00",
-    "time": "6:58 PM",
-    "kind": "thought",
-    "text": "Clouds sitting on the town like a lid.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:43:21.098366+00:00",
-    "time": "6:43 PM",
-    "kind": "refused",
-    "text": "tried fixing a car: can't do that at the brick pit",
-    "why": null,
-    "by": "queue",
-    "ok": false
-  },
-  {
-    "at": "2026-12-08T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "did",
-    "text": "having a rest",
-    "why": "Five minutes. Just five.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T23:28:21.098366+00:00",
-    "time": "6:28 PM",
-    "kind": "thought",
-    "text": "That dog needs a run. So do I, honestly.",
     "why": null,
     "by": "model",
     "ok": true

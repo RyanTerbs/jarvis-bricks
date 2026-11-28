@@ -1,19 +1,19 @@
 {
   "name": "Derek",
-  "place": "library",
-  "asleep": false,
-  "doing": "playing with Diesel",
-  "thought": "Thai street food. That's the dream right there.",
-  "feeling": "content",
+  "place": "home",
+  "asleep": true,
+  "doing": "asleep",
+  "thought": "Bit of a meh sky today.",
+  "feeling": "on top of the world",
   "needs": {
-    "rest": 0.57,
-    "hunger": 0.45,
-    "social": 0.44,
-    "tinker": 0.51,
-    "curiosity": 0.455
+    "rest": 0.56,
+    "hunger": 0.645,
+    "social": 0.425,
+    "tinker": 0.695,
+    "curiosity": 0.44
   },
-  "mood": 0.45,
-  "energy": 0.43,
+  "mood": 0.26,
+  "energy": 0.44,
   "coins": 51,
   "coins_goal": 500,
   "bricks": 197,
@@ -240,14 +240,14 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 22,
+  "hour": 23,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
     "surf_sessions": 0,
     "castles": [],
     "best_castle": 1,
-    "shells": 20,
+    "shells": 22,
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
@@ -260,700 +260,33 @@
     "max": 3
   },
   "designed_on": "2026-12-04",
-  "plan_today": "Back in the garage with Little Thunder.",
-  "today_log": [
-    {
-      "t": "6:28 AM",
-      "k": "bike",
-      "x": "Carb's had its soak. Varnish just wipes off now.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "thought",
-      "x": "Grey old day. Good for graft, bad for a tan.",
-      "why": null
-    },
-    {
-      "t": "6:28 AM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Heading to the cafe."
-    },
-    {
-      "t": "6:43 AM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Bet someone's got a story."
-    },
-    {
-      "t": "6:58 AM",
-      "k": "thought",
-      "x": "The thai spice kit was worth every coin.",
-      "why": null
-    },
-    {
-      "t": "6:58 AM",
-      "k": "did",
-      "x": "taking Diesel for a walk",
-      "why": "Fresh air for both of us."
-    },
-    {
-      "t": "7:13 AM",
-      "k": "noticed",
-      "x": "🚚 The brick truck dropped 20 free bricks at the pit. 232 in the pile now.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "thought",
-      "x": "Running on coffee and hope.",
-      "why": null
-    },
-    {
-      "t": "7:13 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Diesel needs to burn some energy."
-    },
-    {
-      "t": "7:28 AM",
-      "k": "thought",
-      "x": "If I don't eat soon I'm eating a brick.",
-      "why": null
-    },
-    {
-      "t": "7:28 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "7:43 AM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Proper food, proper fuel."
-    },
-    {
-      "t": "7:58 AM",
-      "k": "thought",
-      "x": "Don't know how I lived without the wheelbarrow.",
-      "why": null
-    },
-    {
-      "t": "7:58 AM",
-      "k": "did",
-      "x": "walking to the library",
-      "why": "Library next."
-    },
-    {
-      "t": "8:13 AM",
-      "k": "did",
-      "x": "reading a book (Carburetor, chapter 6/9)",
-      "why": "One more chapter."
-    },
-    {
-      "t": "8:13 AM",
-      "k": "note",
-      "x": "noted (Carburetor (Other components)): Other components that have been used on carburetors include: Air bleeds allowing air into various portions of the fuel passages, to premix air and fuel, and min",
-      "why": null
-    },
-    {
-      "t": "8:28 AM",
-      "k": "thought",
-      "x": "1 degrees. My fingers have stopped working.",
-      "why": null
-    },
-    {
-      "t": "8:28 AM",
-      "k": "did",
-      "x": "starting a new build: Gym (paid 35 bricks)",
-      "why": "Town's getting bigger."
-    },
-    {
-      "t": "8:43 AM",
-      "k": "thought",
-      "x": "First job: find my 10mm socket. Again.",
-      "why": null
-    },
-    {
-      "t": "8:43 AM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Play time!"
-    },
-    {
-      "t": "8:58 AM",
-      "k": "thought",
-      "x": "Ja, today feels like a building day.",
-      "why": null
-    },
-    {
-      "t": "8:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "9:13 AM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "He depends on me."
-    },
-    {
-      "t": "9:28 AM",
-      "k": "thought",
-      "x": "New float, new needle. She'll breathe again.",
-      "why": null
-    },
-    {
-      "t": "9:28 AM",
-      "k": "did",
-      "x": "walking to the mega mart",
-      "why": "Quick trip to the mega mart."
-    },
-    {
-      "t": "9:43 AM",
-      "k": "bought",
-      "x": "bought some training treats at the Mega Mart. Training treats. Bribery works.",
-      "why": null
-    },
-    {
-      "t": "9:43 AM",
-      "k": "did",
-      "x": "shopping at the Mega Mart (4 coins, 10 in the cupboard)",
-      "why": "Budget says yes to some training treats. Just."
-    },
-    {
-      "t": "9:58 AM",
-      "k": "bought",
-      "x": "bought some chew toys at the Mega Mart. Chew toys. Maybe my boots survive now.",
-      "why": null
-    },
-    {
-      "t": "9:58 AM",
-      "k": "did",
-      "x": "shopping at the Mega Mart (5 coins: the pup gets bored 20% slower)",
-      "why": "Quick trip to the Mega Mart for some chew toys."
-    },
-    {
-      "t": "10:13 AM",
-      "k": "pupidea",
-      "x": "Diesel has an idea: hide the bike's spark plug in his bed. Finders keepers.",
-      "why": null
-    },
-    {
-      "t": "10:13 AM",
-      "k": "thought",
-      "x": "Diesel would love the dog aisle. Strictly no dogs, says the sign.",
-      "why": null
-    },
-    {
-      "t": "10:13 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Off to the building site."
-    },
-    {
-      "t": "10:28 AM",
-      "k": "did",
-      "x": "building (Gym 1/5)",
-      "why": "One more course of bricks."
-    },
-    {
-      "t": "10:43 AM",
-      "k": "thought",
-      "x": "Brick town under snow looks like a Christmas card.",
-      "why": null
-    },
-    {
-      "t": "10:43 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "10:58 AM",
-      "k": "did",
-      "x": "making a postcard of the town (1 in stock)",
-      "why": "Got an order in my head."
-    },
-    {
-      "t": "11:13 AM",
-      "k": "did",
-      "x": "making a postcard of the town (2 in stock)",
-      "why": "Making stock for the stall."
-    },
-    {
-      "t": "11:28 AM",
-      "k": "thought",
-      "x": "Too much sitting. Where's my toolbox?",
-      "why": null
-    },
-    {
-      "t": "11:28 AM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Off to the building site."
-    },
-    {
-      "t": "11:43 AM",
-      "k": "did",
-      "x": "building (Gym 2/5)",
-      "why": "Building is just fixing, but bigger."
-    },
-    {
-      "t": "11:58 AM",
-      "k": "thought",
-      "x": "Toast. Noodles. Anything.",
-      "why": null
-    },
-    {
-      "t": "11:58 AM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Heading home."
-    },
-    {
-      "t": "12:13 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "12:28 PM",
-      "k": "thought",
-      "x": "Winter on the island. Who knew?",
-      "why": null
-    },
-    {
-      "t": "12:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "12:43 PM",
-      "k": "thought",
-      "x": "Some days you're the spanner, some days you're the bolt.",
-      "why": null
-    },
-    {
-      "t": "12:43 PM",
-      "k": "did",
-      "x": "walking to the building site",
-      "why": "Heading to the building site."
-    },
-    {
-      "t": "12:58 PM",
-      "k": "did",
-      "x": "building (Gym 3/5)",
-      "why": "Back to the Gym. Nearly there."
-    },
-    {
-      "t": "1:13 PM",
-      "k": "did",
-      "x": "building (Gym 4/5)",
-      "why": "Back to the Gym. Nearly there."
-    },
-    {
-      "t": "1:28 PM",
-      "k": "thought",
-      "x": "Best thing I bought? Probably the surfboard.",
-      "why": null
-    },
-    {
-      "t": "1:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Even engines need to cool down."
-    },
-    {
-      "t": "1:43 PM",
-      "k": "thought",
-      "x": "Looked up Carburetor on the old laptop. Lekker.",
-      "why": null
-    },
-    {
-      "t": "1:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "1:58 PM",
-      "k": "thought",
-      "x": "The Gym is coming along. Brick by brick.",
-      "why": null
-    },
-    {
-      "t": "1:58 PM",
-      "k": "built",
-      "x": "finished building the Gym!",
-      "why": null
-    },
-    {
-      "t": "1:58 PM",
-      "k": "did",
-      "x": "building (finished!)",
-      "why": "One more course of bricks."
-    },
-    {
-      "t": "2:13 PM",
-      "k": "thought",
-      "x": "Someone out there needs a brick model bike. I can feel it.",
-      "why": null
-    },
-    {
-      "t": "2:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "2:28 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": null
-    },
-    {
-      "t": "2:43 PM",
-      "k": "thought",
-      "x": "Saw a coffee machine at the Mega Mart. The jar says not yet.",
-      "why": null
-    },
-    {
-      "t": "2:43 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "2:58 PM",
-      "k": "did",
-      "x": "making a hot chocolate",
-      "why": "Freezing. Mug time."
-    },
-    {
-      "t": "3:13 PM",
-      "k": "thought",
-      "x": "Cold enough to freeze the carb on a scooter.",
-      "why": null
-    },
-    {
-      "t": "3:13 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Off to the garage."
-    },
-    {
-      "t": "3:28 PM",
-      "k": "did",
-      "x": "restoring Little Thunder: carb rebuild (carb rebuild 2/4)",
-      "why": "Little Thunder won't fix herself."
-    },
-    {
-      "t": "3:43 PM",
-      "k": "did",
-      "x": "restoring Little Thunder: carb rebuild (carb rebuild 3/4)",
-      "why": "She's ugly now. She won't be for long."
-    },
-    {
-      "t": "3:58 PM",
-      "k": "thought",
-      "x": "Winter. Cold mornings, slow engines.",
-      "why": null
-    },
-    {
-      "t": "3:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "4:13 PM",
-      "k": "thought",
-      "x": "Thailand. Noodles, mountains, warm sea. Soon.",
-      "why": null
-    },
-    {
-      "t": "4:13 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home time."
-    },
-    {
-      "t": "4:28 PM",
-      "k": "did",
-      "x": "feeding Diesel (Diesel's tail goes mad)",
-      "why": "Diesel first, always."
-    },
-    {
-      "t": "4:43 PM",
-      "k": "thought",
-      "x": "Diesel has never seen snow. He's losing his mind.",
-      "why": null
-    },
-    {
-      "t": "4:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "4:58 PM",
-      "k": "thought",
-      "x": "Clouds sitting on the town like a lid.",
-      "why": null
-    },
-    {
-      "t": "4:58 PM",
-      "k": "did",
-      "x": "walking to the library",
-      "why": "Heading to the library."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "did",
-      "x": "reading a book (Carburetor, chapter 7/9)",
-      "why": "Books are a cheap mechanics' school."
-    },
-    {
-      "t": "5:13 PM",
-      "k": "note",
-      "x": "noted (Carburetor (Two-barrel and four-barrel designs)): The basic design for a carburetor consists of a single venturi (main metering circuit), though designs with two or four venturi (two-barrel and four-barrel carb",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "thought",
-      "x": "Running on fumes. Need food.",
-      "why": null
-    },
-    {
-      "t": "5:28 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Home for a bit."
-    },
-    {
-      "t": "5:43 PM",
-      "k": "did",
-      "x": "cooking a proper meal",
-      "why": "Cooking something lekker tonight."
-    },
-    {
-      "t": "5:58 PM",
-      "k": "thought",
-      "x": "Had a dream about a gearbox. Normal, right?",
-      "why": null
-    },
-    {
-      "t": "5:58 PM",
-      "k": "did",
-      "x": "walking to the cafe",
-      "why": "Quick trip to the cafe."
-    },
-    {
-      "t": "6:13 PM",
-      "k": "did",
-      "x": "chatting with the locals",
-      "why": "Bet someone's got a story."
-    },
-    {
-      "t": "6:28 PM",
-      "k": "thought",
-      "x": "That Carburetor chapter got me thinking.",
-      "why": null
-    },
-    {
-      "t": "6:28 PM",
-      "k": "did",
-      "x": "taking Diesel for a walk",
-      "why": "Dog's gotta walk."
-    },
-    {
-      "t": "6:43 PM",
-      "k": "thought",
-      "x": "One more yawn and I'm out.",
-      "why": null
-    },
-    {
-      "t": "6:43 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "6:58 PM",
-      "k": "thought",
-      "x": "Cloudy. Fine. Engines don't care.",
-      "why": null
-    },
-    {
-      "t": "6:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "7:28 PM",
-      "k": "thought",
-      "x": "Winter on the island. Who knew?",
-      "why": null
-    },
-    {
-      "t": "7:28 PM",
-      "k": "did",
-      "x": "walking to the mega mart",
-      "why": "Heading to the mega mart."
-    },
-    {
-      "t": "7:43 PM",
-      "k": "bought",
-      "x": "bought a bag of groceries at the Mega Mart. Fridge is full. Proper meals all week.",
-      "why": null
-    },
-    {
-      "t": "7:43 PM",
-      "k": "did",
-      "x": "shopping at the Mega Mart (8 coins, 7 in the cupboard)",
-      "why": "Right. a bag of groceries. Then straight home."
-    },
-    {
-      "t": "7:58 PM",
-      "k": "thought",
-      "x": "Body says rest. Stubborn brain says one more job.",
-      "why": null
-    },
-    {
-      "t": "7:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Five minutes. Just five."
-    },
-    {
-      "t": "8:13 PM",
-      "k": "thought",
-      "x": "-1 degrees. My fingers have stopped working.",
-      "why": null
-    },
-    {
-      "t": "8:13 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "8:28 PM",
-      "k": "thought",
-      "x": "Sometimes I just stand here and listen to the town.",
-      "why": null
-    },
-    {
-      "t": "8:28 PM",
-      "k": "did",
-      "x": "walking home",
-      "why": "Back home quick."
-    },
-    {
-      "t": "8:43 PM",
-      "k": "did",
-      "x": "making a hot chocolate",
-      "why": "Freezing. Mug time."
-    },
-    {
-      "t": "8:58 PM",
-      "k": "thought",
-      "x": "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
-      "why": null
-    },
-    {
-      "t": "8:58 PM",
-      "k": "did",
-      "x": "walking to the garage",
-      "why": "Off to the garage."
-    },
-    {
-      "t": "9:13 PM",
-      "k": "did",
-      "x": "fixing a car (+4 coins)",
-      "why": "Coins for the jar."
-    },
-    {
-      "t": "9:28 PM",
-      "k": "thought",
-      "x": "Proud of Diesel. Little guy's growing up.",
-      "why": null
-    },
-    {
-      "t": "9:28 PM",
-      "k": "did",
-      "x": "walking to the library",
-      "why": "Quick trip to the library."
-    },
-    {
-      "t": "9:43 PM",
-      "k": "did",
-      "x": "reading a book (Carburetor, chapter 8/9)",
-      "why": "Where was I? Ah, ja."
-    },
-    {
-      "t": "9:43 PM",
-      "k": "note",
-      "x": "noted (Carburetor (History)): In 1826, American engineer Samuel Morey received a patent for a \"gas or vapor engine\", which had a carburetor that mixed turpentine and air.",
-      "why": null
-    },
-    {
-      "t": "9:58 PM",
-      "k": "thought",
-      "x": "Funny what you learn. Carburetor, who knew.",
-      "why": null
-    },
-    {
-      "t": "9:58 PM",
-      "k": "did",
-      "x": "having a rest",
-      "why": "Taking a breather."
-    },
-    {
-      "t": "10:13 PM",
-      "k": "thought",
-      "x": "Thai street food. That's the dream right there.",
-      "why": null
-    },
-    {
-      "t": "10:13 PM",
-      "k": "did",
-      "x": "playing with Diesel (Diesel's tail goes mad)",
-      "why": "Play time!"
-    }
-  ],
+  "plan_today": "Two good sessions on Little Thunder.",
+  "today_log": [],
   "day_start": {
-    "coins": 66,
-    "bricks": 212,
-    "got": 20,
-    "used": 35
+    "coins": 51,
+    "bricks": 197,
+    "got": 0,
+    "used": 0
   },
-  "tick": 1360,
+  "tick": 1367,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T03:13:21.098366+00:00",
+  "updated": "2026-12-10T04:58:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 596,
-      "queue": 348,
-      "autopilot": 47,
-      "sleeping": 369,
+      "model": 598,
+      "queue": 349,
+      "autopilot": 49,
+      "sleeping": 371,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
       "date": "2026-12-09",
-      "model": 38,
-      "queue": 25,
-      "autopilot": 2,
-      "sleeping": 24,
+      "model": 40,
+      "queue": 26,
+      "autopilot": 4,
+      "sleeping": 26,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -964,13 +297,13 @@
     "name": "Diesel",
     "born": "2026-11-25T23:48:46.858911+00:00",
     "arrived_tick": 1,
-    "napping": false,
+    "napping": true,
     "needs": {
-      "hunger": 0.456,
-      "tired": 0.548,
-      "bored": 0.118
+      "hunger": 0.614,
+      "tired": 0.678,
+      "bored": 0.096
     },
-    "bond": 1.0,
+    "bond": 1,
     "food": 3,
     "tricks": {
       "sit": 3,
@@ -979,17 +312,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
-    "last_played_tick": 1360,
+    "doing": "asleep at the foot of the bed",
+    "last_played_tick": 1361,
     "wants": null,
     "recent_thoughts": [
-      "Sky went grey. Still a good day. Every day is a good day.",
-      "The ground is a giant ice cream!",
-      "The ground is a giant ice cream!",
-      "Nap spot: located. Engaging.",
-      "Who left this brick here? I'll carry it somewhere else.",
-      "Dreaming: chasing the ! block. It's slow in dreams.",
-      "Dreaming: {owner} throws the ball forever.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: running, running, running. Legs twitching.",
       "Zzz. Squirrel. Zzz.",
@@ -1002,9 +328,16 @@
       "{owner} is talking to the rusty thing again. It doesn't answer.",
       "Cold white stuff! I must eat all of it.",
       "It's dark. I will guard the house. From the sofa.",
-      "So bored I'm counting my own paws. Four. Still four."
+      "So bored I'm counting my own paws. Four. Still four.",
+      "{owner} is the best human in the whole town.",
+      "Sniffed a lamp post. Interesting news.",
+      "Eyes heavy. Paws heavy. Everything heavy.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "The ground is a giant ice cream!",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching."
     ],
-    "thought": "Tail going at full speed!",
+    "thought": "Dreaming: running, running, running. Legs twitching.",
     "want_ticks": 0,
     "last_fed_tick": 1337,
     "recent_ideas": [
@@ -1020,8 +353,6 @@
     "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "Winter on the island. Who knew?",
-    "Some days you're the spanner, some days you're the bolt.",
     "Best thing I bought? Probably the {thing}.",
     "Looked up {topic} on the old laptop. Lekker.",
     "The {site} is coming along. Brick by brick.",
@@ -1044,9 +375,11 @@
     "Carbs are just plumbing for petrol. Tiny, fiddly plumbing.",
     "Proud of {pup}. Little guy's growing up.",
     "Funny what you learn. {topic}, who knew.",
-    "Thai street food. That's the dream right there."
+    "Thai street food. That's the dream right there.",
+    "A clean toolbox is a happy toolbox.",
+    "Bit of a meh sky today."
   ],
-  "real_updated": "2026-11-28T09:15:15.105816+00:00",
+  "real_updated": "2026-11-28T09:30:11.225722+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
@@ -1059,7 +392,7 @@
     "seen": [
       "cloudy"
     ],
-    "temp": -3,
+    "temp": -4,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
