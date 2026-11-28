@@ -6,14 +6,14 @@
   "thought": "Bit of a meh sky today.",
   "feeling": "on top of the world",
   "needs": {
-    "rest": 0.56,
-    "hunger": 0.645,
-    "social": 0.425,
-    "tinker": 0.695,
-    "curiosity": 0.44
+    "rest": 0,
+    "hunger": 0.725,
+    "social": 0.465,
+    "tinker": 0.735,
+    "curiosity": 0.48
   },
-  "mood": 0.26,
-  "energy": 0.44,
+  "mood": 0.13,
+  "energy": 1,
   "coins": 51,
   "coins_goal": 500,
   "bricks": 197,
@@ -240,7 +240,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 23,
+  "hour": 1,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -251,11 +251,11 @@
     "sun_today": 0,
     "burnt_until": 0,
     "waves": "good",
-    "waves_date": "2026-12-09"
+    "waves_date": "2026-12-10"
   },
   "queue": [],
   "lucky": {
-    "date": "2026-12-09",
+    "date": "2026-12-10",
     "used": 0,
     "max": 3
   },
@@ -268,25 +268,25 @@
     "got": 0,
     "used": 0
   },
-  "tick": 1367,
+  "tick": 1375,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-10T04:58:21.098366+00:00",
+  "updated": "2026-12-10T06:58:21.098366+00:00",
   "stats": {
     "all": {
       "model": 598,
       "queue": 349,
       "autopilot": 49,
-      "sleeping": 371,
+      "sleeping": 379,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
     },
     "today": {
-      "date": "2026-12-09",
-      "model": 40,
-      "queue": 26,
-      "autopilot": 4,
-      "sleeping": 26,
+      "date": "2026-12-10",
+      "model": 0,
+      "queue": 0,
+      "autopilot": 0,
+      "sleeping": 8,
       "tokens_in": 0,
       "tokens_out": 0,
       "cost_usd": 0.0
@@ -299,8 +299,8 @@
     "arrived_tick": 1,
     "napping": true,
     "needs": {
-      "hunger": 0.614,
-      "tired": 0.678,
+      "hunger": 0.646,
+      "tired": 0.038,
       "bored": 0.096
     },
     "bond": 1,
@@ -316,14 +316,6 @@
     "last_played_tick": 1361,
     "wants": null,
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: a sausage as big as the garage.",
-      "Zzz. Squirrel. Zzz.",
-      "Cold white stuff! I must eat all of it.",
       "Why are my paws cold? Doesn't matter. SNOW!",
       "{owner} is talking to the rusty thing again. It doesn't answer.",
       "Cold white stuff! I must eat all of it.",
@@ -335,6 +327,14 @@
       "Sky went grey. Still a good day. Every day is a good day.",
       "The ground is a giant ice cream!",
       "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Dreaming: running, running, running. Legs twitching.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: {owner} throws the ball forever.",
+      "Dreaming: a sausage as big as the garage.",
+      "Dreaming: chasing the ! block. It's slow in dreams.",
+      "Zzz. Squirrel. Zzz.",
+      "Dreaming: the whole beach is made of treats.",
+      "Zzz. Squirrel. Zzz.",
       "Dreaming: running, running, running. Legs twitching."
     ],
     "thought": "Dreaming: running, running, running. Legs twitching.",
@@ -379,7 +379,7 @@
     "A clean toolbox is a happy toolbox.",
     "Bit of a meh sky today."
   ],
-  "real_updated": "2026-11-28T09:30:11.225722+00:00",
+  "real_updated": "2026-11-28T09:45:12.332145+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@13",
@@ -392,7 +392,7 @@
     "seen": [
       "cloudy"
     ],
-    "temp": -4,
+    "temp": -5,
     "snow": 0.34,
     "wet": 0,
     "snowman": 3
@@ -434,13 +434,13 @@
       "kind_name": "barn-find bike",
       "what": "an old single-cylinder road bike, rusted solid, out of a farmer's barn",
       "look": "classic",
-      "day": 6,
+      "day": 7,
       "spent": 8,
       "colour": null,
       "colour_hex": null,
       "finished": null,
       "rides": 0,
-      "hold": "done enough on it for today",
+      "hold": null,
       "stage": 1,
       "stage_id": "carb",
       "parts": "in",
