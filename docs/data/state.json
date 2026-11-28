@@ -3,25 +3,26 @@
   "place": "home",
   "asleep": false,
   "doing": "walking home",
-  "thought": "Ja, today feels like a building day.",
-  "feeling": "chilled",
+  "thought": "Brick town under snow looks like a Christmas card.",
+  "feeling": "content",
   "needs": {
-    "rest": 0.26,
-    "hunger": 0.175,
-    "social": 0.175,
-    "tinker": 0.51,
-    "curiosity": 0.38
+    "rest": 0.48,
+    "hunger": 0.45,
+    "social": 0.18,
+    "tinker": 0.555,
+    "curiosity": 0.455
   },
-  "mood": 0.45,
-  "energy": 0.74,
-  "coins": 66,
+  "mood": 0.44,
+  "energy": 0.52,
+  "coins": 57,
   "coins_goal": 500,
   "bricks": 197,
   "stock": {},
   "owned": [
     "surfboard",
     "wheelbarrow",
-    "thai_spice_kit"
+    "thai_spice_kit",
+    "chew_toys"
   ],
   "sales": {
     "items": 10,
@@ -227,7 +228,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 8,
+  "hour": 10,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -242,8 +243,12 @@
   },
   "queue": [
     {
-      "move": "feed_the_puppy",
-      "why": "He depends on me."
+      "move": "make_postcard",
+      "why": "Got an order in my head."
+    },
+    {
+      "move": "make_postcard",
+      "why": "Making stock for the stall."
     }
   ],
   "lucky": {
@@ -385,6 +390,84 @@
       "k": "did",
       "x": "walking home",
       "why": "Heading home."
+    },
+    {
+      "t": "9:13 AM",
+      "k": "did",
+      "x": "feeding Diesel (Diesel's tail goes mad)",
+      "why": "He depends on me."
+    },
+    {
+      "t": "9:28 AM",
+      "k": "thought",
+      "x": "New float, new needle. She'll breathe again.",
+      "why": null
+    },
+    {
+      "t": "9:28 AM",
+      "k": "did",
+      "x": "walking to the mega mart",
+      "why": "Quick trip to the mega mart."
+    },
+    {
+      "t": "9:43 AM",
+      "k": "bought",
+      "x": "bought some training treats at the Mega Mart. Training treats. Bribery works.",
+      "why": null
+    },
+    {
+      "t": "9:43 AM",
+      "k": "did",
+      "x": "shopping at the Mega Mart (4 coins, 10 in the cupboard)",
+      "why": "Budget says yes to some training treats. Just."
+    },
+    {
+      "t": "9:58 AM",
+      "k": "bought",
+      "x": "bought some chew toys at the Mega Mart. Chew toys. Maybe my boots survive now.",
+      "why": null
+    },
+    {
+      "t": "9:58 AM",
+      "k": "did",
+      "x": "shopping at the Mega Mart (5 coins: the pup gets bored 20% slower)",
+      "why": "Quick trip to the Mega Mart for some chew toys."
+    },
+    {
+      "t": "10:13 AM",
+      "k": "pupidea",
+      "x": "Diesel has an idea: hide the bike's spark plug in his bed. Finders keepers.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "thought",
+      "x": "Diesel would love the dog aisle. Strictly no dogs, says the sign.",
+      "why": null
+    },
+    {
+      "t": "10:13 AM",
+      "k": "did",
+      "x": "walking to the building site",
+      "why": "Off to the building site."
+    },
+    {
+      "t": "10:28 AM",
+      "k": "did",
+      "x": "building (Gym 1/5)",
+      "why": "One more course of bricks."
+    },
+    {
+      "t": "10:43 AM",
+      "k": "thought",
+      "x": "Brick town under snow looks like a Christmas card.",
+      "why": null
+    },
+    {
+      "t": "10:43 AM",
+      "k": "did",
+      "x": "walking home",
+      "why": "Heading home."
     }
   ],
   "day_start": {
@@ -393,13 +476,13 @@
     "got": 20,
     "used": 35
   },
-  "tick": 1307,
+  "tick": 1314,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-09T13:58:21.098366+00:00",
+  "updated": "2026-12-09T15:43:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 566,
-      "queue": 326,
+      "model": 569,
+      "queue": 330,
       "autopilot": 46,
       "sleeping": 369,
       "tokens_in": 0,
@@ -408,8 +491,8 @@
     },
     "today": {
       "date": "2026-12-09",
-      "model": 8,
-      "queue": 3,
+      "model": 11,
+      "queue": 7,
       "autopilot": 1,
       "sleeping": 24,
       "tokens_in": 0,
@@ -424,12 +507,12 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.612,
-      "tired": 0.658,
-      "bored": 0.03
+      "hunger": 0.18,
+      "tired": 0.854,
+      "bored": 0.222
     },
     "bond": 1.0,
-    "food": 5,
+    "food": 4,
     "tricks": {
       "sit": 3,
       "paw": 3
@@ -437,17 +520,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "watching Derek work",
+    "doing": "trotting along behind Derek",
     "last_played_tick": 1306,
-    "wants": "food",
+    "wants": "nap",
     "recent_thoughts": [
-      "Dreaming: a sausage as big as the garage.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Dreaming: running, running, running. Legs twitching.",
-      "Zzz. Squirrel. Zzz.",
       "Dreaming: a sausage as big as the garage.",
       "Dreaming: {owner} throws the ball forever.",
       "I am a very good boy. Probably.",
@@ -460,27 +536,31 @@
       "Life is good. Life is SO good.",
       "Good boy? Me? Yes. Me.",
       "The ground is a giant ice cream!",
-      "Following {owner}. Best job in the world."
+      "Following {owner}. Best job in the world.",
+      "Tummy rumble. Big one.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Nap spot: located. Engaging.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "{owner} is the best human in the whole town.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Sky went grey. Still a good day. Every day is a good day."
     ],
-    "thought": "Following Derek. Best job in the world.",
+    "thought": "Sky went grey. Still a good day. Every day is a good day.",
     "want_ticks": 0,
-    "last_fed_tick": 1256,
+    "last_fed_tick": 1308,
     "recent_ideas": [
-      "find out what's inside the ! block.",
       "dig all the way to the other side of the island.",
       "be the greeter at the market stall. Customers love me.",
       "bark at the bike until it goes vroom.",
       "guard the savings jar. Nobody touches the jar.",
       "learn the next trick and get ALL the treats.",
       "follow {owner} to Thailand. Obviously.",
-      "teach the seagulls some manners."
+      "teach the seagulls some manners.",
+      "hide the bike's spark plug in his bed. Finders keepers."
     ],
-    "idea": "teach the seagulls some manners."
+    "idea": "hide the bike's spark plug in his bed. Finders keepers."
   },
   "recent_thoughts": [
-    "{bricks} bricks in the pile. Could build something lekker with that.",
-    "Food first. Then I'm useful again.",
-    "Cold enough to freeze the carb on a scooter.",
     "Need a lie down before I drop a spanner on my foot.",
     "{pup} is bored stiff. Time for a walk.",
     "That dog needs a run. So do I, honestly.",
@@ -502,9 +582,12 @@
     "Don't know how I lived without the {thing}.",
     "{temp} degrees. My fingers have stopped working.",
     "First job: find my 10mm socket. Again.",
-    "Ja, today feels like a building day."
+    "Ja, today feels like a building day.",
+    "New float, new needle. She'll breathe again.",
+    "{pup} would love the dog aisle. Strictly no dogs, says the sign.",
+    "Brick town under snow looks like a Christmas card."
   ],
-  "real_updated": "2026-11-28T07:30:11.500859+00:00",
+  "real_updated": "2026-11-28T07:45:10.268893+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-09@6",
@@ -517,8 +600,8 @@
     "seen": [
       "cloudy"
     ],
-    "temp": 1,
-    "snow": 0.62,
+    "temp": 3,
+    "snow": 0.52,
     "wet": 0,
     "snowman": 3
   },
@@ -617,16 +700,17 @@
     }
   },
   "supplies": {
-    "meals": 3
+    "meals": 3,
+    "treats": 10
   },
   "skills": {},
   "shop": {
     "date": "2026-12-09",
     "big": 0,
     "trip": 0,
-    "spent": 14,
-    "bought": 2,
-    "budget_spent": 6
+    "spent": 23,
+    "bought": 4,
+    "budget_spent": 15
   },
   "earned": 88,
   "mart_open": true,
@@ -671,7 +755,14 @@
         "id": "puppy",
         "name": "Puppy",
         "emoji": "🐶",
-        "items": [],
+        "items": [
+          {
+            "id": "chew_toys",
+            "name": "Chew toys",
+            "emoji": "🧸",
+            "what": "the pup gets bored 20% slower"
+          }
+        ],
         "total": 5
       },
       {
@@ -709,11 +800,17 @@
         "n": 3,
         "name": "meals in the fridge",
         "emoji": "🛍️"
+      },
+      {
+        "key": "treats",
+        "n": 10,
+        "name": "Training treats",
+        "emoji": "🍖"
       }
     ],
-    "spent": 14,
+    "spent": 23,
     "earned": 88,
-    "owned": 3,
+    "owned": 4,
     "total": 38,
     "skills": {},
     "hours": [

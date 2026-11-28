@@ -1,5 +1,122 @@
 [
   {
+    "at": "2026-12-09T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "did",
+    "text": "walking home",
+    "why": "Heading home.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:43:21.098366+00:00",
+    "time": "10:43 AM",
+    "kind": "thought",
+    "text": "Brick town under snow looks like a Christmas card.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:28:21.098366+00:00",
+    "time": "10:28 AM",
+    "kind": "did",
+    "text": "building (Gym 1/5)",
+    "why": "One more course of bricks.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "did",
+    "text": "walking to the building site",
+    "why": "Off to the building site.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "thought",
+    "text": "Diesel would love the dog aisle. Strictly no dogs, says the sign.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T15:13:21.098366+00:00",
+    "time": "10:13 AM",
+    "kind": "pupidea",
+    "text": "Diesel has an idea: hide the bike's spark plug in his bed. Finders keepers.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "did",
+    "text": "shopping at the Mega Mart (5 coins: the pup gets bored 20% slower)",
+    "why": "Quick trip to the Mega Mart for some chew toys.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:58:21.098366+00:00",
+    "time": "9:58 AM",
+    "kind": "bought",
+    "text": "bought some chew toys at the Mega Mart. Chew toys. Maybe my boots survive now.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "did",
+    "text": "shopping at the Mega Mart (4 coins, 10 in the cupboard)",
+    "why": "Budget says yes to some training treats. Just.",
+    "by": "queue",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:43:21.098366+00:00",
+    "time": "9:43 AM",
+    "kind": "bought",
+    "text": "bought some training treats at the Mega Mart. Training treats. Bribery works.",
+    "why": null,
+    "by": null,
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "did",
+    "text": "walking to the mega mart",
+    "why": "Quick trip to the mega mart.",
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:28:21.098366+00:00",
+    "time": "9:28 AM",
+    "kind": "thought",
+    "text": "New float, new needle. She'll breathe again.",
+    "why": null,
+    "by": "model",
+    "ok": true
+  },
+  {
+    "at": "2026-12-09T14:13:21.098366+00:00",
+    "time": "9:13 AM",
+    "kind": "did",
+    "text": "feeding Diesel (Diesel's tail goes mad)",
+    "why": "He depends on me.",
+    "by": "queue",
+    "ok": true
+  },
+  {
     "at": "2026-12-09T13:58:21.098366+00:00",
     "time": "8:58 AM",
     "kind": "did",
@@ -1230,123 +1347,6 @@
     "text": "feeding Diesel (Diesel's tail goes mad)",
     "why": "Food for my boy.",
     "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Home time.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:43:21.098366+00:00",
-    "time": "7:43 AM",
-    "kind": "thought",
-    "text": "Been talking to bolts all day. Time for real people.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "note",
-    "text": "noted (Carburetor (Operating principle)): Air from the atmosphere enters the carburetor (usually via an air cleaner), has fuel added within the carburetor, then the air fuel mixture leaves the carbureto",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:28:21.098366+00:00",
-    "time": "7:28 AM",
-    "kind": "did",
-    "text": "reading a book (Carburetor, chapter 3/9)",
-    "why": "Learning something today.",
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "did",
-    "text": "walking to the library",
-    "why": "Quick trip to the library.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "thought",
-    "text": "Winter on the island. Who knew?",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "bike",
-    "text": "📦 The parts for Little Thunder's carb rebuild turned up.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "🚚 The brick truck dropped 20 free bricks at the pit. 197 in the pile now.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T12:13:21.098366+00:00",
-    "time": "7:13 AM",
-    "kind": "noticed",
-    "text": "A kid stops to pat Diesel.",
-    "why": null,
-    "by": null,
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "did",
-    "text": "walking home",
-    "why": "Heading home.",
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T11:58:21.098366+00:00",
-    "time": "6:58 AM",
-    "kind": "thought",
-    "text": "Diesel's giving me the hungry eyes. On it, boet.",
-    "why": null,
-    "by": "model",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T11:43:21.098366+00:00",
-    "time": "6:43 AM",
-    "kind": "did",
-    "text": "fixing a car (+4 coins)",
-    "why": null,
-    "by": "queue",
-    "ok": true
-  },
-  {
-    "at": "2026-12-08T11:28:21.098366+00:00",
-    "time": "6:28 AM",
-    "kind": "did",
-    "text": "walking to the garage",
-    "why": null,
-    "by": "autopilot",
     "ok": true
   }
 ]

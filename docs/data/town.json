@@ -160,7 +160,7 @@
     "name": "Gym",
     "lot": 10,
     "work": 5,
-    "done": 0,
+    "done": 1,
     "started": "2026-12-09",
     "look": {
       "kind": "shop",
@@ -389,6 +389,10 @@
     {
       "date": "2026-12-08",
       "text": "Bought a Thai spice kit at the Mega Mart (noodle kits sell for 1 more coin, tastier dinners)."
+    },
+    {
+      "date": "2026-12-09",
+      "text": "Bought some chew toys at the Mega Mart (the pup gets bored 20% slower)."
     }
   ]
 }
