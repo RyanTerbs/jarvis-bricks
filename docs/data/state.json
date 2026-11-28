@@ -1,22 +1,22 @@
 {
   "name": "Derek",
-  "place": "home",
+  "place": "brick_pit",
   "asleep": false,
-  "doing": "walking home",
-  "thought": "205 bricks in the pile. Could build something lekker with that.",
-  "feeling": "happy enough",
+  "doing": "having a rest",
+  "thought": "Diesel is bored stiff. Time for a walk.",
+  "feeling": "good, ja",
   "needs": {
-    "rest": 0.65,
-    "hunger": 0.61,
-    "social": 0.075,
-    "tinker": 0.43,
-    "curiosity": 0.59
+    "rest": 0.63,
+    "hunger": 0.155,
+    "social": 0.18,
+    "tinker": 0.325,
+    "curiosity": 0.465
   },
   "mood": 0.36,
-  "energy": 0.35,
+  "energy": 0.37,
   "coins": 58,
   "coins_goal": 500,
-  "bricks": 205,
+  "bricks": 212,
   "stock": {},
   "owned": [
     "surfboard",
@@ -217,7 +217,7 @@
     "Chiang Mai",
     "Torque wrench"
   ],
-  "hour": 16,
+  "hour": 18,
   "beach": {
     "tan": 0.0,
     "surf_skill": 0.0,
@@ -230,15 +230,10 @@
     "waves": "flat",
     "waves_date": "2026-12-08"
   },
-  "queue": [
-    {
-      "move": "build_a_snowman",
-      "why": "Snow on the ground? A man has to build a snowman."
-    }
-  ],
+  "queue": [],
   "lucky": {
     "date": "2026-12-08",
-    "used": 0,
+    "used": 1,
     "max": 3
   },
   "designed_on": "2026-12-04",
@@ -717,21 +712,87 @@
       "k": "did",
       "x": "walking home",
       "why": "Home for a bit."
+    },
+    {
+      "t": "4:43 PM",
+      "k": "did",
+      "x": "building a snowman (snowman 2/3)",
+      "why": "Snow on the ground? A man has to build a snowman."
+    },
+    {
+      "t": "4:58 PM",
+      "k": "thought",
+      "x": "Food first. Then I'm useful again.",
+      "why": null
+    },
+    {
+      "t": "4:58 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
+    },
+    {
+      "t": "5:13 PM",
+      "k": "thought",
+      "x": "Cold enough to freeze the carb on a scooter.",
+      "why": null
+    },
+    {
+      "t": "5:13 PM",
+      "k": "did",
+      "x": "cooking a proper meal",
+      "why": "Cooking something lekker tonight."
+    },
+    {
+      "t": "5:28 PM",
+      "k": "thought",
+      "x": "Need a lie down before I drop a spanner on my foot.",
+      "why": null
+    },
+    {
+      "t": "5:28 PM",
+      "k": "did",
+      "x": "walking to the brick pit",
+      "why": "Quick trip to the brick pit."
+    },
+    {
+      "t": "5:43 PM",
+      "k": "did",
+      "x": "collecting bricks (+7 bricks)",
+      "why": "Got plans. Need materials."
+    },
+    {
+      "t": "5:58 PM",
+      "k": "did",
+      "x": "jumping up to hit the ! block (bonk. Nothing. Just a sore head.)",
+      "why": "Jump, hit, hope."
+    },
+    {
+      "t": "6:13 PM",
+      "k": "thought",
+      "x": "Diesel is bored stiff. Time for a walk.",
+      "why": null
+    },
+    {
+      "t": "6:13 PM",
+      "k": "did",
+      "x": "having a rest",
+      "why": "Taking a breather."
     }
   ],
   "day_start": {
     "coins": 56,
     "bricks": 177,
-    "got": 28,
+    "got": 35,
     "used": 0
   },
-  "tick": 1241,
+  "tick": 1248,
   "born": "2026-11-25T23:48:46.858911+00:00",
-  "updated": "2026-12-08T21:28:21.098366+00:00",
+  "updated": "2026-12-08T23:13:21.098366+00:00",
   "stats": {
     "all": {
-      "model": 542,
-      "queue": 313,
+      "model": 546,
+      "queue": 316,
       "autopilot": 44,
       "sleeping": 342,
       "tokens_in": 0,
@@ -740,8 +801,8 @@
     },
     "today": {
       "date": "2026-12-08",
-      "model": 25,
-      "queue": 15,
+      "model": 29,
+      "queue": 18,
       "autopilot": 2,
       "sleeping": 24,
       "tokens_in": 0,
@@ -756,9 +817,9 @@
     "arrived_tick": 1,
     "napping": false,
     "needs": {
-      "hunger": 0.268,
-      "tired": 0.484,
-      "bored": 0.39
+      "hunger": 0.478,
+      "tired": 0.68,
+      "bored": 0.6
     },
     "bond": 1,
     "food": 0,
@@ -769,17 +830,10 @@
     "learned": [
       "sit"
     ],
-    "doing": "rolling in the grass",
+    "doing": "watching Derek work",
     "last_played_tick": 1220,
-    "wants": null,
+    "wants": "play",
     "recent_thoughts": [
-      "The bike smells of old barn. And mice. MICE?",
-      "Life is good. Life is SO good.",
-      "Food? Food. FOOD.",
-      "My bowl is empty. This is an emergency.",
-      "Dreaming: {owner} throws the ball forever.",
-      "Dreaming: the whole beach is made of treats.",
-      "Dreaming: running, running, running. Legs twitching.",
       "Dreaming: chasing the ! block. It's slow in dreams.",
       "Dreaming: a sausage as big as the garage.",
       "Zzz. Squirrel. Zzz.",
@@ -792,9 +846,16 @@
       "Good boy? Me? Yes. Me.",
       "The ground is a giant ice cream!",
       "Sky went grey. Still a good day. Every day is a good day.",
-      "Sky went grey. Still a good day. Every day is a good day."
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Sky went grey. Still a good day. Every day is a good day.",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Why are my paws cold? Doesn't matter. SNOW!",
+      "Cold white stuff! I must eat all of it.",
+      "Life is good. Life is SO good.",
+      "Cold white stuff! I must eat all of it.",
+      "The cafe smells like pies. Noted."
     ],
-    "thought": "Sky went grey. Still a good day. Every day is a good day.",
+    "thought": "The cafe smells like pies. Noted.",
     "want_ticks": 0,
     "last_fed_tick": 1226,
     "recent_ideas": [
@@ -810,10 +871,6 @@
     "idea": "teach the seagulls some manners."
   },
   "recent_thoughts": [
-    "{pup}'s giving me the hungry eyes. On it, boet.",
-    "Winter on the island. Who knew?",
-    "Been talking to bolts all day. Time for real people.",
-    "Need a proper chat with someone who talks back.",
     "Quiet out. Just me, {pup} and the seagulls.",
     "If the carb's right, the bike's right.",
     "Brick town under snow looks like a Christmas card.",
@@ -834,9 +891,13 @@
     "Snowman time. Non-negotiable.",
     "Slow and steady fills the jar.",
     "Winter on the island. Who knew?",
-    "{bricks} bricks in the pile. Could build something lekker with that."
+    "{bricks} bricks in the pile. Could build something lekker with that.",
+    "Food first. Then I'm useful again.",
+    "Cold enough to freeze the carb on a scooter.",
+    "Need a lie down before I drop a spanner on my foot.",
+    "{pup} is bored stiff. Time for a walk."
   ],
-  "real_updated": "2026-11-28T05:15:17.118248+00:00",
+  "real_updated": "2026-11-28T05:30:11.884278+00:00",
   "speed": 8,
   "weather": {
     "key": "2026-12-08@13",
@@ -850,10 +911,10 @@
       "snow",
       "cloudy"
     ],
-    "temp": 3,
-    "snow": 0.72,
+    "temp": 2,
+    "snow": 0.62,
     "wet": 0,
-    "snowman": 1
+    "snowman": 2
   },
   "book_boxes": [
     1
@@ -953,7 +1014,7 @@
     }
   },
   "supplies": {
-    "meals": 6
+    "meals": 5
   },
   "skills": {},
   "shop": {
@@ -1042,7 +1103,7 @@
     "supplies": [
       {
         "key": "meals",
-        "n": 6,
+        "n": 5,
         "name": "meals in the fridge",
         "emoji": "🛍️"
       }
